@@ -1,42 +1,31 @@
 <%
     prevPage = chapter.index > 1 ? "chapter-#{ chapter.index - 1 }.html" : "index.html"
     nextPage = chapter.index < book.chapters.length ? "chapter-#{ chapter.index + 1 }.html" : "index.html"
-%>
-<html>
+%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><%= book.title %> :: <%= chapter.index %>. <%= chapter.title %></title>
     <link rel="stylesheet" type="text/css" href="guide.css" />
 </head>
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body>
 
-<table border="0" cellpadding="12" cellspacing="0" width="100%">
-<tr>
-    <td valign="top" bgcolor="#DD7766" style="border-bottom: dashed 2px #FFF;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td>
-        <h3><font color="#FFFFFF">why's <font color="#DDCCCC">(poignant)</font> guide to ruby</font></h3>
-        <a class="pagebar" href="http://whytheluckystiff.net/">whytheluckystiff.net</a> &gt; <a class="pagebar" href="index.html">Contents</a>
-        </td>
-        <td align="right">
-            &lt; <a class="pagebar" href="<%= prevPage %>">prev</a> | <a class="pagebar" href="<%= nextPage %>">next</a> &gt;
-        </td>
-    </tr>
-    </table>
-    </td>
-</tr>
-</table>
+<div id="banner">
+   <div class="pager">
+   &lt; <a class="pagebar" href="<%= prevPage %>">prev</a> | <a class="pagebar" href="<%= nextPage %>">next</a> &gt;
+   </div>
+   <div class="title">
+   <h3>why's <span class="hilite">(poignant)</span> guide to ruby</h3>
+   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html">Contents</a>
+   </div>
+</div>
 <div align="center">
-<table border="0" cellpadding="12" cellspacing="0" width="800">
-<tr>
-    <td valign="top" align="center">
+<div id="page">
+    <div id="pageTitle">
         <h3><%= chapter.index %>.</h3>
-        <h1><%= chapter.title %></h1><br />
-        <img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" /><br />
-    </td>
-</tr>
-<tr>
-    <td valign="top">
+        <h1><%= chapter.title %></h1>
+        <p><img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" alt="[o]" /></p>
+    </div>
     <div class="content">
 
     <% chapter.sections.each do |sect|
@@ -55,7 +44,9 @@
         
         <div class="sidebar">
         <h1>sidebar!</h1>
+        <% if sect.title %>
         <h2><%= sect.title %></h2>
+        <% end %>
 
         <%= sect.content.to_html %>
         <h1>sidebar!</h1>
@@ -73,26 +64,15 @@
         </p>
 
     </div>
-    </td>
-</tr>
-</table>
 </div>
-<table border="0" cellpadding="12" cellspacing="0" width="100%">
-<tr>
-    <td valign="top" bgcolor="#DDDDDD" style="border-top: dashed 2px #AAA;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td>
-        <h3><font color="#666666">why's <font color="#AA8888">(poignant)</font> guide to ruby</font></h3>
-        </td>
-        <td align="right">
-            &lt; <a href="<%= prevPage %>">prev</a> | <a href="<%= nextPage %>">next</a> &gt;
-        </td>
-    </tr>
-    </table>
-    </td>
-</tr>
-</table>
-
+</div>
+<div id="footer">
+   <div class="pager">
+   &lt; <a href="<%= prevPage %>">prev</a> | <a href="<%= nextPage %>">next</a> &gt;
+   </div>
+   <div class="title">
+   <h3>why's <span class="hilite">(poignant)</span> guide to ruby</h3>
+   </div>
+</div>
 </body>
 </html>

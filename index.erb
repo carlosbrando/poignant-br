@@ -1,125 +1,131 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><%= book.title %></title>
     <link rel="stylesheet" type="text/css" href="guide.css" />
 </head>
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body>
 
-<div id="bulletin">
-    <h1>T-Shirts: <a href="http://www.cafeshops.com/blixytees.10117492">"Addiction is Like Pokemon..."</a>, <a href="http://www.cafeshops.com/blixytees.10116504">"Chunky. Bacon."</a>, and <a href="http://www.cafeshops.com/blixytees">others</a>.</h1>
-    <b>Want updates?</b>  Join <a href="http://rubyforge.org/mailman/listinfo/poignant-watchers">poignant-watchers</a>
-    mailing list.  No other e-mail.  Just a periodic update on new chapters.
-    (No need if you're on <a href="http://rubyforge.org/mailman/listinfo/poignant-stiffs">poignant-stiffs</a>.)
-</div>
+<div id="wrapper">
 
-<table border="0">
-<tr>
-    <td valign="top" width="35%">
+    <div id="navigate">
 
         <!-- Left-hand access to the book online -->
-        <a href="chapter-1.html"><img src="<%= book.image.file_name %>" border="0" /></a><br />
-        <center><a href="chapter-1.html">Open the book.</a></center>
+        <a href="chapter-1.html"><img src="<%= book.image.file_name %>" alt="Why's (Poignant) Guide to Ruby" border="0" /></a><br />
+        <center><a href="chapter-1.html"><b>Open the book.</b></a></center>
         <br />
 
         <div class="toc">
-        <ul>
+        <ol>
             <p>This book was tenderly written and illustrated by 
             <a href="http://whytheluckystiff.net/">why the lucky stiff</a>.</p>
 
-            <h3>Contents</h3>
+            <h3>~ Contents ~</h3>
             <% 
             book.chapters.each do |chap| 
             %>
-            <li><%= chap.index %>. 
-            <a href="chapter-<%= chap.index %>.html"><%= chap.title %></a></li>
+            <li><b><a href="chapter-<%= chap.index %>.html"><%= chap.title %></a></b></li>
             <% 
                 if chap.sections.detect { |c| c.respond_to? :header }
             %>
-                <ul>
+                <ol>
                 <%
                     chap.sections.each do |sect|
                         next unless sect.respond_to?( :header )
                 %>
-                    <li><%= sect.index %>. 
-                        <a href="chapter-<%= chap.index %>.html#section<%= sect.index %>"><%= sect.header %></a></li>
+                    <li><a href="chapter-<%= chap.index %>.html#section<%= sect.index %>"><%= sect.header %></a></li>
                 <%
                     end
                 %>
-                </ul>
+                </ol>
             <%
                 end
             end 
             %>
-        </ul>
-        </div>
+        </ol>
+        <ol>
+            <h4>+ Expansion Paks +</h4>
+            <% 
+            book.expansion_paks.each do |exp| 
+            %>
+            <li><b><a href="expansion-pak-<%= exp.index %>.html"><%= exp.title %></a></b></li>
+            <% 
+            end
+            %>
+        </ol>
+        <ol>
+            <h3>~ Adverrtissements ~</h3>
+            <p>
+            <a href="chapter-1.html"><img src="i/ad-birdman.gif" alt="Ad." style="border: solid 1px black;" /></a><br /><br />
+            <a href="chapter-1.html"><img src="i/ad-sparkly-tigar.jpg" alt="Ad." border="0" /></a><br /><br />
+            <a href="chapter-1.html"><img src="i/ad-weeizards.gif" alt="Ad." style="border: solid 1px black;" /></a><br /><br />
+            </p>
 
-        <%= book.terms.to_html %>
-        
-        <div align="center">
-        <a href="chapter-1.html"><img src="i/ad-birdman.gif" style="border: solid 1px black;" /></a><br /><br />
-        <a href="chapter-1.html"><img src="i/ad-weeizards.gif" style="border: solid 1px black;" /></a><br /><br />
+        </ol>
+
         </div>
 
         <br /><br />
+        <img src="i/poignant.guide.down.png" alt="umop-apisdn" />
 
-    </td>
-    <td valign="top" width="65%">
+    </div>
+    <div id="main">
 
-        <br />
+        <div class="bulletin">
+            <h3>At last! Chapter 5. <a href="chapter-5.html">Them What Make the Rules and Them What Live the Dream.</a></h3>
+
+            <p><b>T-Shirts</b>: <a href="http://www.cafeshops.com/blixytees.10117492">"Addiction is Like Pokemon..."</a>, <a href="http://www.cafeshops.com/blixytees.10116504">"Chunky. Bacon."</a>, and <a href="http://www.cafeshops.com/blixytees">others</a>.</p>
+            <p><b>Want updates?</b>  Join <a href="http://rubyforge.org/mailman/listinfo/poignant-watchers">poignant-watchers</a>
+            mailing list.  No other e-mail.  Just a periodic update on new chapters.
+            (No need if you're on <a href="http://rubyforge.org/mailman/listinfo/poignant-stiffs">poignant-stiffs</a>.)</p>
+        </div>
 
         <!-- Page Content discussing Ruby, the book, and my site -->
-        <table border="0" cellpadding="6" cellspacing="6" width="100%">
-        <tr>
-            <td>
 
+            <br />
             <% book.teaser.each do |sect| %>
             <h2><%= sect.header %></h2>
             <%= sect.content.to_html %>
             <% end %>
 
-            </td>
-        </tr>
-        <tr>
-            <td> 
+            <div class="bulletin">
 
-            <!-- Creative Commons License -->
-            <a href="http://creativecommons.org/licenses/by-sa/1.0/"><img alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights.gif" /></a><br />
-            This work is licensed under a
-            <a href="http://creativecommons.org/licenses/by-sa/1.0/">Creative Commons License</a>.
-            <!-- /Creative Commons License -->
+                <!-- Creative Commons License -->
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights20.gif" /></a><br />
+                This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+                <!-- /Creative Commons License -->
 
 
-            <!--
+                <!--
 
-            <rdf:RDF xmlns="http://web.resource.org/cc/"
-                xmlns:dc="http://purl.org/dc/elements/1.1/"
-                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <Work rdf:about="">
-               <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
-               <license rdf:resource="http://creativecommons.org/licenses/by-sa/1.0/" />
-            </Work>
+                <rdf:RDF xmlns="http://web.resource.org/cc/"
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <Work rdf:about="">
+                   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+                   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+                </Work>
 
-            <License rdf:about="http://creativecommons.org/licenses/by-sa/1.0/">
-               <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
-               <permits rdf:resource="http://web.resource.org/cc/Distribution" />
-               <requires rdf:resource="http://web.resource.org/cc/Notice" />
-               <requires rdf:resource="http://web.resource.org/cc/Attribution" />
-               <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
-               <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
-            </License>
+                <License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+                   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+                   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+                   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+                   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+                   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+                   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+                </License>
 
-            </rdf:RDF>
+                </rdf:RDF>
 
-            -->
+                -->
 
-            </td>
-        </tr>
-        </table>
+            </div>
 
-    </td>
+    </div>
 
-</tr>
-</table>
+</div>
 
 </body>
 </html>

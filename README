@@ -1,0 +1,50 @@
+
+                 [[ Why's (Poignant) Guide to Ruby ]]
+                    http://poignantguide.net/ruby/
+
+  
+  "Quite so," he said.  "I went out to my car yesterday and there was a shoe in the passenger's
+  seat.  A very battered oxford.  Looking straight ahead like it needed a lift to the cobbler's.
+  I did a cavity search and came up with a crisp note from my deceased ancestor, the same 
+  whose property I've looked after, lo, these many years."
+
+  "Wow," I said.  And I glared at my shoe, at the things it would do when I'm gone.
+
+                                {o}
+                                 ^
+
+You're pulling down your own master copy of my first book, a book I'm gallantly pursuing,
+coding and drawing, tying into a bundle with wax and twine.  This master copy is yours.  You
+can do most anything with it, I just ask you abide by the very simple and rather liberal
+license for this text.  (See the 'deed' portion of poignant.yml.)
+
+=== Building HTML ===
+
+You will need to install RedCloth. <http://whytheluckystiff.net/ruby/redcloth/>
+
+To build the HTML version of this book:
+
+  ruby poignant.rb /path/to/output
+
+The script isn't very full-featured.  Please send me patches.
+
+=== What This Package Includes ===
+
+  poignant.yml: The YAML text of the entire book.  The entire book has been written using
+    Vim as my word processor and YAML as my document format.  I also use Textile liberally
+    throughout the content.
+
+  poignant.rb: The script which formats output for the book.  Currently, it only outputs
+    HTML and CSS.
+
+  index.erb: An ERb template for the table of contents.
+
+  chapter.erb: An ERb template for the chapter pages.
+
+  expansion-pak.erb: An ERb template for expansion pages.
+
+  guide.css: A CSS file with fonts and colors.
+
+  i/: The images folder.  Contains images at no larger than 800px.  These images are
+    designed for the website.  Eventually, I will add a folder with 300dpi images.
+

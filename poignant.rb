@@ -5,7 +5,7 @@ require 'redcloth'
 
 module WhyTheLuckyStiff
 class Book
-    attr_accessor :author, :title, :terms, :image, :teaser, :chapters
+    attr_accessor :author, :title, :terms, :image, :teaser, :chapters, :expansion_paks
 end
 
 def Book::load( file_name )
@@ -44,10 +44,12 @@ class Chapter
 end
 
 YAML::add_domain_type( 'whytheluckystiff.net,2003', 'book' ) do |taguri, val|
-    i = 0;
-    val['chapters'].collect! do |c| 
-        i += 1
-        Chapter::new( i, c.keys.first, c.values.first )
+    ['chapters', 'expansion_paks'].each do |chaptype|
+        i = 0
+        val[chaptype].collect! do |c| 
+            i += 1
+            Chapter::new( i, c.keys.first, c.values.first )
+        end
     end
     val['teaser'].collect! do |t|
         Section::new( 1, t.keys.first, t.values.first )
@@ -92,9 +94,17 @@ if __FILE__ == $0
         end
     end
 
+    # Write expansion pak pages
+    expak_tpl = ERB::new( File.open( 'expansion-pak.erb' ).read )
+    book.expansion_paks.each do |pak|
+        File.open( File.join( site_path, "expansion-pak-#{ pak.index }.html" ), 'w' ) do |out|
+            out << expak_tpl.result( binding )
+        end
+    end
+
     # Copy css + images into site
     copy_list = ["guide.css"] +
-                Dir["i/*"].find_all { |image| image =~ /\.(gif|jpg)$/ }
+                Dir["i/*"].find_all { |image| image =~ /\.(gif|jpg|png)$/ }
 
     File.makedirs( File.join( site_path, "i" ) )
     copy_list.each do |copy_file|
