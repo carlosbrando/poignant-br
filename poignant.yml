@@ -417,7 +417,7 @@ chapters:
         bq. @[toast, cheese, wine].each { |food| eat food }@
 
 
-        While this bit of code is less readable and sentence-like as the previous examples, I'd still encourage
+        While this bit of code is less readable and sentence-like than the previous examples, I'd still encourage
         you to read it aloud.  While Ruby may sometimes read like English, it sometimes reads as a shorter
         English.  Fully translated into English, you might read the above as: _With toast, cheese, and wine,
         take each type of food and eat that food_.
@@ -1525,7 +1525,7 @@ chapters:
         Stick around and you'll see a crab with _his own jet pack_.  That's a new 2004 model jetcrab.
 
 
-        But now, the whole operation is up and running.  And the cleaniless of the place is astonishing.
+        But now, the whole operation is up and running.  And the cleanliness of the place is astonishing.
         All the equipment is so shiny.  Everything is in chrome.  Oh, and all the staff have concealed
         weapons.  They're trained to kill anyone who enters unannounced.  Or, if they run out of bullets,
         they're trained to pistol whip anyone who enters unannounced.
@@ -1628,7 +1628,7 @@ chapters:
 
 
         It's Ruby's own walking dead, a flatlined keyword.  You can't add
-        to it, it doesn't evolve.  But it's terribly popular.  This sketelon's smiling
+        to it, it doesn't evolve.  But it's terribly popular.  This skeleton's smiling
         in all the pictures.
 
 
@@ -2031,7 +2031,7 @@ chapters:
 
         I start up a word list, a Ruby Hash, which contains these oft seen and dangerous words of yours.
         In the Hash, each dangerous word is matched up against a code word (or phrase).  The code word
-        well be swapped in for the real word.
+        will be swapped in for the real word.
 
 
         <pre>
@@ -2207,7 +2207,7 @@ chapters:
 
 
         Most methods are more specialized than @print@ or @gets@.  Take the @File::open@ for
-        example.  The creator of Ruby, Matz, has given us many different method which which
+        example.  The creator of Ruby, Matz, has given us many different methods which which
         read, rename, or delete files.  They are all organized inside the @File@ class.
 
 
@@ -2281,7 +2281,7 @@ chapters:
 
         So we're using the forklift to get us file in the directory which match @'idea-*.txt'@.  The
         @Dir::[]@ method will use the asterisk as a wildcard.  We're basically saying, "Match anything
-        that starts with _idea-_ and end with _.txt_."  The forklift shuffles off to the directory
+        that starts with _idea-_ and ends with _.txt_."  The forklift shuffles off to the directory
         and comes back with a list of all matching files.
 
 

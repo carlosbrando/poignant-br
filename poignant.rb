@@ -69,7 +69,12 @@ end
 # Convert the book to HTML
 #
 if __FILE__ == $0
-    site_path = ARGV[0] || "."
+    unless ARGV[0]
+        puts "Usage: #{$0} [/path/to/save/html]"
+        exit
+    end
+
+    site_path = ARGV[0]
     book = WhyTheLuckyStiff::Book::load( 'poignant.yml' )
     chapter = nil
 
@@ -96,3 +101,4 @@ if __FILE__ == $0
         File.copy( copy_file, File.join( site_path, copy_file ) )
     end
 end
+
