@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+    color: #222;
+    font-family: Georgia, Times, serif;
+    line-height: 110%;
+}
+h1, h3, h4, h5, h6 {
+    margin: 5;
+    padding: 0;
+}
+h2 {
+    border-bottom: solid 1px black;
+    margin: 5;
+    padding: 0;
+}
+code {
+    background-color: #FDE;
+    padding: 5;
+    line-height: 170%;
+}
+pre {
+    background-color: #FDE;
+    margin: 5 22 5 22;
+    padding: 3;
+    line-height: 170%;
+    width: 80%;
+}
+.toc li {
+    list-style: none;
+}
+ul {
+    line-height: 20px;
+}
+.content li {
+    line-height: 120%;
+    padding: 10px 4px;
+}
+p {
+    margin: 0px 40px 0px 0px;
+    line-height: 20px;
+    padding: 10px;
+}
+.sidebar {
+    background-color: #EFF9ED;
+    border: solid 1px black;
+    width: 300px;
+    float: right;
+    margin: 20px;
+    padding: 0px;
+    z-index: 3;
+}
+.sidebar li {
+    font-size: .9em;
+    line-height: 120%;
+    padding: 10px 4px;
+}
+.sidebar h1 {
+    background-color: #ABB99B;
+    color: #EFF9ED;
+    text-align: center;
+    font-size: .6em;
+    padding: 5px;
+}
+.sidebar h2 {
+    font-size: 1.2em;
+}
+.sidebar p {
+    font-size: .9em;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+.sidebar blockquote {
+    background-color: #FFFFFF;
+    color: #666666;
+    font-size: .8em;
+}
+A.pagebar {
+    color: #000000;
+}
+A.pagebar:hover {
+    color: #FFFFFF;
+}

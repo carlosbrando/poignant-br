@@ -1,0 +1,1406 @@
+--- !whytheluckystiff.net,2003/^book
+title: Why's (Poignant) Guide to Ruby
+author: why the lucky stiff
+
+terms: >
+  bq. The text of this book and the encompassing web matter are released under the wholy sympathetic 
+  "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/1.0/
+  license, part of the brilliant family of licenses produced
+  by the "Creative Commons":http://creativecommons.org/.
+
+
+  bq. *(cc) 2003 why the lucky stiff*
+
+
+deed: |
+  Attribution-ShareAlike 1.0
+
+  You are free:
+
+      * to copy, distribute, display, and perform the work
+      * to make derivative works
+      * to make commercial use of the work
+
+  Under the following conditions:
+      
+  *Attribution*. You must give the original author credit.
+      
+  *Share Alike*. If you alter, transform, or build upon this work, you may distribute the 
+  resulting work only under a license identical to this one.
+
+      * For any reuse or distribution, you must make clear to others the license terms of this work.
+      * Any of these conditions can be waived if you get permission from the author.
+
+  Your fair use and other rights are in no way affected by the above.
+
+  This is a human-readable summary of the Legal Code (the full license).
+
+image: !^img poignant.guide.gif
+teaser:
+
+  - Read This Paragraph: >
+      At my local Barnes and Noble, there is a huge wall of Java books just waiting
+      to tip over and crush me one day.  And one day it will.  At the rate things are going,
+      one day that bookcase will be tall enough to crush us all.  It might even loop the world
+      several times, crushing previous editions of the same Java books over and over again.
+
+  - And This Paragraph Too: >
+      This is just a small Ruby book.  It won't crush you.  It's light as a
+      feather (because I haven't finished it yet-- hehe).  And there's a reason this book
+      will stay light: because Ruby is simple to learn.
+
+  - But Don't Read This One!: >
+      _Why's (Poignant) Guide to Ruby_ is released under the 
+      "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/1.0/
+      License.  So feel free to distribute it and print it and read it
+      leisurely in your housecoat.  In fact, there will be a contest at the
+      end of the book for Best Housecoat.  It's a coveted award and you should
+      feel honored to even read about it!  (Especially if you are reading about
+      it in your soon-to-be-prize-winning housecoat.)
+
+  - Now Back to Your Regularly Scheduled Paragraph: >
+      I'll try not to feel utterly rejected if this book doesn't capture
+      your fancy.  I might experience a few long days of emptiness, accompanied
+      with profuse weeping, but other than that I'll be fine.  It's at least
+      comforting to know that the following fine texts cover my topic and will
+      doubtless fill you with Ruby lust:
+
+
+      * "Programming Ruby":http://www.whytheluckystiff.net/ruby/pickaxe/
+      by Dave Thomas and Andy Hunt (aka _The Pickaxe_)
+
+      * "Ruby User's Guide":http://www.rubyist.net/~slagell/ruby/
+      A guide to learning Ruby (with code examples)
+
+      * "Ruby Book List":http://www.rubygarden.org/ruby?RubyBookList
+      A current list of printed material covering Ruby
+
+
+      Now, if you can't seem to find the contents link on the left-hand side of the page,
+      then here's a link to the "first page":chapter-1.html
+      of the _Poignant Guide_.  If you want to venture onto my other projects, go
+      "whytheluckystiff.net":http://www.whytheluckystiff.net.
+
+
+      Welcome to the pirate radio of technical manuals.
+
+
+chapters:
+  - About this Book:
+    - >
+      !i/about.the.poignant.guide-1.gif(Even a rabbit can learn.)!
+
+
+      !i/about.the.poignant.guide-2.jpg(Small infants as well.)!
+
+
+      !i/about.the.poignant.guide-3.gif(The thoughtful reader.)!
+
+
+      !i/about.the.poignant.guide-4.gif(El burro!)!
+
+
+  - Kon'nichi wa, Ruby:
+    - Opening This Book: >
+        Pretend that you've opened this book (although you probably _have_ opened this book),
+        just to find a huge onion right in the middle crease of the book.  (The manufacturer of the book
+        has included the onion at my request.)
+
+
+        So you're like, "Wow, this book comes with an onion!"  (Even if you don't particularly like onions,
+        I'm sure you can appreciate the logistics of shipping any sort of produce discreetly inside of an alleged
+        programming manual.)
+
+
+        Then you ask yourself, "Wait a minute.  I thought this was a book on Ruby, the incredible new
+        programming language from Japan.  And although I can appreciate the logistics of shipping any sort of
+        produce discreetly inside of an alleged programming manual: Why an onion? What am I supposed to do
+        with it?"
+
+
+        No.  Please don't puzzle over it.  You don't need to do anything with the onion.  Set the onion aside
+        and let _it_ do something with _you_.
+
+
+        I'll be straight with you.  I want you to cry.  To weep.  To whimper sweetly.  This book is a *poignant*
+        guide to Ruby.  That means code so beautiful that tears are shed.  That means gallant tales and somber truths
+        that have you waking up the next morning in the arms of this book.  Hugging it tightly to you all the day long.
+        If necessary, fashion a makeshift hip holster for _Why's (Poignant) Guide to Ruby_, so you can always have this
+        book's tender companionship.
+
+
+        You really must sob once.  Or at least sniffle.  And if not, then the onion will make it all happen for you.
+
+
+    - !^sidebar
+      What I'm Going to Do With the Massive Proceeds from this Book: >
+
+        Anyone who's written a book can tell you how easily an author is distracted by visions of grandeur.
+        In my experience, I stop twice for each paragraph, and four times for each panel of a comic, just to
+        envision the wealth and prosperity that this book will procure for my lifestyle.  I fear that the writing
+        of this book will halt altogether to make way for the armada of SUVs and luxury towne cars that are
+        blazing away in my head.
+
+
+        Rather than stop my production of the (Poignant) Guide, I've reserved this space as a safety zone
+        for pouring my empty and vain wishes.
+
+
+        Today I was at this Italian restaraunt, Granado's, and I was paying my bill.  Happened to notice (under
+        glass) a bottle of balsamic vinegar going for $150.  Fairly small.  I could conceal it in my
+        palm.  Aged twenty-two years.
+
+
+        I've spent a lot of time thinking about that bottle.  It is often an accessory in some of these
+        obsessive fantasies.  In one fantasy, I walk into the restaraunt, toss a stack of greenery on the counter
+        and earnestly say to the cashier, "Quick! I have an important salad to make!"
+
+
+        In another, related fantasy, I am throwing away lettuce.  Such roughage isn't befitting of my new
+        vinegar.  No, I will have come to a point where the fame and the aristocracy will have corrupted me
+        to my core.  I will use cash as my lettuce.  Cold, hard cash, Mrs. Price.
+
+
+        Soon, I will be expending hundreds for a block of myzithra cheese.
+
+
+        My imaginations have now gone beyond posessions, though.  Certainly, I have thought through my
+        acquisition of grecian urns, motorcades, airlines, pyramids, dinosaur bones.  Occassionally I'll
+        see wind-tossed cities on the news and I'll jot down on my shopping list: _Hurricane_.
+        
+
+        But, now I'm seeing a larger goal.  Simply put: what if I amassed such a fortune that the mints
+        couldn't print enough to keep up with my demand?  So, everyone else would be forced to use Monopoly money as
+        actual currency.  And you would have to win in Monopoly to keep food on the table.  These would be
+        some seriously tense games.  I mean you go to mortgage St. James Place and your kids start crying.
+        In addition, I think you'll begin to see the end of those who chose to use the Free Parking square
+        as "the underground coffers":http://groups.yahoo.com/group/monopoly/message/37 for city funds.
+
+
+        You've got to hand it to fun money, though.  Fake money rules.  You can get your hands on it
+        so quickly.  For a moment, it seems like you're crazy rich.  When I was a kid, I got with some
+        of the neighborhood kids and we built this little Tiajuana on our street.  We made our own pesos and
+        wore sombreros and everything!
+
+
+        One kid was selling hot tamales for two pesos each.  _Two pesos!_  Did this kid know that the money was fake?
+        Was he out of his mind?  Who invited this kid?  Didn't he know this wasn't really Tiajuana?  Maybe he was really from Tiajuana!
+        Maybe these were _real_ pesos!  Let's go make more _real_ pesos!
+
+
+        I think we even had a tavern where you could get totally hammered off Kool-Aid.  There's nothing like
+        a bunch of kids stumbling around, mumbling incoherently with punchy red clown lips.
+        
+    - The Dog Story: >
+
+        So try this first bit of poignancy on for size:
+
+
+        One day I was walking down one of those busy roads covered with car dealerships (this was shortly after my wedding
+        was called off) and I found an orphaned dog on the road.  A wooly, black dog with greenish red eyes.  I was kind
+        of feeling like an orphan myself, so I took a couple balloons that were tied to a pole at the dealership
+        and I relocated them to the dog's collar.  Then, I decided he would be my dog.  I named him Bigelow.
+
+
+        We set off to get some Milkbones for Bigelow and, afterwards, head over to my place, where we could sit in
+        recliners and listen to Gorky's Zygotic Mynci.  Oh, and we'd also need to stop by a thrift store and get
+        Bigelow his own recliner.
+
+
+        But Bigelow hadn't accepted me as his master.  So five minutes later, the stupid dog took a different
+        crosswalk than I did and I never caught up.  So whereas he had previously only been lost once, he was now lost
+        twice.  I slowed my pace towards the life of Milkbones and an extra recliner.  I had a dog for five minutes.
+        
+
+        Stupid Benedict Arnold of a dog.  I sat on a city bench and threw pinecones at a statue of three sheep
+        crossing a bridge.  After that, I wept for hours.  The tears just came.  Now there's a little something
+        poignant to get you started.
+
+
+        I wonder where he went with all those balloons.  That crazy dog must have looked like a party with
+        legs.
+
+
+        It wasn't much later that I pulled my own Bigelow.  I printed out a bunch of pages on Ruby.  Articles
+        found around the Web.  I scanned through them on a train ride home one day.  I flipped through them for
+        five minutes and then gave up.  Not impressed.
+
+
+        I sat, staring out the window at the world, a life-sized blender mixing graffiti and iron 
+        smelts before my eyes.  _This world's too big for such a a little language_, I thought.
+        _Poor little thing doesn't stand a chance.  Doesn't have legs to stand on.  Doesn't have
+        arms to swim._
+
+
+        And yet, there I was.  One little man on a flimsy little train (and I even still
+        had a baby tooth to lose at the time) out of billions of people living on a floating
+        blue rock.  How can I knock Ruby?  Who's to say that I'm not going to accidentally
+        choke on my cell phone and die later that evening.  Why's dead, Ruby lives on.
+
+
+        The gravestone:
+
+
+        bq. What's in his trachea?
+
+        Oh, look, a Nokia!
+
+
+        Just my luck.  Finally get to have a good, long sleep underground, only to be constantly disturbed by
+        _Pachelbel's Canon_ going off in my stomach.
+
+    - The Red Sun Rises: >
+
+        So, now you're wondering why I changed my mind about Ruby.  The quick answer is:
+        we clicked.
+
+
+        Like when you meet Somebody in college and they look like somebody who
+        used to hit you in the face with paintbrushes when you were a kid.  And so, impulsively,
+        you conclude that this new Somebody is likely a non-friend.  You wince at their
+        hair.  You hang up phones loudly during crucial moments in their anecdotes.  You use
+        your pogo stick right there where they are trying to walk!
+
+
+        Six months later, somehow, you and Somebody are sitting at a fountain having a perfectly good
+        chat.  Their face doesn't look so much like that childhood nemesis.  You've met
+        the Good Twin.  You clicked.
+
+
+        So whereas I should probably be pounding your teeth in with hype about Ruby and the
+        tightly-knit cadre of pertinent ancronyms that accompany it everywhere 
+        (whetting the collective whistles of
+        your bosses and their bosses' bosses), instead I will just let you coast.  I'll let
+        you freefall through some code, interjecting occassionally with my own heartfelt
+        experiences.  It'll be quite easy, quite natural.
+
+
+        I should offer you some sort of motivation, though.  So, Smotchkkiss, I'm going to give my three
+        best reasons to learn Ruby and be done with it.
+
+
+        # *Brain health.*  Vitamin R.  Goes straight to the head.  Ruby will
+        teach you to _express_ your ideas through a computer.  You will be writing
+        stories for a machine.  Creative skills, people.  Deduction.  Reason.  Nodding intelligently.
+        The language will become a tool for you to better connect your mind to the world.
+        I've noticed that many experienced users of Ruby seem to be clear thinkers and
+        objective.  (In contrast to: heavily biased and coarse.)
+
+        # *One man on one island.*  Ruby was born in Japan.  Which is freaky.  Japan is not known
+        for its software.  And since programming languages are largely written in English, who
+        would suspect a language to come from Japan?  And yet, here we have Ruby.  Against the odds,
+        Yukihiro Matsumoto created Ruby on February 24, 1993.  For the past ten years, he has steadily
+        brought Ruby to a global audience.  It's triumphant and noble and all that.  Support diversity.
+        Help us tilt the earth just a bit.
+
+        # *Free.*  Using Ruby costs nothing.  The code to Ruby itself is open for all of the world
+        to inhale/exhale.  Heck, this book is free.  It's all part of a great, big giveaway that should
+        have some big hitch to it.  You'd think we'd make you buy vacuums or timeshare or fake Monets.
+        You'd think there'd be a 90 minute presentation where the owner of the company comes out at
+        the end and knuckles you into sealing the deal.  Nope, free.
+
+
+        With that, it's time for the book to begin.  You can now get out your highlighter and start dragging
+        it along each captivating word from this sentence on.  I think I have enough hairspray and
+        fun money on my person to keep me sustained until the final page.
+
+    - How Books Start: >
+
+        Now, if you ever have read a book, you know that no book can properly start without an exorbitant
+        amount of synergy.  Yes, synergy.  Maybe you didn't know this.  Synergy means that you and I are
+        supposed to cooperate to make this a great reading experience.  
+
+
+        We start off the book by getting
+        along well in the Introduction.  This togetherness, this *synergy*, propels us through the book,
+        with me guiding you on your way.  You give me a reassuring nod or snicker to indicate your progress.
+
+
+        I'm Peter Pan holding your hand.  Come on, Wendy!  Second star to the right and on till morning.
+
+
+        One problem here.  I don't get along well with people.  I don't hold hands very well.  
+
+
+        Any of my staff will tell you.  At the Opening Ceremonies of This Book (a catered event
+        with stadium seating), I discovered that the cucumber sandwiches weren't served in tea towels.
+        As a result, the butter hadn't set with the cucumbers right... Anyways, I made a big scene and 
+        set fire to some of the advertising trucks outside.  I smashed this spotlight to pieces and
+        so on.  I had this loud maniacal laughing thing going on deep into that night.  It was a real mess.
+
+
+        But, since I don't get along well with people, I hadn't invited anyone but myself to the Opening
+        Ceremonies of This Book.  So it wasn't really that embarassing.   I kept it under wraps and no
+        one found out about the whole ordeal.
+
+
+        So you've got to know that *synergy* doesn't actually mean *synergy* in this book.  I can't do normal *synergy*.
+        No, in this book, *synergy* means *cartoon foxes*.  What I'm saying is: this book will be
+        starting off with an exorbitant amount of *cartoon foxes*.
+
+
+        And I will be counting on you to turn them into *synergy*.
+
+
+  - A Quick (and Hopefully Painless) Ride Through Ruby (with Cartoon Foxes):
+    - >
+      !i/the.foxes-1.gif(The foxes show up.)!
+
+
+      Yeah, these are the two.  My asthma's kickin in so I've got to go take a puff of
+      medicated air just now.  Be with you in a moment.
+
+
+      !i/the.foxes-2.gif(Foxes in boxes.)!
+       
+
+      I'm told that this chapter is best accompanied by a rag.  Something you can mop your
+      face with as the sweat pours off your face.
+
+
+      Indeed, we'll be racing through the whole language.  Like striking every match in a box
+      as quickly as can be done.
+
+
+    - Language and I MEAN Language: >
+        !i/the.foxes-3.gif(Our friends, those two helpless foxies, finally realize
+        the gravity of their predicament.)!
+
+
+        My conscience won't let me call Ruby a _computer_ language.  That would imply that the
+        language works primarily on the computer's terms.  That the language is designed to accomodate
+        the computer, first and foremost.  That therefore, we, the coders, are foreigners, seeking citizenship in the
+        computer's locale.  It's the computer's language and we are translators for the world.
+
+
+        But what do you call the language when your brain begins to think in that language?  When you
+        start to use the language's own words and colloquialisms to express yourself.  Say, the computer
+        can't do that.  How can it be the computer's language?  It is ours, we speak it natively!
+
+
+        We can no longer truthfully call it a _computer_ language.  It is _coderspeak_.  It is the language 
+        of our thoughts.
+
+
+        *Read the following aloud to yourself.*
+
+
+        bq. @5.times { print "Odelay!" }@
+
+
+        In English sentences, punctuation (such as periods, exclamations, parentheses) are silent.  Punctuation
+        adds meaning to words, helps give cues as to what the author intended by a sentence.  So let's read the
+        above as: _Five times print "Odelay!"._
+
+
+        Which is exactly what this small Ruby program does.  Beck's 
+        "mutated Spanish":http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation will print
+        five times on the computer screen.
+
+
+        *Read the following aloud to yourself.*
+
+
+        bq. @exit unless "restaurant".include? "aura"@
+
+
+        Here we're doing a basic reality check.  Our program will *exit* (the program will end) *unless* 
+        the word *restaurant* contains (or *includes*) the word *aura*.  Again, in English: _Exit unless the word
+        restaurant includes the word aura._
+
+
+        Ever seen a programming language use question marks so effectively?  Ruby uses some punctuation,
+        such as exclamations and question marks, to enhance readability of the code.  We're asking a question
+        in the above code, so why not make that apparent?
+
+
+        *Read the following aloud to yourself.*
+
+
+        bq. @[toast, cheese, wine].each { |food| eat food }@
+
+
+        While this bit of code is less readable and sentence-like as the previous examples, I'd still encourage
+        you to read it aloud.  While Ruby may sometimes read like English, it sometimes reads as a shorter
+        English.  Fully translated into English, you might read the above as: _With toast, cheese, and wine,
+        take each type of food and eat that food_.
+
+
+        This program won't actually work if you run it.  Ruby doesn't know how to *eat*.  But the beautiful
+        thing is that you can add your own words to Ruby.  Your own actions.  Your own objects.
+
+
+        At this point, you're probably wondering how these words actually fit together.  Smotchkkiss is wondering
+        what the dots and brackets mean.  I'm going to discuss the various _parts of speech_ next.
+
+
+        All you need to know thus far is that Ruby is basically built from sentences.  They aren't exactly English
+        sentences.  They are short collections of words and punctuation which encompass a single thought.  These
+        sentences can form books.  They can form pages.  They can form entire novels, when strung together.
+        Novels that can be read by humans, but also by computers.
+
+
+    - !^sidebar
+      Concerning Commercial Uses of the (Poignant) Guide: >
+
+        This book is released under a Creative Commons license which allows unlimited commercial
+        use of this text.  Basically, this means you can sell all these bootleg copies of my book
+        and keep the revenues for yourself.  I trust my readers (and the world around them) to rip me off.
+        To put out some crappy Xerox edition with that time-tested clipart of praying hands on the cover.
+
+
+        Guys, the lawsuits just ain't worth the headache.  So I'm just going to straight up endorse
+        authorized piracy, folks.  Anybody who wants to read the book should be able to read it.
+        Anybody who wants to market the book or come up with special editions, I'm flattered.
+
+
+        Why would I want the $$$?  IGNORE ALL OTHER SIDEBARS: I've lost the will to be a rich slob.  
+        Sounds inhuman, but I like my little black-and-white television.  Also my hanging plastic flower lamp.
+        I don't want to be a career writer.  Cash isn't going inspire me.  Pointless.
+
+
+        So, if money means nothing to the lucky stiff, why rip me off when you could co-opt shady
+        business practices to literally crush my psyche and leave me wheezing in some sooty iron lung?  
+        Oh, and the irony of using my own works against me!  Die, Poignant Boy!
+
+
+        To give you an idea of what I mean, here are a few underhanded concepts that could seriously
+        kill my willpower and force me to reconsider things like existence.
+
+
+        *IDEA ONE: BIG TOBACCO*
+
+
+        Buy a cigarette company.  Use my cartoon foxes to fuel an aggressive ad campaign.  
+        Here's a billboard for starters:
+
+
+        !i/the.foxes-0a.gif(Addiction is like Pokemon!)!
+
+
+        Make it obvious that you're targeting children and the asthmatic.  Then, once you've got
+        everyone going, have the *truth* people do an expose on me and my farm of inky foxes.
+
+
+        bq. *Sensible Hipster Standing on Curb in Urban Wilderness*: He calls himself the lucky stiff.
+        
+        
+        bq. (Pulls aside curtain to reveal grey corpse on a gurney.)
+
+
+        bq. *Hipster*: Some stiffs ain't so lucky.
+
+
+        bq. (Erratic zoom in.  Superimposed cartoon foxes for subliminal Willy Wonka mind trip.)
+
+
+        Yo.  Why you gotta dis Big Smokies like dat, Holmes?
+
+
+        *IDEA TWO: HEY, FIRING SQUAD*
+
+
+        Like I said, start selling copies of my book, but corrupt the text.  These altered copies
+        would contain numerous blatant (and libelous) references to government agencies, such as the
+        U.S. Marshalls and the Pentagon.  You could make me look like a complete traitor.  Like I have
+        all these plans to, you know, kill certain less desirable members of the U.S. Marshalls or
+        the Pentagon.
+
+
+        Not that there are any less desirable members of the U.S. Marshalls or the Pentagon.  Yeah,
+        I didn't mean it like that.
+
+
+        Oh, crap.
+
+
+        Oh, crap.  Oh, crap.  Oh, crap.
+
+
+        Turn off the lights.  Get down.
+
+
+        *IDEA THREE: BILLBOARDS, PART II*
+
+
+        How about making fun of asthmatics directly?
+
+
+        !i/the.foxes-0b.gif(Call it a puffer! ROFL!)!
+
+
+        *IDEA FOUR: ALEC BALDWIN*
+
+
+        Adapt the book into a movie.  And since, you know, I'm a character in this book, 
+        you could get someone like Alec Baldwin to play me.  Someone who's at a real lowpoint
+        in his career.
+
+
+        You could make it seem like I did tons of drugs.  Like I was insane to work with.
+        Like I kept firing people and locking them in the scooter room and making them
+        wear outfits made of bread.  Yeah, like I could actually be _baking_ people into
+        the outfits.
+
+
+        You could have this huge mold that I strap people into.  Then, I pour all the dough
+        on them and actually bake them until the bread has risen and they've almost died.
+        And when the television crews come and I'm on Good Morning America, they'll ask,
+        "So, how many people have you employed in the production of your book?"  And I'd
+        respond, "A baker's dozen!" and erupt into that loud maniacal laughing that would
+        force audience members to cup their hands over their ears.
+
+
+        Of course, in the throes of my insanity, I would declare war on the world.  The
+        bread people would put up quite a fight.  Until the U.S. Marshalls (or the Pentagon)
+        engineer a giant robotic monkey brain (played by Burt Lancaster) to come after me.
+
+
+        Here's where you'll make me look completely lame.  Not only will I sacrifice all of
+        the bread people (the Starchtroopers) to save myself, not only will I surrender to
+        the great monkey brain like a coward, but when I narrowly escape, I'll yell at the
+        audience.  Screaming insistently that it's _MY_ movie and no one should see it any
+        more, I'll rip the screen in half and the film projector will spin with its reel
+        flapping in defeat.  And that will be the end of the movie.  People will be _so_
+        pissed.
+
+
+        Now, I've got to thinking.  See, and actually, Alec Baldwin did a decent voiceover
+        in _The Royal Tenenbaums_.  His career might be okay.  You might not want to use him.
+        He might not do it.
+
+
+        Tell ya what.  I'll play the part.  I've made a career out of lowpoints.
+        
+    - The Parts of Speech: >
+
+        Just like the white stripe down a skunk's back and the winding, white train of a bride, many of
+        Ruby's parts of speech have visual cues to help you identify them.  Punctuation and capitalization
+        will help your brain to see bits of code and feel intense recognition.
+        Your mind will frequently yell _Hey, I know that guy!_  You'll also be able to name-drop in
+        conversations with other Rubyists.
+
+
+        Try to focus on the look of each of these parts of speech.  The rest of the book will
+        detail the specifics.  I give short descriptions for each part of speech, but you don't
+        have to understand the explanation.  By the end of this chapter, you should be 
+        able to recognize every part of a Ruby program.
+
+
+        h3. Variables
+
+
+        Any plain, lowercase word is a variable in ruby.  Variables may consist of
+        letters, digits and underscores.
+
+
+        bq. @x@, @y@, @banana2@ or @phone_a_quail@ are examples.
+
+
+        Variables are like nicknames.  Remember when everyone used to call you Stinky Pete?
+        People would say, "Get over here, Stinky Pete!"  And everyone miraculously knew that 
+        Stinky Pete was you.
+
+
+        With variables, you give a nickname to something you use frequently.  For instance, let's
+        say you run an orphanage.  It's a mean orphanage.  And whenever Daddy Warbucks comes to buy
+        more kids, we insist that he pay us *one-hundred twenty-one dollars and eight cents* for the
+        kid's teddy bear, which the kid has become attached to over in the darker moments of living in
+        such nightmarish custody.
+
+
+        bq. @teddy_bear_fee = 121.08@
+
+
+        Later, when you ring him up at the cash register (a really souped-up cash register which runs
+        Ruby!), you'll need to add together all his charges into a *total*.
+
+
+        bq. @total = orphan_fee + teddy_bear_fee + gratuity@
+
+
+        Those variable nicknames sure help.  And in the seedy underground of child sales, any help is
+        appreciated I'm sure.
+
+
+        !i/the.foxes-4a.gif(They mock my examples.)!
+ 
+
+
+        h3. Numbers
+
+
+        The most basic type of number is an _integer_, a *series of digits* which can start
+        with a *plus or minus sign*.
+
+
+        bq. @1@, @23@, and @-10000@ are examples.
+
+
+        Commas are not allowed in numbers, but underscores are.  So if you feel the need to
+        mark your thousands so the numbers are more readable, use an underscore.
+
+
+        bq. @population = 12_000_000_000@
+
+
+        Decimal numbers are called _floats_ in Ruby.  Floats consist of numbers with *a decimal
+        place* or *scientific notation*.
+
+
+        bq. @3.14@, @-808.08@ and @12.043e-04@ are examples.
+
+
+
+        h3. Strings
+
+
+        Strings are any sort of characters (letters, digits, punctuation) surrounded by
+        quotes.  Both single and double *quotes* are used to create strings.
+
+
+        bq. @"sealab"@, @'2021'@, or @"These cartoons are hilarious!"@
+        are examples.
+
+
+        When you enclose characters in quotes, they are stored together as a single string.
+        
+        Think of a reporter who is jotting down the mouthnoises of a rambling celebrity.  "I'm a lot
+        wiser," says Avril Lavigne.  "Now I know what the business is like -- what you have to do and
+        how to work it."
+
+
+        <pre>
+          avril_quote = "I'm a lot wiser.  Now I know 
+          what the business is like -- what you have 
+          to do and how to work it."
+        </pre>
+
+
+        So, just as we stored a number in the *teddy_bear_fee* variable, now we're storing a collection
+        of characters (a string) in the *avril_quote* variable.  The reporter sends this quote
+        to the printers, who just happen to use Ruby to operate their printing press.
+
+
+        bq. @Tabloid.print oprah_quote@
+
+
+        bq. @Tabloid.print avril_quote@
+
+
+        bq. @Tabloid.print justin_timberlake_pix@
+
+
+        !i/the.foxes-4b.gif(They desire to be in my examples.)!
+
+
+
+        h3. Symbols
+
+
+        Symbols are words that look just like variables.  Again, they may contain letters,
+        digits, or underscores.  But they *start with a colon*.
+
+
+        bq. @:a@, @:b@, or @:ponce_de_leon@ are examples.
+
+
+        Symbols are lightweight strings.  Usually, symbols are used in situations where you need a string
+        but you won't be printing it to the screen.
+
+
+        You could say a symbol is a bit easier on the computer.  It's like an antacid.  The colon indicates
+        the bubbles trickling up from your computer's stomach as it digests the symbol.  Ah.  Sweet, sweet
+        relief.
+
+
+        !i/the.foxes-4c.gif(Chunky bacon!!)!
+
+
+
+        h3. Constants
+
+
+        Constants are words like variables, but constants are *capitalized*.  If variables are the
+        nouns of Ruby, then think of constants as the proper nouns.
+
+
+        bq. @Time@, @Array@ or @Shake_It_Like_A_Polaroid_Picture@ are examples.
+
+
+        In English, proper nouns are capitalized.  The Empire State Building.  You can't just move The Empire
+        State Building.  You can't just decide that the Empire State Building is something else.
+        Proper nouns are like that.  They refer to something very specific and usually don't
+        change over time.
+
+
+        In the same way, constants can't be changed after they are set.
+
+
+        bq. @EmpireStateBuilding = "350 5th Avenue, NYC, NY"@
+
+
+        If we try to change the constant, Ruby will complain to us.  Such things are frowned upon.
+
+
+        !i/the.foxes-4d.gif(Come on, chunky bacon.)!
+
+
+
+        h3. Methods
+
+
+        If variables and constants are the nouns, then methods are the verbs.
+        Methods are usually attached to the end of variables and constants by a *dot*.  You've already 
+        seen methods at work.
+
+
+        bq. @front_door.open@
+
+
+        In the above, *open* is the method.  It is the action, the verb. In some cases, you'll see actions chained together.
+
+
+        bq. @front_door.open.close@
+
+
+        We've instructed the computer to open the front door and then immediately close it.
+
+
+        bq. @front_door.is_open?@
+
+
+        The above is an action as well.  We're instructing the computer to test the door to see if it's open.
+        The method could be called @Door.test_to_see_if_its_open@, but the @is_open?@ name is succinct and 
+        just as correct.  Both exclamation marks and question marks may be used in method names.
+
+
+        h3. Method arguments
+
+
+        A method may require more information in order to perform its action.  If we want the computer
+        to paint the door, we should provide a color as well.
+
+
+        Method arguments are attached to the end of a method.  The arguments are usually surrounded by
+        *parentheses* and separated by *commas*.
+
+
+        bq. @front_door.paint( 3, :red )@
+
+
+        The above paints the front door 3 coats of red.
+
+
+        Think of it as an inner tube the method is pulling along, containing its extra instructions.
+        The parentheses form the wet, round edges of the inner tube.  The commas are the feet of each argument,
+        sticking over the edge.  The last argument has its feet tucked under so they don't show.
+
+
+        Like a boat pulling many inner tubes, methods with arguments can be chained.
+
+
+        bq. @front_door.paint( 3, :red ).dry( 30 ).close()@
+
+
+        The above paints the front door 3 coats of red, dries for 30 minutes, and closes the door.  Even though
+        the last method has no arguments, you can still put parentheses if you like.  There is
+        no use dragging an empty inner tube, so the parentheses are normally dropped.
+
+
+        Some methods (such as @print@) are kernel methods.  These methods are used throughout Ruby.  Since they
+        are so common, you won't use the dot.
+
+
+        bq. @print "See, no dot."@
+
+
+        h3. Class methods
+
+
+        Like the methods described above (also called _instance_ methods), class methods
+        are usually attached after variables and constants.  Rather than a dot, a *double colon* is used.
+
+
+        bq. @Door::new( :oak )@
+
+
+        As seen above, the @new@ class method is most often used to create things.  In the above example, we're asking
+        Ruby to make a new oak door for us.  Of course, Ruby has to have an understanding of how to make a
+        door--as well as a wealth of timber, lumberjacks, and those long, wiggily, two-man saws.
+
+
+        !i/the.foxes-4e.gif(Plenty of chunky bacon to go around.)!
+
+
+
+        h3. Global variables
+
+
+        Variables which begin with a *dollar sign* are global.
+
+
+        bq. @$x@, @$1@, @$chunky@ and @$CHunKY_bACOn@ are examples.
+
+
+        Most variables are rather temporary in nature.  Some parts of your program are like little houses.
+        You walk in and they have their own variables.  In one house, you may have a @dad@ that represents
+        Archie, a travelling salesman and skeleton collector.  In another house, @dad@ could represent
+        Peter, a lion tamer with a great love for flannel.  Each house has its own meaning for @dad@.
+
+
+        With global variables, you can be guaranteed that the variable is the same in every little house.
+        The dollar sign is very appropriate.  Every American home respects the value of the dollar.  We're
+        crazy for the stuff.  Try knocking on any door in America and hand them cash.  I can guarantee
+        you won't get the same reaction if you knock on a door and offer Peter, a lion tamer with a great
+        love for flannel.
+
+
+        Global variables can be used anywhere in your program.  They never go out of sight.
+
+
+
+        h3. Instance variables
+
+
+        Variables which begin with an *at* symbol are instance variables.
+
+
+        bq. @@x@, @@y@, and @@only_the_chunkiest_cut_of_bacon_I_have_ever_seen@ are examples.
+
+
+        These variables are often used to define the attributes of something.  For example, you might
+        provide Ruby with the width of the @front_door@ by setting the @@width@ variable inside that
+        @front_door@.  Instance variables are used to define characteristics of a single object in
+        Ruby.
+
+
+        Think of the *at* symbol as meaning *attribute*.
+        
+
+
+        h3. Class variables
+
+
+        Variables which begin with *double at* symbols are class variables.
+
+
+        bq. @@@x@, @@@y@, and @@@i_will_take_your_chunky_bacon_and_raise_you_two@ are examples.
+
+
+        Class variables, too, are used to define attributes.  But rather than defining an attribute
+        for a single object in Ruby, class variables give an attribute to many related objects in
+        Ruby.  If instance variables set attributes for a single @front_door@, then class variables 
+        set attributes for everything that is a @Door@.
+
+
+        Think of the *double at* prefix as meaning *attribute all*.  Additionally, you can think of a swarm
+        of *AT-ATs* from _Star Wars_, which are all commanded by Ruby.  You change a class variable
+        and not just one changes, they all change.
+
+
+        !i/the.foxes-4f.gif(Woohoo! Chunky bacon accomplished!)!
+
+
+
+        h3. Blocks
+
+
+        Any code surrounded by *curly braces* is a block.
+
+
+        bq. @{ print "Yes, I've used chunky bacon in my examples, but never again!" }@ is an example.
+
+
+        With blocks, you can group a set of instructions together so that they can be passed
+        around your program.  
+        The curly braces give the appearance of crab pincers that have snatched the code
+        and are holding it together.  When you see these two pincers, remember that the
+        code inside has been pressed into a single unit.
+
+
+        It's like one of those little Hello Kitty boxes they sell at
+        the mall that's stuffed with tiny pencils and microscopic paper, all crammed into
+        a glittery transparent case that can be concealed in your palm for covert stationary
+        operations.  Except that blocks don't require so much squinting.
+
+
+        The curly braces can also be traded for the words *do* and *end*, which is nice if your
+        block is longer than one line.
+
+
+        <pre>
+          do
+            print "Much better."
+            print "Ah.  More space!"
+            print "My back was killin' me in those crab pincers."
+          end
+        </pre>
+        
+
+
+        h3. Block arguments
+
+
+        Block arguments are a set of variables surrounded by *pipe* 
+        characters and separated by *commas*.
+
+
+        bq. @|en||x|@, @|x,y|@, and @|up, down, all_around|@ are examples.
+
+
+        Block arguments are used at the beginning of a block.
+
+
+        bq. @{ |x,y| x + y }@
+
+
+        In the above example, @|x,y|@ are the arguments.  After the arguments, we have a bit of
+        code.  The expression @x + y@ adds the two arguments together.
+
+
+        I like to think of the pipe characters as representing a tunnel.  They give the appearance
+        of a chute that the variables are sliding down.  (An @x@ goes down spread eagle, while the @y@
+        neatly crosses her legs.)  This chute acts as a passageway between blocks and the world around them.  
+
+
+        Variables are passed through this chute (or tunnel) into the block.
+
+
+        !i/the.foxes-4g.gif(And then, the dismal truth.)!
+
+
+
+        h3. Ranges
+
+
+        A range is two values surrounded by *parentheses* and separated by *an ellipsis* (in the
+        form of two or three dots).
+
+
+        bq. @(1..3)@ is a range, representing the numbers 1 through 3.
+
+
+        bq. @('a'..'z')@ is a range, representing a lowercase alphabet.
+
+
+        Think of it as an accordion which has been squeezed down for carrying.  (Sure, you can build
+        a great sense of self-worth by carrying around an unfolded accordion, but sometimes a person
+        needs to wallow in self-doubt, carefully concealing the squeeze-box.)  The parentheses are
+        the handles on the sides of a smaller, handheld accordion.  The dots are the chain, keeping
+        the folds tightly closed.
+
+
+        Normally, only two dots are used.  If a third dot is used, the last value in the range is
+        excluded.
+
+
+        bq. @(0...5)@ represents the numbers 0 through 4.
+
+
+        When you see that third dot, imagine opening the accordion slightly.  Just enough to let one
+        note from its chamber.  The note is that end value.  We'll let the sky eat it.
+
+
+        h3. Arrays
+
+
+        An array is a list surrounded by *square brackets* and separated by *commas*.
+
+
+        bq. @[1, 2, 3]@ is an array of numbers.
+
+
+        bq. @['coat', 'mittens', 'snowboard']@ is an array of strings.
+
+
+        Think of it as a caterpillar which has been stapled into your code.  The two square brackets
+        are staples which keep the caterpillar from moving, so you can keep track of which end is the head and
+        which is the tail.  The commas are the caterpillar's legs, wiggling between each section
+        of its body.
+
+
+        Once there was a caterpillar who had commas for legs.  Which meant he had to allow a literary
+        pause after each step.  The other caterpillars really respected him for it and he came to have 
+        quite a commanding presence.  Oh, and talk about a philanthropist!  He was notorious for
+        giving fresh leaves to those less-fortunate.
+
+
+        Yes, an array is a collection of things, but it also keeps those things in a specific order.
+
+
+
+        h3. Hashes
+
+
+        A hash is a dictionary surrounded by *curly braces*.  Dictionaries match words
+        with their definitions.  Ruby does so with *arrows* made from an equals sign, followed by
+        a greater-than sign.
+
+
+        bq. @{'a' => 'aardvark', 'b' => 'badger'}@ is an example.
+
+
+        This time, the curly braces represent little book symbols.  See how they look like
+        little, open books with creases down the middle?  They represent opening and closing
+        our dictionary. 
+
+
+        Imagine our dictionary has a definition on each of its pages.  The commas represent
+        the corner of each page, which we turn to see the next definition.  And on each page:
+        a word followed by an arrow pointing to the definition.
+
+
+        <pre>
+          {
+            'name' => 'Peter',
+            'profession' => 'lion tamer',
+            'great love' => 'flannel'
+          }
+        </pre>
+
+
+        I'm not comparing hashes to dictionaries because you can only store definitions in
+        a hash.  In the example above, I stored personal information for Peter, the lion
+        tamer with a great love for flannel.  Hashes are like dictionaries because they
+        can be very easy to search through.
+
+
+        Unlike arrays, the items in a hash are not kept in a specific order.
+
+
+        !i/the.foxes-5.gif(The foxes think silence will kill the comic.)!
+
+
+
+        h3. Regular Expressions
+
+
+        A regular expression (or _regexp_) is a set of characters surrounded by *slashes*.
+
+
+        bq. @/ruby/@, @/[0-9]+/@ and @/^\d{3}-\d{3}-\d{4}/@ are examples.
+
+
+        Regular expressions are used
+        to find words or patterns in text.  The slashes on each side of the expression are pins.  
+
+
+        Imagine if you had a little word with pins on
+        both side and you held it over a book.  You pass the word over the book and when it
+        gets near a matching word, it starts blinking.  You pin the regular expression onto the book,
+        right over the match and it glows with the letters of the matching word.
+
+
+        Oh, and when you poke the pins into the book, the paper sneezes, _reg-exp!_
+
+
+        Regular expressions are much faster than passing your hand over pages of a book.  Ruby
+        can use a regular expression to search volumes of books very quickly.
+
+
+        h3. Operators
+
+
+        You'll use the following list of operators to do math in Ruby or to compare things.
+        Scan over the list, recognize a few.  You know, addition (@+@) and subtraction (@-@)
+        and so on.
+
+
+        <pre>
+          ** !  ~  *  /  %  +  -  &  
+          << >> |  ^  >  >= <  <= <=>
+          || != =~ !~ && += -= == ===
+          .. ... not and or          
+        </pre>
+
+
+        h3. Keywords
+
+
+        Ruby has a number of built-in words, embued with meaning.  These words cannot
+        be used as variables or changed to suit your purposes.  Some of these we've already
+        discussed.  They are in the safe house, my friend.  You touch these and you'll be 
+        served an official syntax error.
+
+
+        <pre>
+          alias   and     BEGIN   begin   break   case    class   def     defined 
+          do      else    elsif   END     end     ensure  false   for     if 
+          in      module  next    nil     not     or      redo    rescue  retry 
+          return  self    super   then    true    undef   unless  until   when 
+          while   yield 
+        </pre>
+
+
+        Good enough.  These are the illustrious members of the Ruby language.  We'll be having
+        quite the junket for the next three chapters, gluing these parts together into sly bits
+        of (poignant) code.
+
+
+        I'd recommend skimming all of the parts of speech once again.  Give yourself a broad
+        view of them.  I'll be testing your metal in the next section.
+
+
+        !i/the.foxes-6.gif(Out in the pickup truck.)!
+
+
+#        h3. You and Your Dictionary 
+#
+#        You are out in a public park with your dictionary, enjoying a nice afternoon in the park.
+#        A light breeze ruffles lexicon's pages carelessly in your lap.  A bird is gently beating
+#        its head against a tree.  A tatterdemalion careens by on his unicycle.  All is well.
+#
+#        Hold up.  Your brain wonders about that word.  Tatterdemalion.  Does it really mean
+#        "a shabbily clothed street urchin" like you think it means?  You look at your dictionary.
+#
+#        Now, here is the question.  How will you answer this question with your dictionary?  Where
+#        will you start?  Will you go page-by-page, scanning for "a shabbily clothed street urchin,"
+#        the definition?  Or will you use the dictionary's tabs to jump straight to the T section,
+#        narrowing down the pages toward "tatterdemalion," the word itself?
+#
+        
+    - !^sidebar
+      Six Moments of Zen from My Life: >
+
+        # 8 years old.  Just laying in bed, thinking.  And I realize.  
+        _There's nothing stopping me from becoming a child dentist._
+
+        # 21.  Found a pencil on the beach.  Embossed on it: _I cherish serenity._  Tucked
+        it away into the inside breast pocket of my suit jacket.  Watched the waves come and
+        recede.  Kept taking the pencil out for companionship.
+
+        # 22.  Found a beetle in my bathroom that was just about to fall into a heating vent.
+        Swiped him up.  Tailored him a little backpack out of a leaf and a thread.
+        In the backpack: a skittle and a AAA battery.  That should last him.  Set him loose
+        out by the front gate.
+
+        # Three years of age.  Brushed aside the curtain.  Sunlight.
+
+        # 11.  Sick.  Watching Heathcliff on television.  For hours, it was Heathcliff.
+        And he was able to come right up close to my face.  His head spun toward me.
+        His face pulsed back and forth, up close, then off millions of miles away.
+        Sound was gone.  In fractions of a second, Heathcliff filled the universe, then
+        blipped off to the end of infinity.  I heard my mother's voice trying to cut
+        through the cartoon.  Heathclose, Heathaway, Heathclose, Heathaway.
+        It was a religious rave with a cat strobe and muffled bass of mother's voice.
+        (I ran a fever of 105 that day.)
+
+        # 18.  Bought myself a gigapet.  A duck.  Fed it for awhile.  Gave it a bath.
+        Forgot about it for almost a couple months.  One day, while cleaning, I found a chain and he
+        was there on the end.  Hey, little duck.  Mad freaky, hoppin' around with his hair out,
+        squawking diagonal lines.  In a tuxedo.
+
+
+    - If I Haven't Treated You Like a Child Enough Already: >
+
+        I'm proud of you.   Anyone will tell you how much I brag about you.  How I go on and on about
+        this great anonymous person out there who scrolls and reads and scrolls and reads.  "These
+        kids," I tell them.  "Man, these kids got heart.  I never..."  And I can't even finish a sentence
+        because I'm absolutely blubbering.
+        
+
+        And my heart glows bright red under my filmy, translucent skin and they have to administer 10cc 
+        of JavaScript to get me to come back.  (I respond well to toxins in the blood.)  Man, that stuff will 
+        kick the peaches right out your gills!
+
+
+        So, yes.  You've kept up nicely.  But now I must begin to be a brutal schoolmaster.
+        I need to start seeing good marks from you.  So far, you've done nothing but move your eyes
+        around a lot.  Okay, sure, you did some exceptional reading aloud earlier.  Now we need some
+        comprehension skills here, Smotchkkiss.
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        bq. @5.times { print "Odelay!" }@
+
+
+        You might want to even cover this paragraph up while you read, because your eyes might want
+        to sneak to the answer.  We have a _number_ @5@, followed by a _method_ @.times@.  Then, the first
+        crab pincers of a _block_.  The kernel _method_ @print@ has no dot and is followed by a _string_
+        @"Odelay!"@.  The final crab pincers close our _block_.
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        bq. @exit unless "restaurant".include? "aura"@
+
+
+        Like the @print@ method, @exit@ is a kernel _method_.  If you were paying attention during the big list
+        of keywords, you'll know that @unless@ is just such a _keyword_.  The _string_ @"restaurant"@ is clung to
+        by the _method_ @include?@.  And finally, the string @"aura"@.
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        bq. @[toast, cheese, wine].each { |food| eat food }@
+
+
+        This caterpillar partakes of finer delicacies.  An _array_ starts this example.  In the array, three
+        _variables_ @toast@, @cheese@, and @wine@.  The whole array is trailed by a _method_ @each@.  
+
+
+        Inside of a _block_, the _block argument_ @food@, travelling down its little waterslide into the
+        block.  The _method_ @eat@ then is able to use the block argument, which has become _variable_ @food@.
+
+
+        Look over these examples once again.  Be sure you recognize the parts of speech used.  They each
+        have a distinct look, don't they?  Take a deep breath, press firmly on your temples.  Now, let's
+        dissect a cow's eye worth of code.
+
+        
+    - An Example to Help You Grow Up: >
+
+        !i/the.foxes-7.gif(Gettin' cabin fever.)!
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        <pre>
+          require 'net/http'
+          Net::HTTP.start( 'www.ruby-lang.org', 80 ) do |http|
+              print( http.get( '/index.html' ).body )
+          end
+        </pre>
+
+
+        The first line is a method call.  The _method_ called @require@ is used.  A _string_ is passed to
+        the method containing @'net/http'@.  Think of this first line of code as a sentence.  We have
+        told Ruby to load some helper code, the @Net::HTTP@ library.
+
+
+        The next three lines all go together.  The _constant_ @Net::HTTP@ refers to the library we loaded above.
+        We are using the _method_ @start@ from the library.  Into the method, we're sending a _string_
+        @'www.ruby-lang.org'@ and the _number_ @80@.
+
+
+        The word @do@ opens a _block_.  The block has one _block variable_ @http@.  Inside the block, the _method_
+        @print@ is called.  What is being printed?
+
+
+        From the _variable_ @http@, the _method_ @get@ is called.  Into @get@, we pass a _string_ containing
+        the path @'/index.html'@.  Now, notice that another method is chained onto @get@.  The _method_
+        @body@.  Then, the block closes with @end@.
+
+
+        Doing okay?  Just out of curiousity, can you guess what this example does?  Hopefully, you're seeing 
+        some patterns in Ruby.  If not, just shake your head vigorously while you've got these examples in 
+        your mind.  The code should break apart into manageable pieces.
+
+
+        For example, this pattern is used a number of times:
+
+
+        bq. _variable_ . _method_ ( _method arguments_ )
+
+
+        You see it inside the block:
+
+
+        bq. @http.get( '/index.html' )@
+
+
+        We're using Ruby to get a web page.  You've probably used HTTP with your web browser.  HTTP is
+        the Hypertext Transfer Protocol.  HTTP is used to transfer web pages across the internet.  Conceptualize
+        a bus driver that can drive across the internet and bring back web pages for us.  On his hat are stitched
+        the letters HTTP.
+
+
+        The variable @http@ is that bus driver.  The _method_ is a message to the bus driver.  Go @get@
+        the web page called @/index.html@.
+
+
+        So where you see the chain of methods:
+
+
+        bq. @http.get( '/index.html' ).body@
+
+
+        Since we'll be getting back a web page from the @http@ bus driver, you can read this in your
+        brain as:
+
+
+        bq. _web page_ .body
+
+
+        And this bit of code:
+
+
+        bq. @print( http.get( '/index.html' ).body )@
+
+
+        This code gets the web page.  We send a @body@ message to the web page, which gives us all the
+        HTML in a _string_.  We then @print@ that string.  See how the basic dot-method pattern happens
+        in a chain.  The next chapter will explore all these sorts of patterns in Ruby.  It'll be good fun.
+
+
+        So, what does this code do?  It prints the HTML for the Ruby home page to the screen.  Using 
+        an web-enabled bus driver.
+
+
+    - And So, The Quick Trip Came To An Eased, Cushioned Halt: >
+
+        !i/the.foxes-8.gif(Running after the truck.)!
+
+
+        So now we have a problem.  I get the feeling that you are enjoying this way too much.
+        And you haven't even hit the chapter where I use jump-roping songs to help you learn
+        how to parse XML!
+ 
+
+        If you're already enjoying this, then things are really going bad.  Two chapters from
+        now you'll be writing your own Ruby programs.  In fact, it's right about there that I'll
+        have you start writing your own blogging software, your own file-sharing network (a la BitTorrent),
+        as well as a program that will instant-message you when you get e-mail.  And then, the
+        mother of all scripts: a program that will spider the entire internet for MIDI files!
+
+
+        !>i/graph-1.gif(Proof has been extracted from the pudding.)!
+
+
+        And you know (you've got to know!) that this is going to turn into an obsession.  First, you'll
+        completely forget to take the dog out.  It'll be standing by the screen door, darting its head
+        about, as your eyes devour the code, as your fingers slip messages to the computer.
+
+
+        Thanks to your neglect, things will start to break.  Your mounds of printed 
+        sheets of code will cover up your air vents.  Your furnace
+        will choke.  The trash will pile-up: take-out boxes you hurriedly ordered in, junk mail you couldn't
+        care to dispose of.  Your own uncleanliness will pollute the air.  Moss will infest the rafters, the water
+        will clog, animals will let themselves in, trees will come up through the foundations.
+
+
+        But your computer will be well-cared for.  And you, Smotchkkiss, will have nourished it with your knowledge.
+        In the eons you will have spent with your machine, you will have become part-CPU.  And it will
+        have become part-flesh.  Your arms will flow directly into its ports.  Your eyes will accept
+        the video directly from DVI-24 pin.  Your lungs will sit just above the processor, cooling it.
+
+
+        And just as the room is ready to force itself shut upon you, just as all the overgrowth swallows you
+        and your machine, you will finish your script.  You and the machine together will run this latest Ruby
+        script, the product of your obsession.  And the script will fire up chainsaws to trim the trees, hearths
+        to warm and regulate the house.  Builder nanites will rush from your script, reconstructing your quarters,
+        retiling, renovating, chroming, polishing, disinfecting.  Mighty androids will force your crumbling house into
+        firm, rigid architecture.  Great pillars will rise, statues chiseled.  You will have dominion over this
+        palatial estate and over the encompassing mountains and islands of your stronghold.
+
+
+        So I guess you're going to be okay.  Whatdya say?  Let's get moving on this script of yours?
+
+
+  - Floating Little Leaves of Code:
+    - >
+      Chapter 4 is still under construction.  Chapter 3 was a lot of work,
+      you know?  You've gotta be pretty burned out as well.  So, hey.
+      Take a good, healthy break.  I'm thinking six months.  Just to let
+      it sink in.
+
+
+      If this message is still here when you come back, well then take
+      another six months off.  Another free six months, courtesy of
+      all the fat cats here at W(P)GtR.

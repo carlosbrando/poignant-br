@@ -1,0 +1,98 @@
+<%
+    prevPage = chapter.index > 1 ? "chapter-#{ chapter.index - 1 }.html" : "index.html"
+    nextPage = chapter.index < book.chapters.length ? "chapter-#{ chapter.index + 1 }.html" : "index.html"
+%>
+<html>
+<head>
+    <title><%= book.title %> :: <%= chapter.index %>. <%= chapter.title %></title>
+    <link rel="stylesheet" type="text/css" href="guide.css" />
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" cellpadding="12" cellspacing="0" width="100%">
+<tr>
+    <td valign="top" bgcolor="#DD7766" style="border-bottom: dashed 2px #FFF;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td>
+        <h3><font color="#FFFFFF">why's <font color="#DDCCCC">(poignant)</font> guide to ruby</font></h3>
+        <a class="pagebar" href="http://whytheluckystiff.net/">whytheluckystiff.net</a> &gt; <a class="pagebar" href="index.html">Contents</a>
+        </td>
+        <td align="right">
+            &lt; <a class="pagebar" href="<%= prevPage %>">prev</a> | <a class="pagebar" href="<%= nextPage %>">next</a> &gt;
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<div align="center">
+<table border="0" cellpadding="12" cellspacing="0" width="800">
+<tr>
+    <td valign="top" align="center">
+        <h3><%= chapter.index %>.</h3>
+        <h1><%= chapter.title %></h1><br />
+        <img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" /><br />
+    </td>
+</tr>
+<tr>
+    <td valign="top">
+    <div class="content">
+
+    <% chapter.sections.each do |sect|
+        if sect.respond_to? :file_name %>
+
+        <img src="<%= sect.file_name %>" /><br />
+
+    <%  elsif sect.respond_to? :header %>
+        
+        <a name="section<%= sect.index %>" />
+        <h2><%= sect.index %>. <%= sect.header %></h2>
+
+        <%= sect.content.to_html %>
+
+    <%  elsif sect.respond_to? :title %>
+        
+        <div class="sidebar">
+        <h1>sidebar!</h1>
+        <h2><%= sect.title %></h2>
+
+        <%= sect.content.to_html %>
+        <h1>sidebar!</h1>
+        </div>
+
+    <% else %>
+
+        <%= RedCloth.new( sect ).to_html %>
+
+    <%  end %>
+    <% end %>
+
+        <p align="right">
+        <a href="<%= nextPage %>">Turn page.</a>
+        </p>
+
+    </div>
+    </td>
+</tr>
+</table>
+</div>
+<table border="0" cellpadding="12" cellspacing="0" width="100%">
+<tr>
+    <td valign="top" bgcolor="#DDDDDD" style="border-top: dashed 2px #AAA;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td>
+        <h3><font color="#666666">why's <font color="#AA8888">(poignant)</font> guide to ruby</font></h3>
+        </td>
+        <td align="right">
+            &lt; <a href="<%= prevPage %>">prev</a> | <a href="<%= nextPage %>">next</a> &gt;
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

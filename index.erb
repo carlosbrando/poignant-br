@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title><%= book.title %></title>
+    <link rel="stylesheet" type="text/css" href="guide.css" />
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table border="0">
+<tr>
+    <td valign="top" width="35%">
+
+        <!-- Left-hand access to the book online -->
+        <a href="chapter-1.html"><img src="<%= book.image.file_name %>" border="0" /></a><br />
+        <center><a href="chapter-1.html">Open the book.</a></center>
+        <br />
+
+        <div class="toc">
+        <ul>
+            <p>This book was tenderly written and illustrated by 
+            <a href="http://whytheluckystiff.net/">why the lucky stiff</a>.</p>
+
+            <h3>Contents</h3>
+            <% 
+            book.chapters.each do |chap| 
+            %>
+            <li><%= chap.index %>. 
+            <a href="chapter-<%= chap.index %>.html"><%= chap.title %></a></li>
+            <% 
+                if chap.sections.detect { |c| c.respond_to? :header }
+            %>
+                <ul>
+                <%
+                    chap.sections.each do |sect|
+                        next unless sect.respond_to?( :header )
+                %>
+                    <li><%= sect.index %>. 
+                        <a href="chapter-<%= chap.index %>.html#section<%= sect.index %>"><%= sect.header %></a></li>
+                <%
+                    end
+                %>
+                </ul>
+            <%
+                end
+            end 
+            %>
+        </ul>
+        </div>
+
+        <%= book.terms.to_html %>
+        
+        <div align="center">
+        <a href="chapter-1.html"><img src="i/ad-birdman.gif" style="border: solid 1px black;" /></a><br /><br />
+        <a href="chapter-1.html"><img src="i/ad-weeizards.gif" style="border: solid 1px black;" /></a><br /><br />
+        </div>
+
+        <br /><br />
+
+    </td>
+    <td valign="top" width="65%">
+
+        <br />
+
+        <!-- Page Content discussing Ruby, the book, and my site -->
+        <table border="0" cellpadding="6" cellspacing="6" width="100%">
+        <tr>
+            <td>
+
+            <% book.teaser.each do |sect| %>
+            <h2><%= sect.header %></h2>
+            <%= sect.content.to_html %>
+            <% end %>
+
+            </td>
+        </tr>
+        <tr>
+            <td> 
+
+            <!-- Creative Commons License -->
+            <a href="http://creativecommons.org/licenses/by-sa/1.0/"><img alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights.gif" /></a><br />
+            This work is licensed under a
+            <a href="http://creativecommons.org/licenses/by-sa/1.0/">Creative Commons License</a>.
+            <!-- /Creative Commons License -->
+
+
+            <!--
+
+            <rdf:RDF xmlns="http://web.resource.org/cc/"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <Work rdf:about="">
+               <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+               <license rdf:resource="http://creativecommons.org/licenses/by-sa/1.0/" />
+            </Work>
+
+            <License rdf:about="http://creativecommons.org/licenses/by-sa/1.0/">
+               <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+               <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+               <requires rdf:resource="http://web.resource.org/cc/Notice" />
+               <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+               <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+               <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+            </License>
+
+            </rdf:RDF>
+
+            -->
+
+            </td>
+        </tr>
+        </table>
+
+    </td>
+
+</tr>
+</table>
+
+</body>
+</html>
