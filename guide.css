@@ -13,10 +13,16 @@ h2 {
     margin: 5;
     padding: 0;
 }
-code {
+blockquote code {
     background-color: #FDE;
     padding: 5;
     line-height: 170%;
+}
+code {
+    background-color: #FFEEF5;
+    padding: 2;
+    line-height: 170%;
+    white-space: nowrap;
 }
 pre {
     background-color: #FDE;
@@ -26,6 +32,8 @@ pre {
     width: 80%;
 }
 .toc li {
+    font-size: .8em;
+    line-height: 140%;
     list-style: none;
 }
 ul {
@@ -40,12 +48,16 @@ p {
     line-height: 20px;
     padding: 10px;
 }
+p#terms {
+    font-size: .8em;
+    line-height: 140%;
+}
 .sidebar {
     background-color: #EFF9ED;
     border: solid 1px black;
-    width: 300px;
+    width: 280px;
     float: right;
-    margin: 20px;
+    margin: 10px;
     padding: 0px;
     z-index: 3;
 }
@@ -79,4 +91,11 @@ A.pagebar {
 }
 A.pagebar:hover {
     color: #FFFFFF;
+}
+#bulletin {
+    background-color: #FDE;
+    border: solid 1px #CBA;
+    margin: 3;
+    padding: 5;
+    font-size: .7em;
 }

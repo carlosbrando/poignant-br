@@ -1,4 +1,5 @@
 require 'erb'
+require 'ftools'
 require 'yaml'
 require 'redcloth'
 
@@ -68,20 +69,30 @@ end
 # Convert the book to HTML
 #
 if __FILE__ == $0
+    site_path = ARGV[0] || "."
     book = WhyTheLuckyStiff::Book::load( 'poignant.yml' )
     chapter = nil
 
     # Write index page
     index_tpl = ERB::new( File.open( 'index.erb' ).read )
-    File.open( 'index.html', 'w' ) do |out|
+    File.open( File.join( site_path, 'index.html' ), 'w' ) do |out|
         out << index_tpl.result
     end
 
     # Write chapter pages
     chapter_tpl = ERB::new( File.open( 'chapter.erb' ).read )
     book.chapters.each do |chapter|
-        File.open( "chapter-#{ chapter.index }.html", 'w' ) do |out|
+        File.open( File.join( site_path, "chapter-#{ chapter.index }.html" ), 'w' ) do |out|
             out << chapter_tpl.result
         end
+    end
+
+    # Copy css + images into site
+    copy_list = ["guide.css"] +
+                Dir["i/*"].find_all { |image| image =~ /\.(gif|jpg)$/ }
+
+    File.makedirs( File.join( site_path, "i" ) )
+    copy_list.each do |copy_file|
+        File.copy( copy_file, File.join( site_path, copy_file ) )
     end
 end
