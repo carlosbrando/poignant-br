@@ -102,6 +102,12 @@ if __FILE__ == $0
         end
     end
 
+    # Write printable version
+    print_tpl = ERB::new( File.open( 'print.erb' ).read )
+    File.open( File.join( site_path, "print.html" ), 'w' ) do |out|
+        out << print_tpl.result
+    end
+
     # Copy css + images into site
     copy_list = ["guide.css"] +
                 Dir["i/*"].find_all { |image| image =~ /\.(gif|jpg|png)$/ }

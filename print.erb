@@ -1,25 +1,25 @@
-<%
-    prevPage = chapter.index > 1 ? "chapter-#{ chapter.index - 1 }.html" : "index.html"
-    nextPage = chapter.index < book.chapters.length ? "chapter-#{ chapter.index + 1 }.html" : "index.html"
-%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><%= book.title %> :: <%= chapter.index %>. <%= chapter.title %></title>
+    <title><%= book.title %></title>
     <link rel="stylesheet" type="text/css" href="guide.css" />
 </head>
 <body>
 
-<div id="banner">
-   <div class="pager">
-   &lt; <a class="pagebar" href="<%= prevPage %>">prev</a> | <a class="pagebar" href="<%= nextPage %>">next</a> &gt;
-   </div>
-   <div class="title">
-   <h3>why's <span class="hilite">(poignant)</span> guide to ruby</h3>
-   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html">Contents</a>
-   </div>
-</div>
 <div align="center">
+<div class="page" style="margin-top: 90pt;">
+    <div class="pageTitle">
+    <p style="margin-bottom: 180pt;"><img src="i/poignant.guide.gif" /></p>
+    <p style="margin: 0px; padding: 0px;">tenderly written and illustrated by</p>
+    <h3 style="margin: 0px; padding: 0px;">why the lucky stiff</h3>
+    <p style="margin-top: 40pt;"><img src="i/cc-by.gif" /><img src="i/cc-sa.gif" /><br />
+    Licensed under the Attribution-ShareAlike license.<br />
+    See http://creativecommons.org/licenses/by-sa/2.0/ for details.</p>
+    </div>
+</div>
+<% book.chapters.each do |chapter| %>
+<br style="page-break-before: always;" />
 <div class="page">
     <div class="pageTitle">
         <h3><%= chapter.index %>.</h3>
@@ -59,20 +59,9 @@
     <%  end %>
     <% end %>
 
-        <p align="right">
-        <a href="<%= nextPage %>">Turn page.</a>
-        </p>
-
     </div>
 </div>
-</div>
-<div id="footer">
-   <div class="pager">
-   &lt; <a href="<%= prevPage %>">prev</a> | <a href="<%= nextPage %>">next</a> &gt;
-   </div>
-   <div class="title">
-   <h3>why's <span class="hilite">(poignant)</span> guide to ruby</h3>
-   </div>
+<% end %>
 </div>
 </body>
 </html>

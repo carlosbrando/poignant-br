@@ -2741,14 +2741,16 @@ chapters:
       correct course of action.
 
 
-      I'm sure you'd like to side with popular opinion (_He alienated himself!_), but you're bound
+      I'm sure you'd like to side with popular opinion, but you're bound
       to feel some small trickle of admiration for him once he's taken time to teach you all 
       about Ruby's class definitions.
       And moreso when you learn about mixins.  And perhaps, by the end of the chapter, we can all
       start to look beyond the Doctor's grievous past and stop calling him a madman.
 
 
-      So if you need to call him a madman, I'd get that out of your system right now before we dig in.
+      So if you need to call him a madman, I'd start heading down to the train tracks to
+      smash up some long flourescent light bulbs.  Get it out of your system right now, 
+      before we dig in.
 
 
     - This One's For the Disenfranchised: >
@@ -2758,13 +2760,17 @@ chapters:
 
         If you give me a number, which is any year from Dr. Cham's life, I'll give you a synopsis of that
         time period.  And I'll do it as a Ruby method, so it's an independent piece, an isolated chunk of
-        code which can be hooked up to the voice of a robotic volcano in the live-action series.
+        code which can be hooked up to the voice of a robotic volcano, when such a thing becomes the apex
+        of authoritative voice talents.
 
 
         Okay, so I need you to notice @def@ and @case@ and @when@.  You've seen the Ranges, the closed
         accordions of @1895..1913@, back in chapter 3.  They contain both ends and in between.  And the
-        backslashes at the end of each line aren't necessary, but they ignore the _Enter_ key at the
-        end of each line.  So, please: @def@ and @case@ and @when@.
+        backslashes at the end of each line simply ignore the _Enter_ key at the end of each line, assuring
+        Ruby that there is _more of this line to come_.
+
+
+        So, please: @def@ and @case@ and @when@.
 
 
         <pre>
@@ -2815,8 +2821,10 @@ chapters:
 
 
         Let me be clear about the @case@ statement.  Actually, I should call it a @case..when@ statement,
-        since they cannot be used separately.  The @case@ keyword takes a value and compares it against
-        values which follow @when@ keywords.  You can do the same thing with a bunch of @if@ statements.
+        since they cannot be used separately.  The @case@ keyword is followed by a value, which is compared against
+        each of the values which follow @when@ keywords.  The first value to qualify as a match is the one the
+        case uses and the rest are ignored.  You can do the same thing with a bunch of @if..elsif@ statements,
+        but it's wordier.
        
 
         <pre>
@@ -2855,6 +2863,10 @@ chapters:
         and lets the Integer @1905@ in, because even though it's not *equal* to the Range, it's *included* in the
         set of Integers represented by the Range.  Which is good enough in some cases, such as the timeline I put
         together earlier.
+
+
+        Which actually looked like a timeline, didn't it?  I mean, sure, @dr_chams_timeline@ method is code, but
+        it does read like a timeline, clean and lovely.
 
 
         !i/elderly-2.gif(What research revealed.)!
@@ -2947,7 +2959,7 @@ chapters:
 
 
         One local newspaper actually visited Dr. Cham.  Their book reviewer gave him four stars.
-        Really.  She did an article on him.  Gave him a rating even.
+        Really.  She did an article on him.  Gave him a rating.
 
 
         Just know that Dr. N. Harold Cham felt terrible about his niece.  He felt the shock treatment
@@ -3117,7 +3129,7 @@ chapters:
 
 
         One day as I quizzed the organ maestro, he sketched out the following Ruby code on a pad
-        of cheese-colored paper.  (I remember because cheese smells were coming from somewhere, I
+        of cheese-colored paper.  (And queer cheese smells were coming from somewhere, I
         can't say where.)
 
 
@@ -3172,14 +3184,14 @@ chapters:
         can't be used outside the *scope* of the class.
 
 
-        In chapter three, we briefly looked at instance variables and decided to see them
-        as *attributes*.  (The at symbol could mean *attribute*.)  Instance variables can used
+        In chapter three, we briefly looked at instance variables and decided to respect them
+        as *attributes*.  (The *at symbol* could mean *attribute*.)  Instance variables can used
         to store any kind of information, but they're most often use to store bits of information
         about the object represented by the class.
 
 
-        In the above case, each wish maker for the day has it's own energy level.  If the wish maker
-        were a machine, you might see a gauge on it that's points to the energy left inside.
+        In the above case, each wish maker for the day has its own energy level.  If the wish maker
+        were a machine, you might see a gauge on it that points to the energy left inside.
         The @@energy@ instance variable is going to act as that gauge.
 
 
@@ -3190,7 +3202,7 @@ chapters:
 
 
         Okay, step back and ensure you understand the example here.  The @WishMaker@ class is
-        an outline we've laid out for how the whole wish program works.  It's not the _actual_ genie in
+        an outline we've laid out for how the whole magic wish program works.  It's not the _actual_ genie in
         the bottle, it's the paperwork behind the scenes.  It's the rules and obligations the genie
         has to live by.
 
@@ -3198,6 +3210,18 @@ chapters:
         It's @todays_wishes@ that's the genie in the bottle.  And here we're giving it a wish to grant.
         Give us antlers, genie.  (If you really get antlers from this example, I don't want to hear
         about it.  Go leap in meadows with your own kind now.)
+
+
+        In the last chapter, the drill was: Ruby has two halves.
+
+
+        # Defining things.
+
+        # Putting those things into action.
+
+
+        What are the actions in Ruby?  Methods.  And now, you're having a lick of the definition language
+        built-in to Ruby.  Method definitions using @def@.  Class definitions using @class@.
 
 
         At this point in your instruction, it's easier to understand that *everything in Ruby is an object.*
@@ -3232,7 +3256,7 @@ chapters:
         land on a lizard's back, sticking to its spindly little horn.
 
 
-        And let's say it makes it that far.  Well, then, _down the twisted wood_ goes
+        And let's say your wish makes it that far.  Well, then, _down the twisted wood_ goes
         the skinny salamander, scurrying through the decaying churches which had been
         *pushed* over that steep canyon ledge once and for all.  And the expired priest inside, _who
         weathered the fall_ as well, will kill the little amphibian -- strangle it
@@ -3287,13 +3311,13 @@ chapters:
         h3. Dr. Cham Ventures Inside
 
 
-        But as Dr. Cham neared the castle, although the planet was reading his thoughts, sensing his
+        But as Dr. Cham neared the castle, although the planet was aware of his thoughts, sensing his
         wonderment and anticipation, all Dr. Cham felt was deadness.  He tromped up the steps of its
         open gate and through the entrance of the most beautiful architecture and was almost certain it
         was deserted.
 
 
-        For a while he knocked.
+        For a while he knocked.  Which paid off.
 
 
         !i/castle-1.jpg(Blocky whale greeting.)!
@@ -3566,6 +3590,37 @@ chapters:
         definition for @Elevator@ and Ruby just adds your changes to the existing class definition?
 
 
+        Class methods are usually called with the *double colon*.  But, a period is fine as well.
+        Since @Elevator@ is a class itself, Ruby will figure that if you call @Elevator.maintenance_password@,
+        you're calling a class method.  The double colon simply helps make class methods obvious
+        to the reader.
+
+
+        And justly so.  Class methods are a bit unusual.  Normally you won't want to store information
+        directly inside of a class.  However, if you have a bit of information that you need to
+        share among all objects of a class, then you have a good reason to use the class for storage.
+        It's understandable that the @@@maintenance_password@ would be stored in the class, instead of
+        in each separate object.  This way, the objects can simply reach up into the class and see the
+        shared password.
+
+
+        Here's probably how the password protection works.
+
+
+        <pre>
+          class Elevator
+            def initialize( pass )
+              raise AccessDeniedError, "bad password" \
+                unless pass.equals? @@maintenance_password
+            end
+          end
+        </pre>
+
+
+        Passwording a class like this is pointless, since anything in Ruby can be altered and 
+        overwritten and remolded.  Dr. Cham had the password and ownership of the elevator is his.
+
+
         <pre>
           irb> e = Elevator.new( "stairs_are_history!" )
           #<Elevator:0x81f12f4 @level=4>
@@ -3584,7 +3639,7 @@ chapters:
         I dug up this article from _The Consistent Reminder_, a Connecticut newspaper
         which ran the four star review of Dr. Cham.  Midgie Dare, the book reviewer
         who suddenly opened her critical eye to anything tangible, praised the Doctor for his
-        manners and innovations in the very same edition that she defamed cantaloupe and docked
+        manners and innovations in the very same daily edition that she defamed cantaloupe and docked
         Manitoba for having crackly telephone service.
 
 
@@ -3602,9 +3657,9 @@ chapters:
         the ground.  So precise and clean a step that it seemed it would never
         meet the earth, only hover slight above it.  Then, before the landing
         had actually registered with any of us, we were off to the cuisine, whisked
-        away in the shroud of gaiety that was always right in front of Harold Cham
-        and always just behind him, but most especially concentrate directly
-        in his own proportionate form.
+        away in the shroud of gaiety that was always right in front of Harold Cham,
+        always just behind him, and most especially concentrate directly
+        in his own luminary self.
 
 
         bq. He also carried loosely at his side a capitally ignorant statesman's
@@ -3974,10 +4029,13 @@ chapters:
 #        young Annabelle fed them too much 7-Up and Earmuffs.
 
     - >
-        Oh, and one more thing about @dup@.  Some things can't be dup'd.  Numbers, for instance.  Also, some
-        of the special variables: @nil@, @true@, @false@.  These are things that Ruby won't let you alter,
-        so there's so point making a copy anyway.  I mean, imagine if you could change @false@ to be @true@.
-        The whole thing becomes a lie.
+        Oh, and one more thing about @dup@.  Some things can't be dup'd.  Numbers, for instance.  
+        Symbols (which look like @:death@) are identical when spelled the same.  Like numbers.
+
+
+        Also, some of the special variables: @nil@, @true@, @false@.  These are things that Ruby won't let
+        you alter, so there's so point making a copy anyway.  I mean, imagine if you could change @false@
+        to be @true@.  The whole thing becomes a lie.
 
 
         Perhaps *Confusing Aspect No. 3* is a simple one.  I'm using those square brackets on the 
@@ -4246,7 +4304,7 @@ chapters:
 
         I say Paij-ree's property is a very charming section of woods when it's not raining cats and Doug.
         For many days, Paij-ree and I camped in tents by the river behind his house, subsisting on smoked
-        blackbird and whittling little sleeping indians by the dusklight.  On occassion he would loose
+        blackbird and whittling little sleeping indians by the dusklight.  On occassion he would lose
         a game of spades and I knew his mind was distracted, thinking of Endertromb.  All of this
         must have been stirring inside of him for sometime.  I was the first ear he'd ever had.
 
@@ -4319,7 +4377,7 @@ chapters:
         The goat closed his mouth and Dr. Cham held his heart.
 
 
-        "I'm actually very literate," said the goat.  "More recently, I've switched to
+        "I'm actually very literate," said the goat.  "Albeit, more recently, I've switched to
         movies.  I love foreign films.  One of my relatives just brough back _Ishtar_
         from your planet.  Wow, that was excellent."
 
@@ -4355,7 +4413,7 @@ chapters:
         </pre>
 
     - >
-        "I haven't been to my planet in a long time.  It would be hard to consider it my
+        "I haven't been to my planet in a long time.  It would be difficult to consider it my
         home at this stage."
 
 
@@ -4485,6 +4543,17 @@ chapters:
         </pre>
 
 
+        @ArrayMine@ is now a custom @Array@ class with its own @join@ method.  @Array@ is
+        the *superclass* of @ArrayMine@.  Every object has a @superclass@ method where you
+        can verify this relationship.
+
+
+        <pre>
+          irb> ArrayMine.superclass
+            => Array
+        </pre>
+
+
         Perfect.  We manage a hotel and we have an @Array@ of our room sizes: @[3, 4, 6]@.
         Let's turn it into a readable statement on a brochure.
 
@@ -4498,13 +4567,51 @@ chapters:
         Which prints, "We have 3 bed, 4 bed, 6 bed rooms available."
 
 
+        You don't need to be in a class definition to use inheritance.  You can use
+        @Object#extend@, which will pull all the methods from a class into an object.
+
+
+        <pre>
+          rooms = [3, 4, 6]
+          rooms.extend ArrayMine
+          print "We have " + rooms.join( ", ", "% bed" ) + " rooms available."
+        </pre>
+
+
         Dr. Cham was looking around for a bathroom, but archival video tape was everywhere.
         He eventually found a place, it may have been a bathroom.  It had a metal bin.
         More importantly, it was dark and out of eyesight.
         
 
-        When he came out refreshed, the filmstrip was a bit behind.  But the goat hadn't
-        noticed, so he advance frames until it made some sense.
+        While he's in there, let me add that while The Originals slaughtered The Invaders
+        to prove their rights as First Creatures, the Ruby Object doesn't have any such
+        dispute.  It is the absolute king Object the First.
+
+
+        Watch.
+
+
+        <pre>
+          irb> Class.superclass
+            => Module
+          irb> Kernel.class
+            => Module
+          irb> Module.superclass
+            => Object
+          irb> Object.superclass
+            => nil
+        </pre>
+
+
+        Even @Class@ is an @Object@!  See, although classes are the definition language for objects,
+        we still call class methods on them and treat them like objects occassionally.  It may seem
+        like a dizzying circle, but it's truly a very strict parentage.  And it ensures that when you
+        alter the @Object@, you alter *everything in Ruby*.  Which is impossibly scary and all-powerful
+        and cataclysmic and awesome!  *Ruby does not restrict you, my sister, my brother!* 
+
+
+        When Dr. Cham came out refreshed, the filmstrip was a bit behind.  But the goat hadn't
+        noticed, so the Doctor advanced frames until it made some sense.
 
 
         !i/filmstrip-2.gif(The goats that told a planet it was ugly.)!
@@ -4521,7 +4628,7 @@ chapters:
         and apple blossoms and the sky even.  It's a low-resolution projection."
 
 
-        "Yes?  Still, looking at it, I was amazed.  It's beautiful."
+        "Yes?  It is enchanting."
 
 
         "I guess."
@@ -4616,9 +4723,36 @@ chapters:
         !i/hannah-1.gif(The goat alone in the hallway, meets an apparition.)!
 
 
-        And, then came Dr. Cham back through the doorway.
+        In another room, Dr. Cham stood under the clear glass silently.  The ceiling had abruptly
+        gone transparent, then starlight washed over his pants and jacket.  He walked further to
+        the room's center in muted colors, lit as softly as an ancient manuscript in its own box at
+        the museum.  More stars, more cotton clusters of fire, unveiled as he came across the floor.
+        And it peeked into view soon enough, he expected it to be larger, but it wasn't.
 
 
+        Earth.  Like a painted egg, still fresh.  He felt long cello strings sing right up
+        against his spine.  How could that be called Peoplemud?  Here was a vibrant and grassy
+        lightbulb.  The one big ball that had something going for it.
+
+
+        He thought of The Rockettes.  Actually, he missed The Rockettes.  What a bunch of
+        great dancers.  He had yelled something to The Rockettes when he saw them.  Something
+        very observant and flattering.
+
+
+        Oh, yes, while The Rockettes were spinning, arm in arm, he had yelled, "Concentric circles!"
+        Which no one else cared to observe. 
+        
+
+        And this thought was enough to feed Dr. Cham's superiority complex.  He wore a goofy
+        smile as he retraced his footsteps.  He truthfully felt his genius coming through in
+        such a statement.  To realize the simplicity of a circle was his.  He reflected on it
+        all the way back to the hallway.
+
+
+        Which I think is great.  Adore yourself when you have a second.
+
+ 
         !i/hannah-2.gif(The Doctor knows this ghost.)!
 
 
@@ -4852,18 +4986,42 @@ chapters:
 
 
         The lottery captain would need to draw three random numbers at the close
-        of the lottery, so we'll add a convenient method for generating random
+        of the lottery, so we'll add a convenient class method for generating random
         tickets.
 
 
         <pre>
-          class LotteryDraw
-            def LotteryDraw.new_random
-              LotteryTicket.new( rand( 25 ) + 1,
-                rand( 25 ) + 1, rand( 25 ) + 1 )
+          class LotteryTicket
+            def self.new_random
+              new( rand( 25 ) + 1, rand( 25 ) + 1, rand( 25 ) + 1 )
             end
           end
         </pre>
+
+
+        Oh, no.  But we have that stupid error that pops up if two of the random numbers
+        happen to be identical.  If two numbers are the same, the @initialize@ throws
+        an @ArgumentError@.
+
+
+        The trick is going to be restarting the method if an error happens.
+        We can use Ruby's @rescue@ to handle the error and @redo@ to start the method
+        over.
+
+
+        <pre>
+          class LotteryTicket
+            def self.new_random
+              new( rand( 25 ) + 1, rand( 25 ) + 1, rand( 25 ) + 1 )
+            rescue ArgumentError
+              redo
+            end
+          end
+        </pre>
+
+
+        Better.  It may take a couple times for the numbers to fall together right,
+        but it'll happen.  The wait will build suspense, huh?
 
 
         The lottery captain kept a roster of everyone who bought tickets, along
@@ -4871,7 +5029,7 @@ chapters:
 
 
         <pre>
-          module LotteryDraw
+          clas LotteryDraw
             @@tickets = {}
             def LotteryDraw.buy( customer, *tickets )
               unless @@tickets.has_key?( customer )
@@ -4887,7 +5045,7 @@ chapters:
 
 
         <pre>
-          LotteryDraw.buy :Yal_dal_rip_sip,
+          LotteryDraw.buy 'Yal-dal-rip-sip',
               LotteryTicket.new( 12, 6, 19 ),
               LotteryTicket.new( 5, 1, 3 ),
               LotteryTicket.new( 24, 6, 8 )
@@ -4899,15 +5057,120 @@ chapters:
 
 
         <pre>
-          class << LotteryDraw
-            def play
-              final = 
-                begin
-                  LotteryTicket.new( rand( 25 ) + 1,
-                    rand( 25 ) + 1, rand( 25 ) + 1 )
-              @@tickets
+          class LotteryTicket
+            def score( final )
+              count = 0
+              final.picks.each do |note|
+                count +=1 if picks.include? note
+              end
+              count
             end
           end
+        </pre>
+
+
+        The @score@ method compares a @LotteryTicket@ against a random ticket,
+        which represents the winning combination.  The random ticket is passed in
+        through the @final@ variable.  The ticket gets one point for every winning
+        number.  The point total is returned from the @score@ method.
+
+
+        <pre>
+          irb> ticket = LotteryTicket.new( 2, 5, 19 )
+          irb> winner = LotteryTicket.new( 4, 5, 19 )
+          irb> ticket.score( winner )
+            => 2
+        </pre>
+
+
+        You will see how brilliant Paij-ree is, in time.  His father commissioned him
+        to finish the lottery for him, while the demand for tickets consumed the
+        lottery captain's daylight hours.  Can't you just imagine young Paij-ree in his stuffy
+        suit, snapping a rubber band at the company meetings where he proposed the
+        final piece of the system?  Sure, when he stood up, his dad did all the talking for
+        him, but he flipped on the projector and adjusted the focus.
+
+ 
+        <pre>
+          class << LotteryDraw
+            def play
+              final = LotteryTicket.new_random
+              winners = {}
+              @@tickets.each do |buyer, ticket_list|
+                ticket_list.each do |ticket|
+                  score = ticket.score( final )
+                  next if score.zero?
+                  winners[buyer] ||= []
+                  winners[buyer] << [ ticket, score ]
+                end
+              end
+              @@tickets.clear
+              winners
+            end
+          end
+        </pre>
+
+
+        His father's associates were stunned.  What was this?  (Paij-ree knew this
+        was just another class method definition -- they would all feel completely
+        demoralized when he told them so.)  They couldn't understand the *double
+        angle bracket* up there!  Yes, it was a concatenator, but how is it in
+        the class title?
+
+
+        _Infants_, thought Paij-ree, although he held everyone of those men in very
+        high esteem.  He was just a kid and kids are tough as a brick's teeth. 
+
+
+        The @<<@ operator allows you to alter the definition of an object.
+        Had Paij-ree simply used @class LotteryDraw@, his @play@ method would be
+        a normal instance method.  But since he used the @<<@ operator, the @play@
+        method will be added directly to the class, as a class method.  
+
+
+        When you see @class << obj@, believe in your heart, _I'm adding directly to the definition
+        of @obj@._
+
+
+        The budding organ instructor also threw in a tricky syntax worth examining.
+        In the ninth line, a winner has been found.
+
+
+        <pre>
+          winners[buyer] ||= []
+          winners[buyer] << [ ticket, score ]
+        </pre>
+
+
+        The @||=@ syntax is a shortcut.
+
+
+        <pre>
+          winners[buyer] = winners[buyer] || []
+        </pre>
+
+
+        The *double pipe* is an *or* logic.  Set @winners[buyer]@ equal to @winners[buyer]@ or,
+        if @winners[buyer]@ is nil, set it to @[]@.  This shortcut is a little strange, but if you
+        can really plant it in your head, it's a nice timesaver.  You're just making sure a variable
+        is set before using it.
+
+
+        <pre>
+          irb> LotteryDraw.play.each do |winner, tickets|
+          irb>   puts winner + "won on " + tickets.length + " ticket(s)!"
+          irb>   tickets.each do |ticket, score|
+          irb>     puts "\t" + ticket.picks.join( ', ' ) + ": " + score
+          irb>   end
+          irb> end
+
+          Gram-yol won on 2 ticket(s)!
+              25, 14, 33: 1
+              12, 11, 29: 1
+          Tarker-azain won on 1 ticket(s)!
+              13, 15, 29: 2
+          Bramlor-exxon won on 1 ticket(s)!
+              2, 6, 14: 1
         </pre>
 
 
@@ -5046,7 +5309,7 @@ chapters:
         The city was crowded with people who had lost interest in the lottery.  The weather
         had really worn everyone down as well.  Such terrible rain flooding their cellars.
         The entire city was forced to move up one story.  You'd go to put the cap back on your
-        pen and you'd ruin the pen, since the cap was already full of slosh.  Everyone was frustrated,
+        pen and you'd ruin the pen, since the cap was already full of slosh.  Everyone was depleted,
         many people drowned.
 
 
@@ -5075,14 +5338,158 @@ chapters:
         Paij-ree called the gull _Eb-F-F-A_, after that favorite song.
 
 
+        Friendship can be a very good catalyst for progress.  A friend can find traits in you
+        that no one else can.  It's like they searched your person and somehow came up
+        with five full sets of silverware you never knew were there.  And even though
+        that friend may not understand why you had these utensils concealed, it's still a
+        great feat, worth honoring.
+
+
+        While _Eb-F-F-A_ didn't find silverware, he did find something else.  A
+        pile of something else.  Since Paij-ree was stranded on the quadruple bed, the gull
+        would scout around for food.  One day, he flew down upon a barrel, floating over where
+        the toolshed had been.  _Eb-F-F-A_ walked on top of the barrel, spinning it back to Paij-ree's
+        house and they cracked it open, revealing Paij-ree's lost collection of duck bills.
+
+
+        Yes, real duck bills. (_Eb-F-F-A_ was esophagizing his squawks, remaining calm,
+        sucking beads of sweat back into his forehead -- ducks were not _of his chosen feather_,
+        but still in the species.)  Paij-ree clapped gleefully, absolutely, he had intended
+        to shingle his house with these, they could have deflected a bit of the torrent.
+        Probably not much, nothing to cry about.
+
+
+        And the roof glue was at the barrel's bottom and they were two enterprising
+        bunkmates with time to kill, so they made a raft from the previously-quacked
+        lip shades.  And off they were to the country!  Stirring through a real mess of
+        city and soup.  How strange it was to hit a beach and find out it was just the old
+        dirt road passed Toffletown Junction.
+
+
+        In the country, they sold.  It was always a long walk to the next plantation,
+        but there would be a few buyers up in the mansion ("Welcome to The Mansion Built on Beets",
+        they'd say or, "The Mansion Built on Cellophane Substitutes -- don't you know how
+        harmful real cellophane can be?")  And one of the families wrapped up some excess
+        jelly and ham in some cellophane for the two travellers.  And they almost died one day later
+        because of it.
+        
+
+        Then, when the heat came and, as the first countryside lottery was at nigh,
+        a farmer called to them from his field, as he stood by his grazing cow.
+        Paij-ree and _Eb-F-F-A_ wandered out to him, murmuring to each other as to
+        whether they should offer him the Wind-Beaten Ticket Special or whether he
+        might want to opt in to winning Risky Rosco's Original Homestyle Country 
+        Medallion.
+
+
+        But the farmer waved them down as he approached, "No, put your calculators and probability
+        wheels away.  It's for my grazledon."  He meant his cow.  The Endertromb version:
+        twice as much flesh, twice as meaty, doesn't produce milk, produces paper plates.  Still,
+        it grazes.
+
+
+        "Your grazledon (poh-kon-ic) wants a lucky ticket?" asked Paij-ree.
+
+
+        "He saw you two and got real excited," said the farmer.  "He doesn't know numbers,
+        but he understands luck a bit.  He almost got hit by a doter plane one day and, when
+        I found him, he just gave shrug.  It was like he said, 'Well, I guess that worked out
+        okay.'"
+
+
+        "The whole (shas-op) lottery is numer-(ig-ig)-ic," said Paij-ree.  "Does he know
+        (elsh) notes?  My eagle knows (losh) notes."  Paij-ree whistled at the crater gull,
+        who cooed back a sustained _D_.
+
+
+        The farmer couldn't speak to his grazledon's tonal awareness, so Paij-ree sent the gull
+        to find out (_D-D-D-A-D_, _go-teach-the-gra-zle_) while he hacked some notes into
+        his calculator.
+
+
         <pre>
-          class AnimalLottery
+          class AnimalLottoTicket
+
+            # A list of valid notes.
             NOTES = [:Ab, :A, :Bb, :B, :C, :Db, :D, :Eb, :E, :F, :Gb, :G]
+
+            # Stores the three picked notes and a purchase date.
+            attr_reader :picks, :purchased
+
+            # Creates a new ticket from three chosen notes.  The three notes
+            # must be unique notes.
+            def initialize( note1, note2, note3 )
+              if [note1, note2, note3].uniq!
+                raise ArgumentError, "the three picks must be different notes"
+              elsif picks.detect { |p| not NOTES.include? p }
+                raise ArgumentError, "the three picks must be notes in the chromatic scale."
+              end
+              @picks = picks
+              @purchased = Time.now
+            end
+
+            # Score this ticket against the final draw.
+            def score( final )
+              count = 0
+              final.picks.each do |note|
+                count +=1 if picks.include? note
+              end
+              count
+            end
+
+            # Constructor to create a random AnimalLottoTicket
+            def self.new_random
+              new( NOTES[ rand( NOTES.length ) ], NOTES[ rand( NOTES.length ) ],
+                   NOTES[ rand( NOTES.length ) ] )
+            rescue ArgumentError
+              redo
+            end
+
           end
         </pre>
 
 
-        Not too long after the building of Toffle City, Paij-ree felt the crater gull _Eb-F-F-A_
+        No need for the animal's tickets to behave drastically different from the traditional
+        tickets.  The @AnimalLottoTicket@ class is internally different, but exposes the same
+        methods seen in the original @LotteryTicket@ class.
+        The @score@ method is even identical to the @score@ method from the old @LotteryTicket@
+        class.
+
+
+        Instead of using a class variable to store the musical note list, they're stored in
+        a constant called @AnimalLottoTicket::NOTES@.  Variables change and the note list
+        shouldn't change.  Constants are designed to stay the same.  You can still change the
+        constant, but you'll have to be tricky or Ruby will speak up.
+
+
+        <pre>
+          irb> AnimalLottoTicket::NOTES = [:TOOT, :TWEET, :BLAT]
+          (irb):3: warning: already initialized constant NOTES
+            => [:TOOT, :TWEET, :BLAT]
+        </pre>
+
+
+        The gull came back with the grazledon, his name was Merphy, he was thrilled to play chance,
+        he puffed his face dreamily, whistled five and six notes
+        in series, they all held his collar, pulled him close to the calculator and let him breathe
+        three notes, then they choked the bedosh outta him until his ticket was printed and 
+        everything was nicely catalogued inside @@@tickets['merphy']@.  Thankyou, see ya at the draw!
+
+
+        So, the fever of the lottery became an epidemic among the simple minds of the animals.  
+        Paij-ree saved his costs, used the same @LotteryDraw@ class he'd used in the corporate environment of
+        the lottery from his childhood.  And soon enough, the animals were making their own
+        music and their own maps and films.
+
+
+        "What about The Originals?" I asked Paij-ree.  "They must have hated your animals!"
+
+
+        But he winced sourly and pinched his forehead.  "I am an Original.  You as well.
+        Do we (ae-o) hate any of them?"
+
+
+        Not too long after the lottery ended, Paij-ree felt the crater gull _Eb-F-F-A_
         lighting upon his shoulder, which whistled an urgent and sad _C-Eb-D C-A-Eb_.
         These desparate notes sent an organ roll of chills straight through Paij-ree.  Had the
         King God of Potted Soil, Our Beloved Topiary, *the Mossiah Quos*, Literal Father of
@@ -5118,13 +5525,436 @@ chapters:
 
     - Them What Make the Rules: >
 
+        Hannah lept back from the wall and clenched down on her fingers.
+
+
+        "This is the wall," said Dr. Cham.  "The Originals are in there.  My child, can you
+        lead us to the observation deck?"
+
+
+        "You expect us to go up against those guys?" asked the goat.  "They're mad as koalas.  But these
+        koalas have lasers!"
+
+
+        "We prevail, though," said Dr. Cham.  "You and I know this."
+
+
+        "Okay, well I'm muddled on that point," said the goat.  "Do we really win?
+        Or could be thinking about _Kramer vs. Kramer_?  Does Dustin Hoffman win or do we win?"
+
+
+        "No.  No.  No.  No."  Hannah hovered and dragged her legs along the wall nervously.
+        "There is a man with a huge face in there!"
+
+
+        "Mr. Face," said the Doctor.  "He is the original face."
+
+
+        "He didn't see me," said Hannah and moaned.  HOMA-HOMA-ALLO-ALLO.
+
+
+        She made that hollow weeping through the crumbling mouseholes and the freezer gateways,
+        fluxing in and out, causing the video checkpoints to hiss and the wall panels to
+        brace themselves and fall silent.  The three passed through two levels of frayed security
+        and emerged in the observation deck overlooking the cargo bay.
+
+
         !i/the.originals-1.jpg(Klon Ooper. Corwood. Mr. Face. Vonblisser.  The Originals.)!
+
+
+        "The last living among The Originals," said Dr. Cham.  "Are you alright with this,
+        Hannah?"  Which she didn't hear in any way, as her eyes laid fixed on the legendary
+        creatures.
+
+
+        "Look at them," said the goat.  "These guys wrote the rule books, Doctor.  We owe
+        everything to these guys."
+
+
+        "What about God?" said Dr. Cham.
+
+        
+        "I don't really know," said the goat.  "Hannah probably knows better than any of us
+        about that."
+
+
+        Hannah said nothing.  She only really knew one other ghost and that was her Post-Decease Mediator,
+        Jamie Huft.  Who didn't seem to have any answers for her and required questions to be submitted
+        in writing with a self-addressed stamped envelope included.  Hannah hadn't gotten the ball rolling
+        on that P.O. Box yet.
+
+
+        "We must be up in the mountains," said the goat.  "Look out at that blackness."
+
+
+        "I saw another deck like this down by where we found Hannah," said Dr. Cham.  "Down closer
+        to your living area.  You should take time to search for it.  It's very peaceful there.
+        You can see Earth and the seven seas."
+
+
+        "The seven seas?"  The goat wondered if that was near The Rockettes.  He'd read his share
+        of material on precision dancing and he'd seen that line of legs, mincing across the
+        stage like a big, glitsy rototiller.
+        
+
+        Hannah stirred to life.
 
 
         !i/the.originals-2.jpg(Hannah panicks. Maple donuts are within reach.)!
 
 
+        !i/the.originals-3.jpg(They couldn't hear them, but they saw their slides.)!
+
+
+        And none of the three spoke when The Originals flicked off the slide projector
+        and boarded a very slender rocketship and cleanly exploded through a crevice in the
+        cargo bay roof.
+
+
+        "Oh, boy," said the goat.
+
+
+        "What?" said Hannah.
+
+
+        "You're going to die," said the goat.
+
+
+        Dr. Cham looked over the controls in front of them, a long panel of padded handles and
+        green screens.
+
+
+        "I'm already dead.  I'm a ghost."
+
+
+        The goat looked down at the Doctor, who was rummaging under the control panel.  "Okay, well
+        if your uncle isn't going to have a talk with you, I'm going to make things very clear.  There's
+        a good chance these guys are going to build a bomb.  And you see how I'm fidgeting?  You see
+        how my knees are wobbling?"
+
+
+        "Yeah."
+
+
+        "Yeah, that's how real this is, kid.  I don't remember anything from that _confounded book_ except
+        that these guys are building a bomb that can blow up the ghost world.  
+        Because once the ghost world's gone, then Digger Dosh gets his one second back.  
+        It's a trade they've worked out.  Hell, it's sick stuff, that's all you need to know."
+
+
+        "But I'm dead."
+
+
+        "Okay, well, we're talking, aren't we?  You can talk, so are you dead?"  The goat shook his head.
+        "I wish I could remember if we win or if it was Dustin Hoffman."
+
+
+        Hannah cried.  "Why do I have to die again?"  She wailed and her legs fell into
+        flux and she sunk into the floor.  MOH-MOHHH-MAO-MAOOO.
+
+
+        Dr. Cham had forceably yanked on a plush handle, which unlocked and slid open like a breadbox.
+        He reached his hands inside and found a keyboard firmly bolted deep inside.
+
+
+        "That's it," he said and pulled up @irb@, which appeared on a display to the left of his
+        concealed typing.  He checked the Ruby version.
+
+
+        <pre>
+          irb> RUBY_VERSION
+            => "1.8.2"
+        </pre>
+
+
+        Ruby was up-to-date.  What else could he do?  Scanning @constants@ and @class_variables@ was pointless.
+        The only reason that had worked with the @Elevator@ class was because someone had left @irb@ running
+        with their classes still loaded.
+
+
+        He had just loaded this @irb@, so no special classes were available yet.  He had to find some classes.
+        He started by loading the @`rbconfig`@ file to get an idea of what Ruby's settings were.
+
+
+        <pre>
+          irb> require 'rbconfig'
+            => true
+          irb> Config::CONFIG
+            => {"abs_srcdir"=>"$(ac_abs_srcdir)", "sitedir"=>"bay://Ruby/lib/site_ruby", ... }
+        </pre>
+
+
+        Too much information to sort through there.  The @Config::CONFIG@ constant is a Hash that
+        contains every environment setting used to setup Ruby.  You can find the operating system
+        name at @Config::CONFIG['host_os']@.  The directory where core Ruby libraries are stored
+        can be found at @Config::CONFIG['rubylibdir']@.  Ruby programs can store helper files at
+        @Config::CONFIG['datadir']@.
+        
+
+        What Dr. Cham really needed, though, was a list of all the libraries that aren't core Ruby
+        libraries.  Libraries which were installed by The Originals or whoever manned this console.
+        He checked a few global variables for this information.
+
+
+        <pre>
+          irb> $"
+            => ["irb.rb", "e2mmap.rb", "irb/init.rb", ... "rbconfig.rb"]
+          irb> $:
+            => ["bay://Ruby/lib/site_ruby/1.9", "bay://Ruby/lib/site_ruby/1.9/i686-unknown",
+                "bay://Ruby/lib/site_ruby", "bay://Ruby/lib/1.9", 
+                "bay://Ruby/lib/1.9/i686-unknown", "."]
+        </pre>
+
+
+        Aha, good.  Dr. Cham stroked his beard and looked over his @irb@ session.  The @$"@ global variable
+        contains an Array of every library which has been loaded with @require@.  Most of these libraries
+        had been loaded by @irb@.  He had loaded @'rbconfig.rb'@ earlier, though.
+
+
+        The @$:@ global variable, which can also be accessed as @$LOAD_PATH@, contains a list of all
+        the directories which Ruby will check when you try to load a file with @require@.  When Dr.
+        Cham ran @require 'rbconfig'@, Ruby checked each directory in order.
+
+
+        <pre>
+          bay://Ruby/lib/site_ruby/1.9/rbconfig.rb
+          bay://Ruby/lib/site_ruby/1.9/i686-unknown/rbconfig.rb (*)
+          bay://Ruby/lib/site_ruby/rbconfig.rb
+          bay://Ruby/lib/1.9/rbconfig.rb
+          bay://Ruby/lib/1.9/i686-unknown/rbconfig.rb
+          ./rbconfig.rb
+        </pre>
+
+
+        The second path was where Ruby ended up finding the rbconfig.rb file.  Dr. Cham guessed that
+        the first five paths were *absolute paths*.  These were paths to directories on a drive called
+        @bay@.  Absolute paths may vary on your system.  On Windows, absolute paths will start with
+        a drive letter.  On Linux, absolute paths start with a slash.
+
+
+        The directory @"."@ indicates a *relative path*.  The lone period represents the current
+        work directory.  The directory where Dr. Cham started up @irb@.  So, after Ruby has searched
+        all the standard places, it checks the current directory.
+
+
+        The goat had peeked his head around Dr. Cham and was watching all these instructions
+        transpire, as he licked his lips to keep his salivations from running all over the monitors
+        and glossy buttons.  He had been interjecting a few short cheers (along the lines of:
+        _No, not that_ or _Yes, yes, right_ or _Okay, well, your choice_), but now he was
+        fully involved, recommending code, "Try @require 'setup'@ or, no, try
+        @3 * 5@.  Make sure that basic math works."
+
+
+        "Of course the math works," said Dr. Cham.  "Let me be, I need to find some useful classes."
+
+
+        "It's a basic sanity test," said the goat.  "Just try it.  Do @3 * 5@ and see what
+        comes up."
+
+
+        Dr. Cham caved.
+
+
+        <pre>
+          irb> 3 * 5
+            => 15
+        </pre>
+
+
+        "Okay, great!  We're in business!" the goat tossed his furry face about in glee.
+        
+
+        Dr. Cham patted the goat's head, "Well done.  We can continue."
+
+
+        <pre>
+          irb> Dir.chdir( "bay://Ruby/lib/site_ruby/1.9/" )
+            => 0
+          irb> Dir["./*.{rb}"]
+            => ['endertromb.rb', 'mindreader.rb', 'wishmaker.rb']
+        </pre>
+
+
+        Dr. Cham had use @chdir@ to change the current working directory over the the first
+        path listed in @$LOAD_PATH@.  This first path in @site_ruby@ is a common place to store
+        custom classes.
+
+
+        Here were the three legendary classes that my daughter's organ instructor had inscribed
+        for me earlier in this chapter.  And, Dr. Cham, having read this selfsame chapter, recognized
+        these three pieces of the system immediately.
+
+
+        The @Endertromb@ class which contained the mysteries of this planet's powers.  The @MindReader@
+        class which, upon scanning the minds of its inhabitants, read each mind's contents.  And, finally,
+        the crucial @WishMaker@ class which powered the granting of ten-letter wishes, should the wish
+        ever find its way to the core of Endertromb.
+
+
+        "How about @4 * 56 + 9@?" asked the goat.  "We don't know if it can do compound expressions."
+
+
+        "I've got the @MindReader@ right here," said Dr. Cham.  "And I have the @WishMaker@ here next to it.
+        This planet can read minds.  And this planet can make wishes.  Now, let's see if it can do both at
+        the same time."
+
+
     - Them What Live the Dream: >
+
+        While The Originals' craft had long disappeared, Dr. Cham frantically worked away at the
+        computer built into the control panel up in the observation deck.  Hannah had disappeared
+        into the floor (or perhaps those little sparks along the ground were still wisps of her
+        paranormal presence!) and the goat amicably watched Dr. Cham hack out a Ruby module.
+
+
+        <pre>
+          require 'endertromb'
+          module WishScanner
+            def scan_for_a_wish
+              wish = self.read.detect do |thought|
+                thought.index( 'wish: ' ) == 0
+              end
+              wish.gsub( 'wish: ', '' )
+            end
+          end
+        </pre>
+
+
+        "What's your plan?" asked the goat.  "It seems like I could have solved this problem in
+        like three lines."
+
+
+        "This @Module@ is the new @WishScanner@ technology," he said.  "The scanner only picks up
+        a wish if it starts with the word @wish@ and a colon and a space.  That way the planet doesn't
+        fill up with every less-than-ten-letter word that appears in people's heads."
+
+
+        "Why don't you just use a class?" asked the goat.
+
+
+        "Because a @Module@ is simpler than a class.  It's basically just a storage facility
+        for methods.  It keeps a group of methods together.  You can't create new objects
+        from a method."
+
+
+        "But don't aren't you going to want a @WishScanner@ object, so you can actually use
+        it?" said the goat, appalled.
+
+
+        "I'm going to mix it into the @MindReader@," said Dr. Cham.  And he did.
+
+
+        <pre>
+          require 'mindreader'
+          class MindReader
+            include MindScanner
+          end
+        </pre>
+
+
+        "Now, the @MindScanner@ module is mixed in to the @MindReader@," said Dr. Cham.
+        "I can call the @scan_for_a_wish@ method on any @MindReader@ object."
+
+
+        "So, it's a mixin," said the goat.  "The @MindScanner@ mixin."
+
+
+        "Yes, any module which is introduced into a class with @include@ is a mixin to that
+        class.  If you go back and look at the @scan_for_a_wish@ method, you'll see that it
+        calls a @self.read@ method.  I just have to make sure that whatever class I'm mixing
+        @MindScanner@ into has a @read@ method.  Otherwise, an error will be thrown."
+
+
+        "That seems really wierd that the mixin requires certain methods that it doesn't already have.
+        It seems like it should work by itself."
+
+
+        Dr. Cham looked up from the keyboard at the goat.  "Well, it's sort of like your video collection.
+        None of your video cassettes work unless they are put in a machine that uses video cassettes.
+        The depend on each other.  A mixin has some basic requirements, but once a class meets those
+        requirements, you can add all this extra functionality in."
+
+
+        "Hey, that's cool," said the goat.
+
+
+        "You read the book thirty times and you didn't pick that up?" asked Dr. Cham.
+
+
+        "You're a much better teacher in person," said the goat.  "I really didn't think I was going
+        to like you very much."
+
+
+        "I completely understand," said the Doctor.  "This is much more real than the cartoons
+        make it seem."
+
+
+        <pre>
+          require 'wishmaker'
+          reader = MindReader.new
+          wisher = WishMaker.new
+          loop do
+            wish = reader.scan_for_a_wish
+            if wish
+              wisher.grant( wish )
+            end
+          end
+        </pre>
+
+
+
+        Irb sat and looped on the screen.  It'll do that until you hit Control-C.  But Dr. Cham let it
+        churn away.  Looping endlessly, scanning the mind waves for a proper wish.
+
+
+        And Dr. Cham readied his wish.  At first, he thought immediately of a @stallion@.  To ride bareback
+        over the vales of Sedna.  But he pulled the thought back, his wish hadn't been formed properly.
+        A stallion was useless in pursuing The Originals, so he closed his eyes again, bit his lip
+        and he thought to himself: @wish: whale@.
+
+
+        h3. Last Whale to Peoplemud
+
+
+        The blocky, sullen whale appeared down at the castle entrance, where Hannah was
+        bashing on a rosebud with her hand.  She whacked at it with a fist, but it only stayed
+        perfect and pleasant and crisp against the solid blue sky of Endertromb.
+
+
+        "I'm bored," she said to the whale.  BOHR-BOHR-OHRRRRRR.
+
+
+        "Ok," said the whale, deep and soft.  As the word slid along his massive tongue, its
+        edges chipped off and the word slid out polished and worn in a bubble by his mouth's
+        corner.
+
+
+        "I always have to die," said the young ghost.  "People always kill me."
+
+
+        The whale fluttered his short fins, which hung at useless distance from the ground.
+        So, he pushed himself toward her with his tail.  Scooting over patches of grass.
+
+
+        "People kill, so who do they kill?" said the girl.  "Me.  They kill me every time."
+
+
+        The whale made it to within three meters of the girl, where he towered like a
+        great war monument that represents enough dead soldiers to actually steal a lumbering step
+        towards you.  And now, the whale rested his tail and, exhausted by the climb thus far,
+        let his eyelids fall shut and became a gently puffing clay mountain, his shadow
+        rich and doubled-up all around the hardly visible Hannah.
+
+
+        But another shadow combined, narrow and determined.  Right behind her, the hand came
+        on to her shoulder, and the warm ghost inside the hand touched her sleeve.
+
+
+        "How did you get down here?" said the girl.
+
+
+        Dr. Cham sat right alongside her and the goat walked around and stood in front.
+
 
         "Listen to us," said Dr. Cham.  "We've got to follow this mangy pack of ne'er-do-wells
         to the very end, Hannah.  And to nab them, we need your faithful assistance!"
@@ -5143,7 +5973,7 @@ chapters:
         just inches from hers.  "If you come with us, if you can trust what we know, then we can bag
         this foul troupe.  Now, you say your destiny is to be a baker.  I won't dispute that.
         You have every right on Earth -- and Endertromb, for that matter -- to become a baker.
-        Why, if you didn't become a baker, that would be a great tragedy.  Who's going to take
+        Say, if you didn't become a baker, that would be a great tragedy.  Who's going to take
         care of all those donuts if you don't?" 
 
 
@@ -5161,9 +5991,32 @@ chapters:
 
         !i/whale.escape-1.jpg(On the wished whale... away...)!
 
+
+        Sure, it took a minute for the goat to cut his wish down to ten letters, but he was shortly on
+        his way, following the same jetstreams up into the sky, up toward Dr. Cham and his ghost
+        niece Hannah.  Up toward the villanous animal combo pak called The Originals.  Up toward
+        The Rockettes.
+
+
+        And Digger Dosh bludgeoned and feasted on each second they left behind them.
+
+
   - Downtown:
     - >
       !i/wixl-1.jpg(Lost in Wixl)!
+
+
+      Coming Christmas 2004.
+
+#      !i/wixl-2.gif(This heist goes all the way up?)!
+#
+#      !i/wixl.blix-1.gif(At least they're still in the book...)!
+#
+#      !i/porcupine-1.gif(The porcupine pays for gas.  Kites?)!
+#
+#      !i/wixl-3.gif(Frogs who save seats on the bus.)!
+#
+#      !i/wixl-4.gif(Deer of the Smoky Pink Puffing.)!
 
 expansion_paks:
   - The Tiger's Vest (with a Basic Introduction to Irb):
@@ -5410,7 +6263,7 @@ expansion_paks:
       Above are the four parts to an Irb prompt.  The string continuation prompt is displayed when
       a string is still open when you hit _Enter_.  The @%3n@ describes that Irb should reserve three
       characters for the line number.  The @%l@ saves a place for displaying the type of string being
-      continued.  (If you're continuing a double-quoted string, it shows a double-quote.  If you're
+      continued.  (If you're continuing a double-quoted string, it shows a double quote.  If you're
       continuing a regular expression, it shows a slash.)
 
 
@@ -5712,5 +6565,44 @@ expansion_paks:
 
 
       !i/tigers.vest-4.gif(The tiger finds a new home and learns to eventually move on.)!
+
+
+#
+#        Just as the sun goes down and I have to call him Paij-plo, I check the time.
+#
+#
+#        bq. @puts Time.now@
+#
+#        which prints: @Sun Sep 12 18:34:50 EDT 2004@
+#
+#
+#        Paij-plo leans over my shoulder, "And then it's (re-eep) eaten."
+#
+#
+#        When he says this, my spine leaks out of my back.  It's a whole (frightening)
+#        religion and it comes out in these kooky colloquialisms.  When Paij-plo
+#        starts his solemn _eating time_ or _he's right behind us_ talk.
+#
+#
+#      I guess there was a time on Endertromb when everyone lived without death.  Paij-plo
+#      says a "panther-like man" fell into a huge chasm, a deep tunnel that wound around the
+#      planet.  His body was found on the other side of the planet.  But he had no bruises, his
+#      body was still warm.  He was only dead by one second.
+#
+#
+#      His body stayed dead for one second.  It continued to be warm and it never rotted.
+#      
+#      
+#      Eb-F-F-A.  Then, Bb-D-D-F.
+
+
+#        Dr. Cham turned to the goat. "You know how to work these controls, don't you?  I need to
+#        file a program."
+#
+#
+#        "
+#        The goat tossed his legs up on the panel and eased a few plush handles into an array of positions
+#        until a slot opened at the base, from which a long silver chain spilled.  At the end of the chain
+#        dangled a thick retainer the size of a fish filet.
 
 

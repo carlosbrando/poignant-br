@@ -174,18 +174,19 @@ a.darkbar:hover {
     float: right;
     padding-right: 15px;
 }
-#page {
+.page {
     padding: 12px;
     width: 800px;
 }
-#page .content {
+.content {
     text-align: left;
 }
-#pageTitle {
+.pageTitle {
     line-height: 200%;
     width: 600px;
+    text-align: center;
 }
-#pageTitle p {
+.pageTitle p {
     margin: 0px;
     line-height: 20px;
     padding: 10px;
@@ -222,3 +223,6 @@ a.darkbar:hover {
     float: right;
     padding-right: 15px;
 }
+
+/* printing */
+@page { size 8.5in 11in; margin: 0cm; }
