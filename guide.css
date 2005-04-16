@@ -15,6 +15,9 @@ h2 {
     margin: 5px;
     padding: 0;
 }
+a img {
+    border: 0;
+}
 blockquote code {
     background-color: #FFF1F5;
     color: #936;
@@ -31,10 +34,7 @@ code {
     white-space: nowrap;
 }
 pre {
-    border: solid 1px #936;
-    background-color: #FFF1F5;
     color: #936;
-    font-weight: bold;
     margin: 5px 22px 5px 22px;
     padding: 3px;
     line-height: 170%;
@@ -58,6 +58,13 @@ pre {
 }
 #navigate h3 {
     margin-top: 40px;
+}
+.toc {
+    padding-left: 30px;
+}
+.toc ul {
+    margin: 0px;
+    padding: 0px;
 }
 .toc li {
     font-size: .8em;
@@ -175,8 +182,11 @@ a.darkbar:hover {
     padding-right: 15px;
 }
 .page {
+    display: block;
     padding: 12px;
     width: 800px;
+    margin: 0px auto;
+    text-align: center;
 }
 .content {
     text-align: left;
@@ -184,6 +194,7 @@ a.darkbar:hover {
 .pageTitle {
     line-height: 200%;
     width: 600px;
+    margin: 0px auto;
     text-align: center;
 }
 .pageTitle p {
@@ -226,3 +237,22 @@ a.darkbar:hover {
 
 /* printing */
 @page { size 8.5in 11in; margin: 0cm; }
+
+/* syntax highlighting */
+pre .keyword {
+    font-weight: bold;
+}
+pre .comment {
+    color: #555;
+}
+pre .string, pre .number {
+    background-color: #E1F1F1;
+    color: #396;
+}
+pre .ident {
+    color: #369;
+}
+pre .constant, pre .class {
+    color: #630;
+    font-weight: bold;
+}
