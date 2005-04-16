@@ -2,6 +2,18 @@ require 'erb'
 require 'ftools'
 require 'yaml'
 require 'redcloth'
+require 'syntax/convertors/html'
+
+class RedCloth
+    SYNTAX_CONVERT = Syntax::Convertors::HTML.for_syntax "ruby"
+    def hard_breaks; true; end
+    alias _to_html to_html
+    def to_html
+        _to_html.gsub( %r{<pre>(.+?)</pre>}m ) do
+            SYNTAX_CONVERT.convert( $1.gsub( '&gt;', '>' ).gsub( '&lt;', '<' ).gsub( '&amp;', '&' ) )
+        end
+    end
+end
 
 module WhyTheLuckyStiff
 class Book
