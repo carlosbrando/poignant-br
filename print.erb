@@ -1,19 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><%= book.title %></title>
+    <title><%= book.title.to_html %></title>
     <link rel="stylesheet" type="text/css" href="guide.css" />
 </head>
 <body>
 
-<div align="center">
+<div id="container">
 <div class="page" style="margin-top: 90pt;">
     <div class="pageTitle">
-    <p style="margin-bottom: 180pt;"><img src="i/poignant.guide.gif" /></p>
+    <p style="margin-bottom: 180pt;"><img src="i/poignant.guide.gif" alt="Why's (Poignant) Guide to Ruby" /></p>
     <p style="margin: 0px; padding: 0px;">tenderly written and illustrated by</p>
     <h3 style="margin: 0px; padding: 0px;">why the lucky stiff</h3>
-    <p style="margin-top: 40pt;"><img src="i/cc-by.gif" /><img src="i/cc-sa.gif" /><br />
+    <p style="margin-top: 40pt;"><img src="i/cc-by.gif" alt="Attribution" /><img src="i/cc-sa.gif" alt="Share Alike" /><br />
     Licensed under the Attribution-ShareAlike license.<br />
     See http://creativecommons.org/licenses/by-sa/2.0/ for details.</p>
     </div>
@@ -23,7 +24,7 @@
 <div class="page">
     <div class="pageTitle">
         <h3><%= chapter.index %>.</h3>
-        <h1><%= chapter.title %></h1>
+        <h1><%= chapter.title.to_html %></h1>
         <p><img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" alt="[o]" /></p>
     </div>
     <div class="content">
@@ -45,7 +46,7 @@
         <div class="sidebar">
         <h1>sidebar!</h1>
         <% if sect.title %>
-        <h2><%= sect.title %></h2>
+        <h2><%= sect.title.to_html %></h2>
         <% end %>
 
         <%= sect.content.to_html %>

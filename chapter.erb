@@ -1,11 +1,12 @@
 <%
     prevPage = chapter.index > 1 ? "chapter-#{ chapter.index - 1 }.html" : "index.html"
     nextPage = chapter.index < book.chapters.length ? "chapter-#{ chapter.index + 1 }.html" : "index.html"
-%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><%= book.title %> :: <%= chapter.index %>. <%= chapter.title %></title>
+    <title><%= book.title.to_html %> :: <%= chapter.index %>. <%= chapter.title.to_html %></title>
     <link rel="stylesheet" type="text/css" href="guide.css" />
 </head>
 <body>
@@ -15,15 +16,15 @@
    &lt; <a class="pagebar" href="<%= prevPage %>">prev</a> | <a class="pagebar" href="<%= nextPage %>">next</a> &gt;
    </div>
    <div class="title">
-   <h3>why's <span class="hilite">(poignant)</span> guide to ruby</h3>
+   <h3>why&#8217;s <span class="hilite">(poignant)</span> guide to ruby</h3>
    &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html">Contents</a>
    </div>
 </div>
-<div align="center">
+<div id="container">
 <div class="page">
     <div class="pageTitle">
         <h3><%= chapter.index %>.</h3>
-        <h1><%= chapter.title %></h1>
+        <h1><%= chapter.title.to_html %></h1>
         <p><img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" alt="[o]" /></p>
     </div>
     <div class="content">
@@ -45,7 +46,7 @@
         <div class="sidebar">
         <h1>sidebar!</h1>
         <% if sect.title %>
-        <h2><%= sect.title %></h2>
+        <h2><%= sect.title.to_html %></h2>
         <% end %>
 
         <%= sect.content.to_html %>
@@ -59,7 +60,7 @@
     <%  end %>
     <% end %>
 
-        <p align="right">
+        <p style="text-align:right;">
         <a href="<%= nextPage %>">Turn page.</a>
         </p>
 

@@ -4,14 +4,48 @@ require 'yaml'
 require 'redcloth'
 require 'syntax/convertors/html'
 
+# Redefines to accomodate tests
 class RedCloth
     SYNTAX_CONVERT = Syntax::Convertors::HTML.for_syntax "ruby"
+    
+    # Intercept some Kernel calls for the cause of testing.
+    def loop
+        yield
+    end
+
+    # Conversion to HTML
     def hard_breaks; true; end
     alias _to_html to_html
     def to_html
-        _to_html.gsub( %r{<pre>(.+?)</pre>}m ) do
-            SYNTAX_CONVERT.convert( $1.gsub( '&gt;', '>' ).gsub( '&lt;', '<' ).gsub( '&amp;', '&' ) )
-        end
+        @vars = {}
+        txt = self.dup
+        txt.gsub!( %r{<(setup|stdout)>(.+?)</\1>}m ) do |var|
+                ( @vars[$1] ||= [] ) << $2
+                "## @#$1[#{@vars[$1].length-1}]"
+            end
+        txt.gsub!( %r{<pre>(.+?)</pre>}m ) do
+                "<pre>" + test_example( $1.strip ) + "</pre>"
+            end
+        txt._to_html.
+            gsub( %r{<pre>(.+?)</pre>}m ) do
+                "<div class='example'><pre><code> #{test_example $1.strip}</code></pre></div>"
+            end.
+            gsub( %r{<pre([^>]+)>\n*(.+?)</pre>}m ) do
+                "<div class='example'><pre#{$1}>#{$2}</pre></div>"
+            end.
+            gsub( %r{<code>([^%].*?)</code>}m ) do
+                SYNTAX_CONVERT.convert( $1.gsub( '&gt;', '>' ).gsub( '&lt;', '<' ).gsub( '&#38;', '&' ) ).
+                    gsub( %r{^<pre>}, '<code>' ).gsub( %r{</pre>$}, '</code>' )
+            end
+    end
+    def test_example( x )
+        # begin
+        #     eval( x.gsub( /^## @(\w+)\[(\d+)\]/ ) { @vars[$1][$2.to_i] } )
+        # rescue Exception => e
+        #     puts "*** Example failed ***", x, "--- Exception ---", e
+        #     exit
+        # end
+        x.gsub( /^## @(\w+)\[(\d+)\]\n/, '' )
     end
 end
 
@@ -27,7 +61,7 @@ end
 class Section
     attr_accessor :index, :header, :content
     def initialize( i, h, c )
-        @index, @header, @content = i, h, RedCloth::new( c.to_s )
+        @index, @header, @content = i, RedCloth::new( h.to_s, [:lite_mode] ), RedCloth::new( c.to_s )
     end
 end
 
@@ -36,13 +70,14 @@ class Sidebar
 end
 
 YAML::add_domain_type( 'whytheluckystiff.net,2003', 'sidebar' ) do |taguri, val|
-    YAML::object_maker( Sidebar, 'title' => val.keys.first, 'content' => RedCloth::new( val.values.first ) )
+    title = val.keys.first
+    YAML::object_maker( Sidebar, 'title' => ( RedCloth::new( title, [:lite_mode] ) if title ), 'content' => RedCloth::new( val.values.first ) )
 end
 class Chapter
     attr_accessor :index, :title, :sections
     def initialize( i, t, sects )
         @index = i
-        @title = t
+        @title = RedCloth::new( t, [:lite_mode] )
         i = 0
         @sections = sects.collect do |s|
             if s.respond_to?( :keys ) 
@@ -67,6 +102,7 @@ YAML::add_domain_type( 'whytheluckystiff.net,2003', 'book' ) do |taguri, val|
         Section::new( 1, t.keys.first, t.values.first )
     end
     val['terms'] = RedCloth::new( val['terms'] )
+    val['title'] = RedCloth::new( val['title'], [:lite_mode] )
     YAML::object_maker( Book, val )
 end
 

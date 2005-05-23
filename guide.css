@@ -6,37 +6,77 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 5px;
     padding: 0;
 }
-h2 {
+h1 {
+    font-size: 2.2em;
+}
+#main h2, .content h2 {
     border-bottom: solid 1px black;
-    margin: 5px;
-    padding: 0;
+    font-size: 1.7em;
+    line-height: 130%;
+}
+.content h2 {
+    margin: 32px 5px 8px 5px;
+}
+#main h3, .content h3 {
+    font-size: 1.5em;
+    line-height: 120%;
+}
+.content h3 {
+    margin: 18px 5px 8px 5px;
+    border-bottom: solid 1px #CCC;
+}
+strong, em {
+    font-size: 1.1em;
 }
 a img {
     border: 0;
 }
-blockquote code {
-    background-color: #FFF1F5;
-    color: #936;
-    font-weight: bold;
-    padding: 5px;
-    line-height: 170%;
+blockquote {
+    font-style: italic;
+    font-size: larger;
+    line-height: 1.2;
+    color: #435;
+    margin: 0 75px;
 }
-code {
-    background-color: #FFF1F5;
+blockquote .attrib {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-variant: small-caps;
+}
+blockquote code, p code, li code {
     color: #936;
-    font-weight: bold;
+    font-style: normal;
+    background-color: #FFFEF9;
     padding: 2px;
     line-height: 170%;
-    white-space: nowrap;
+    font-size: 12pt;
+}
+blockquote code {
+    padding: 5px;
+    font-size: .9em;
+}
+.example {
+    border: solid 1px #C9B;
+    background-color: #FFF5F9;
+    padding: 3px;
+    margin: 5px 40px 5px 22px;
+}
+table {
+    padding: 5px 20px;
+}
+table td {
+    padding-right: 8px;
 }
 pre {
+    background-color: #FFFEF9;
     color: #936;
-    margin: 5px 22px 5px 22px;
-    padding: 3px;
+    padding: 5px;
+    margin: 0px;
     line-height: 170%;
 }
 #navigate {
@@ -71,8 +111,11 @@ pre {
     line-height: 140%;
 }
 .content li {
-    line-height: 120%;
+    line-height: 170%;
     padding: 10px 4px;
+}
+.content p {
+    line-height: 170%;
 }
 #main {
     padding: 10px;
@@ -104,6 +147,9 @@ p#terms {
     padding: 0px;
     z-index: 3;
 }
+.sidebar ul {
+    margin-top: 0px;
+}
 .sidebar li {
     font-size: .9em;
     line-height: 120%;
@@ -119,6 +165,7 @@ p#terms {
 .sidebar h2 {
     font-size: 1.2em;
     border-bottom: solid 1px #334465;
+    margin-top: 5px;
 }
 .sidebar p {
     font-size: .9em;
@@ -127,9 +174,10 @@ p#terms {
 }
 .sidebar blockquote {
     background-color: #FFFFFF;
-    border: solid 1px #CCCCCC;
     color: #666666;
     font-size: .8em;
+    width: auto;
+    margin: 0px 14px;
 }
 .sidebar pre {
     border: none;
@@ -239,20 +287,29 @@ a.darkbar:hover {
 @page { size 8.5in 11in; margin: 0cm; }
 
 /* syntax highlighting */
-pre .keyword {
+.keyword {
     font-weight: bold;
 }
-pre .comment {
+.comment {
     color: #555;
 }
-pre .string, pre .number {
-    background-color: #E1F1F1;
+.string, .number {
     color: #396;
 }
-pre .ident {
+.string {
+    background-color: #E9F5F5;
+}
+.regex {
+    background-color: #E9F1F5;
+    color: #435;
+}
+.ident {
     color: #369;
 }
-pre .constant, pre .class {
+.symbol {
+    color: #000;
+}
+.constant, .class {
     color: #630;
     font-weight: bold;
 }
