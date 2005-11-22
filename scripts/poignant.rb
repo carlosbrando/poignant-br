@@ -6,32 +6,16 @@ require 'redcloth'
 require 'syntax/convertors/html'
 
 class Localization
-
-  ['next_page', 'previous_page', 'encoding', 'locale','turn_page',
-    'header_title'].each do |m|
-    class_eval(<<EOM)
-def #{m}( v = nil )
-  @#{m} = v if v
-  @#{m}
+    attr_accessor :locale, :version, :next_page, :previous_page, :encoding,
+                  :turn_page, :header_title
+    def self.load( file_name )
+        l = self.new
+        YAML::load( File.open( file_name ) ).each do |k, v|
+            l.instance_variable_set( "@#{k}", v )
+        end
+        l
+    end
 end
-EOM
-  end
-
-  def initialize( name , &block )
-    instance_eval( &block ) if block
-  end
-
-  def self.add( name, &block )
-    @@locales ||= { }
-    @@locales[name] =  self.new(name, &block) 
-  end
-
-  def self.get( name )
-    @@locales[name]
-  end
-
-end
-
 
 # Redefines to accomodate tests
 class RedCloth
@@ -81,10 +65,9 @@ module WhyTheLuckyStiff
 
 class Book
     attr_accessor :author, :title, :terms, :image, :teaser, :chapters, :expansion_paks
-end
-
-def Book::load( file_name )
-    YAML::load( File.open( file_name ) )
+    def self.load( file_name )
+        YAML::load( File.open( file_name ) )
+    end
 end
 
 class Section
@@ -163,12 +146,9 @@ if __FILE__ == $0
     end
 
     book = "lang-#{locale}/poignant.yml"
-    loc_file = "lang-#{locale}/localization"
+    loc_file = "lang-#{locale}/localization.yml"
     
-    # Attempts to load localization file
-    require loc_file
-    
-    language = Localization.get( locale )
+    language = Localization.load( loc_file )
     raise NotImplementedError.new("Language #{locale} not yet supported") unless language
 
     site_path = ARGV[0]

@@ -31,10 +31,11 @@ end
 
 LANGUAGES.each do |lang|
   desc "Create #{lang} version of the (poignant) guide"
-  task lang.intern => [ :target ] do
-    generate_for( lang , TARGET )
+  [lang, "lang-#{lang}"].each do |lang_cmd|
+    task lang_cmd.intern => [ :target ] do
+      generate_for( lang , TARGET )
+    end
   end
-
 end
 
 desc "Basic info on how to call rake with this file"
