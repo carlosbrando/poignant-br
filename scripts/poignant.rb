@@ -219,7 +219,7 @@ if __FILE__ == $0
     File.makedirs( File.join( site_path, "i" ) )
     File.copy( "#{ scripts }/layout/guide.css", "#{ site_path }/guide.css" )
     Dir["#{ scripts }/images/*"].each do |copy_file|
-        next unless File.directory? copy_file
+        next if File.directory? copy_file
         File.copy( copy_file, File.join( site_path, "i", File.basename( copy_file ) ) )
     end
 end
