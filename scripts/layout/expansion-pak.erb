@@ -1,0 +1,78 @@
+<%
+    prevPage = pak.index > 1 ? "expansion-pak-#{ pak.index - 1 }.html" : "index.html"
+    nextPage = pak.index < book.expansion_paks.length ? "expansion-pak-#{ pak.index + 1 }.html" : "index.html"
+%>
+<?xml version="1.0" encoding="<%=language.encoding%>"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=language.locale%>" xml:lang="<%=language.locale%>">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<%=language.encoding%>" />
+    <title><%= book.title.to_html %> :: Expansion Pak #<%= pak.index %>. <%= pak.title.to_html %></title>
+    <link rel="stylesheet" type="text/css" href="guide.css" />
+</head>
+<body>
+
+<div id="pakbanner">
+   <div class="pager">
+   &lt; <a class="pagebar" href="<%= prevPage %>"><%=language.previous_page%></a> | <a class="pagebar" href="<%= nextPage %>"><%=language.next_page%></a> &gt;
+   </div>
+   <div class="title">
+   <h3><%=language.header_title%></h3>
+   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html">Contents</a>
+   </div>
+</div>
+<div id="container">
+<div class="page">
+    <div class="pageTitle">
+        <h3>Expansion Pak No. <%= pak.index %>.</h3>
+        <h1><%= pak.title.to_html %></h1>
+    </div>
+    <div class="content">
+
+    <% pak.sections.each do |sect|
+        if sect.respond_to? :file_name %>
+
+        <img src="<%= sect.file_name %>" /><br />
+
+    <%  elsif sect.respond_to? :header %>
+        
+        <a name="section<%= sect.index %>" />
+        <h2><%= sect.index %>. <%= sect.header %></h2>
+
+        <%= sect.content.to_html %>
+
+    <%  elsif sect.respond_to? :title %>
+        
+        <div class="sidebar">
+        <h1>sidebar!</h1>
+        <h2><%= sect.title.to_html %></h2>
+
+        <%= sect.content.to_html %>
+        <h1>sidebar!</h1>
+        </div>
+
+    <% else %>
+
+        <%= RedCloth.new( sect ).to_html %>
+
+    <%  end %>
+    <% end %>
+
+        <p style="text-align:right;">
+        <a href="<%= nextPage %>"><%=language.turn_page%>.</a>
+        </p>
+
+    </div>
+</div>
+</div>
+<div id="footer">
+   <div class="pager">
+   &lt; <a href="<%= prevPage %>"><%=language.previous_page%></a> | <a href="<%= nextPage %>"><%=language.next_page%></a> &gt;
+   </div>
+   <div class="title">
+   <h3><%=language.header_title%></h3>
+   </div>
+</div>
+</body>
+</html>

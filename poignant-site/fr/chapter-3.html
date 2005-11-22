@@ -1,0 +1,856 @@
+
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+    <title>Le Guide (Poignant) de Why vers Ruby :: 3. Un Tour Rapide (et J&#8217;Espère Sans Peine) de Ruby (avec des Renards de Bande-Dessinée)</title>
+    <link rel="stylesheet" type="text/css" href="guide.css" />
+</head>
+<body>
+
+<div id="banner">
+   <div class="pager">
+   &lt; <a class="pagebar" href="chapter-2.html">précédente</a> | <a class="pagebar" href="chapter-4.html">suivante</a> &gt;
+   </div>
+   <div class="title">
+   <h3>Le guide <span class="hilite">(poignant)</span> de why vers ruby</h3>
+   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html">Contents</a>
+   </div>
+</div>
+<div id="container">
+<div class="page">
+    <div class="pageTitle">
+        <h3>3.</h3>
+        <h1>Un Tour Rapide (et J&#8217;Espère Sans Peine) de Ruby (avec des Renards de Bande-Dessinée)</h1>
+        <p><img src="i/chapter.poignant.guide-3.jpg" alt="[o]" /></p>
+    </div>
+    <div class="content">
+
+    
+
+        <p><img src="i/the.foxes-1.png" title="Les renards apparaissent." alt="Les renards apparaissent." /></p>
+
+
+	<p>Yeah, ils sont deux. Mon asthme revient, aussi dois-je prendre une bouffée de médicament maintenant. Je reviens dans deux minutes.</p>
+
+
+	<p><img src="i/the.foxes-2.png" title="Renards dans des boites." alt="Renards dans des boites." /></p>
+
+
+	<p>On m&#8217;a dit qu&#8217;il vallait mieux être équipé d&#8217;un mouchoir pour ce chapitre. Quelque chose pour vous éponger le visage lorsque vous allez suer.</p>
+
+
+	<p>En effet, nous allons faire un tour à travers le langage en entier. Comme allumer chaque allumette d&#8217;une boite, aussi vite que possible.</p>
+
+    
+    
+        
+        <a name="section1" />
+        <h2>1. Le Langage et JE VEUX DIRE le Langage</h2>
+
+        <p><img src="i/the.foxes-3.png" title="Nos amis, ces deux renards impuissants, réalise finalement la gravité de leur embarras." alt="Nos amis, ces deux renards impuissants, réalise finalement la gravité de leur embarras." /></p>
+
+
+	<p>Ma conscience ne me laisserais pas appeler Ruby un langage pour <em>ordinateur</em>. Cela impliquerait que le langage utilise principalement des termes de l&#8217;ordinateur. Que le langage est fait pour aider l&#8217;ordinateur en premier lieu. Et que donc, nous, les développeurs sommes des étrangers, cherchant à nous acclimater à l&#8217;ordinateur. C&#8217;est le langage de l&#8217;ordinateur et nous sommes les traducteurs pour le monde.</p>
+
+
+	<p>Mais comment appelez-vous un langage, quand votre cerveau commence à penser dans ce langage? Quand vous commencez à utiliser les propres mots du langage pour vous exprimer. Une machine ne peut faire ça. Comment cela pourrait-il être le langage de la machine? C&#8217;est le notre, nous le parlons naturellement!</p>
+
+
+	<p>Nous ne pouvons donc décemment pas l&#8217;appeler un langage pour <em>ordinateur</em>. C&#8217;est un <em>dialecte de développeur</em>. C&#8217;est le langage de nos pensées.</p>
+
+
+	<p><strong>Lisez ce qui suit à haute voix, pour vous-même.</strong></p>
+
+
+	<blockquote>
+		<p><code><span class="number">5</span><span class="punct">.</span><span class="ident">times</span> <span class="punct">{</span> <span class="ident">print</span> <span class="punct">&quot;</span><span class="string">Odelay!</span><span class="punct">&quot;</span> <span class="punct">}</span></code></p>
+	</blockquote>
+
+	<p>Dans les phrases françaises, les signes de ponctuation (telle que le point, le point d&#8217;exclamation, les parenthèses) sont des silences. La ponctuation ajoute du sens aux mots, en donnat des informations sur ce que l&#8217;auteur de lap hrase veut exprimer. Aussi lisons ce qui précède comme: <em>Cinq fois affiche &#8220;Odelay!&#8221;.</em></p>
+
+
+	<p>Ce qui est exactement ce que fait ce petit programme en Ruby. L&#8217;exclamation en <a href="http://www.whiskeyclone.net/ghost/L/lordonlyknows.html">Espagnol mutant</a> de Beck s&#8217;affichera cinq fois à l&#8217;écran.</p>
+
+
+	<p><strong>Lisez ce qui suit à haute voix, pour vous-même.</strong></p>
+
+
+	<blockquote>
+		<p><code><span class="ident">exit</span> <span class="keyword">unless</span> <span class="punct">&quot;</span><span class="string">restaurant</span><span class="punct">&quot;.</span><span class="ident">include?</span> <span class="punct">&quot;</span><span class="string">aura</span><span class="punct">&quot;</span></code></p>
+	</blockquote>
+
+	<p>Ici nous faisons un test réel basique. Notre program sortira (<strong>exit</strong>: le programmera s&#8217;arrètera) <strong>à moins que</strong> (<strong>unless</strong>) le mot <strong>restaurant</strong> ne contienne (<strong>includes</strong>) le mot <strong>aura</strong>. Encore une fois, en Français: <em>Arrête à moins que le mot restaurant n&#8217;inclue le mot aura.</em></p>
+
+
+	<p>Avez-vous déjà vu un langage de programmation utiliser les points d&#8217;interrogation de façon si effective? Ruby utilise certains signes de ponctuation, comme les points d&#8217;exclamation ou d&#8217;interrogation, pour augmenter la lisibilité du code. Dans le code précédent nous posons une question, aussi pourquoi ne pas rendre cela explicite?</p>
+
+
+	<p><strong>Lisez ce qui suit à haute voix, pour vous-même.</strong></p>
+
+
+	<blockquote>
+		<p><code><span class="punct">['</span><span class="string">pain</span><span class="punct">',</span> <span class="punct">'</span><span class="string">fromage</span><span class="punct">',</span> <span class="punct">'</span><span class="string">vin</span><span class="punct">'].</span><span class="ident">each</span> <span class="punct">{</span> <span class="punct">|</span><span class="ident">food</span><span class="punct">|</span> <span class="ident">print</span> <span class="ident">food</span><span class="punct">.</span><span class="ident">capitalize</span> <span class="punct">}</span></code></p>
+	</blockquote>
+
+	<p>Bien que ce bout de code soit moins lisible et moins semblable à une phrase que le précédent, je vous encourage quand même à le lire à haute voix. Même si Ruby peut se lire parfois comme de l&#8217;Anglais, il se lit aussi parfois comme un Anglais plus concis. En traduisant complètement ce qui précède en Anglais, vous auriez: <em>With the words &#8216;pain&#8217;, &#8216;fromage&#8217;, and &#8216;vin&#8217;: take each food and print it capitalized.</em> (NDT: En Français: <em>Avec les mots &#8216;pain&#8217;, &#8216;fromage&#8217; et &#8216;vin&#8217;: prendre chaque nourriture et l&#8217;afficher avec la première lettre en majuscule.</em>)</p>
+
+
+	<p>L&#8217;ordinateur repondra alors courtoisement: <code><span class="constant">Pain</span></code>, <code><span class="constant">Fromage</span></code> et <code><span class="constant">Vin</span></code>.</p>
+
+
+	<p>Maintenant, vous devez vous demander comment ces mots vont en fait ensembles. Smotchkkiss se demande ce que signifient les points et les crochets. Je vais maintenant traiter les différents <em>constituants du discours</em>.</p>
+
+
+	<p>Tout ce que vous avez besoin de savoir est que Ruby est, à la base, fait de phrases. Ce ne sont pas exactement des phrases anglaises. Ce sont des ensembles de mots et de signes de ponctuation qui entourent une idée simple. Ces phrases peuvent former des livres. Elles peuvent former des pages. elles peuvent former des nouvelles entières, en les assemblant. Ces nouvelles peuvent être lues par des humains, mais aussi par des ordinateurs.</p>
+
+    
+    
+        
+        <div class="sidebar">
+        <h1>sidebar!</h1>
+        
+        <h2>De l&#8217;Utilisation Commerciale de ce Guide (Poignant)</h2>
+        
+
+        <p>Ce livre est délivré sous une licence Creative Commons qui permet un usage commercial illimité de ce livre. Ce qui en pratique veut dire que vous pouvez vendre des copies de ce livre et garder tous les gains pour vous. Je fais confiance à mes lecteurs (et au monde qui les entoure) pour me copier. Pour créer une édition moisie sur une Xerox avec ce clipart classique de deux mains en prière sur la couverture.</p>
+
+
+	<p>Les mecs, les procès n&#8217;en valent pas la peine. Aussi je vais directement accepter le piratage. N&#8217;importe qui désirant lire ce livre doit être capable de le faire. Je serais flatté si quelqu&#8217;un désire commercialiser ce livre ou faire des éditions spéciales.</p>
+
+
+	<p>Pourquoi désirerais-je de l&#8217;argent? <span class="caps">IGNOREZ TOUTES LES AUTRES COLONNES</span>: j&#8217;ai perdu toute volonté de devenir un plouc riche. Cela semble inhumain, mais j&#8217;aime ma petite télé en noir et blanc. Ansi que ma lampe-fleur en plastique. Je ne veux pas devenir un écrivain. Le cash ne m&#8217;inspire pas. Aucun intérêt.</p>
+
+
+	<p>Aussi, si l&#8217;argent ne veut rien dire pour le cadavre chanceux (NDT: &#8220;why the lucky stiff&#8221; se traduit par &#8220;why le cadavre chanceux&#8221;), pourquoi me pomper quand vous pouvez coopter des pratiques commerciales louches pour litéralement anéantir mon pshychisme et laisser mes poumons d&#8217;acier pleins de suie? Sans parler de l&#8217;ironie qui consiste à utiliser mon propre travail contre moi!  Meurs, Mec Poignant!</p>
+
+
+	<p>Pour vous donner une idée de ce que je veux dire, voici quelques concepts sournois qui pourraient sérieusement endommager ma volonté et me forcer à reconsidérer certains choses comme l&#8217;existence.</p>
+
+
+	<p><strong>PREMIERE <span class="caps">IDEE</span>: BEAUCOUP <span class="caps">DE TABAC</span></strong></p>
+
+
+	<p>Acheter une fabrique de cigarettes. Utilisez mes renards de bande-dessinée dans une campgagne publicitaire aggressive. Voilà un panneau d&#8217;affichage pour les débutants:</p>
+
+
+	<p><img src="i/the.foxes-0a.png" title="La dépendance c'est comme les Pokemon!" alt="La dépendance c'est comme les Pokemon!" /></p>
+
+
+	<p>Dites explicitement que vous visez les enfants et les asthmatiques. Ensuite, une fois que vous avez fait marcher tout le monde, laissez les gens de <strong>vérité</strong> faire un exposé sur moi et ma ferme de renards d&#8217;encre.</p>
+
+
+	<blockquote>
+		<p><strong>Hippie Sensible se Tenant Sur la Bordure du Trotoir dans le Désert Urbain</strong>: Il s&#8217;appelle lui-même le macchabée chanceux.</p>
+	</blockquote>
+
+	<blockquote>
+		<p>(Il lève le rideau, révélant un corps gris sur brancard.)</p>
+	</blockquote>
+
+	<blockquote>
+		<p><strong>Le Hippie</strong>: certains macchabées ne sont pas chanceux.</p>
+	</blockquote>
+
+	<blockquote>
+		<p>(Zoom erratique. Renards de bande-dessinée en surimpression pour un voyage subliminal à la Willy Wonka.)</p>
+	</blockquote>
+
+	<p>Hé. Pourquoi qu&#8217;tu fumes ces gros cigares comme ça, Holmes?</p>
+
+
+	<p><strong>DEUXIEME <span class="caps">IDEE</span>: PELOTON D&#8217;EXECUTION</strong></p>
+
+
+	<p>Comme je l&#8217;ai dit, vous pouvez commencer à vendre des copies de mon livre, mais en altérant le texte. Ces copies modifiées contiendraient des références flagrantes (et diffamatoires) à des agences gouvernementales, telles que les U.S. Marshals et le Pentagone. Vous pouvez me faire passer pour un vrai traitre. Comme si j&#8217;avais tous ces plans pour, vous savez, tuer certains des membres les moins désirables des U.S. Marshals ou du Pentagone.</p>
+
+
+	<p>Non pas qu&#8217;il y ait des membres moins désirables chez les U.S. Marshals et au Pentagone. Euh, je ne voulais pas dire ça.</p>
+
+
+	<p>Et mince.</p>
+
+
+	<p>Et mince, mince, mince.</p>
+
+
+	<p>Eteignons les lumières. Baissons-nous.</p>
+
+
+	<p><strong>TROISIEME <span class="caps">IDEE</span>: PANNEAUX D&#8217;AFFICHAGE, <span class="caps">SECONDE PARTIE</span></strong></p>
+
+
+	<p>Et pourquoi ne pas se moquer directement des asmathiques?</p>
+
+
+	<p><img src="i/the.foxes-0b.png" title="Appelle le teuf-teuf! ROFL!" alt="Appelle le teuf-teuf! ROFL!" /></p>
+
+
+	<p><strong>QUATRIEME <span class="caps">IDEE</span>: ALEC <span class="caps">BALDWIN</span></strong></p>
+
+
+	<p>Adaptez le livre au cinéma. Et comme je suis un personnage de ce livre, vous pourriez avoir quelqu&#8217;un comme Alec Baldwin pour jouer mon rôle. Quelqu&#8217;un qui est vraiment à un point bas de sa carrière.</p>
+
+
+	<p>Vous pourriez faire comme si je prenais des tonnes de drogues. Comme si j&#8217;étais un aliéné avec qui l&#8217;on ne peut travailler.Comme si je virais les gens et les enfermais dans la salle des scooters en leur faisant porter une tenue en pain. Ouais, je pourrais en fait <em>cuire au four</em> ces gens dans leur tenue.</p>
+
+
+	<p>Je pourrais avoir un moule géant où j&#8217;attacherais les gens. Ensuite je verserais la pâte sur eux et les cuirais jusqu&#8217;à ce que le pain aie gonflé et qu&#8217;ils soient presque morts. Et quand les équipes de télévision arriveraient et que je serais dans &#8216;Good Morning America&#8217;, ils demanderaient, &#8220;Alors combien de personnes avez vous employées lors de l&#8217;écriture de votre livre?&#8221; et je répondrais &#8220;Une douzaine de chez le boulanger!&#8221; et éclaterais de ce rire lourd de maniaque qui forcerait les spectateurs à se boucher les oreilles.</p>
+
+
+	<p>Bien sûr, en proie à ma folie, je déclarerais la guerre au monde. Les gens-pains livreraient un bon combat. Jusqu&#8217;à ce que les U.S. Marshals (ou le Pentagone) créent un cerveau robotique géant de singe (joué par Burt Lancaster) pour me poursuivre.</p>
+
+
+	<p>Et voici là où vous me feriez paraître complètement piètre. Non seulement je sacrifierais tous les gens-pains (les Starchtroopers<sup><a href="#fn1">1</a></sup>) pour me sauver, non seulement je me rendrais comme un lâche au cerveau robotique géant de singe, mais quand je m&#8217;échapperais de justesse, je hurlerais vers les spectateurs. Vociférant avec insistance que c&#8217;est <em>MON</em> film et que plus personne ne doit le regarder, je déchirerais l&#8217;écran en deux et le projecteur tournerait avec sa bobine s&#8217;agitant dans la défaite. Et ce serait la fin du film. Les spectateurs seraient <em>tellement</em> ennuyés.</p>
+
+
+	<p id="fn1"><sup>1</sup> NDT: Jeux de mots: &#8220;Starch&#8221; veut dire &#8220;Amidon&#8221; ... et &#8220;Starchtroopers&#8221; ressemble à &#8220;Starship troopers&#8221;.</p>
+
+	<p>Maintenant, je dois penser. Voyez, Alec Baldwin a fait un commentaire décent dans <a href="http://www.allocine.fr/film/fichefilm.html?cfilm=29188">La Famille Tenenbaums</a>. Sa carrière est peut-être O.K. Vous ne voudrez peut-être pas l&#8217;utiliser. Il ne devrait pas le faire.</p>
+
+
+	<p>Je vais vous dire. Je jouerais mon rôle. J&#8217;ai fait des points bas ma spécialité.</p>
+        <h1>sidebar!</h1>
+        </div>
+
+    
+    
+        
+        <a name="section2" />
+        <h2>2. Les Constituants Du Discours</h2>
+
+        <p>Comme la raie blanche en bas du dos de la mouffette et l&#8217;enroulement blanc du cortège de la mariée, plusieurs des constituants du discours de Ruby ont des indices visuels afin de vous aider à les identifier. La ponctuation et la capitalisation aideront votre cerveau à voir des parties de code et à ressentir une intense identification. Votre esprit vous criera fréquemment <em>Hé, je connais ça mec!</em> Vous serez aussi capable de placer ces noms dans les conversations avec d&#8217;autres Rubyistes.</p>
+
+
+	<p>Essayez de vous focaliser sur l&#8217;apparence de chacuns de ces constituants. Le reste du livre detaillera chaque spécificité. Je donne une description courte pour chacun des constituants, mais vous n&#8217;avez pas à comprendre l&#8217;explication. A la fin de ce chapitre, vous devriez pouvoir reconnaître chaque partie d&#8217;un programme écrit en Ruby.</p>
+
+
+	<h3>Variables</h3>
+
+	<p>N&#8217;importe quel mots constitué de lettres minuscules est une variable en Ruby. Les variables peuvent être constituées de lettres, chiffres ou de soulignés (NDT: _).</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">x</span></code>, <code><span class="ident">y</span></code>, <code><span class="ident">banane2</span></code> ou <code><span class="ident">telephoner_a_une_caille</span></code> sont des exemples.</p>
+	</blockquote>
+
+	<p>Les variables sont comme des surnoms. Vous vous rappelez quand tout le monde vous appelait Pierre-Qui-Pue? Les gens disait, &#8220;Viens ici Pierre-Qui-Pue!&#8221; et tout le monde savait miraculeusement que vous étiez Pierre-Qui-Pue.</p>
+
+
+	<p>Les variables vous permettent de donner un surnom à ce que vous utilisez fréquemment. Par exemple, supposons que vous dirigiez un orphelinat. C&#8217;est un orphelinat moyen. Et quand Papa Warbucks vient pour acheter plus d&#8217;enfants, on insiste pour qu&#8217;il paie <strong>cent vingt et un euros et huit centimes</strong> pour l&#8217;ourson en peluche de l&#8217;enfant, auquel il s&#8217;est attaché dans les moments sombres de sa vie de cauchemard.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">frais_d_ourson</span> <span class="punct">=</span> <span class="number">121.08</span></code></p>
+	</blockquote>
+
+	<p>Plus tard, quand vous le retrouverez à la caisse enregistreuse (une caisse enregistreuse de première puisqu&#8217;elle tourne sous Ruby), vous devrez additioner ensemble toutes ces factures pour obtenir le <strong>total</strong>.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">total</span> <span class="punct">=</span> <span class="ident">frais_d_orphelin</span> <span class="punct">+</span> <span class="ident">frais_d_ourson</span> <span class="punct">+</span> <span class="ident">gratuite</span></code></p>
+	</blockquote>
+
+	<p>Ces noms de variables aident vraiment. Et dans le milieu miteux de la vente d&#8217;enfants, je suis sûr que toute aide est appréciée.</p>
+
+
+	<p><img src="i/the.foxes-4a.png" title="Ils se moquent de mes examples." alt="Ils se moquent de mes examples." /></p>
+
+
+	<h3>Nombres</h3>
+
+	<p>Le type le plus basique de nombre est l&#8217;<em>entier</em> (<em>integer</em>), une <strong>série de chiffres</strong> qui peut commencer avec un <strong>signe plus ou moins</strong>.</p>
+
+
+	<blockquote>
+		<p><code><span class="number">1</span></code>, <code><span class="number">23</span></code>, et <code><span class="punct">-</span><span class="number">10000</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>Les virgules ne sont pas autorisées dans les nombres, mais les soulignés (NDT: _) le sont. Donc, si vous sentez la nécessité de marquer les milliers afin que vos nombres soient plus lisibles, utilisez un souligné.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">population</span> <span class="punct">=</span> <span class="number">12_000_000_000</span></code></p>
+	</blockquote>
+
+	<p>Les nombres décimaux sont appelés <em>flottants</em> (<em>floats</em>) en Ruby. Les flottants sont faits de nombres avec une <strong>partie décimale</strong> ou une <strong>notation scientifique</strong>.</p>
+
+
+	<blockquote>
+		<p><code><span class="number">3.14</span></code>, <code><span class="punct">-</span><span class="number">808.08</span></code> et <code><span class="number">12.043</span><span class="ident">e</span><span class="punct">-</span><span class="number">04</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<h3>Les chaines de caractères</h3>
+
+	<p>Les chaines de caractères sont composées de n&#8217;importe quel caractère (lettre, chiffre, signe de ponctuation) entourés par des guillemets. A la fois les <strong>guillemets</strong> simples et doubles sont utilisés pour créer des chaines de caractères.</p>
+
+
+	<blockquote>
+		<p><code><span class="punct">&quot;</span><span class="string">laboratoire</span><span class="punct">&quot;</span></code>, <code><span class="punct">'</span><span class="string">2021</span><span class="punct">'</span></code> ou <code><span class="punct">&quot;</span><span class="string">Ces bande-dessinées sont hilarantes!</span><span class="punct">&quot;</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>Quand vous entourez des caractères par des guillemets, ils sont stoqués ensemble, comme une seule chaine.</p>
+
+
+	<p>Pensez à un journaliste qui transcrit les divagations d&#8217;une célébrité. &#8220;Je suis beaucoup plus raisonnable,&#8221; dit Avril Lavigne. &#8220;Maintenant, je sais à quoi ressemble le mileu&#8212;ce que vous devez faire et comment le faire.&#8221;</p>
+
+
+<div class='example'><pre><code> <span class="ident">avril_citation</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">Je suis beaucoup plus
+  raisonnable. Maintenant, je sais à quoi ressemble 
+  le mileu -- ce que vous devez faire et comment le
+  faire.</span><span class="punct">&quot;</span></code></pre></div>
+	<p>De même que nous venions de stoquer un nombre dans la variable <strong>frais_d_ourson</strong>, nous stoquons maintenant une suite de caractères (une chaine) dans la variable <strong>avril_citation</strong>. Le journaliste envoie cette citation à l&#8217;impression, qui par chance, utilise Ruby pour faire fonctionner sa presse.</p>
+
+
+<div class='example'><pre><code> <span class="ident">print</span> <span class="ident">oprah_citation</span>
+ <span class="ident">print</span> <span class="ident">avril_citation</span>
+ <span class="ident">print</span> <span class="ident">ashlee_simpson_debacle</span></code></pre></div>
+	<p><img src="i/the.foxes-4b.png" title="Ils veulent faire partie des mes exemples." alt="Ils veulent faire partie des mes exemples." /></p>
+
+
+	<h3>Symboles</h3>
+
+	<p>Les symboles sont des mots qui ressemblent à des variables. Encore une fois, ils peuvent contenir des lettres, des chiffres ou des soulignés. Mais ils <strong>commencent avec deux points</strong>.</p>
+
+
+	<blockquote>
+		<p><code><span class="symbol">:a</span></code>, <code><span class="symbol">:b</span></code>, ou <code><span class="symbol">:ponce_de_leon</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>Les symboles sont des chaines de caratères &#8220;légères&#8221;. Généralement les symboles sont utilisés dans les situations ou vous avez besoin d&#8217;une chaine de caractères mais où vous ne voulez pas l&#8217;afficher à l&#8217;écran.</p>
+
+
+	<p>Vous pouvez voir les symboles comme étant plus léger pour l&#8217;ordinateur. Ils sont comme un antiacide. Les deux points ressemblent aux bulles remontant de l&#8217;estomac de l&#8217;ordinateur alors qu&#8217;il digère le symbole. Ah, quel soulagement!</p>
+
+
+	<p><img src="i/the.foxes-4c.png" title="Chunky bacon!!" alt="Chunky bacon!!" /></p>
+
+
+	<h3>Constantes</h3>
+
+	<p>Les constantes sont des mots, à l&#8217;instar des variables, mais elles commencent par une lettre majuscule. Si les variables sont les noms de Ruby, alors pensez les constantes comme étant les noms propres.</p>
+
+
+	<blockquote>
+		<p><code><span class="constant">Time</span></code>, <code><span class="constant">Array</span></code> ou <code><span class="constant">Bunny_Lake_a_Disparu</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>En Anglais (NDT: et en Français), les noms propres commencent par une majuscule. L&#8217;Empire State Building. Vous ne pouvez pas changer l&#8217;Empire State Building. Vous ne pouvez pas décider que l&#8217;Empire State Building désignera quelque chose d&#8217;autre. Les noms propres sont comme celà. Ils se rapportent à quelque chose de très spécifique et généralement ne changent pas au cours du temps.</p>
+
+
+	<p>De la même façon, les constantes ne peuvent pas changer après avoir été assignées.</p>
+
+
+	<blockquote>
+		<p><code><span class="constant">EmpireStateBuilding</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">350 5th Avenue, NYC, NY</span><span class="punct">&quot;</span></code></p>
+	</blockquote>
+
+	<p>Si nous essayons de changer la constante, Ruby se plaindra. On désaprouve de telles pratiques.</p>
+
+
+	<p><img src="i/the.foxes-4d.png" title="Allez, chunky bacon." alt="Allez, chunky bacon." /></p>
+
+
+	<h3>Méthodes</h3>
+
+	<p>Si les variables et les constantes sont les noms, alors les méthodes sont les verbes. Les méthodes sont généralement rattachées à la fin des variables par un <strong>point</strong>. Vous avez déjà vu des méthodes:</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">porte_devant</span><span class="punct">.</span><span class="ident">ouvre</span></code></p>
+	</blockquote>
+
+	<p>Dans l&#8217;exemple précédent, <strong>ouvre</strong> est la méthode. C&#8217;est l&#8217;action, le verbe. Dans certains cas vous pouvez voir des actions enchainées.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">porte_devant</span><span class="punct">.</span><span class="ident">ouvre</span><span class="punct">.</span><span class="ident">ferme</span></code></p>
+	</blockquote>
+
+	<p>Nous avons demandé à l&#8217;ordinateur d&#8217;ouvrir la porte de devant et de la fermer immédiatement.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">porte_devant</span><span class="punct">.</span><span class="ident">est_ouverte?</span></code></p>
+	</blockquote>
+
+	<p>Ce qui précède est aussi une action. Nous demandons à l&#8217;ordinateur de tester la porte afin de savoir si elle est ouverte. On aurait pu appeler la méthode <code><span class="constant">Porte</span><span class="punct">.</span><span class="ident">essaie_de_savoir_si_elle_est_ouverte</span></code> mais le nom <code><span class="ident">est_ouverte?</span></code> est plus succint et tout aussi correct. On peut utiliser à la fois les points d&#8217;exclamation et d&#8217;interrogation dans les noms de méthodes.</p>
+
+
+	<h3>Les Arguments de Méthode</h3>
+
+	<p>Une méthode peut avoir besoin de plus d&#8217;information pour effectuer son action. Si nous voulons demander à l&#8217;ordinateur de peindre la porte, nous devons lui en indiquer la couleur.</p>
+
+
+	<p>Les arguments des methodes sont attachés à la fin des méthodes. Ils sont générallement entourés par des <strong>parenthèses</strong> et séparés par des <strong>virgules</strong>.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">porte_devant</span><span class="punct">.</span><span class="ident">peindre</span><span class="punct">(</span> <span class="number">3</span><span class="punct">,</span> <span class="symbol">:rouge</span> <span class="punct">)</span></code></p>
+	</blockquote>
+
+	<p>Ce qui précède peint de 3 couches rouges la porte.</p>
+
+
+	<p>Représentez le vous comme une chambre à air que la méthode traine avec elle. Les parentèses forment les bords ronds et humides de la chambre à air. Les virgules sont les pieds de chaque argument accrochés au bord. Le dernier argument a ses pieds sous lui de façon à les cacher.</p>
+
+
+	<p>A l&#8217;instar d&#8217;un bateau pouvant remorquer plusieurs chambres à air, on peut enchainer les méthodes avec arguments.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">porte_devant</span><span class="punct">.</span><span class="ident">peindre</span><span class="punct">(</span> <span class="number">3</span><span class="punct">,</span> <span class="symbol">:rouge</span> <span class="punct">).</span><span class="ident">seche</span><span class="punct">(</span> <span class="number">30</span> <span class="punct">).</span><span class="ident">ferme</span><span class="punct">()</span></code></p>
+	</blockquote>
+
+	<p>Ce qui pécède peint de 3 couche de rouge la porte, la sèche pendant 30 minutes et la referme. Même si la dernière méthode n&#8217;a pas d&#8217;argument vous pouvez quand même mettre des parenthèses si celà vous chante. Toutefois, il est inutile de trainer une chambre à air vide, donc on ommet généralement les parenthèses.</p>
+
+
+	<p>Certaines méthode (comme <code><span class="ident">print</span></code>) sont des méthode de base (NDT: des méthodes du Kernel de Ruby). Ces méthodes sont utilisées partout en Ruby. Comme elles sont très fréquentes, on n&#8217;utilise pas le point.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">print</span> <span class="punct">&quot;</span><span class="string">Voyez, aucun point.</span><span class="punct">&quot;</span></code></p>
+	</blockquote>
+
+	<h3>Méthodes de Classe</h3>
+
+	<p>Comme les méthodes dont on vient de parler (que l&#8217;on appelle aussi des méthode d&#8217;<em>instance</em> (NDT: en anglais, <em>instance</em> methods)), les méthodes de classe sont généralement attachées aux variables et aux constantes. Plutôt qu&#8217;un point, on utilise <strong>deux double points</strong> pour les séparer.</p>
+
+
+	<blockquote>
+		<p><code><span class="constant">Door</span><span class="punct">::</span><span class="ident">new</span><span class="punct">(</span> <span class="symbol">:oak</span> <span class="punct">)</span></code></p>
+	</blockquote>
+
+	<p>Comme on peut le voir, la méthode de classe <code><span class="ident">new</span></code> est généralement utilisée pour créer de nouvelles choses. Dans l&#8217;exemple précédent, on demande à Ruby de nous créer une nouvelle porte en chêne. Bien sûr, Ruby doit savoir comment fabriquer une porte&#8212;de même que du bois de charpente, des bucherons et ces longues scies à deux hommes.</p>
+
+
+	<p><img src="i/the.foxes-4e.png" title="Plein de petits morceaux de bacon." alt="Plein de petits morceaux de bacon." /></p>
+
+
+	<h3>Variables globales</h3>
+
+	<p>Les variables commençant par un <strong>signe dollar</strong> sont globales.</p>
+
+
+	<blockquote>
+		<p><code><span class="global">$x</span></code>, <code><span class="global">$1</span></code>, <code><span class="global">$chunky</span></code> et <code><span class="global">$CHunKY_bACOn</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>La plupart des variables sont par nature temporaires. Certaines parties de votre programme sont comme de petites maisons. Vous y entrez et elles ont leurs propres variables. Dans une maison, vous pouvez avoir <code><span class="ident">papa</span></code> qui représente Archie, le représentant de commerce et collectionneur de squelette. Dans une autre maison, <code><span class="ident">papa</span></code> peut représenter Pierre, un dompteur de lion ayant un penchant pour la flanelle. Chaque maison a sa propre signification pour <code><span class="ident">papa</span></code>.</p>
+
+
+	<p>Avec les variables globales, vous avez la garantie que la variable sera la même dans chaque petite maison. Le signe dollar est tout à fait approprié à cela. Chaque foyer américain respecte la valeur du dollar. Nous en sommes dingues. Essayez de frapper à la porte de n&#8217;importe quelle maison américaine et tendez leur du fric. Je peux vous garantir que vous n&#8217;obtiendrez pas le même effet si vous frappez à une porte et leur offrez Pierre, le dompteur de lion ayant un penchant pour la flanelle.</p>
+
+
+	<p>Les variables globales peuvent être utilisées n&#8217;importe où dans votre programme. Elles ne sont jamais perdues de vue.</p>
+
+
+	<h3>Variables d&#8217;Instance</h3>
+
+	<p>Les variables commençant par une <strong>arobase</strong> sont des variables d&#8217;instance.</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">x</span></code>, <code><span class="ident">y</span></code>, et <code><span class="ident">only_the_chunkiest_cut_of_bacon_I_have_ever_seen</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>Ces variables sont généralement utilisées pour définir les attributs de quelque chose. Par exemple vous pouvez fournir à Ruby la largeur de la <code><span class="ident">porte_devant</span></code> en affectant une valeur à la variable <code><span class="ident">largeur</span></code> dans cette <code><span class="ident">porte_devant</span></code>. En Ruby, les variables d&#8217;instance sont utilisées pour définir les caractèristiques d&#8217;un objet donné.</p>
+
+
+	<p>Pensez au symbole <code><span class="ident">arobas</span></code> comme signifiant <strong>attribut</strong>. (NDT: marche mieux en anglais, où l&#8217;arobas se nomme <strong>at</strong>).</p>
+
+
+	<h3>Variables de Classe</h3>
+
+	<p>Les variables commençant par une <strong>double arobase sont des variables de classe.</p>
+
+
+	<blockquote>
+		<p><code><span class="attribute">@x</span></code>, <code><span class="attribute">@y</span></code>, et <code><span class="attribute">@i_will_take_your_chunky_bacon_and_raise_you_two</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>Les variables de classe sont aussi utilisées pour définir des attributs. Mais plutôt que de définir un attribut pour un seul objet en Ruby, les variables de classe définissent un attribut pour plusieurs objets apparentés. Si les variables d&#8217;instance définissent les attributs pour une seule <code><span class="ident">porte_devant</span></code>, alors les variables de classe définissent les attributs pour tout ce qui est une <code><span class="constant">Porte</span></code>.</p>
+
+
+	<p>Pensez au *double arobas</strong> comment signifiant <strong>attributs pour tous</strong> . Ou vous pouvez vous les imaginer comme un essaim de chasseurs <strong>AT-AT</strong> de <em>Star Wars</em>, tous commandés par Ruby (NDT: marche bien mieux en anglais ou l&#8217;arobase se nomme <code><span class="ident">at</span></code>). Vous modifiez une variable de classe et tous changent, pas seulement un.</p>
+
+
+	<p><img src="i/the.foxes-4f.png" title="Woohoo! Chunky bacon terminé!" alt="Woohoo! Chunky bacon terminé!" /></p>
+
+
+	<h3>Blocs</h3>
+
+	<p>Tout code entourré par des <strong>accolades</strong> est un bloc.</p>
+
+
+	<blockquote>
+		<p><code><span class="number">2</span><span class="punct">.</span><span class="ident">times</span> <span class="punct">{</span> <span class="ident">print</span> <span class="punct">&quot;</span><span class="string">Oui, j'ai utilisé Chunky Bacon dans mes exemple, mais je ne le ferai plus!</span><span class="punct">&quot;</span> <span class="punct">}</span></code> en est un exemple.</p>
+	</blockquote>
+
+	<p>Avec les blocs, vous pouvez grouper un ensemble d&#8217;instruction de façon à les transmettre au cours de votre programme. Les accolades ressemblents à des pinces de crabe qui auraient aggripé le code et le tiendrait groupé. Quand vous voyez ces deux pinces, rappelez vous que le code enserré a été compressé en une seule unité.</p>
+
+
+	<p>C&#8217;est comme l&#8217;une des ces petites boites <a href="http://fr.wikipedia.org/wiki/Hello_Kitty">Hello Kitty</a> qu&#8217;ils vendent au supermaché, remplies de petits stylos et de papier microscopique, le tout empaqueté dans une petite trousse transparente et brillante qui tient dans le creux de la main. Mis à part que les blocs évitent de trop loucher.</p>
+
+
+	<p>Les accolades peuvent aussi être remplacées par les mots <strong>do</strong> et <strong>end</strong>, ce qui est plus clair si votre bloc tient sur plusieurs lignes.</p>
+
+
+<div class='example'><pre><code> <span class="ident">loop</span> <span class="keyword">do</span>
+   <span class="ident">print</span> <span class="punct">&quot;</span><span class="string">Beaucoup mieux.</span><span class="punct">&quot;</span> 
+   <span class="ident">print</span> <span class="punct">&quot;</span><span class="string">Ah. Plus d'espace!</span><span class="punct">&quot;</span> 
+   <span class="ident">print</span> <span class="punct">&quot;</span><span class="string">J'avais mal au dos à cause de ces pinces de crabe.</span><span class="punct">&quot;</span> 
+ <span class="keyword">end</span></code></pre></div>
+	<h3>Arguments de bloc</h3>
+
+	<p>Les arguments de bloc sont un ensemble de variables entourées par des <strong>pipes</strong> (NDT: |) et séparées par des <strong>virgules</strong>.</p>
+
+
+	<blockquote>
+		<p><code lang="en">|x|</code>, <code><span class="punct">|</span><span class="ident">x</span><span class="punct">,</span><span class="ident">y</span><span class="punct">|</span></code>, et <code><span class="punct">|</span><span class="ident">up</span><span class="punct">,</span> <span class="ident">down</span><span class="punct">,</span> <span class="ident">all_around</span><span class="punct">|</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>Les arguments de bloc sont utilisés au début d&#8217;un bloc.</p>
+
+
+	<blockquote>
+		<p><code><span class="punct">{</span> <span class="punct">|</span><span class="ident">x</span><span class="punct">,</span><span class="ident">y</span><span class="punct">|</span> <span class="ident">x</span> <span class="punct">+</span> <span class="ident">y</span> <span class="punct">}</span></code></p>
+	</blockquote>
+
+	<p>Dans l&#8217;exemple précédent, <code><span class="punct">|</span><span class="ident">x</span><span class="punct">,</span><span class="ident">y</span><span class="punct">|</span></code> sont les arguments. Le code se trouve après les arguments. L&#8217;expression <code><span class="ident">x</span> <span class="punct">+</span> <span class="ident">y</span></code> ajoute les deux arguments ensembles.</p>
+
+
+	<p>J&#8217;aime me représenter les deux caractères pipe comme un tunnel. Ils donnent l&#8217;impression d&#8217;un toboggan sur lequel les variables glissent. (<code><span class="ident">x</span></code> descend en écartant les jambes, alors que <code><span class="ident">y</span></code> croise les jambes.) Ce toboggan joue le rôle d&#8217;un passage entre les blocs et le monde qui les entoure.</p>
+
+
+	<p>Les variables sont passées grâce à ce toboggan (ou tunnel) au bloc.</p>
+
+
+	<p><img src="i/the.foxes-4g.png" title="And then, the dismal truth." alt="And then, the dismal truth." /></p>
+
+
+	<h3>Intervalles</h3>
+
+	<p>Un intervalle est composé de deux valeurs entourées par des <strong>parenthèses</strong> et séparées par une <strong>ellipse</strong> (sous la forme de deux ou trois points).</p>
+
+
+	<blockquote>
+		<p><code><span class="punct">(</span><span class="number">1</span><span class="punct">..</span><span class="number">3</span><span class="punct">)</span></code> est un intervalle, comprenant les nombres 1 à 3.</p>
+	</blockquote>
+
+	<blockquote>
+		<p><code><span class="punct">('</span><span class="string">a</span><span class="punct">'..'</span><span class="string">z</span><span class="punct">')</span></code> est un intervalle comprenant les lettres minuscules.</p>
+	</blockquote>
+
+	<p>Voyez-le comme un accordéon qui a été plié afin d&#8217;être transporté. (Bien sûr, le fait de vous promener avec un accordéon déplié peut vous apporter une grande vanité, mais parfois une personne a besoin de se vautrer dans le doute, en le transportant, plié, dans son étui.) Les parenthèses représentent les poignées sur les côté d&#8217;un bandoléon. Les points représentent la chaine qui maintient l&#8217;accordéon plié.</p>
+
+
+	<p>Généralement, on utilise seulement deux points. Si un troisième point est utilisé, la dernière valeur de l&#8217;intervalle est exclue.</p>
+
+
+	<blockquote>
+		<p><code><span class="punct">(</span><span class="number">0</span><span class="punct">...</span><span class="number">5</span><span class="punct">)</span></code> représente les nombres de 0 à 4 inclus.</p>
+	</blockquote>
+
+	<p>Quand vous voyez ce troisième point, imaginez que vous ouvrez légèrement l&#8217;accordéon. A peine assez pour laisser s&#8217;échapper une seule note. La note est la valeur de fin. Laissons-là monter vers le ciel.</p>
+
+
+	<h3>Tableaux</h3>
+
+	<p>Un tableau est une liste entourée par des <strong>crochets</strong> et dont les éléments sont séparés par des <strong>virgules</strong>.</p>
+
+
+	<blockquote>
+		<p><code><span class="punct">[</span><span class="number">1</span><span class="punct">,</span> <span class="number">2</span><span class="punct">,</span> <span class="number">3</span><span class="punct">]</span></code> est un tableau de nombres.</p>
+	</blockquote>
+
+	<blockquote>
+		<p><code><span class="punct">['</span><span class="string">coat</span><span class="punct">',</span> <span class="punct">'</span><span class="string">mittens</span><span class="punct">',</span> <span class="punct">'</span><span class="string">snowboard</span><span class="punct">']</span></code> est un tableau de chaine de caractères.</p>
+	</blockquote>
+
+	<p>Représentez le vous comme une chenille qui aurait été aggrafée sur votre code. Les deux crochets sont les aggrafes qui l&#8217;empèche de bouger, afin de noter où se trouvent la tête et la queue. Les virgules sont les jambes de la chenille frétillantes entre chaque section de son corps.</p>
+
+
+	<p>Il était une fois une chenille qui avait des virgules à la place des jambes. Ce qui veut dire qu&#8217;elle devait faire une pause littéraire après chaque pas. Les autres chenilles la respectaient beaucoup pour cette particularité, et elle servait un peu de chef. Et sans parler d&#8217;un philanthrope! Il était connu pour donner des feuilles fraiches aux moins fortunées.</p>
+
+
+	<p>Oui, un tableau est une collection de choses, mais il garde aussi ces choses dans un ordre spécifique.</p>
+
+
+	<h3>Hachage</h3>
+
+	<p>Une table de hachage est un dictionnaire entouré par des <strong>accolades</strong>. Les dictionnaires font correspondre des noms à leur définition. Ruby indique celà par une <strong>flêche</strong>, faite d&#8217;un signal egal suivit par un signe supérieur.</p>
+
+
+	<blockquote>
+		<p><code><span class="punct">{'</span><span class="string">a</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">aardvark</span><span class="punct">',</span> <span class="punct">'</span><span class="string">b</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">badger</span><span class="punct">'}</span></code> en est un exemple.</p>
+	</blockquote>
+
+	<p>Cette fois, les accolades représentent de petits symboles en forme de livre. Regardez comme elles ressemblent à de petits livres ouvert, pliés en leur milieu. Ils représentent l&#8217;ouverture et la fermeture de notre dictionnaire.</p>
+
+
+	<p>Imaginez que notre dictionnaire ait une définition sur chaque page. Les virgules représentent les coins de chacune des pages, que nous tournons pour voir la prochaine définition. Et sur chaque page: un mot suivi par une flêche poitant vers sa définition.</p>
+
+
+<div class='example'><pre><code> <span class="punct">{</span>
+   <span class="punct">'</span><span class="string">nom</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">Pierre</span><span class="punct">',</span>
+   <span class="punct">'</span><span class="string">profession</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">dresseur de lion</span><span class="punct">',</span>
+   <span class="punct">'</span><span class="string">grand amour</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">flannelle</span><span class="punct">'</span>
+ <span class="punct">}</span></code></pre></div>
+	<p>Je ne compare pas les tables de hachage aux dictionnaires pour indiquer que l&#8217;on ne peut stocker que des définitions dans les tables de hachage. Dans l&#8217;exemple précédent, j&#8217;ai stocké les informations personnelles de Pierre, le dresseur de lion avec un penchant pour la flannelle. Les tables de hachage sont comme les dictionnaires car elles permettent une recherche facile.</p>
+
+
+	<p>A la différence des tableaux, les éléments d&#8217;une table de hachage ne sont pas gardés selon un ordre spécifique.
+<img src="i/the.foxes-5.png" title="The foxes think silence will kill the comic." alt="The foxes think silence will kill the comic." /></p>
+
+
+	<h3>Expression Régulières</h3>
+
+	<p>Un expression régulière(ou <em>regexp</em>) est un ensemble de caractères entourés par des <strong>slashes</strong>.</p>
+
+
+	<blockquote>
+		<p><code><span class="punct">/</span><span class="regex">ruby</span><span class="punct">/</span></code>, <code><span class="punct">/</span><span class="regex">[0-9]+</span><span class="punct">/</span></code> et <code><span class="punct">/</span><span class="regex">^<span class="escape">\d</span>{3}-<span class="escape">\d</span>{3}-<span class="escape">\d</span>{4}</span><span class="punct">/</span></code> en sont des exemples.</p>
+	</blockquote>
+
+	<p>Les expressions régulières sont utilisées pour trouver des mots ou des motifs dans du texte. Les slahes de chaque côté de l&#8217;expressions sont des épingles.</p>
+
+
+	<p>Imaginez que vous ayez un petit mot avec des épingles de chaque côté et que vous le passiez sur le livre. Vous promenez le mot sur le texte et quand il s&#8217;approche d&#8217;un mot correspondant, il commence à clignoter. Vous épinglez alors l&#8217;expression régulière sur le livre, juste sur le mot correspondant et il fait briller les lettres du mot.</p>
+
+
+	<p>Et quand vous plantez les épingles dans le livre, le papier éternue, &#8220;<em>reg-exp!</em>&#8221;.</p>
+
+
+	<p>Les expressions régulières sont beaucoup plus rapide que de passer vos mains sur les pages du livres. Ruby peut utliser une expression régulière pour chercher à travers énormément de livres très rapidement.</p>
+
+
+	<h3>Opérateurs</h3>
+
+	<p>Vous utiliserez la liste suivantes d&#8217;opérateurs pour faires des maths en Ruby ou pour comparer des choses. Lisez la liste, essayez d&#8217;en reconnaître certains. Vous savez, l&#8217;addition <code><span class="punct">+</span></code>, la soustraction <code><span class="punct">-</span></code> et tout celà...</p>
+
+
+<div class='example'><pre class="text">  ** !  ~  *  /  %  +  -  &#38;  
+  &lt;&lt; &gt;&gt; |  ^  &gt;  &gt;= &lt;  &lt;= &lt;=&gt;
+  || != =~ !~ &#38;&#38; += -=  =
+  .. ... not and or          
+</pre></div>
+	<h3>Mots Clé</h3>
+
+	<p>Ruby comporte un certain nombre de mots-clé, imprégnés de signification. Ces mots ne peuvent être utilisés comme nom de variable ou modifiés afin de s&#8217;accorder à vos désirs. Nous avons déjà parlé de certains d&#8217;entre eux. Ils sont protégés mon ami. Vous les touchez et vous obtiendrez une erreur de syntaxe officielle.</p>
+
+
+<div class='example'><pre class="text">  alias   and     BEGIN   begin   break   case    class   def     defined 
+  do      else    elsif   END     end     ensure  false   for     if 
+  in      module  next    nil     not     or      redo    rescue  retry 
+  return  self    super   then    true    undef   unless  until   when 
+  while   yield 
+</pre></div>
+	<p>OK. Ce sont les illustres membres du langage Ruby. Nous allons en bouffer pendant les trois prochains chapitres, assemblant ces parties en de rusés petits bouts de code (poignant).</p>
+
+
+	<p>Je recommande de lire toutes les parties du discours encore une fois. Ayez-en une bonne vue d&#8217;ensemble. Je vous testerai dans la prochaine partie.
+<img src="i/the.foxes-6.png" title="Out in the pickup truck." alt="Out in the pickup truck." /></p>
+
+    
+    
+        
+        <div class="sidebar">
+        <h1>sidebar!</h1>
+        
+        <h2>Sept Moments Zen dans Ma Vie</h2>
+        
+
+        <ol>
+	<li>8 ans. Allongé dans le lit, pensif. Et je réalise: <em>Rien ne m&#8217;empèche de devenir une enfant dentiste.</em></li>
+	<li>21 ans. Je trouve un stylo sur la plage. Gravé dessus: <em>J&#8217;aime la sérénité.</em> A l&#8217;abri dans la poche intérieure de ma veste de costume. Je regarde les vagues aller et venir.</li>
+	<li>22 ans. Je trouve, dans ma salle de bain, un scarabée sur le point de tomber dans le chauffage. Je le sauve. Je lui confectionne un petit sac à dos à l&#8217;aide d&#8217;une feuille et de fil. Dans le sac à dos: une quille et une pile <span class="caps">AAA</span>. Celà devrait l&#8217;aider. Je le libère devant le portail de devant.</li>
+	<li>3 ans: J&#8217;écarte le rideau. Le soleil.</li>
+	<li>14 ans. Je conduis mon vélo sur la jetée avec mon entraineur courant derrière moi pendant que le soleil se couche, juste après avoir battu Piston Honda dans la version originale Nintendo de &#8220;Mike Tyson&#8217;s Punch-Out&#8221;.</li>
+	<li>11 ans. Malade. Je regarde <a href="http://fr.wikipedia.org/wiki/Cosby_Show">Heathcliff</a> à la télévision. Pendant des heures. Et il était capable de venir juste devant moi. Sa tête tournoyant vers moi. Sa tête allant et venant d&#8217;avant en arrière, très près puis à des millions de kilomètres. Plus de son. En une fraction de seconde, Heathcliff avait rempli l&#8217;univers puis était parti au confin de l&#8217;infini. J&#8217;entendais la voix de ma mère qui essayait de me parvenir au travers de la série. Proche, loin, proche, loin. C&#8217;était une rave religieuse avec un chat stroboscope et la voix de ma mère comme une basse etoufée. (J&#8217;avais plus de 40 de fièvre ce jour là).</li>
+	<li>18 ans. Je m&#8217;achète un animal de compagnie. Un canard. Je le nourris pendant un temps. Je lui donne un bain. Je l&#8217;oublie pendant au moins 2 mois. Un jour, alors que je fais le ménage, je trouve une chaîne et le canard au bout. Eh, petit canard. Fou et monstrueux, sautillant avec ses cheveux au vent, poussant des gloussement en ligne diagonale. En smoking.</li>
+</ol>
+        <h1>sidebar!</h1>
+        </div>
+
+    
+    
+        
+        <a name="section3" />
+        <h2>3. Si Je ne Vous Avez Pas Encore Assez Traité Comme un Enfant</h2>
+
+        <p>Je suis fier de vous. Tout le monde vous²q dira combien je vante vos mérites. Combien je glorifie cette personne anonyme, là-bas, qui fait défiler son écran et lit, et fait défiler son écran et lit. &#8220;Ces enfants&#8221;, leur dis-je. &#8220;Mec, ces enfants m&#8217;ont eu. Je n&#8217;ai jamais &#8230;&#8221; Et je ne peux même pas finir ma phrase car je pleure comme un veau.</p>
+
+
+	<p>Et mon coeur brille d&#8217;un rouge vif sous ma peau vaporeuse et translucide, et ils doivent m&#8217;injecter 10 cm<sup>3</sup> de Javascript pour me rétablir. (Je réponds bien au drogues dans le sang.) Mec, ce truc vous ferez sauter les pêches hors des ouies!</p>
+
+
+	<p>Et oui. Vous avez gentillement persévéré . Mais maintenant je dois commencer à devenir un maître d&#8217;école brutal. Je dois commencer à voir de bonnes notes de votre part. Jusqu&#8217;à présent vous n&#8217;avez rien fait d&#8217;autre que beaucoup bouger vos yeux. OK, bien sûr vous avez fait quelques lectures à haute voix exceptionnelles plus tôt. Mais maintenant, Smotchkkiss, nous allons avoir besoin de quelques talents de compréhension.</p>
+
+
+	<p><strong>Prononcez à haute voix les parties du discours utilisées plus bas.</strong></p>
+
+
+	<blockquote>
+		<p><code><span class="number">5</span><span class="punct">.</span><span class="ident">times</span> <span class="punct">{</span> <span class="ident">print</span> <span class="punct">&quot;</span><span class="string">Odelay!</span><span class="punct">&quot;</span> <span class="punct">}</span></code></p>
+	</blockquote>
+
+	<p>Vous pouvez même vouloir revoir ce paragraphe pendant que vous lisez, car vos yeux voudront sauter vers la réponse. Nous avons le <em>nombre</em> <code><span class="number">5</span></code>, suivi de la <em>méthode</em> <code><span class="punct">.</span><span class="ident">times</span></code>. Ensuite la première paire de pince de crabe du <em>bloc</em>. La <em>méthode</em> du kernel <code><span class="ident">print</span></code> n&#8217;a pas de point et est suivie par la <em>chaîne de caractères</em> <code><span class="punct">&quot;</span><span class="string">Odelay!</span><span class="punct">&quot;</span></code>. La paire de pince de crabe terminale ferme notre <em>bloc</em>.</p>
+
+
+	<p><strong>Prononcez à haute voix les parties du discours utilisées plus bas.</strong></p>
+
+
+	<blockquote>
+		<p><code><span class="ident">exit</span> <span class="keyword">unless</span> <span class="punct">&quot;</span><span class="string">restaurant</span><span class="punct">&quot;.</span><span class="ident">include?</span> <span class="punct">&quot;</span><span class="string">aura</span><span class="punct">&quot;</span></code></p>
+	</blockquote>
+
+	<p>A l&#8217;instar de la méthode <code><span class="ident">print</span></code>, <code><span class="ident">exit</span></code> est une méthode du kernel. Si vous avez fait attention lors de la grande list de mots-clé, vous savez que <code><span class="keyword">unless</span></code> est un <em>mot-clé</em>. La <em>chaine de caratères</em> <code><span class="punct">&quot;</span><span class="string">restaurant</span><span class="punct">&quot;</span></code> est suivi de la <em>méthode</em> <code><span class="ident">include?</span></code>. Et enfin, la chaîne de caratères <code><span class="punct">&quot;</span><span class="string">aura</span><span class="punct">&quot;</span></code>.</p>
+
+
+	<p><strong>Prononcez à haute voix les parties du discours utilisées plus bas.</strong></p>
+
+
+	<blockquote>
+		<p><code><span class="punct">['</span><span class="string">pain</span><span class="punct">',</span> <span class="punct">'</span><span class="string">fromage</span><span class="punct">',</span> <span class="punct">'</span><span class="string">vin</span><span class="punct">'].</span><span class="ident">each</span> <span class="punct">{</span> <span class="punct">|</span><span class="ident">food</span><span class="punct">|</span> <span class="ident">print</span><span class="punct">(</span> <span class="ident">food</span><span class="punct">.</span><span class="ident">capitalize</span> <span class="punct">)</span> <span class="punct">}</span></code></p>
+	</blockquote>
+
+	<p>Cette chenille participe à notre délicat festin. Cet exemple commence par un <em>tableau</em>. Dans ce tableau, trois <em>chaînes de caratères</em>: <code><span class="punct">'</span><span class="string">pain</span><span class="punct">'</span></code>, <code><span class="punct">'</span><span class="string">fromage</span><span class="punct">'</span></code>, et <code><span class="punct">'</span><span class="string">vin</span><span class="punct">'</span></code>. Ce tableau est suivi par la <em>méthode</em> <code><span class="ident">each</span></code>.</p>
+
+
+	<p>A l&#8217;intérieur d&#8217;un <em>bloc</em>, l&#8217;<em>argument de bloc</em> <code><span class="ident">food</span></code> descend par son toboggan à l&#8217;intérieur du bloc. La <em>méthode</em> <code><span class="ident">capitalize</span></code> met ensuite en majuscule la première lettre de l&#8217;argument de bloc, qui est devenu la <em>variable</em> <code><span class="ident">food</span></code>. Cette chaîne est alors passée à la <em>méthode</em> de kernel <code><span class="ident">print</span></code>.</p>
+
+
+	<p>Relisez encore ces exemples. Soyez sûr de reconnaitre les différentes parties du discours utilisées. Elles ont toutes un look différent, n&#8217;est-ce-pas? Prenez une inspiration profonde, appuyez fermement sur vos tempes. Maintenant, disséquons un bout de code.</p>
+
+    
+    
+        
+        <a name="section4" />
+        <h2>4. Un Exemple pour Vous Aider à Grandir</h2>
+
+        <p><img src="i/the.foxes-7.png" title="Gettin' cabin fever." alt="Gettin' cabin fever." /></p>
+
+
+	<p><strong>Prononcez à haute voix les parties du discours utilisées plus bas.</strong></p>
+
+
+<div class='example'><pre><code> <span class="ident">require</span> <span class="punct">'</span><span class="string">net/http</span><span class="punct">'</span>
+ <span class="constant">Net</span><span class="punct">::</span><span class="constant">HTTP</span><span class="punct">.</span><span class="ident">start</span><span class="punct">(</span> <span class="punct">'</span><span class="string">www.ruby-lang.org</span><span class="punct">',</span> <span class="number">80</span> <span class="punct">)</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">http</span><span class="punct">|</span>
+     <span class="ident">print</span><span class="punct">(</span> <span class="ident">http</span><span class="punct">.</span><span class="ident">get</span><span class="punct">(</span> <span class="punct">'</span><span class="string">/en/LICENSE.txt</span><span class="punct">'</span> <span class="punct">).</span><span class="ident">body</span> <span class="punct">)</span>
+ <span class="keyword">end</span></code></pre></div>
+	<p>La prmière ligne est un appel à une méthode. La <em>méthode</em> appelée <code><span class="ident">require</span></code> est utilisée. Une <em>chaîne de caractère</em> contenant <code><span class="punct">'</span><span class="string">net/http</span><span class="punct">'</span></code> est passée à la méthode. Voyez cette première ligne de code comme une phrase. Nous avons demandé à Ruby de charger un code sensé nous aider, la bibliothèque <code><span class="constant">Net</span><span class="punct">::</span><span class="constant">HTTP</span></code>.</p>
+
+
+	<p>Les trois lignes suivantes vont toutes ensembles. La <em>constante</em> <code><span class="constant">Net</span><span class="punct">::</span><span class="constant">HTTP</span></code> se rapporte à la bibliothèque que nous venons de charger précédemment. Nous utilisons la <em>méthode</em> <code><span class="ident">start</span></code> de cette bibliothèque. Nous envoyons à la méthode la <em>chaîne de caractères</em> <code><span class="punct">'</span><span class="string">www.ruby-lang.org</span><span class="punct">'</span></code> et le <em>nombre</em> <code><span class="number">80</span></code>.</p>
+
+
+	<p>Le mot <code><span class="keyword">do</span></code> ouvre un <em>bloc</em>. Ce bloc possède une <em>variable de bloc</em> <code><span class="ident">http</span></code>. Dans ce block, la <em>méthode</em> <code><span class="ident">print</span></code> est appelée. Qu&#8217;est-ce qui va être affiché?</p>
+
+
+	<p>La <em>méthode</em> <code><span class="ident">get</span></code> est appelée depuis la <em>variable</em> <code><span class="ident">http</span></code>. Nous passons à <code><span class="ident">get</span></code> une <em>chaîne de caractères</em> contenant le chemin <code><span class="punct">'</span><span class="string">/en/LICENSE.txt</span><span class="punct">'</span></code>. Maintenant, remarquez qu&#8217;une autre méthode est enchainée avec <code><span class="ident">get</span></code>. La <em>méthode</em> <code><span class="ident">body</span></code>. Puis le bloc se termine avec un <code><span class="keyword">end</span></code>.</p>
+
+
+	<p>Tout va bien? Juste par curiosité, pouvez-vous deviner ce que fait cet exemple? J&#8217;espère que vous voyez certains motif de Ruby. Sinon, remuez votre tête vigouresement pendant que vous avez ces exemples à l&#8217;esprit. Le code devrait se casser en de petites sections que vous devriez comprendre.</p>
+
+
+	<p>Par exemple, ce motif est utilisé plusieurs fois:</p>
+
+
+	<blockquote>
+		<p><em>variable</em> . <em>méthode</em> ( <em>argument de méthode</em> )</p>
+	</blockquote>
+
+	<p>Vous le voyez dans le bloc:</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">http</span><span class="punct">.</span><span class="ident">get</span><span class="punct">(</span> <span class="punct">'</span><span class="string">/en/LICENSE.txt</span><span class="punct">'</span> <span class="punct">)</span></code></p>
+	</blockquote>
+
+	<p>On utilise Ruby pour obtenir une page web. Vous avez sans doute déjà utilisé <span class="caps">HTTP</span> avec votre browser. <span class="caps">HTTP</span> est l&#8217;Hypertext Transfer Protocol. <span class="caps">HTTP</span> est utilisé pour transférer des pages web à travers Internet. Imaginez un conducteur de bus qui pourrait conduire à travers Internet et vous ramener des pages web. Sur son chapeau, brillent les lettres <span class="caps">HTTP</span>.</p>
+
+
+	<p>La variable <code><span class="ident">http</span></code> est ce conducteur de bus. La <em>méthode</em> est un message au conducteur de bus. Va <code><span class="ident">chercher</span></code> (NDT: <code><span class="ident">get</span></code> en anglais) la page web nommée <code><span class="punct">/</span><span class="regex">en</span><span class="punct">/</span><span class="constant">LICENSE</span><span class="punct">.</span><span class="ident">txt</span></code>.</p>
+
+
+	<p>Aussi, là où vous verrez:</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">http</span><span class="punct">.</span><span class="ident">get</span><span class="punct">(</span> <span class="punct">'</span><span class="string">/en/LICENSE.txt</span><span class="punct">'</span> <span class="punct">).</span><span class="ident">body</span></code></p>
+	</blockquote>
+
+	<p>Comme nous récupérons une page web de la part du conducteur de bus nommé <code><span class="ident">http</span></code>, vous pouvez le lire dans votre esprit comme:</p>
+
+
+	<blockquote>
+		<p><em>page web</em> .body</p>
+	</blockquote>
+
+	<p>Et ce bout de code:</p>
+
+
+	<blockquote>
+		<p><code><span class="ident">print</span><span class="punct">(</span> <span class="ident">http</span><span class="punct">.</span><span class="ident">get</span><span class="punct">(</span> <span class="punct">'</span><span class="string">/en/LICENSE.txt</span><span class="punct">'</span> <span class="punct">).</span><span class="ident">body</span> <span class="punct">)</span></code></p>
+	</blockquote>
+
+	<p>Ce code récupère la page web. Nous envoyons un message <code><span class="ident">body</span></code> à cette page web, ce qui nous donne tout l&#8217;HTML dans une <em>chaîne de caractères</em>. On <em>affiche</em> (NDT: <code><span class="ident">print</span></code> en anglais) ensuite cette chaine. Vous voyez comme le motif point-méthode est utilisé de façon chainée. Le prochain chapitre explorera ce genre de motifs en Ruby. Ce sera marrant.</p>
+
+
+	<p>Alors, que fait ce code? Il affiche le code <span class="caps">HTML</span> de la &#8220;home page&#8221; du sitre officiel de Ruby à l&#8217;écran. En utilisant un conducteur de bus branché au web.</p>
+
+    
+    
+        
+        <a name="section5" />
+        <h2>5. Et, Le Voyage Rapide Arrive A Une Fin Simple et Rembourrée</h2>
+
+        <p><img src="i/the.foxes-8.png" title="Running after the truck." alt="Running after the truck." /></p>
+
+
+	<p>Bien, maintenant nous avons un problème. J&#8217;ai l&#8217;impression que cette façon d&#8217;apprendre vous plait un peu trop. Et vous n&#8217;avez pas encore atteint le chapitre où j&#8217;utilise des chansons de saut à la corde pour vous aider à apprendre comment analyser du <span class="caps">XML</span>!</p>
+
+
+	<p>Si celà vous plait déjà, alors les choses vont vraiment mal. Dans deux chapitres, vous écrirez vos propres programmes en Ruby. En fait, c&#8217;est juste là que je vous ferai écrire votre propre jeu de rôle, votre propre réseau de partage de fichiers (à la BitTorrent) ainsi qu&#8217;un programme qui récupèrera des nombres aléatoires depuis Internet.</p>
+
+
+	<p style="float:right"><img src="i/graph-1.gif" title="Proof has been extracted from the pudding." alt="Proof has been extracted from the pudding." /></p>
+
+
+	<p>Et vous savez (vous devez savoir!) que celà va devenir une obsession. D&#8217;abord vous allez complètement oublier de sortir le chien. Il attendra près de la porte de votre bureau, tournant sa tête vers vous, alors que vos yeux dévoreront le code, que vos doigts enverront des messages à l&#8217;ordinateur.</p>
+
+
+	<p>A cause de votre négligence, les choses vont commencer à aller mal. Vos tas de feuilles imprimées de code vont recouvrir vos conduits d&#8217;aération. Votre chaudière va se boucher. Les ordures vont s&#8217;amonceler: des boites à emporter que vous aurez commandé précipitamment, du courrier inoportun. Votre propre crasse polluera l&#8217;air. La mousse gagnera le chevron, les arrivées d&#8217;eau vont se boucher, les animaux entreront, et les arbres pousseront depuis les fondations.</p>
+
+
+	<p>Mais vous prendrez soin de votre ordinateur. Et vous, Smotchkkiss, le nourrirez avec votre connaissance. Au cours des éternités que vous aurez passé avec votre machine, vous serez devenu à moitié <span class="caps">CPU</span>. Et il sera devenu à moitié humain. Vos bras pénètreront directement dans les ports de votre ordinateurs. Vos yeux accepteront la video directement depuis une broche <span class="caps">DVI</span>-24. Vos poumons se trouveront juste au dessus du processeur, et le refroidiront.</p>
+
+
+	<p>Et juste comme la pièce sera prête à se refermer sur vous, juste comme tout cette luxuriance va vous avaler vous et votre ordinateur, vous terminerez votre script. Vous et votre machine, ensemble, ferez marcher ce dernier script Ruby, le produit de votre obsession. Et le script lancera des tronçonneuses pour couper les arbres, des cheminées pour aider à réchauffer la maison. Des nano-robots constructeurs sortiront de votre script pour reconstruire votre intérieur, re-carreler, rénover, chromer, polir et désinfecter. D&#8217;immenses piliers se dresseront, et des statues seront sculptées. Vous maintiendrez ce palais sous votre domination ainsi que les montagnes et îles qui entourent votre forteresse.</p>
+
+
+	<p>Bon je pense que l&#8217;on va être d&#8217;accord. Qu&#8217;est-ce-que tu dis? Attaquons ce script?</p>
+
+    
+    
+
+        <p style="text-align:right;">
+        <a href="chapter-4.html">Tournez la page.</a>
+        </p>
+
+    </div>
+</div>
+</div>
+<div id="footer">
+   <div class="pager">
+   &lt; <a href="chapter-2.html">précédente</a> | <a href="chapter-4.html">suivante</a> &gt;
+   </div>
+   <div class="title">
+   <h3>Le guide <span class="hilite">(poignant)</span> de why vers ruby</h3>
+   </div>
+</div>
+</body>
+</html>

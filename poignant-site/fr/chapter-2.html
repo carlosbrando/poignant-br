@@ -1,0 +1,220 @@
+
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+    <title>Le Guide (Poignant) de Why vers Ruby :: 2. Kon&#8217;nichi wa, Ruby</title>
+    <link rel="stylesheet" type="text/css" href="guide.css" />
+</head>
+<body>
+
+<div id="banner">
+   <div class="pager">
+   &lt; <a class="pagebar" href="chapter-1.html">précédente</a> | <a class="pagebar" href="chapter-3.html">suivante</a> &gt;
+   </div>
+   <div class="title">
+   <h3>Le guide <span class="hilite">(poignant)</span> de why vers ruby</h3>
+   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html">Contents</a>
+   </div>
+</div>
+<div id="container">
+<div class="page">
+    <div class="pageTitle">
+        <h3>2.</h3>
+        <h1>Kon&#8217;nichi wa, Ruby</h1>
+        <p><img src="i/chapter.poignant.guide-2.jpg" alt="[o]" /></p>
+    </div>
+    <div class="content">
+
+    
+        
+        <a name="section1" />
+        <h2>1. En ouvrant ce livre</h2>
+
+        <p>Supposons que vous ayez ouvert ce livre (bien que vous <em>ayez</em> probablement ouvert ce livre), et que vous trouviez un énorme oignon juste au milieu. (L&#8217;imprimeur du livre a inclus l&#8217;oignon à ma demande.)</p>
+
+
+	<p>Donc, vous pensez, &#8220;Whoua, ce livre est livré avec un oignon !&#8221; (Même si vous n&#8217;aimez pas particulièrement les oignons, je suis sûr que vous êtes à même d&#8217;apprécier la logistique nécessaire à la livraison discrète de quelque produit que ce soit à l&#8217;intérieur d&#8217;un prétendu manuel de programmation.)</p>
+
+
+	<p>Puis vous vous demandez, &#8220;Attend une minute. Je pensais que c&#8217;était un livre sur Ruby, l&#8217;incroyable nouveau langage de programmation en provenance du Japon. Et, bien que j&#8217;apprécie la logistique nécessaire à la livraison discrète de quelque produit que ce soit à l&#8217;intérieur d&#8217;un prétendu manuel de programmation, Pourquoi un oignon ? Que suis-je supposé faire avec ?&#8221;</p>
+
+
+	<p>Non. S&#8217;il vous plait, ne vous posez pas de question. Vous ne devez rien faire avec cet oignon. Mettez l&#8217;oignon de côté et laissez <em>le</em> faire quelque chose pour <em>vous</em>.</p>
+
+
+	<p>Je serais direct avec vous. Je veux vous faire pleurer. Sangloter, larmoyer gentillement. Ce livre est un guide <strong>poignant</strong> vers Ruby. Ce qui veut dire un code si beau qu&#8217;il vous en tirera des larmes. Cela veut dire des contes galants et de sombres vérités qui feront que vous vous réveillerez le matin suivant dans les bras de ce livre. Le serrant étroitement contre vous toute la journée. Si nécessaire, fabriquez un étui pour le <em>Guide (Poignant) de Why vers Ruby</em>, afin de l&#8217;avoir toujours contre vous.</p>
+
+
+	<p>Vous devriez vraiment sangloter une fois. Ou au moins renifler. Et sinon, l&#8217;oignon vous aidera.</p>
+
+    
+    
+        
+        <div class="sidebar">
+        <h1>sidebar!</h1>
+        
+        <h2>Ce que Je Vais Faire Avec les Gains Massifs Générés par ce Livre</h2>
+        
+
+        <p>Tous ceux qui ont écrit un livre vous diront combien un auteur est facilement distrait par des visions de grandeurs. En ce qui me concerne, je m&#8217;arrête deux fois pour chaque paragraphe, et quatre fois pour chaque bande-dessinée, juste pour évaluer la fortune et la prospérité que ce livre me procurera. Aussi j&#8217;ai peur que l&#8217;écriture de ce livre ne s&#8217;arrête pour faire place à l&#8217;armada de <span class="caps">SUV</span> et de voitures de luxe qui brillent dans mon esprit.</p>
+
+
+	<p>Plutôt que d&#8217;arrêter l&#8217;écriture du Guide (Poignant), j&#8217;ai réservé cet espace en tant que &#8220;zone de sécurité&#8221; afin de déverser mes voeux vains.</p>
+
+
+	<p>Aujourd&#8217;hui j&#8217;étais dans un restaurant italien, Granado,et j&#8217;étais en train de payer ma note. J&#8217;ai alors remarqué une bouteille de vinaigre balsamique à 150 euros. Très petite. Je pouvais la faire tenir dans ma main. Âgée de 22 ans.</p>
+
+
+	<p>J&#8217;ai passé beaucoup de temps à penser à cette bouteille. C&#8217;est souvent un accessoire de mes fantasmes obsessionnels. Dans un de ces fantasmes, je rentrais dans le restaurant, je retournais une pile de feuillage sur le comptoir, et demandais instamment au caissier: &#8220;Vite! J&#8217;ai une salade importante à faire!&#8221;</p>
+
+
+	<p>Dans un autre fantasme du même acabit, je jette de la laitue. Cette saleté ne convient pas à mon nouveau vinaigre. Non, j&#8217;arriverai à un point où la célébrité et l&#8217;aristocratie m&#8217;auront corrompu au plus profond de mon être. Ma nouvelle laitue sera de l&#8217;argent. De l&#8217;argent froid et dur, Madame Price.</p>
+
+
+	<p>Bientôt, je dépenserai des centaines d&#8217;euros pour un morceau de myzithra<sup><a href="#fn1">1</a></sup>.</p>
+
+
+	<p>Mes fantaisies sont toutefois allées plus loin que la possession. Certes, j&#8217;ai examiné par le détail mes acquisitions d&#8217;urnes grecques, de cortèges de voitures, de compagnies aériennes, de pyramides et d&#8217;os de dinosaures. De temps à autres, je verrai des villes secouées par le vent aux informations, et je rajouterai sur ma liste: <em>Ouragan</em>.</p>
+
+
+	<p>Mais maintenant j&#8217;envisage un but plus large. Pour parler simplement: que va-t-il se passer si j&#8217;amasse une fortune telle que les Monnaies ne puisse pas imprimer assez pour soutenir ma demande? Tous les autres seraient obligés d&#8217;utiliser des billets de Monopoly. Et vous devriez gagner au Monopoly pour pouvoir manger. Ce serait des parties assez tendues. Je veux dire que vous devriez hypothéquer vos biens, et vos enfants commenceraient à pleurer. En plus, je pense que vous commenceriez à voir la fin de ceux qui choisissent les places libre de stationnement comme les <a href="http://monopolyste.online.fr/regles.shtml#freeparc">coffres alternatifs</a> pour les fonds de la ville.
+Vous aurez à vous en remettre à de l&#8217;argent factice toutefois. Le faux argent est le meilleur. Vous pouvez en avoir si facilement. Pendant un instant, c&#8217;est comme si vous étiez un riche fou. Quand j&#8217;étais enfant, nous avions construit avec des enfants du voisinage ce petit <a href="http://fr.wikipedia.org/wiki/Tijuana">Tijuana</a> dans notre rue. Nous avions fabriqué nos propres pesos et portions des sombreros et tout le reste!</p>
+
+
+	<p>Un des enfants vendait des <a href="http://fr.wikipedia.org/wiki/Tamales">tamales</a> chauds pour deux pesos chacun. <em>Deux pesos!</em> Est-ce qu&#8217;il savait que la monnaie était fausse ? A quoi pensait-il ? Qui a invité ce gosse? Savait-il que ce n&#8217;était pas vraiment Tijuana? Peut-être était-il vraiment de Tijuana! Peut-être que c&#8217;était de <em>vrais</em> pesos!  Fabriquons plus de <em>vrais</em> pesos!</p>
+
+
+	<p>Je crois que nous avions même une taverne, ou vous pouviez vous saouler de Kool-Aid<sup><a href="#fn2">2</a></sup>. Il n&#8217;y a rien de tel qu&#8217;un groupe de gosses trébuchants, marmonnant de façon incohérente avec des lèvres rouges comme celles d&#8217;un clown.</p>
+
+
+	<p id="fn1"><sup>1</sup> NDT: fromage grec.</p>
+
+	<p id="fn2"><sup>2</sup> NDT: sorte de cristaux qui, une fois</p>
+     dilué dans l&#8217;eau donne une boisson aromatisée et sucrée.
+        <h1>sidebar!</h1>
+        </div>
+
+    
+    
+        
+        <a name="section2" />
+        <h2>2. L'Histoire du Chien</h2>
+
+        <p>OK, essayons ce premier morceau d&#8217;intensité:</p>
+
+
+	<p>Un jour, alors que je marchais sur une de ces routes à grand trafic pleines de vendeurs de voitures (c&#8217;était peu après l&#8217;annulation de mon mariage), j&#8217;ai trouvé un chien abandonné sur la route. Un chien laineux, noir avec des yeux rouges verdâtres. Me sentant moi-même un peu abandonné, j&#8217;attrapais quelques ballons accrochés à un poteau devant une agence, et je les accrochais au collier du chien. Ensuite j&#8217;ai décidé qu&#8217;il serait mon chien. Je l&#8217;appelai Bigelow.</p>
+
+
+	<p>Nous sommes partis chercher des croquettes pour Bigelow, puis pour aller chez moi, ou nous pourrions nous asseoir dans des fauteuils et écouter du <a href="http://fr.wikipedia.org/wiki/Gorky%27s_Zygotic_Mynci">Gorky&#8217;s Zygotic Mynci</a>. Oh, et nous devions aussi nous arrêter afin d&#8217;acheter à Bigelow son propre fauteuil.</p>
+
+
+	<p>Mais Bigelow ne m&#8217;avait pas accepté pour maître. Aussi au bout de cinq minutes, ce chien stupide a choisi une autre route à un croisement et je ne l&#8217;ai plus jamais revu. Ainsi, tandis qu&#8217;il n&#8217;avait précédemment été perdu qu&#8217;une seule fois, il l&#8217;était maintenant deux fois. J&#8217;ai alors ralenti le pas qui me menait vers une vie faite de croquette et de fauteuils supplémentaires. J&#8217;ai eu un chien pendant cinq minutes.</p>
+
+
+	<p>Quel chien stupide. Je m&#8217;assis sur un banc et jetais des pommes de pin sur la statue de trois chèvres traversant un pont. Après cela, j&#8217;ai pleuré pendant des heures. Les larmes coulaient toutes seules. Voilà quelque chose de poignant.</p>
+
+
+	<p>Je me demande où il est allé avec tous ces ballons. Ce chien fou ressemblait à une fête sur pattes.</p>
+
+
+	<p>Ce n&#8217;est que peu de temps après que j&#8217;ai joué mon propre Bigelow. J&#8217;avais imprimé un ensemble de pages sur Ruby. des articles trouvés sur le Net. Je les ai parcouru lors de mon trajet de retour, en train, un soir. J&#8217;ai joué avec pendant cinq minutes avant d&#8217;abandonner. Pas impressionné.</p>
+
+
+	<p>Je m&#8217;assis, contemplant le monde depuis la fenêtre, un mixer géant mélangeant les graffitis et l&#8217;acier fondant devant moi. <em>Ce monde est trop grand pour un si petit langage</em>, pensais-je. <em>Cette pauvre petite chose n&#8217;a aucune chance. Même pas de jambe pour tenir debout. Même pas de bras pour nager.</em></p>
+
+
+	<p>Et pourtant, j&#8217;étais là. Un petit homme sur un petit train fragile (et j&#8217;avais même encore une dent de lait à cette époque) parmi des milliards de personnes sur une pierre bleue flottante. Comment pourrais je dénigrer Ruby? Qui peut dire si je ne vais pas m&#8217;étouffer avec mon téléphone portable et mourir plus tard dans la soirée. Why mort, Ruby continuera à vivre.</p>
+
+
+	<p>La pierre tombale:</p>
+
+
+	<blockquote>
+		<p>Qu&#8217;y a-t-il dans sa trachée?</p>
+	</blockquote>
+Oh, regarde, un Nokia!
+
+	<p>Quelle chance. Finalement réussir à avoir un bon et long somme sous terre, juste pour être constamment dérangé par le <a href="http://fr.wikipedia.org/wiki/Pachelbel"><em>Canon de Pachelbel</em></a> sortant de mon estomac.</p>
+
+    
+    
+        
+        <a name="section3" />
+        <h2>3. Le Soleil Rouge Se Lève</h2>
+
+        <p>Donc, maintenant, vous vous demandez pourquoi j&#8217;ai changé d&#8217;avis quant à Ruby. La réponse rapide est: on s&#8217;est tapé dans l&#8217;oeil.</p>
+
+
+	<p>Comme lorsque vous rencontrez Quelqu&#8217;un au lycée, et qu&#8217;il ressemble à Quelqu&#8217;un qui avait l&#8217;habitude de vous peinturlurer le visage quand vous êtiez enfant. Impulsivement, vous aviez conclus que ce Quelqu&#8217;un n&#8217;était pas un ami.  Vous critiquiez sa coiffure. Vous décrochiez bruyamment le téléphone aux moments cruciaux des histoires qu&#8217;il racontait. Vous utilisiez votre <a href="http://www.tpactivite.com/jeux_grands.php">baton sauteur</a> juste là où il essayait de marcher!</p>
+
+
+	<p>Toutefois, six mois plus tard, vous et Quelqu&#8217;un bavardiez tranquillement à côté d&#8217;une fontaine. Il ne ressemblait plus à votre cauchemard d&#8217;enfance. Vous aviez trouvé le Bon Jumeau. Le coup de foudre.</p>
+
+
+	<p>Aussi, là où je devrais sans doute vous assomer d&#8217;exagérations à propos de Ruby, ainsi qu&#8217;avec le lot d&#8217;acronymes pertinents qui l&#8217;accompagne partout (soulevant les sifflements collectifs de votre patron et du patron de votre patron), je vous laisserai juste faire une promenade. Je vous laisserai tomber dans du code, intervenant parfois avec mes propres expériences. Ce sera très simple, très naturel.</p>
+
+
+	<p>Je devrais toutefois vous offrir quelque motivation. Aussi, Smotchkkiss, je vais vous donner mes trois meilleures raisons d&#8217;apprendre Ruby.</p>
+
+
+<ol>
+	<li><strong>Santé du cerveau.</strong> <p>Vitamine R. Monte directememnt au cerveau. Ruby vous apprendra à <em>exprimer</em> vos idées grâce à l&#8217;ordinateur. Vous écrirez des histoires pour une machine.</p><p>Le talent créatif, les gars. Déduction. Raison. Signe de tête intelligent. Ce langage deviendra pour vous un outil vous permettant de connecter votre esprit au monde. J&#8217;ai remarqué que beaucoup d&#8217;utilisateur expérimentés de Ruby semble avoir les idées claires et être objectifs. (A contrario de fortement partial et brut).</p></li>
+	<li><strong>Un homme sur une île.</strong> <p> Ruby est né au Japon. Ce qui est original. Le Japon n&#8217;est pas connu pour ses logiciels. Et puisque les langages de programmation sont principalement écrit en Anglais, qui suspecterait un langage de venir du Japon?<p><p> Et pourtant, nous avons Ruby. Contre tout attente, Yukihiro Matsumoto a créé Ruby le 24 Février 1993. Durant les dix dernières années, il a progressivement amené Ruby à une plus large audience. C&#8217;est noble, triomphant et tout ça. Supportez la diversité. Aidez nous à incliner la Terre juste un peu.</p></li>
+	<li><strong>Libre.</strong> <p>Utiliser Ruby ne coûte rien. Le code de Ruby lui-même est ouvert à tous. Aussi, ce livre est libre. Tout cela fait partie d&#8217;un grand et gros don qui devrait avoir un gros accroc.</p> <p>Vous pensiez que nous allons vous faire acheter des aspirateurs, du temps-partagé ou de faux Monets. Vous pensiez qu&#8217;il y aurait une présentation de 90 minutes, à la fin de laquelle le propriètaire de la compagnie viendrait vous taper dans le dos pour conclure le marché.</p><p>Non, libre.</p></li>
+</ol>
+
+	<p>Maintenant, il est temps de commencer ce livre. Vous pouvez donc sortir votre surligneur et commencer à le promener sur chacun des mots captivants de cette phrase. Je pense que j&#8217;ai assez de laque et de fausse monnaie sur moi pour me sustenter jusqu&#8217;à la dernière page.</p>
+
+    
+    
+        
+        <a name="section4" />
+        <h2>4. Comment Commencent Les Livres</h2>
+
+        <p>Bien, si vous avez jamais lu un livre, vous savez qu&#8217;aucun livre ne commence sans une parfaite synergie. Oui, synergie. Peut-être ne le saviez-vous pas. La synergie signifie que vous et moi sommes supposés coopérer afin de faire de la lecture de ce livre une expérience à part entière.</p>
+
+
+	<p>Nous allons commencer ce livre par bien nous entendre lors de l&#8217;Introduction. Cette unité, cette <strong>synergie</strong> nous propulsera tout au long du livre, avec moi pour guide. Vous me donnerez un rassurant hochement de tête ou un rire pour m&#8217;indiquer votre progression.</p>
+
+
+	<p>Je suis Peter Pan tenant votre main. Allez, viens Wendy! Deuxième étoile sur la droite puis tout droit jusqu&#8217;au matin.</p>
+
+
+	<p>Un seul problème ici. Je ne m&#8217;entends pas bien avec les personnes. Je ne tiens pas bien les mains.</p>
+
+
+	<p>N&#8217;importe qui dans mon équipe vous le dira. Aux Cérémonies d&#8217;Ouverture de Ce Livre (un évennement approvisioné sur des sièges de stade), j&#8217;ai découvert que les sandwiches au concombre n&#8217;était pas servi avec des essuie-mains. Du coup le beurre ne tenait pas bien avec les concombres&#8230; De toute façon, j&#8217;ai fait un bon show et mis le feu a plusieurs des camions publicitaires à l&#8217;entrée. J&#8217;ai éclaté des projecteurs et tout ça. J&#8217;ai eu ce fort rire de maniaque dans la nuit. C&#8217;était vraiment la pagaille.</p>
+
+
+	<p>Mais comme je ne m&#8217;entends pas très bien avec les personnes, je n&#8217;avais invité personne à part moi au Cérémonies d&#8217;Ouverture de Ce Livre. Donc ce n&#8217;était pas vraiment embarassant. Je l&#8217;ai gardé secret et personne n&#8217;a encore découvert cela.</p>
+
+
+	<p>Aussi, vous devez savoir que <strong>synergies</strong> ne veut pas exactement dire <strong>synergie</strong> dans ce livre. Je ne peux pas être en <strong>synergie</strong> normale. Non, dans ce livre, <strong>synergie</strong> veut dire des <strong>renards de bande-dessinée</strong>. Ce que je veux dire c&#8217;est que ce livre va commencer par un grand nombre de <strong>renards de bande-dessinée</strong>.</p>
+
+
+	<p>Et je compte sur vous pour les transformer en <strong>synergie</strong>.</p>
+
+    
+    
+
+        <p style="text-align:right;">
+        <a href="chapter-3.html">Tournez la page.</a>
+        </p>
+
+    </div>
+</div>
+</div>
+<div id="footer">
+   <div class="pager">
+   &lt; <a href="chapter-1.html">précédente</a> | <a href="chapter-3.html">suivante</a> &gt;
+   </div>
+   <div class="title">
+   <h3>Le guide <span class="hilite">(poignant)</span> de why vers ruby</h3>
+   </div>
+</div>
+</body>
+</html>

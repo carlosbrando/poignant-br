@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= book.title.to_html %></title>
+    <link rel="stylesheet" type="text/css" href="guide.css" />
+</head>
+<body>
+
+<div id="container">
+<div class="page" style="margin-top: 90pt;">
+    <div class="pageTitle">
+    <p style="margin-bottom: 180pt;"><img src="i/poignant.guide.gif" alt="Why's (Poignant) Guide to Ruby" /></p>
+    <p style="margin: 0px; padding: 0px;">tenderly written and illustrated by</p>
+    <h3 style="margin: 0px; padding: 0px;">why the lucky stiff</h3>
+    <p style="margin-top: 40pt;"><img src="i/cc-by.gif" alt="Attribution" /><img src="i/cc-sa.gif" alt="Share Alike" /><br />
+    Licensed under the Attribution-ShareAlike license.<br />
+    See http://creativecommons.org/licenses/by-sa/2.0/ for details.</p>
+    </div>
+</div>
+<% book.chapters.each do |chapter| %>
+<br style="page-break-before: always;" />
+<div class="page">
+    <div class="pageTitle">
+        <h3><%= chapter.index %>.</h3>
+        <h1><%= chapter.title.to_html %></h1>
+        <p><img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" alt="[o]" /></p>
+    </div>
+    <div class="content">
+
+    <% chapter.sections.each do |sect|
+        if sect.respond_to? :file_name %>
+
+        <img src="<%= sect.file_name %>" /><br />
+
+    <%  elsif sect.respond_to? :header %>
+        
+        <a name="section<%= sect.index %>" />
+        <h2><%= sect.index %>. <%= sect.header %></h2>
+
+        <%= sect.content.to_html %>
+
+    <%  elsif sect.respond_to? :title %>
+        
+        <div class="sidebar">
+        <h1>sidebar!</h1>
+        <% if sect.title %>
+        <h2><%= sect.title.to_html %></h2>
+        <% end %>
+
+        <%= sect.content.to_html %>
+        <h1>sidebar!</h1>
+        </div>
+
+    <% else %>
+
+        <%= RedCloth.new( sect ).to_html %>
+
+    <%  end %>
+    <% end %>
+
+    </div>
+</div>
+<% end %>
+</div>
+</body>
+</html>
