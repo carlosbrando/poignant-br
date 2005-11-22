@@ -7,7 +7,7 @@ require 'syntax/convertors/html'
 
 class Localization
     attr_accessor :locale, :version, :next_page, :previous_page, :encoding,
-                  :turn_page, :header_title
+                  :turn_page, :header_title, :open_the_book, :writen_by
     def self.load( file_name )
         l = self.new
         YAML::load( File.open( file_name ) ).each do |k, v|

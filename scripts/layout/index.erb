@@ -15,11 +15,10 @@
 
         <!-- Left-hand access to the book online -->
         <a href="chapter-1.html"><img src="<%= book.image.file_name %>" alt="Why's (Poignant) Guide to Ruby" /></a>
-        <p style="text-align:center"><a href="chapter-1.html"><b>Open the book.</b></a></p>
+        <p style="text-align:center"><a href="chapter-1.html"><b><%= language.open_the_book %>.</b></a></p>
 
         <div class="toc">
-        <p>This book was tenderly written and illustrated by 
-        <a href="http://whytheluckystiff.net/">why the lucky stiff</a>.</p>
+        <%= language.writen_by %>
 
         <h3>~ Contents ~</h3>
         <ol>

@@ -4,4 +4,8 @@ next_page:     next
 previous_page: previous
 encoding:      utf-8
 turn_page:     Turn page
+open_the_book: Open the book.
+writen_by: |
+        <p>This book was tenderly written and illustrated by 
+        <a href="http://whytheluckystiff.net/">why the lucky stiff</a>.</p>
 header_title:  why&#8217;s <span class="hilite">(poignant)</span> guide to ruby 

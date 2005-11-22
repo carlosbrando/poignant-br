@@ -4,4 +4,9 @@ next_page:     suivante
 previous_page: précédente
 encoding:      ISO-8859-15
 turn_page:     Tournez la page
+open_the_book: Ouvrez le livre
+writen_by: |
+        <p>Ce livre a été tendrement écrit et illustré par
+        <a href="http://whytheluckystiff.net/">why the lucky stiff</a>.</p>
+        <p>Traduit par <a href="http://sl33p3r.free.fr/blog">Frédérick Ros </a></p>
 header_title:  Le guide <span class="hilite">(poignant)</span> de why vers ruby
