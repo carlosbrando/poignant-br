@@ -1,4 +1,5 @@
 Localization.add( 'fr' ) { 
+  version '0.3'
   next_page "suivante"
   previous_page  "précédente"
   encoding 'ISO-8859-15'

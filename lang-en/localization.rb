@@ -1,4 +1,5 @@
 Localization.add('en') { 
+  version '0.6'
   next_page 'next'
   previous_page 'previous'
   encoding 'utf-8'
