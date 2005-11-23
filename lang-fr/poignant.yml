@@ -1827,35 +1827,42 @@ chapters:
         !i/the.elf-3.gif(Blue Crystals got the shaft.)!
 
 
-        Yeah, that's not the way I remember it.  This Elf was paging me constantly.  When I refused to
-        call him back, he somehow left a message on my pager.  Meaning: it beeped a couple times and
-        then printed out a small slip of paper.  The slip said something to the effect of, "Get down here
-        quick!" and also, "We've got to rid the earth of this scourge of enterpreneurial caterpillars,
-        these twisted insect vikings are suffocating my blue crystals!"
+        Hum, ce n'est pas ce dont je me rappelais. Cet Elfe m'appelait
+        constament. Quand j'ai refusé de le rappeler, il a laissé un
+        message sur mon pager. C'est à dire: il a bippé quelques fois
+        et a ensuite imprimé un petit morceau de papier. Ce morceau
+        disait quelque chose qui ressemblait à "Descends vite ici!" et
+        aussi "Nous devons débarasser la Terre du fléau que ce sont
+        ces chenilles, ces insectes tordus étouffent mes cristaux
+        bleus !"
 
 
-        Lately, the exchange rate has settled down between leaves and crystals.  One treegrown note is
-        worth five crystals.  So the basic money situation looks like this:
+        Récemment, un taux de change a été instauré entre les feuilles
+        et les cristaux. Un billet arboricole vaut cinq
+        cristaux. Aussi la situation monétaire de base s'exprime comme ceci:
 
 
         <pre>
-         blue_crystal = 1
-         leaf_tender = 5
+         cristal_bleu = 1
+         feuille_tendre = 5
         </pre>
 
 
-        This example is, like, _totally_ last chapter.  Still.  It's a start.  We're setting two _variables_.
-        The *equals sign* is used for _assignment_.
+        Cet example ressemble _totalement_ au dernier chapitre. C'est
+        déjà un début. Nosu assignons deux _variables_. Le *signe
+        egal* est utilisé pour l'_affectation_.
 
 
-        Now @leaf_tender@ represents the number @5@ (as in: five blue crystals.)  This concept right here is
-        *half of Ruby*.  We're _defining_.  We're _creating_.  This is half of the work.  
-        Assignment is the most basic form of defining.
+        Maintenant @feuille_tendre@ représente le chiffre @5@ (comme
+        dans: cinq cristaux bleus.) Ce concept est la *moitié de
+        Ruby*. Nous _définissons_. Nous _créons_. C'est la moitié du
+        travail. L'affectation est la forme la plus basique de définition.
 
 
-        You can't complain though, can you Elf?  You've built an empire from cashing your blue crystals
-        into the new free market among the forest creatures.  (And even though he's an elf to us, he's a
-        tall monster to them.)
+        Vous ne pouvez quand même pas vous plaindre l'Elfe, n'est ce
+        pas? Vous avez créer un empire en vendant vos cristaux bleus
+        sur le nouveau marché entre les créatures de la forêt. (Et
+        même s'il est un elfe pour nous, c'est un monstre immense pour eux.)
        
 
         !i/the.elf-4.jpg(Animal Perfect, LLC)!
