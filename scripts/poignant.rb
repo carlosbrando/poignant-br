@@ -7,12 +7,17 @@ require 'syntax/convertors/html'
 
 class Localization
     attr_accessor :locale, :version, :next_page, :previous_page, :encoding,
-                  :turn_page, :header_title, :open_the_book, :writen_by
+                  :turn_page, :header_title, :open_the_book, :written_by,
+                  :sidebar, :contents, :expansion_pak, :expansion_pak_no,
+                  :expansion_paks, :adverrtissements, :see_also, :english_version,
+                  :header_title_emphasis
     def self.load( file_name )
         l = self.new
         YAML::load( File.open( file_name ) ).each do |k, v|
+            v = RedCloth.new(v).to_html if ['written_by', 'header_title'].include? k
             l.instance_variable_set( "@#{k}", v )
         end
+        l.header_title_emphasis = l.header_title.gsub /\(([^)]+)\)/, '<span class="hilite">\1</span>'
         l
     end
 end

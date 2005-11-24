@@ -5,8 +5,17 @@ previous_page: précédente
 encoding:      ISO-8859-15
 turn_page:     Tournez la page
 open_the_book: Ouvrez le livre
-writen_by: |
-        <p>Ce livre a été tendrement écrit et illustré par
-        <a href="http://whytheluckystiff.net/">why the lucky stiff</a>.</p>
-        <p>Traduit par <a href="http://sl33p3r.free.fr/blog">Frédérick Ros </a></p>
-header_title:  Le guide <span class="hilite">(poignant)</span> de why vers ruby
+written_by: |
+        Ce livre a été tendrement écrit et illustré par
+        "why the lucky stiff":http://whytheluckystiff.net/.
+
+        Traduit par "Frédérick Ros":http://sl33p3r.free.fr/blog.
+header_title:  Le guide (poignant) de why vers ruby
+sidebar: sidebar!
+contents: Contents
+expansion_pak: Expansion Pak
+expansion_pak_no: Expansion Pak No.
+expansion_paks: Expansion Paks
+adverrtissements: Adverrtissements
+see_also: See Also
+english_version: English Version

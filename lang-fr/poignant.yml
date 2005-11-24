@@ -1171,7 +1171,7 @@ chapters:
         h3. Variables de Classe
 
 
-        Les variables commençant par une *double arobase sont des variables de classe.
+        Les variables commençant par une *double arobase* sont des variables de classe.
 
 
         bq. @@@x@, @@@y@, et @@@i_will_take_your_chunky_bacon_and_raise_you_two@ en sont des exemples.

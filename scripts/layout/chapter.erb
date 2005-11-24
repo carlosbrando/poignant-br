@@ -18,8 +18,8 @@
    &lt; <a class="pagebar" href="<%= prevPage %>"><%=language.previous_page%></a> | <a class="pagebar" href="<%= nextPage %>"><%=language.next_page%></a> &gt;
    </div>
    <div class="title">
-   <h3><%=language.header_title%></h3>
-   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html">Contents</a>
+   <h3><%=language.header_title_emphasis%></h3>
+   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html"><%= language.contents %></a>
    </div>
 </div>
 <div id="container">
@@ -46,13 +46,13 @@
     <%  elsif sect.respond_to? :title %>
         
         <div class="sidebar">
-        <h1>sidebar!</h1>
+        <h1><%= language.sidebar %></h1>
         <% if sect.title %>
         <h2><%= sect.title.to_html %></h2>
         <% end %>
 
         <%= sect.content.to_html %>
-        <h1>sidebar!</h1>
+        <h1><%= language.sidebar %></h1>
         </div>
 
     <% else %>
@@ -74,7 +74,7 @@
    &lt; <a href="<%= prevPage %>"><%=language.previous_page%></a> | <a href="<%= nextPage %>"><%=language.next_page%></a> &gt;
    </div>
    <div class="title">
-   <h3><%=language.header_title%></h3>
+   <h3><%=language.header_title_emphasis%></h3>
    </div>
 </div>
 </body>

@@ -5,16 +5,18 @@ previous_page: vor
 encoding:      ISO-8859-1
 turn_page:     Umblättern
 open_the_book: Buch öffnen
-writen_by: |
-        <p>This book was tenderly written and illustrated by 
-        <a href="http://whytheluckystiff.net/">why the lucky stiff</a>.
-        <br />
-        Dieses Buch wird ebenso liebevoll übersetzt von <a href="http://rubywiki.de/wiki/Murphy">murphy</a></p>
-header_title:  why&#8217;s <span class="hilite">(ergreifende)</span> Einführung in Ruby
+written_by: |
+        This book was tenderly written and illustrated by 
+        "why the lucky stiff":http://whytheluckystiff.net/.
+
+        Dieses Buch wird ebenso liebevoll übersetzt von 
+        "murphy":http://rubywiki.de/wiki/Murphy.
+header_title:  why's (ergreifende) Einführung in Ruby
 sidebar: Seitenleiste!
 contents: Inhalt
 expansion_pak: Erweiterungpaket
 expansion_pak_no: Erweiterungpaket Nr.
 expansion_paks: Erweiterungpakete
 adverrtissements: Werrbung
+see_also: See Also
 english_version: Englische Version
