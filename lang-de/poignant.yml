@@ -9324,42 +9324,43 @@ expansion_paks:
         Ruby verwirklicht.  Ich sage dir, es ist eine herrliche Maschinerie.
 
     - >
-      Let's install the very latest Ruby on your computer so you can follow all the examples
-      in the (Poignant) Guide and actually do things right now!  (Yes, things!)
+      Lass uns einfach mal die neueste Ruby-Version installieren, damit du den ganzen Beispielen
+      in der (ergreifenden) Einführung folgen und diese Sachen ausprobieren kannst! (Ja, Sachen!)
 
 
-      * If you are using *Microsoft Windows*, begin by downloading the "Ruby Installer for
-      Windows":http://rubyforge.org/frs/?group_id=167.  Running this "one-click" installer will
-      setup Ruby for you, as well as a tidy pack of useful software, such as a small text editor and some
-      additional libraries.
+      * Wenn du *Microsoft Windows* benutzt, dann fang damit an, den "Ruby Installer for
+      Windows":http://rubyforge.org/frs/?group_id=167 herunterzuladen. Wenn du diesen "One-Click-Installer"
+      (OCI) ausführst, wird nicht nur Ruby für dich installiert, sondern auch ein Paket nützlicher
+      Software, zum Beispiel ein Texteditor und ein paar zusätzliche Bibliotheken.
 
-      * If you are on Apple's *Mac OS X*, then Ruby might already be installed.  Versions 10.2 and
-      10.3 of OS X both came with Ruby.  Still, I encourage you to upgrade Ruby so that all the examples
-      in this book will work for you.  Download a *stable* "disk image":http://homepage.mac.com/discord/Ruby/.
-      You will need OS X 10.3 (Panther) and the XCode Tools in order to use this image.
+      * Wenn du mit Apples *Mac OS X* arbeitest, ist Ruby vielleicht schon installiert. Die Versionen
+      10.2 und 10.3 von OS X haben Ruby integriert.  Dennoch empfehle ich dir, Ruby auf den neuesten
+      Stand zu bringen, damit alle Beispiele in diesem Buch funktionieren.  Lade ein *stabiles*
+      "Disk Image":http://homepage.mac.com/discord/Ruby/ herunter.
+      Du brauchst dafür OS X 10.3 (Panther) und die XCode-Tools.
 
-      * On *FreeBSD*, Ruby is right there in the ports system.  In fact, if you've used the essential
-      @portupgrade@ tool, then Ruby is already installed.  Akinori Musha, one of Ruby's immensely
-      talented core developers, wrote portupgrade, which means that you can use your Ruby learning
-      right away to hack up your @pkgtools.conf@.
+      * Unter *FreeBSD* ist Ruby schon im Ports-System.  Falls du das grundlegende Werkzeug @portupgrade@
+      benutzt hast, ist RUby bereits installiert.  Akinori Musha, einer von Rubys immens talentierten
+      Hauptentwicklern, hat portupgrade geschrieben, was bedeutet, dass du dein Ruby-Wissen direkt anwenden
+      kannst, um dich in die @pkgtools.conf@ zu hacken.
 
-      <pre class="text">
+      _* <pre class="text">
        cd /usr/ports/lang/ruby18
        sudo make install
       </pre>
 
-      * On *RedHat* or *Mandrake* Linux, you can find "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby.
-      I believe Ruby is also available through Ximian's Red Carpet.
+      * Auf *RedHat-* und *Mandrake-*Linux kannst du "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby
+      finden. Ich glaube, Ruby ist auch durch Ximian's Red Carpet verfügbar.
 
-      * On *Debian*, use @apt-get install ruby@.
+      * Auf *Debian* benutzt du @apt-get install ruby@.
 
-      * On *Gentoo*, @emerge ruby@.
+      * Auf *Gentoo* @emerge ruby@.
 
-      * Other *Linux* and *UNIX* platforms, even *OS X* (if the disk images don't work for you): 
-      Download the "latest source code":http://ruby-lang.org/en/20020102.html.  
-      For instance, "Ruby 1.8.2":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.2.tar.gz.  To unpack and compile:
+      * Andere *Linux-* und *UNIX*plattformen, sogar *OS X* (falls das Disk Image bei dir nicht funktioniert):
+      Lade den "neuesten Quellcode":http://ruby-lang.org/en/20020102.html herunter,
+      zum Beispiel "Ruby 1.8.2":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.2.tar.gz.  Zum Entpacken und Compilieren:
 
-      <pre class="text">
+      _* <pre class="text">
        tar xzvf ruby-1.8.2.tar.gz
        cd ruby-1.8.2
        ./configure
@@ -9367,12 +9368,12 @@ expansion_paks:
        make install
       </pre>
 
-      (Again, the above commands are for installing Ruby from the source code.  You may need to use
-      @su@ or @sudo@ to give you permission to run the @make install@.)
+      _* (Die obigen Kommandos installieren Ruby vom Quellcode aus.  Du brauchst vielleicht @su@
+      oder @sudo@, um die Berechtigung zu bekommen, @make install@ aufzurufen.)
 
 
-      To test if Ruby is installed, open a command shell and run: @ruby -v@.  If Ruby is installed
-      properly, you'll see a bit of version info.
+      Um zu testen, ob RUby installiert ist, öffnest du eine Shell und startest @ruby -v@.
+      Wenn Ruby ordentlich installiert ist, siehst du ein paar Versionsinfos.
 
 
       <pre class="text">
@@ -9380,34 +9381,34 @@ expansion_paks:
       </pre>
 
 
-      * To open a command shell in *Microsoft Windows*, go to the Start Menu and select @Run...@.
-      Type in: @cmd@.  Press OK.  A command shell window will appear.
+      * Um unter *Microsoft Windows* eine Shell ("Kommandozeile") zu öffnen, gehst du ins Startmenü und
+      wählst "Ausführen" Gib @cmd@ ein und drücke OK. Eine Shell wird sich öffnen.
 
-      * To open a command shell on *Mac OS X*, go to *Applications > Utilities*.  Run the *Terminal*
-      program.
+      * Um unter *Mac OS X* eine Shell zu öffnen, gehst du aus *Applications > Utilities* ???.
+      Starte das Programm *Terminal*.
 
  
-      Okay, keep that command shell open cause we'll need it if the Earth gets rescued from its
-      plummet toward the sun.
+      OK, lass die Shell offen, wir werden sie brauchen, wenn die Erde vor ihrem Plumps in die
+      Sonne bewahrt wird.
 
 
-      !i/tigers.vest-2.gif(Tiger saves Earth with Ice Gun.  Girl robot zooms around tuxed shop...)!
+      !i/tigers.vest-2.gif(Tiger rettet Erde mit Eiskanone. Mädchen düst in Smokingladen herum...)!
 
 
-      Ruby comes with a very, very, very extremely helpful tool called *Irb*.  Interactive Ruby.
-      In your command shell, type: @irb@.
-
+      Ruby kommt mit einem wirklich wirklich wirklich sehr hilfreichen Werkzeug daher, nämlich *Irb*.
+      Interaktives Ruby. Du musst nur eingeben: @irb@.
+      
 
       <pre>
        irb(main):001:0>
       </pre>
 
 
-      You should see the prompt above.  This Irb prompt will allow you to enter Ruby code and,
-      upon pressing _Enter_, the code will run.
+      Du solltest den obige Eingabeaufforderung sehen.  Diese Eingabeaufforderung erlaubt dir,
+      Ruby-Code einzugeben und, sobald du _Enter_ drückst, wird der Code ausgeführt.
 
 
-      So, at the Irb prompt, do a: @3000 + 500@.
+      Also, gib folgendes ein: @3000 + 500@.
 
 
       <pre>
@@ -9417,11 +9418,11 @@ expansion_paks:
       </pre>
       
 
-      The example @3000 + 500@ is legitimate code.  We're just not assigning the answer to a variable.
-      Which is okay in Irb, because Irb prints the answer given back by code you run.
+      Das Beispiel @3000 + 500@ ist korrekter Code.  Wir haben die Antwort bloß keiner Variable
+      zugewiesen.  Was uns in Irb nicht stört, weil er automatisch den Rückgabewert des Codes ausgibt.
 
 
-      Irb is a great calculator.
+      Irb ist ein großartiger Taschenrechner.
 
 
       <pre>
@@ -9434,23 +9435,24 @@ expansion_paks:
       </pre>
 
 
-      The first example demonstrates a bit of math and is read as: _220.00 plus 34.15 times 1.08 divided by 12_.
-      The second example takes a binary string and converts it to a decimal number.  The third example computes
-      the number of seconds between @now@ and July 31, 2003 at 8:10 AM.  The answers to all of these are
-      printed back to us by Irb with a little ASCII arrow pointing.
+      Das erste Beispiel demostriert ein bisschen Mathematik und wird gelesen als:
+      _220,00 plus 34,15 mal 1,08 durch 12_.
+      Das zweite Beispiel nimmt einen Binärstring und konvertiert ihn in eine Dezimalzahl.
+      Das dritte Beispiel berechnet die Anzahl der Sekunden zwischen @now@ (jetzt) und 8:10 am 31. Juli 2003.
+      Alle Antworten werden uns von Irb hinter einen kleinen ASCII-Pfeil geschrieben.
 
 
-      h3. Reading the Prompt
+      h3. Den Prompt richtig lesen
 
 
-      I know the prompt surely looks bewildering.  Well, let's not delay in dissecting it.  It's very simple.
-      The prompt has three parts, each separated by *colons*.
+      Ich weiß, dass der Prompt (die Eingabeaufforderung) verwirrend aussieht.  Nun, sezieren wir ihn.
+      Es ist ganz einfach. Der Prompt hat drei Teile, getrennt durch Doppelpunkte:
+      
 
-
-      The first section, which reads @irb(main)@, shows *the name of the program* we are running.  The second
-      section shows a line number, *a count of how many lines of Ruby we've typed*.  The third section is *a
-      depth level*.  Whenever you open a statement which needs closing, the depth level will increase by one.
-      And whenever Irb senses that your code is unfinished, *the end of the prompt will become an asterisk.*  
+      Der erste Teil, @irb(main)@, zeigt den *Namen des Programms*, das wir ausführen.  Der zweite enthält
+      die Zeilennummer, *einen Zähler, wieviele Zeilen wir schon eingegeben haben".  Der dritte Teil ist die
+      *Tiefe* des Codes.  Immer, wenn du eine Anweisung eingibst, die geschlossen werden muss, erhöht sie sich
+      um eins.  Und wenn Irb merkt, dass dein Code unvollständig ist, *steht am Ende ein Sternchen*.
 
 
       <pre>
@@ -9466,38 +9468,37 @@ expansion_paks:
       </pre>
         
 
-      Notice how the depth level increased to 1 when I opened the @if@ statement.  And how the asterisk
-      indicates the continuation of a line.
+      Du siehst, wie die Code-Tiefe erhöht wird wenn du eine @if@-Anweisung öffnest.  Und wie das Sternchen
+      anzeigt, dass die Zeile noch weitergeht.
 
 
-      h3. Tweaking the Prompt
+      h3. Am Prompt herumschrauben
 
 
-      You don't have to like the prompt's appearance, though.  I'm not forcing you to do anything and,
-      if you want to hack it up, I'm right here beside you.
+      Du musst diese Art Prompt nicht unbedingt mögen.  Ich zwinge dich nicht, irgend etwas zu tun, und
+      wenn du ihn umbiegen willst, stehe ich dir zur Seite.
+      
 
-
-      Irb has a few other included prompts which may better appease your senses.  Try @irb --prompt simple@.
-      This time Irb will treat you to a very basic set of arrows, allowing you to enter your code without
-      the whole status report.
+      Irb hat ein paar andere Prompts eingebaut, die deinen Geschmack vielleicht besser treffen.  Versuch' mal
+      @irb --prompt simple@.  Diesmal wird dich Irb mit einem sehr einfachen Pfeil-Layout begrüßen, der dir erlaubt,
+      deinen Code ohne all die Statusanzeigen einzugeben.
 
 
       <pre>
-       >> %w(my best friend's arm)
-       => ["my", "best", "friend's", "arm"]
+       >> %w(Der Arm meines besten Freundes)
+       => ["Der", "Arm", "meines", "besten", "Freundes"]
        >> 
       </pre>
 
 
-      Ruby comes with a few prompts.  The *simple* prompt seen above.  The *xmp* prompt which has no
-      prompt at all and indents the answer arrow.  (It's supposed to look nice for printing.)  Also,
-      the *null* prompt, which eliminates prompts altogether.  Set the prompt by just supplying the
-      name with the @--prompt@ option.  (So, @irb --prompt null@.)
+      Ruby hat mehrere Prompts anzubieten: Die *simple* Variante hast du oben gesehen  *xmp* hat gar
+      keinen Prompt und rückt nur den Antwort-Pfeil ein (das ist gedacht, um im Ausdruck gut lesbar zu sein.)
+      Außerdem gibt es *null*, was Prompts ganz abschaltet.  Wähle die gewünschte Variante einfach, indem du
+      den Namen an die @--prompt@-Option anhängst.  (So: @irb --prompt null@.)
 
 
-      Making your own prompt is okay as well.  Irb is completely customizable from inside of itself.
-      The @conf@ object contaions all of Irb's configuration settings.  Some of these configuration
-      settings are for controlling the prompt.
+      Du kannst auch deinen eigenen Prompt machen.  Du kannst Irb vollständig von innen anpassend.
+      Das Objekt @conf@ enthält die Irb-Konfiguration.  Einige davon steuern den Prompt.
 
 
       <pre>
@@ -9507,62 +9508,65 @@ expansion_paks:
       </pre>
 
 
-      Let's setup our prompt to display line numbers with just a bit of decor.
+      Lass uns unseren Prompt verändern, so dass er bloß noch die Zeilennummer und ein bisschen Deko
+      anzeigt.
 
 
       <pre>
-       >> conf.prompt_i = "%3n :> "           # the normal prompt
-       >> conf.prompt_s = "%3n .%l "          # the string continuation prompt
-       >> conf.prompt_c = "%3n .^ "           # the code continuation prompt
-       >> conf.return_format = "    => %s\n"  # the answer arrow
+       >> conf.prompt_i = "%3n :> "           # der normale Prompt
+       >> conf.prompt_s = "%3n .%l "          # für String-Fortsetzung
+       >> conf.prompt_c = "%3n .^ "           # für Code-Fortsetzung
+       >> conf.return_format = "    => %s\n"  # der Antwort-Pfeil
       </pre>
 
 
-      Above are the four parts to an Irb prompt.  The string continuation prompt is displayed when
-      a string is still open when you hit _Enter_.  The @%3n@ describes that Irb should reserve three
-      characters for the line number.  The @%l@ saves a place for displaying the type of string being
-      continued.  (If you're continuing a double-quoted string, it shows a double quote.  If you're
-      continuing a regular expression, it shows a slash.)
+      Oben siehst du die vier Fälle für Irb-Prompts.  Der Fall für die String-Fortsetzung tritt ein,
+      wenn eine Zeichenkette noch offen ist wenn du _Enter_ drückst.  @%3n@ beschreibt, dass Irb
+      drei Zeichen für die Zeilennummer reservieren soll.  @%1@ sichert Platz, um den Typ des Strings
+      anzuzeigen.  (Wenn du einen String in doppelte Anführungszeichen offen lässt, zeigt es ein @"@.
+      Wenn du mit einem regulären Ausdruck fortfährst, steht hier ein /.)
 
 
-      The rest are little symbols to decorate the prompt.  So, in the case of a continuing code line,
-      I show a caret which points up to the line where that line of code started. 
+      Der Rest sind kleine Symbole, um den Prompt zu verschönern.  Im Fall einer unvollständigen Codezeile
+      zeige ich ein Caret-Zeichen an, das auf die Zeile zeigt, in der sie begann.
 
 
-      You can read more about customizing Irb and saving your configuration to a file in 
-      the complete "guide to Irb":http://www.rubycentral.com/book/irb.html, available in
-      the free-for-your-wandering-Internet-eyes _Programming Ruby_.
+      Im "Guide to Irb":http://www.rubycentral.com/book/irb.html kannst mehr über Möglichkeiten zur
+      Konfiguration und Speicherung von Irb-Prompts erfahren; das ist die komplett frei verfügbare
+      Version von _Programming Ruby_, alles für dein wanderndes Internet-Auge.
 
 
     - !^sidebar
-      Windows Hiccups: >      
+      Windows' Schluckauf: >
 
-        Okay, here's what you do to get tab completion working in Windows.  
-        "Download this.":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
-        A zip with two files inside.  These get copied into your Ruby installation.
-        Place readline.dll in the *bin* folder.  The readline.so goes in
-        *lib/ruby/1.8/i386-mswin32* folder.
-
-
-        Then, run in your command shell: @irb --readline -r irb/completion@.
+        
+        OK, ich sage dir was du tun musst, um die Tab-Ergänzung unter Windows zum Laufen
+        zu bringen. "Speichere das hier.":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
+        Ein zip-Archiv mit zwei Dateien.  Diese gehören in deine Ruby-Installation.
+        Kopiere readline.dll in den Ordner *bin*. Die Datei readline.so muss nach
+        *lib/ruby/1.8/i386-mswin32*.
 
 
-        And for Europeans, you'll need "this.":http://whytheluckystiff.net/ruby/dist/Input.euro
-        Save it as *.inputrc* and place it in your home directory.  (Your personal directory
-        which contains your Desktop and My Documents folders.)
+        Deutsche und andere Europäer brauchen noch "dies.":http://whytheluckystiff.net/ruby/dist/Input.euro
+        Speichere es als *.inputrc* in deinem Home-Verzeichnis. (Das ist das Verzeichnis, das
+        deinen Desktop und "Eigene Dateien" enthält.)  Mehr dazu im
+        "Rubywiki":http://www.rubywiki.de/wiki/FAQ#Wieso_funktionieren_in_der_irb_unter_Windows_manche_Tasten_nicht.3F.
+        
+        
+        Dann starte in der Kommandozeile: @irb --readline -r irb/completion@.
 
 
     - >
-      h3. Tab Completion
+      h3. Tab-Ergänzung
 
 
-      One feature of Irb which is rarely mentioned is its beneficial tab completion.  And it's
-      a bit of a taboo topic at the moment, since getting it to work on Windows is a slight horror.
-      (No, don't be afraid.  All at once now, look to your right.)
+      Ein Feature von Irb, das selten erwähnt wird, ist die vorteilhafte Tab-Ergänzung.  Und sie
+      ist ein wenig zum Tabu-Thema geworden, weil man sie unter Windows nur mit Gruseln zum Laufen
+      bekommt. (Nein, keine Angst.  Alle mal gemeinsam nach rechts schauen.)
+      
 
-
-      If you're on Linux or FreeBSD, the tab completion should work right off.  And if you're
-      using OS X, you should be sure you're upgrade to the latest 1.8 and when run Irb, use:
+      Wenn du unter Linux oder FreeBSD bist, sollte die Tab-Ergänzung sofort funktionieren. Und wenn
+      due OS X benutzt, solltest du sichergehen, die neueste 1.8er-Version zu benutzen und dann, für Irb:
 
 
       <pre class="text">
@@ -9570,17 +9574,17 @@ expansion_paks:
       </pre> 
 
 
-      Basically, when you hit _Tab_, Irb will take a guess at what you're trying to type.
-      Try typing: @[].col@ and hit _Tab_.  Irb will finish it.  @[].collect@ and it leaves your
-      cursor at the end so you can add further.
+      Wenn du _Tab_ drückst, versucht Irb zu erraten, was du gerade eingeben willst. Versuch mal:
+      @[].col@ einzugeben und drücke _Tab_. Irb wird es vervollständigen zu @[].collect@ und den Cursor
+      ans Ende setzen, so dass du weitertippen kannst.
 
 
-      If there are several matches, just hitting _Tab_ will do nothing.  But hit it twice
-      and Ruby will give you a complete list of possible matches.
+      Wenn es mehrere Möglichkeiten gibt, wird ein _Tab_ nichts tun.  Aber wenn du zweimal _Tab_ drückst,
+      gibt dir Ruby eine komplette Liste aller Möglichkeiten.
 
 
-      This is great if you just want to see all the methods for a certain object.  Type in any
-      number, a dot, and use _Tab_.
+      Das ist wunderbar wenn du einfach alle Methoden eines bestimmten Objektes sehen willst.  Gib irgend
+      eine Zahl ein, einen Punkt, und _Tab_.
 
 
       <pre class="text">
@@ -9606,29 +9610,29 @@ expansion_paks:
       </pre>
 
 
-      Now, trying typing @Kernel::@ and then _Tab_.  All the core methods.  Don't ever forget this
-      and use it all the time.
+      Jetzt versuch @Kernel::@ und dann _Tab_.  ALle Kernel-Methoden.  Vergiss das niemals und
+      benutze es ständig.
 
 
-      !i/tigers.vest-3.gif(Except the robot flew away and the ice gun went on and on...)!
+      !i/tigers.vest-3.gif(Abgesehen davon, dass der Roboter wegfliegt und die Eiskanone immer weiter Eis kanont...)!
 
 
-      Okay, one last thing and then I'll quit bugging you with all this great technology.
-      But I have to say it loud, so take cover!  I'm across the world here, folks, but the
-      volume comes down from the sky -- a bold, red crescendo of --
+      p. Gut, noch eine Sache und dann höre ich auf, dich mit all diesen großartigen Technologien
+      zu nerven.  Aber ich sage es laut, also versteck dich!  Leute, ich spreche hier auf allen Frequenzen,
+      aber die Lautstärke kommt vom Himmel --- ein dickes, rotes Crescendo für --
 
 
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
 
 
-      h3={color: #300}. (Ruby's Own 411 or 555-1212 or _Yes, Operator, Get Belgrade on the Line_ -- I'll 
-      Be Right Here -- Just Plain Hammering The Pound Key Until Someone Picks Up...)
+      h3={color: #300}. (Rubys eigene 110 oder 11-8-33 oder _Ja, Operator, hol' mir Belgrad an die Strippe_
+      -- Ich bin gleich da -- Monotones Hämmern Auf Die Raute-Taste Bis Jemand Abnimmt...)
 
 
-      And Ri picks up the line.  "This is Ri.  Class and colon, please."
+      Und Ri nimmt ab.  "Hier Ri. Klasse und Doppelpunkt, bitte."
 
 
-      You rush in, "This is an instance method, Operator.  Enumerable#zip."
+      Du eilst herbei: "Das ist eine Instanzmethode, Operator.  Enumerable#zip."
 
   
       <pre class="text">
@@ -9636,9 +9640,9 @@ expansion_paks:
       </pre>
 
 
-      Without delay, right up on your teletype display (so swiftly that even the cat perched
-      atop cranes his neck around, gapes and hands it the royal cup _Most Blatantly Great
-      Thing Since Michael Dorn_):
+      Ohne zu zögern erscheint auf deinem Fernschreiber (so fix, dass sogar die Katze, die
+      oben drauf sitzt, ihren Hals reckt, gafft und ihm den Siegerpokal
+      _Überkrassestes Riesending seit Michael Dorn_ verleiht):
 
 
       <pre class="text">
@@ -9664,49 +9668,50 @@ expansion_paks:
       </pre>
 
 
-      It's an unabridged Ruby dictionary servo -- the Power of Just Asking is at your
-      fingertips -- _don't tell me you've never heard of this no-money-down 
-      lifetime-supply-of-proper-explanations!_
+
+      p. Es ist ein ungekürztes automatisches Verzeichnis -- die Macht von Frag Einfach liegt
+      in deinen Fingerspitzen -- _Erzähl mir nicht, du hättest noch nie von diesem
+      Vorrat-Guter-Antworten-Völlig-Gratis-Und-Auf-Lebenszeit gehört!_
 
 
-      To get an explanation of any class, along with a complete directory to all of its
-      methods, all in a very soothing voice fit for calming any of you panicking cosmonauts 
-      out there fighting the pull of some zero-tolerance tractor beam, just use at your
-      command shell: @ri Class@.
+      Um die Erläuterung einer Klasse samt einem Verzeichnis all ihrer Methoden zu bekommen,
+      alles mit einer ruhigen Stimmer erklärt, die euch panische Kosmonauten beruhigt, die ihr
+      da draußen gegen den Sog eines Null-Toleranz-Traktorstrahls kämpft, benutzt einfach eure
+      Kommandozeile: @ri Class@.
 
 
-      But for help on class methods, you cuff on: @ri Class::method@.
+      Für Hilfe zu Klassenmethoden keuchst du einfach nur: @ri Class::method@.
 
 
-      Though instance methods use a pound key rather than a dot.  (Since the dot can mean class *or*
-      instance methods.)  I mean: @ri Class#method@.
+      Instanzmethoden dagegen benutzen eher eine Raute als einen Punkt  (der Punkt kann für
+      Klassen- *oder* Instanzmethoden stehen.) Ich meine: @ri Class#method@.
 
 
-      The full spread of classes, a full list from the Very Top down to the Earth's core, can be
-      achieved with @ri -c@.
+      Die volle Bandbreite sämtlicher Klassen, eine Liste von Ganz Oben bis zum Mittelpunkt der
+      Erde bekommst du mit @ri -c@.
 
 
-      And beyond text, you can make HTML: @ri -Tf html String#gsub > gsub.html@.
+      Und außer Text kannst du auch HTML erzeugen: @ri -Tf html String#gsub > gsub.html@.
 
 
-      *Or show colory ANSI: @ri -Tf ansi String#gsub@.*  And this is last and best.
+      *Oder lass dir farbiges ANSI anzeigen: @ri -Tf ansi String#gsub@.*  Das ist echt das Neueste.
 
 
-      h3. Into the Ri Switchboard
+      h3. Hinter der RI-Schaltzentrale
 
 
-      Behind Ri sings a chorus of human voices, primarily Dave Thomas, an author of _Programming
-      Ruby_, and absolutely the American foster parent of Ruby.  Many of these elaborate
-      spiels from Ri are straight from the references of _Programming Ruby_.  Don't forget
-      to thank Dave periodically.
+      Hinter Ri singt ein menschlicher Chor, allen voran Dave Thomas, einer der Autoren von
+      _Programming Ruby_, und außerdem *der* Ruby-Pate in Amerika.  Viele dieser ausschweifenden
+      Reden aus Ri stammen direkt aus der Referenz von _Programming Ruby_.  Vergiss nicht, Dave
+      regelmäßig zu danken.
 
 
-      Ri culls its lush information set from the very code that Ruby is built from.  In each
-      of the files of code back in the Ruby Headquarter's file cabinet, detailed comments
-      describe everything in sight.
+      Ri pflückt seine saftigen Früchte der Information direkt aus dem Code, aus dem Ruby
+      erzeugt wird.  In jeder Datei drüben im Aktenraum vom Ruby-Hauptquartier stehen
+      detailierte Kommentare, die alles beschreiben, was gerade in Sicht ist.
 
 
-      In Ruby's @date@ class, here we have such commented methods:
+      In Rubys Klasse @Date@ stehen solche kommentierten Methoden (auf Englisch, natürlich):
 
 
       <pre>
@@ -9722,7 +9727,7 @@ expansion_paks:
       </pre>
 
 
-      The comments show up in Ri.  We type: @ri Date#time@.
+      Die Kommentare siehst du im Ri. Wir schreiben: @ri Date#time@.
 
 
       <pre class="text">
@@ -9735,18 +9740,19 @@ expansion_paks:
       </pre>
 
 
-      Ri figures out much of how a method works, although it expects coders to
-      write a brief description in the comments just before a method or class definition.
-      I would suggest that whenever you write a method, add a brief
-      description in the comments before that method.  In time, you can generate
-      Ri documentation for that method.
+      Ri erkennt im Groben, wie eine Methode funktioniert, dennoch erwartet er, dass
+      die Programmierer eine kurze Beschreibung liefern, und zwar in einem Kommentar direkt
+      vor der Methoden- oder Klassendefinition.
+      I würde sagen, immer wenn du eine Methode schreibst, stellst du ihr du einen
+      kleinen Kommentar voran, der sie erklärt.  Später kannst du dann Ri-Dokumentationen
+      für diese Methode erzeugen.
 
 
-      You can also use a few special characters to enhance your description.  For
-      example, if you indent a paragraph and use an asterisk @*@ or a dash @-@
-      just before the letters of the first sentence, the paragraph will be recognized
-      as a list item.  Then, if your description needs to be converted to HTML, you'll
-      see the list item appear as an HTML unordered list.
+      Du kannst auch ein paar Sonderzeichen einbauen, um eine Beschreibung zu verbessern.
+      Wenn du zum Beispiel einen Absatz einrückst und ein Sternchen @*@ oder Minus @-@
+      davor schreibst, wird der Absatz als Liste erkannt.  Wenn deine Beschreibung dann
+      in HTML verwendet werden soll, wirst du den Absatz als Listeneintrag in einer
+      unsortierten HTML-Liste sehen.
 
 
       <pre>
@@ -9759,15 +9765,15 @@ expansion_paks:
       </pre>
 
 
-      Other rules as well:  Lists which start with digits followed by periods are
-      recognized as numbered lists.  Emphasized words are surrounded by underscores,
-      bold words by asterisks, code words by plus signs.  Examples are simply blocks
-      of text indented a few spaces.  All of these rules together are called RDoc.
+      Andere Regeln sind:  Listen, die mit Zahlen gefolgt von einem Punkt beginnen,
+      sind nummerierte Listen.  Betonte Wörter stehen in Unterstrichen, fette in
+      Sternchen, kurze Codestücke in Plus-Zeichen.  Beispiel sind einfach Blöcke, die
+      um ein paar Leerzeichen eingerückt sind.  Zusammen heißen diese Regeln RDoc.
 
 
-      Here's a bit of RDoc from the @initialize@ method in one of my projects
-      called RedCloth.  Notice the indented example as well as the Ruby class
-      and method names flanked with plusses.
+      Hier ist ein bisschen RDoc aus der Methode @initialize@ in einem meiner
+      Projekte namens RedCloth.  Achte auf das eingerückte Beispiel und auf die
+      Namen von Ruby-Klassen und -Methoden verpackt in Plus-Zeichen.
 
 
       <pre>
@@ -9787,16 +9793,16 @@ expansion_paks:
       </pre>
 
 
-      For the full set of RDoc rules see the *Markup* section of the 
+      Eine vollständige Liste aller RDoc-Regeln steht im Abschnitt *Markup* in RDocs
       "README":http://rdoc.sourceforge.net/doc/files/README.html.
 
 
-      h3. Pushing Out Your Own Ri
+      h3. Mach dein eigenes Ri!
 
 
-      Ri doesn't automatically read your files for you, though.  You've got to push it along,
-      show it the way.  Change to the directory of the code you'd like to scan.  Then, use
-      the RDoc tool to make it happen.
+      Ri liest deine Dateien allerdings nicht automatisch.  Du musst ihr ein wenig mitzerren,
+      ihm den Weg zeigen.  Wechsel in das Verzeichnis mit dem Code, den du er lesen soll.
+      Dann benutzt du RDoc, um deine Wünsche wahr werden zu lassen.
 
 
       <pre class="text">
@@ -9805,8 +9811,8 @@ expansion_paks:
       </pre>
 
 
-      Now, try using @ri YourClass@ to ensure all your descriptions are showing up properly.
-      If you want to make HTML documentation, try this:
+      Jetzt versuch mal @ri MeineKlasse@ um sicherzugehen, dass deine Dokumentation richtig
+      angezeigt wird.  Wenn du eine HTML-Dokumentation willst, probier folgendes:
 
 
       <pre class="text">
@@ -9815,14 +9821,14 @@ expansion_paks:
       </pre>
 
 
-      The @~/cvs/your-code@ directory should now also have a fresh @doc@ directory containing
-      HTML documentation for all of your classes.  View @index.html@ for the pleasant news.
+      Das Verzeichnis @~/cvs/your-code@ sollte jetzt ein nagelneues Unterverzeichnis @doc@
+      enthalten.  Schau dir @index.html@ im Browser an und genieße gute Neuigkeiten.
 
 
-      Well then.  Your hands are in it all now.  Welcome to Ruby.
+      Schön.  Jetzt bist du wirklich tief drin.  Willkommen bei Ruby.
 
 
-      !i/tigers.vest-4.gif(The tiger finds a new home and learns to eventually move on.)!
+      !i/tigers.vest-4.gif(Tiger findet neues Zuhause und gewöhnt sich an das Leben danach.)!
 
 
 #
