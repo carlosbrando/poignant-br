@@ -9612,31 +9612,42 @@ expansion_paks:
         fassiez un choix éclairé.
 
 
-        *1.8.3* is the latest *stable* version of Ruby.  Stable versions offer the latest features
-        which have been widely tested and are recommended for general use.  When new stable versions
-        come out, you can safely upgrade to these new versions.
+        La dernière version *stable* de Ruby est la *1.8.3*. Les
+        versions stables offrent les dernières nouveatés, bien
+        testées, et sont recommandées pour un usage général. Quand les
+        nouvelles versions stables arrivent, vous pouvez mettre à jour
+        votre installation de façon sûre.
 
 
-        *1.9.0* is the latest *development* release of Ruby.  The development release includes
-        experimental changes to Ruby and unfixed problems.  This release is for anyone who wants
-        take a peep into the future of Ruby at the risk of encountering some bugs.
+        *1.9.0* est la dernière version de *developpement* de
+        Ruby. Les versions de développement incluent des changements
+        expérimentaux de Ruby ainsi que des prblèmes
+        non-résolus. Cette version est faite pour tous ceux qui
+        veulent avoir une idée du futur de Ruby tout en courant le
+        risque de rencontrer quelques bugs.
 
 
-        Now, you'll notice that the version number is comprised of three individual numbers,
-        which are: *the major version*, *the minor version*, and *the teeny version*.  The 
-        major version counts each complete rewrite of Ruby.  The minor version is changed based
-        on sweeping changes to Ruby.  The teeny version is incremented every few months as smaller
-        changes and bug fixes are brought in.
+        Maintenant, vous noterez que le numéro de version est
+        constitué de trois nombres qui sont: *la version majeure*, *la
+        version mineur* et la *version micro*. La version majeure est
+        incrémentée lors de chaque réécriture complète de Ruby. La
+        version mineure est incrémentée lorsque des changements
+        notables apparaissent. La version micro est incrémentée de
+        temps en temps lorsque des changements mineurs et des
+        résolutions de bug sont intégrés. 
 
 
-        All editions of Ruby thus far have a major version of 1.  When Ruby2 comes along, you'll
-        see this notch up one.
+        Toutes les versions de Ruby jusqu'à présent ont une version
+        majeure de 1. Quand Ruby2 arrivera, vous verez celle-ci
+        prendre un point.
 
 
-        The minor version indicates whether a version is stable or not.  *If the minor version
-        is an even number, then that version of Ruby is stable.   If it's odd, then that Ruby
-        is a development version.*  After a year or so, when the development version is ready 
-        for the world, both numbers are increased and the teeny version is returned to zero.
+        La version mineure indique si une version est stable ou
+        non. *Si la version mineure est un chiffre pair, alors cette
+        version de Ruby est stable. Si elle est impaire, alors c'est
+        une version de développement.* Après environ un an, quand la
+        version de développement est prête pour le monde, les deux
+        numéros sont incrémentés et la version micro est mise à zéro.
 
 
         Oh, and if I could give you a taste of how smoothly Ruby moves along!  I can't count
