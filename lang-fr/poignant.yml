@@ -6219,7 +6219,7 @@ chapters:
 
         <pre>
          irb> RUBY_VERSION
-           => "1.8.2"
+           => "1.8.3"
         </pre>
 
 
@@ -9595,21 +9595,24 @@ chapters:
 #      !i/wish.upon.a.beard-3.gif!
 
 expansion_paks:
-  - The Tiger's Vest (with a Basic Introduction to Irb):
+  - La Veste du Tigre (avec une Introduction Basique à Irb):
     - >
       !i/tigers.vest-1.gif(Tiger has vest.  Tiger likes girl robot.  Earth crashing into sun...)!
 
 
     - !^sidebar
-      About Ruby Versions: >
+      A propos des versions de Ruby: >
 
-        If you've visited any sites which offer Ruby for download, you've probably seen a number
-        of different versions of Ruby available.  Obviously, the greater the version number, the
-        more recent the version of Ruby.  But that's not exactly true.  Version numbers have meaning
-        in Rubyland and I'd like you to make an educated choice.
+        Si vous avez visitez n'importe quel site offrant de
+        télécharger Ruby, vous avez probablement vu plusieurs versions
+        de Ruby disponibles. De façon évidente, plus le numéro de
+        version est grand, plus la version de Ruby est récente. Mais
+        ce n'est pas exactement vrai. Les numéros de version ont une
+        signification dans l emonde de Ruby et j'aimerai que vous
+        fassiez un choix éclairé.
 
 
-        *1.8.2* is the latest *stable* version of Ruby.  Stable versions offer the latest features
+        *1.8.3* is the latest *stable* version of Ruby.  Stable versions offer the latest features
         which have been widely tested and are recommended for general use.  When new stable versions
         come out, you can safely upgrade to these new versions.
 
@@ -9675,11 +9678,11 @@ expansion_paks:
 
       * Other *Linux* and *UNIX* platforms, even *OS X* (if the disk images don't work for you): 
       Download the "latest source code":http://ruby-lang.org/en/20020102.html.  
-      For instance, "Ruby 1.8.2":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.2.tar.gz.  To unpack and compile:
+      For instance, "Ruby 1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.  To unpack and compile:
 
       <pre class="text">
-       tar xzvf ruby-1.8.2.tar.gz
-       cd ruby-1.8.2
+       tar xzvf ruby-1.8.3.tar.gz
+       cd ruby-1.8.3
        ./configure
        make
        make install
@@ -9694,7 +9697,7 @@ expansion_paks:
 
 
       <pre class="text">
-       ruby 1.8.2 (2004-12-25) [i386-mswin32]
+       ruby 1.8.3 (2005-11-25) [i386-mswin32]
       </pre>
 
 

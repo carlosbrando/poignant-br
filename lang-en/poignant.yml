@@ -5830,7 +5830,7 @@ chapters:
 
         <pre>
          irb> RUBY_VERSION
-           => "1.8.2"
+           => "1.8.3"
         </pre>
 
 
@@ -9220,7 +9220,7 @@ expansion_paks:
         in Rubyland and I'd like you to make an educated choice.
 
 
-        *1.8.2* is the latest *stable* version of Ruby.  Stable versions offer the latest features
+        *1.8.3* is the latest *stable* version of Ruby.  Stable versions offer the latest features
         which have been widely tested and are recommended for general use.  When new stable versions
         come out, you can safely upgrade to these new versions.
 
@@ -9286,11 +9286,11 @@ expansion_paks:
 
       * Other *Linux* and *UNIX* platforms, even *OS X* (if the disk images don't work for you): 
       Download the "latest source code":http://ruby-lang.org/en/20020102.html.  
-      For instance, "Ruby 1.8.2":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.2.tar.gz.  To unpack and compile:
+      For instance, "Ruby 1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.  To unpack and compile:
 
       _* <pre class="text">
-       tar xzvf ruby-1.8.2.tar.gz
-       cd ruby-1.8.2
+       tar xzvf ruby-1.8.3.tar.gz
+       cd ruby-1.8.3
        ./configure
        make
        make install
@@ -9305,7 +9305,7 @@ expansion_paks:
 
 
       <pre class="text">
-       ruby 1.8.2 (2004-12-25) [i386-mswin32]
+       ruby 1.8.3 (2005-11-25) [i386-mswin32]
       </pre>
 
 
