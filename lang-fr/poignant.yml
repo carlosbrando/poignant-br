@@ -9650,10 +9650,12 @@ expansion_paks:
         numéros sont incrémentés et la version micro est mise à zéro.
 
 
-        Oh, and if I could give you a taste of how smoothly Ruby moves along!  I can't count
-        how often a fresh idea lands on the Ruby-Core mailing list, where the Emperors of
-        Ruby converse, and *that same idea* gets worked into Ruby within a few days.  It is
-        a lovely machine says I.
+        Oh, et si je pouvais vous donner une idée de la facilité avec
+        laquelle Ruby évolue! Je ne peux pas compter le nombre de fois
+        où une idée nouvelle apparait sur la liste de difusion
+        Ruby-Core, où les Empereurs de Ruby conversent, et *cette même
+        idée* est ajoutée à Ruby en quelques jours. C'est une sacrée
+        machine, je vous dis!
 
     - >
       Let's install the very latest Ruby on your computer so you can follow all the examples
