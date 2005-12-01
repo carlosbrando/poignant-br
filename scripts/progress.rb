@@ -26,13 +26,13 @@
 #
 # Open part:: {{{ <Description>
 # Close part:: }}}
-# Progress:: {{{ Chapter 5: 45%
+# Progress (percentage):: {{{ Chapter 5: 45%
 # Don't count this:: {{{ <Description> !
 #
 # == Vim
 #
 # As you might have recognized, this is also the syntax for Vim folding.
-# So if you use vim, you win twice.
+# So if you use Vim, you win twice.
 
 if ARGV.empty?
 	puts <<-USAGE
@@ -58,7 +58,7 @@ PART = /
 	\# \s \}\}\} \s
 /mx
 PERCENT = / ( \d+ (?: \.\d+ )? ) % /x  # integer or decimal number
-NAME = / .*? (?: \z | : ) /x  # chars until : or end of string
+NAME = / [^:]* /x  # chars until : or end of string
 
 parts = []
 guide.scan(PART) do |desc, content|
