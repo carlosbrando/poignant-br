@@ -1,7 +1,7 @@
 locale:        en
-version:       '0.2.9'
-next_page:     zurück
-previous_page: vor
+version:       '0.2.10'
+next_page:     vor
+previous_page: zurück
 encoding:      ISO-8859-1
 turn_page:     Umblättern
 open_the_book: Buch öffnen
