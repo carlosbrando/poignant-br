@@ -415,13 +415,11 @@ chapters:
 
 
         bq. @5.times { print "Odelay!" }@
-
-
-        In Englischen Sätzen sind Satzzeichen (Punkte, Klammern, Satzzeichen) stumm. Satzzeichen geben den
+        
+        
+        In englischen Sätzen sind Satzzeichen (Punkte, Klammern, Satzzeichen) stumm. Satzzeichen geben den
         Wörtern zusätzliche Bedeutung, sie helfen uns, den Sinn des Satzes zu verstehen. Also lesen wir das
-        Beipsiel als:
-        _Five times print &#8220;Odelay!&#8221;._ -
-        _Drucke fünf mal &#8220;Odelay!&#8221;._
+        Beipsiel als: _Five times print &#8220;Odelay!&#8221;._ - _Drucke fünf mal &#8220;Odelay!&#8221;._
 
 
         Und genau das tut dieses kleine Ruby-Programm. Beck&#8217;s 
@@ -464,7 +462,7 @@ chapters:
 
 
         <small>@each@ (engl. jedes) und @capitalize@ (engl. groß schreiben) werden nicht übersetzt,
-        weil sie Ruby-Standardnamen sind.</small>
+        weil es um Ruby-Standardfunktionen handelt.</small>
         
         
         Obwohl dieses Codestück weniger lesbar und satzartig ist als die vorigen, schlage ich dir vor,
@@ -778,7 +776,7 @@ chapters:
 
         Man könnte sagen, ein Symbol ist ein bisschen einfacher für den Computer. Es ist wie ein
         Verdauungsmittel. Der Doppelpunkt deutet die kleinen Bläschen an, die aus dem Bauch deines
-        Computers aufsteigen, während er das Symbol verdaut. Ah. Das süße Gefühl der Befreiung.
+        Computers aufsteigen, während er das Symbol verdaut. Ah. Süßes Gefühl der Erleichterung.
 
 
         !i/the.foxes-4c.png(Chunky bacon!!)!
@@ -918,7 +916,7 @@ chapters:
         Du gehst rein und sie haben ihre eigenen Variablen. In einem Haus steht @papa@ vielleicht für
         Archibald, den Handelsreisenden und Skelettsammler. In einem anderen Haus könnte @papa@ Peter
         repräsentieren, den Löwendompteur mit einer Schwäche für Flanel. Jedes Haus hat seinen
-        eigenen @dad@.
+        eigenen @papa@.
 
 
         Mit globalen Variablen kannst du sicherstellen, dass eine Variable in jedem Haus gleich ist. Das
@@ -959,6 +957,7 @@ chapters:
 
         bq. Zum Beispiel: @@@x@, @@@y@ oder @@@ich_nehme_euren_chunky_bacon_und_adoptiere_euch_zwei@.
 
+
         Klassenvariablen werden ebenfalls dazu benutzt, Attribute zu definieren. Aber anstatt ein Attribut
         für ein einzelnes Ruby-Objekt zu definieren, setzen Klassenvariablen die Eigenschaften für viele
         verwandte Objekte. Wie Instanzvariablen einem einzelnen @zauntor@ Eigenschaften zuweisen, so setzen
@@ -966,8 +965,8 @@ chapters:
 
 
         Das *doppelte at* kann für *Attribut aller* stehen. Zusätzliche kannst du dir einen Schwarm AT-ATs
-        aus _Star Wars_ vorstellen, die alle unter Rubys Kommando stehen. Du änders eine Klassenvariable,
-        und nicht nur einer, sondern alle ändern sich.
+        aus _Star Wars_ vorstellen, die alle unter Rubys Kommando stehen. Du änderst eine Klassenvariable,
+        und nicht nur eine, sondern alle ändern sich.
 
 
         !i/the.foxes-4f.png(Juchu! Chunky bacon erreicht!)!
@@ -981,20 +980,20 @@ chapters:
 
 
         bq. @2.times { print "Ja, ich habe Chunky Bacon in meinen Beispielen benutzt,
-        aber das war das letzte Mal!" }@ beispielsweise.
+        aber das war das letzte Mal!" }@
 
 
         Mit Blöcken kannst du eine Reihe von Befehlen gruppieren, um sie in deinem Programm hin-
         und herzuschieben.
         Die geschweiften Klammern erinnern an die Zangen einer Krabbe, die den Code gepackt hat
-        und zusammehält. Wenn du diese zwei Zangen siehst, denk daran, dass der Code dazwischen
+        und zusammenhält.  Wenn du diese zwei Zangen siehst, denk daran, dass der Code dazwischen
         zu einer einzelnen Einheit komprimiert wurde.
 
 
         Es ist wie eine dieser "Hello Kitty"-Schachteln, die sie im Supermarkt verkaufen, gefüllt
         mit winzigen Stiften und mikroskopisch kleinem Papier, alles in eine glitzernde,
         durchsichtige Mappe gestopft, die du unter deinem Palm verstecken kannst, um
-        geheime Transaktionen durchzuführen. Außer, dass man nicht so schielen muss.
+        geheime Transaktionen durchzuführen. Außer, dass man hier nicht so schielen muss.
 
 
         Die geschweiften Klammern können auch durch die Worte *do* und *end* ersetzt werden, was
@@ -1015,7 +1014,7 @@ chapters:
         h3. Blockargumente
 
 
-        Blockargumente (oder BLockvariablen) sind mehrere Variablen in *senkrechten Strichen*,
+        Blockargumente (oder Blockvariablen) sind mehrere Variablen in *senkrechten Strichen*,
         getrennt durch *Kommas*.
 
 
@@ -1038,7 +1037,7 @@ chapters:
         Welt um ihn herum.
 
 
-        Variablen werden über diese Rutschbahn (oder durch diesen Tunnel) in den Block übergeben.
+        Variablen werden über diese Rutsche (oder diesen Tunnel) in den Block übergeben.
 
 
         !i/the.foxes-4g.png(Und dann: Die düstere Realität.)!
@@ -1073,7 +1072,7 @@ chapters:
 
 
         Wenn du diesen dritten Punkt siehst, denke an ein leicht geöffnetes Akkordeon, gerade weit genug
-        geöffnet, um einen Ton zu spielen. Dieser Ton ist der letzte Wert; er wird vom Wind davongetragen.
+        geöffnet, um einen Ton zu spielen. Dieser Ton ist der letzte Wert; der Wind weht ihn fort.
 
 
         h3. Arrays
@@ -1203,7 +1202,7 @@ chapters:
         Ruby hat einige eingebaute Worte voller einzigartiger Bedeutung.  Diese Worte
         können nicht als Variablen benutzt werden oder für deine Zwecke verändert werden.
         Ein paar haben wir bereits besprochen Sie sind in einem sicheren Haus, mein Freund.
-        Rühr' sie an und du kriegst einen offiziellen Syntax-Fehler.
+        Rühr' sie an und du kriegst einen offiziellen Syntaxfehler.
 
 
         <pre class="text">
@@ -1316,19 +1315,20 @@ chapters:
 
         Genau wie @print@ ist auch @exit@ eine Kernel-_Methode_. Wenn du bei der großen Liste mit den
         Schlüsselworten aufgepasst hast, weißt du, dass @unless@ ein _Keyword_ ist.  Der _String_
-        @"restaurant"@ halt sich an der _Methode_ @include?@ fest.  Und zum Schluss, der _String_ Aura.
-        by the _method_ @include?@.  And finally, the _string_ @"aura"@.
+        @"restaurant"@ halt sich an der _Methode_ @include?@ fest.  Und zum Schluss, der _String_ @"aura"@.
 
 
         *Lies die benutzen Wortarten laut vor.*
 
 
-        bq. @['toast', 'käse', 'wein'].@
-        
-        @each { |wort| print( wort.capitalize ) }@
+        <pre>
+         ['toast', 'käse', 'wein'].each do |wort|
+             print( wort.capitalize )
+         end
+        </pre>
 
 
-        Diese Raupe hat ein paar echte Delikatessen zu sich genommen.  Das Beispiel beginnt mit einem
+        Diese Raupe ist ein echter Feinschmecker.  Das Beispiel beginnt mit einem
         _Array_.  Es enthält drei _Strings_ 'Toast', 'Käse' und 'Wein'.  Dem Array folgt eine
         _Methode_ @each@.
 
@@ -1398,7 +1398,7 @@ chapters:
 
 
         Wir benutzen Ruby, um eine Website zu holen.  Du hast HTTP vermutlich schon mit deinem Browser benutzt.
-        HTTP ist das Hypertext Transfer Protocol[1]  HTTP wird benutzt, um Websites über das Internet zu
+        HTTP ist das Hypertext Transfer Protocol[1].  HTTP wird benutzt, um Websites über das Internet zu
         transportieren.  Stell dir einen Busfahrer vor, der durch das Internet fährt und uns Websites
         zurückmitbringt.  Auf seiner Mütze stehen die Buchstaben HTTP.
 
