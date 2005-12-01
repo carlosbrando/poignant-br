@@ -9658,19 +9658,26 @@ expansion_paks:
         machine, je vous dis!
 
     - >
-      Let's install the very latest Ruby on your computer so you can follow all the examples
-      in the (Poignant) Guide and actually do things right now!  (Yes, things!)
+      Installons la toute dernière version de Ruby sur votre
+      ordinateur afin de pouvoir suivre tous les exemples dans le
+      Guide (Poignant) et faire des choses maintenant! (Oui, des choses!)
 
 
-      * If you are using *Microsoft Windows*, begin by downloading the "Ruby Installer for
-      Windows":http://rubyforge.org/frs/?group_id=167.  Running this "one-click" installer will
-      setup Ruby for you, as well as a tidy pack of useful software, such as a small text editor and some
-      additional libraries.
+      * Si vous utilisez *Microsoft Windows*, commencez par
+        télécharger l'"Installateur de Ruby pour
+        Windows":http://rubyforge.org/frs/?group_id=167. L'exécutaion
+        de cet installateur "1-click" installera Ruby pour vous, ainsi
+        qu'un ensemble de logiciels utiles, tels qu'un petit éditeur
+        et quelques bibliothèques additionnelles.
 
-      * If you are on Apple's *Mac OS X*, then Ruby might already be installed.  Versions 10.2 and
-      10.3 of OS X both came with Ruby.  Still, I encourage you to upgrade Ruby so that all the examples
-      in this book will work for you.  Download a *stable* "disk image":http://homepage.mac.com/discord/Ruby/.
-      You will need OS X 10.3 (Panther) and the XCode Tools in order to use this image.
+      * Si vous êtes sur *Mac OS X*, alors Ruby pourrait bien déjà
+        être installé. Les version 10.2 et 10.3 d'OS X possèdent déjà
+        Ruby. Mais je vous encourage quand même à actualiser votre
+        version de Ruby afin que tous les exemples de ce livre
+        marchent chez vous. Télécharger une "image
+        disque":http://homepage.mac.com/discord/Ruby/ *stable*. Vous
+        aurez besoin à la fois d'OS X 10.3 (Panther) et des outils
+        XCode pour utiliser cette image.
 
       * On *FreeBSD*, Ruby is right there in the ports system.  In fact, if you've used the essential
       @portupgrade@ tool, then Ruby is already installed.  Akinori Musha, one of Ruby's immensely
