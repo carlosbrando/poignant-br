@@ -32,6 +32,8 @@ deed: |
 
   This is a human-readable summary of the Legal Code (the full license).
 
+# {{{ Index: 97%
+
 image: !^img poignant.guide.png
 teaser:
 
@@ -104,6 +106,9 @@ teaser:
 
       Willkommen beim Piratensender technischen Handbücher.
 
+# }}}
+
+# {{{ Kapitel 1+2: 97%
 
 chapters:
   - Über das Buch:
@@ -369,6 +374,10 @@ chapters:
 
         Und ich zähle auf dich, sie in *Synergie* zu verwandeln.
 
+
+# }}}
+
+# {{{ Kapitel 3: 95%
 
   - Ein kurzer (und hoffentlich schmerzfreier) Ritt durch Ruby (mit Comicfüchsen):
     - >
@@ -1490,6 +1499,9 @@ chapters:
 
         Also ich denke, das passt schon.  Was sagst du?  Lass uns endlich mit diesem Script anfangen?  
 
+# }}}
+
+# {{{ Kapitel 4-6: 0%
 
   - Floating Little Leaves of Code:
     - >
@@ -9278,6 +9290,9 @@ chapters:
 #
 #      !i/wish.upon.a.beard-3.gif!
 
+# }}}
+
+# {{{ Expansion Paks: 95%
 
 expansion_paks:
   - Des Tigers Weste (mit einer Einführung in Irb):
@@ -9873,4 +9888,4 @@ expansion_paks:
 #        The goat tossed his legs up on the panel and eased a few plush handles into an array of positions
 #        until a slot opened at the base, from which a long silver chain spilled.  At the end of the chain
 #        dangled a thick retainer the size of a fish filet.
-
+# }}} vim:foldmethod=marker:noet:
