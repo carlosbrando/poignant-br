@@ -9679,26 +9679,35 @@ expansion_paks:
         aurez besoin à la fois d'OS X 10.3 (Panther) et des outils
         XCode pour utiliser cette image.
 
-      * On *FreeBSD*, Ruby is right there in the ports system.  In fact, if you've used the essential
-      @portupgrade@ tool, then Ruby is already installed.  Akinori Musha, one of Ruby's immensely
-      talented core developers, wrote portupgrade, which means that you can use your Ruby learning
-      right away to hack up your @pkgtools.conf@.
+      * Sur *FreeBDS*, Ruby fait parti du système de ports. En fait,
+        si vous avez utilisé l'outil essentiel qu'est @portupgrade@,
+        alors Ruby est déjà installé. Akinoru Musha, l'un des
+        immensément talentueux développeurs de Ruby a écrit
+        portupgrade, ce qui veut dire que vous pouvez utiliser votre
+        connaissance de Ruby pour jouer avec votre @pkgtools.conf@.
 
-      <pre class="text">
-       cd /usr/ports/lang/ruby18
-       sudo make install
-      </pre>
+        <pre class="text">
+         cd /usr/ports/lang/ruby18
+         sudo make install
+        </pre>
 
-      * On *RedHat* or *Mandrake* Linux, you can find "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby.
-      I believe Ruby is also available through Ximian's Red Carpet.
 
-      * On *Debian*, use @apt-get install ruby@.
+      * Sur les distributions de Linux *RedHat* ou *Mandrake*, vous
+        pouvez trouver les "RPMs
+        Ruby":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby.
+        Je pense que Ruby est aussi disponible via Red Carpet de Ximian.
 
-      * On *Gentoo*, @emerge ruby@.
+      * Sur *Debian*, utilisez @apt-get install ruby@.
 
-      * Other *Linux* and *UNIX* platforms, even *OS X* (if the disk images don't work for you): 
-      Download the "latest source code":http://ruby-lang.org/en/20020102.html.  
-      For instance, "Ruby 1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.  To unpack and compile:
+      * Sur *Gentoo*, @emerge ruby@.
+
+      * Pour les autres plateformes *Linux* et *UNIX*, et même *OS X*
+        (si les images disque ne marchent pas pour vous): Téléchargez
+        le "dernier code
+        source":http://ruby-lang.org/en/20020102.html. Par exemple
+        "Ruby
+        1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.
+        Pour décompresser et compiler:
 
       <pre class="text">
        tar xzvf ruby-1.8.3.tar.gz
@@ -9708,12 +9717,16 @@ expansion_paks:
        make install
       </pre>
 
-      (Again, the above commands are for installing Ruby from the source code.  You may need to use
-      @su@ or @sudo@ to give you permission to run the @make install@.)
+
+      (Encore une fois, les commandes précédentes sont nécessaires pour
+      installer Ruby à partir du code source. Vous pouvez avoir besoin
+      d'utiliser @su@ ou @sudo@ pour acquérir les droits nécessaires à
+      l'execution de @make install@.) 
 
 
-      To test if Ruby is installed, open a command shell and run: @ruby -v@.  If Ruby is installed
-      properly, you'll see a bit of version info.
+      Pour vérifier si Ruby est installé, ouvrez un shell et tapez:
+      @ruby -v@. Si Ruby est installé proprement, vous verez quelques
+      infos sur la version.
 
 
       <pre class="text">
@@ -9721,15 +9734,16 @@ expansion_paks:
       </pre>
 
 
-      * To open a command shell in *Microsoft Windows*, go to the Start Menu and select @Run...@.
-      Type in: @cmd@.  Press OK.  A command shell window will appear.
+      * Pour ouvrir un shell sous *Microsoft Windows*, allez dans le
+        menu Demarrez et sélectionner @Exécuter...@. Tapez alors:
+        @cmd@. Appuez sur OK. Une fenêtre avec un shell apparaitra.
 
-      * To open a command shell on *Mac OS X*, go to *Applications > Utilities*.  Run the *Terminal*
-      program.
+      * Pour ouvrir un shell sous *Mac OS X*, allez dans *Applications
+        -> Utilities*. Lancer le programme *Terminal*.
 
- 
-      Okay, keep that command shell open cause we'll need it if the Earth gets rescued from its
-      plummet toward the sun.
+
+      OK, gardez ce shell ouvert car nous en aurons besoin si la Terre
+      est sauvée de son plongeon vers le soleil. 
 
 
       !i/tigers.vest-2.gif(Tiger saves Earth with Ice Gun.  Girl robot zooms around tuxed shop...)!
