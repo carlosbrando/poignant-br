@@ -9749,8 +9749,9 @@ expansion_paks:
       !i/tigers.vest-2.gif(Tiger saves Earth with Ice Gun.  Girl robot zooms around tuxed shop...)!
 
 
-      Ruby comes with a very, very, very extremely helpful tool called *Irb*.  Interactive Ruby.
-      In your command shell, type: @irb@.
+      Ruby est livré avec un outil très, très, très utile appelé
+      *Irb*. Interactive Ruby (NDT: Ruby Interactif). Dans votre
+      shell, tapez: @irb@.
 
 
       <pre>
@@ -9758,11 +9759,12 @@ expansion_paks:
       </pre>
 
 
-      You should see the prompt above.  This Irb prompt will allow you to enter Ruby code and,
-      upon pressing _Enter_, the code will run.
+      Vous devriez voir le prompt ci-dessus. Ce prompt d'Irb vous
+      permet de rentrer du code Ruby, et après avoir presser sur
+      _Entrée_, le code s'exécutera:
 
 
-      So, at the Irb prompt, do a: @3000 + 500@.
+      Donc, au prompt Irb, tapez: @3000 + 500@.
 
 
       <pre>
@@ -9772,11 +9774,12 @@ expansion_paks:
       </pre>
       
 
-      The example @3000 + 500@ is legitimate code.  We're just not assigning the answer to a variable.
-      Which is okay in Irb, because Irb prints the answer given back by code you run.
+      L'exemple @3000 + 500@ est du code valable. Le résultat n'est
+      pas assigné à une variable. Ce qui ne pose pas de problème avec
+      Irb, car il affiche la réponse rendue par le code que vous exécutez.
 
 
-      Irb is a great calculator.
+      Irb fait une bonne calculatrice.
 
 
       <pre>
@@ -9789,13 +9792,16 @@ expansion_paks:
       </pre>
 
 
-      The first example demonstrates a bit of math and is read as: _220.00 plus 34.15 times 1.08 divided by 12_.
-      The second example takes a binary string and converts it to a decimal number.  The third example computes
-      the number of seconds between @now@ and July 31, 2003 at 8:10 AM.  The answers to all of these are
-      printed back to us by Irb with a little ASCII arrow pointing.
+      Le premier exemple montre un peu de math et peut se lire comme:
+      _220.00 plus 34.15 fois 1.08 divisé par 12_.
+      Le deuxième exemple prend une chaîne binaire et la convertit en
+      nombre décimal. Le troisème exemple calcule le nombre de
+      secondes entre @maintenant@ et Le 31 Juillet 2003 à 8 heures
+      10. Les réponses de chacun de ces exemples sont affichées par
+          Irb, avec une petite flêche en ASCII les pointant.
 
 
-      h3. Reading the Prompt
+      h3. Lire le Prompt.
 
 
       I know the prompt surely looks bewildering.  Well, let's not delay in dissecting it.  It's very simple.
