@@ -32,7 +32,7 @@ deed: |
 
   This is a human-readable summary of the Legal Code (the full license).
 
-# {{{ Index: 97%
+# {{{ Index: 95%
 
 image: !^img poignant.guide.png
 teaser:
@@ -45,14 +45,14 @@ teaser:
   - Lies den Absatz: >
       Bei meinem örtlichen Barnes & Noble (einem Buchladen) gibt es eine riesige Regalwand
       voller Java-Bücher, die nur darauf wartet, eines Tages umzukippen und mich zu erschlagen.
-      Eines Tages wird das passieren. Wenn das so weitergeht wie bisher, dann wird dieses Regal
+      Eines Tages wird das passieren. Wenn das so weitergeht, wird dieses Regal
       eines Tages groß genug sein, um uns alle zu erschlagen. Möglicherweise fällt es sogar
       mehrfach um die Erde herum, während es immer wieder ältere Ausgaben derselben Java-Bücher unter
       sich zermalmt.
 
   - Und den auch: >
       Dies ist nur ein kleines Ruby-Buch. Es wird dich nicht erschlagen. Es ist leicht wie eine
-      Feder (weil ich noch nicht damit fertig bin - hehe). Und es gibt einen Grund, warum
+      Feder (weil ich noch nicht damit fertig bin - hehe.) Und es gibt einen Grund, warum
       dieses Buch so leicht bleiben wird: Ruby ist einfach zu lernen.
 
   - Aber den hier nicht!: >
@@ -67,7 +67,8 @@ teaser:
       Ich werde versuchen, mich nicht allzu verstoßen zu fühlen, wenn dieses Buch nicht deinen
       Geschmack trifft. Ich würde vielleicht einige lange leere Tage mit ausgiebigem Weinen
       verbringen; aber ansonsten ginge es mir gut. Es ist zumindest schön zu wissen, dass die
-      folgenden Texte mein Thema abdecken und zweifellos in dir die Gier nach Ruby wecken werden:
+      folgenden Texte mein Thema abdecken und zweifellos in dir die Gier nach Ruby wecken werden
+      (alles englisch, deshalb sind die Hinweise nicht übersetzt):
 
 
       * "Learning to Program":http://pine.fm/LearnToProgram/
@@ -104,25 +105,57 @@ teaser:
       "whytheluckystiff.net":http://www.whytheluckystiff.net.
 
 
-      Willkommen beim Piratensender technischen Handbücher.
+      Willkommen beim Piratensender der technischen Handbücher.
 
 # }}}
 
-# {{{ Kapitel 1+2: 97%
+# {{{ Kapitel 1+2: 98%
 
 chapters:
   - Über das Buch:
     - >
       !i/about.the.poignant.guide-1.gif(Was für eine fantastische Reise!)!
+      <small style="color:darkblue"><ol>
+      <li>ein elf mit seinem haustier-schinken!
+      </li>
+      <li>eine giraffe umringt von weeezards!
+      </li>
+      <li>mikroskopische kanarienvögel!
+      <br>dieses handbuch steckt voller leben!
+      </li>
+      </ol></small>
 
 
-      !i/about.the.poignant.guide-2.jpg(Sogar kleine Kinder können es.)!
+      !i/about.the.poignant.guide-2.jpg(Sogar Kleinkinder können es.)!
+      <small style="color:darkblue"><ol>
+      <li><tt>Live aus dem Jahr 2012</tt><br />
+      dank Why's Ergreifender Einführung...
+      </li>
+      <li>können soger säuglinge Ruby lernen! so einfach ist das!
+      </li>
+      </ol></small>
 
 
-      !i/about.the.poignant.guide-3.gif(Der bedachte Leser.)!
+      !i/about.the.poignant.guide-3.gif(Der nachdenkliche Leser.)!
+      <small style="color:darkblue"><ol>
+      <li>dieses seltsame buch, Why's Ergreifende Einführung in Ruby, hat mich tief berührt.
+      </li>
+      <li>wirklich. ich fühle mich großartig.
+      </li>
+      <li>als ob ich eine avokado mit mayonnaise im bauch hätte.
+      </li>
+      </ol></small>
 
 
-      !i/about.the.poignant.guide-4.gif(Meep.)!
+      !i/about.the.poignant.guide-4.gif(Miep.)!
+      <small style="color:darkblue"><ol>
+      <li>ich bin klein.
+      </li>
+      <li>ich erlebe abenteuer.
+      </li>
+      <li>ok, jetzt musst du mal mit dem buch anfangen!
+      </li>
+      </ol></small>
 
 
   - Kon'nichi wa, Ruby:
@@ -132,21 +165,21 @@ chapters:
         meinen Wunsch hin eingeheftet.)
 
 
-        Du denkst dir: Hey, das Buch ist ja mit einer Zwiebel ausgestattet! (Auch wenn du Zwiebeln nicht
+        Du denkst dir: "Wow, da ist ja eine Zwiebel dabei!" (Auch wenn du Zwiebeln nicht
         unbedingt magst, wirst du sicher die Logistik zu würdigen wissen, die nötig ist, um Gemüse in
         angeblichen Programmier-Handbüchern zu verstecken.)
 
 
-        Dann fragst du dich: Moment mal. Ich dachte das wäre ein Buch über Ruby, diese unglaubliche neue
+        Dann fragst du dich: "Moment mal. Ich dachte, das wäre ein Buch über Ruby, diese unglaubliche neue
         Programmiersprache aus Japan. Auch wenn ich die Logistik zu würdigen weiß, die nötig ist, um Gemüse
-        in angeblichen Programmier-Handbüchern zu verstecken: Warum eine Zwiebel? Was soll ich damit anfangen?
+        in angeblichen Programmier-Handbüchern zu verstecken: Warum eine Zwiebel? Was soll ich damit anfangen?"
 
 
         Nein. Bitte jetzt nicht darüber sinnieren. Du sollst überhaupt nichts damit anfangen. Leg die Zwiebel
-        beiseite und lass _sie_etwas mit dir tun.
+        beiseite und lass _sie_ etwas mit _dir_ tun.
 
 
-        Ich will ehrlich mit dir sein: Ich will, dass du weinst. Heulst. Schluchzst. Dieses Buch ist eine
+        Ich will ehrlich mit dir sein: Ich will, dass du weinen musst. Heulen. Schluchzen. Dieses Buch ist eine
         *ergreifende* Einführung in Ruby. Das bedeutet, dass der Code so schön ist, dass man Tränen vergießt.
         Das heißt herzergreifende Geschichten und düstere Wahrheiten, die dich am nächsten Morgen in den Armen
         des Buches aufwachen lassen. Den ganzen Tag lang drückst du das Buch an dich. Wenn nötig, mach dir
@@ -155,7 +188,7 @@ chapters:
 
 
         Du musst wirklich wimmern. Wenigstens einmal. Zumindest schniefen. Und wenn nicht, dann wird die
-        Zwiebel dafür sorgen.
+        Zwiebel für alles sorgen.
 
 
     - !^sidebar
@@ -190,7 +223,7 @@ chapters:
         Bald werde ich hunderte von Euro für ein Stück Myzithrakäse ausgeben.
 
 
-        Zur Zeit übersteigen allerdings die Vorstellungen meinen Besitz. Sicher, ich habe alles durchdacht,
+        Zur Zeit übersteigen diese Vorstellungen allerdings meinen Besitz. Sicher, ich habe alles durchdacht,
         die Sammlungen griechischer Vasen und jurassischer Dinosaurierknochen, den Fuhrpark, die Flugzeuge,
         die Pyramiden. Manchmal sehe ich vom Sturm verwüstete Städte in den Nachrichten und ich füge meiner
         Liste _Hurrican_ hinzu.
@@ -206,13 +239,13 @@ chapters:
 
         Trotzdem wird man es nicht ernst nehmen können. Spielgeld! Man kann es so schnell und einfach
         bekommen. Für einen Moment fühlt man sich so was von reich. Als ich ein Kind war, habe ich mit den
-        Nachbarskindern gespielt und wir haben ein kleines Tijuana auf unseren Straßen gebaut. Wir haben
+        Nachbarskindern gespielt und wir haben ein kleines Tijuana auf der Straße gebaut. Wir haben
         eigene Pesos gemacht und Sombreros getragen und das ganze Zeug!
 
 
         Ein Kind hat Tamales für zwei Pesos das Stück verkauft. _Zwei Pesos!_ Hat das Kind gewusst, dass es
-        Spielgeld war? War er von Sinnen? Wer hatte ihn eingeladen? Hat er nicht gewusst dass das nicht
-        wirklich Tijuana war? Vielleicht war er wirklich aus Tijuana! VIelleicht waren das _echte_ Pesos!
+        Spielgeld war? War er von Sinnen? Wer hatte ihn eingeladen? Hat er nicht gewusst, dass das nicht
+        wirklich Tijuana war? Vielleicht war er wirklich aus Tijuana! Vielleicht waren das _echte_ Pesos!
         Lasst uns mehr _echte_ Pesos machen!
 
 
@@ -228,34 +261,34 @@ chapters:
         Einmal ging ich gerade eine dieser geschäftigen Straßen voller Automärkte entlang (das war kurz
         nachdem meine Hochzeit abgesagt wurde), als ich einen ausgesetzten Hund auf der Straße fand. So
         ein wolliger, schwarzer Hund mit grünlich-roten Augen. Da ich mich auch ziemlich ausgesetzt fühlte,
-        nahm ich ein paar Ballons, die an einen Pfosten angebunden waren, und band sie ihm ans Halsband.
+        nahm ich ein paar Ballons, die am Pfosten eines Automarktes befestigt waren, und machte sie an sein Halsband.
         Dann entschied ich, dass er mein Hund sein würde. Ich nannte ihn Bigelow.
 
 
         Wir machten uns auf, um Bigelow ein paar Hundeknochen zu kaufen und danach zu mir nach Hause zu
         gehen, wo wir uns in Sesseln ausruhen und Gorky's Zygotic Mynci hören konnten. Ach, und
-        vorher mussten wir noch zu einem Gebrauchwarenladen, um Bigelow seinen eigenen Sessel zu
+        vorher mussten wir noch zu einem Gebrauchtwarenladen, um Bigelow seinen eigenen Sessel zu
         besorgen.
 
 
-        Aber Bigelow hatte mich nicht als Herrchen akzeptiert. Fünf Minuten nahm dieser blöde Hund eine
-        andere Abzweigung und ich fand ihn nie wieder. War er vorher einmal verloren gegangen,
+        Aber Bigelow hatte mich nicht als Herrchen akzeptiert. Fünf Minuten später ging dieser blöde Hund
+        in eine andere Richtung und ich fand ihn nie wieder.  Wenn er vorher einmal verloren gegangen war,
         so war er es jetzt zweimal. Also verlangsamte ich meine Schritte hin zu einem Leben mit
         Hundeknochen und Extrasesseln. Für fünf Minuten hatte ich einen Hund gehabt.
         
 
-        Dieser Verräter von einem Hund. Ich saß auf einer Parkbank und warf Kienäpfel auf eine Statue von
+        Dieser Benedict Arnold von Hund. Ich saß auf einer Parkbank und warf Kienäpfel nach einer Statue von
         drei Schafen auf einer Brücke. Danach weinte ich stundenlang. Die Tränen kamen einfach. Hier hast
-        du also etwas ergreifendes zum Warmwerden.
+        du also etwas Ergreifendes zum warm werden.
 
 
         Ich frage mich, wo er mit den ganzen Ballons hin ist. Dieser verrückte Hund muss ausgesehen haben
         wie eine Party auf vier Beinen.
 
 
-        Wenig später habe ich meinen eigenen Bigelow gefunden. Ich druckte einen Haufen Zeug über Ruby aus.
+        Wenig später hatte ich meinen eigenen Bigelow gefunden. Ich druckte einen Haufen Zeug über Ruby aus.
         Artikel, die ich im Netz gefunden hatte. Ich überflog sie später auf einer Bahnfahrt nach Hause.
-        Ich blätterte fünf Minuten und gab auf. Ich war nicht überzeugt.
+        Ich blätterte fünf Minuten und gab auf. Nicht überzeugend.
 
 
         Ich saß da, starrte aus dem Fenster auf die Welt, einen bombastischer Mixer vor Augen, der Graffiti
@@ -298,9 +331,9 @@ chapters:
 
 
         Obwohl ich dir vielleicht die Zähne ausschlagen sollte mit dem ganzen Rummel um Ruby und all den
-        einschlägigen Abkürzungen, die eng mit Ruby verbunden sind (das Zeug, bei dem deine Chefs und deren
+        einschlägigen Abkürzungen und Buzzwords, die eng mit Ruby verbunden sind (das Zeug, bei dem deine Chefs und deren
         Chefs sofort die Ohren spitzen), werde ich dich einfach kosten lassen. Ich werden dich durch etwas
-        Code fallen lassen, nur gelegentlich werde ich ein paar eigene Herzenerfahrungen einwerfen.
+        Code fallen lassen, nur gelegentlich werde ich ein paar eigene Herzenserfahrungen einwerfen.
         Es wird ganz einfach und natürlich sein.
 
 
@@ -317,22 +350,24 @@ chapters:
 
         # *Ein Mann auf einer Insel.* <p>Ruby wurde in Japan geboren. Das ist ziemlich komisch. Japan
         ist nicht gerade für seine Software bekannt. Und da Programmiersprachen meist in Englisch
-        geschrieben werden, wer würde eine Sprache aus Japan erwarten?</p> <p>Und doch, hier haben
+        geschrieben werden, wer würde eine Sprache aus Japan erwarten?</p>
+        <p>Und doch, hier haben
         wir Ruby. Gegen alle Wetten hat Yukihiro Matsumoto am 24. Februar 1993 Ruby geschaffen. In
-        den letzten 10 Jahren hat er unermüdlich gearbeitet, um Ruby der Weltöffentlichkeit näher
+        den letzten zehn Jahren hat er unermüdlich gearbeitet, um Ruby der Weltöffentlichkeit näher
         zu bringen. Es ist triumphal und edel usw. Unterstütze die Vielfalt. Hilf uns, ein wenig
         an der Erde zu wackeln.</p>
 
         # *Frei.* <p>Ruby zu benutzen kostet nichts. Ruby's Quellcode steht jedermann zum Ein- und
         Ausatmen zur Verfügung.  Deshalb ist dieses Buch auch kostenlos. Es ist alles Teil eines
-        elephantösen Werbegeschenks, das irgend einen Riesenhaken haben sollte. Du denkst, wir wollen
-        dir Staubsauger oder gefälschte Monets andrehen. Du denkst, es wird eine 90-minütige Präsentation
-        geben, bei der am Ende der Besitzer der Firma ankommt und dir einen Vertrag aufdrängelt.</p>
+        elephantösen Werbegeschenks, das irgend einen Riesenhaken haben sollte.</p>
+        <p>Du denkst, wir wollen dir Staubsauger oder gefälschte Monets andrehen. Du denkst, es
+        wird eine 90-minütige Präsentation geben, bei der am Ende der Besitzer der Firma ankommt
+        und dir einen Vertrag aufdrängelt.</p>
         <p>Nö. Gratis, frei, kostenlos.</p>
 
 
-        Jetzt ist es Zeit, dass das Buch anfängt. Du kannst jetzt deinen Textmarker rausholen und ab jetzt
-        jedes Wort anstreichen, dass dich besonders fasziniert. Ich denke, ich habe genug Haarspray und
+        Jetzt ist es Zeit, dass das Buch anfängt. Du kannst jetzt deinen Textmarker rausholen und anfangen,
+        jedes Wort anzustreichen, dass dich besonders fasziniert. Ich denke, ich habe genug Haarspray und
         Falschgeld bei mir, um bis zur letzten Seite durchzuhalten.
 
     - Wie Bücher anfangen: >
@@ -343,7 +378,7 @@ chapters:
 
 
         Wir fangen das Buch an, indem wir in der Einführung gut miteinander auskommen. Dieses Zusammenspiel,
-        diese *Synergie*, treibt uns voran durch das Buch, mit mir als dein Reiseführer. Du gibst mir ein
+        diese *Synergie*, treibt uns voran durch das Buch, mit mir als Reiseführer. Du gibst mir ein
         beruhigendes Nicken oder Kichern, um deine Fortschritte zu zeigen.
 
 
@@ -351,20 +386,20 @@ chapters:
         Morgengrauen.
 
 
-        Ein Problem noch. Ich komme nicht gut mit Leuten klar. Ich kann nicht so gut Hände halten.
+        Ein Problem noch. Ich komme nicht gut mit Leuten klar. Ich kann nicht so gut Händchen halten.
 
 
-        Meine Mitarbeiter werden es dir bestätigen. Auf der Eröffnungsfeier Dieses Buches (die in dem
+        Meine Mitarbeiter werden es dir bestätigen. Auf der _Eröffnungsfeier Dieses Buches_ (die in dem
         Fußballstadion) hatte ich entdeckt, dass die Gurkensandwiches nicht in Geschirrtüchern serviert
         wurden. Das Ergebnis war, dass sich die Butter nicht richtig mit den Gurken vermischt hatte...
-        wie auch immer, jedenfalls habe ich einen Aufstand gemacht und ein paar der Werbe-Lastwagen draußen
+        Wie auch immer, jedenfalls habe ich einen Aufstand gemacht und ein paar der Werbe-Lastwagen draußen
         in Brand gesteckt. Ich habe diesen Scheinwerfer zertrümmert und so weiter. Bis tief in der Nacht
         hatte ich diese laute, wahnsinnige Lache. Es war ein Riesendurcheinander.
 
 
-        Aber, da ich nicht gut mit Leuten klarkomme, war niemand außer mir zu der Eröffnungsfeier Dieses
-        Buches eingeladen. Es war also nicht wirklich derart peinlich. Ich habe es geheim gehalten, und
-        niemand hat etwas von dieser ganzen Tortur mitbekommen.
+        Aber, da ich nicht gut mit Leuten klarkomme, war niemand außer mir zu der _Eröffnungsfeier Dieses
+        Buches_ eingeladen. Es war also nicht wirklich derart peinlich. Ich habe es geheim gehalten, und
+        niemand hat etwas von der ganzen Tortur mitbekommen.
 
 
         Du musst wissen, dass *Synergie* in diesem Buch nicht wirklich *Synergie* bedeutet. Ich kann keine
@@ -377,19 +412,43 @@ chapters:
 
 # }}}
 
-# {{{ Kapitel 3: 95%
+# {{{ Kapitel 3: 98%
 
   - Ein kurzer (und hoffentlich schmerzfreier) Ritt durch Ruby (mit Comicfüchsen):
     - >
-      !i/the.foxes-1.png(Auftritt: Füchse.)!
+      !i/the.foxes-1.png(Auftritt: Füchse.)!<br>
+      <small style="color:darkblue"><ol>
+      <li>F: Ich kann nicht +glauben+, dass ich dafür um 8 aufgestanden bin.
+      <br>f: Wem sagst du das.
+      </li>
+      <li>F: Und überhaupt...Ich hab' noch keinen Cent gesehen.
+             Sie sagen, ich werde erst bezahlt, wenn das Buch fertig ist.
+      <br>f: Ich hab' 50% im Voraus gekriegt.
+      </li>
+      <li>F: Diese Gauner!
+      <br>f: Ich sag's dir. Bei diesen Typen geht's nur auf die harte Tour.
+      </li>
+      </ol></small>
 
 
       Ja, das sind die beiden. Oh, mein Asthma schon wieder...ich muss kurz mal ein bisschen
       Medizin einatmen, bin gleich wieder da.
 
 
-      !i/the.foxes-2.png(Füchse aus der Büchse.)!
-       
+      !i/the.foxes-2.png(Füchse aus der Büchse.)!<br>
+      <small style="color:darkblue"><ol>
+      <li>F: Was sollen diese kleinen Kästen?
+             In was für eine Scheiße sind wir hier reingeraten?
+      <br>f: Keine Beine.
+      </li>
+      <li>F: GROSSER GOTT!! Wo sind meine Beine?!
+      <br>f: Tja. Die sind in der Zwischenablage von Photoshop.
+      </li>
+      <li>F: Und wenn Photoshop abstürzt??
+      <br>f: Oh Mann. Bete, dass es OS X ist.
+      </li>
+      </ol></small>
+      
 
       Man hat mir gesagt, dass du für dieses Kapitel am besten einen Mop zur Hand hast;
       irgendwas, womit du dir dein Gesicht abwischen kannst, wenn dir der Schweiß von der
@@ -401,7 +460,17 @@ chapters:
 
 
     - Sprache und ich MEINE Sprache: >
-        !i/the.foxes-3.png(Unsere Freunde, die zwei hilflosen Füchse, bemerken endlich die Ernst der Lage.)!
+        !i/the.foxes-3.png(Unsere Freunde, die zwei hilflosen Füchse, bemerken endlich die Ernst der Lage.)!<br>
+        <small style="color:darkblue"><ol>
+        <li>F: "Ruby ist einfach zu lesen."
+        <br>f: Äh...das ist _meine_ Zeile.
+        </li>
+        <li>F: Ist das hier getarnte Werbung? So ein Infomercial?
+               Ein Taschenbuch mit Reklame in der Mitte?
+        </li>
+        <li>f: Unsere Karriere ist +voll+ im Eimer.
+        </li>
+        </ol></small>
 
 
         Mein Gewissen verbietet mir, Ruby als <em>Computer</em>sprache zu bezeichnen. Das würde bedeuten, dass
@@ -421,14 +490,14 @@ chapters:
 
 
         *Lies folgendes Beispiel laut vor.*
-
-
+        
+        
         bq. @5.times { print "Odelay!" }@
         
         
-        In englischen Sätzen sind Satzzeichen (Punkte, Klammern, Satzzeichen) stumm. Satzzeichen geben den
+        p. In englischen Sätzen sind Satzzeichen (Punkte, Klammern, Satzzeichen) stumm. Satzzeichen geben den
         Wörtern zusätzliche Bedeutung, sie helfen uns, den Sinn des Satzes zu verstehen. Also lesen wir das
-        Beipsiel als: _Five times print &#8220;Odelay!&#8221;._ - _Drucke fünf mal &#8220;Odelay!&#8221;._
+        Beispiel als: _Five times print &#8220;Odelay!&#8221;._ - _Drucke fünf mal &#8220;Odelay!&#8221;_.
 
 
         Und genau das tut dieses kleine Ruby-Programm. Beck&#8217;s 
@@ -448,8 +517,8 @@ chapters:
         
         
         Hier machen wir einen kleinen Praxis-Test. Unser Programm wird sich beenden (*exit*),
-        wenn nicht (*unless* - Englisch für "es sei denn", "wennnicht", ein Wort, das es im
-        Deutschen nicht gibt) das Wort *restaurant* etwas enthält (*include?*),
+        es sei denn (*unless* - Englisch für "es-sei-denn", "wenn-nicht"; ein Wort, das es im
+        Deutschen nicht gibt) das Wort *restaurant* enthält (*include?*) etwas,
         und zwar das Wort *aura*.
         Nochmal, auf Englisch:
         _Exit unless the word restaurant includes the word aura._
@@ -471,7 +540,7 @@ chapters:
 
 
         <small>@each@ (engl. jedes) und @capitalize@ (engl. groß schreiben) werden nicht übersetzt,
-        weil es um Ruby-Standardfunktionen handelt.</small>
+        weil es sich um Ruby-Standardfunktionen handelt.</small>
         
         
         Obwohl dieses Codestück weniger lesbar und satzartig ist als die vorigen, schlage ich dir vor,
@@ -482,7 +551,7 @@ chapters:
         _Mit den Wörtern 'toast', 'käse' und 'wein': nimm jedes Wort und drucke es in Großschreibung._
 
 
-        Der Computer antwortet höflich: @Toast@, @Käse@ und @Wein@.
+        Der Computer antwortet höflich: @'Toast@, @'Käse@ und @'Wein@.
 
 
         An diesem Punkt fragst du dich vielleicht, wie diese Wörter zusammenarbeiten. Smotchkkiss fragt
@@ -529,14 +598,18 @@ chapters:
         ließen - Existenz und sowas.
 
 
-        *IDEE: BIG TOBACCO*
+        *IDEE EINS: BIG TOBACCO*
 
 
         Kauf eine Zigarettenfirma.  Benutz meine Comicfüchse als Brennstoff für eine aggressive
         Werbekampagne.  Hier ist schon mal ein Plakat für Anfänger:
 
 
-        !i/the.foxes-0a.png(Abhängigkeit ist wie Pokémon!)!
+        !i/the.foxes-0a.png(Abhängigkeit ist wie Pokémon!)!<br>
+        <small style="color:darkblue">
+        F: Abhängigkeit ist wie Pokémon!
+        <br>f: Komm, wir sammeln Zigaretten!
+        </small>
 
 
         Mach deutlich, dass du auf Kinder und Asthmakranke abzielst.  Dann, wenn alles richtig läuft,
@@ -558,7 +631,7 @@ chapters:
         Joh. Warum hast du so große Zigarren, Holmes?
 
 
-        *IIDEE: HALLO, EXEKUTIONS-KOMMANDO*
+        *IDEE ZWEI: HALLO, EXEKUTIONS-KOMMANDO*
 
 
         Wie schon gesagt, verkauf Kopien meines Buchs, aber verändere den Text.  Die neuen Kopien
@@ -581,16 +654,20 @@ chapters:
         Licht aus. Kopf runter.
 
 
-        *IIIDEE: PLAKATE, TEIL II*
+        *IDEE DREI: PLAKATE, TEIL II*
 
 
         Wie wär's denn, sich direkt über Asthmakranke lustig zu machen?
 
 
-        !i/the.foxes-0b.png(Call it a puffer! ROFL!)!
+        ??? !i/the.foxes-0b.png(Call it a puffer! ROFL!)!<br>
+        <small style="color:darkblue">
+        F: Unsere Lungen sind blöde. Mehr Luftersatz, bitte.
+        <br>f: Leo ist kaputt!
+        </small>
 
 
-        *IVDEE: ALEC BALDWIN*
+        *IDEE VIER: ALEC BALDWIN*
 
 
         Mach einen Film aus dem Buch.  Und weil ich einer der Charaktere in diesem Buch bin,
@@ -632,13 +709,13 @@ chapters:
         solltest du auf ihn verzichten.  Er könnte ablehnen.
 
 
-        Ich sag dir was.  Ich nehm die Rolle.  Meine Karriere besteht aus Tiefpunkten.
+        Ich sag dir was.  Ich nehme die Rolle.  Meine Karriere besteht aus Tiefpunkten.
         
     - Die Wortarten: >
 
         Wie ein Stinktier auf dem Rücken einen weißen Streifen trägt, oder eine Braut einen wehenden
         weißen Schleier, so haben auch viele Wortarten in Ruby sichtbare Erkennungsmerkmale.
-        Zeichensetzung und Großschreibung werden dir helfen, Codestücke zu sehen und sofort
+        Zeichensetzung und Groß-/Kleinschreibung werden dir helfen, Codestücke zu sehen und sofort
         wiederzuerkennen. Dein Verstand wird häufig rufen: _Hey, dich kenn' ich doch!_
         Außerdem wirst du in der Lage sein, den Rubyisten-Jargon zu verstehen.
   
@@ -652,7 +729,7 @@ chapters:
         h3. Variablen
 
 
-        Jedes einfach, kleinbuchstabige Wort ist in Ruby eine Variable. Variablen können aus
+        Jedes einfache, kleinbuchstabige Wort ist in Ruby eine Variable. Variablen können aus
         Buchstaben, Ziffern und Unterstrichen bestehen.
 
 
@@ -686,13 +763,17 @@ chapters:
         jede Hilfe gebraucht, denke ich.
 
 
-        !i/the.foxes-4a.png(Sie machen sich über meine Beispiele lustig.)!
- 
+        !i/the.foxes-4a.png(Sie machen sich über meine Beispiele lustig.)!<br>
+        <small style="color:darkblue">
+        F: Mann, seine Beispiele sind krank.
+        <br>f: Psst. 121,08 &euro; sind keine schlechte Teddysteuer.
+        </small>
+
 
         h3. Zahlen
 
 
-        Der einfachste Zahlentyp ist _Integer_ (Ganzzahl), eine *Ziffernkette*, die mit einem
+        Der einfachste Zahlentyp ist _Integer_ (Ganze Zahl), eine *Ziffernkette*, die mit einem
         *Plus- oder Minuszeichen* beginnen kann.
 
 
@@ -765,7 +846,15 @@ chapters:
         </pre>
 
 
-        !i/the.foxes-4b.png(Sie wollen unbedingt in meine Beispiele.)!
+        !i/the.foxes-4b.png(Sie wollen unbedingt in meine Beispiele.)!<br>
+        <small style="color:darkblue">
+        F: Ruf mal irgendwas!  Vielleicht benutzt er es für seine Beispiele!
+        <br>f: Was denn? Sowas wie "Chunky Bacon"?
+        </small>
+
+
+        <small>_Chunky Anmerkung des Übersetzers:_ Da "Chunky Bacon" inzwischen Kultstatus erreicht hat,
+        werde ich den Teufel tun, es zu übersetzen!</small>
 
 
 
@@ -779,7 +868,7 @@ chapters:
         bq. @:a@, @:b@ oder @:ponce_de_leon@ sind Beispiele.
 
 
-        Symbole sind leichter als Strings. Sie werden dort benutzt, wenn man einen String braucht, den man
+        Symbole sind leichter als Strings. Sie werden dort benutzt, wo man einen String braucht, den man
         nicht auf dem Bildschirm ausgeben will.
 
 
@@ -796,16 +885,16 @@ chapters:
 
 
         Konstanten sind Wörter, wie Variablen, aber sie werden *groß geschrieben*. Wenn Variablen die
-        Ruby's Substantive sind, dann kannst du dir Konstanten als Eigennamen vorstellen.
+        in Ruby die Substantive sind, dann kannst du dir Konstanten als Eigennamen vorstellen.
 
 
-        bq. @Time@, @Array@ oder @Bunny_Lake_ist_verschwunden@ zum Beispiel.
+        bq. @Time@, @Array@ oder @BunnyLakeIstVerschwunden@ zum Beispiel.
 
 
         Im Deutschen werden Eigennamen groß geschrieben. Das Brandenburger Tor. Du kannst das
         Brandenburger Tor nicht einfach umherschieben. Du kannst nicht mal eben entscheiden, dass
         das Brandenburger Tor irgend etwas anderes sei. Eigennamen sind so. Sie bezeichnen etwas
-        ganz bestimmtes und verändern sich normalerweise nicht mit der Zeit.
+        ganz Bestimmtes und verändern sich normalerweise nicht mit der Zeit.
         
 
         Ebenso können Konstanten nicht verändert werden, nachdem man sie gesetzt hat.
@@ -818,7 +907,11 @@ chapters:
         Sowas wird nicht gern gesehen.
 
 
-        !i/the.foxes-4d.png(Komm schon, chunky bacon.)!
+        !i/the.foxes-4d.png(Komm schon, chunky bacon.)!<br>
+        <small style="color:darkblue">
+        F: Komm schon. Echt jetzt. Chunky Bacon.
+        <br>f: Chunky. Bacon.
+        </small>
 
 
 
@@ -827,7 +920,7 @@ chapters:
 
         Wenn Variablen und Konstanten die Substantive sind, dann sind Methoden sie Verben.
         Methoden werden üblicherweise an Variablen angehängt, mit einem *Punkt*. Du hast Methoden
-        schon beim Arbeiten gesehen.
+        schon in Aktion gesehen.
 
 
         bq. @zauntor.oeffnen@
@@ -847,7 +940,7 @@ chapters:
 
 
         Das ist auch eine Aktion. Wir haben dem Computer gesagt, er soll nachschauen, ob das Tor offen ist.
-        Die Methode könnte auch @zauntor.schau_nach_ob_es_offen_ist@, aber @offen?@ ist kurz und passt auch.
+        Die Methode könnte auch @zauntor.schau_nach_ob_es_offen_ist@ heißen, aber @offen?@ ist kurz und passt auch.
         Sowohl Ausrufezeichen als auch Fragezeichen können in Methodennamen benutzt werden.
 
 
@@ -870,7 +963,7 @@ chapters:
 
         Es ist wie ein Korb, gefüllt mit den zusätzlichen Informationen, den die Methode mit sich herumträgt.
         Die Klammern sind die Henkel des Korbs. Die Kommas sind die Füße der Argumente, die aus dem
-        Korb herausgucken. Das letzte hast seine Füße eingezogen, so dass man sie nicht sieht.
+        Korb herausgucken. Das letzte Argument hast seine Füße eingezogen, so dass man sie nicht sieht.
 
 
         Man kann die Körbe auch aneinanderhängen.
@@ -881,7 +974,7 @@ chapters:
 
         Das streicht das Zauntor in 3 roten Schichten an, lässt es 30 Minuten trocken, und schließt es.
         Obwohl die letzte Methode keine Argumente hat, kannst du trotzdem Klammern setzen, wenn du magst.
-        Es macht keinen Sinn, einen leeren Schlauch zu tragen; darum lässt man die Klammern normalerweise weg.
+        Es macht keinen Sinn, einen leeren Korb mit dir herum zu tragen; darum lässt man die Klammern normalerweise weg.
 
 
         Einige Methoden (wie @print@) sind Kernel-Methoden. Diese Methoden werden in ganz Ruby verwendet.
@@ -895,7 +988,7 @@ chapters:
 
 
         Genau wie die eben beschriebenen Methoden (auch _Instanzmethoden_ genannt) werden auch
-        Klassenmethoden an Variablen oder Konstanten angehängt. Statt einem Punkt benutzt man einen
+        Klassenmethoden an Variablen oder Konstanten angehängt. Statt eines Punktes benutzt man einen
         *doppelten Doppelpunkt*.
 
 
@@ -930,7 +1023,7 @@ chapters:
 
         Mit globalen Variablen kannst du sicherstellen, dass eine Variable in jedem Haus gleich ist. Das
         Dollarzeichen passt gut. Jeder Haushalt in Amerika respektiert den Wert des Dollars. Die sind
-        verrückt nach dem Zeug. Versuch es mal, klopf an irgend eine amerikanischen Tür an und biete Geld.
+        verrückt nach dem Zeug. Versuch es mal, klopf an irgend eine amerikanische Tür und biete ihnen Geld an.
         Ich kann dir versichern, dass die Leute anders reagieren, wenn du ihnen Peter anbietest, den
         Löwendompteur mit einer Schwäche für Flanel.
 
@@ -949,7 +1042,7 @@ chapters:
 
 
         Diese Variablen werden oft benutzt, um Eigenschaften ("Attribute") zu definieren. Zum Beispiel
-        könntest du Ruby die Breite vom @zauntor@ angeben, indem du die Variable @@breite@ innerhalb von
+        könntest du Ruby die Breite vom @zauntor@ angeben, indem du die Variable <code>@breite</code> innerhalb von
         @zauntor@ setzt. Instanzvariablen werden in Ruby dazu verwendet, die Eigenschaften eines Objekts
         zu definieren.
 
@@ -978,7 +1071,11 @@ chapters:
         und nicht nur eine, sondern alle ändern sich.
 
 
-        !i/the.foxes-4f.png(Juchu! Chunky bacon erreicht!)!
+        !i/the.foxes-4f.png(Juchu! Mission Chunky Bacon abgeschlossen!)!<br>
+        <small style="color:darkblue">
+        F: Juchu!  Ich hab keine Ahnung was Chunky Bacon ist, aber wir haben's geschafft!
+        <br>f: Wir sind im Buch!
+        </small>
 
 
 
@@ -1040,7 +1137,7 @@ chapters:
         Der Ausdruck @x + y@ addiert die beiden Argumente.
 
 
-        Stell' dir die beiden senkrechten Striche als Tunnel vor. Sie erwecken den Eindruck einer
+        Stell dir die beiden senkrechten Striche als Tunnel vor. Sie erwecken den Eindruck einer
         Rutsche, auf der die Variablen nach unten gleiten. (Das @x@ streckt alle Viere von sich, während
         das @y@ brav die Beine kreuzt.) Diese Rutschbahn agiert als Verbindung zwischen dem Block und der
         Welt um ihn herum.
@@ -1049,7 +1146,12 @@ chapters:
         Variablen werden über diese Rutsche (oder diesen Tunnel) in den Block übergeben.
 
 
-        !i/the.foxes-4g.png(Und dann: Die düstere Realität.)!
+        !i/the.foxes-4g.png(Und dann: Die düstere Realität.)!<br>
+        <small style="color:darkblue">
+        F: Ich habe keine Frau.  Keine Kinder.  Ich werde keine Erben haben.<br>
+        Das einzige von mir, an das sich die Welt erinnern wird, ist Chunky Bacon.
+        <br>f: Autsch.
+        </small>
 
 
 
@@ -1067,10 +1169,10 @@ chapters:
 
 
         Stell sie dir als Akkordeons vor, die man für den Transport zusammengefaltet hat. (Natürlich
-        kannst du ein tolles Selbstwertgefühl aufbauen, wenn du ein ausgefaltetes Akkorden herumträgst.
-        Aber manchmal muss man in Selbstzweifeln versinken und die Transportbox ängstlich verstecken.)
+        kannst du ein tolles Selbstwertgefühl aufbauen, wenn du ausgefaltete Akkordeons mit dir herumträgst.
+        Aber manchmal muss man in Selbstzweifeln versinken und sie in der Transportbox verstecken.)
         Die Klammern sind die Griffe an den Seiten dieses kleineren Taschen-Akkordeons. Die Punkte sind
-        die Kette, die den Balg zusammenhalten.
+        die Kette, die den Balg zusammenhält.
 
 
         Normalerweise benutzt man nur zwei Punkte. Wenn man den dritten Punkt dazunimmt, wird der letzte
@@ -1081,7 +1183,7 @@ chapters:
 
 
         Wenn du diesen dritten Punkt siehst, denke an ein leicht geöffnetes Akkordeon, gerade weit genug
-        geöffnet, um einen Ton zu spielen. Dieser Ton ist der letzte Wert; der Wind weht ihn fort.
+        geöffnet, um einen Ton zu spielen. Dieser Ton ist der letzte Wert; er wird vom Wind hinfort geweht.
 
 
         h3. Arrays
@@ -1121,7 +1223,7 @@ chapters:
 
 
         Ein Hash (englisch _Gehacktes_) ist eine Art Wörterbuch in *geschweiften Klammern*.
-        Wörterbücher ordnen Wörtern Erklärungen zu; Ruby tut das mit *Pfeilen*, besetehend aus
+        Wörterbücher ordnen Wörtern Erklärungen zu; Ruby tut das mit *Pfeilen*, bestehend aus
         einem Ist-Gleich- und einem Größer-Als-Zeichen.
         
 
@@ -1157,15 +1259,24 @@ chapters:
         Reihenfolge gespeichert.
 
 
-        !i/the.foxes-5.png(Die Füchse glauben, dass Stille den Comic töten würde.)!
+        !i/the.foxes-5.png(Die Füchse glauben, dass Stille den Comic töten würde.)!<br>
+        <small style="color:darkblue"><ol>
+        <li>F: Langsam fühle ich mich in diesem Comic ziemlich eingeklemmt.
+        Ist das ein Dauercomic?
+        <br>f: Wie die Peanuts?
+        </li>
+        <li>
+        </li>
+        <li>f: Vielleicht...verschwindet es, wenn wir leise sind.
+        </li>
+        </ol></small>
 
 
 
         h3. Reguläre Ausdrücke
 
 
-        Ein Regulärer Ausdruck (englisch _regular expression_, abgekürzt _regexp_, _regex_ oder
-        beliebie andere Varianten) ist eine
+        Ein Regulärer Ausdruck (englisch _regular expression_ oder _regexp_) ist eine
         Zeichenkette in *Schrägstrichen*.
 
 
@@ -1177,23 +1288,23 @@ chapters:
 
 
         Stell dir ein kleines Wort mit Stecknadeln an der Seite vor, dass du über ein Buch hältst.
-        Du gehst damit langsam über den Text und wenn es in die nähe eines passenden Wortes kommt,
-        fängt es an zu blinken. Du heftest den Regulären Ausdruck in das Buch, genau über die
+        Du gehst damit langsam über den Text, und wenn es in die Nähe eines passenden Wortes kommt,
+        fängt es an zu blinken. Du heftest den regulären Ausdruck in das Buch, genau über die
         Fundstelle, und die Buchstaben leuchten auf.
 
 
         Ach, und wenn du die Nadeln in das Buch piekst, niest das Papier: _reg-exp!_
 
 
-        Regexen sind viel schneller, als die Buchseiten mit dem Finger abzusuchen. Ruby
-        kann eine Regexp benutzen, um ganze Buchbände schnell zu druchsuchen.
+        Regexen sind viel schneller, als du die Buchseiten mit dem Finger abzusuchen kannst. Ruby
+        kann eine Regexp benutzen, um ganze Buchbände schnell zu durchsuchen.
 
 
         h3. Operatoren
 
 
-        Die unten aufgelisteten Operatoren werden in Ruby benutzt, um zu Rechnen oder zu
-        Vergleichen. Überfliege sie mal, ein paar erkennst du sicher wieder. Du weißt schon,
+        Die unten aufgelisteten Operatoren werden in Ruby benutzt, um zu rechnen oder zu
+        vergleichen. Überfliege sie mal, ein paar erkennst du sicher wieder. Du weißt schon,
         Addition @+@ und Subtraktion @-@ und so weiter.
 
 
@@ -1210,7 +1321,7 @@ chapters:
 
         Ruby hat einige eingebaute Worte voller einzigartiger Bedeutung.  Diese Worte
         können nicht als Variablen benutzt werden oder für deine Zwecke verändert werden.
-        Ein paar haben wir bereits besprochen Sie sind in einem sicheren Haus, mein Freund.
+        Ein paar haben wir bereits besprochen.  Sie sind in einem sicheren Haus, mein Freund.
         Rühr' sie an und du kriegst einen offiziellen Syntaxfehler.
 
 
@@ -1228,11 +1339,22 @@ chapters:
         zu originellen Häppchen (ergreifenden) Codes.
 
 
-        Ich empfehle, die Wortarten nochmal zu überfliegen.  Schaff dir einen guten
+        Ich empfehle dir, die Wortarten nochmal zu überfliegen.  Schaff dir einen guten
         Überblick.  Im nächsten Abschnitt werde ich dich testen.
 
 
-        !i/the.foxes-6.png(Out in the pickup truck.)!
+        !i/the.foxes-6.png(Out in the pickup truck.)!<br>
+        <small style="color:darkblue"><ol>
+        <li>F: Ist dir aufgefallen, dass dieses Buch im Wesentlichen von 
+        einem +Mondsüchtigen+ geschreiben wurde?
+        <br>f: Jepp.
+        </li>
+        <li>F: Ernsthaft, er ist hyperaktiv.  Wenn er sich weiter so hetzt, wird er ziemlich
+        schnell ausgebrannt sein.
+        </li>
+        <li>f: Ausgebrannt?  Er wird sich in den Kopf schießen, sobald er 30 ist.
+        </li>
+        </ol></small>
 
 
 #        h3. You and Your Dictionary 
@@ -1256,8 +1378,10 @@ chapters:
         # 8 Jahre.  Ich liege einfach im Bett und denke nach.  Und mir wird klar:
         _Nichts wird mich davon abhalten, Kinderzahnarzt zu werden._
 
-        # 21. Bleistift am Strande gefunden.  _I cherish serenity_ hineingeritzt. Habe ihn
-        in die Innentasche meiner Jacke gesteckt.  Zugeschaut, wie die Wellen kommen und gehen.
+        # 21. Bleistift am Strand gefunden.  _I cherish serenity^1^_ hineingeritzt. Ihn
+        in die Innentasche meiner Jacke gesteckt.  Und den Wellen zugeschaut.
+
+        fn1. _cherish_ = schätzen, verehren; _serenity_ = Ruhe, Gelassenheit, Heiterkeit
 
         # 22. Einen Käfer im Badezimmer gefunden, der beinahe in die Heizung gefallen wäre.
         Habe ihn aufgehoben und ihm einen kleinen Rucksack aus einen Blatt und einem Faden gemacht.
@@ -1300,7 +1424,7 @@ chapters:
 
         Na gut.  Du hast dich gut gehalten.  Aber jetzt muss ich anfangen, der brutale Oberlehrer zu
         sein.  Ich brauche gute Noten von dir.  Bisher hast du nicht mehr getan als mit deinen Augen
-        herumzuwackeln.  Sicher, du hast vorhin Unglaubliches geleistet beim Laut-Vorlesen.
+        herumzuwackeln.  Sicher, du hast vorhin Unglaubliches geleistet, beim laut vorlesen.
         Jetzt, Smotchkkiss, brauchen wir ein paar Typ-2-Fertigkeiten (_Verstehen_).
 
 
@@ -1323,8 +1447,8 @@ chapters:
 
 
         Genau wie @print@ ist auch @exit@ eine Kernel-_Methode_. Wenn du bei der großen Liste mit den
-        Schlüsselworten aufgepasst hast, weißt du, dass @unless@ ein _Keyword_ ist.  Der _String_
-        @"restaurant"@ halt sich an der _Methode_ @include?@ fest.  Und zum Schluss, der _String_ @"aura"@.
+        Schlüsselworten aufgepasst hast, weißt du, dass @unless@ ein _Schlüsselwort_ ist.  Der _String_
+        @"restaurant"@ schmiegt sich an die _Methode_ @include?@.  Und zum Schluss der _String_ @"aura"@.
 
 
         *Lies die benutzen Wortarten laut vor.*
@@ -1342,7 +1466,7 @@ chapters:
         _Methode_ @each@.
 
 
-        In einem _Block_ finden wir das _Block-Argument_ @wort@, dass auf seine kleine Wasserrutsche
+        In einem _Block_ finden wir das _Block-Argument_ @wort@, das auf seine kleine Wasserrutsche
         in den Block flutscht.  Die Methode @capitalize@ wandelt den ersten Buchstaben des Wortes in
         Großbuchstaben um, das zur _Variable_ @wort@ geworden ist.  Der umgewandelte _String_ wird an
         die Kernel-*Methode* @print@ weitergegeben.
@@ -1355,7 +1479,16 @@ chapters:
         
     - Ein Beispiel, um erwachsen zu werden: >
 
-        !i/the.foxes-7.png(Platzangst.)!
+        !i/the.foxes-7.png(Platzangst.)!<br>
+        <small style="color:darkblue"><ol>
+        <li>F: Junge, ich kriege Platzangst.  Ich hätte meine Metallsäge mitbringen sollen.
+        <br>f: Ja, hol uns hier raus.
+        </li>
+        <li>F: Näh.  Die ist draußen in meinem Pickup.
+        </li>
+        <li>f: Hey! Da fährt ein Pickup!
+        </li>
+        </ol></small>
 
 
         *Lies die benutzen Wortarten laut vor.*
@@ -1370,7 +1503,7 @@ chapters:
 
 
         Die erste Zeile ist ein Methodenaufruf.  Die _Methode_ @require@ wird benutzt.  Ein _String_ mit dem
-        Inahlt @'net/http'@ wird ihr übergeben.  Diese erste Zeile ist sozusagen ein Satz:  Wir haben Ruby
+        Inhalt @'net/http'@ wird ihr übergeben.  Diese erste Zeile ist sozusagen ein Satz:  Wir haben Ruby
         gesagt, sie soll ein bisschen Hilfscode laden, nämlich die Bibliothek @Net::HTTP@.
 
 
@@ -1380,8 +1513,7 @@ chapters:
 
 
         Das Wort @do@ öffnet einen _Block_.  Der Block hat eine _Blockvariable_ @http@.  Im Block wird die
-        _Methode_ @print@ aufgerufen.  Was wird gedruckt?<br />
-        <small>(engl. _to print_ = drucken)</small>
+        _Methode_ @print@ aufgerufen.  Was wird gedruckt?
 
 
         Die _Variable_ @http@ hat eine _Methode_ @get@, die wir aufrufen.  In @get@ schicken wir einen
@@ -1397,7 +1529,7 @@ chapters:
         Zum Beispiel wird dieses Muster ein paarmal verwendet:
 
 
-        bq. _Variable_ . _Method_ ( _Methodenargumente_ )
+        bq. _Variable_ . _Methode_ ( _Argumente_ )
 
 
         Du siehst es innerhalb des Blocks:
@@ -1407,16 +1539,13 @@ chapters:
 
 
         Wir benutzen Ruby, um eine Website zu holen.  Du hast HTTP vermutlich schon mit deinem Browser benutzt.
-        HTTP ist das Hypertext Transfer Protocol[1].  HTTP wird benutzt, um Websites über das Internet zu
+        HTTP ist das Hypertext Transfer Protocol.  HTTP wird benutzt, um Websites über das Internet zu
         transportieren.  Stell dir einen Busfahrer vor, der durch das Internet fährt und uns Websites
         zurückmitbringt.  Auf seiner Mütze stehen die Buchstaben HTTP.
 
 
-        fn1. <small>Hypertext-Transferprotokoll. Wie man sieht, haben Übersetzungen technischer Begriffe kaum noch Sinn.</small>
-
-
         Die Variable @http@ ist dieser Busfahrer.  Die _Methode_ ist eine Nachricht (engl. _message_) an den
-        Busfahrer:  Gehe etwas _holen_ (engl. _to get_ = holen), und zwar die Website namens @/en/LICENSE.txt@.
+        Busfahrer:  Gehe etwas _holen_ (engl. _to get_ = holen), und zwar die Website namens @'/en/LICENSE.txt'@.
 
 
         Hier siehst du die Methodenverkettung:
@@ -1438,7 +1567,7 @@ chapters:
 
 
         Dieser Code holt dir eine Website.  Wir senden ihr die Nachricht @body@, die uns das ganze HTML
-        in einem _String_ liefert.  Den drucken wir dann mit @print@ aus.  Schau dir an, wie man das
+        in einem _String_ liefert.  Den drucken wir dann mit @print@.  Schau dir an, wie man das
         Grundmuster Punkt-Methode verketten kann.  Das nächste Kapitel wird alle möglichen Arten dieser
         Ruby-Muster erforschen.  Das wird ein Spaß.
 
@@ -1449,7 +1578,15 @@ chapters:
 
     - Und so kommt der Ritt zu seinem ruhigen, gepolsterten Ende: >
 
-        !i/the.foxes-8.png(Dem Truck hinterher rennend.)!
+        !i/the.foxes-8.png(Dem Truck hinterher rennend.)!<br>
+        <small style="color:darkblue"><ol>
+        <li>F: Da vorne!  Wir müssen ihn verfolgen!
+        <br>f: Wer klaut sowas?
+        </li>
+        <li>F: Die Kupplung ist +sehr+ launisch.
+        Das darf nicht wahr sein.
+        </li>
+        </ol></small>
 
 
         Jetzt haben wir ein Problem.  Ich habe das Gefühl, dass du das Ganze hier viel zu sehr genießt.
@@ -1458,23 +1595,27 @@ chapters:
  
 
         Wenn du das das hier schon genießt, dann wird es wirklich schlimm.  Zwei Kapitel weiter wirst
-        du eine eigenen Ruby-Programme schreiben.  Genauer gesagt ist es fast soweit, dass ich dich dazu
-        bringe, dein eigenes Rollenspiel zu schreiben, dein eigenes Datei-Austausch-Netzwer (wie
-        BitTorrent), und ein Programm, dass echte Zufallszahlen aus dem Internet zieht.
+        du deine eigenen Ruby-Programme schreiben.  Genauer gesagt ist es fast soweit, dass ich dich dazu
+        bringe, dein eigenes Rollenspiel zu schreiben, dein eigenes Datei-Austausch-Netzwerk (à la
+        BitTorrent), und ein Programm, das echte Zufallszahlen aus dem Internet saugt.
 
 
-        !>i/graph-1.gif(Beweis aus dem Pudding entnommen.)!
+        p={float:right}. !i/graph-1.gif(Beweis: siehe Kaffeesatz.)!<br>
+        <small style="font-family: sans-serif">
+        %{color:white; background-color:#99ADC7; border:1px solid black; padding:1px 3px}Spass-Maßeinheiten%<br>
+        %{color:black}Aquaplaning | Streichelzoo | W(e)EiR | Schädeltrauma%
+        </small>
 
 
-        Und, weißt du (das musst du wissen!), dass das hier zur Besessenheit wird.  Zuerst wirst du
+        Und, weißt du (das musst du wissen!), das hier kann zur Besessenheit werden.  Zuerst wirst du
         völlig vergessen, mit dem Hund rauszugehen.  Er wird an der Haustür stehen und mit dem Kopf
         dagegen pochen, während deine Augen den Code verschlingen, den deine Finger in den Computer
         spielen.
         
         
-        Durch deine Nachlässiogkeit wird es gefährlich.  Die Berge ausgedruckten Codes werden die
+        Durch deine Nachlässigkeit wird es gefährlich.  Die Berge ausgedruckten Codes werden die
         Lüftung zudecken.  Dein Ofen wird ersticken.  Der Müll wird sich auftürmen: Kartons eilig
-        bestellter Pizzas und Werbung, um deren Entsorgung du dich nicht kümmern kannst.
+        bestellter Pizzen und Werbung, um deren Entsorgung du dich nicht kümmern kannst.
         Du wirst verdrecken und die Luft verpesten.  Moos wird die Wände überwuchern, das Wasser
         wird klumpig, Tiere werden einziehen, Bäume werden durch den Boden wachsen.
 
@@ -1487,12 +1628,12 @@ chapters:
 
 
         Und gerade als der Raum kurz davor ist, über dir zusammenzubrechen, weil die ganze Überwucherung
-        dich und die Maschine verschlockt, wirst du dein Script fertig stellen.  Du und deine Maschine
+        dich und die Maschine verschluckt, wirst du dein Script fertig stellen.  Du und deine Maschine
         werden dieses neueste Ruby-Script ausführen, ein Produkt deiner Obsession.  Und das Script wird
         Kettensägen feuern, die die Bäume zu kappen, und Herde steuern, die dein Haus warmhalten.
         Nano-Bauroboter werden aus deinem Script strömen, um dein Quartier umzubauen; sie werden kacheln,
         renovieren, chromieren, polieren, desinfizieren.  Mächtige Androiden werden dein bröckelndes
-        Haus in starke, stabile Architektur verwandeln.  Große Säulen und Statuen werden wachseln.
+        Haus in starke, stabile Architektur verwandeln.  Große Säulen und Statuen werden wachsen.
         Du wirst der Herr über diesen Palast sein und über die Berge und Inseln in der Umgebung deiner
         Festung.
         
@@ -9888,4 +10029,4 @@ expansion_paks:
 #        The goat tossed his legs up on the panel and eased a few plush handles into an array of positions
 #        until a slot opened at the base, from which a long silver chain spilled.  At the end of the chain
 #        dangled a thick retainer the size of a fish filet.
-# }}} vim:foldmethod=marker:noet:
+# }}} vim:foldmethod=marker:et:
