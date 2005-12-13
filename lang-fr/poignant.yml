@@ -9804,14 +9804,18 @@ expansion_paks:
       h3. Lire le Prompt.
 
 
-      I know the prompt surely looks bewildering.  Well, let's not delay in dissecting it.  It's very simple.
-      The prompt has three parts, each separated by *colons*.
+      Je sais que l'invite peut sembler déroutante. Donc, n'attendons
+      pas plus pour la disséquer. C'est très simple. L'invite est
+      faitre de trois parties, séparées par *deux points*.
 
 
-      The first section, which reads @irb(main)@, shows *the name of the program* we are running.  The second
-      section shows a line number, *a count of how many lines of Ruby we've typed*.  The third section is *a
-      depth level*.  Whenever you open a statement which needs closing, the depth level will increase by one.
-      And whenever Irb senses that your code is unfinished, *the end of the prompt will become an asterisk.*  
+      La première partie, @irb(main)@, montre *le nom du programme*
+      que nous exécutons. La seconde partie montre un numéro de ligne,
+      *le nombre de lignes de Ruby que nous avons tapé*. La troisième
+      partie est une *profondeur*. Chaque fois que vous ouvrez une
+      déclaration qui doit être fermée, la profondeur augmentera de
+      un. Et dès qu'Irb devinera que votre code n'est pas terminé, *la
+      fin de l'invite deviendra une étoile.*
 
 
       <pre>
@@ -9827,20 +9831,22 @@ expansion_paks:
       </pre>
         
 
-      Notice how the depth level increased to 1 when I opened the @if@ statement.  And how the asterisk
-      indicates the continuation of a line.
+      Notez comme la profondeur est passée à 1 lorsque j'ai tapé un
+      @if@. Et comme l'étoile indique la continuation de la ligne.
 
 
-      h3. Tweaking the Prompt
+      h3. Modifier l'Invite
 
 
-      You don't have to like the prompt's appearance, though.  I'm not forcing you to do anything and,
-      if you want to hack it up, I'm right here beside you.
+      Remarquez que vous n'êtes pas obligé d'aimer l'apparence de
+      l'invite. Je ne vous force à rien, et si vous voulez le
+      modifier, je suis là, juste derrière vous.
 
 
-      Irb has a few other included prompts which may better appease your senses.  Try @irb --prompt simple@.
-      This time Irb will treat you to a very basic set of arrows, allowing you to enter your code without
-      the whole status report.
+      Irb possède quelques autres invites par défaut qui pourraient
+      peut-être plus apaiser vos sens. Essayez @irb --prompt
+      simple@. Cette fois, Irb va vous servir de simple flêches, vous
+      permettant de taper votre code sans tout le rapport d'état.
 
 
       <pre>
@@ -9850,15 +9856,18 @@ expansion_paks:
       </pre>
 
 
-      Ruby comes with a few prompts.  The *simple* prompt seen above.  The *xmp* prompt which has no
-      prompt at all and indents the answer arrow.  (It's supposed to look nice for printing.)  Also,
-      the *null* prompt, which eliminates prompts altogether.  Set the prompt by just supplying the
-      name with the @--prompt@ option.  (So, @irb --prompt null@.)
+      Ruby vient avec quelques invites. L'invite *simple* vient d'être
+      vue. L'invite *xmp* qui n'a pas d'invite du tout et indente la
+      flêche de la réponse. (C'est supposé être joli à
+      l'impression). Et aussi le l'invite *null*, qui élimine toute
+      invite. Choisissez l'invite en forunissant le nom à l'option
+      @--prompt@. (Par exemple @irb --prompt null@.)
 
 
-      Making your own prompt is okay as well.  Irb is completely customizable from inside of itself.
-      The @conf@ object contaions all of Irb's configuration settings.  Some of these configuration
-      settings are for controlling the prompt.
+      Vous pouvez tout aussi bien faire votre propre invite. Irb est
+      totalement configurable depuis son prpore intérieur. L'objet
+      @conf@ contient toute les options de configuration
+      d'Irb. Certaines de ces options servent à controller l'invite.
 
 
       <pre>
@@ -9868,32 +9877,38 @@ expansion_paks:
       </pre>
 
 
-      Let's setup our prompt to display line numbers with just a bit of decor.
+      Créons notre propre invite qui affichera les numéros de ligne
+      avec juste un peu de décoration.
 
 
       <pre>
-       >> conf.prompt_i = "%3n :> "           # the normal prompt
-       >> conf.prompt_s = "%3n .%l "          # the string continuation prompt
-       >> conf.prompt_c = "%3n .^ "           # the code continuation prompt
-       >> conf.return_format = "    => %s\n"  # the answer arrow
+       >> conf.prompt_i = "%3n :> "           # l'invite normal
+       >> conf.prompt_s = "%3n .%l "          # l'invite de continuation de chaine.
+       >> conf.prompt_c = "%3n .^ "           # l'invite de continuation de code.
+       >> conf.return_format = "    => %s\n"  # la flêche de la réponse.
       </pre>
 
 
-      Above are the four parts to an Irb prompt.  The string continuation prompt is displayed when
-      a string is still open when you hit _Enter_.  The @%3n@ describes that Irb should reserve three
-      characters for the line number.  The @%l@ saves a place for displaying the type of string being
-      continued.  (If you're continuing a double-quoted string, it shows a double quote.  If you're
-      continuing a regular expression, it shows a slash.)
+      Voici les quatre parties d'une invite Irb. L'invite de
+      continuation de chaîne est affichée lorsque une chaîne est
+      toujours ouverte et que vous tapez _Entrée_. Le @%3n@ signifie
+      qu'Irb doit réserver trois caractères pour le numéro de
+      ligne. Le @%l@ garde un peu de place pour afficher le type de
+      chaîne qui est continuée. (Si vous continuez une chaîne avec des
+      guillemets doubles, il montre des guillemets doubles. Si vous
+      continuez une expression régulière, il montre un /.)
 
 
-      The rest are little symbols to decorate the prompt.  So, in the case of a continuing code line,
-      I show a caret which points up to the line where that line of code started. 
+      Le reste ne sont que de petits symboles pour décorer
+      l'invite. Donc, dans la cas d'une continuation de ligne de code,
+      j'affiche un chapeau chinois qui pointe vers la ligne ou le code
+      a commencé.
 
 
-      You can read more about customizing Irb and saving your configuration to a file in 
-      the complete "guide to Irb":http://www.rubycentral.com/book/irb.html, available in
-      the free-for-your-wandering-Internet-eyes _Programming Ruby_.
-
+      Vous pouvez lire plus concernant la configuration d'Irb ainsi
+      que sa sauvegarde dans le "guide complet
+      d'Irb":http://www.rubycentral.com/book/irb.html, disponible dans
+      le gartuit-pour-vos-yeux-vagabind-d-Internet _Programming Ruby_.
 
     - !^sidebar
       Windows Hiccups: >      

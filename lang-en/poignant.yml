@@ -9425,7 +9425,7 @@ expansion_paks:
 
 
       Making your own prompt is okay as well.  Irb is completely customizable from inside of itself.
-      The @conf@ object contaions all of Irb's configuration settings.  Some of these configuration
+      The @conf@ object contains all of Irb's configuration settings.  Some of these configuration
       settings are for controlling the prompt.
 
 
