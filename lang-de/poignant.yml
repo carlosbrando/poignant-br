@@ -1642,7 +1642,7 @@ chapters:
 
 # }}}
 
-# {{{ Kapitel 4-6: 0%
+# {{{ Kapitel 4: 0%
 
   - Floating Little Leaves of Code:
     - >
@@ -2972,7 +2972,9 @@ chapters:
 
 
         !i/the.elf-7.jpg(Someone let them all out.)!
-  
+#  }}}
+
+# {{{ Kapitel 5: 0%
   - Them What Make the Rules and Them What Live the Dream:
 
     - >
@@ -6392,8 +6394,9 @@ chapters:
 
 
         And Digger Dosh bludgeoned and feasted on each second they left behind them.
+# }}}
 
-
+# {{{ Kapitel 6: 0%
   - Downtown:
     - >
       !i/wixl-1.jpg(Lost in Wixl)!
@@ -9433,7 +9436,7 @@ chapters:
 
 # }}}
 
-# {{{ Expansion Paks: 95%
+# {{{ Expansion Paks: 96%
 
 expansion_paks:
   - Des Tigers Weste (mit einer Einführung in Irb):
@@ -9501,7 +9504,7 @@ expansion_paks:
       Du brauchst dafür OS X 10.3 (Panther) und die XCode-Tools.
 
       * Unter *FreeBSD* ist Ruby schon im Ports-System.  Falls du das grundlegende Werkzeug @portupgrade@
-      benutzt hast, ist RUby bereits installiert.  Akinori Musha, einer von Rubys immens talentierten
+      benutzt hast, ist Ruby bereits installiert.  Akinori Musha, einer von Rubys immens talentierten
       Hauptentwicklern, hat portupgrade geschrieben, was bedeutet, dass du dein Ruby-Wissen direkt anwenden
       kannst, um dich in die @pkgtools.conf@ zu hacken.
 
@@ -9522,7 +9525,7 @@ expansion_paks:
       zum Beispiel "Ruby 1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.  Zum Entpacken und Compilieren:
 
       _* <pre class="text">
-       tar xzvf ruby-1.8.3.tar.gz
+       tar -xzvf ruby-1.8.3.tar.gz
        cd ruby-1.8.3
        ./configure
        make
@@ -9533,7 +9536,7 @@ expansion_paks:
       oder @sudo@, um die Berechtigung zu bekommen, @make install@ aufzurufen.)
 
 
-      Um zu testen, ob RUby installiert ist, öffnest du eine Shell und startest @ruby -v@.
+      Um zu testen, ob Ruby installiert ist, öffnest du eine Shell und startest @ruby -v@.
       Wenn Ruby ordentlich installiert ist, siehst du ein paar Versionsinfos.
 
 
@@ -9543,7 +9546,7 @@ expansion_paks:
 
 
       * Um unter *Microsoft Windows* eine Shell ("Kommandozeile") zu öffnen, gehst du ins Startmenü und
-      wählst "Ausführen" Gib @cmd@ ein und drücke OK. Eine Shell wird sich öffnen.
+      wählst "Ausführen".  Gib @cmd@ ein und drücke OK. Eine Shell wird sich öffnen.
 
       * Um unter *Mac OS X* eine Shell zu öffnen, gehst du aus *Applications > Utilities* ???.
       Starte das Programm *Terminal*.
@@ -9565,7 +9568,7 @@ expansion_paks:
       </pre>
 
 
-      Du solltest den obige Eingabeaufforderung sehen.  Diese Eingabeaufforderung erlaubt dir,
+      Du solltest die obige Eingabeaufforderung sehen.  Diese Eingabeaufforderung erlaubt dir,
       Ruby-Code einzugeben und, sobald du _Enter_ drückst, wird der Code ausgeführt.
 
 
@@ -9611,7 +9614,7 @@ expansion_paks:
       
 
       Der erste Teil, @irb(main)@, zeigt den *Namen des Programms*, das wir ausführen.  Der zweite enthält
-      die Zeilennummer, *einen Zähler, wieviele Zeilen wir schon eingegeben haben".  Der dritte Teil ist die
+      die Zeilennummer, *einen Zähler, wieviele Zeilen wir schon eingegeben haben*.  Der dritte Teil ist die
       *Tiefe* des Codes.  Immer, wenn du eine Anweisung eingibst, die geschlossen werden muss, erhöht sie sich
       um eins.  Und wenn Irb merkt, dass dein Code unvollständig ist, *steht am Ende ein Sternchen*.
 
@@ -9652,14 +9655,14 @@ expansion_paks:
       </pre>
 
 
-      Ruby hat mehrere Prompts anzubieten: Die *simple* Variante hast du oben gesehen  *xmp* hat gar
-      keinen Prompt und rückt nur den Antwort-Pfeil ein (das ist gedacht, um im Ausdruck gut lesbar zu sein.)
+      Ruby hat mehrere Prompts anzubieten: Die *simple* Variante hast du oben gesehen: *xmp* hat gar
+      keinen Prompt und rückt nur den Antwort-Pfeil ein (das soll im Ausdruck gut lesbar sein.)
       Außerdem gibt es *null*, was Prompts ganz abschaltet.  Wähle die gewünschte Variante einfach, indem du
       den Namen an die @--prompt@-Option anhängst.  (So: @irb --prompt null@.)
 
 
-      Du kannst auch deinen eigenen Prompt machen.  Du kannst Irb vollständig von innen anpassend.
-      Das Objekt @conf@ enthält die Irb-Konfiguration.  Einige davon steuern den Prompt.
+      Du kannst auch deinen eigenen Prompt machen.  Du kannst Irb vollständig von innen anpassen.
+      Das Objekt @conf@ enthält die Irb-Konfigurationen.  Einige davon steuern den Prompt.
 
 
       <pre>
@@ -9684,7 +9687,7 @@ expansion_paks:
       Oben siehst du die vier Fälle für Irb-Prompts.  Der Fall für die String-Fortsetzung tritt ein,
       wenn eine Zeichenkette noch offen ist wenn du _Enter_ drückst.  @%3n@ beschreibt, dass Irb
       drei Zeichen für die Zeilennummer reservieren soll.  @%1@ sichert Platz, um den Typ des Strings
-      anzuzeigen.  (Wenn du einen String in doppelte Anführungszeichen offen lässt, zeigt es ein @"@.
+      anzuzeigen.  (Wenn du einen String in doppelten Anführungszeichen offen lässt, zeigt es ein @"@.
       Wenn du mit einem regulären Ausdruck fortfährst, steht hier ein /.)
 
 
@@ -9727,7 +9730,7 @@ expansion_paks:
       
 
       Wenn du unter Linux oder FreeBSD bist, sollte die Tab-Ergänzung sofort funktionieren. Und wenn
-      due OS X benutzt, solltest du sichergehen, die neueste 1.8er-Version zu benutzen und dann, für Irb:
+      du OS X benutzt, solltest du sichergehen, die neueste 1.8er-Version zu benutzen und dann, für Irb:
 
 
       <pre class="text">
@@ -9771,7 +9774,7 @@ expansion_paks:
       </pre>
 
 
-      Jetzt versuch @Kernel::@ und dann _Tab_.  ALle Kernel-Methoden.  Vergiss das niemals und
+      Jetzt versuch @Kernel::@ und dann _Tab_.  Alle Kernel-Methoden.  Vergiss das niemals und
       benutze es ständig.
 
 
@@ -9836,7 +9839,7 @@ expansion_paks:
 
 
       Um die Erläuterung einer Klasse samt einem Verzeichnis all ihrer Methoden zu bekommen,
-      alles mit einer ruhigen Stimmer erklärt, die euch panische Kosmonauten beruhigt, die ihr
+      alles mit einer ruhigen Stimme erklärt, die euch panische Kosmonauten beruhigt, die ihr
       da draußen gegen den Sog eines Null-Toleranz-Traktorstrahls kämpft, benutzt einfach eure
       Kommandozeile: @ri Class@.
 
@@ -9864,7 +9867,7 @@ expansion_paks:
       Hinter Ri singt ein menschlicher Chor, allen voran Dave Thomas, einer der Autoren von
       _Programming Ruby_, und außerdem *der* Ruby-Pate in Amerika.  Viele dieser ausschweifenden
       Reden aus Ri stammen direkt aus der Referenz von _Programming Ruby_.  Vergiss nicht, Dave
-      regelmäßig zu danken.
+      regelmäßig dafür zu danken.
 
 
       Ri pflückt seine saftigen Früchte der Information direkt aus dem Code, aus dem Ruby
@@ -9872,7 +9875,7 @@ expansion_paks:
       detailierte Kommentare, die alles beschreiben, was gerade in Sicht ist.
 
 
-      In Rubys Klasse @Date@ stehen solche kommentierten Methoden (auf Englisch, natürlich):
+      In Rubys Klasse @Date@ stehen solche kommentierten Methoden (AdÜ: auf Englisch, natürlich):
 
 
       <pre>
@@ -9901,10 +9904,10 @@ expansion_paks:
       </pre>
 
 
-      Ri erkennt im Groben, wie eine Methode funktioniert, dennoch erwartet er, dass
+      Ri erkennt im Groben, wie eine Methode funktioniert; dennoch erwartet er, dass
       die Programmierer eine kurze Beschreibung liefern, und zwar in einem Kommentar direkt
       vor der Methoden- oder Klassendefinition.
-      I würde sagen, immer wenn du eine Methode schreibst, stellst du ihr du einen
+      Ich würde sagen, immer wenn du eine Methode schreibst, stellst du ihr du einen
       kleinen Kommentar voran, der sie erklärt.  Später kannst du dann Ri-Dokumentationen
       für diese Methode erzeugen.
 
@@ -9961,8 +9964,8 @@ expansion_paks:
       h3. Mach dein eigenes Ri!
 
 
-      Ri liest deine Dateien allerdings nicht automatisch.  Du musst ihr ein wenig mitzerren,
-      ihm den Weg zeigen.  Wechsel in das Verzeichnis mit dem Code, den du er lesen soll.
+      Ri liest deine Dateien allerdings nicht automatisch.  Du musst ihr ein wenig ziehen,
+      ihm den Weg zeigen.  Wechsel in das Verzeichnis mit dem Code, den er lesen soll.
       Dann benutzt du RDoc, um deine Wünsche wahr werden zu lassen.
 
 
