@@ -114,7 +114,7 @@ teaser:
 chapters:
   - Über das Buch:
     - >
-      !i/about.the.poignant.guide-1.gif(Was für eine fantastische Reise!)!
+      !i/about.the.poignant.guide-1.gif(Was für eine fantastische Reise!)!<br />
       <small style="color:darkblue"><ol>
       <li>ein elf mit seinem haustier-schinken!
       </li>
@@ -126,7 +126,7 @@ chapters:
       </ol></small>
 
 
-      !i/about.the.poignant.guide-2.jpg(Sogar Kleinkinder können es.)!
+      !i/about.the.poignant.guide-2.jpg(Sogar Kleinkinder können es.)!<br />
       <small style="color:darkblue"><ol>
       <li><tt>Live aus dem Jahr 2012</tt><br />
       dank Why's Ergreifender Einführung...
@@ -136,7 +136,7 @@ chapters:
       </ol></small>
 
 
-      !i/about.the.poignant.guide-3.gif(Der nachdenkliche Leser.)!
+      !i/about.the.poignant.guide-3.gif(Der nachdenkliche Leser.)!<br />
       <small style="color:darkblue"><ol>
       <li>dieses seltsame buch, Why's Ergreifende Einführung in Ruby, hat mich tief berührt.
       </li>
@@ -147,7 +147,7 @@ chapters:
       </ol></small>
 
 
-      !i/about.the.poignant.guide-4.gif(Miep.)!
+      !i/about.the.poignant.guide-4.gif(Miep.)!<br />
       <small style="color:darkblue"><ol>
       <li>ich bin klein.
       </li>
@@ -9436,12 +9436,27 @@ chapters:
 
 # }}}
 
-# {{{ Expansion Paks: 96%
+# {{{ Expansion Paks: 98%
 
 expansion_paks:
   - Des Tigers Weste (mit einer Einführung in Irb):
     - >
-      !i/tigers.vest-1.gif(Tiger hat Weste.  Tiger mag Robotermädchen.  Die Erde stürzt in die Sonne...)!
+      !i/tigers.vest-1.gif(Tiger hat Weste.  Tiger mag Robotermädchen.  Die Erde stürzt in die Sonne...)!<br />
+      <small style="color:darkblue"><ol>
+      <li>Es war einmal ein Tiger, der trug eine Weste.</li>
+      <li>Aber das war nicht das größte Problem.</li>
+      <li>Weil die Erde in die Sonne stürzen würde!</li>
+      <li>Aber er wusste davon nichts, weil er sich nicht für Wissenschaft interessierte.<br />
+      T: Manche Leute haben keine Zeit dafür.</li>
+      <li>Außerdem mochte er dieses Robotermädchen wirklich gern, ihr Name war<br />
+      _THE ECHELON 3500_</li>
+      <li>Im Grunde liebte er sie, mehr nicht.  Er hätte sie geheiratet, wenn sie nicht in den Großen
+      Roboterkriegen ihrer Zeit hätte kämpfen müssen.  Sie starb ehrenvoll für ihre Roboter-Kameraden.</li>
+      <li>Jetzt kommen wir zurück zur Geschichte über<br />
+      Des Tigers Weste<br />
+      in wenigen Momenten.  Lass uns erstmal Ruby installieren.<br />
+      Und vergiss nicht, dass die Erde in ein paar Sekunden in die Sonne stürzen wird.</li>
+      </ol></small>
 
 
     - !^sidebar
@@ -9579,7 +9594,21 @@ expansion_paks:
       Sonne bewahrt wird.
 
 
-      !i/tigers.vest-2.gif(Tiger rettet Erde mit Eiskanone. Mädchen düst in Smokingladen herum...)!
+      !i/tigers.vest-2.gif(Tiger rettet Erde mit Eiskanone. Mädchen düst in Smokingladen herum...)!<br />
+      <small style="color:darkblue"><ol>
+      <li>Okay.  Alle bereit?</li>
+      <li>Nun, es wird saumäßig heiß draußen und der Tiger sucht Schatten in einem Smoking-Laden.</li>
+      <li>Entscheidet, dass er eine Weste möchte.  Drückt auf die Glocke für die Bedienung.</li>
+      <li>Aber die Glocke ist in Wirklichkeit mit einer riesigen EISKANONE verbunden!</li>
+      <li>Dadurch wurde die Sonne für einen Augenblick eingefroren - gerade lang genug, dass die Erde
+      abprallte.</li>
+      <li>In diesem Moment kam die Verkäuferin mit des Tigers Neuer Weste!</li>
+      <li>Aber es war keine Verkäuferin! Es war THE ECHELON 3500!<br />
+      Komplett erneuert mit supermodernen Trägerraketenbeinen!!<br />
+      Voll aufgetankt und bereit, die Atmosphäre zu durchbrechen!<br />
+      Du kannst dir vorstellen, dass der Tiger begeistert war!<br />
+      Er war 1000% verliebter!</li>
+      </ol></small>
 
 
       Ruby kommt mit einem wirklich wirklich wirklich sehr hilfreichen Werkzeug daher, nämlich *Irb*.
@@ -9801,12 +9830,18 @@ expansion_paks:
       benutze es ständig.
 
 
-      !i/tigers.vest-3.gif(Abgesehen davon, dass der Roboter wegfliegt und die Eiskanone immer weiter Eis kanont...)!
+      !i/tigers.vest-3.gif(Abgesehen davon, dass der Roboter wegfliegt und die Eiskanone immer weiter Eis kanont...)!<br />
+      <small style="color:darkblue"><ol>
+      <li>Leider konnte der Tiger Echelon 3500 nicht festhalten, so dass sie irgendwo anders hinflog.</li>
+      <li>Die Eiskanone blieb an, so dass alle die Stadt verlassen mussten.<br />
+      Übrigends findet diese ganze Geschichte in der Nähe von Detroit statt. 
+      Aber nicht jetzt, wo das passiert ist.</li>
+      </ol></small>
 
 
       p. Gut, noch eine Sache und dann höre ich auf, dich mit all diesen großartigen Technologien
       zu nerven.  Aber ich sage es laut, also versteck dich!  Leute, ich spreche hier auf allen Frequenzen,
-      aber die Lautstärke kommt vom Himmel <del>- ein dickes, rotes Crescendo für -</del>
+      aber die Lautstärke kommt vom Himmel - ein dickes, rotes Crescendo für -
 
 
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
@@ -10015,7 +10050,15 @@ expansion_paks:
       Schön.  Jetzt bist du wirklich tief drin.  Willkommen bei Ruby.
 
 
-      !i/tigers.vest-4.gif(Tiger findet neues Zuhause und gewöhnt sich an das Leben danach.)!
+      !i/tigers.vest-4.gif(Tiger findet neues Zuhause und gewöhnt sich an das Leben danach.)!<br />
+      <small style="color:darkblue"><ol>
+      <li>Okay. Sind wir immernoch traurig wegen der Eiskanone?</li>
+      <li>Seid nicht so hart mit dem Tiger.  Er ist kein Superheld.  Er hat keine Superkräfte.</li>
+      <li>Sieht aus, als wäre er schon umgezogen in seine neue Wohnung.</li>
+      <li>Oh nein!  Er hat den Ahornsirup in Detroit vergessen!</li>
+      <li>Hmm.  Ich vermute, da war ein Laden in der Nähe.<br />
+      Machts gut.</li>
+      </ol></small>
 
 
 #
