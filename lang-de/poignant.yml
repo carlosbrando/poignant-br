@@ -9492,39 +9492,53 @@ expansion_paks:
       in der (ergreifenden) Einführung folgen und diese Sachen ausprobieren kannst! (Ja, Sachen!)
 
 
-      * Wenn du *Microsoft Windows* benutzt, dann fang damit an, den "Ruby Installer for
+      <ul>
+      <li>Wenn du *Microsoft Windows* benutzt, dann fang damit an, den "Ruby Installer for
       Windows":http://rubyforge.org/frs/?group_id=167 herunterzuladen. Wenn du diesen "One-Click-Installer"
       (OCI) ausführst, wird nicht nur Ruby für dich installiert, sondern auch ein Paket nützlicher
       Software, zum Beispiel ein Texteditor und ein paar zusätzliche Bibliotheken.
+      </li>
 
-      * Wenn du mit Apples *Mac OS X* arbeitest, ist Ruby vielleicht schon installiert. Die Versionen
+      <li>
+      Wenn du mit Apples *Mac OS X* arbeitest, ist Ruby vielleicht schon installiert. Die Versionen
       10.2 und 10.3 von OS X haben Ruby integriert.  Dennoch empfehle ich dir, Ruby auf den neuesten
       Stand zu bringen, damit alle Beispiele in diesem Buch funktionieren.  Lade ein *stabiles*
       "Disk Image":http://homepage.mac.com/discord/Ruby/ herunter.
       Du brauchst dafür OS X 10.3 (Panther) und die XCode-Tools.
+      </li>
 
-      * Unter *FreeBSD* ist Ruby schon im Ports-System.  Falls du das grundlegende Werkzeug @portupgrade@
+      <li>
+      Unter *FreeBSD* ist Ruby schon im Ports-System.  Falls du das grundlegende Werkzeug @portupgrade@
       benutzt hast, ist Ruby bereits installiert.  Akinori Musha, einer von Rubys immens talentierten
       Hauptentwicklern, hat portupgrade geschrieben, was bedeutet, dass du dein Ruby-Wissen direkt anwenden
       kannst, um dich in die @pkgtools.conf@ zu hacken.
 
-      _* <pre class="text">
+      <pre class="text">
        cd /usr/ports/lang/ruby18
        sudo make install
       </pre>
+      </li>
 
-      * Auf *RedHat-* und *Mandrake-*Linux kannst du "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby
+      <li>
+      Auf *RedHat-* und *Mandrake-*Linux kannst du "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby
       finden. Ich glaube, Ruby ist auch durch Ximian's Red Carpet verfügbar.
+      </li>
 
-      * Auf *Debian* benutzt du @apt-get install ruby@.
+      <li>
+      Auf *Debian* benutzt du @apt-get install ruby@.
+      </li>
 
-      * Auf *Gentoo* @emerge ruby@.
+      <li>
+      Auf *Gentoo* @emerge ruby@.
+      </li>
 
-      * Andere *Linux-* und *UNIX*plattformen, sogar *OS X* (falls das Disk Image bei dir nicht funktioniert):
+      <li>
+      Andere *Linux-* und *UNIX*plattformen, sogar *OS X* (falls das Disk Image bei dir nicht funktioniert):
       Lade den "neuesten Quellcode":http://ruby-lang.org/en/20020102.html herunter,
       zum Beispiel "Ruby 1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.  Zum Entpacken und Compilieren:
 
-      _* <pre class="text">
+
+      <pre class="text">
        tar -xzvf ruby-1.8.3.tar.gz
        cd ruby-1.8.3
        ./configure
@@ -9532,8 +9546,11 @@ expansion_paks:
        make install
       </pre>
 
-      _* (Die obigen Kommandos installieren Ruby vom Quellcode aus.  Du brauchst vielleicht @su@
+
+      (Die obigen Kommandos installieren Ruby vom Quellcode aus.  Du brauchst vielleicht @su@
       oder @sudo@, um die Berechtigung zu bekommen, @make install@ aufzurufen.)
+      </li>
+      </ul>
 
 
       Um zu testen, ob Ruby installiert ist, öffnest du eine Shell und startest @ruby -v@.
@@ -9543,13 +9560,19 @@ expansion_paks:
       <pre class="text">
        ruby 1.8.3 (2004-12-25) [i386-mswin32]
       </pre>
+      </li>
 
-
-      * Um unter *Microsoft Windows* eine Shell ("Kommandozeile") zu öffnen, gehst du ins Startmenü und
+      <ul>
+      <li>
+      Um unter *Microsoft Windows* eine Shell ("Kommandozeile") zu öffnen, gehst du ins Startmenü und
       wählst "Ausführen".  Gib @cmd@ ein und drücke OK. Eine Shell wird sich öffnen.
+      </li>
 
-      * Um unter *Mac OS X* eine Shell zu öffnen, gehst du aus *Applications > Utilities* ???.
+      <li>
+      Um unter *Mac OS X* eine Shell zu öffnen, gehst du auf *Programme > Dienstprogramme*.
       Starte das Programm *Terminal*.
+      </li>
+      </ul>
 
  
       OK, lass die Shell offen, wir werden sie brauchen, wenn die Erde vor ihrem Plumps in die
@@ -9783,14 +9806,14 @@ expansion_paks:
 
       p. Gut, noch eine Sache und dann höre ich auf, dich mit all diesen großartigen Technologien
       zu nerven.  Aber ich sage es laut, also versteck dich!  Leute, ich spreche hier auf allen Frequenzen,
-      aber die Lautstärke kommt vom Himmel --- ein dickes, rotes Crescendo für --
+      aber die Lautstärke kommt vom Himmel <del>- ein dickes, rotes Crescendo für -</del>
 
 
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
 
 
       h3={color: #300}. (Rubys eigene 110 oder 11-8-33 oder _Ja, Operator, hol' mir Belgrad an die Strippe_
-      -- Ich bin gleich da -- Monotones Hämmern Auf Die Raute-Taste Bis Jemand Abnimmt...)
+      <notextile>- Ich bin gleich da -</notextile> Monotones Hämmern Auf Die Raute-Taste Bis Jemand Abnimmt...)
 
 
       Und Ri nimmt ab.  "Hier Ri. Klasse und Doppelpunkt, bitte."
