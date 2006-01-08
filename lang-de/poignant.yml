@@ -854,7 +854,7 @@ chapters:
 
 
         <small>_Chunky Anmerkung des Übersetzers:_ Da "Chunky Bacon" inzwischen Kultstatus erreicht hat,
-        werde ich den Teufel tun, es zu übersetzen!</small>
+        werde ich den Teufel tun, es zu übersetzen! Wer es dennoch unbedingt wissen möchte: grober Speck.</small>
 
 
 
@@ -1644,268 +1644,278 @@ chapters:
 
 # {{{ Kapitel 4: 0%
 
-  - Floating Little Leaves of Code:
+  - Kleine schwebende Blätter von Code:
     - >
-      !i/the.elf-1.gif(Impossibly deep in the caverns of Ambrose... the Elf with a pet ham!)!
+      !i/the.elf-1.gif(Wahnsinnig tief in den Höhlen von Ambrosia... der Elf mit einem Schinken als Haustier!)!
 
-      !i/the.elf-2.gif(...and the cat Trady Blix.)!
+      !i/the.elf-2.gif(...und die Katze Trady Blix.)!
 
-
-      I've never seen the ham do anything but leak juice.  Today, our
-      business in Ambrose Caverns is with the elf.  He is a crucial part of the next lessons.
-      Let's all make him feel welcome. Go start warming up your listening hats!  
-      (And please change out of those ridiculous stirrup pants.)
-
-
-      A prompt warning: this lesson is much slower.  Stay with it.  This will be a long, deep breath.
-      The most crucial stage of your instruction.  It may seem like you're not learning much code at
-      first.  You will be learning concepts.  By the end of this chapter, you will know Ruby's
-      beauty.  The coziness of the code will become a down sleeping bag for your own solace.
+      Ich habe den Schinken nie etwas tun sehen ausser Flüssigkeit zu verlieren.
+      Heute wollen wir uns in den Höhlen von Ambrosia dem Elf zuwenden. Er ist
+      ein wichtiger Teil unserer nächsten Lektion. Lasst uns ihn alle willkommen heißen.
+      Nun wärmt die Zuhörer-Hüte auf!
+      (Und bitte wechsel diese lächerlichen Bügelhosen.)
+      
+      
+      Eine einführende Warnung: Diese Lektion ist weit langsamer. Bleib dennoch bei mir. Es wird
+      ein langer, tiefer Atemzug. Der kritischste Punkt deiner Instruktion. Es mag anfänglich so erscheinen
+      als ob du nicht viel Code lernen würdest. Du wirst Konzepte erlernen. Am Ende dieses Kapitels,
+      wirst du die Schönheit von Ruby kennen. Die Behaglichkeit des Codes wird ein tief schläfriger Beutel
+      des Trostes.
       
 
-    - The Leaf as a Status Symbol in Ambrose: >
+    - Das Blatt als Status Symbol in Amrosia: >
 
-        Alright, Elf.  Give us a quick rundown of the currency issues you've faced there in your kingdom.
-
-
-        !i/the.elf-3.gif(Blue Crystals got the shaft.)!
+        In Ordnung, Elf. Gib uns einen kurze Einführung in die Währungs-Probleme dehnen du dich
+        stellen musst in deinem Königreich.
 
 
-        Yeah, that's not the way I remember it.  This Elf was paging me constantly.  When I refused to
-        call him back, he somehow left a message on my pager.  Meaning: it beeped a couple times and
-        then printed out a small slip of paper.  The slip said something to the effect of, "Get down here
-        quick!" and also, "We've got to rid the earth of this scourge of enterpreneurial caterpillars,
-        these twisted insect vikings are suffocating my blue crystals!"
+        !i/the.elf-3.gif(Blaue Kristalle sind am Ursprung.)!
 
+         
+        Ja, das ist nicht das woran ich mich errinere. Der Elf hat mich andauernd angepiept. Als ich
+        mich geweigert habe ihn zurück zu rufen hat er mir, irgendwie, eine Nachricht auf dem Pager
+        hinterlassen. Bedeutet: es piepte einige male und dann kam ein schmaler streifen Papier heraus.
+        Der Streifen sagte soetwas wie: "Komm sofort hier herunter!" ausserdem, "Wir müssen die Erde von
+        dieser Seuche der unternehmerischen Raupen befreien, diese verdrehten Vikinger der Insekten
+        ersticken meine blauen Kristalle!"
 
-        Lately, the exchange rate has settled down between leaves and crystals.  One treegrown note is
-        worth five crystals.  So the basic money situation looks like this:
+        
+        Kürzliche hat sich die Wechselrate zwischen Blättern und Kristallen gefestigt.
+        Eine Baumgewachsene Note ist fünf Kristalle wert. Die Grundsituation sieht wie folgt aus:
 
 
         <pre>
-         blue_crystal = 1
-         leaf_tender = 5
+         blauer_kristall = 1
+         blatt = 5
         </pre>
 
+        
+        Dieses Beispiel ist _total_ letztes Kapitel. Dennoch. Es ist ein Anfang. Wir setzen zwei
+        _Variable_. Die *Gleichheitszeichen* werden zur _Zuweisung_ verwendet.
 
-        This example is, like, _totally_ last chapter.  Still.  It's a start.  We're setting two _variables_.
-        The *equals sign* is used for _assignment_.
+         
+        Nun @blatt@ repräsentiert die Nummer @5@ (wie in: fünf blaue Kristalle.) Dieses Konzept ist schon
+        *die Hälfte von Ruby*. Wir _deffinieren_. Wir _kreieren_. Das ist die Hälfte der Arbeit.
+        Zuweisung ist die grundlegenste Art der Deffinierung.
 
-
-        Now @leaf_tender@ represents the number @5@ (as in: five blue crystals.)  This concept right here is
-        *half of Ruby*.  We're _defining_.  We're _creating_.  This is half of the work.  
-        Assignment is the most basic form of defining.
-
-
-        You can't complain though, can you Elf?  You've built an empire from cashing your blue crystals
-        into the new free market among the forest creatures.  (And even though he's an elf to us, he's a
-        tall monster to them.)
+        
+        Du kannst dich dennoch nicht beschweren oder doch Elf? Du hast ein Imperium darauf aufgebaut
+        deine blauen Kristalle im freien Markt unter das Volk (die Waldkreaturen) zu bringen. (Und obwohl er ein Elf
+        für uns ist, er ist ein riesiges Monster für sie.)
        
 
-        !i/the.elf-4.jpg(Animal Perfect, LLC)!
+        !i/the.elf-4.jpg(Perfektes Tier GmbH)!
 
 
     - !^sidebar
-      The Scarf Eaters: >
-      
-        I hate to intrude upon your instruction, but I've already walked all over it enough to 
-        warrant some further disregard.  Can I go over my next project with you?
+      Die Narbenfresser: >
+        
+        Ich hasse es deine Instruktion zu stören, aber ich habe das bereits oft genug angemerkt
+        um weitere Missachtung zu rechtfertigen. Kann ich mein nächstes Projekt mit dir besprechen?
+
+        
+        Ich habe geschworen ein weiteres Buch zu schreiben. (_Trompeten_.) Die gute Nachricht ist
+        das ich nicht wirklich etwas davon schreiben werde. Du musst kein weiteres Stück dieser
+        Albernheiten durchstehen.
+
+        
+        Es ist vorbei zwischen mir und den Wörtern. Ich würde es lieben hier zu bleiben und jedes
+        von ihnen einmal auszunutzen, eins nach dem anderen, aber es wird alles ein wenig vorhersehbar,
+        denkst du nicht? Letztendlich, sie alle werden bereits einmal benutzt worden sein und ich werde
+        mich ausgedachten Wörtern durchschlagen müssen die viel zu merkwürdig sein würden.
+
+        
+        Nunja. Der Handel ist noch nicht völlig abgeschlossen, aber ich verhandle mit Anna Quindlen um mein
+        "Ghost Writing" zu übernehmen. Wir schließen uns zusammen für ein Buch das diese (ergreifende)
+        Einführung aus deiner Hand fegen wird. Um es etwas schroff zu formulieren, die Einführung wird 
+        Wertlos sein.  Du wirst nicht in der Lage sein genug Granatäpfel darauf zu stapeln.
+
+        
+        Also dieses neue Buch. Die Narbenfresser. Es ist eine aus-dem-Alter-heraus Novelle. Aber es ist
+        gleichzeitig eine Einführung in Macromedia Flash. Es ist als ob <a href="http://www.judyblume.com/menu-main.html">Judy Blume</a> über eine
+        Praystation gestolpert wäre. Oder <a href="http://www.Osil8.com">Osil8</a> präsentiert <a href="http://www.hilaryduff.com/html_2003/main_site/frameset.htm">Hillary Duff</a>.
+        
+        <small>// !!! Die Referenzen zu den Personen sollte man vielleicht noch einmal Ummünzen.
+        Mir fallen im Moment keine passenden, im deutschsprachigen Raum bekannte, Ersetzungen ein.
+        by CMDR-ZOD</small>
 
 
-        I've pledged to write another book.  (_Trombones_.)  The good news is that I won't actually
-        be writing any of it.  You won't have to endure any more of this inane blathering.
-
-
-        It's over between me and words.  I'd love to stick around and exploit them each, one after
-        another, but it's all becoming quite predictable, wouldn't you say?  Eventually, they will
-        all be used and I'd have to come up with fake words and that would be way too cnoofy.
-
-
-        Now.  The deal isn't cut yet, but I'm in negotiations with Anna Quindlen to do my ghost writing.
-        We're tag-teaming on a book that's going to blow the (Poignant) Guide right out of your hands. 
-        To put it bluntly, the Guide will be worthless.  You won't be able to pile enough 
-        pomegranates on top of the thing.
-
-
-        So this new book.  The Scarf Eaters.  It's a coming-of-age novel.  But it's also a beginner's
-        guide to Macromedia Flash.  It's like Judy Blume crossed Praystation.  It's like 0sil8 starring
-        Hillary Duff.
-
-
-        I don't want to give away the plot at all, but to tug your appetite I'll just say this:
-        one kid talks to his dead brother in ActionScript.  More to come.
+        Ich will die Handlung nicht im vornherein verraten, aber um deinen Appetit anzuheizen kann ich
+        soviel sagen: ein Kind redet zu seinem toten Bruder in ActionScript. Mehr wird folgen.
 
 
     - >
-        Nonono.  Hang on a sec.  You're not ready for what the Elf here is doing in his caves.
-        You'll think it's all positively inhumane, naughty, sick, tweeested, yada yada.
+        NeinNeinNein. Warte eine Sekunde. Wir sind für das was der Elf in seine Höhle vor hat noch 
+        nicht vorbereitet. Du wirst denken das wäre womöglich inhuman, schmutzig, dreckig, verdreht, bla, bla...
 
-
-        h3.  Now You're Going to Hear the Animal Perfect Mission Statement Because This Is A
-        Book And We Have Time And No Rush, Right?
-
-
-        Back, back, way back before speedboats, I owned a prize race horse who took a stumble on 
-        the track.  She did ten front flips and crashed into a guy who was carrying a full jar 
-        of mayonnaisse.  We had blood and mayonnaisse up and down the track.  Needless to say, 
-        she was a disaster.
-
-
-        The vet took one look at her and swore she'd never walk again.  Her legs were gone and
-        the vet wouldn't allow a legless horse to just sit around.  We'd need to put her down.  
-        He swore his life and career on it, insisting we divide into two parallel lines.  The people 
-        who could not refute the doctor's claims on one side; those too stubborn to accept his 
-        infallable medical reasoning on the other.  The Elf, his pet ham, and I were the only 
-        ones in that second line.
-
-
-        So while the others heaped up trophies and great wreaths around the horse, bidding it a 
-        fond farewell before the bullet came to take him home, the Elf and I frantically pawed the Internet for 
-        answers.  We took matter into our own hands, cauterizing her leg wounds with live crawdads.  
-        It worked great!  We now had a horse again.   Or at least: a horse body with a crustaceous abdominal
-        frosting.  
-
-
-        She scurried everywhere after that and lived for years in pleasantly moist underground cavities.
-
-
-        Animal Perfect is now the future of animal enhancement.  They build new animals and salvage 
-        old-style animals for parts.  Of course, they've come a long ways.
-        When Animal Perfect started, you'd see a full-grown bear walk into Animal Perfect and you'd
-        see a full-grown bear with sunglasses walk out.  Completely cheesy.
-
-
-        Stick around and you'll see a crab with _his own jet pack_.  That's a new 2004 model jetcrab.
-
-
-        But now, the whole operation is up and running.  And the cleanliness of the place is astonishing.
-        All the equipment is so shiny.  Everything is in chrome.  Oh, and all the staff have concealed
-        weapons.  They're trained to kill anyone who enters unannounced.  Or, if they run out of bullets,
-        they're trained to pistol whip anyone who enters unannounced.
-
-
-        Elf, make me a starmonkey.
-
-
-        !i/the.elf-5a.jpg(First, the star is caught.)!
-
-
-        Some imaginary Ruby for you:
-
-
-        bq. @pipe.catch_a_star@
         
         
-        Variable @pipe@.  Method @catch_a_star@.  A lot of Rubyists like to think of methods as a message.
-        Whatever comes before the dot is handed the message.  The above code tells the @pipe@ to
-        @catch_a_star@.
+        h3.  Nun wirst du die Perfektes Tier GmbH Missions Beschreibung Hören Weil Das Hier
+        Ein Buch Ist Und Wir Ja Genug Zeit Haben, Nicht Wahr?
+
+        
+        Lange, sehr lange her, noch vor den Schnellboten, hatte ich ein preisgekröntes Pferd
+        besessen welches auf einer Strecke unglücklich stolperte. Sie hat zehn Überschläge hingelegt
+        und ist in einen Kerl gekracht der ein Glass voll mit Mayonnaise hielt. Wir hatten Blut und
+        eine Menge Mayonnaise auf der Rennstrecke. Unnötig zu sagen, es war ein Desaster.
+
+        
+        Der Tierarzt hat sie nur einmal kurz angesehen und geschworen sie würde nie wieder laufen.
+        Ihre Beine waren fort und der Arzt konnte nicht erlauben das ein Pferd ohne Beine einfach
+        so herumsitzt. Wir müssten ihr den Gnadenschuss verpassen. Er hat sein Leben und sein Karierre
+        darauf verschworen, wir müssten seinem Drengen folgen und uns Aufteilen um eine Entscheidung
+        zu erzielen. Die Leute die der Diagnose des Arztes nichts entgegenzusetzen hatten auf die eine
+        Seite, der Rest, der sich entgegen allen Behauptungen damit nicht abfinden wollte, sollte sich
+        auf die andere Seite stellen. Der Elf, sein Haustier Schinken und ich, waren die einzigen auf der 
+        zweiten Seite.
+
+        
+        Während die anderen losstürmten um Trophäen und Kränze um das Pferd zu stapeln, ihm die letzte
+        Ehre erweisend bevor es die Kugel empfangen sollte, stürmten der Elf und ich los, fanatisch das Internet
+        durchsuchend nach einer Antwort. Wir nahmen das ganze in unsere Hände, veräzten ihre Beinwunden mit
+        Flusskrebsen. Es hat einwandfrei funktioniert! Wir hatten wieder ein richtiges Pferd. Oder wenigstens ein
+        Pferdekörper mit Unterleibsverkrustungen.
+
+        
+        Sie ist danach überall hingekrochen und hat viele schöne Jahre in Höhlen verbracht die angenehm feucht waren.
+
+        
+        Perfektes Tier GmbH ist die Zukunft der Tier-Erweiterungen. Sie haben viele neue Tiere erschaffen
+        indem sie alte, um an benötigte Teile zu kommen, ausgeschlachtet haben. Natürlich sind sie mit den Jahren
+        weit gekommen. Als Perfektes Tier GmbH startete, du hättest ein voll ausgewachsenen Bär hineingehen sehen
+        und hinaus würde ein Bär mit einer Sonnenbrille kommen. Völlig billig.
+
+        
+        Lies ein wenig weiter und du wirst eine Krabbe ihrem eigenen _JAT PACK_ sehen. Das ist das neue Jet Crab
+        2004 Model.
+
+        
+        Inzwischen läuft aber alles in vollem Gange. Die Sauberkeit ist besonders verwunderlich. Die ganze
+        Ausrüstung glänzt und alles ist in Chrom. Ausserdem haben die Angestellten versteckte Waffen.
+        Sie sind so trainiert das sie jeden erschießen der unangemeldet erscheint. Oder, wenn ihnen die
+        Munition ausgehen sollte, jeden mit den Waffen niederzuknüpeln.
+
+        
+        Elf, mach mir einen Sternen-Affen.
 
 
-        This is the *second half* of Ruby.  Putting things in motion.  These things you define and create
-        in the first half start to _act_ in the second half.
+        !i/the.elf-5a.jpg(Als erstes wird der Stern eingefangen.)!
+
+        
+        Ein wenig hypothethiser Ruby Code für dich:
+
+        
+        
+        bq. @roehre.einen_stern_fangen@
+        
+        
+        Variable @roehre@. Methode @einen_stern_fangen@. Eine Menge von Rubyisten denkt gerne bei Methoden an Nachrichten.
+        Was immer vor dem Punkt kommt wird die Nachricht erhalten. Der obige Code übermittelt @roehre@ die Anweisung
+        @einen_stern_fangen@.
+
+        
+        Das ist die *zweite Hälfte* von Ruby. Das ganze in Bewegung zu versetzen. Die Dinge die du kreiert und deffiniert
+        hast in der ersten Hälfte dazu zu bekommen zu _handeln_ in der zweiten.
+
+        
+        # Deffiniere Dinge.
+        
+        # Diese Dinge in Aktion zu versetzen.
+
+        
+        Nun, was ist wenn der obige Code funktioniert und einen Stern fängt? Wohin geht er?
 
 
-        # Defining things.
+        bq. @gefangener_stern = roehre.einen_stern_fangen@
 
-        # Putting those things into action.
+        
+        Es ist deine Aufgabe den armseligen kleinen Stern zu fangen. Wenn du das nicht tust wird er
+        einfach verpuffen. Immer wenn du eine Methode benutzt wird ein Rückgabewert _zurück gegeben_. Du kannst
+        diesen ignorieren oder benutzen.
 
-
-        So what if the star catching code works?  Where does the star go?
-
-
-        bq. @captive_star = pipe.catch_a_star@
-
-
-        See, it's up to you to collect the miserable, little star.  If you don't, it'll simply vanish.
-        Whenever you use a method, you'll always be given something back.  You can ignore it or use it.
+        
+        _Wenn du es erlenst die Antworten, die dir die Methoden zurück geben, zu benutzen wirst du *dominieren*._
 
 
-        _If you can learn to use the answers that methods give you back, then you will *dominate*._
+        !i/the.elf-5b.jpg(Der Stern wird in das Gesicht des Affen gedrückt.)!
+
+        
+        Nun schnell..
+
+        
+        bq. @sternen_affe = ratsche.anbringen( gefangener_affe, gefangener_stern)@
+
+        
+        Die @Ratsche@ kriegt die @anbringen@ Anweisung. Was musst angebracht werden? Die _Methoden-Argumente_:
+        und zwar @gefangener_affe@ sowie @gefangener_stern@. Wir kriegen dann unseren @sternen_affe@ zurück,
+        welchen wir behalten wollen.
 
 
-        !i/the.elf-5b.jpg(Star is ratcheted to the monkey's face.)!
+        !i/the.elf-5c.gif(Frosch zur Hand.)!
+
+        
+        Das ganze entwickelt sich zu so einem kurzen kleinen Programm das ich es als einzelne
+        Anweisung aufschreibe.
+
+        
+        bq. @sternen_affe = ratsche.anbringen( gefangener_affe, roehre.einen_stern_fangen ) + dekoriere_hand_frosch@
 
 
-        Quickly then.
+        Siehst du wie @roehre.fang_einen_stern@ direkt als Argument benutzt wird? Der gefangene
+        Stern wird direkt weitergegeben zur Ratsche. Unnötig ihn erst woanders hinzupacken.
 
 
-        bq. @starmonkey = ratchet.attach( captive_monkey, captive_star )@
-
-
-        The @ratchet@ gets an @attach@ message.  What needs to be attached?  The _method arguments_: the
-        @captive_monkey@ and the @captive_star@.  We are given back a @starmonkey@, which we have
-        decided to hang on to.
-
-
-        !i/the.elf-5c.gif(Frog on the hand.)!
-
-
-        This is turning out to be such a short, little proggie that I'm just going to put it
-        all together as one statement.
-
-
-        bq. @starmonkey = ratchet.attach( captive_monkey, pipe.catch_a_star ) + deco_hand_frog@
-
-
-        See how @pipe.catch_a_star@ is right in the arguments for the method?  The caught 
-        star will get passed right to the ratchet.  No need to find a place to put it.  Just
-        let it go.
-
-
-    - Small and Nearly Worthless: >
+    - Klein und fast Wertlos: >
 
         !i/blix-1.gif(Law-va.)!
 
+        
+        Das Hotel hier in Ambrosia ist nur eine billige Absteige. Die Betten sind lumpig und der
+        Fahrstuhl ist winzig. Ein Typ hat all seine Koffer in den Fahrstuhl gestellt und herausgefunden
+        das für ihn kein Platz mehr ist. Er hat den Knopf gedrückt und ist die Treppen hochgeilt.
+        Aber das Treppenhaus, so stellte sich heraus, war so Eng das er sich dabei die Schultern
+        aufgescheurt hat.
 
-        The hotel here in Ambrose is no good at all.  The beds are all lumpy.
-        The elevator is tiny.  One guy put all his bags in the elevator and found
-        out there wasn't room for him.  He hit the button and chased up the stairs after
-        it all.  But the stairwell turned out to be too narrow and his shoulders got wedged
-        going up.  
+        
+        Die Seifenstücke die sie einem geben sind so klein, extra für Elfen, es ist unmöglich damit
+        genug Schaum zu erzeugen um sich die Hände zu waschen. Ich hasse es.
 
+        
+        Ich habe den Wasserhahn geöffnet und nichts kam heraus. Die Sache ist die: Ambrosia ist ein
+        Ort voller magischer Eigenschaften, also habe ich die Chance ergriffen. Ich habe meine Hände
+        unter den Hahn gehalten. Unsichtbare, warme Feuchtigkeit. Ich habe gespürt wie dieses rauschende
+        Etwas durch meine Finger rieselt. Als ich meine Hand wieder anzog waren sie trocken und sauber.
 
-        The soap mini-bars they give you are sized down for elves, so it's impossible to
-        work up a lather.  I hate it.  I keep mistaking them for contact lenses.
-
-
-        I turned on the faucet and nothing came out.  Thing is: Ambrose is
-        a place with magical properties, so I took a chance.  I put my hands under
-        the spigot.  Invisible, warm wetness.  I felt the hurried
-        sensation of running water, darting through my fingers.  When I took
-        my hands away, they were dry and clean.
-
-
-        It was an amazing nothingness to experience.  It was just like @nil@.
+        
+        Es war ein erstaunliches Nichts, das ich erfahren habe. Es war wie @nil@.
 
 
         h3. Nil
 
+        
+        In Ruby, @nil@ ist absolute Leere. Es ist *ohne Wert*. Es ist nicht Null. Null ist eine Zahl.
 
-        In Ruby, @nil@ represents an emptiness.  It is *without value*.  It isn't zero.
-        Zero is a number.  
+        
+        Es ist Rubys eigener wandelnder Tote, ein Schlüsselwort. Du kannst nichts hinzufügen, es kann
+        sich nicht entwickeln. Aber es ist unglaublich beliebt. Es lächelt dir von überall entgegen.
 
+        
+        bq. @plastik_becher = nil@
 
-        It's Ruby's own walking dead, a flatlined keyword.  You can't add
-        to it, it doesn't evolve.  But it's terribly popular.  This skeleton's smiling
-        in all the pictures.
+        
+        Der obige @plastik_becher@ ist *leer*. Du könntest argumentieren das der @plastik_becher@ einen
+        Wert enthält, ein @nil@. Das @nil@ repräsentiert die Leere, also nennen wir es leer.
 
+        
+        Einige von euch die bereits einmal programiert haben werden versucht sein zu sagen
+        das der @plastik_becher@ *undefiniert* sei. Das machen wir aber nicht. Undefiniert würde
+        bedeuten das Ruby keine Ahnung hat, ja den @plastik_becher@ überhaupt nicht kennen würde,
+        er existiert nicht.
 
-        bq. @plastic_cup = nil@
-
-
-        The above @plastic_cup@ is *empty*.  You could argue that the @plastic_cup@
-        contains something, a @nil@.  The @nil@ represents the emptiness, though, so
-        go ahead and call it empty.
-
-
-        Some of you who have programmed before will be tempted to say the @plastic_cup@ is
-        *undefined*.  How about let's not.  When you say a variable is undefined,
-        you're saying that Ruby simply has no recollection of the variable, it doesn't
-        know the var, it's absolutely non-existent.
-
-
-        But Ruby is aware of the @plastic_cup@.  Ruby can easily look in the @plastic_cup@.
-        It's *empty*, but not *undefined*.
+        
+        Aber Ruby kennt den @plastik_becher@. Ruby kann einfach in den @plastik_becher@ hinein sehen
+        und merken das er *leer* ist, aber nicht *undefiniert*.
 
 
         h3. False
