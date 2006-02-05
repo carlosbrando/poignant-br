@@ -1650,21 +1650,21 @@ chapters:
 
       !i/the.elf-2.gif(...und die Katze Trady Blix.)!
 
-      Ich habe den Schinken nie etwas tun sehen ausser Flüssigkeit zu verlieren.
+      Ich habe den Schinken nie etwas tun sehen außer Flüssigkeit zu verlieren.
       Heute wollen wir uns in den Höhlen von Ambrosia dem Elf zuwenden. Er ist
       ein wichtiger Teil unserer nächsten Lektion. Lasst uns ihn alle willkommen heißen.
       Nun wärmt die Zuhörer-Hüte auf!
-      (Und bitte wechsel diese lächerlichen Bügelhosen.)
+      (Und bitte wechsele diese lächerlichen Bügelhosen.)
       
       
-      Eine einführende Warnung: Diese Lektion ist weit langsamer. Bleib dennoch bei mir. Es wird
+      Eine einführende Warnung: Diese Lektion ist weit langsamer. Versuch aber dennoch bei mir zu bleiben. Es wird
       ein langer, tiefer Atemzug. Der kritischste Punkt deiner Instruktion. Es mag anfänglich so erscheinen
-      als ob du nicht viel Code lernen würdest. Du wirst Konzepte erlernen. Am Ende dieses Kapitels,
-      wirst du die Schönheit von Ruby kennen. Die Behaglichkeit des Codes wird ein tief schläfriger Beutel
+      als ob du nicht viel Code lernen würdest was auch stimmen mag. Du wirst Konzepte erlernen. Am Ende dieses
+      Kapitels, wirst du die Schönheit von Ruby kennen. Die Behaglichkeit des Codes wird ein tief schläfriger Beutel
       des Trostes.
       
 
-    - Das Blatt als Status Symbol in Amrosia: >
+    - Das Blatt als Status Symbol in Ambrosia: >
 
         In Ordnung, Elf. Gib uns einen kurze Einführung in die Währungs-Probleme dehnen du dich
         stellen musst in deinem Königreich.
@@ -1676,7 +1676,7 @@ chapters:
         Ja, das ist nicht das woran ich mich errinere. Der Elf hat mich andauernd angepiept. Als ich
         mich geweigert habe ihn zurück zu rufen hat er mir, irgendwie, eine Nachricht auf dem Pager
         hinterlassen. Bedeutet: es piepte einige male und dann kam ein schmaler streifen Papier heraus.
-        Der Streifen sagte soetwas wie: "Komm sofort hier herunter!" ausserdem, "Wir müssen die Erde von
+        Der Streifen sagte so etwas wie: "Komm sofort hier herunter!" außerdem, "Wir müssen die Erde von
         dieser Seuche der unternehmerischen Raupen befreien, diese verdrehten Vikinger der Insekten
         ersticken meine blauen Kristalle!"
 
@@ -1696,8 +1696,8 @@ chapters:
 
          
         Nun @blatt@ repräsentiert die Nummer @5@ (wie in: fünf blaue Kristalle.) Dieses Konzept ist schon
-        *die Hälfte von Ruby*. Wir _deffinieren_. Wir _kreieren_. Das ist die Hälfte der Arbeit.
-        Zuweisung ist die grundlegenste Art der Deffinierung.
+        *die Hälfte von Ruby*. Wir _definieren_. Wir _kreieren_. Das ist die Hälfte der Arbeit.
+        Zuweisung ist die grundlegendste Art der Definierung.
 
         
         Du kannst dich dennoch nicht beschweren oder doch Elf? Du hast ein Imperium darauf aufgebaut
@@ -1736,9 +1736,9 @@ chapters:
         gleichzeitig eine Einführung in Macromedia Flash. Es ist als ob <a href="http://www.judyblume.com/menu-main.html">Judy Blume</a> über eine
         Praystation gestolpert wäre. Oder <a href="http://www.Osil8.com">Osil8</a> präsentiert <a href="http://www.hilaryduff.com/html_2003/main_site/frameset.htm">Hillary Duff</a>.
         
-        <small>// !!! Die Referenzen zu den Personen sollte man vielleicht noch einmal Ummünzen.
+        <br /><span style="font-size: x-small;">// !!! Die Referenzen zu den Personen sollte man vielleicht noch einmal Ummünzen.
         Mir fallen im Moment keine passenden, im deutschsprachigen Raum bekannte, Ersetzungen ein.
-        by CMDR-ZOD</small>
+        <br />von CMDR-ZOD</span>
 
 
         Ich will die Handlung nicht im vornherein verraten, aber um deinen Appetit anzuheizen kann ich
@@ -1746,7 +1746,7 @@ chapters:
 
 
     - >
-        NeinNeinNein. Warte eine Sekunde. Wir sind für das was der Elf in seine Höhle vor hat noch 
+        Nein, Nein, Nein. Warte eine Sekunde. Wir sind für das was der Elf in seine Höhle vor hat noch 
         nicht vorbereitet. Du wirst denken das wäre womöglich inhuman, schmutzig, dreckig, verdreht, bla, bla...
 
         
@@ -1763,8 +1763,8 @@ chapters:
         
         Der Tierarzt hat sie nur einmal kurz angesehen und geschworen sie würde nie wieder laufen.
         Ihre Beine waren fort und der Arzt konnte nicht erlauben das ein Pferd ohne Beine einfach
-        so herumsitzt. Wir müssten ihr den Gnadenschuss verpassen. Er hat sein Leben und sein Karierre
-        darauf verschworen, wir müssten seinem Drengen folgen und uns Aufteilen um eine Entscheidung
+        so herumsitzt. Wir müssten ihr den Gnadenschuss verpassen. Er hat sein Leben und sein Kariere
+        darauf verschworen, wir müssten seinem Drängen folgen und uns Aufteilen um eine Entscheidung
         zu erzielen. Die Leute die der Diagnose des Arztes nichts entgegenzusetzen hatten auf die eine
         Seite, der Rest, der sich entgegen allen Behauptungen damit nicht abfinden wollte, sollte sich
         auf die andere Seite stellen. Der Elf, sein Haustier Schinken und ich, waren die einzigen auf der 
@@ -1773,12 +1773,12 @@ chapters:
         
         Während die anderen losstürmten um Trophäen und Kränze um das Pferd zu stapeln, ihm die letzte
         Ehre erweisend bevor es die Kugel empfangen sollte, stürmten der Elf und ich los, fanatisch das Internet
-        durchsuchend nach einer Antwort. Wir nahmen das ganze in unsere Hände, veräzten ihre Beinwunden mit
+        durchsuchend nach einer Antwort. Wir nahmen das ganze in unsere Hände, verätzten ihre Beinwunden mit
         Flusskrebsen. Es hat einwandfrei funktioniert! Wir hatten wieder ein richtiges Pferd. Oder wenigstens ein
         Pferdekörper mit Unterleibsverkrustungen.
 
         
-        Sie ist danach überall hingekrochen und hat viele schöne Jahre in Höhlen verbracht die angenehm feucht waren.
+        Sie ist danach überall hin gekrochen und hat viele schöne Jahre in Höhlen verbracht die angenehm feucht waren.
 
         
         Perfektes Tier GmbH ist die Zukunft der Tier-Erweiterungen. Sie haben viele neue Tiere erschaffen
@@ -1787,14 +1787,14 @@ chapters:
         und hinaus würde ein Bär mit einer Sonnenbrille kommen. Völlig billig.
 
         
-        Lies ein wenig weiter und du wirst eine Krabbe ihrem eigenen _JAT PACK_ sehen. Das ist das neue Jet Crab
-        2004 Model.
+        Lies ein wenig weiter und du wirst eine Krabbe ihrem eigenen _JAT PACK_ sehen. Das ist das neue, "Jet-Krabbe
+        2004", Model.
 
         
         Inzwischen läuft aber alles in vollem Gange. Die Sauberkeit ist besonders verwunderlich. Die ganze
-        Ausrüstung glänzt und alles ist in Chrom. Ausserdem haben die Angestellten versteckte Waffen.
+        Ausrüstung glänzt und alles ist in Chrom. Außerdem haben die Angestellten versteckte Waffen.
         Sie sind so trainiert das sie jeden erschießen der unangemeldet erscheint. Oder, wenn ihnen die
-        Munition ausgehen sollte, jeden mit den Waffen niederzuknüpeln.
+        Munition ausgehen sollte, jeden mit den Waffen niederzuknüppeln.
 
         
         Elf, mach mir einen Sternen-Affen.
@@ -1803,7 +1803,7 @@ chapters:
         !i/the.elf-5a.jpg(Als erstes wird der Stern eingefangen.)!
 
         
-        Ein wenig hypothethiser Ruby Code für dich:
+        Ein wenig hypothetischer Ruby Code für dich:
 
         
         
@@ -1815,11 +1815,11 @@ chapters:
         @einen_stern_fangen@.
 
         
-        Das ist die *zweite Hälfte* von Ruby. Das ganze in Bewegung zu versetzen. Die Dinge die du kreiert und deffiniert
+        Das ist die *zweite Hälfte* von Ruby. Das ganze in Bewegung zu versetzen. Die Dinge die du kreiert und definiert
         hast in der ersten Hälfte dazu zu bekommen zu _handeln_ in der zweiten.
 
         
-        # Deffiniere Dinge.
+        # Definiere Dinge.
         
         # Diese Dinge in Aktion zu versetzen.
 
@@ -1835,7 +1835,7 @@ chapters:
         diesen ignorieren oder benutzen.
 
         
-        _Wenn du es erlenst die Antworten, die dir die Methoden zurück geben, zu benutzen wirst du *dominieren*._
+        _Wenn du es erlernst die Antworten, die dir die Methoden zurück geben, zu benutzen wirst du *dominieren*._
 
 
         !i/the.elf-5b.jpg(Der Stern wird in das Gesicht des Affen gedrückt.)!
@@ -1847,7 +1847,7 @@ chapters:
         bq. @sternen_affe = ratsche.anbringen( gefangener_affe, gefangener_stern)@
 
         
-        Die @Ratsche@ kriegt die @anbringen@ Anweisung. Was musst angebracht werden? Die _Methoden-Argumente_:
+        Die @Ratsche@ kriegt die @anbringen@ Anweisung. Was muss angebracht werden? Die _Methoden-Argumente_:
         und zwar @gefangener_affe@ sowie @gefangener_stern@. Wir kriegen dann unseren @sternen_affe@ zurück,
         welchen wir behalten wollen.
 
@@ -1873,9 +1873,9 @@ chapters:
         
         Das Hotel hier in Ambrosia ist nur eine billige Absteige. Die Betten sind lumpig und der
         Fahrstuhl ist winzig. Ein Typ hat all seine Koffer in den Fahrstuhl gestellt und herausgefunden
-        das für ihn kein Platz mehr ist. Er hat den Knopf gedrückt und ist die Treppen hochgeilt.
+        das für ihn kein Platz mehr ist. Er hat den Knopf gedrückt und ist die Treppen hoch geilt.
         Aber das Treppenhaus, so stellte sich heraus, war so Eng das er sich dabei die Schultern
-        aufgescheurt hat.
+        aufgescheuert hat.
 
         
         Die Seifenstücke die sie einem geben sind so klein, extra für Elfen, es ist unmöglich damit
@@ -1897,7 +1897,7 @@ chapters:
         In Ruby, @nil@ ist absolute Leere. Es ist *ohne Wert*. Es ist nicht Null. Null ist eine Zahl.
 
         
-        Es ist Rubys eigener wandelnder Tote, ein Schlüsselwort. Du kannst nichts hinzufügen, es kann
+        Es ist Rubys eigener wandelnder Toter, ein Schlüsselwort. Du kannst nichts hinzufügen, es kann
         sich nicht entwickeln. Aber es ist unglaublich beliebt. Es lächelt dir von überall entgegen.
 
         
@@ -1908,7 +1908,7 @@ chapters:
         Wert enthält, ein @nil@. Das @nil@ repräsentiert die Leere, also nennen wir es leer.
 
         
-        Einige von euch die bereits einmal programiert haben werden versucht sein zu sagen
+        Einige von euch die bereits einmal programmiert haben werden versucht sein zu sagen
         das der @plastik_becher@ *undefiniert* sei. Das machen wir aber nicht. Undefiniert würde
         bedeuten das Ruby keine Ahnung hat, ja den @plastik_becher@ überhaupt nicht kennen würde,
         er existiert nicht.
@@ -1918,7 +1918,7 @@ chapters:
         und merken das er *leer* ist, aber nicht *undefiniert*.
 
 
-        h3. False
+        h3. False <span style="size:x-small;">(Anm. d. Ü.: Falsch, Unwahr)</span>
 
 
         !<i/blix-neg.gif(Shape of a cat.)!
@@ -1928,268 +1928,280 @@ chapters:
         eyes of lake.  Tail of warm icicle.  Sponsored by a Very Powerful Pause Button._
 
 
-        The darkness surrounding Blix can be called *negative space*.  Hang on to that phrase.
-        Let it suggest that the emptiness has a negative connotation.  In a similar way,
-        @nil@ has a slightly sour note that it whistles.
+        Die Dunkelheit die Blix umgibt kann *negativer Raum* genannt werden. Merk dir diese
+        Phrase. Lass uns annehmen das die Leere einen negativen Wert hat. In ähnlicher Weise
+        hat @nil@ einen leicht bitteren Ton an sich.
 
+        
+        Allgemein ausgedrückt, *alles in Ruby hat eine positive Ladung*. Dieser Funke fließt
+        durch Strings, Nummern, reguläre Ausdrücke, alles. Nur zwei Schlüsselwörter haben
+        einen schattigen Mantel um sich selbst gehüllt: @nil@ und @false@ ziehen uns herunter.
 
-        Generally speaking, *everything in Ruby has a positive charge to it*.  This spark
-        flows through strings, numbers, regexps, all of it.  Only two keywords wear a
-        shady cloak: @nil@ and @false@ draggin us down.
-
-
-        You can *test that charge* with an @if@ keyword.  It looks very much like the
-        @do@ blocks we saw in the last chapter, in that both end with an @end@.
+        
+        Du kannst diese *Ladung* testen mit dem *if* Schlüsselwort. Sie sehen den @do@ Blöcken
+        aus dem letzten Kapitel sehr ähnlich, auf die Weise das beide mit einem @end@ enden.
 
 
         <pre>
-         if plastic_cup
-           print "Plastic cup is on the up 'n' up!"
+         if plastik_becher
+            print "Plastik Becher ist voll bis oben hin!"
          end
         </pre>
 
+        
+        Wenn @plastik_becher@ entweder @nil@ oder @false@ enthällt wirst du nichts sehen
+        das auf dem Bildschirm ausgegeben wird. Sie sind nicht auf der Gästeliste von @if@.
+        @if@ wird also kein bischen von dem Code ausführen den es umgibt und beschützt.
 
-        If @plastic_cup@ contains either @nil@ or @false@, you won't see anything print
-        to the screen.  They're not on the @if@ guest list.  So @if@ isn't going to run
-        any of the code it's protecting.
-
-
-        But @nil@ and @false@ need not walk away in shame.  They may be of questionable
-        character, but @unless@ runs a smaller establishment that caters to the bedraggled.
-        The @unless@ keyword has a policy of *only allowing those with a negative charge in*.
-        Who are: @nil@ and @false@.
+        
+        Aber @nil@ und @false@ müssen nicht voller schahm weinend in einer Ecke verschwinden.
+        Sie mögen fragwürdige Charaktere darstellen doch @unless@ ist ein kleineres Unternehmen
+        das auch diese Herren bediehnt. Das @unless@ Schlüsselwort hat sich darauf spezialisiert
+        *nur solche Werte zu akzeptieren die negativ sind*.
+        Und zwar: @nil@ und @false@.
         
 
         <pre>
-         unless plastic_cup
-           print "Plastic cup is on the down low."
+         unless plastik_becher
+            print "Plastik Becher ist staubtrocken und leer."
          end
         </pre>
 
-
-        You can also use @if@ and @unless@ at the *end of a single line of code*, if that's
-        all that is being protected.
-
-
-        <pre>
-         print "Yeah, plastic cup is up again!" if plastic_cup
-         print "Hardly. It's down." unless plastic_cup
-        </pre>
-
-
-        And another nice trick: stack the @if@ and @unless@.
+        
+        Du kannst @if@ und @unless@ auch *am Ende einer einzelnen Zeile von Code* benutzen,
+        für den Fall das dies alles ist was beschützt werden soll.
 
 
         <pre>
-         print "We're using plastic 'cause we don't have glass." if plastic_cup unless glass_cup
+         print "Juhu, der plastik Becher ist wieder voll!" if plastik_becher
+         print "Seufz, er ist leer." unless plastik_becher
         </pre>
 
+        
+        Ein weiterer netter Trick: kombiniere @if@ und @unless@.
 
-        This trick is a gorgeous way of expressing, _Do this only if *a* is true and *b* isn't
-        true_.
 
+        <pre>
+         print "Wir benutzen Plastik weil wir kein Glas haben." if plastik_becher unless glas_becher
+        </pre>
 
-        Now that you've met @false@, I'm sure you can see what's on next.
+        
+        Der Trick ist der wundervolle Weg des Ausdruckes. _Tu das nur wenn *a* ist true und *b* ist
+        es nicht_.
+
+        
+        Da du nun @false@ kennen gelernt hast kannst du dir sicherlich vorstellen was als nächstes
+        kommt.
 
     - !^sidebar
       Make Your Own Starmonkey!: >
-
-        1.  Turn a mug upside-down.
+        
+        1.  Stell einen Becher verkehrtherum auf.
 
         !i/starmonkeycrafts-1.jpg!
- 
-        2. Attach an apple with a rubber band.
+        
+        2. Bringe einen Apfel mit einem Gummiband an.
 
         !i/starmonkeycrafts-2.jpg!
- 
-        3. Shove car keys into the sides of the apple.
+        
+        3. Steck Autoschlüssel in die Seiten des Apfels.
 
         !i/starmonkeycrafts-3.jpg!
- 
-        4. Glue star face.
+        
+        4. Klebe Sternengesicht auf.
 
         !i/starmonkeycrafts-4.jpg!
  
-
-        You have two complementary star faces waiting in
-        your account.
+        
+        Du hast zwei fertig abgestimmte Sternengesichter fertig auf dich wartend.
 
 
         p=. !i/starmonkeycrafts-5.gif!
-
-        Standard, placid.
+        
+        Standard, ruhig.
 
 
         p=. !i/starmonkeycrafts-6.gif!
- 
-        Eating chalk.
+        
+        Kreide essend.
 
     - >
-        h3. True
+        h3. True <span style="size:x-small;">(Anm. d. Ü.: Richtig, Wahr)</span>
 
 
-        bq. @approaching_guy = true@
+        bq. @ankommender_typ = true@
 
+        
+        Ich sah @true@ am Hotel Buffet, letztens. Ich kann diesen Typ überhaupt nicht
+        ausstehen. Immer steht er rum, die Beine mit viel zu großem Abstand. Er stampft
+        seine Füße geradezu in den Boden, soetwas habe ich noch nie gesehen.
+        Dazu trägt er ausserdem noch diese lächerliche Halskette aus Patronenhülsen.
+        Sein Gesicht strahlt dieses ungewöhnliche und unverdiehnte Selbstvertrauen aus.
+        (Du kannst erkennen das er sich anstrengen muss um nicht vor Energie zu explodieren.)
 
-        I saw @true@ at the hotel buffet tables today.  I cannot stand that guy.
-        His stance is way too wide.  And you've never met anyone who planted his
-        feet so hard in the ground.  He wears this corny necklace made out of
-        shells.  His face exudes this brash confidence.  (You can tell he's exerting
-        all of his restraint just to keep from bursting into Neo flight.)
+        
+        Um ehrlich zu sein, ich kann Leute nicht ausstehen die immer Recht haben müssen.
+        Dieser @true@ sagt immer nur "A-OK" und er liebt diese Halskette wirklich. Er trägt
+        sie andauernd.
 
+        
+        Wie du warscheinlich schon erraten konntest, er ist Backstage auf jeder Veranstaltung
+        die @if@ beaufsichtigt.
 
-        To be honest, I can't be around someone who always has to be right.
-        This @true@ is always saying, "A-OK."  Flashing hang ten.  And seriously, 
-        he loves that necklace.  Wears it constantly.
+        
+        bq. @print "Hugo Boss" if true@ verhällt sich wie @print "Hugo Boss"@.
 
-
-        As you'd suspect, he's backstage at everything on the @if@ event schedule.
-
-
-        bq. @print "Hugo Boss" if true@ acts like @print "Hugo Boss"@.
-
-
-        Occassionally, @if@ will haul out the velvet ropes to exercise some crowd control.  
-        The *double equals* gives the appearance of a short link of ropes, right along the
-        sides of a red carpet where only @true@ can be admitted.
-
-
-        <pre>
-         if approaching_guy == true
-           print "That necklace is classic."
-         end
-        </pre>
-
-
-        The double equals is simply *an ID check*.  Do the gentleman at both ends of this
-        rope appear to match?
-
-
-        In this way, you control who @if@ lets in.  If you have a hard time getting along with
-        @true@ as I do, you can heartily welcome @false@.
+        
+        Gelegentlich greift @if@ über die violetten Abgrenzungsseile und übt ein wenig
+        Gruppenüberwachung aus. Die *doppelten Gleichheitszeichen* geben die Erscheinung
+        eines Seils, direkt neben dem roten Teppich den nur @true@ beschreiten darf.
 
 
         <pre>
-         if approaching_guy == false
-           print "Get in here, you conniving devil."
+         if ankommender_typ == true
+           print "Diese Halskette steht dir jedes mal besser."
          end
         </pre>
 
+        
+        Die doppelten Anführungszeichen sind einfach eine *Identitätsüberprüfung*. Stimmen
+        die Herren auf beiden Seiten des Seils überein?
 
-        Same goes for @unless@.  The gateway is yours.  Take possession of it.
-
-
-        h3. Again, I Want You to Dominate
-
-
-        Now, you want a head trip?  *The double equals sign is a method.*  Can you guess how
-        it works?  Here, check it out with the dot and parens:
+        
+        Auf diese Weise kannst du kontrollieren wen @if@ hinein lässt. Wenn du Probleme hast
+        mit @true@ zurechtzukommen wie ich dann begrüße herzlich @false@.
 
 
-        bq. @approaching_guy.==( true )@
+        <pre>
+         if ankommender_typ == false
+           print "Immer rein hier du Tier."
+         end
+        </pre>
 
+        
+        Das selbe gilt für @unless@. Der Eingang ist deiner, nimm ihn in Besitz.
 
-        Ruby allows the shortcut, though.  You can drop the dot and back away slowly.
+        
+        h3. Erneut, Ich Will Das Du Dominierst
 
+        
+        Na, bereit für einen kleinen Ausflug, Kopfüber? *Die doppelten Gleichheitszeichen
+        sind eine Methode*. Kannst du erraten wie es funktioniert? Sieh dir das Beispiel mit
+        den Punkten und Klammern einmal an:
 
-        Now, do you remember what you need to do to *dominate* in Ruby?  _Use the answers the
-        methods give you._
+        
+        bq. @ankommender_typ.==( true )@
+
+        
+        Ruby allaubt abkürzungen. Du kannst also von den Punkten ablassen und dich langsam
+        und leise entfernen von diesem Beispiel.
+
+        
+        Errinerst du dich was du benötigst um in Ruby zu *dominieren*? _Benutz die Antworten
+        die die Methoden dir geben_.
 
 
         <pre>
          if nil.==( true )
-           print "This will never see realization."
+           print "Das hier wird niemals das Tageslicht erblicken."
          end
         </pre>
 
 
-        In the above, how is the method's answer being used?
+        Im obigen Beispiel, wie wird die Antwort der Methode verwendet?
 
-
-        Let's take the statement @nil == true@.  This will fail every time.  No match.  
-        When there's no match, the double equals method answers with @false@.  A shake of the head.
-        That answer is given to @if@, who can't accept a @false@.  The @print@ never sees realization.
+        
+        Lass uns die Aussage @nil == true@ einmal betrachten. Sie wird immer fehlschlagen.
+        Keine Übereinstimmung. Wenn keine Übereinstimmung vorliegt wird die doppelte Gleichheitszeichen
+        Methode mit @false@ antworten. Sie schüttelt ihren Kopf und sagt dass das falsch ist. Die
+        Antwort wird an @if@ gegeben, welcher ein @false@ auf keinen Fall akzeptieren kann. Somit
+        wird @print@ niemals ausgeführt.
 
 
         <pre>
-         at_hotel = true
-         email = if at_hotel
-                   "why@hotelambrose.com"
+         im_hotel = true
+         email = if im_hotel
+                   "why@hotel_ambrosia.com"
                  else
                    "why@drnhowardcham.com"
                  end
         </pre>
 
+        
+        Obwohl @if@ selbst keine Methode ist gibt es doch eine Antwort zurück als ob es sich um
+        eine Methode handeln würde. Sieh dir das obige einmal genau an und überleg was wohl passieren
+        wird wenn @im_hotel@ den Wert @true@ beinhaltet. Also @true@, Wahr ist.
 
-        Even though @if@ isn't a method, @if@ does give a return answer.  Look at the above and
-        wonder over what happens when @at_hotel@ is @true@.
+        
+        
+        @if@ wird die Antwort des Codes, den es entschließt auszuführen, zurückgeben. In dem
+        Fall das @im_hotel@ wahr ist, den ersten String, die E-Mail Adresse des Hotels Ambrosia.
+        Das @else@ (Anm. d. Ü.: sonst, oder) markiert Code der ausgeführt wird in dem Falle das
+        @if@ fehlschlägt. Wenn @im_hotel@ falsch ist wird @if@ mit der E-Mail Adresse bei
+        Dr. N. Howard Chams Büro antworten, wo ich meine Lehrstelle habe.
 
-
-        The @if@ will return the answer given by the code it chooses to run.  In the case of 
-        @at_hotel@ being true, the first string, my e-mail address at Hotel Ambrose, will be
-        returned.  The @else@ keyword marks code which will run, should @if@ fail.  If @at_hotel@
-        is false, the @if@ will answer with my e-mail address at Dr. N. Howard Cham's office, 
-        where I take my apprenticeship.
-
-
-        Should you have several lines of code in an @if@ or @unless@, *only the answer from the
-        last full statement will be used*.
+        
+        Wenn du mehrere Zeilen von Code in einem @if@ oder @unless@ Block hast *wird nur die Antwort
+        vom letzten ganzen Ausdruck benutzt*.
 
 
         <pre>
-         email = if at_hotel
-                   address = "why"
-                   address << "@hotelambrose"
-                   address << ".com"
+         email = if im_hotel
+                   adresse = "why"
+                   adresse << "@hotel_ambrosia"
+                   adresse << ".com"
                  end
         </pre>
 
+        
+        Drei Zeilen von Code innerhalb eines @if@. Die erste Zeile ordnet dem String meinem Namen der Variable
+        zu. Die zweite und dritte Zeile fügen den Rest meiner E-Mail an das Ende des Strings hinzu. Das
+        *doppelte kleiner-als @<<@ ist der hinzufügen Operator*. Das hinzufügen bedeutet soviel wie *füge am
+        Ende hinzu*.
 
-        Three lines of code inside the @if@.  The first line assigns a string with my name in it to a variable.
-        The second and third lines add the rest of my e-mail address on to the end.  The *double less-than @<<@
-        is the concatenation operator*.  To concatenate is to *append*, or *add to the end*.
+        
+        Genauso wie mit dem Gleichheitsüberprüfer @==@ ist der Hinzufüger eine Methode. Nachdem der Hinzufüger
+        das gewünschte Stück hinzugefügt hat antwortet er mit dem neuen, nun erweiterten, String. Die dritte
+        Zeile, die man auch als @adresse.<<( ".com" )@ schreiben könnte, gibt also die Adresse zurück welche
+        @if@ dann an @email@ weitergibt.
 
+        
+        Nun die Preisfrage: was passiert wenn @if@ fehlschlägt? Was ist wenn @im_hotel@ falsch ist im obigen
+        Beispiel. Wird überhaupt etwas zurück gegeben? Nichts wird zu @email@ zugewiesen, richtig?
 
-        Just as we saw with the equality checker @==@, the concatenator is a method.  After adding to the end
-        of the string, the concatenator also *answers with that very string*.  So, the third line, which could be
-        read as @address.<<( ".com" )@, gives back @address@, which the @if@ then hands back for @email@'s
-        assignment.
-
-
-        Here's a question: what if the @if@ fails?  What if @at_hotel@ is false in the above example?
-        Is anything returned?  Nothing is assigned to @email@, right?
-
-
-        Yes, nothing is returned.  By which I mean: @nil@ is returned.  And often @nil@ is a very
-        useful answer.
+        
+        Das ist richtig, nichts wird zurück gegeben. Womit ich natürlich meine: @nil@ wird zurückgegeben. Und
+        oft ist @nil@ eine sehr nützliche Antwort.
 
         
         <pre>
-         print( if at_hotel.nil?
-                  "No clue if he's in the hotel."
-                elsif at_hotel == true
-                  "Definitely in."
-                elsif at_hotel == false
-                  "He's out."
+         print( if im_hotel.nil?
+                  "Keine Ahnung ob er im Hotel ist."
+                elsif im_hotel == true
+                  "Er ist auf jeden Fall hier."
+                elsif im_hotel == false
+                  "Er ist nicht hier."
                 else
-                  "The system is on the freee-itz."
+                  "Das System spinnt herum."
                 end )
         </pre>
 
+        
+        Du kannst die @nil?@ Methode überall in Ruby verwenden. Denke davon wie von einer Nachricht.
+        "Bist du nil? Bist du leer?"
 
-        You can use the @nil?@ method on any value in Ruby.  Again, think of it as a message.
-        To the value: "Are you nil?  Are you empty?"
+        
+        Wenn @im_hotel@ leer ist hat Ruby keine Ahnung ob ich im Hotel bin oder nicht. Also Antwortet
+        @if@ mit dem "Keine Ahnung" String. Um die Möglichkeiten von @true@ und @false@ zu handhaben
+        wird das @elsif@ (Anm. d. Ü.: sonst wenn) Schlüsselwort benutzt. Auch wenn du nur ein @if@ und
+        ein @else@ benutzen kannst in einem Ausdruck so kannst du dazwischen doch eine unbegrenzte Anzahl von
+        @elsif@ Schlüsselwörtern benutzen. Jedes @elsif@ handelt wie ein weiterer @if@ Test. Suchend nach
+        einer positiven Ladung.
 
-
-        If @at_hotel@ is empty, Ruby doesn't have any idea if I'm in the hotel or not.  So @if@
-        answers with the "No clue" string.  In order to handle the @true@ or @false@ possibilities,
-        the @elsif@ keyword is used.  While you can have only one @if@ and one @else@, you can fill
-        the inbetween with an exorbitant number of @elsif@ keywords.  Each @elsif@ acts as *a further @if@
-        test*.  Checking for a positive charge.
-
-
-        If you're doing okay at this point, then you're in tip-top shape for the rest of the
-        book.  You have seen some pretty tough code in the last few examples.  You strong fellow.
+        
+        Wenn du soweit alles verstanden hast bis zu diesem Punkt dann bist du in Tip-Top Form für den Rest
+        des Buches. Du hast einige ziemlich schwierige Sachen in den letzten Beispielen gelesen. Du bist
+        starker Typ.
 
 
     - Chaining Delusions Together: >
