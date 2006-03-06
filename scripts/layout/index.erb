@@ -11,15 +11,10 @@
 
 <div id="wrapper">
 
-    <div id="navigate">
-
-        <!-- Left-hand access to the book online -->
-        <a href="chapter-1.html"><img src="<%= book.image.file_name %>" alt="<%= language.header_title %>" /></a>
-        <p style="text-align:center"><a href="chapter-1.html"><b><%= language.open_the_book %>.</b></a></p>
-
-        <div class="toc">
-        <%= language.written_by %>
-
+	<div id="sidepane">
+        <div id="bookplate"><a href="chapter-1.html"><img src="<%= book.image.file_name %>" alt="<%= book.title %>" /></a></div>
+        <div id="bookseal"><a href="chapter-1.html"><img src="i/2006.seal.jpg" alt="<%= language.open_the_book %>" /></a></div>
+        <div id="bookcontents">
         <h3>~ <%= language.contents %> ~</h3>
         <ol>
             <% 
@@ -67,14 +62,9 @@
             <li><b><a href="http://preeventualist.org/">The Pre-eventualist</a></b></li>
         </ol>
         </div>
-
-        <br /><br />
-        <img src="i/poignant.guide.down.png" alt="umop-apisdn" />
-
     </div>
     <div id="main">
-
-        <div class="bulletin">
+    	<div id="foxbox"><div id="foxboxwithin">
             <h3>Lost foxes in <a href="chapter-6.html">Chapter 6. Downtown.</a>  Such juicy metaprogramming and class design!</h3>
 
             <p><b>T-Shirts</b>: <a href="http://www.cafeshops.com/blixytees.10117492">"Addiction is Like Pokemon..."</a>, <a href="http://www.cafeshops.com/blixytees.10116504">"Chunky. Bacon."</a>, and <a href="http://www.cafeshops.com/blixytees">others</a>.</p>
@@ -82,13 +72,7 @@
             for a periodic update on new chapters.  Or 
             <a href="http://rubyforge.org/mailman/listinfo/poignant-stiffs">poignant-stiffs</a> for
             dicussion.</p>
-
-            <p><a href="http://www.mozilla.org/products/firefox/"><img src="i/firefox.gif" alt="Get Firefox" /></a>
-            <b>Print with Firefox!</b>
-            Go to <b>File &gt; Page Setup...</b>  Set all your margins to zero.  
-            Turn off all headers.  Go to the <a href="print.html">printable W(P)GtR.</a>  (Let it load.) 
-            Then, Ctrl+P. </p>
-        </div>
+        </div></div>
 
         <!-- Page Content discussing Ruby, the book, and my site -->
 
@@ -101,8 +85,8 @@
             <div class="bulletin">
 
                 <!-- Creative Commons License -->
-                <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="Creative Commons License" src="http://creativecommons.org/images/public/somerights20.gif" /></a><br />
-                This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/"><img alt="Creative Commons License" src="http://creativecommons.org/images/public/somerights20.gif" /></a><br />
+                This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons License</a>.
                 <!-- /Creative Commons License -->
 
 
@@ -113,10 +97,10 @@
                     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 <Work rdf:about="">
                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
-                   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+                   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.5/" />
                 </Work>
 
-                <License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+                <License rdf:about="http://creativecommons.org/licenses/by-sa/2.5/">
                    <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
                    <permits rdf:resource="http://web.resource.org/cc/Distribution" />
                    <requires rdf:resource="http://web.resource.org/cc/Notice" />
@@ -134,6 +118,7 @@
     </div>
 
 </div>
+<div id="cornerkick"><img src="i/2006.corner.jpg" /></div>
 
 </body>
 </html>

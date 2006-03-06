@@ -143,6 +143,11 @@ if __FILE__ == $0
 
     scripts = File.dirname(__FILE__)
     $:.unshift scripts
+
+    # external libs
+    Dir[File.expand_path('../lib/ext-*', scripts)].each do |path|
+        $:.unshift path
+    end
     locale = "en"               # default value
 
     if ARGV[1]
@@ -179,16 +184,22 @@ if __FILE__ == $0
 
     # Write chapter pages
     chapter_tpl = ERB::new( File.open( "#{ scripts }/layout/chapter.erb" ).read )
-    book.chapters.each do |chapter|
+    body_class = "chapter"
+    url_pre = "chapter"
+    collection = book.chapters
+    collection.each do |chapter|
         File.open( File.join( site_path, "chapter-#{ chapter.index }.html" ), 'w' ) do |out|
-            out << chapter_tpl.result
+            out << chapter_tpl.result( binding )
         end
     end
 
     # Write expansion pak pages
-    expak_tpl = ERB::new( File.open( "#{ scripts }/layout/expansion-pak.erb" ).read )
-    book.expansion_paks.each do |pak|
-        File.open( File.join( site_path, "expansion-pak-#{ pak.index }.html" ), 'w' ) do |out|
+    expak_tpl = ERB::new( File.open( "#{ scripts }/layout/chapter.erb" ).read )
+    body_class = "expansion"
+    url_pre = "expansion-pak"
+    collection = book.expansion_paks
+    collection.each do |chapter|
+        File.open( File.join( site_path, "expansion-pak-#{ chapter.index }.html" ), 'w' ) do |out|
             out << expak_tpl.result( binding )
         end
     end

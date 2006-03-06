@@ -1,10 +1,17 @@
 body {
-    background-color: white;
+	background-image: url(i/2006.pale.jpg);
     color: #222;
-    font-family: Georgia, Times, serif;
+    font-family: Utopia, Georgia, Times, serif;
     line-height: 110%;
     margin: 0;
     padding: 0;
+}
+body.chapter {
+    padding-bottom: 36px;
+}
+body.expansion {
+    background: url(i/2006.pakback.png);
+    padding-bottom: 36px;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 5px;
@@ -12,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 2.2em;
+}
+#wrapper {
+    z-index: 2;
 }
 #main h2, .content h2 {
     border-bottom: solid 1px black;
@@ -79,25 +89,53 @@ pre {
     color: #936;
     line-height: 170%;
 }
-#navigate {
-    background: url(i/poignant.guide.red.png);
-    color: white;
-    float: left;
-    margin-right: 50px;
-    padding: 4px;
-    width: 360px;
+#sidepane {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 450px;
+	z-index: 20;
 }
-#navigate a,
-#navigate a:link,
-#navigate a:visited,
-#navigate a:active {
-    color: #FCC;
+#bookplate {
+	margin: 0; padding: 0;
 }
-#navigate a:hover {
-    color: #FFC;
+#bookcontents {
+	background: url(i/2006.contents.jpg) top left no-repeat;
+	margin: 0; padding: 45px 120px 40px 20px;
+    margin-top: -3px;
+	font-size: 9pt;
 }
-#navigate h3 {
-    margin-top: 40px;
+#bookcontents ol li ol {
+	list-style: lower-alpha;
+}
+#bookseal {
+	position: absolute;
+	top: 433px;
+	left: 147px;
+}
+#foxbox {
+	background: url(i/2006.foxline.jpg) bottom left repeat-x;
+	margin: 10px 0px;
+	font-size: 8pt;
+}
+#foxboxwithin {
+	background: url(i/2006.foxbox.jpg) bottom left no-repeat;
+	padding: 1px 20px;
+	height: 160px;
+}
+#foxbox h3 {
+    padding-top: 14px;
+	font-size: 14pt;
+}
+#foxbox p {
+	padding-left: 70px;
+	line-height: 120%;
+}
+#cornerkick {
+	z-index: 1;
+	position: absolute;
+	top: 1800px;
+	right: 0px;
 }
 .toc {
     padding-left: 30px;
@@ -118,7 +156,8 @@ pre {
     line-height: 170%;
 }
 #main {
-    padding: 10px;
+	padding-left: 420px;
+	float: left;
 }
 #main li {
     font-size: 1.2em;
@@ -138,13 +177,13 @@ p#terms {
     line-height: 140%;
 }
 .sidebar {
-    color: #334465;
-    background-color: #E6EDF3;
-    border: solid 1px black;
+    color: #000;
+	background-image: url(i/2006.pale.jpg);
     width: 280px;
     float: right;
-    margin: 10px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
+    margin-left: 14px;
     z-index: 3;
 }
 .sidebar ul {
@@ -156,20 +195,21 @@ p#terms {
     padding: 10px 4px;
 }
 .sidebar h1 {
-    background-color: #6383AB;
+    background-color: #7A8A9A;
     color: #EFF9ED;
     text-align: center;
-    font-size: .6em;
-    padding: 5px;
+    margin: 0;
+    padding: 4px;
+    font-size: .9em;
 }
 .sidebar h2 {
     font-size: 1.2em;
     border-bottom: solid 1px #334465;
-    margin-top: 5px;
+    margin: 5px;
 }
 .sidebar p {
     font-size: .9em;
-    margin: 0px 0px 0px 0px;
+    margin: 5px;
     padding: 10px;
 }
 .sidebar blockquote {
@@ -185,56 +225,76 @@ p#terms {
     color: #334465;
     font-weight: normal;
     font-size: .9em;
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     line-height: 120%;
 }
-a.pagebar,
-a.pagebar:link,
-a.pagebar:visited,
-a.pagebar:active {
-    color: #FCC;
-}
-a.pagebar:hover {
-    color: #FFC;
-}
-a.darkbar,
-a.darkbar:link,
-a.darkbar:visited,
-a.darkbar:active {
-    color: #633;
-}
-a.darkbar:hover {
-    color: #663;
-}
 .bulletin {
-    background-color: #EEE;
+    background-color: #FFF;
     color: #555;
     padding: 5px;
     font-size: .7em;
 }
 
+#banner, #footer {
+    color: #4A4A4A;
+    padding: 0;
+    padding-top: 10px;
+    width: 850px;
+    margin: 0px auto;
+}
 #banner {
-    color: white;
-    background-color: #BB5F74;
-    border-bottom: dashed 2px #FFF;
-    padding: 12px;
-    margin: 0;
-    width: 100%;
+    padding-top: 20px;
 }
-#banner .hilite {
-    color: #DDCCCC;
+#footer {
+    padding-bottom: 20px;
 }
-#banner .pager {
+#banner .pager,
+#footer .pager {
     float: right;
+    padding-top: 15px;
     padding-right: 15px;
+    font-size: 11pt;
 }
-.page {
-    display: block;
-    padding: 12px;
-    width: 800px;
+#banner .pagebar,
+#footer .pagebar {
+    font-size: 11pt;
+}
+#container {
+    background: url(i/2006.bookstripe.gif) bottom left repeat-x;
+    width: 850px;
     margin: 0px auto;
     text-align: center;
+    padding: 0;
+    padding-bottom: 4px;
+}
+.page {
+    background: white url(i/2006.bookstripe.gif) top left repeat-x;
+    padding: 12px;
+    padding-right: 0;
+    margin: 0;
+}
+body.expansion #container {
+    background: url(i/2006.pakstripe.png) bottom left repeat-x;
+}
+body.expansion .page {
+    background: white url(i/2006.pakstripe.png) top left repeat-x;
+}
+body.expansion #banner {
+    color: #eee;
+}
+body.expansion #banner a:link,
+body.expansion #banner a:visited,
+body.expansion #banner a:active {
+    color: #cdf;
+}
+body.expansion #banner a:hover {
+    color: #ffc;
+}
+.pageLinks {
+    padding: 8px 5px;
+    text-align: left;
+    font-size: 9pt;
 }
 .content {
     text-align: left;
@@ -249,38 +309,6 @@ a.darkbar:hover {
     margin: 0px;
     line-height: 20px;
     padding: 10px;
-}
-#footer {
-    background-color: #DDDDDD;
-    border-top: dashed 2px #AAA;
-    padding: 12px;
-    width: 100%;
-}
-#footer h3 {
-    color: #666666;
-}
-#footer .hilite {
-    color: #AA8888;
-}
-#footer .pager {
-    float: right;
-    padding-right: 15px;
-}
-
-#pakbanner {
-    color: white;
-    background-color: black;
-    border-bottom: dashed 2px #FFF;
-    padding: 12px;
-    margin: 0;
-    width: 100%;
-}
-#pakbanner .hilite {
-    color: #CCCCDD;
-}
-#pakbanner .pager {
-    float: right;
-    padding-right: 15px;
 }
 
 /* printing */

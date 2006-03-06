@@ -1,16 +1,16 @@
 --- !whytheluckystiff.net,2003/^book
-title: Why's (Poignant) Guide to Ruby
+title: why's (poignant) guide to ruby
 author: why the lucky stiff
 
 terms: >
   bq(#terms). The text of this book and the encompassing web matter are released under the wholy sympathetic 
-  "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/2.0/
+  "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/2.5/
   license, part of the brilliant family of licenses produced
   by the "Creative Commons":http://creativecommons.org/.
 
 
 deed: |
-  Attribution-ShareAlike 2.0
+  Attribution-ShareAlike 2.5
 
   You are free:
 
@@ -32,7 +32,7 @@ deed: |
 
   This is a human-readable summary of the Legal Code (the full license).
 
-image: !^img poignant.guide.png
+image: !^img 2006.cover.jpg
 teaser:
 
   - Read This Paragraph: >
@@ -48,7 +48,7 @@ teaser:
 
   - But Don't Read This One!: >
       _Why's (Poignant) Guide to Ruby_ is released under the 
-      "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/2.0/
+      "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/2.5/
       License.  So, yes, please distribute it and print it and read it
       leisurely in your housecoat.  In fact, there will be a contest at the
       end of the book for Best Housecoat.  It's a coveted award and you should

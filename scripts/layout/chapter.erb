@@ -1,6 +1,6 @@
 <%
-    prevPage = chapter.index > 1 ? "chapter-#{ chapter.index - 1 }.html" : "index.html"
-    nextPage = chapter.index < book.chapters.length ? "chapter-#{ chapter.index + 1 }.html" : "index.html"
+    prevPage = chapter.index > 1 ? "#{ url_pre }-#{ chapter.index - 1 }.html" : "index.html"
+    nextPage = chapter.index < collection.length ? "#{ url_pre }-#{ chapter.index + 1 }.html" : "index.html"
 %>
 <?xml version="1.0" encoding="<%=language.encoding%>"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -11,23 +11,30 @@
     <title><%= book.title.to_html %> :: <%= chapter.index %>. <%= chapter.title.to_html %></title>
     <link rel="stylesheet" type="text/css" href="guide.css" />
 </head>
-<body>
+<body class="<%= body_class %>">
 
 <div id="banner">
    <div class="pager">
-   &lt; <a class="pagebar" href="<%= prevPage %>"><%=language.previous_page%></a> | <a class="pagebar" href="<%= nextPage %>"><%=language.next_page%></a> &gt;
+   <a class="pagebar" href="<%= prevPage %>"><%=language.previous_page%></a> | <a class="pagebar" href="<%= nextPage %>"><%=language.next_page%></a>
    </div>
    <div class="title">
-   <h3><%=language.header_title_emphasis%></h3>
-   &nbsp;<a class="pagebar" href="http://whytheluckystiff.net/"><b>whytheluckystiff.net</b></a> &gt; <a class="pagebar" href="index.html"><%= language.contents %></a>
+   <img src="i/2006.<%= body_class %>title.png" alt="<%= book.title %>" />
    </div>
 </div>
 <div id="container">
 <div class="page">
+    <div class="pageLinks">
+        <a class="pagebar" href="http://whytheluckystiff.net/">whytheluckystiff.net</a> | <a class="pagebar" href="index.html"><%= language.contents %></a>
+    </div>
     <div class="pageTitle">
-        <h3><%= chapter.index %>.</h3>
-        <h1><%= chapter.title.to_html %></h1>
-        <p><img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" alt="[o]" /></p>
+        <% if body_class == "expansion" %>
+            <h3><%= language.expansion_pak_no %> <%= chapter.index %>.</h3>
+            <h1><%= chapter.title.to_html %></h1>
+        <% else %>
+            <h3><%= chapter.index %>.</h3>
+            <h1><%= chapter.title.to_html %></h1>
+            <p><img src="i/chapter.poignant.guide-<%= chapter.index %>.jpg" alt="[o]" /></p>
+        <% end %>
     </div>
     <div class="content">
 
@@ -68,14 +75,6 @@
 
     </div>
 </div>
-</div>
-<div id="footer">
-   <div class="pager">
-   &lt; <a href="<%= prevPage %>"><%=language.previous_page%></a> | <a href="<%= nextPage %>"><%=language.next_page%></a> &gt;
-   </div>
-   <div class="title">
-   <h3><%=language.header_title_emphasis%></h3>
-   </div>
 </div>
 </body>
 </html>
