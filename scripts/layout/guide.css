@@ -21,11 +21,11 @@ h1 {
     font-size: 2.2em;
 }
 #wrapper {
-    z-index: 2;
+    z-index: 10;
 }
 #main h2, .content h2 {
-    border-bottom: solid 1px black;
-    font-size: 1.7em;
+    border-bottom: solid 1px #BBB;
+    font-size: 1.4em;
     line-height: 130%;
 }
 .content h2 {
@@ -90,9 +90,7 @@ pre {
     line-height: 170%;
 }
 #sidepane {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+    float: left;
 	width: 450px;
 	z-index: 20;
 }
@@ -112,23 +110,44 @@ pre {
 	position: absolute;
 	top: 433px;
 	left: 147px;
+    z-index: 2;
 }
-#foxbox {
-	background: url(i/2006.foxline.jpg) bottom left repeat-x;
-	margin: 10px 0px;
-	font-size: 8pt;
+/* set the image to use and establish the lower-right position */
+.foxbox, .foxbox_body, .foxbox_head 
+{ 
+    background: transparent url(i/2006.foxbox.jpg) no-repeat bottom right;
 }
-#foxboxwithin {
-	background: url(i/2006.foxbox.jpg) bottom left no-repeat;
-	padding: 1px 20px;
-	height: 160px;
+.foxbox 
+{ 
+    margin: 0;
+    margin-top: 20px;
 }
-#foxbox h3 {
-    padding-top: 14px;
-	font-size: 14pt;
+/* set the top-right image */
+.foxbox_head
+{ 
+    background-position: top left; 
+    margin-right: -15px; /* pull the right image over on top of border */ 
+    padding-right: 40px; /* right-image-gap + right-inside padding */ 
 }
-#foxbox p {
-	padding-left: 70px;
+/* set the top-left image */ 
+.foxbox_head h3 
+{ 
+    margin: 0; /* reset main site styles*/ 
+    border: 0; /* ditto */ 
+    padding: 10px 0 10px 0px; /* padding-left = image gap + interior padding ... no padding-right */ 
+    height: auto !important; height: 1%; /* IE Holly Hack */ 
+} 
+/* set the lower-left corner image */ 
+.foxbox_body 
+{ 
+    background-position: bottom left; 
+    margin-right: 25px; /* interior-padding right */ 
+    padding: 5px 0 15px 40px; /* mirror .foxbox_head right/left */ 
+} 
+.foxbox_body p {
+    font-size: 9pt;
+    margin: 8px;
+	padding: 0 10px 0 40px;
 	line-height: 120%;
 }
 #cornerkick {
@@ -156,8 +175,7 @@ pre {
     line-height: 170%;
 }
 #main {
-	padding-left: 420px;
-	float: left;
+	margin-left: 420px;
 }
 #main li {
     font-size: 1.2em;
@@ -184,7 +202,7 @@ p#terms {
     padding: 0;
     margin: 0;
     margin-left: 14px;
-    z-index: 3;
+    z-index: 15;
 }
 .sidebar ul {
     margin-top: 0px;
@@ -203,9 +221,11 @@ p#terms {
     font-size: .9em;
 }
 .sidebar h2 {
-    font-size: 1.2em;
-    border-bottom: solid 1px #334465;
-    margin: 5px;
+    color: #555;
+    font-size: 1.0em;
+    border-bottom: solid 4px #CCC;
+    margin: 0;
+    padding: 10px;
 }
 .sidebar p {
     font-size: .9em;
