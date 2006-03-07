@@ -32,7 +32,7 @@ h1 {
     margin: 32px 5px 8px 5px;
 }
 #main h3, .content h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 120%;
 }
 .content h3 {
@@ -91,15 +91,15 @@ pre {
 }
 #sidepane {
     float: left;
-	width: 450px;
+	width: 420px;
 	z-index: 20;
 }
 #bookplate {
 	margin: 0; padding: 0;
 }
 #bookcontents {
-	background: url(i/2006.contents.jpg) top left no-repeat;
-	margin: 0; padding: 45px 120px 40px 20px;
+	background: url(i/2006.contents.jpg) no-repeat;
+	margin: 0; padding: 55px 120px 40px 20px;
     margin-top: -3px;
 	font-size: 9pt;
 }
@@ -117,11 +117,6 @@ pre {
 { 
     background: transparent url(i/2006.foxbox.jpg) no-repeat bottom right;
 }
-.foxbox 
-{ 
-    margin: 0;
-    margin-top: 20px;
-}
 /* set the top-right image */
 .foxbox_head
 { 
@@ -134,7 +129,7 @@ pre {
 { 
     margin: 0; /* reset main site styles*/ 
     border: 0; /* ditto */ 
-    padding: 10px 0 10px 0px; /* padding-left = image gap + interior padding ... no padding-right */ 
+    padding: 10px 0 10px 30px; /* padding-left = image gap + interior padding ... no padding-right */ 
     height: auto !important; height: 1%; /* IE Holly Hack */ 
 } 
 /* set the lower-left corner image */ 
@@ -175,7 +170,8 @@ pre {
     line-height: 170%;
 }
 #main {
-	margin-left: 420px;
+    padding-top: 20px;
+	margin-left: 410px;
 }
 #main li {
     font-size: 1.2em;
