@@ -2013,7 +2013,7 @@ chapters:
         !i/starmonkeycrafts-4.jpg!
  
         
-        Du hast zwei fertig abgestimmte Sternengesichter fertig auf dich wartend.
+        Zwei vorgefertigte Sternengesichter warten bereits auf dich.
 
 
         p=. !i/starmonkeycrafts-5.gif!
@@ -2372,14 +2372,14 @@ chapters:
 
 				
 				Solltest du einmal bestimmte Wörter suchen so kannst du sie herraus suchen mit der
-				*eckige Klammern* Methode.
+				*eckige Klammern*-Methode.
 
 				
 				bq. @code_woerter['Katapult']@ wird dir als Antwort den String @'chucky go-go'@ liefern.
         
 				
 				Stell dir die eckigen Klammern vor als wären sie ein Regalfach in einem großen Lager
-				in dem das Wort liegt und wartet.Der Stellplatz ist mit einem sogenannten _Index_ beschriftet.
+				in dem das Wort liegt und wartet. Der Stellplatz ist mit einem sogenannten _Index_ beschriftet.
 				Wir bitten den Gabelstapler nun nach dem Index zu suchen und den Wert der sich dahinter
 				verbirgt für uns zu holen.
 
@@ -2387,7 +2387,7 @@ chapters:
 				Wenn du noch nie in einem Warenlager gewesen bist kannst du dir das ganze vorstellen
 				als wären es Hanschuhe. Ein Industriearbeiter zieht sich seine schweren Arbeitshandschuhe
 				an und trägt die Gegenstände die du gesucht hast zu dir. Als ob du im Möbelhaus dir einen
-				Zettel mitnimmst vom super Rilly Regal das du schon immer wolltest und am Ende im Lager
+				Zettel mitnimmst vom super "Milly" Regal das du schon immer wolltest und am Ende im Lager
 				dann das Regal für den Zettel bekommst. Wenn du nun noch nie Handschuhe benutzt hast und 
 				noch nie im Möbelhaus warst hast du nun dreißig Sekunden um Handschuhe aufzutreiben bevor 
 				ich weggehe.
@@ -2460,180 +2460,182 @@ chapters:
 				Sie ist erhältlich für Arrays, Hashes, ja sogar Strings.
 				In diesem Beispiel, unser @code_woerter@ Wörterbuch ist in einem Hash gespeichert. Die
 				@each@ Methode wird nun durch *alle Paare des Hashes* durchlaufen.
-        Here, our @code_words@ dictionary is kept in a Hash.  This @each@ method will hurry through
-        *all the pairs of the Hash*, one dangerous word matched with its code word, handing each pair to the @gsub!@ method
-        for the actual replacement.
 
+				
+				In Ruby, @gsub@ ist die Abkürzung für _globale Ersetzung_. Diese Methode wird benutzt zum
+				suchen und ersetzen. Hier wollen wir alle vorkomnisse von gefährlichen Wörtern finden und
+				ersetzen mit ihren sicheren Codewörtern. @gsub@ übergibst du als erstes *das Wort das du
+				suchst* und als zweites *das Wort das an seine Stelle tretten soll*.
 
-        In Ruby, @gsub@ is short for _global substitution_.  The method is used to search and replace.
-        Here, we want to find all the occurences of a dangerous word and replace with its safe
-        code word.  With @gsub@, you provide the *word to find as the first argument*, then the *word
-        to put in its place as the second argument*.
-
-
-        Why aren't we hanging on to the answer from @gsub@?  Doesn't @gsub@ give us an answer back that
-        we should keep?  You'd think the line would read:
-
-
+				
+				Warum merken wir uns die Antwort von @gsub@ nicht? Gibt uns @gsub@ keine Antwort zurück
+				die wir beachten sollten? Man würde denken die Zeile würde sich so lesen:
+				
+				
         <pre>
-         safe_idea = idea.gsub( real, code )
+         sichere_idee = idee.gsub( wirklich, code )
         </pre>
 
+				
+				Ja, mit @gsub@ müssen wir uns die Antwort merken. Wir haben aber eine Variation von @gsub@
+				benutzt die total hyper ist. Beachte die *Ausrufezeichen* beim @gsub!@ innerhalb des @each@
+				Blocks. Das Ausrufezeichen ist ein Zeichen das @gsub!@ ein kleiner Streber ist. Pass auf. @gsub!@
+				wird von selbst losgehen und *direkt in @idee@ die Werte verändern*. Wenn es fertig ist wird
+				@idee@ alle neuen, abgeänderten, Strings enthalten und die alten damit überschrieben haben.
 
-        Yes, with @gsub@ we'd need to hang on to its answer.  We're using a variation of @gsub@ that is
-        totally hyper.  Notice the *exclamation mark* on the @gsub!@ used inside the @each@ block.  The
-        exclamation mark is a sign that @gsub!@ is a bit of a zealot.  See, @gsub!@ will go ahead and
-        *replace the words in @idea@ directly*.  When it's done @idea@ will contain the newly altered string
-        and you won't be able to find the old string.
-
-
-        Call @gsub!@ a *destructive method*.  It makes its changes to the value directly.  Whereas @gsub@
-        will leave the value intact, answering back with a new string which contains the alterations.
-        (Why must @gsub!@ scream when he descends upon his prey?  Merciless assailant!)
-
-
-        h3.  Text Files of a Madman
+				
+				Nenn @gsub!@ eine *destruktive Methode*. Es vollführt die Änderungen direkt, wohingegen @gsub@
+				alles intakt lassen wird und dir eine Kopie übergeben wird, wo die Änderungen durchgeführt wurden.
+				(Warum muss @gsub!@ schreien wenn er herabsteigt zu seiner Beute? Gnadenloser Angreifer!)
 
 
-        Let us now save the encoded idea to a file.
+        h3.  Text-Dateien eines Verrückten
+
+				
+				Lass uns die encodierten Ideen in einer Datei speichern.
 
 
         <pre>
-         # Save the jibberish to a new file
-         print "File encoded.  Please enter a name for this idea: "
-         idea_name = gets.strip
-         File::open( 'idea-' + idea_name + '.txt', 'w' ) do |f|
-           f << idea
+         # Speicher den Wortsalat in eine Datei
+         print "Datei encodiert. Bitte einen Namen für diese Datei angeben:"
+         idee_name = gets.strip
+         File::open( 'idee-' + idee_name + '.txt', 'w' ) do |f|
+           f << idee
          end
         </pre>
 
+				
+				Dises Beispiel fängt damit an dich zu fragen wie du die neue Idee nennen möchtest. Der Name ist
+				benutzt um einen Dateinamen zu erstellen wenn wir eine Datei speichern.
 
-        This section starts by asking you for a name by which the idea can be called.  This name is used
-        to build a file name when we save the idea.
+				
+				Die @strip@ Methode ist für die Strings. Die Methode *entfernt alle leerzeichen sowie leeren Zeilen
+				vom Anfang und Ende eines Strings*. Sie wird auch das _Enter_ Zeichen entfernen das du als letztes 
+				übergeben hast so wie leerzeichen wenn du welche übrig gelassen hast am Ende oder Anfang.
 
+				
+				Nachdem wir den Namen der Idee haben, öffnen wir eine neue, leere Datei. Der Dateiname wird
+				erstellt indem wir mehrere Strings zusammenfügen. Wenn du @'senf-plus-codein'@ eingegeben hast
+				wird unsere Berechnung wie folgt aussehen: @'idee-' + 'senf-plus-codein' + '.txt'@. Ruby wird
+				das ganze zu einem String zusammenpressen. @'idee-senf-plus-codein.txt'@ ist die neue Datei.
 
-        The @strip@ method is for strings.  This method *trims spaces and blank lines* from the *beginning
-        and end* of the string.  This will remove the _Enter_ at the end of the string you typed.
-        But it'll also handle spaces if you accidentally left any.
-
-
-        After we have the idea's name, we open a new, blank text file.  The file name is built by adding
-        strings together.  If you typed in @'mustard-plus-codeine'@, then our math will be: @'idea-' +
-        'mustard-plus-codeine' + '.txt'@.  Ruby presses these into a single string.
-        @'idea-mustard-plus-codeine.txt'@ is the file.
-
-
-        We're using the class method @File::open@ to create the new file.  Up until now, we've used
-        several kernel methods to do our work.  We hand the @print@ method a string and it prints the
-        string on your screen.  One secret about kernel methods like @print@: they are actually *class
-        methods*.
-
-
-        bq. @Kernel::print( "55,000 Starmonkey Salute!" )@
+				
+				Wir benutzen die Klassen-Methode @File::open@ um die neue Datei zu erstellen. Bis jetzt haben
+				wir verschiedene Kernel-Methoden benutzt um unsere Arbeit zu erledigen. Wir übergeben der
+				@print@ Methode einen String und sie gibt ihn aus. Ein Geheimnis über Kernel-Methoden wie
+				@print@: sie sind in wirklichkeit *Klassen-Methoden*.
 
 
-        What does this mean?  Why does it matter?  It means @Kernel@ is the center of Ruby's universe.
-        Wherever you are in your script, @Kernel@ is right beside you.  You don't even need to spell
-        @Kernel@ out for Ruby.  Ruby knows to check @Kernel@.
+        bq. @Kernel::print( "55.000 Sternenaffen Salutieren!" )@
+
+				
+				Was bedeutet das? Wieso sollte es wichtig sein? Es bedeutet das @Kernel@ das Zentrum des Ruby
+				Universums darstellt. Wo immer in deinem Script du dich befindest, @Kernel@ ist immer bei dir.
+				Du musst nicht einmal @Kernel@ aussprechen für Ruby. Ruby weiß das es nach @Kernel@ gucken soll.
+
+				
+				Die meisten Methoden sind spezialisierter als @print@ oder @gets@. Nimm zum Beispiel
+				einmal die @File::open@ Methode. Der erschaffer von Ruby, Matz, hat uns viele
+				verschiedene Methoden gegeben mit welchen wir Dateien lesen, schreiben oder löschen
+				können. Sie sind alle organisiert innerhalb der @File@ Klasse.
+
+				
+				bq. @File::read( 'idee-senf-plus-codein.txt" )@ wird mit dem String antworten
+				den wir darin gespeichert haben.
+
+				
+				bq. @File::rename( "alte_datei.txt", "neue_datei.txt" )@ wird die Datei @alte_datei.txt@ umbenennen.
 
 
-        Most methods are more specialized than @print@ or @gets@.  Take the @File::open@ for
-        example.  The creator of Ruby, Matz, has given us many different methods which which
-        read, rename, or delete files.  They are all organized inside the @File@ class.
+				bq. @File::delete( "neue_datei.txt" )@ wird die Datei auslöschen.
 
-
-        bq. @File::read( "idea-mustard-plus-codeine.txt" )@ will answer back with a string
-        containing all of the text from your idea file.
-
-
-        bq. @File::rename( "old_file.txt", "new_file.txt" )@ will rename @old_file.txt@.
-
-
-        bq. @File::delete( "new_file.txt" )@ will nuke the new file.
-
-
-        These File methods are all *built right into Ruby*.  They are all just stored in a
-        container called the @File@ class.  So, while you can safely call kernel methods
-        without needing to type @Kernel@, Ruby doesn't automatically check the @File@ class.
-        You'll need to give the full method name.
+				
+				Diese Datei Methoden sind *direkt in Ruby eingebaut*. Sie sind alle in einem Container
+				gespeichert, der @File@ Klasse. Während du sicher Kernel-Methoden aufrufen kannst ohne
+				@Kernel@ jedes mal zu schreiben so wird Ruby jedoch nicht auch immer gucken ob du die
+				@File@ Klasse meinst. Du musst den kompletten Namen angeben.
     
 
         <pre>
-         File::open( 'idea-' + idea_name + '.txt', 'w' ) do |f|
-           f << idea
+         File::open( 'idee-' + idee_name + '.txt', 'w' ) do |f|
+           f << idee
          end
         </pre>
 
+				
+				Wir übergeben zwei Argumente an @File::open@. Der erste ist der *Dateiname zum öffnen*. Der
+				zweite ist ein String der unseren *Dateimodus* enthällt. Wir benutzen @'w'@ was bedeutet das
+				eine neue, leere Datei erstellt werden soll. (Andere Möglichkeiten sind: @'r'@ um von der
+				Datei zu lesen oder @'a'@ um neue ans Ende der Datei hinzuzufügen.)
 
-        We pass two arguments into @File::open@.  The first is the *file name to open*.  The second
-        is a string containing our *file mode*.  We use @'w'@, which means to write to a brand-new
-        file.  (Other options are: @'r'@ to read from the file or @'a'@ to add to the end of the
-        file.)
+				
+				Die Datei ist geöffnet zum schreiben und wir bekommen die Datei in der Variable @f@ zurück.
+				Innerhalb des Blocks schreiben wir alles in die Datei. Wenn der Block, mit @end@, geschlossen
+				wird wird auch die Datei wieder geschlossen.
 
-
-        The file is opened for writing and we are handed back the file in variable @f@, which can
-        be seen *sliding down the chute into our block*.  Inside the block, we write to the file.  When
-        the block closes with @end@, our file is closed as well.
-
-
-        Notice we use the *concatenator* @<<@ to write to the file.  We can do this because files have
-        a method called @<<@ just like strings do.
-
-
-        h3. Settle Down, Your Ideas Aren't Trapped
+				
+				Hast du den *Vernküpfer*, @<<@ bemerkt den wir benutzen um alles in die Datei zu schreiben? Wir
+				können dies tun weil die File-Klasse eine @<<@-Methode besitzt.
 
 
-        Here, let's get your ideas back to their original verbage,
-        so you can rumminate over their brilliance.
+        h3. Beruhige Dich, Deine Ideen Sind Nicht Gefangen
+
+				
+				Lass uns deine Ideen zurück bringen zum Ursprung damit
+				du dich an ihrer Brillianz erquicken kannst.
 
 
         <pre>
          require 'wordlist'
 
-         # Print each idea out with the words fixed
-         Dir['idea-*.txt'].each do |file_name|
-           idea = File.read( file_name )
-           code_words.each do |real, code| 
-             idea.gsub!( code, real )
+         # Drucke alle Ideen mit den Wörtern fixiert
+         Dir['idee-*.txt'].each do |datei_name|
+           idee = File.read( datei_name )
+           code_woerter.each do |wirklich, code| 
+             idee.gsub!( code, wirklich )
            end
-           puts idea
+           puts idee
          end
         </pre>
 
+				
+				Inzwischen solltest du vertraut sein mit den Meisten Teilen in diesem Beispiel also werde ich
+				dich nicht mit den banalen Details langweilen. Versuch einmal herauszufinden wie es funktioniert.
 
-        By now, you should be up to snuff with most of this example.  I won't bore you with all of the
-        mundane details.  See if you can figure out how it works on your own.
+				
+				Wir haben eine Interessante Klassen-Methode hier. Die @Dir::[]@ Methode durchsucht ein Verzeichnis
+				(einige mögen sie auch "Ordner" nennen). Genauso wie du es bei den Hashes gesehen hast können die
+				Index Klammern eine Klassen-Methode darstellen. (Fängst du an die glänzende, prachtvolle, Schönheit
+				von Ruby zu erkennen?)
 
+				
+				Wir benutzen also unseren Gabelstapler um die Dateien im Verzeichnis, die mit @'idee-*.txt'@
+				übereinstimmen, zu holen. Die @Dir::[]@ Methode wird den Asterisk (das Sternchen) als Joker
+				benutzen. Im grunde sagen wird, "Vergleiche alles das mit _idee-_ anfängt und mit _.txt_ endet".
+        So we're using the forklift to get those files in the directory which match @'idea-*.txt'@.
+        Der Gabelstapler wird mit lautem quietschen losfahren und mit den gesuchten Dateien zurück
+        kommen.
 
-        We have an interesting class method here, though.  The @Dir::[]@ method searches a directory (some
-        of you may call them "folders").  Just as you've seen with Hashes, the index brackets
-        can be class methods.  (Can you start to see the shiny, glinting gorgeousness of Ruby?)
+				
+				Die *Liste von Dateien* wird geliefert in der Form eines @Arrays@, der Raupe im Ruby Reich, mit
+				einem @String@ für jede Datei. Wenn du neugierig bist und ein wenig herumspielen willst mit
+				@Dir::[]@, versuche dies:
 
+				
+				bq. @p Dir['idee-*.txt']@ wird folgendes ausgeben:
 
-        So we're using the forklift to get those files in the directory which match @'idea-*.txt'@.  The
-        @Dir::[]@ method will use the asterisk as a wildcard.  We're basically saying, "Match anything
-        that starts with _idea-_ and ends with _.txt_."  The forklift shuffles off to the directory
-        and comes back with a list of all matching files.
+				
+				bq. @['idee-senf-plus-codein.txt']@ (_Ein Array von Dateinamen!_)
 
-
-        That *list of files* will come in the form of @Array@ the Caterpillar, with a @String@ for each 
-        file.  If you are curious and want to play with with @Dir::[]@, try this:
-
-
-        bq. @p Dir['idea-*.txt']@ will print:
-
-
-        bq. @['idea-mustard-plus-codeine.txt']@ (_an Array of file names!_)
-
-
-        Yes, the @p@ method works like @print@.  But where @print@ is designed for displaying strings,
-        @p@ will print _anything_.  Check this out. 
+				
+				Die @p@ Methode arbeitet wie @print@. Aber wo @print@ dafür gedacht ist Strings darzustellen
+				wird @p@ _alles_ ausgeben. Sieh dir das an. 
         
+				
+				bq. @p File::methods@ gibt aus:
 
-        bq. @p File::methods@ will print:
-
-
-        bq. @["send", "display", "name", "exist?", "split",@ ... _a whole list of method names!_ @]@ 
+				
+				bq. @["send", "display", "name", "exist?", "split",@ ... _eine ganze Menge von Methodennamen!_ @]@
 
 
 #        h3. Extra Credit: PStore
@@ -2648,373 +2650,390 @@ chapters:
 #        </pre>
 
 
-    - The Miracle of Blocks: >
+    - Das Wunder der Blöcke: >
 
-        !i/blix-2.gif(Flowerboyz?  Heard it before.)!
+        !i/blix-2.gif(Blumenmädchen? Hab ich schon gehört.)!
 
     - !^sidebar
-      Excerpt from The Scarf Eaters: >
+      Exzerpt aus den Schalfressern: >
 
-        (_from Chapter V: A Man in Uniform_.)
+        (_aus Kapitel V: Ein Mann in Uniform_.)
 
+				
+				Im April, die kahlen Lilien kahmen zurück. Sie erstreckten ihre kindlichen Engelsflügel
+				aus und hinein in die große Welt. Sanft, liebkosten ihre Blüten die mürrischen Zaunpfosten
+				bis selbst sie ein wenig lieblicher wirkten.
 
-        In April, the callow lilies came back.  They stretched their baby angel wings out
-        and reached for the world.  Gently, their tendrils caressed the sullen fence posts
-        until even they lilted lovelier.
-
-
-        From her bedroom window, Lara watched the lilies exude their staunch femininity.
-        She slipped the tassels of a fresh, carpathian, embroidered scarf into her mouth and 
-        ate slowly. The long cloth slid down her throat and tickled as it snaked along her
-        esophagus.  She giggled and burped.
-
-
-        Oh, how the flora drew her in.  Looking at flowers went so well with being a teenage girl. 
-        She wanted to paint them, so she opened a new Flash template.  A blank movie this time.
-
-
-        She set her cursor loose in the garden of her movie's viewable area.  Vector white lines
-        below shorter vector yellow lines.  She selected the white lines and grouped them together.
-        She even moved them to a new layer entitled "Cry, Baby Angel, Cry."  Then she
-        converted them into a graphic object and moved them to the library.
-
-
-        She felt a warm chill as she moved the long, white petals to her movie's library.  It
-        felt so official.  _I choose you.  I name you.  Dwell in the comfort of my palace forevermore._
         
+        Aus ihrem Schlafzimmerfenster schaute Lara zu wie die Lilien ihren unerschütterlichen
+        Duft der Weiblichkeit verstreuten. Sie schlüpfte die Fäden eines frischen, bestickten, 
+        karpatischen Schal in ihren Mund und aß ihn langsam. Das lange Stück Kleidung schlüpfte
+        immer tiefer ihren Rachen hinunter und kitzelte sie wie eine Schlange die sich entlang
+        ihrer Speiseröhre schlängelte. Sie kicherte und rölpste.
 
-        Heh.  She laughed.  Colorado Springs was hardly a "palace."
         
+        Oh, wie die Pflanzen sie anzogen. Die Flora betrachten passte so vorzüglich überein mit dem
+        dasein eines jugendlichen Mädchens. Sie wollte sie malen, also öffnete sie ein Flash Template.
+        Ein lehrer Film.
 
-        Since they had moved, Dad had only been home once.  He had barged through the front door in
-        full uniform and had given quite a start to both Lara and her mother.  Her mother had even dropped
-        a head of lettuce -- which head she had just finished washing -- in a pitcher of Lick-M-Aid.  
         
+        Sie ließ ihren Cursor loß schweifen in dem Garten des sichtbaren Berreichs ihres Films.
+        Weiße Vektorlinien unter kürzeren gelben Vektorlinien. Sie wählte die weißen Linien und grupierte
+        sie zusammen. Sie band sie sogar zusammen in neuen Ebene genannt "Weine, Süßer Engel, weine." 
+        Dann konvertierte sie diese zu einem Grafikobjekt und speicherte sie in der Bibliothek ab.
 
-        The pitcher was just wide enough for the lettuce and it lodged in there pretty good.
-        Dad came over and yanked at the moist head for sometime until declaring it FUBAR, in a
-        voice both bemused and then crestfallen.  He tossed the clotted spout in the trash bin.
+        
+        Sie fühlte eine warme Brise als sie die langen, weißen Blütenblätter in die Bibliothek ihres Films
+        verschob. Es fühlte sich so offiziell an. _Ich erwähle dich. Ich benenne dich. Schwelge in dem
+        Komfort meines Palastes für immermehr._
+        
+        
+        Hah. Sie lachte. Colorado Springs war nur schwerlich ein "Palast".
+        
+        
+        Seitdem sie umgezogen waren, war Vater nur einmal zuhause gewesen. Er war in voller Uniform durch
+        die Tür gestürmt und so Lara und ihrer Mutter einen ziemlichen Anfang beschert. Ihre Mutter ließ
+        sogar einen Salatkopf fallen -- den sie gerade erst fertig gewaschen hatte -- in einen Eimer von
+        Meister Propper.
+        
+        
+        Der Eimer war gerade weit genug für den Salatkopf und er plumpste hinein, wie angegossen.
+        Vater kam hinüber und zog über den feuchten Kopf her für eine ganz schöne Zeit bis er alles 
+        als FUBAR (Am Arsch und nicht zu reparieren, Anm. d. Ü.) deklarierte, in einer zugleich 
+        belustigten und betrübten Stimme. Er warf den verstopften Eimer in die Mülltonne.
 
+        
+        Es war später an diesem Tag, als Laras Mutter realisierte das sie den Kopf ganz einfach mit
+        einem elektrischen Messer hätte teilen können. Vater lachte und klatschte die Hand gegen seine
+        Stirn. Er stand dann auf und klatschte gegen Laras Stirn und die ihrer Mutter ebenfalls, liebevoll.
 
-        It was only later that day that Lara's mother realized that she could have simply halved the
-        lettuce with an electric knife.  Dad laughed and slapped his forehead.  He then went
-        around and slapped Lara's forehead, and her mother's too, affectionately.
+        
+        "Wir haben einfach nicht nachgedacht, haben wir?" war was er sagte. "Und wer wagt es uns zu rügen?
+        Wir sind eine ganze Familie und wir sollten nichts tun müssen wo wir nun endlich wieder vereint sind."
 
-
-        "We just weren't thinking, were we?" is what he said.  "And who dares blame us?  We're
-        a real family today.  And we shouldn't have to do anything else on the day we got
-        our family back."
-
-
-        Lara's smiled reflected across the glass of her monitor.  She chose the text tool and
-        in 42 point serif typed: "Dad."  She created a path for it and let it tween off the
-        right side of the screen.  She cried long after it was gone.
+        
+        Laras lachen reflektierte an dem ihr gegenüberliegenden Bildschirm. Sie wählte die 
+        Textbearbeitungsleiste und in ihr Serif in Schriftgröße 42 aus und schrieb: "Vater."
+        Sie erstellte einen Pfad für es und ließ es zur rechten Seite des Bildes verschwinden. 
+        Sie weinte noch lange nachdem es verschwunden war.
 
     - >
-        Since you and I are becoming closer friends as we share this time together, I should
-        probably let you in on a bit of the history going on here.  It's a good time for a break
-        I say.
-
-
-        First, you should know that Blix is my cat.  My second pet to Bigelow.
-        Granted, we hardly see each other anymore.  He's completely self-sufficient.
-        I'm not exactly sure where he's living these days, but he no longer lives in the antechamber
-        to my quarters.  He emptied his savings account about seven months ago.
-
-
-        He does have a set of keys for the house and the Seville.  Should he ever
-        find himself stranded, I will gladly step away from our differences and entertain his
-        antics around the house again.
-
-
-        Make no mistake.  I miss having him around.  Can't imagine he misses my company, but
-        I miss his.
-
-
-        h3. A Siren and A Prayer
-
-
-        I first saw Blix on television when I was a boy.  He had a starring role on a very gritty police drama
-        called _A Siren and A Prayer_.  The show was about a god-fearing police squad that did
-        their jobs, did them well, and saw their share of miracles out on the beat.  I mean
-        the officers on this show were _great_ guys, very religious, practically clergy.  But, 
-        you know, even clergymen don't have the good sense to kill a guy after he's gone too far.
-        These guys knew where to draw that line.  They walked that line every day.
-
-
-        So, it was a pretty bloody show, but they always had a good moral at the end.  Most times
-        the moral was something along the lines of, "Wow, we got out of that one quick."  But there's
-        serious camaraderie in a statement like that.
+        Nachdem du und ich so gute Freunde werden da wir diese Zeit miteinander verbringen, sollte
+        ich dir vermutlich ein wenig Vergangenheit beibringen. Es ist ein guter Zeitpunkt für eine
+        Pause, denke ich.
 
         
-        The show basically revolved around this one officer.  "Mad" Dick Robinson.  People called
-        him Mad because he was basically insane.  I can't remember if he was actually clinically
-        insane, but people were always questioning his decisions.  Mad often blew his top and chewed
-        out some of the other officers, most of whom had unquestionable moral character.  But we
-        all know it's a tough world, the stakes are high out there, and everyone who watched the
-        show held Mad in great regard.  I think everyone on the squad grew quite a bit as people,
-        thanks to Mad's passion.
-
-
-        The officers couldn't do it all themselves though.  In every single episode, they plead with a
-        greater force for assistance.  And, in every single episode, they got their tips from a cat
-        named Terry (played by my cat Blix.)  He was just a kitten at the time and, as a young boy
-        tuning into _A Siren and A Prayer_, I found myself longing for my own crime-sniffing cat.
-        Terry took these guys down the subway tunnels, through
-        the rotting stench of abandoned marinas, into backdoors of tall, industrial smokestacks.  
-
-
-        Sometimes he was all over an episode, darting in and out, preparing traps and directing traffic.
-        But other times you wouldn't see him the whole episode.  Then you'd rewind through the whole show
-        and look and look and look.  You'd give up.  He can't be in that episode.  
-
-
-        Still, you can't bear
-        to let it go, so you go comb through the whole episode with the jog on your remote, combing, pouring
-        over each scene.  And there he is.  Way up behind the floodlight that was turned up too high.  The
-        one that left Mad with permanent eye damage.  Why?  Why burn out the retinas of your own colleague,
-        Terry?
-
-
-        But the question never got answered because the series was cancelled.  They started to do special
-        effects with the cat and it all fell apart.  In the last episode of the show, there is a moment where
-        Terry is trapped at the top of a crane, about to fall into the searing slag in the furnace of an
-        iron smelt.  He looks back.  No going back.  He looks down.  Paws over eyes (_no joke!_), he
-        leaps from the crane and, mid-flight, snags a rope and swings to safety, coming down on a soft antelope
-        hide that one of the workers had presumably been tanning that afternoon.
-
-
-        People switched off the television set the very moment the scene aired.  They tried changing the name.
-        First it was _God Gave Us a Squad_.  _Kiss of Pain_.  Then, _Kiss of Pain in Maine_, since the
-        entire precinct ended up relocating there.  But the magic was gone.  I went back to summer school that year
-        to make up some classes and all the kids had pretty much moved on to football pencils.
+        Erstens, du solltest wissen das Blix meine Katze ist. Mein zweites Haustier heißt Bigelow.
+        Zugegeben, wir sehen uns nicht mehr oft. Er ist völlig selbsterhaltend. Ich bin mir nicht
+        genau darüber im klaren wo er in diesen Tagen haust, aber er lebt nicht länger im Vorzimmer 
+        meines Quartiers. Er hob, bereits vor ungefähr sieben Monaten, seine Ersparnisse ab.
 
         
-        h3. Blocks
+        Er hat Schlüssel für das Haus und den Wagen. Sollte er sich jemals gestranded finden, ich 
+        werde glücklich zurücktretten von unseren Streitigkeiten und während er wieder im Haus 
+        umherstreift seine kuriositäten unterhalten.
+
+        
+        Mach keinen Fehler. Ich vermisse es ihn hier herumlaufen zu haben. Ich kann mir nicht vorstellen
+        das er meine Begleitung vermisst, jedoch vermisse ich seine.
 
 
-        A couple years ago, I started teaching Blix about Ruby.  When we got to this part in his lessons,
-        the part that covers blocks, he said to me, "Blocks remind me of Mad Dick Robinson."
+        h3. Eine Sirene und ein Gebet
 
+        
+        Ich sah Blix das erste mal im Fernsehen als ich noch ein Junge war. Er hatte eine Hauptrolle in
+        einem sehr düsteren Polizei Drama genannt _Eine Sirene und ein Gebet_. Die Sendung war über eine
+        gottesfürchtige Sondereinheit der Polizei die ihren Auftrag erledigte, ihn gut erledigte und ihren 
+        Teil an Wundern draussen erlebte. Ich meine die Jungs in dieser Sendung waren _fabelhaft_, sehr 
+        religiös, fast Mönche. Aber, du weist es wohl auch, selbst Mönche haben nicht auch den Wunsch jemanden
+        zur Strecke zu bringen wenn er zu weit gegangen ist. Diese Jungs wussten wo man die Grenze zieht. Sie
+        gingen sie jeden Tag.
 
-        "Oh?"  I hadn't heard that name in awhile.  "I can't see how that could be."
+        
+        Also, es war eine ziemlich blutige Sendung, aber sie hatte immer ihre gute Moral zum Schluss.
+        Die meiste Zeit lief diese Moral entlang den Linien von "Hui, gerade noch geschaft." Aber es 
+        liegt ernsthafte Kameradschaft in einer Aussage wie dieser.
 
+        
+        Die Sendung spielte sich hauptsächlich um diesen einen Officer. "Mad" Dick Robinson. Leute
+        nannten ihn Mad weil er eigentlich verrückt war. Ich kann mich nicht errinern ob er wirklich
+        klinisch verrückt war, aber Leute haben ihn immer hinterfragt. Mad ist oft die Hutschnur
+        gerissen, worauf hin er ein paar der anderen Officers zusammengestaucht hat, von dehnen die 
+        meisten ohne Frage moralisch sichere Charaktere waren. Aber wir alle wissen, es ist eine harte
+        Welt dort draussen, die Risiken sind hoch und jeder der die Sendung sah hielt Mad in allen ehren.
+        Ich denke jeder in der Abteilung wuchs ein wenig als Mensch, durch Mads Leidenschaft.
 
-        "Well, you say blocks can be difficult to understand."
+        
+        Die Officers konnten jedoch nicht alles alleine erledigen. In jeder Episode, baten sie mit größerer
+        Inbrunst um Verstärkung. Und, in jeder einzelnen Episoe, erhielten sie ihre Tips von einer Katze
+        namens Terry (gespielt von meiner Katze Blix). Er war nur ein kätzchen zu der Zeit und, als ein
+        kleiner junge der _Eine Sirene und ein Gebet_ einschaltet, fand ich mich selbst nach einer eigenen
+        verbrechenaufspührenden Katze wünschend. Terry nahm diese Kerle in die U-Bahn Tunnel, durch den
+        verfaulten Gestank von verlassenen Abwäsern, in die Hintertür von großen, industriellen Kaminen.
 
+        
+        Manchmal war das alles über einer Episoe, hinein und hinaus zielend, Fallen vorbereitend und Verkehr
+        umleitend. Zu anderen Zeiten sah man ihn in einer ganzen Episode nicht ein einzige mal. Man spulte
+        zurück durch die ganze Sendung und suchte und suchte. Man gab auf. Er konnte nicht drin sein.
 
-        "They're not difficult," I said.  "A *block* is just *code that's grouped together*."
+        
+        Dennoch, du konntest es einfach nicht loslassen, du gingst in Zeitlupe durch die Episode, jede Szene
+        prüfend, ob er nicht doch irgendwo zu sehen war. Ah, dort ist er. Hinter den Flutlichtern die viel zu
+        hell waren. Die die Mad mit einem permanenten Augenschaden zurück ließen. Wieso? Wieso solltest du die
+        Retina eines Kollegen ausbrennen, Terry?
 
+        
+        Aber die Frage wurde niemals beantwortet, da die Serie abgesetzt wurde. Sie begannen spezial Effekte
+        mit der Katze zu probieren und alles viel auseinander. In der letzten Episode der Sendung, ist ein
+        Moment in dem terry gefangen ist auf einem Kran, kurz davor den in mit zähflüssigem Eisen gefüllten Ofen
+        zu fallen. Er sieht zurück. Er geht nicht zurück. Er sieht hienunter. Pfoten über die Augen 
+        (_kein Witz!_), springt er vom Kran und, in der mitte des Fluges, schnapt sich ein Seil und schwingt
+        in Sicherheit, wo er in einem Haufen von weichen Antilopen-Häuten landet die dort vermutlich
+        von einem Arbeiter zum trocknen hintgelegt wurden.
 
-        "And Mad was just an officer, sworn to uphold his duty," he said.  "But he was a real miracle to
-        watch out in the field.  Now, this first example you've shown me..."  He pointed to an
-        example I'd written down for him.
+        
+        Die Leute schalteten Reihenweise ab, in dem Moment in dem die Szene ausgestrahlt wurde. Sie versuchten den
+        Namen zu ändern. Erst war es _Gott sante uns eine Einheit_. _Kuss des Schmerzens_. Dann, 
+        _Kuss des Scherzens in Maine_, nachdem die gesamten Dreharbeiten dorthin verlegt wurden. Die Magie
+        war jedoch verschwunden. Ich nahm ein paar Kurzse zur Nachhilfe im Sommer um versäumtes nachzuholen und
+        alle Kinder hatten nun Stifte und Rücksäcke mit Fußballmotiv drauf.
+
+        
+        h3. Blöcke
+
+        
+        Vor ein paar Jahren, fing ich gerade an Blix in Ruby zu unterrichten. Als wir zu dem Teil kamen
+        der Blöcke beschrieb, sagte er zu mir: "Blöcke errinern mich an 'Mad' Dick Robinson."
+
+        
+        "Oh?" Ich habe diesen Namen seit einer Weile nicht mehr gehört. "Ich kann nicht sehen wie das sein soll."
+
+        
+        "Nun, du sagst Blöcke sind schwierig zu verstehen."
+
+        
+        "Sie sind nicht schwierig", sagte ich. "Ein *Block* ist nur *Code der grupiert wurde*."
+
+        
+        "Und Mad war nur ein Officer, verschworen seine Pflicht zu erfüllen", sagte er.  "Aber er war ein
+        wirkliches Wunder zu beobachten bei der Arbeit. Nun, dieses erste Beispiel das du mir gezeigt hast..."  
+        Er zeigte zu einem Beispiel das ich aufgeschrieben hatte.
 
         
         <pre>
-         kitty_toys =
-           [:shape => 'sock', :fabric => 'cashmere'] +
-           [:shape => 'mouse', :fabric => 'calico'] +
-           [:shape => 'eggroll', :fabric => 'chenille']
-         kitty_toys.sort_by { |toy| toy[:fabric] }
+         katzen_spielzeuge =
+           [:form => 'socke', :material => 'kaschmir'] +
+           [:form => 'maus', :material => 'kattun'] +
+           [:form => 'fruehlingsrolle', 'garn']
+         katzen_spielzeuge.sort_by { |spielzeug| spielzeug[:material] }
         </pre>
 
-
-        "This is a small miracle," he said. "I can't deny its beauty.  Look, there are my kitty toys, laid
-        out with their characteristics.  Below them, the block, sorting them by fabric."
-
-
-        "I apologize if your list of toys looks a bit tricky," I said.  Like you, he had learned about the
-        Array, the caterpillar stapled into the code, with square brackets on each side
-        and each item separated by commas.  (Ah, here is one: @['sock', 'mouse', 'eggroll']@.) 
-        He had also been taught the Hash, which is like a dictionary, with curly braces on each end
-        which look like small, open books.  Commas in the Hash between each pair.  Each word
-        in the dictionary matched up with its definition by an arrow.  (Be beholden: @{'blix' => 'cat',
-        'why' => 'human'}@.)
         
+        "Das ist ein kleines Wunder", sagte er. "Ich kann seine Schönheit nicht anzweifeln. Sieh, dort sind
+        meine Spielzeuge, aufgeführt mit ihren Charakteristiken. Darunter, im Block, werden sie sortiert nach
+        dem Material aus dem sie bestehen.
 
-        "Yes, vexing," he said.  "It has square brackets like it's an Array, but with the arrows like it's a Hash.
-        I don't think you're going to get away with that."
+        
+        "Ich entschuldige mich wenn deine Liste von Spielzeugen ein wenig kompliziert wirkt", sagte ich.
+        Wie du, er hatte gelernt was ein Array ist, eine Raupe festgetackert in den Code, mit eckigen Klammern
+        auf jeder Seite und jeder Eigenschaft getrennt von einem Komma. (Hier ist einer: 
+        @['socke', 'maus', 'frühlingsrolle']@.) Im wurde auch beigebracht was ein Hash ist, welcher wie ein
+        Wörterbuch, mit gekräuselten Klammern auf jeder Seite welche aussagen wie ein kleines, geöffnetes Buch.
+        Kommas im Hash zwischen allen Paaren. Jedes Wort im Wörterbuch verband sich mit seiner Definition mit
+        einem Pfeil. (Gib Obacht: @{'blix' => 'katze', 'why' => 'mensch'}@.)
+        
+        
+        "Ja, verlockend", sagte er. "Es hat eckige Klammern wie ein Array, mit den Pfeilen jedoch wirkt es wie
+        ein Hash. Ich denke nicht das du dich damit davonstehlen kannst."
 
+        "Es wirkt ein wenig subversiv, nicht wahr?" sagte ich, ihn neckend. "Ich habe die Liste mit deinen
+        Spielzeugen in einem Mix der beiden vollbracht. Ich benutze eine Abkürzung. Sie funktioniert wie folgt:
+        *Wenn du die Pfeile innerhalb eines Arrays benutzt, endest du mit einem Hash innerhalb eines Arrays.*"
 
-        "It does seem a bit subversive, doesn't it?"  I said, tease-nudging him with a spoon.  "I've done your kitty toy list
-        in a mix of the two.  I'm using a shortcut.  Which is: *If you use arrows inside of an Array, 
-        you'll end up with a Hash inside of that Array.*"
+        
+        "oh, ich sehe", sagte er. "Du hast sie gekreuzt. Wie gewitzt!"
 
-
-        "Oh, I see," he said.  "You criss-crossed 'em.  How neat!"
-
-
-        "Yes, yes, you're on it," I said.  He was also very good with a protractor.  "I have three Arrays,
-        each with a Hash inside.  Notice the plus signs?  I'm adding them into one big Array.  Here's
-        another way of writing it..."  I jotted down.
+        
+        "Ja, Ja, du bist auf dem richtigen Weg", sagte ich. Er war auch gut mit dem Winkelmesser. "Ich habe
+        drei Arrays, jeder mit einem Hash innern drin. Siehst du die Plus-Zeichen? Ich addiere sie zu einem
+        großen Array. Hier ist eine andere Art es zu schreiben..." Ich kritzelte es auf ein Blatt Papier.
 
 
         <pre>
-         kitty_toys = [
-           {:shape => 'sock', :fabric => 'cashmere'},
-           {:shape => 'mouse', :fabric => 'calico'},
-           {:shape => 'eggroll', :fabric => 'chenille'}
+         katzen_spielzeuge = [
+           {:form => 'socke', :material => 'kaschmir'},
+           {:form => 'maus', :material => 'kattun'},
+           {:form => 'fruehlingsrolle', :material => 'garn'}
          ]
         </pre>
 
-
-        One Array, which acts as our list of chew toys.  Three Hashes in the Array to describe each toy.
-
-
-        h3. Sorting and Iterating to Save Lives
+        
+        Ein Array, welches sich verhält wie eine Liste unserer Spielzeuge. Die drei Hashes innerhalb des
+        Arrays sind die Spielzeuge.
 
 
-        "Let's sort your toys by shape now," I said.  "Then, we'll print them out in that order."
+        h3. Suchen und wiederholen um leben zu retten
+
+        
+        "Lass uns die Liste deine Spielzeuge nun nach Form ordnen", sagte ich. "Dann, werden wir
+        sie ausgeben in der Reihenfolge."
 
 
         <pre>
-         kitty_toys.sort_by { |toy| toy[:shape] }.each do |toy|
-           puts "Blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+         katzen_spielzeuge.sort_by { |spielzeug| spielzeug[:form] }.each do |spielzeug|
+           puts "Blix hat ein #{ spielzeug[:form] } gemacht aus #{ spielzeug[:material] }"
          end
         </pre>
 
+        
+        "Wie funktioniert @sort_by@?", fragte Blix. "Ich kann sehen das es eine Methode ist die du mit
+        Arrays benutzen kannst. Weil @katzen_spielzeuge@ ein Array ist. Aber was ist @spielzeug@ [sic]?"
 
-        "How does @sort_by@ work?" asked Blix.  "I can tell it's a method you can use with Arrays.  Because
-        @kitty_toys@ is an Array.  But what is @toy@?"
+        
+        "Ok, @spielzeug@ ist ein *Block-Argument*", sagte ich. "Erriner dich: Die eckigen Klammern auf jeder
+        Seite von @spielzeug@ machen es zu einer *Röhre*."
 
+        
+        "Sicherlich, aber es sieht so aus als ob du es benutzen würdest wie einen Hash. Innerhalb des Blocks
+        hast du @spielzeug[:form]@. Das sieht aus wie ein Hash."
 
-        "Okay, @toy@ is a *block argument*," I said.  "Remember: the skinny pipes on each side of @toy@ make it
-        a *chute*."
+        
+        "Die @sort_by@ Methode ist ein *Durchläufer*, Blix. Es *durchläuft*, eine *Liste
+        von Dingen*. Du errinerst dich an die Episode als Mad..."
 
+        
+        "Episode?", sagte er. Ja, er verstand das Konzept eines Fernsehdramas einfach nicht. Ich versuchte
+        es ihm zu erklären.
 
-        "Sure, but it looks like you're using it like a Hash.  Inside the block you have @toy[:shape]@.
-        That looks like a Hash."
+        
+        "Oder, ja, errinerst du dich an den _Augenzeugenbericht_ den wir uns ansahen, wo Mad versuchte den
+        durchgedrehten Kandidaten des Buchstabierwettbewerbs vom Sims der Universitätsbücherei herunter zu 
+        bringen?"
 
+        
+        "Ich erriner mich besser daran als du, weil ich ein ferngesteuertes Flugzeug flog." Jap, es war
+        mal wieder eine dieser Episoden.
 
-        "The @sort_by@ method is an *iterator*, Blix.  It *iterates*, or *cycles*, through *a list of things*.  You
-        remember that episode when Mad..." 
-
-
-        "Episode?" he said.  Yeah, he can't understand the concept of TV dramas.  
-        Yeah, I've tried explaining.
-
-
-        "Or, yeah, remember that one _eyewitness account_ we watched where Mad was trying to talk
-        down that crazy spelling bee contestant from the ledge of an college library?" 
-
-
-        "I remember it better than you because I was riding in a remote control plane."  Yep, it was
-        one of those episodes.
-
-
-        "Do you remember how Mad got the guy to come down?" I asked.
-
-
-        "People in spelling bees love letters," said Blix.  "So what Mad did was a genius move on his part.
-        He started with the letter A and gave reasons, for all the letters of the alphabet, why the guy
-        should walk back down the building and be safe on the ground."
-
-
-        "'A is for the Architecture of buildings like this,'" I said, in a gruff Mad voice.
-        "'Which give us hope in a crumbling world.'"
-
-
-        "'B is for Big Guys, like your friend Mad the Cop,'" said Blix.  "'Guys who help people all the time
-        and don't know how to spell too great, but still help guys who spell really great.'"
+        
+        "Errinerst du dich wie Mad versucht hat den Typen zu beruhigen?", fragte ich.
         
         
-        "See, he went through all the letters, one at a time.  He was _iterating_ through them." _It Err Ate Ing._
+        "Leute in Buchstabierwettbewerben lieben Buchstaben.", sagte Blix. "Deswegen war er so genial
+        was Mad gemacht hat. Er hat anfegangen mit dem Buchstaben A, Gründe zu nennen, für alle Buchstaben
+        des Alphabets, warum der Typ vom Sims runter und in Sicherheit kommen sollte."
 
+        
+        "'A ist für die Architektur von Gebäuden die ich mag'", sagte ich, in einer tiefen Mad Stimme.
+        "'Welche uns Hoffnung geben in einer bröckelnden Welt.'"
 
-        "But the guy jumped anyway, Why.  He jumped off on letter Q or something."
-
-
-        "'Q is for Quiet Moments that help us calm down and think about all of life's little pleasures,
-        so we don't get all uptight and starting goofing around on tiptoes at the very edge of a big, bad building.'"
-
-
-        "And then he jumped," said Blix.  He shook his head.  "You can't blame Mad.  He did his best."
+        
+        "'B ist für die großen Typen, wie deinen Freund Mad den Polizisten'", sagte Blix. "'Leute die immer
+        anderen helfen und sich nicht zu genau mit buchstabieren auskennen, aber dennoch den Leuten helfen
+        die es tun.'"
         
         
-        "He had a big heart, that's for sure," I said, patting Blix on the shoulder.
+        "Sieh, er ging durch alle Buchstaben, einen zur Zeit. Er _durchlief_ sie.
+
+        
+        "Aber der Typ ist dennoch gesprungen, wieso bloss. Er sprang beim Buchstaben R oder so."
+
+        
+        "'R ist für die ruhigen Momente die uns helfen sich zu beruhigen und über die schönen Dinge des
+        Lebens nachzudenken, so das wir nicht völlig hochgestochen anfangen auf den Zehenspitzen am Rande von
+        großen Gebäuden rumzulaufen.'"
+
+        
+        "Und dann sprang er", sagte Blix. Er schüttelte seinen Kopf. "Du kannst es Mad nicht vorwerfen.
+        Er tat sein Bestes."
+        
+        
+        "Er hatte ein großes Herz, das ist mal sicher", sagte ich, Blix auf die Schulter klopfend.
 
 
         <pre>
-         kitty_toys.sort_by { |toy| toy[:shape] }.each do |toy|
-           puts "Blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+         katzen_spielzeuge.sort_by { |spielzeug| spielzeug[:form] }.each do |spielzeug|
+           puts "Blix hat ein #{ spielzeug[:form] } gemacht aus #{ spielzeug[:material] }"
+        end
          end
         </pre>
 
-
-        "As for your @sort_by@, it *starts at the top* of the list and *goes through each item*, one at a time.
-        So @toy@ is one of those items.  With each item, @sort_by@ stops and *slides that item down the
-        chute*, under the @toy@ name, and let's you figure out what to do with it."
+        
+        "Nun zu unserem @sort_by@, es *fängt am Anfang an* der Liste und *geht durch jedes einzelne Ding*, eines
+        zur Zeit. @spielzeug@ ist eins diieser Dinge. Bei jeder Zeiler, @sort_by@ bleibt stehen und stopft es
+        *die Röhre hinunter*, unter dem Namen @spielzeug@, und lässt dich damit tun was du möchtest."
  
+        
+        "Ok, also @spielzeug@ ist nacheinander einmal jedes der Spielzeuge das ich habe."
 
-        "Okay, so @toy@ takes turns being each of the different toys I have."
-
-
-        "That's right," I said.  "You know how I've really been harping on _using the answers that methods give
-        you_?  Here, we're simply looking up the toy's shape inside the block.  The block then answers to @sort_by@
-        with the shape string, such as @"mouse"@ or @"sock"@.  Once it's done cycling through the whole list, @sort_by@
-        will have alphabetically compared each of the shape strings and will give back a new sorted Array."
-
-
-        h3.  An Unfinished Lesson
+        
+        "Das ist richtig", sagte ich. "Du weißt doch sicher noch wie ich immer festhalte _an den Antworten 
+        die uns Methoden zurückgeben_? Hier, prüfen wir einfach die Form der Spielzeuge nach. Der Block meldet dann
+        weiter an @sort_by@ mit dem Form String, z.B. @"maus"@ oder @"socke"@. Sobald es fertig ist alle Elemente
+        zu durchlaufen in der Liste, wird @sort_by@ alle alphabetisch nach Form sortiert haben und als neues 
+        Array zurück geben."
 
 
-        "That's good enough for today," said Blix.  "Can I have a fresh saucer of milk, please?"
+        h3.  Eine unfertige Lektion
+
+        
+        "Das ist genug für Heute", sagte Blix. "Kann ich ein frischen Napf Milch haben, bitte?"
 
 
-        I filled his saucer to the brim and he guzzled from it for some time while I took a poker and
-        jabbed at coals in the fireplace.  My mind wandered and I couldn't help but think further of
-        blocks.  I wondered what I would teach Blix next.
+        Ich füllte seinen Napf bis zum Rand und er fing zu schlecken, während ich ein wenig Kohle in die
+        Feuerstelle pflügte. Mein Geist wanderte umher und ich konnte mir nicht helfen weiter an und über
+        die Blöcke nachzudenken. Ich wunderte mich was ich Blix als nächstes beibringen könnte.
 
-
-        I probably would have taught him about @next@.  When you are iterating through a list, you
-        may use @next@ to *skip on to the next item*.  Here we're counting toys that have a non-eggroll
-        shape by skipping those that do with @next@.
-
-
-        <pre>
-         non_eggroll = 0
-         kitty_toys.each do |toy|
-           next if toy[:shape] == 'eggroll'
-           non_eggroll = non_eggroll + 1
-         end
-        </pre>
-
-
-        I could also have taught him about @break@, which *kicks you out of an iterating loop*.
-        In the code below, we'll print out (with @p@) each of the toy Hashes until we hit
-        the toy whose fabric is chenille.  The @break@ will cause the @each@ to abruptly end.
+        
+        Ich würde ihm warscheinlich als nächtes über @next@ berichten. Wenn du eine Liste durchläufts, 
+        kannst du @next@ benutzen um das Element was dir gerade weitergegeben wurde *zu überspringen*.
+        Hier zählen wir die Spielzeuge die nicht wie eine Frühlingsrolle geformt sind indem wir diese
+        mittels @next@ überspringen@.
 
 
         <pre>
-         kitty_toys.each do |toy|
-           break if toy[:fabric] == 'chenille'
-           p toy
+         nicht_fruehlingsrollig = 0
+         katzen_spielzeuge.each do |spielzeug|
+           next if spielzeug[:form] == 'fruehlingsrolle'
+           nicht_fruehlingsrollig = nicht_fruehlingsrollig + 1
          end
         </pre>
 
-
-        I never got to teach him such things.  I continued poking away at a particularly stubborn coal
-        which was caught in the iron curtain of the fireplace and threatened to drop on my antelope
-        skin rug.  
-
-
-        As I hacked away ferociously at the black stone, Blix slipped away, presumably on
-        the bus bound for Wixl, the very bustling metropolis of the animal economies.  Who knows, he may
-        have first stopped in Ambrose or Riathna or any of the other villages along the way.  My
-        instinct say that Wixl was his definitely his final stop. 
+        
+        Ich könnte ihm über @break@ erzählen, welches *dich aus einem Durchlauf heraus wirft*.
+        Im Code hierunter, geben wir (mit @p@) jeden der Hashes in der Spielzeugliste aus
+        bis wir zu einem Spielzeug kommen das aus Kattun gemacht wurde. Das @break@ wird dafür
+        sorge das das @each@ abrupt enden wird.
 
 
-        Without any student to instruct and coax along, I found myself quite lonely, holed up in
-        the estate.  In the stillness of the dead corridors, I began to sketch out a biography in the 
-        form of this guide.
+        <pre>
+         katzen_spielzeuge.each do |spielzeug|
+           break if spielzeug[:material] == 'kattun'
+           p spielzeug
+         end
+        </pre>
+
+        
+        Ich kam niemals so weit ihm diese Dinge beizubringen. Ich arbeitete weiter daran Kohle in den
+        Ofen zu hiefen und erwischte ein besonders wiederspenstiges Stück das sich im Eisengitter des
+        Ofens verfangen hatte und drohte auf meinen Teppich aus Antilopenfell zu fallen.
+
+        
+        Während ich wie eine furie auf den schwarzen Stein einhämmerte, schlich sich Blix davon, 
+        warscheinlich im Bux richtung Wixl, die Hauptstadt der tierischen Ökonomie. Wer weiß, er
+        mag erst in Ambrosia oder Riathna oder sonst einem der Dörfer auf dem Weg gehalten haben.
+        Mein Instinkt sagt mit das Wixl jedoch, sein endgültiges Ziel war.
+
+        
+        Ohne einen Studenten zum unterweisen und herumscheuchen, fand ich mich sehr einsam, herumirrend
+        im großen Landsitz. In der Stille der toten und kalten Korridore, begann ich die Biographie
+        dieses Ratgebers zu stricken.
+
+        
+        Ich arbeitete immer wenn ich mich selbst gelangweilt fand. Und wenn ich nicht gelangweilt war, 
+        konnte ich immer _Die dunkle Bedrohung_ einlegen um in die Stimmung zu gelangen.
 
 
-        I worked on it whenever I found myself bored.  And when I wasn't bored, I could always
-        switch on _The Phantom Menace_ to get me in the mood.
-
-
-        !i/the.elf-7.jpg(Someone let them all out.)!
+        !i/the.elf-7.jpg(Jemand lasse sie alle heraus.)!
 #  }}}
 
 # {{{ Kapitel 5: 0%
