@@ -32,14 +32,14 @@ deed: |
 
   This is a human-readable summary of the Legal Code (the full license).
 
-# {{{ Index: 95%
+# {{{ Index: 80%
 
 image: !^img 2006.cover.jpg
 teaser:
 
   - Baustelle!: >
-      Das Buch wird gerade übersetzt von murphy (der zufälligerweise auch auf -hy endet!),
-      siehe "ruby.cYcnus.de":http://ruby.cYcnus.de.
+      Das Buch wird gerade übersetzt von CMDR-ZOD und murphy.
+      Fortschrittsanzeige gibt es auf "ruby.cYcnus.de":http://ruby.cYcnus.de.
       Auf rubyforen.de gibt es einen "Thread":http://www.rubyforen.de/topic,633.html dazu.
 
   - Lies den Absatz: >
@@ -854,7 +854,7 @@ chapters:
 
 
         <small>_Chunky Anmerkung des Übersetzers:_ Da "Chunky Bacon" inzwischen Kultstatus erreicht hat,
-        werde ich den Teufel tun, es zu übersetzen! Wer es dennoch unbedingt wissen möchte: grober Speck.</small>
+        werde ich den Teufel tun, es zu übersetzen!</small>
 
 
 
@@ -1486,7 +1486,7 @@ chapters:
         </li>
         <li>F: Näh.  Die ist draußen in meinem Pickup.
         </li>
-        <li>f: Hey! Da fährt ein Pickup!
+        <li>f: Hey! Da fährt mein Pickup!
         </li>
         </ol></small>
 
@@ -1642,7 +1642,7 @@ chapters:
 
 # }}}
 
-# {{{ Kapitel 4: 0%
+# {{{ Kapitel 4: 90%
 
   - Kleine schwebende Blätter von Code:
     - >
@@ -2301,10 +2301,7 @@ chapters:
         und springe zum "Erweiterungspaket I: Des Tigers Veste":expansion-pak-1.html, ein
         Mini-Kapitel welches dir dabei behilflich sein soll Ruby zu installieren. Zusätzlich wirst
         du lernen wie man Irb und Ri benutzt, zwei Lernhilfen die mit Ruby mitgeliefert werden
-        und dein lernen merklich beschleunigen werden.
-        
-        (Anm. des Übersetzers: "Des Tigers Veste" ist bisher noch nicht übersetzt. Bitte haben Sie ein
-        wenig Geduld. Danke.)
+        und dein Lernen merklich beschleunigen werden.
 
 
     - >
