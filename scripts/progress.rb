@@ -52,10 +52,10 @@ guide = File.read file
 print '.'
 
 PART = /
-	\# \s \{\{\{ \s
+	\# \s* \{\{\{ \s*
 		( .*? ) \n     # $1 = name, progress
 		( .*? )        # $2 = content
-	\# \s \}\}\} \s
+	\# \s* \}\}\} \s*
 /mx
 PERCENT = / ( \d+ (?: \.\d+ )? ) % /x  # integer or decimal number
 NAME = / [^:]* /x  # chars until : or end of string
