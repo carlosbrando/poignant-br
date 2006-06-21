@@ -1,3 +1,4 @@
+# vim:ft=textile
 --- !whytheluckystiff.net,2003/^book
 title: Why's (ergreifende) Einführung in Ruby
 author: why the lucky stiff
@@ -188,7 +189,7 @@ chapters:
 
 
         Du musst wirklich wimmern. Wenigstens einmal. Zumindest schniefen. Und wenn nicht, dann wird die
-        Zwiebel für alles sorgen.
+        Zwiebel dafür sorgen.
 
 
     - !^sidebar
@@ -479,7 +480,7 @@ chapters:
         ist die Sprache des Computers, und wir sind Übersetzer für die Welt.
 
 
-        Aber wie nennst du eine Sprache, wenn dein Gehirn anfängt, in dieses Sprache zu denken? Wenn du
+        Aber wie nennst du eine Sprache, wenn dein Gehirn anfängt, in dieser Sprache zu denken? Wenn du
         beginnst, Worte und Redewendungen aus der Sprache zu benutzen, um dich auszudrücken. Nun, der Computer
         kann das nicht machen. Wie kann es dann eine Computersprache sein? Es ist unsere, wir sprechen sie von
         Natur aus!
@@ -637,11 +638,11 @@ chapters:
         Wie schon gesagt, verkauf Kopien meines Buchs, aber verändere den Text.  Die neuen Kopien
         würden dann zahllose offenkundige (und beleidigende) Anspielungen auf öffentliche Einrichtungen
         enthalten, auf die Bundesregierung oder das Finanzamt.  Du könntens mich als Hochverräter
-        hinstellen.  So als ob ich Pläne hätte um, du weißt schon, gewisse unerwünschte Vertreter der
-        Bundesregierung oder des Finanzamts zu erschießen.
+        hinstellen.  So als ob ich Pläne hätte um, du weißt schon, gewisse unerwünschte Leute in der
+        Bundesregierung oder im Finanzamt zu erschießen.
 
 
-        Nicht, dass es irgendwelche unerünschten Vertreter in der Bundesregierung oder im Finanzamt geben
+        Nicht, dass es irgendwelche unerwünschten Leute in der Bundesregierung oder im Finanzamt geben
         würde.  Echt, so war das nicht gemeint.
 
 
@@ -2360,7 +2361,7 @@ chapters:
         Wörter nach den Pfeilen, die Deffinitionen, werden *Werte* genannt.
 
         
-        Beachte die doppelten Anführungszeichen um @Peter und Mark's Trockenreinigung (Mit Kuchen)".
+        Beachte die doppelten Anführungszeichen um @Peter und Mark's Trockenreinigung (Mit Kuchen)@.
         Da ein einzelner Anführungsstrich als Apostroph verwendet wird innerhalb des Satzes können
         wir einzelne Anführungszeichen nicht um den String herum benutzen. (Jedoch kannst du einzelne
         Anführungszeichen benutzen, auch wenn du sie im String verwendest, wenn du dehnen die nicht
@@ -2984,7 +2985,7 @@ chapters:
         Ich würde ihm warscheinlich als nächtes über @next@ berichten. Wenn du eine Liste durchläufts, 
         kannst du @next@ benutzen um das Element was dir gerade weitergegeben wurde *zu überspringen*.
         Hier zählen wir die Spielzeuge die nicht wie eine Frühlingsrolle geformt sind indem wir diese
-        mittels @next@ überspringen@.
+        mittels @next@ überspringen.
 
 
         <pre>
