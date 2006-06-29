@@ -9760,7 +9760,7 @@ expansion_paks:
 
 
       Vous devriez voir le prompt ci-dessus. Ce prompt d'Irb vous
-      permet de rentrer du code Ruby, et après avoir presser sur
+      permet de rentrer du code Ruby, et après avoir pressé sur
       _Entrée_, le code s'exécutera:
 
 
@@ -9779,7 +9779,7 @@ expansion_paks:
       Irb, car il affiche la réponse rendue par le code que vous exécutez.
 
 
-      Irb fait une bonne calculatrice.
+      Irb peut aussi faire office de calculatrice:
 
 
       <pre>
@@ -9795,10 +9795,10 @@ expansion_paks:
       Le premier exemple montre un peu de math et peut se lire comme:
       _220.00 plus 34.15 fois 1.08 divisé par 12_.
       Le deuxième exemple prend une chaîne binaire et la convertit en
-      nombre décimal. Le troisème exemple calcule le nombre de
+      nombre décimal. Le troisième exemple calcule le nombre de
       secondes entre @maintenant@ et Le 31 Juillet 2003 à 8 heures
       10. Les réponses de chacun de ces exemples sont affichées par
-          Irb, avec une petite flêche en ASCII les pointant.
+      Irb, avec une petite flêche en ASCII les pointant.
 
 
       h3. Lire le Prompt.
@@ -9911,25 +9911,30 @@ expansion_paks:
       le gartuit-pour-vos-yeux-vagabind-d-Internet _Programming Ruby_.
 
     - !^sidebar
-      Windows Hiccups: >      
+      Windowziens: >      
 
-        Okay, here's what you do to get tab completion working in Windows.  
-        "Download this.":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
-        A zip with two files inside.  These get copied into your Ruby installation.
-        Place readline.dll in the *bin* folder.  The readline.so goes in
-        *lib/ruby/1.8/i386-mswin32* folder.
+        OK, voilà ce que vous devez faire afin de faire marcher la
+        completion sous Windows.
+        "Téléchargez
+        ceci":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
+        Un zip contenant deux fichiers. Qui doivent être copiés dans votre
+        installation de Ruby. Placez readline.dll dans le répertoire
+        *bin*. readline.so va dans le répertoire
+        *lib/ruby/1.8/i386-mswin32*.
 
 
-        Then, run in your command shell: @irb --readline -r irb/completion@.
+        Ensuite, dans votre fenêtre commande: @irb --readline -r irb/completion@.
 
 
-        And for Europeans, you'll need "this.":http://whytheluckystiff.net/ruby/dist/Input.euro
-        Save it as *.inputrc* and place it in your home directory.  (Your personal directory
-        which contains your Desktop and My Documents folders.)
+        Et pour les Européens, vous aurez besoin de
+        "ceci":http://whytheluckystiff.net/ruby/dist/Input.euro
+        Sauvez le en tant que *.inputrc* et mettez le dans votre
+        répertoire personnel (qui contient vos répertoire Desktop et
+        Mes Documents.)
 
 
     - >
-      h3. Tab Completion
+      h3. Completion 
 
 
       One feature of Irb which is rarely mentioned is its beneficial tab completion.  And it's
