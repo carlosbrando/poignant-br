@@ -9934,16 +9934,20 @@ expansion_paks:
 
 
     - >
-      h3. Completion 
+      h3. Complétion 
 
 
-      One feature of Irb which is rarely mentioned is its beneficial tab completion.  And it's
-      a bit of a taboo topic at the moment, since getting it to work on Windows is a slight horror.
-      (No, don't be afraid.  All at once now, look to your right.)
+      Une des fonctionalités d'Irb rarement montionnée est qu'il
+      possède une completion activée par la  touche tabulation. C'est
+      un peu un sujet tabou ces temps-ci, étant donné qu'arriver à la
+      faire marcher sous Windows est un peu horrible. (Non, n'ayez pas
+      peur. Regardez sur votre droite.)
 
 
-      If you're on Linux or FreeBSD, the tab completion should work right off.  And if you're
-      using OS X, you should be sure you're upgrade to the latest 1.8 and when run Irb, use:
+      Si vous êtes sous Linux ou FreeBSD, la complétion devrait déjà
+      marcher. Et si vous utiliser OS X, vous devez vous assurer
+      d'avoir upgradé Ruby à la dernière version 1.8, et lancez Irb,
+      de la façon suivante:
 
 
       <pre class="text">
@@ -9951,17 +9955,21 @@ expansion_paks:
       </pre> 
 
 
-      Basically, when you hit _Tab_, Irb will take a guess at what you're trying to type.
-      Try typing: @[].col@ and hit _Tab_.  Irb will finish it.  @[].collect@ and it leaves your
-      cursor at the end so you can add further.
+      Pour simplfier, si vous tapez la touch _Tab_, Irb essaiera de
+      deviner ce que vous êtes en train de taper.
+      Essayer de taper @[].col@ et appuyez sur _Tab_. Irb terminera la
+      ligne,  @[].collect@, et laissera votre curseur à la fin de
+      façon à ce que vous puissiez ontinuer à ajouter des choses sur
+      cette ligne.
 
 
-      If there are several matches, just hitting _Tab_ will do nothing.  But hit it twice
-      and Ruby will give you a complete list of possible matches.
+      S'il y a plusieurs solutions possible, appuyez simplement sur
+      _Tab_ ne fera rien. Mais appuyez une seconde fois et Ruby vous
+      donnera une liste complète des solutions possibles.
 
 
-      This is great if you just want to see all the methods for a certain object.  Type in any
-      number, a dot, and use _Tab_.
+      C'est pratique si vous voulez juste voir toutes les méthodes
+      d'un objet donné. Tapez un nombre, un point, et utilisez _Tab_.
 
 
       <pre class="text">
@@ -9987,29 +9995,33 @@ expansion_paks:
       </pre>
 
 
-      Now, trying typing @Kernel::@ and then _Tab_.  All the core methods.  Don't ever forget this
-      and use it all the time.
+      Maintenant essayez de taper @Kernel::@et utilisez _Tab_. Toutes
+      les méthodes de base. N'oubliez jamais cela et utilisez le tout
+      le temps.
 
 
       !i/tigers.vest-3.gif(Except the robot flew away and the ice gun went on and on...)!
 
 
-      Okay, one last thing and then I'll quit bugging you with all this great technology.
-      But I have to say it loud, so take cover!  I'm across the world here, folks, but the
-      volume comes down from the sky -- a bold, red crescendo of --
+      Encore une dernière chose et j'arrèterai de vous embêter avec
+      toute cette technologie géniale. Mais je dois le dire fort,
+      alors attention! Je suis de l'autre côté du monde ici, les gars,
+      mais le son descendra du ciel -- un crescendo gras et rouge de --
 
 
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
 
 
-      h3={color: #300}. (Ruby's Own 411 or 555-1212 or _Yes, Operator, Get Belgrade on the Line_ -- I'll 
-      Be Right Here -- Just Plain Hammering The Pound Key Until Someone Picks Up...)
+      h3={color: #300}. (Le 118-218 de Ruby ou _Oui, bonjour, je
+      voudrais un numéro à Belgrade_ -- Je serais juste là - Appuyant
+      seulement sur la touche livre sterling jusqu'à ce que quelqu'un
+      décroche ...)
 
 
-      And Ri picks up the line.  "This is Ri.  Class and colon, please."
+      Et Ri décroche. "C'est Ri. Classe et deux-points s'il vous plait."
 
 
-      You rush in, "This is an instance method, Operator.  Enumerable#zip."
+      Vous vous précipitez, "C'est une méthode d'instance, Opérateur. Enumerable#zip."
 
   
       <pre class="text">
@@ -10017,9 +10029,9 @@ expansion_paks:
       </pre>
 
 
-      Without delay, right up on your teletype display (so swiftly that even the cat perched
-      atop cranes his neck around, gapes and hands it the royal cup _Most Blatantly Great
-      Thing Since Michael Dorn_):
+      Sans aucun delai, sur votre télétype (si rapidement que même le
+      chat perché au dessus de vous se tord le coup pour le voir,
+      s'étonne et lui tend la coupe royale _Meilleur truc depuis Framboisier_).
 
 
       <pre class="text">
