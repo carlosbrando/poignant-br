@@ -257,9 +257,9 @@ chapters:
 
         Un des enfants vendait des
         "tamales":http://fr.wikipedia.org/wiki/Tamales chauds pour
-        deux pesos chacun. _Deux pesos!_ Est-ce qu'il savait que la
+        deux pesos chacun. _Deux pesos !_ Est-ce qu'il savait que la
         monnaie était fausse ? A quoi pensait-il ? Qui a invité ce
-        gosse? Savait-il que ce n'était pas vraiment Tijuana?
+        gosse ? Savait-il que ce n'était pas vraiment Tijuana ?
         Peut-être était-il vraiment de Tijuana! Peut-être que c'était
         de _vrais_ pesos!  Fabriquons plus de _vrais_ pesos!
 
@@ -292,7 +292,7 @@ chapters:
 
 
         Nous sommes partis chercher des croquettes pour Bigelow, puis
-        pour aller chez moi, ou nous pourrions nous asseoir dans des
+        pour aller chez moi, où nous pourrions nous asseoir dans des
         fauteuils et écouter du "Gorky's Zygotic
         Mynci":http://fr.wikipedia.org/wiki/Gorky%27s_Zygotic_Mynci.
         Oh, et nous devions aussi nous arrêter afin d'acheter à
@@ -319,7 +319,7 @@ chapters:
 
 
         Ce n'est que peu de temps après que j'ai joué mon propre
-        Bigelow. J'avais imprimé un ensemble de pages sur Ruby. des
+        Bigelow. J'avais imprimé un ensemble de pages sur Ruby. Des
         articles trouvés sur le Net. Je les ai parcouru lors de mon
         trajet de retour, en train, un soir. J'ai joué avec pendant
         cinq minutes avant d'abandonner. Pas impressionné.
@@ -335,7 +335,7 @@ chapters:
         Et pourtant, j'étais là. Un petit homme sur un petit train
         fragile (et j'avais même encore une dent de lait à cette
         époque) parmi des milliards de personnes sur une pierre bleue
-        flottante. Comment pourrais je dénigrer Ruby? Qui peut dire si je
+        flottante. Comment pourrais-je dénigrer Ruby ? Qui peut dire si je
         ne vais pas m'étouffer avec mon téléphone portable et mourir
         plus tard dans la soirée. Why mort, Ruby continuera à vivre.
 
@@ -357,14 +357,14 @@ chapters:
     - Le Soleil Rouge Se Lève: >
 
         Donc, maintenant, vous vous demandez pourquoi j'ai changé
-        d'avis quant à Ruby. La réponse rapide est: on s'est tapé dans
+        d'avis quant à Ruby. La réponse rapide est : on s'est tapé dans
         l'oeil.
 
 
         Comme lorsque vous rencontrez Quelqu'un au lycée, et qu'il
         ressemble à Quelqu'un qui avait l'habitude de vous
         peinturlurer le visage quand vous êtiez enfant. Impulsivement,
-        vous aviez conclus que ce Quelqu'un n'était pas un ami.  Vous
+        vous aviez conclus que ce Quelqu'un n'était pas un ami. Vous
         critiquiez sa coiffure. Vous décrochiez bruyamment le
         téléphone aux moments cruciaux des histoires qu'il
         racontait. Vous utilisiez votre "baton
@@ -399,7 +399,7 @@ chapters:
         gars. Déduction. Raison. Signe de tête intelligent. Ce langage
         deviendra pour vous un outil vous permettant de connecter
         votre esprit au monde. J'ai remarqué que beaucoup
-        d'utilisateur expérimentés de Ruby semble avoir les idées
+        d'utilisateurs expérimentés de Ruby semble avoir les idées
         claires et être objectifs. (A contrario de fortement partial
         et brut).</p>
         
@@ -420,7 +420,7 @@ chapters:
         gros accroc.</p> <p>Vous pensiez que nous allons vous faire
         acheter des aspirateurs, du temps-partagé ou de faux
         Monets. Vous pensiez qu'il y aurait une présentation de 90
-        minutes, à la fin de laquelle le propriètaire de la compagnie
+        minutes, à la fin de laquelle le propriétaire de la compagnie
         viendrait vous taper dans le dos pour conclure le
         marché.</p><p>Non, libre.</p>
 
@@ -455,11 +455,11 @@ chapters:
 
 
         N'importe qui dans mon équipe vous le dira. Aux Cérémonies
-        d'Ouverture de Ce Livre (un évennement approvisioné sur des
+        d'Ouverture de Ce Livre (un événement improvisé sur des
         sièges de stade), j'ai découvert que les sandwiches au
-        concombre n'était pas servi avec des essuie-mains. Du coup le
+        concombre n'étaient pas servis avec des essuie-mains. Du coup le
         beurre ne tenait pas bien avec les concombres... De toute
-        façon, j'ai fait un bon show et mis le feu a plusieurs des
+        façon, j'ai fait un bon show et mis le feu à plusieurs des
         camions publicitaires à l'entrée. J'ai éclaté des projecteurs et
         tout ça. J'ai eu ce fort rire de maniaque dans la
         nuit. C'était vraiment la pagaille.
@@ -472,7 +472,7 @@ chapters:
         découvert cela.
 
 
-        Aussi, vous devez savoir que *synergies* ne veut pas
+        Aussi, vous devez savoir que *synergie* ne veut pas
         exactement dire *synergie* dans ce livre. Je ne peux pas être
         en *synergie* normale. Non, dans ce livre, *synergie* veut
         dire des *renards de bande-dessinée*. Ce que je veux dire
@@ -493,7 +493,7 @@ chapters:
       une bouffée de médicament maintenant. Je reviens dans deux minutes.
 
 
-      !i/the.foxes-2.png(Renards dans des boites.)!
+      !i/the.foxes-2.png(Renards dans des boîtes.)!
        
 
       On m'a dit qu'il vallait mieux être équipé d'un mouchoir pour ce
@@ -521,10 +521,10 @@ chapters:
 
 
         Mais comment appelez-vous un langage, quand votre cerveau
-        commence à penser dans ce langage? Quand vous commencez à
+        commence à penser dans ce langage ? Quand vous commencez à
         utiliser les propres mots du langage pour vous exprimer. Une
         machine ne peut faire ça. Comment cela pourrait-il être le
-        langage de la machine? C'est le notre, nous le parlons naturellement!
+        langage de la machine ? C'est le notre, nous le parlons naturellement!
 
 
         Nous ne pouvons donc décemment pas l'appeler un langage pour
@@ -559,14 +559,14 @@ chapters:
 
 
         Ici nous faisons un test réel basique. Notre program sortira
-        (*exit*: le programmera s'arrètera) *à moins que* (*unless*)
-        le mot *restaurant* ne contienne (*includes*) le mot
+        (*exit*: le programmera s'arrêtera) *à moins que* (*unless*)
+        le mot *restaurant* ne contienne (*include*) le mot
         *aura*. Encore une fois, en Français: _Arrête à moins que le
-        mot restaurant n'inclue le mot aura._
+        mot restaurant n'inclut le mot aura._
 
 
         Avez-vous déjà vu un langage de programmation utiliser les
-        points d'interrogation de façon si effective? Ruby utilise
+        points d'interrogation de façon si effective ? Ruby utilise
         certains signes de ponctuation, comme les points d'exclamation
         ou d'interrogation, pour augmenter la lisibilité du code. Dans
         le code précédent nous posons une question, aussi pourquoi ne
@@ -604,7 +604,7 @@ chapters:
         base, fait de phrases. Ce ne sont pas exactement des phrases
         anglaises. Ce sont des ensembles de mots et de signes de
         ponctuation qui entourent une idée simple. Ces phrases peuvent
-        former des livres. Elles peuvent former des pages. elles
+        former des livres. Elles peuvent former des pages. Elles
         peuvent former des nouvelles entières, en les assemblant. Ces
         nouvelles peuvent être lues par des humains, mais aussi par
         des ordinateurs.
@@ -629,8 +629,8 @@ chapters:
         éditions spéciales.
 
 
-        Pourquoi désirerais-je de l'argent? IGNOREZ TOUTES LES AUTRES
-        COLONNES: j'ai perdu toute volonté de devenir un plouc
+        Pourquoi désirerais-je de l'argent ? IGNOREZ TOUTES LES AUTRES
+        COLONNES : j'ai perdu toute volonté de devenir un plouc
         riche. Cela semble inhumain, mais j'aime ma petite télé en
         noir et blanc. Ansi que ma lampe-fleur en plastique. Je ne
         veux pas devenir un écrivain. Le cash ne m'inspire pas. Aucun
@@ -640,10 +640,10 @@ chapters:
         Aussi, si l'argent ne veut rien dire pour le cadavre chanceux
         (NDT: "why the lucky stiff" se traduit par "why le cadavre
         chanceux"), pourquoi me pomper quand vous pouvez coopter des
-        pratiques commerciales louches pour litéralement anéantir mon
-        pshychisme et laisser mes poumons d'acier pleins de suie?
+        pratiques commerciales louches pour littéralement anéantir mon
+        pshychisme et laisser mes poumons d'acier pleins de suie ?
         Sans parler de l'ironie qui consiste à utiliser mon propre
-        travail contre moi!  Meurs, Mec Poignant!
+        travail contre moi! Meurs, Mec Poignant!
 
 
         Pour vous donner une idée de ce que je veux dire, voici
@@ -660,7 +660,7 @@ chapters:
         aggressive. Voilà un panneau d'affichage pour les débutants:
 
 
-        !i/the.foxes-0a.png(La dépendance c'est comme les Pokemon!)!
+        !i/the.foxes-0a.png(La dépendance, c'est comme les Pokemon!)!
 
 
         Dites explicitement que vous visez les enfants et les
@@ -669,7 +669,7 @@ chapters:
         sur moi et ma ferme de renards d'encre.
 
 
-        bq. *Hippie Sensible se Tenant Sur la Bordure du Trotoir dans
+        bq. *Hippie Sensible se Tenant Sur la Bordure du Trottoir dans
         le Désert Urbain*: Il s'appelle lui-même le macchabée chanceux.
         
         
@@ -694,7 +694,7 @@ chapters:
         contiendraient des références flagrantes (et diffamatoires) à
         des agences gouvernementales, telles que les U.S. Marshals et
         le Pentagone. Vous pouvez me faire passer pour un vrai
-        traitre. Comme si j'avais tous ces plans pour, vous savez,
+        traître. Comme si j'avais tous ces plans pour, vous savez,
         tuer certains des membres les moins désirables des
         U.S. Marshals ou du Pentagone.
 
@@ -715,7 +715,7 @@ chapters:
         *TROISIEME IDEE: PANNEAUX D'AFFICHAGE, SECONDE PARTIE*
 
 
-        Et pourquoi ne pas se moquer directement des asmathiques?
+        Et pourquoi ne pas se moquer directement des asthmatiques ?
 
 
         !i/the.foxes-0b.png(Appelle le teuf-teuf! ROFL!)!
@@ -732,19 +732,19 @@ chapters:
 
         Vous pourriez faire comme si je prenais des tonnes de
         drogues. Comme si j'étais un aliéné avec qui l'on ne peut
-        travailler.Comme si je virais les gens et les enfermais dans
+        travailler. Comme si je virais les gens et les enfermais dans
         la salle des scooters en leur faisant porter une tenue en
         pain. Ouais, je pourrais en fait _cuire au four_ ces gens dans
         leur tenue.
 
 
         Je pourrais avoir un moule géant où j'attacherais les
-        gens. Ensuite je verserais la pâte sur eux et les cuirais
-        jusqu'à ce que le pain aie gonflé et qu'ils soient presque
+        gens. Ensuite, je verserais la pâte sur eux et les cuirais
+        jusqu'à ce que le pain ait gonflé et qu'ils soient presque
         morts. Et quand les équipes de télévision arriveraient et que
         je serais dans 'Good Morning America', ils demanderaient,
         "Alors combien de personnes avez vous employées lors de
-        l'écriture de votre livre?" et je répondrais "Une douzaine de
+        l'écriture de votre livre ?" et je répondrais "Une douzaine de
         chez le boulanger!" et éclaterais de ce rire lourd de maniaque
         qui forcerait les spectateurs à se boucher les oreilles.
 
@@ -797,7 +797,7 @@ chapters:
 
 
         Essayez de vous focaliser sur l'apparence de chacuns de ces
-        constituants. Le reste du livre detaillera chaque
+        constituants. Le reste du livre détaillera chaque
         spécificité. Je donne une description courte pour chacun des
         constituants, mais vous n'avez pas à comprendre
         l'explication. A la fin de ce chapitre, vous devriez pouvoir
@@ -817,8 +817,8 @@ chapters:
 
 
         Les variables sont comme des surnoms. Vous vous rappelez quand
-        tout le monde vous appelait Pierre-Qui-Pue? Les gens disait,
-        "Viens ici Pierre-Qui-Pue!" et tout le monde savait
+        tout le monde vous appelait Pierre-Qui-Pue ? Les gens disaient,
+        "Viens ici Pierre-Qui-Pue !" et tout le monde savait
         miraculeusement que vous étiez Pierre-Qui-Pue.
 
 
@@ -880,13 +880,13 @@ chapters:
 
 
 
-        h3. Les chaines de caractères
+        h3. Les chaînes de caractères
 
 
-        Les chaines de caractères sont composées de n'importe quel
-        caractère (lettre, chiffre, signe de ponctuation) entourés par
+        Les chaînes de caractères sont composées de n'importe quelle suite
+        de caractères (lettres, chiffres, signes de ponctuation) entourée par
         des guillemets. A la fois les *guillemets* simples et doubles
-        sont utilisés pour créer des chaines de caractères. 
+        sont utilisés pour créer des chaînes de caractères. 
 
 
         bq. @"laboratoire"@, @'2021'@ ou @"Ces bande-dessinées sont
@@ -894,26 +894,26 @@ chapters:
 
 
         Quand vous entourez des caractères par des guillemets, ils
-        sont stoqués ensemble, comme une seule chaine.
+        sont stoqués ensemble, comme une seule chaîne.
         
 
         Pensez à un journaliste qui transcrit les divagations d'une
         célébrité. "Je suis beaucoup plus raisonnable," dit Avril
-        Lavigne. "Maintenant, je sais à quoi ressemble le mileu -- ce
+        Lavigne. "Maintenant, je sais à quoi ressemble le milieu -- ce
         que vous devez faire et comment le faire."
 
 
         <pre>
           avril_citation = "Je suis beaucoup plus
           raisonnable. Maintenant, je sais à quoi ressemble 
-          le mileu -- ce que vous devez faire et comment le
+          le milieu -- ce que vous devez faire et comment le
           faire."
         </pre>
 
 
         De même que nous venions de stoquer un nombre dans la variable
         *frais_d_ourson*, nous stoquons maintenant une suite de
-        caractères (une chaine) dans la variable *avril_citation*. Le
+        caractères (une chaîne) dans la variable *avril_citation*. Le
         journaliste envoie cette citation à l'impression, qui par
         chance, utilise Ruby pour faire fonctionner sa presse.
 
@@ -946,7 +946,7 @@ chapters:
         bq. @:a@, @:b@, ou @:ponce_de_leon@ en sont des exemples.
 
 
-        Les symboles sont des chaines de caratères
+        Les symboles sont des chaines de caractères
         "légères". Généralement les symboles sont utilisés dans les
         situations ou vous avez besoin d'une chaine de caractères mais
         où vous ne voulez pas l'afficher à l'écran.
@@ -991,7 +991,7 @@ chapters:
 
 
         Si nous essayons de changer la constante, Ruby se plaindra. On
-        désaprouve de telles pratiques.
+        désapprouve de telles pratiques.
 
 
         !i/the.foxes-4d.png(Allez, chunky bacon.)!
@@ -1034,7 +1034,7 @@ chapters:
         méthodes.
 
 
-        h3. Les Arguments de Méthode
+        h3. Les Arguments des Méthodes
 
 
         Une méthode peut avoir besoin de plus d'information pour
@@ -1061,21 +1061,21 @@ chapters:
 
 
         A l'instar d'un bateau pouvant remorquer plusieurs chambres à
-        air, on peut enchainer les méthodes avec arguments.
+        air, on peut enchaîner les méthodes avec arguments.
 
 
         bq. @porte_devant.peindre( 3, :rouge ).seche( 30 ).ferme()@
 
 
-        Ce qui pécède peint de 3 couche de rouge la porte, la sèche
+        Ce qui précède peint de 3 couches de rouge la porte, la sèche
         pendant 30 minutes et la referme. Même si la dernière méthode
         n'a pas d'argument vous pouvez quand même mettre des
         parenthèses si celà vous chante. Toutefois, il est inutile de
-        trainer une chambre à air vide, donc on ommet généralement les
+        trainer une chambre à air vide, donc on omet généralement les
         parenthèses.
 
 
-        Certaines méthode (comme @print@) sont des méthode de base
+        Certaines méthodes (comme @print@) sont des méthodes de base
         (NDT: des méthodes du Kernel de Ruby). Ces méthodes sont
         utilisées partout en Ruby. Comme elles sont très fréquentes,
         on n'utilise pas le point.
@@ -1088,7 +1088,7 @@ chapters:
 
 
         Comme les méthodes dont on vient de parler (que l'on appelle
-        aussi des méthode d'_instance_ (NDT: en anglais, _instance_
+        aussi des méthodes d'_instance_ (NDT: en anglais, _instance_
         methods)), les méthodes de classe sont généralement attachées
         aux variables et aux constantes. Plutôt qu'un point, on
         utilise *deux double points* pour les séparer.
@@ -1161,11 +1161,11 @@ chapters:
         Ruby la largeur de la @porte_devant@ en affectant une valeur à
         la variable @@largeur@ dans cette @porte_devant@. En Ruby, les
         variables d'instance sont utilisées pour définir les
-        caractèristiques d'un objet donné.
+        caractéristiques d'un objet donné.
 
 
-        Pensez au symbole @arobas@ comme signifiant *attribut*. (NDT:
-        marche mieux en anglais, où l'arobas se nomme *at*).
+        Pensez au symbole @arobase@ comme signifiant *attribut*. (NDT:
+        marche mieux en anglais, où l'arobase se nomme *at*).
 
 
         h3. Variables de Classe
@@ -1186,7 +1186,7 @@ chapters:
         qui est une @Porte@.
 
 
-        Pensez au *double arobas* comment signifiant *attributs
+        Pensez au *double arobase* comment signifiant *attributs
         pour tous* . Ou vous pouvez vous les imaginer comme un essaim
         de chasseurs *AT-AT* de _Star Wars_, tous commandés par Ruby
         (NDT: marche bien mieux en anglais ou l'arobase se nomme
@@ -1216,7 +1216,7 @@ chapters:
         en une seule unité.
 
 
-        C'est comme l'une des ces petites boites "Hello
+        C'est comme l'une des ces petites boîtes "Hello
         Kitty":http://fr.wikipedia.org/wiki/Hello_Kitty qu'ils vendent
         au supermaché, remplies de petits stylos et de papier
         microscopique, le tout empaqueté dans une petite trousse
@@ -1272,7 +1272,7 @@ chapters:
         Les variables sont passées grâce à ce toboggan (ou tunnel) au bloc.
 
 
-        !i/the.foxes-4g.png(And then, the dismal truth.)!
+        !i/the.foxes-4g.png(Et là, la triste vérité.)!
 
 
 
@@ -1324,11 +1324,11 @@ chapters:
 
 
         bq. @['coat', 'mittens', 'snowboard']@ est un tableau de
-        chaine de caractères.
+        chaîne de caractères.
 
 
         Représentez le vous comme une chenille qui aurait été
-        aggrafée sur votre code. Les deux crochets sont les aggrafes
+        agrafée sur votre code. Les deux crochets sont les agrafes
         qui l'empèche de bouger, afin de noter où se trouvent la tête
         et la queue. Les virgules sont les jambes de la chenille
         frétillantes entre chaque section de son corps.
@@ -1352,8 +1352,8 @@ chapters:
 
         Une table de hachage est un dictionnaire entouré par des
         *accolades*. Les dictionnaires font correspondre des noms à
-        leur définition. Ruby indique celà par une *flêche*, faite
-        d'un signal egal suivit par un signe supérieur.
+        leur définition. Ruby indique celà par une *flèche*, faite
+        d'un signal egal suivi par un signe supérieur.
 
 
         bq. @{'a' => 'aardvark', 'b' => 'badger'}@ en est un exemple.
@@ -1368,7 +1368,7 @@ chapters:
         Imaginez que notre dictionnaire ait une définition sur chaque
         page. Les virgules représentent les coins de chacune des
         pages, que nous tournons pour voir la prochaine définition. Et
-        sur chaque page: un mot suivi par une flêche poitant vers sa définition.
+        sur chaque page : un mot suivi par une flèche poitant vers sa définition.
 
 
         <pre>
@@ -1391,14 +1391,14 @@ chapters:
         A la différence des tableaux, les éléments d'une table de
         hachage ne sont pas gardés selon un ordre spécifique.
 
-        !i/the.foxes-5.png(The foxes think silence will kill the comic.)!
+        !i/the.foxes-5.png(Les renards pensent que le silence va tuer cette bande dessinée.)!
 
 
 
-        h3. Expression Régulières
+        h3. Expressions Régulières
 
 
-        Un expression régulière(ou _regexp_) est un ensemble de
+        Un expression régulière (ou _regexp_) est un ensemble de
         caractères entourés par des *slashes*.
 
 
@@ -1407,8 +1407,8 @@ chapters:
 
 
         Les expressions régulières sont utilisées pour trouver des
-        mots ou des motifs dans du texte. Les slahes de chaque côté de
-        l'expressions sont des épingles.
+        mots ou des motifs dans du texte. Les slashes de chaque côté de
+        l'expression sont des épingles.
 
 
         Imaginez que vous ayez un petit mot avec des épingles de
@@ -1496,7 +1496,7 @@ chapters:
       Sept Moments Zen dans Ma Vie: >
 
         # 8 ans. Allongé dans le lit, pensif. Et je réalise: _Rien ne
-        m'empèche de devenir une enfant dentiste._
+        m'empèche de devenir un enfant dentiste._
 
         # 21 ans. Je trouve un stylo sur la plage. Gravé dessus:
         _J'aime la sérénité._ A l'abri dans la poche intérieure de
@@ -1525,7 +1525,7 @@ chapters:
         de l'infini. J'entendais la voix de ma mère qui essayait de me
         parvenir au travers de la série. Proche, loin, proche,
         loin. C'était une rave religieuse avec un chat stroboscope et
-        la voix de ma mère comme une basse etoufée. (J'avais plus de
+        la voix de ma mère comme une basse etouffée. (J'avais plus de
         40 de fièvre ce jour là).
 
         # 18 ans. Je m'achète un animal de compagnie. Un canard. Je le
@@ -1538,7 +1538,7 @@ chapters:
 
     - Si Je ne Vous Avez Pas Encore Assez Traité Comme un Enfant: >
 
-        Je suis fier de vous. Tout le monde vous²q dira combien je vante vos
+        Je suis fier de vous. Tout le monde vous dira combien je vante vos
         mérites. Combien je glorifie cette personne anonyme, là-bas,
         qui fait défiler son écran et lit, et fait défiler son écran
         et lit. "Ces enfants", leur dis-je. "Mec, ces enfants m'ont
@@ -1585,7 +1585,7 @@ chapters:
 
 
         A l'instar de la méthode @print@, @exit@ est une méthode du
-        kernel. Si vous avez fait attention lors de la grande list de
+        kernel. Si vous avez fait attention lors de la grande liste de
         mots-clé, vous savez que @unless@ est un _mot-clé_. La _chaine
         de caratères_ @"restaurant"@ est suivi de la _méthode_
         @include?@. Et enfin, la chaîne de caratères @"aura"@.
@@ -1600,20 +1600,20 @@ chapters:
 
         Cette chenille participe à notre délicat festin. Cet exemple
         commence par un _tableau_. Dans ce tableau, trois _chaînes de
-        caratères_: @'pain'@, @'fromage'@, et @'vin'@. Ce tableau est
+        caractères_: @'pain'@, @'fromage'@, et @'vin'@. Ce tableau est
         suivi par la _méthode_ @each@.
 
 
         A l'intérieur d'un _bloc_, l'_argument de bloc_ @food@ descend
         par son toboggan à l'intérieur du bloc. La _méthode_
         @capitalize@ met ensuite en majuscule la première lettre de
-        l'argument de bloc, qui est devenu la _variable_ @food@. Cette
+        l'argument du bloc, qui est devenu la _variable_ @food@. Cette
         chaîne est alors passée à la _méthode_ de kernel @print@. 
 
 
         Relisez encore ces exemples. Soyez sûr de reconnaitre les
         différentes parties du discours utilisées. Elles ont toutes un
-        look différent, n'est-ce-pas? Prenez une inspiration
+        look différent, n'est-ce-pas ? Prenez une inspiration
         profonde, appuyez fermement sur vos tempes. Maintenant,
         disséquons un bout de code.
 
@@ -1635,8 +1635,8 @@ chapters:
         </pre>
 
 
-        La prmière ligne est un appel à une méthode. La _méthode_
-        appelée @require@ est utilisée. Une _chaîne de caractère_
+        La première ligne est un appel à une méthode. La _méthode_
+        appelée @require@ est utilisée. Une _chaîne de caractères_
         contenant @'net/http'@ est passée à la méthode. Voyez cette
         première ligne de code comme une phrase. Nous avons demandé à
         Ruby de charger un code sensé nous aider, la bibliothèque @Net::HTTP@.
@@ -1662,8 +1662,8 @@ chapters:
 
 
         Tout va bien? Juste par curiosité, pouvez-vous deviner ce que
-        fait cet exemple? J'espère que vous voyez certains motif de
-        Ruby. Sinon, remuez votre tête vigouresement pendant que vous
+        fait cet exemple ? J'espère que vous voyez certains motif de
+        Ruby. Sinon, remuez votre tête vigoureusement pendant que vous
         avez ces exemples à l'esprit. Le code devrait se casser en de
         petites sections que vous devriez comprendre.
 
@@ -1690,11 +1690,11 @@ chapters:
 
 
         La variable @http@ est ce conducteur de bus. La _méthode_ est
-        un message au conducteur de bus. Va @chercher@ (NDT: @get@ en
+        un message au conducteur du bus : va @chercher@ (NDT: @get@ en
         anglais) la page web nommée @/en/LICENSE.txt@.
 
 
-        Aussi, là où vous verrez:
+        Aussi, là où vous verrez :
 
 
         bq. @http.get( '/en/LICENSE.txt' ).body@
@@ -1717,28 +1717,28 @@ chapters:
         à cette page web, ce qui nous donne tout l'HTML dans une
         _chaîne de caractères_. On _affiche_ (NDT: @print@ en anglais)
         ensuite cette chaine. Vous voyez comme le motif point-méthode
-        est utilisé de façon chainée. Le prochain chapitre explorera
+        est utilisé de façon chaînée. Le prochain chapitre explorera
         ce genre de motifs en Ruby. Ce sera marrant.
 
 
-        Alors, que fait ce code? Il affiche le code HTML de la "home
-        page" du sitre officiel de Ruby à l'écran. En utilisant un
+        Alors, que fait ce code ? Il affiche le code HTML de la "home
+        page" du site officiel de Ruby à l'écran. En utilisant un
         conducteur de bus branché au web.
 
 
-    - Et, Le Voyage Rapide Arrive A Une Fin Simple et Rembourrée: >
+    - Et Le Voyage Rapide Arrive A Une Fin Simple et Rembourrée: >
 
         !i/the.foxes-8.png(Running after the truck.)!
 
 
         Bien, maintenant nous avons un problème. J'ai l'impression que
-        cette façon d'apprendre vous plait un peu trop. Et vous n'avez
+        cette façon d'apprendre vous plaît un peu trop. Et vous n'avez
         pas encore atteint le chapitre où j'utilise des chansons de
         saut à la corde pour vous aider à apprendre comment analyser
         du XML!
  
 
-        Si celà vous plait déjà, alors les choses vont vraiment
+        Si celà vous plaît déjà, alors les choses vont vraiment
         mal. Dans deux chapitres, vous écrirez vos propres
         programmes en Ruby. En fait, c'est juste là que je vous ferai
         écrire votre propre jeu de rôle, votre propre réseau de
@@ -1759,7 +1759,7 @@ chapters:
         A cause de votre négligence, les choses vont commencer à aller
         mal. Vos tas de feuilles imprimées de code vont recouvrir vos
         conduits d'aération. Votre chaudière va se boucher. Les
-        ordures vont s'amonceler: des boites à emporter que vous aurez
+        ordures vont s'amonceler : des boîtes à emporter que vous aurez
         commandé précipitamment, du courrier inoportun. Votre propre
         crasse polluera l'air. La mousse gagnera le chevron, les
         arrivées d'eau vont se boucher, les animaux entreront, et les
@@ -1790,8 +1790,8 @@ chapters:
         domination ainsi que les montagnes et îles qui entourent votre forteresse.
 
 
-        Bon je pense que l'on va être d'accord. Qu'est-ce-que tu dis?
-        Attaquons ce script?
+        Bon je pense que l'on va être d'accord. Qu'est-ce-que tu dis ?
+        Attaquons ce script ?
 
 
   - Feuilles de Code Flottant Au Vent:
@@ -1804,17 +1804,17 @@ chapters:
       Je n'ai jamais vu un jambon faire autre chose que de perdre du
       jus. Aujourd'hui, dans les Cavernes d'Ambroise nous allons nous
       occuper de l'elfe. Il joue un rôle clé dans les prochaines
-      leçons. Accueuillons le chaleureusement. Commencez à faire
+      leçons. Accueillons le chaleureusement. Commencez à faire
       chauffer vos chapeaux d'écoute! (Et s'il vous plait, changez moi
       ce ridicule pantalon à étriers.)
 
 
-      Un petit avertissement: cette leçon est beaucoup plus
+      Un petit avertissement : cette leçon est beaucoup plus
       lente. Suivez là. Ce sera une longue et profonde
       respiration. L'étape la plus cruciale de votre instruction. Vous
       pouvez avoir tout d'abord l'impression que vous n'apprenez pas
-      beaucoup à coder. Vous apprendrez des concepts. a la fin de ce
-      chapitre, vous connaitre la beauté de Ruby. Le confort apporté
+      beaucoup à coder. Vous apprendrez des concepts. A la fin de ce
+      chapître, vous connaîtrez la beauté de Ruby. Le confort apporté
       par le code deviendra un sac de couchage pour votre propre réconfort.
       
 
@@ -1828,8 +1828,8 @@ chapters:
 
 
         Hum, ce n'est pas ce dont je me rappelais. Cet Elfe m'appelait
-        constament. Quand j'ai refusé de le rappeler, il a laissé un
-        message sur mon pager. C'est à dire: il a bippé quelques fois
+        constamment. Quand j'ai refusé de le rappeler, il a laissé un
+        message sur mon pager. C'est-à-dire : il a bippé quelques fois
         et a ensuite imprimé un petit morceau de papier. Ce morceau
         disait quelque chose qui ressemblait à "Descends vite ici!" et
         aussi "Nous devons débarasser la Terre du fléau que ce sont
@@ -1850,7 +1850,7 @@ chapters:
 
         Cet example ressemble _totalement_ au dernier chapitre. C'est
         déjà un début. Nous assignons deux _variables_. Le *signe
-        egal* est utilisé pour l'_affectation_.
+        égal* est utilisé pour l'_affectation_.
 
 
         Maintenant @feuille_tendre@ représente le chiffre @5@ (comme
@@ -1860,7 +1860,7 @@ chapters:
 
 
         Vous ne pouvez quand même pas vous plaindre l'Elfe, n'est ce
-        pas? Vous avez créé un empire en vendant vos cristaux bleus
+        pas ? Vous avez créé un empire en vendant vos cristaux bleus
         sur le nouveau marché entre les créatures de la forêt. (Et
         même s'il est un elfe pour nous, c'est un monstre immense pour eux.)
        
