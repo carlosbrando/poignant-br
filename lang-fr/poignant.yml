@@ -10056,33 +10056,38 @@ expansion_paks:
 
       </pre>
 
-
-      It's an unabridged Ruby dictionary servo -- the Power of Just Asking is at your
-      fingertips -- _don't tell me you've never heard of this no-money-down 
-      lifetime-supply-of-proper-explanations!_
-
-
-      To get an explanation of any class, along with a complete directory to all of its
-      methods, all in a very soothing voice fit for calming any of you panicking cosmonauts 
-      out there fighting the pull of some zero-tolerance tractor beam, just use at your
-      command shell: @ri Class@.
+      C'est un serveur de dictionnaire Ruby -- le Pouvoir de Demander
+      au bout de vos doigts -- _ne me dites pas que vous n'avez jamais
+      entendu parlé de cette
+      fourniture-d'explications-gratuites-totu-au-long-d'une-vie!_
 
 
-      But for help on class methods, you cuff on: @ri Class::method@.
+      Pour obtenir une description d'une classe, avec une liste
+      complète de toutes ses méthodes, le tout avec une voix relaxante
+      pafaite pour vous calmer, vous les cosmonautes paniqués, qui
+      vous battaient contre l'attaction d'un rayon tractant à
+      tolérance zéro, tapez juste sur votre ligne de commande: @ri Class@.
 
 
-      Though instance methods use a pound key rather than a dot.  (Since the dot can mean class *or*
-      instance methods.)  I mean: @ri Class#method@.
+      Mais pour une aide sur les méthodes de classe, vous taperez: @ri
+      Class::method@.
 
 
-      The full spread of classes, a full list from the Very Top down to the Earth's core, can be
-      achieved with @ri -c@.
+      Notez que les méthodes d'instance utilise un dièse (#) plutôt
+      qu'un point (le point pouvant signifier méthodes de class *ou*
+      d'instance), donc: @ri Class#method@.
 
 
-      And beyond text, you can make HTML: @ri -Tf html String#gsub > gsub.html@.
+      Le spectre total des classes, une liste complète de Tout En Haut
+      jusqu'au coeur de la Terre, peut-être obtenu avec @ri -c@.
 
 
-      *Or show colory ANSI: @ri -Tf ansi String#gsub@.*  And this is last and best.
+      Et en plus du texte, vous pouvez obtenir de l'HTML: @ri -Tf html
+      String#gsub > gsub.html@. 
+
+
+      *Ou de l'ANSI colorisé: @ri -Tf ansi String#gsub@.*  Et c'est le
+      dernier et le meilleur.
 
 
       h3. Into the Ri Switchboard
