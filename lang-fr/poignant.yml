@@ -10090,18 +10090,19 @@ expansion_paks:
       dernier et le meilleur.
 
 
-      h3. Into the Ri Switchboard
+      h3. Dans l'auto-commutateur de Ri
 
 
-      Behind Ri sings a chorus of human voices, primarily Dave Thomas, an author of _Programming
-      Ruby_, and absolutely the American foster parent of Ruby.  Many of these elaborate
-      spiels from Ri are straight from the references of _Programming Ruby_.  Don't forget
-      to thank Dave periodically.
+      Derrière Ri chante un coeur de voix humaines, à commencer par
+      Dave Thomas, un des auteurs du _Programming Ruby_, et sans doute
+      aucun père nourricier Américain de Ruby. Plusieurs des textes
+      données par Ri, viennent directement du ivre _Programming
+      Ruby_. N'oubliez pas de remercier Dave régulièrement.
 
-
-      Ri culls its lush information set from the very code that Ruby is built from.  In each
-      of the files of code back in the Ruby Headquarter's file cabinet, detailed comments
-      describe everything in sight.
+      Ri sélectionne son jeu abondant d'information du code même qui
+      sert à produire Ruby. Dans chacun des fichiers de code de Ruby
+      stockés dans les tiroirs du QG de Ruby, des commentaires
+      détaillés décrivent tout ce que l'on peut voir.
 
 
       In Ruby's @date@ class, here we have such commented methods:
