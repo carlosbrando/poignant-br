@@ -9603,33 +9603,33 @@ expansion_paks:
     - !^sidebar
       A propos des versions de Ruby: >
 
-        Si vous avez visitez n'importe quel site offrant de
-        télécharger Ruby, vous avez probablement vu plusieurs versions
+        Si vous avez visitez n'importe quel site proposant Ruby
+        en téléchargement, vous avez probablement vu plusieurs versions
         de Ruby disponibles. De façon évidente, plus le numéro de
         version est grand, plus la version de Ruby est récente. Mais
         ce n'est pas exactement vrai. Les numéros de version ont une
-        signification dans l emonde de Ruby et j'aimerai que vous
+        signification dans le monde de Ruby et j'aimerai que vous
         fassiez un choix éclairé.
 
 
-        La dernière version *stable* de Ruby est la *1.8.3*. Les
-        versions stables offrent les dernières nouveatés, bien
+        La dernière version *stable* de Ruby est la *1.8.4*. Les
+        versions stables offrent les dernières nouveautés, bien
         testées, et sont recommandées pour un usage général. Quand les
         nouvelles versions stables arrivent, vous pouvez mettre à jour
         votre installation de façon sûre.
 
 
-        *1.9.0* est la dernière version de *developpement* de
+        *1.9.0* est la dernière version de *développement* de
         Ruby. Les versions de développement incluent des changements
-        expérimentaux de Ruby ainsi que des prblèmes
+        expérimentaux de Ruby ainsi que des problèmes
         non-résolus. Cette version est faite pour tous ceux qui
         veulent avoir une idée du futur de Ruby tout en courant le
         risque de rencontrer quelques bugs.
 
 
         Maintenant, vous noterez que le numéro de version est
-        constitué de trois nombres qui sont: *la version majeure*, *la
-        version mineur* et la *version micro*. La version majeure est
+        constitué de trois nombres qui sont : *la version majeure*,
+        *la version mineure* et la *version micro*. La version majeure est
         incrémentée lors de chaque réécriture complète de Ruby. La
         version mineure est incrémentée lorsque des changements
         notables apparaissent. La version micro est incrémentée de
@@ -9638,7 +9638,7 @@ expansion_paks:
 
 
         Toutes les versions de Ruby jusqu'à présent ont une version
-        majeure de 1. Quand Ruby2 arrivera, vous verez celle-ci
+        majeure de 1. Quand Ruby2 arrivera, vous verrez celle-ci
         prendre un point.
 
 
@@ -9652,7 +9652,7 @@ expansion_paks:
 
         Oh, et si je pouvais vous donner une idée de la facilité avec
         laquelle Ruby évolue! Je ne peux pas compter le nombre de fois
-        où une idée nouvelle apparait sur la liste de difusion
+        où une idée nouvelle apparait sur la liste de diffusion
         Ruby-Core, où les Empereurs de Ruby conversent, et *cette même
         idée* est ajoutée à Ruby en quelques jours. C'est une sacrée
         machine, je vous dis!
@@ -9660,13 +9660,13 @@ expansion_paks:
     - >
       Installons la toute dernière version de Ruby sur votre
       ordinateur afin de pouvoir suivre tous les exemples dans le
-      Guide (Poignant) et faire des choses maintenant! (Oui, des choses!)
+      Guide (Poignant) et faire des choses maintenant! (Oui, des choses !)
 
 
       * Si vous utilisez *Microsoft Windows*, commencez par
         télécharger l'"Installateur de Ruby pour
-        Windows":http://rubyforge.org/frs/?group_id=167. L'exécutaion
-        de cet installateur "1-click" installera Ruby pour vous, ainsi
+        Windows":http://rubyforge.org/frs/?group_id=167. L'exécution
+        de cet installateur "1-clic" installera Ruby pour vous, ainsi
         qu'un ensemble de logiciels utiles, tels qu'un petit éditeur
         et quelques bibliothèques additionnelles.
 
@@ -9706,12 +9706,12 @@ expansion_paks:
         le "dernier code
         source":http://ruby-lang.org/en/20020102.html. Par exemple
         "Ruby
-        1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.
+        1.8.4":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.4.tar.gz.
         Pour décompresser et compiler:
 
       <pre class="text">
-       tar xzvf ruby-1.8.3.tar.gz
-       cd ruby-1.8.3
+       tar xzvf ruby-1.8.4.tar.gz
+       cd ruby-1.8.4
        ./configure
        make
        make install
@@ -9721,25 +9721,25 @@ expansion_paks:
       (Encore une fois, les commandes précédentes sont nécessaires pour
       installer Ruby à partir du code source. Vous pouvez avoir besoin
       d'utiliser @su@ ou @sudo@ pour acquérir les droits nécessaires à
-      l'execution de @make install@.) 
+      l'exécution de @make install@.) 
 
 
       Pour vérifier si Ruby est installé, ouvrez un shell et tapez:
-      @ruby -v@. Si Ruby est installé proprement, vous verez quelques
+      @ruby -v@. Si Ruby est installé proprement, vous verrez quelques
       infos sur la version.
 
 
       <pre class="text">
-       ruby 1.8.3 (2005-11-25) [i386-mswin32]
+       ruby 1.8.4 (2005-12-25) [i386-mswin32]
       </pre>
 
 
       * Pour ouvrir un shell sous *Microsoft Windows*, allez dans le
-        menu Demarrez et sélectionner @Exécuter...@. Tapez alors:
-        @cmd@. Appuez sur OK. Une fenêtre avec un shell apparaitra.
+        menu Démarrer et sélectionnez @Exécuter...@. Tapez alors :
+        @cmd@. Appuyez sur OK. Une fenêtre avec un shell apparaitra.
 
       * Pour ouvrir un shell sous *Mac OS X*, allez dans *Applications
-        -> Utilities*. Lancer le programme *Terminal*.
+        -> Utilities*. Lancez le programme *Terminal*.
 
 
       OK, gardez ce shell ouvert car nous en aurons besoin si la Terre
@@ -9761,10 +9761,10 @@ expansion_paks:
 
       Vous devriez voir le prompt ci-dessus. Ce prompt d'Irb vous
       permet de rentrer du code Ruby, et après avoir pressé sur
-      _Entrée_, le code s'exécutera:
+      _Entrée_, le code s'exécutera :
 
 
-      Donc, au prompt Irb, tapez: @3000 + 500@.
+      Donc, au prompt Irb, tapez : @3000 + 500@.
 
 
       <pre>
@@ -9798,7 +9798,7 @@ expansion_paks:
       nombre décimal. Le troisième exemple calcule le nombre de
       secondes entre @maintenant@ et Le 31 Juillet 2003 à 8 heures
       10. Les réponses de chacun de ces exemples sont affichées par
-      Irb, avec une petite flêche en ASCII les pointant.
+      Irb, avec une petite flèche en ASCII les pointant.
 
 
       h3. Lire le Prompt.
@@ -9806,7 +9806,7 @@ expansion_paks:
 
       Je sais que l'invite peut sembler déroutante. Donc, n'attendons
       pas plus pour la disséquer. C'est très simple. L'invite est
-      faitre de trois parties, séparées par *deux points*.
+      faite de trois parties, séparées par *deux points*.
 
 
       La première partie, @irb(main)@, montre *le nom du programme*
@@ -9839,13 +9839,13 @@ expansion_paks:
 
 
       Remarquez que vous n'êtes pas obligé d'aimer l'apparence de
-      l'invite. Je ne vous force à rien, et si vous voulez le
+      l'invite. Je ne vous force à rien, et si vous voulez la
       modifier, je suis là, juste derrière vous.
 
 
       Irb possède quelques autres invites par défaut qui pourraient
-      peut-être plus apaiser vos sens. Essayez @irb --prompt
-      simple@. Cette fois, Irb va vous servir de simple flêches, vous
+      peut-être plus appaiser vos sens. Essayez @irb --prompt
+      simple@. Cette fois, Irb va vous servir de simple flèches, vous
       permettant de taper votre code sans tout le rapport d'état.
 
 
@@ -9859,13 +9859,13 @@ expansion_paks:
       Ruby vient avec quelques invites. L'invite *simple* vient d'être
       vue. L'invite *xmp* qui n'a pas d'invite du tout et indente la
       flêche de la réponse. (C'est supposé être joli à
-      l'impression). Et aussi le l'invite *null*, qui élimine toute
-      invite. Choisissez l'invite en forunissant le nom à l'option
+      l'impression). Et aussi l'invite *null*, qui élimine toute
+      invite. Choisissez l'invite en fournissant le nom à l'option
       @--prompt@. (Par exemple @irb --prompt null@.)
 
 
       Vous pouvez tout aussi bien faire votre propre invite. Irb est
-      totalement configurable depuis son prpore intérieur. L'objet
+      totalement configurable depuis son propre intérieur. L'objet
       @conf@ contient toute les options de configuration
       d'Irb. Certaines de ces options servent à controller l'invite.
 
@@ -9882,7 +9882,7 @@ expansion_paks:
 
 
       <pre>
-       >> conf.prompt_i = "%3n :> "           # l'invite normal
+       >> conf.prompt_i = "%3n :> "           # l'invite normale
        >> conf.prompt_s = "%3n .%l "          # l'invite de continuation de chaine.
        >> conf.prompt_c = "%3n .^ "           # l'invite de continuation de code.
        >> conf.return_format = "    => %s\n"  # la flêche de la réponse.
@@ -9908,16 +9908,16 @@ expansion_paks:
       Vous pouvez lire plus concernant la configuration d'Irb ainsi
       que sa sauvegarde dans le "guide complet
       d'Irb":http://www.rubycentral.com/book/irb.html, disponible dans
-      le gartuit-pour-vos-yeux-vagabind-d-Internet _Programming Ruby_.
+      le gratuit-pour-vos-yeux-vagabonds-d-Internet _Programming Ruby_.
 
     - !^sidebar
       Windowziens: >      
 
         OK, voilà ce que vous devez faire afin de faire marcher la
-        completion sous Windows.
+        complétion sous Windows.
         "Téléchargez
         ceci":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
-        Un zip contenant deux fichiers. Qui doivent être copiés dans votre
+        Un zip contenant deux fichiers, qui doivent être copiés dans votre
         installation de Ruby. Placez readline.dll dans le répertoire
         *bin*. readline.so va dans le répertoire
         *lib/ruby/1.8/i386-mswin32*.
@@ -9929,7 +9929,7 @@ expansion_paks:
         Et pour les Européens, vous aurez besoin de
         "ceci":http://whytheluckystiff.net/ruby/dist/Input.euro
         Sauvez le en tant que *.inputrc* et mettez le dans votre
-        répertoire personnel (qui contient vos répertoire Desktop et
+        répertoire personnel (qui contient vos répertoire Bureau et
         Mes Documents.)
 
 
@@ -9937,8 +9937,8 @@ expansion_paks:
       h3. Complétion 
 
 
-      Une des fonctionalités d'Irb rarement montionnée est qu'il
-      possède une completion activée par la  touche tabulation. C'est
+      Une des fonctionalités d'Irb rarement mentionnée est qu'il
+      possède une completion activée par la touche tabulation. C'est
       un peu un sujet tabou ces temps-ci, étant donné qu'arriver à la
       faire marcher sous Windows est un peu horrible. (Non, n'ayez pas
       peur. Regardez sur votre droite.)
@@ -9959,7 +9959,7 @@ expansion_paks:
       deviner ce que vous êtes en train de taper.
       Essayer de taper @[].col@ et appuyez sur _Tab_. Irb terminera la
       ligne,  @[].collect@, et laissera votre curseur à la fin de
-      façon à ce que vous puissiez ontinuer à ajouter des choses sur
+      façon à ce que vous puissiez continuer à ajouter des choses sur
       cette ligne.
 
 
@@ -10005,14 +10005,14 @@ expansion_paks:
 
       Encore une dernière chose et j'arrèterai de vous embêter avec
       toute cette technologie géniale. Mais je dois le dire fort,
-      alors attention! Je suis de l'autre côté du monde ici, les gars,
+      alors attention ! Je suis de l'autre côté du monde ici, les gars,
       mais le son descendra du ciel -- un crescendo gras et rouge de --
 
 
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
 
 
-      h3={color: #300}. (Le 118-218 de Ruby ou _Oui, bonjour, je
+      h3={color: #300}. (Le 118-818 de Ruby ou _Oui, bonjour, je
       voudrais un numéro à Belgrade_ -- Je serais juste là - Appuyant
       seulement sur la touche livre sterling jusqu'à ce que quelqu'un
       décroche ...)
@@ -10057,9 +10057,9 @@ expansion_paks:
       </pre>
 
       C'est un serveur de dictionnaire Ruby -- le Pouvoir de Demander
-      au bout de vos doigts -- _ne me dites pas que vous n'avez jamais
+      au bout de vos doigts -- _ne me dîtes pas que vous n'avez jamais
       entendu parlé de cette
-      fourniture-d'explications-gratuites-totu-au-long-d'une-vie!_
+      fourniture-d'explications-gratuites-tout-au-long-d'une-vie!_
 
 
       Pour obtenir une description d'une classe, avec une liste
@@ -10074,12 +10074,12 @@ expansion_paks:
 
 
       Notez que les méthodes d'instance utilise un dièse (#) plutôt
-      qu'un point (le point pouvant signifier méthodes de class *ou*
+      qu'un point (le point pouvant signifier méthodes de classe *ou*
       d'instance), donc: @ri Class#method@.
 
 
       Le spectre total des classes, une liste complète de Tout En Haut
-      jusqu'au coeur de la Terre, peut-être obtenu avec @ri -c@.
+      jusqu'au coeur de la Terre, peut-être obtenue avec @ri -c@.
 
 
       Et en plus du texte, vous pouvez obtenir de l'HTML: @ri -Tf html
