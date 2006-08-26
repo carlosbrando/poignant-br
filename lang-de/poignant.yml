@@ -44,7 +44,7 @@ teaser:
       Auf rubyforen.de gibt es einen "Thread":http://www.rubyforen.de/topic,633.html dazu.
 
   - Lies den Absatz: >
-      Bei meinem örtlichen Barnes & Noble (einem Buchladen) gibt es eine riesige Regalwand
+      Bei meinem örtlichen Barnes & Noble gibt es eine riesige Regalwand
       voller Java-Bücher, die nur darauf wartet, eines Tages umzukippen und mich zu erschlagen.
       Eines Tages wird das passieren. Wenn das so weitergeht, wird dieses Regal
       eines Tages groß genug sein, um uns alle zu erschlagen. Möglicherweise fällt es sogar
@@ -730,7 +730,7 @@ chapters:
         h3. Variablen
 
 
-        Jedes einfache, kleinbuchstabige Wort ist in Ruby eine Variable. Variablen können aus
+        Jedes klein geschriebene Wort ist in Ruby eine Variable. Variablen können aus
         Buchstaben, Ziffern und Unterstrichen bestehen.
 
 
@@ -754,7 +754,7 @@ chapters:
 
 
         Später rufst du ihn an die Kasse (eine frisierte Registrierkasse mit Ruby!) Du musst die
-        fälligen Gebühren zu einem *total* zusammenrechnen.
+        fälligen Gebühren zu einem @total@ zusammenrechnen.
 
 
         bq. @total = waisen_steuer + teddy_steuer + trinkgeld@
@@ -979,7 +979,7 @@ chapters:
 
 
         Einige Methoden (wie @print@) sind Kernel-Methoden. Diese Methoden werden in ganz Ruby verwendet.
-        Weil sie so grundlegend sind, benutzen wir keinen Punkt.
+        Weil sie so grundlegend sind, benutzen wir auch keinen Punkt.
 
 
         bq. @print "Siehst du, kein Punkt."@
@@ -1067,7 +1067,7 @@ chapters:
         Klassenvariablen die Attribute für jedes @Tor@.
 
 
-        Das *doppelte at* kann für *Attribut aller* stehen. Zusätzliche kannst du dir einen Schwarm AT-ATs
+        Das *doppelte at* könnte für *Attribut aller* stehen. Zusätzliche kannst du dir einen Schwarm AT-ATs
         aus _Star Wars_ vorstellen, die alle unter Rubys Kommando stehen. Du änderst eine Klassenvariable,
         und nicht nur eine, sondern alle ändern sich.
 
@@ -1171,7 +1171,7 @@ chapters:
 
         Stell sie dir als Akkordeons vor, die man für den Transport zusammengefaltet hat. (Natürlich
         kannst du ein tolles Selbstwertgefühl aufbauen, wenn du ausgefaltete Akkordeons mit dir herumträgst.
-        Aber manchmal muss man in Selbstzweifeln versinken und sie in der Transportbox verstecken.)
+        Aber manchmal muss man in Selbstzweifeln versinken und sie in Transportboxen verstecken.)
         Die Klammern sind die Griffe an den Seiten dieses kleineren Taschen-Akkordeons. Die Punkte sind
         die Kette, die den Balg zusammenhält.
 
@@ -1196,7 +1196,7 @@ chapters:
         den Bauern, Physikern und Fußballspielern im Land.</small>
 
         
-        Ein Array ist eine *komma*getrennte Liste in *eckigen Klammern*.
+        Ein Array ist eine durch *Kommas* getrennte Liste in *eckigen Klammern*.
 
 
         bq. @[1, 2, 3]@ ist ein Array von Zahlen.
@@ -1568,7 +1568,7 @@ chapters:
 
 
         Dieser Code holt dir eine Website.  Wir senden ihr die Nachricht @body@, die uns das ganze HTML
-        in einem _String_ liefert.  Den drucken wir dann mit @print@.  Schau dir an, wie man das
+        in einem _String_ liefert.  Den geben wir dann mit @print@ aus.  Schau dir an, wie man das
         Grundmuster Punkt-Methode verketten kann.  Das nächste Kapitel wird alle möglichen Arten dieser
         Ruby-Muster erforschen.  Das wird ein Spaß.
 
@@ -3035,13 +3035,13 @@ chapters:
 #  }}}
 
 # {{{ Kapitel 5: 0%
-  - Them What Make the Rules and Them What Live the Dream:
+  - Die einen machen die Regeln, die anderen leben den Traum:
 
     - >
-      !i/dr.cham-1.gif(Through space and time... in his bell jar... on a mission to find himself...)!
+      !i/dr.cham-1.gif(Durch Raum und Zeit... in seiner Glocke aus Glas... auf einer Mission, um sich selbst zu finden...)!
 
 
-      Frankly, I'm sick and tired of hearing that Dr. Cham was a madman.  Yes, he tried to bury
+      Um ehrlich zu sein: Ich habe es satt, mir dauernd anzuhören, Dr. Cham sei ein Wahnsinniger gewesen.  Yes, he tried to bury
       himself alive.  Yes, he electrocuted his niece.  Yes, in fact, he did dynamite a retirement
       home.  But this was all with good cause and, in each case, I believe he took the
       correct course of action.
@@ -6457,11 +6457,11 @@ chapters:
 # }}}
 
 # {{{ Kapitel 6: 0%
-  - Downtown:
+  - In die Stadt:
     - >
-      !i/wixl-1.jpg(Lost in Wixl)!
+      !i/wixl-1.jpg(Gestrandet in Wixl)!
 
-      !i/wixl-2.gif(This heist goes all the way up?)!
+      !i/wixl-2.gif(Dieser Raub geht bis ganz oben?)!
 
 
       Oblivious to their involvement in the expansive plan of The Originals, both the tall fox and the
