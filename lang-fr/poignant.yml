@@ -10105,8 +10105,8 @@ expansion_paks:
       détaillés décrivent tout ce que l'on peut voir.
 
 
-      In Ruby's @date@ class, here we have such commented methods:
-
+      Dans la classe @date@ de Ruby, nous avons ce genre de méthodes
+      commentées: 
 
       <pre>
        # Get the time of this date as [hours, minutes, seconds,
@@ -10121,8 +10121,8 @@ expansion_paks:
       </pre>
 
 
-      The comments show up in Ri.  We type: @ri Date#time@.
-
+      Ces commentaires apparaissent dans Ri. Nous tapons: @ri
+      Date#time@.
 
       <pre class="text">
        -------------------------------------------------------------- Date#time
@@ -10134,18 +10134,23 @@ expansion_paks:
       </pre>
 
 
-      Ri figures out much of how a method works, although it expects coders to
-      write a brief description in the comments just before a method or class definition.
-      I would suggest that whenever you write a method, add a brief
-      description in the comments before that method.  In time, you can generate
-      Ri documentation for that method.
+      Ri comprend comment fonctionne une méthode, bien qu'il s'attende
+      à ce que les développeurs écrivent une brève description dans
+      les commenatires, juste avant la définition d'une class ou d'une
+      méthode.
+      Je suggèrerais que chaque fois aue vous écrivez une méthode,
+      vous ajoutiez une brève description dans les commentaires, juste
+      avant cette méthode. Quand le moment sera venu, vous pourrez
+      alors générer de la documentation Ri pour cette méthode.
 
 
-      You can also use a few special characters to enhance your description.  For
-      example, if you indent a paragraph and use an asterisk @*@ or a dash @-@
-      just before the letters of the first sentence, the paragraph will be recognized
-      as a list item.  Then, if your description needs to be converted to HTML, you'll
-      see the list item appear as an HTML unordered list.
+      Vous pouvez aussi utiliser quelques caractères spéciaux pour
+      améliorer votre description. Par exemple, si vous indentez un
+      paragraphe et utilisez une astérisque @*@ ou un trait d'union
+      @-@ juste avant les lettres de la première phrase, ce paragraphe
+      sera alors reconnu comme un élément d'une liste. Si votre
+      description doit alors être convertie en HTML, vous verez
+      apparaître une liste HTML non-ordonnée.
 
 
       <pre>
