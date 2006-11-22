@@ -363,7 +363,7 @@ chapters:
 
         Comme lorsque vous rencontrez Quelqu'un au lycée, et qu'il
         ressemble à Quelqu'un qui avait l'habitude de vous
-        peinturlurer le visage quand vous êtiez enfant. Impulsivement,
+        peinturlurer le visage quand vous étiez enfant. Impulsivement,
         vous aviez conclus que ce Quelqu'un n'était pas un ami. Vous
         critiquiez sa coiffure. Vous décrochiez bruyamment le
         téléphone aux moments cruciaux des histoires qu'il
@@ -374,11 +374,11 @@ chapters:
 
         Toutefois, six mois plus tard, vous et Quelqu'un bavardiez
         tranquillement à côté d'une fontaine. Il ne ressemblait plus à
-        votre cauchemard d'enfance. Vous aviez trouvé le Bon
+        votre cauchemar d'enfance. Vous aviez trouvé le Bon
         Jumeau. Le coup de foudre.
 
 
-        Aussi, là où je devrais sans doute vous assomer d'exagérations à
+        Aussi, là où je devrais sans doute vous assommer d'exagérations à
         propos de Ruby, ainsi qu'avec le lot d'acronymes pertinents
         qui l'accompagne partout (soulevant les sifflements collectifs
         de votre patron et du patron de votre patron), je vous
@@ -392,7 +392,7 @@ chapters:
         d'apprendre Ruby.
 
 
-        # *Santé du cerveau.* <p>Vitamine R. Monte directememnt au
+        # *Santé du cerveau.* <p>Vitamine R. Monte directement au
         cerveau. Ruby vous apprendra à _exprimer_ vos idées grâce à
         l'ordinateur. Vous écrirez des histoires pour une
         machine.</p><p>Le talent créatif, les
@@ -468,7 +468,7 @@ chapters:
         Mais comme je ne m'entends pas très bien avec les personnes,
         je n'avais invité personne à part moi au Cérémonies
         d'Ouverture de Ce Livre. Donc ce n'était pas vraiment
-        embarassant. Je l'ai gardé secret et personne n'a encore
+        embarrassant. Je l'ai gardé secret et personne n'a encore
         découvert cela.
 
 
@@ -496,7 +496,7 @@ chapters:
       !i/the.foxes-2.png(Renards dans des boîtes.)!
        
 
-      On m'a dit qu'il vallait mieux être équipé d'un mouchoir pour ce
+      On m'a dit qu'il valait mieux être équipé d'un mouchoir pour ce
       chapitre. Quelque chose pour vous éponger le visage lorsque vous
       allez suer.
 
@@ -541,7 +541,7 @@ chapters:
         Dans les phrases françaises, les signes de ponctuation (telle
         que le point, le point d'exclamation, les parenthèses) sont
         des silences. La ponctuation ajoute du sens aux mots, en
-        donnat des informations sur ce que l'auteur de lap hrase veut
+        donnant des informations sur ce que l'auteur de lap hrase veut
         exprimer. Aussi lisons ce qui précède comme: _Cinq fois
         affiche "Odelay!"._
 
@@ -591,7 +591,7 @@ chapters:
         majuscule._)
         
 
-        L'ordinateur repondra alors courtoisement: @Pain@, @Fromage@ et @Vin@.
+        L'ordinateur répondra alors courtoisement: @Pain@, @Fromage@ et @Vin@.
 
 
         Maintenant, vous devez vous demander comment ces mots vont en
@@ -632,7 +632,7 @@ chapters:
         Pourquoi désirerais-je de l'argent ? IGNOREZ TOUTES LES AUTRES
         COLONNES : j'ai perdu toute volonté de devenir un plouc
         riche. Cela semble inhumain, mais j'aime ma petite télé en
-        noir et blanc. Ansi que ma lampe-fleur en plastique. Je ne
+        noir et blanc. Ainsi que ma lampe-fleur en plastique. Je ne
         veux pas devenir un écrivain. Le cash ne m'inspire pas. Aucun
         intérêt.
 
@@ -641,7 +641,7 @@ chapters:
         (NDT: "why the lucky stiff" se traduit par "why le cadavre
         chanceux"), pourquoi me pomper quand vous pouvez coopter des
         pratiques commerciales louches pour littéralement anéantir mon
-        pshychisme et laisser mes poumons d'acier pleins de suie ?
+        psychisme et laisser mes poumons d'acier pleins de suie ?
         Sans parler de l'ironie qui consiste à utiliser mon propre
         travail contre moi! Meurs, Mec Poignant!
 
@@ -656,7 +656,7 @@ chapters:
 
 
         Acheter une fabrique de cigarettes. Utilisez mes renards de
-        bande-dessinée dans une campgagne publicitaire
+        bande-dessinée dans une campagne publicitaire
         aggressive. Voilà un panneau d'affichage pour les débutants:
 
 
@@ -796,7 +796,7 @@ chapters:
         d'autres Rubyistes.
 
 
-        Essayez de vous focaliser sur l'apparence de chacuns de ces
+        Essayez de vous focaliser sur l'apparence de chacun de ces
         constituants. Le reste du livre détaillera chaque
         spécificité. Je donne une description courte pour chacun des
         constituants, mais vous n'avez pas à comprendre
@@ -828,7 +828,7 @@ chapters:
         Papa Warbucks vient pour acheter plus d'enfants, on insiste
         pour qu'il paie *cent vingt et un euros et huit centimes* pour
         l'ourson en peluche de l'enfant, auquel il s'est attaché dans
-        les moments sombres de sa vie de cauchemard.
+        les moments sombres de sa vie de cauchemar.
 
 
         bq. @frais_d_ourson = 121.08@
@@ -836,7 +836,7 @@ chapters:
 
         Plus tard, quand vous le retrouverez à la caisse
         enregistreuse (une caisse enregistreuse de première
-        puisqu'elle tourne sous Ruby), vous devrez additioner ensemble
+        puisqu'elle tourne sous Ruby), vous devrez additionner ensemble
         toutes ces factures pour obtenir le *total*.
 
 
@@ -894,7 +894,7 @@ chapters:
 
 
         Quand vous entourez des caractères par des guillemets, ils
-        sont stoqués ensemble, comme une seule chaîne.
+        sont stockés ensemble, comme une seule chaîne.
         
 
         Pensez à un journaliste qui transcrit les divagations d'une
@@ -911,8 +911,8 @@ chapters:
         </pre>
 
 
-        De même que nous venions de stoquer un nombre dans la variable
-        *frais_d_ourson*, nous stoquons maintenant une suite de
+        De même que nous venions de stocker un nombre dans la variable
+        *frais_d_ourson*, nous stockons maintenant une suite de
         caractères (une chaîne) dans la variable *avril_citation*. Le
         journaliste envoie cette citation à l'impression, qui par
         chance, utilise Ruby pour faire fonctionner sa presse.
@@ -946,9 +946,9 @@ chapters:
         bq. @:a@, @:b@, ou @:ponce_de_leon@ en sont des exemples.
 
 
-        Les symboles sont des chaines de caractères
+        Les symboles sont des chaînes de caractères
         "légères". Généralement les symboles sont utilisés dans les
-        situations ou vous avez besoin d'une chaine de caractères mais
+        situations ou vous avez besoin d'une chaîne de caractères mais
         où vous ne voulez pas l'afficher à l'écran.
 
 
@@ -978,7 +978,7 @@ chapters:
         par une majuscule. L'Empire State Building. Vous ne pouvez pas
         changer l'Empire State Building. Vous ne pouvez pas décider
         que l'Empire State Building désignera quelque chose
-        d'autre. Les noms propres sont comme celà. Ils se rapportent à
+        d'autre. Les noms propres sont comme cela. Ils se rapportent à
         quelque chose de très spécifique et généralement ne changent
         pas au cours du temps.
 
@@ -1012,7 +1012,7 @@ chapters:
 
         Dans l'exemple précédent, *ouvre* est la méthode. C'est
         l'action, le verbe. Dans certains cas vous pouvez voir des
-        actions enchainées.
+        actions enchaînées.
 
 
         bq. @porte_devant.ouvre.ferme@
@@ -1029,7 +1029,7 @@ chapters:
         l'ordinateur de tester la porte afin de savoir si elle est
         ouverte. On aurait pu appeler la méthode
         @Porte.essaie_de_savoir_si_elle_est_ouverte@ mais le nom @est_ouverte?@ est plus
-        succint et tout aussi correct. On peut utiliser à la fois les
+        succinct et tout aussi correct. On peut utiliser à la fois les
         points d'exclamation et d'interrogation dans les noms de
         méthodes.
 
@@ -1042,8 +1042,8 @@ chapters:
         de peindre la porte, nous devons lui en indiquer la couleur.
 
 
-        Les arguments des methodes sont attachés à la fin des
-        méthodes. Ils sont générallement entourés par des
+        Les arguments des méthodes sont attachés à la fin des
+        méthodes. Ils sont généralement entourés par des
         *parenthèses* et séparés par des *virgules*.
 
 
@@ -1054,7 +1054,7 @@ chapters:
 
 
         Représentez le vous comme une chambre à air que la méthode
-        traine avec elle. Les parentèses forment les bords ronds et
+        traîne avec elle. Les parentèses forment les bords ronds et
         humides de la chambre à air. Les virgules sont les pieds de
         chaque argument accrochés au bord. Le dernier argument a
         ses pieds sous lui de façon à les cacher.
@@ -1070,7 +1070,7 @@ chapters:
         Ce qui précède peint de 3 couches de rouge la porte, la sèche
         pendant 30 minutes et la referme. Même si la dernière méthode
         n'a pas d'argument vous pouvez quand même mettre des
-        parenthèses si celà vous chante. Toutefois, il est inutile de
+        parenthèses si cela vous chante. Toutefois, il est inutile de
         trainer une chambre à air vide, donc on omet généralement les
         parenthèses.
 
@@ -1102,7 +1102,7 @@ chapters:
         l'exemple précédent, on demande à Ruby de nous créer une
         nouvelle porte en chêne. Bien sûr, Ruby doit savoir comment
         fabriquer une porte -- de même que du bois de charpente, des
-        bucherons et ces longues scies à deux hommes.
+        bûcherons et ces longues scies à deux hommes.
 
 
         !i/the.foxes-4e.png(Plein de petits morceaux de bacon.)!
@@ -1201,7 +1201,7 @@ chapters:
         h3. Blocs
 
 
-        Tout code entourré par des *accolades* est un bloc.
+        Tout code entouré par des *accolades* est un bloc.
 
 
         bq. @2.times { print "Oui, j'ai utilisé Chunky Bacon dans mes
@@ -1210,15 +1210,15 @@ chapters:
 
         Avec les blocs, vous pouvez grouper un ensemble d'instruction
         de façon à les transmettre au cours de votre programme.
-        Les accolades ressemblents à des pinces de crabe qui auraient
-        aggripé le code et le tiendrait groupé. Quand vous voyez ces
+        Les accolades ressemblent à des pinces de crabe qui auraient
+        agripé le code et le tiendrait groupé. Quand vous voyez ces
         deux pinces, rappelez vous que le code enserré a été compressé
         en une seule unité.
 
 
         C'est comme l'une des ces petites boîtes "Hello
         Kitty":http://fr.wikipedia.org/wiki/Hello_Kitty qu'ils vendent
-        au supermaché, remplies de petits stylos et de papier
+        au supermarché, remplies de petits stylos et de papier
         microscopique, le tout empaqueté dans une petite trousse
         transparente et brillante qui tient dans le creux de la
         main. Mis à part que les blocs évitent de trop loucher.
@@ -1296,7 +1296,7 @@ chapters:
         parfois une personne a besoin de se vautrer dans le doute, en
         le transportant, plié, dans son étui.) Les parenthèses
         représentent les poignées sur les côté d'un bandoléon. Les
-        points représentent la chaine qui maintient l'accordéon plié.
+        points représentent la chaîne qui maintient l'accordéon plié.
 
 
         Généralement, on utilise seulement deux points. Si un
@@ -1329,7 +1329,7 @@ chapters:
 
         Représentez le vous comme une chenille qui aurait été
         agrafée sur votre code. Les deux crochets sont les agrafes
-        qui l'empèche de bouger, afin de noter où se trouvent la tête
+        qui l'empêche de bouger, afin de noter où se trouvent la tête
         et la queue. Les virgules sont les jambes de la chenille
         frétillantes entre chaque section de son corps.
 
@@ -1339,7 +1339,7 @@ chapters:
         pause littéraire après chaque pas. Les autres chenilles la
         respectaient beaucoup pour cette particularité, et elle servait
         un peu de chef. Et sans parler d'un philanthrope! Il était
-        connu pour donner des feuilles fraiches aux moins fortunées.
+        connu pour donner des feuilles fraîches aux moins fortunées.
 
 
         Oui, un tableau est une collection de choses, mais il garde
@@ -1352,8 +1352,8 @@ chapters:
 
         Une table de hachage est un dictionnaire entouré par des
         *accolades*. Les dictionnaires font correspondre des noms à
-        leur définition. Ruby indique celà par une *flèche*, faite
-        d'un signal egal suivi par un signe supérieur.
+        leur définition. Ruby indique cela par une *flèche*, faite
+        d'un signal égal suivi par un signe supérieur.
 
 
         bq. @{'a' => 'aardvark', 'b' => 'badger'}@ en est un exemple.
@@ -1368,14 +1368,14 @@ chapters:
         Imaginez que notre dictionnaire ait une définition sur chaque
         page. Les virgules représentent les coins de chacune des
         pages, que nous tournons pour voir la prochaine définition. Et
-        sur chaque page : un mot suivi par une flèche poitant vers sa définition.
+        sur chaque page : un mot suivi par une flèche pointant vers sa définition.
 
 
         <pre>
          {
            'nom' => 'Pierre',
            'profession' => 'dresseur de lion',
-           'grand amour' => 'flannelle'
+           'grand amour' => 'flanelle'
          }
         </pre>
 
@@ -1384,7 +1384,7 @@ chapters:
         indiquer que l'on ne peut stocker que des définitions dans les
         tables de hachage. Dans l'exemple précédent, j'ai stocké les
         informations personnelles de Pierre, le dresseur de lion avec
-        un penchant pour la flannelle. Les tables de hachage sont
+        un penchant pour la flanelle. Les tables de hachage sont
         comme les dictionnaires car elles permettent une recherche facile.
 
 
@@ -1424,7 +1424,7 @@ chapters:
 
 
         Les expressions régulières sont beaucoup plus rapide que de
-        passer vos mains sur les pages du livres. Ruby peut utliser
+        passer vos mains sur les pages du livre. Ruby peut utiliser
         une expression régulière pour chercher à travers énormément de
         livres très rapidement.
 
@@ -1432,10 +1432,10 @@ chapters:
         h3. Opérateurs
 
 
-        Vous utiliserez la liste suivantes d'opérateurs pour faires
+        Vous utiliserez la liste suivante d'opérateurs pour faire
         des maths en Ruby ou pour comparer des choses. Lisez la liste,
         essayez d'en reconnaître certains. Vous savez, l'addition @+@,
-        la soustraction @-@ et tout celà...
+        la soustraction @-@ et tout cela...
 
 
         <pre class="text">
@@ -1496,7 +1496,7 @@ chapters:
       Sept Moments Zen dans Ma Vie: >
 
         # 8 ans. Allongé dans le lit, pensif. Et je réalise: _Rien ne
-        m'empèche de devenir un enfant dentiste._
+        m'empêche de devenir un enfant dentiste._
 
         # 21 ans. Je trouve un stylo sur la plage. Gravé dessus:
         _J'aime la sérénité._ A l'abri dans la poche intérieure de
@@ -1505,7 +1505,7 @@ chapters:
         # 22 ans. Je trouve, dans ma salle de bain, un scarabée sur le
         point de tomber dans le chauffage. Je le sauve. Je lui
         confectionne un petit sac à dos à l'aide d'une feuille et de
-        fil. Dans le sac à dos: une quille et une pile AAA. Celà
+        fil. Dans le sac à dos: une quille et une pile AAA. Cela
         devrait l'aider. Je le libère devant le portail de devant.
 
         # 3 ans: J'écarte le rideau. Le soleil.
@@ -1521,11 +1521,11 @@ chapters:
         juste devant moi. Sa tête tournoyant vers moi. Sa tête allant
         et venant d'avant en arrière, très près puis à des millions de
         kilomètres. Plus de son. En une fraction de seconde,
-        Heathcliff avait rempli l'univers puis était parti au confin
+        Heathcliff avait rempli l'univers puis était parti aux confins
         de l'infini. J'entendais la voix de ma mère qui essayait de me
         parvenir au travers de la série. Proche, loin, proche,
         loin. C'était une rave religieuse avec un chat stroboscope et
-        la voix de ma mère comme une basse etouffée. (J'avais plus de
+        la voix de ma mère comme une basse étouffée. (J'avais plus de
         40 de fièvre ce jour là).
 
         # 18 ans. Je m'achète un animal de compagnie. Un canard. Je le
@@ -1586,9 +1586,9 @@ chapters:
 
         A l'instar de la méthode @print@, @exit@ est une méthode du
         kernel. Si vous avez fait attention lors de la grande liste de
-        mots-clé, vous savez que @unless@ est un _mot-clé_. La _chaine
-        de caratères_ @"restaurant"@ est suivi de la _méthode_
-        @include?@. Et enfin, la chaîne de caratères @"aura"@.
+        mots-clé, vous savez que @unless@ est un _mot-clé_. La _chaîne
+        de caractères_ @"restaurant"@ est suivie de la _méthode_
+        @include?@. Et enfin, la chaîne de caractères @"aura"@.
 
 
         *Prononcez à haute voix les parties du discours utilisées
@@ -1611,7 +1611,7 @@ chapters:
         chaîne est alors passée à la _méthode_ de kernel @print@. 
 
 
-        Relisez encore ces exemples. Soyez sûr de reconnaitre les
+        Relisez encore ces exemples. Soyez sûr de reconnaître les
         différentes parties du discours utilisées. Elles ont toutes un
         look différent, n'est-ce-pas ? Prenez une inspiration
         profonde, appuyez fermement sur vos tempes. Maintenant,
@@ -1657,7 +1657,7 @@ chapters:
         La _méthode_ @get@ est appelée depuis la _variable_
         @http@. Nous passons à @get@ une _chaîne de caractères_
         contenant le chemin @'/en/LICENSE.txt'@. Maintenant, remarquez
-        qu'une autre méthode est enchainée avec @get@. La _méthode_
+        qu'une autre méthode est enchaînée avec @get@. La _méthode_
         @body@. Puis le bloc se termine avec un @end@.
 
 
@@ -1716,7 +1716,7 @@ chapters:
         Ce code récupère la page web. Nous envoyons un message @body@
         à cette page web, ce qui nous donne tout l'HTML dans une
         _chaîne de caractères_. On _affiche_ (NDT: @print@ en anglais)
-        ensuite cette chaine. Vous voyez comme le motif point-méthode
+        ensuite cette chaîne. Vous voyez comme le motif point-méthode
         est utilisé de façon chaînée. Le prochain chapitre explorera
         ce genre de motifs en Ruby. Ce sera marrant.
 
@@ -1738,18 +1738,18 @@ chapters:
         du XML!
  
 
-        Si celà vous plaît déjà, alors les choses vont vraiment
+        Si cela vous plaît déjà, alors les choses vont vraiment
         mal. Dans deux chapitres, vous écrirez vos propres
         programmes en Ruby. En fait, c'est juste là que je vous ferai
         écrire votre propre jeu de rôle, votre propre réseau de
         partage de fichiers (à la BitTorrent) ainsi qu'un programme qui
-        récupèrera des nombres aléatoires depuis Internet.
+        récupérera des nombres aléatoires depuis Internet.
 
 
         !>i/graph-1.gif(Proof has been extracted from the pudding.)!
 
 
-        Et vous savez (vous devez savoir!) que celà va devenir une
+        Et vous savez (vous devez savoir!) que cela va devenir une
         obsession. D'abord vous allez complètement oublier de sortir
         le chien. Il attendra près de la porte de votre bureau,
         tournant sa tête vers vous, alors que vos yeux dévoreront le
@@ -1760,7 +1760,7 @@ chapters:
         mal. Vos tas de feuilles imprimées de code vont recouvrir vos
         conduits d'aération. Votre chaudière va se boucher. Les
         ordures vont s'amonceler : des boîtes à emporter que vous aurez
-        commandé précipitamment, du courrier inoportun. Votre propre
+        commandé précipitamment, du courrier inopportun. Votre propre
         crasse polluera l'air. La mousse gagnera le chevron, les
         arrivées d'eau vont se boucher, les animaux entreront, et les
         arbres pousseront depuis les fondations.
@@ -1770,7 +1770,7 @@ chapters:
         Smotchkkiss, le nourrirez avec votre connaissance. Au cours
         des éternités que vous aurez passé avec votre machine, vous
         serez devenu à moitié CPU. Et il sera devenu à moitié
-        humain. Vos bras pénètreront directement dans les ports de
+        humain. Vos bras pénétreront directement dans les ports de
         votre ordinateurs. Vos yeux accepteront la video directement
         depuis une broche DVI-24. Vos poumons se trouveront juste au
         dessus du processeur, et le refroidiront.
@@ -1814,13 +1814,13 @@ chapters:
       respiration. L'étape la plus cruciale de votre instruction. Vous
       pouvez avoir tout d'abord l'impression que vous n'apprenez pas
       beaucoup à coder. Vous apprendrez des concepts. A la fin de ce
-      chapître, vous connaîtrez la beauté de Ruby. Le confort apporté
+      chapitre, vous connaîtrez la beauté de Ruby. Le confort apporté
       par le code deviendra un sac de couchage pour votre propre réconfort.
       
 
     - La Feuille En Tant Que Symbole de Status à Ambroise: >
 
-        Trés bien, l'Elfe. Expliquez nous rapidement les problèmes de
+        Très bien, l'Elfe. Expliquez nous rapidement les problèmes de
         monnaie que vous rencontrez dans votre royaume.
 
 
@@ -1832,7 +1832,7 @@ chapters:
         message sur mon pager. C'est-à-dire : il a bippé quelques fois
         et a ensuite imprimé un petit morceau de papier. Ce morceau
         disait quelque chose qui ressemblait à "Descends vite ici!" et
-        aussi "Nous devons débarasser la Terre du fléau que ce sont
+        aussi "Nous devons débarrasser la Terre du fléau que ce sont
         ces chenilles, ces insectes tordus étouffent mes cristaux
         bleus !"
 
@@ -9652,7 +9652,7 @@ expansion_paks:
 
         Oh, et si je pouvais vous donner une idée de la facilité avec
         laquelle Ruby évolue! Je ne peux pas compter le nombre de fois
-        où une idée nouvelle apparait sur la liste de diffusion
+        où une idée nouvelle apparaît sur la liste de diffusion
         Ruby-Core, où les Empereurs de Ruby conversent, et *cette même
         idée* est ajoutée à Ruby en quelques jours. C'est une sacrée
         machine, je vous dis!
@@ -9736,7 +9736,7 @@ expansion_paks:
 
       * Pour ouvrir un shell sous *Microsoft Windows*, allez dans le
         menu Démarrer et sélectionnez @Exécuter...@. Tapez alors :
-        @cmd@. Appuyez sur OK. Une fenêtre avec un shell apparaitra.
+        @cmd@. Appuyez sur OK. Une fenêtre avec un shell apparaîtra.
 
       * Pour ouvrir un shell sous *Mac OS X*, allez dans *Applications
         -> Utilities*. Lancez le programme *Terminal*.
@@ -9844,7 +9844,7 @@ expansion_paks:
 
 
       Irb possède quelques autres invites par défaut qui pourraient
-      peut-être plus appaiser vos sens. Essayez @irb --prompt
+      peut-être plus apaiser vos sens. Essayez @irb --prompt
       simple@. Cette fois, Irb va vous servir de simple flèches, vous
       permettant de taper votre code sans tout le rapport d'état.
 
@@ -9858,7 +9858,7 @@ expansion_paks:
 
       Ruby vient avec quelques invites. L'invite *simple* vient d'être
       vue. L'invite *xmp* qui n'a pas d'invite du tout et indente la
-      flêche de la réponse. (C'est supposé être joli à
+      flèche de la réponse. (C'est supposé être joli à
       l'impression). Et aussi l'invite *null*, qui élimine toute
       invite. Choisissez l'invite en fournissant le nom à l'option
       @--prompt@. (Par exemple @irb --prompt null@.)
@@ -9883,9 +9883,9 @@ expansion_paks:
 
       <pre>
        >> conf.prompt_i = "%3n :> "           # l'invite normale
-       >> conf.prompt_s = "%3n .%l "          # l'invite de continuation de chaine.
+       >> conf.prompt_s = "%3n .%l "          # l'invite de continuation de chaîne.
        >> conf.prompt_c = "%3n .^ "           # l'invite de continuation de code.
-       >> conf.return_format = "    => %s\n"  # la flêche de la réponse.
+       >> conf.return_format = "    => %s\n"  # la flèche de la réponse.
       </pre>
 
 
@@ -9937,7 +9937,7 @@ expansion_paks:
       h3. Complétion 
 
 
-      Une des fonctionalités d'Irb rarement mentionnée est qu'il
+      Une des fonctionnalités d'Irb rarement mentionnée est qu'il
       possède une completion activée par la touche tabulation. C'est
       un peu un sujet tabou ces temps-ci, étant donné qu'arriver à la
       faire marcher sous Windows est un peu horrible. (Non, n'ayez pas
@@ -9955,7 +9955,7 @@ expansion_paks:
       </pre> 
 
 
-      Pour simplfier, si vous tapez la touch _Tab_, Irb essaiera de
+      Pour simplifier, si vous tapez la touch _Tab_, Irb essaiera de
       deviner ce que vous êtes en train de taper.
       Essayer de taper @[].col@ et appuyez sur _Tab_. Irb terminera la
       ligne,  @[].collect@, et laissera votre curseur à la fin de
@@ -10003,7 +10003,7 @@ expansion_paks:
       !i/tigers.vest-3.gif(Except the robot flew away and the ice gun went on and on...)!
 
 
-      Encore une dernière chose et j'arrèterai de vous embêter avec
+      Encore une dernière chose et j'arrêterai de vous embêter avec
       toute cette technologie géniale. Mais je dois le dire fort,
       alors attention ! Je suis de l'autre côté du monde ici, les gars,
       mais le son descendra du ciel -- un crescendo gras et rouge de --
@@ -10029,7 +10029,7 @@ expansion_paks:
       </pre>
 
 
-      Sans aucun delai, sur votre télétype (si rapidement que même le
+      Sans aucun délai, sur votre télétype (si rapidement que même le
       chat perché au dessus de vous se tord le coup pour le voir,
       s'étonne et lui tend la coupe royale _Meilleur truc depuis Framboisier_).
 
@@ -10064,8 +10064,8 @@ expansion_paks:
 
       Pour obtenir une description d'une classe, avec une liste
       complète de toutes ses méthodes, le tout avec une voix relaxante
-      pafaite pour vous calmer, vous les cosmonautes paniqués, qui
-      vous battaient contre l'attaction d'un rayon tractant à
+      parfaite pour vous calmer, vous les cosmonautes paniqués, qui
+      vous battaient contre l'attraction d'un rayon tractant à
       tolérance zéro, tapez juste sur votre ligne de commande: @ri Class@.
 
 
@@ -10136,9 +10136,9 @@ expansion_paks:
 
       Ri comprend comment fonctionne une méthode, bien qu'il s'attende
       à ce que les développeurs écrivent une brève description dans
-      les commenatires, juste avant la définition d'une class ou d'une
+      les commenatires, juste avant la définition d'une classz ou d'une
       méthode.
-      Je suggèrerais que chaque fois aue vous écrivez une méthode,
+      Je suggérerais que chaque fois aue vous écrivez une méthode,
       vous ajoutiez une brève description dans les commentaires, juste
       avant cette méthode. Quand le moment sera venu, vous pourrez
       alors générer de la documentation Ri pour cette méthode.
@@ -10149,7 +10149,7 @@ expansion_paks:
       paragraphe et utilisez une astérisque @*@ ou un trait d'union
       @-@ juste avant les lettres de la première phrase, ce paragraphe
       sera alors reconnu comme un élément d'une liste. Si votre
-      description doit alors être convertie en HTML, vous verez
+      description doit alors être convertie en HTML, vous verrez
       apparaître une liste HTML non-ordonnée.
 
 
