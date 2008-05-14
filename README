@@ -61,3 +61,14 @@ To build the HTML version of this book:
   scripts/images/: The images folder.  Contains images at no larger than 800px.  These images are
     designed for the website.  Eventually, I will add a folder with 300dpi images.
 
+=== Para a versão em Português ===
+
+  Antes de executar o "rake pt", conforme explicado acima, primeiro rode este comando:
+
+  rake merge_pt
+
+  Desta forma, os pequenos trechos serão mesclados num único arquivo "lang-pt/poignant.yml"
+  como era na versão original.
+
+  * Google Groups: http://groups.google.com/group/whys-poignant-guide-to-ruby---portugues
+  * Planilha: 

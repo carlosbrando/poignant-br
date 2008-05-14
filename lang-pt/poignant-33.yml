@@ -1,0 +1,328 @@
+    - >
+        The @reverse@ method is then used on the string that @gets@ is giving back.  The @reverse@ method
+        is part of the @String@ class.  Which means that *anything which is a string has the @reverse@ method
+        available*.  More on classes in the next chapter, for now just know that *a lot of methods are only
+        available with certain types of values*.
+
+
+        I don't think @reverse@ is going to cut it.  The authorities only need to put a mirror to
+        "airegiN fo noissessop ekaT."  Bust us when starmonkeys start to touch down in Lagos.
+
+
+        The capital letters give it away.  Maybe if we uppercase all letters in the string before
+        we reverse it.
+
+    
+        <pre>
+         idea_backwards = gets.upcase.reverse
+        </pre>
+
+
+        h3. Your Repetitiveness Pays Off
+
+
+        You hand me a legal pad, doused in illegible shorthand.  Scanning over it, I start to
+        notice patterns.  That you seem to use the same set of words repeatedly in your musings.  
+        Words like _starmonkey_, _Nigeria_, _firebomb_.  Some phrases even.  _Put the kabosh on._
+        That gets said a lot.
+
+
+        Let us disguise these foul terms, my brother.  Let us obscure them from itching eyes that
+        cry to know our delicate schemes and to thwart us from having great pleasure and many go-carts.
+        We will replace them with the most innocent language.  New words with secret meaning.
+
+
+        I start up a word list, a Ruby @Hash@, which contains these oft seen and dangerous words of yours.
+        In the Hash, each dangerous word is matched up against a code word (or phrase).  The code word
+        will be swapped in for the real word.
+
+
+        <pre>
+         code_words = {
+           'starmonkeys' => 'Phil and Pete, those prickly chancellors of the New Reich', 
+           'catapult' => 'chucky go-go', 'firebomb' => 'Heat-Assisted Living', 
+           'Nigeria' => "Ny and Jerry's Dry Cleaning (with Donuts)",
+           'Put the kabosh on' => 'Put the cable box on'
+         }
+        </pre>
+
+
+        The words which are placed before the arrow are called *keys*.  The words after the
+        arrows, the definitions, are often just called *values*.
+
+
+        Notice the double quotes around @Ny and Jerry's Dry Cleaning (with Donuts)@.  Since
+        a single quote is being used an apostrophe, we can't use single quotes around the
+        string.  (Although, you can use single quotes if you put a backslash before the apostrophe
+        such as: @'Ny and Jerry\'s Dry Cleaning (with Donuts)'@.)
+
+
+        Should you need to look up a specific word, you can do so by using the *square brackets*
+        method.
+
+
+        bq. @code_words['catapult']@ will answer with the string @'chucky go-go'@.
+        
+
+        Look at the square brackets as if they are a wooden pallet the word is sitting upon.
+        A forklift could slide its prongs into each side of the pallet and bring it down
+        from a shelf back in the warehouse.  The word on the pallet is called the _index_.
+        We are asking the forklift to find the index for us and bring back its corresponding
+        value.
+
+
+        If you've never been to a warehouse, you could also look at the brackets as handles.
+        Imagine an industrious worker putting on his work gloves and hefting the index back to
+        your custody.  If you've never used handles before, then I'm giving you about
+        thirty seconds to find a handle and use it before I blow my lid.
+
+
+        As with many of the other operators you've seen recently, the index brackets are
+        simply a shortcut for a method.
+
+
+        bq. @code_words.[]( 'catapult' )@ will answer with the string @'chucky go-go'@.
+
+
+        h3. Making the Swap
+
+        
+        I went ahead and saved the Hash of code words to a file called *wordlist.rb*.
+
+
+        <pre>
+         require 'wordlist'
+
+         # Get evil idea and swap in code words
+         print "Enter your new idea: " 
+         idea = gets
+         code_words.each do |real, code| 
+           idea.gsub!( real, code )
+         end
+
+         # Save the jibberish to a new file
+         print "File encoded.  Please enter a name for this idea: "
+         idea_name = gets.strip
+         File::open( "idea-" + idea_name + ".txt", "w" ) do |f|
+           f << idea
+         end
+        </pre>
+
+
+        Script starts by pulling in our word list.  Like @gets@ and @print@, the @require@ method
+        is a kernel method, you can use it anywhere.  I give it the string @'wordlist'@ and it will
+        look for a file named *wordlist.rb*.
+
+
+        After that, there are two sections.  I am marking these sections with comments, the lines that
+        start with *pound* symbols.  Comments are *useful notes* that accompany your code.  Folks who
+        come wandering through your code will appreciate the help.  When going through your own code
+        after some time has passed, comments will help you get back into your mindset.  And there's
+        software out there that can take your comments and build documents from them.  (RDoc and Ri --
+        see Expansion Pak #1!)
+
+
+        I like comments because I can skim a big pile of code and spot the highlights.
+
+
+        As the comments tell us, the first section asks you for your evil idea and swaps in
+        the new code words.  The second section saves the encoded idea into a new text file.
+
+
+        <pre>
+         code_words.each do |real, code| 
+           idea.gsub!( real, code )
+         end
+        </pre>
+
+
+        You see the @each@ method?  The @each@ method is all over in Ruby.  
+        It's available for Arrays, Hashes, even Strings.  
+        Here, our @code_words@ dictionary is kept in a Hash.  This @each@ method will hurry through
+        *all the pairs of the Hash*, one dangerous word matched with its code word, handing each pair to the @gsub!@ method
+        for the actual replacement.
+
+
+        In Ruby, @gsub@ is short for _global substitution_.  The method is used to search and replace.
+        Here, we want to find all the occurences of a dangerous word and replace with its safe
+        code word.  With @gsub@, you provide the *word to find as the first argument*, then the *word
+        to put in its place as the second argument*.
+
+
+        Why aren't we hanging on to the answer from @gsub@?  Doesn't @gsub@ give us an answer back that
+        we should keep?  You'd think the line would read:
+
+
+        <pre>
+         safe_idea = idea.gsub( real, code )
+        </pre>
+
+
+        Yes, with @gsub@ we'd need to hang on to its answer.  We're using a variation of @gsub@ that is
+        totally hyper.  Notice the *exclamation mark* on the @gsub!@ used inside the @each@ block.  The
+        exclamation mark is a sign that @gsub!@ is a bit of a zealot.  See, @gsub!@ will go ahead and
+        *replace the words in @idea@ directly*.  When it's done @idea@ will contain the newly altered string
+        and you won't be able to find the old string.
+
+
+        Call @gsub!@ a *destructive method*.  It makes its changes to the value directly.  Whereas @gsub@
+        will leave the value intact, answering back with a new string which contains the alterations.
+        (Why must @gsub!@ scream when he descends upon his prey?  Merciless assailant!)
+
+
+        h3.  Text Files of a Madman
+
+
+        Let us now save the encoded idea to a file.
+
+
+        <pre>
+         # Save the jibberish to a new file
+         print "File encoded.  Please enter a name for this idea: "
+         idea_name = gets.strip
+         File::open( 'idea-' + idea_name + '.txt', 'w' ) do |f|
+           f << idea
+         end
+        </pre>
+
+
+        This section starts by asking you for a name by which the idea can be called.  This name is used
+        to build a file name when we save the idea.
+
+
+        The @strip@ method is for strings.  This method *trims spaces and blank lines* from the *beginning
+        and end* of the string.  This will remove the _Enter_ at the end of the string you typed.
+        But it'll also handle spaces if you accidentally left any.
+
+
+        After we have the idea's name, we open a new, blank text file.  The file name is built by adding
+        strings together.  If you typed in @'mustard-plus-codeine'@, then our math will be: @'idea-' +
+        'mustard-plus-codeine' + '.txt'@.  Ruby presses these into a single string.
+        @'idea-mustard-plus-codeine.txt'@ is the file.
+
+
+        We're using the class method @File::open@ to create the new file.  Up until now, we've used
+        several kernel methods to do our work.  We hand the @print@ method a string and it prints the
+        string on your screen.  One secret about kernel methods like @print@: they are actually *class
+        methods*.
+
+
+        bq. @Kernel::print( "55,000 Starmonkey Salute!" )@
+
+
+        What does this mean?  Why does it matter?  It means @Kernel@ is the center of Ruby's universe.
+        Wherever you are in your script, @Kernel@ is right beside you.  You don't even need to spell
+        @Kernel@ out for Ruby.  Ruby knows to check @Kernel@.
+
+
+        Most methods are more specialized than @print@ or @gets@.  Take the @File::open@ for
+        example.  The creator of Ruby, Matz, has given us many different methods which which
+        read, rename, or delete files.  They are all organized inside the @File@ class.
+
+
+        bq. @File::read( "idea-mustard-plus-codeine.txt" )@ will answer back with a string
+        containing all of the text from your idea file.
+
+
+        bq. @File::rename( "old_file.txt", "new_file.txt" )@ will rename @old_file.txt@.
+
+
+        bq. @File::delete( "new_file.txt" )@ will nuke the new file.
+
+
+        These File methods are all *built right into Ruby*.  They are all just stored in a
+        container called the @File@ class.  So, while you can safely call kernel methods
+        without needing to type @Kernel@, Ruby doesn't automatically check the @File@ class.
+        You'll need to give the full method name.
+    
+
+        <pre>
+         File::open( 'idea-' + idea_name + '.txt', 'w' ) do |f|
+           f << idea
+         end
+        </pre>
+
+
+        We pass two arguments into @File::open@.  The first is the *file name to open*.  The second
+        is a string containing our *file mode*.  We use @'w'@, which means to write to a brand-new
+        file.  (Other options are: @'r'@ to read from the file or @'a'@ to add to the end of the
+        file.)
+
+
+        The file is opened for writing and we are handed back the file in variable @f@, which can
+        be seen *sliding down the chute into our block*.  Inside the block, we write to the file.  When
+        the block closes with @end@, our file is closed as well.
+
+
+        Notice we use the *concatenator* @<<@ to write to the file.  We can do this because files have
+        a method called @<<@ just like strings do.
+
+
+        h3. Settle Down, Your Ideas Aren't Trapped
+
+
+        Here, let's get your ideas back to their original verbage,
+        so you can rumminate over their brilliance.
+
+
+        <pre>
+         require 'wordlist'
+
+         # Print each idea out with the words fixed
+         Dir['idea-*.txt'].each do |file_name|
+           idea = File.read( file_name )
+           code_words.each do |real, code| 
+             idea.gsub!( code, real )
+           end
+           puts idea
+         end
+        </pre>
+
+
+        By now, you should be up to snuff with most of this example.  I won't bore you with all of the
+        mundane details.  See if you can figure out how it works on your own.
+
+
+        We have an interesting class method here, though.  The @Dir::[]@ method searches a directory (some
+        of you may call them "folders").  Just as you've seen with Hashes, the index brackets
+        can be class methods.  (Can you start to see the shiny, glinting gorgeousness of Ruby?)
+
+
+        So we're using the forklift to get those files in the directory which match @'idea-*.txt'@.  The
+        @Dir::[]@ method will use the asterisk as a wildcard.  We're basically saying, "Match anything
+        that starts with _idea-_ and ends with _.txt_."  The forklift shuffles off to the directory
+        and comes back with a list of all matching files.
+
+
+        That *list of files* will come in the form of @Array@ the Caterpillar, with a @String@ for each 
+        file.  If you are curious and want to play with with @Dir::[]@, try this:
+
+
+        bq. @p Dir['idea-*.txt']@ will print:
+
+
+        bq. @['idea-mustard-plus-codeine.txt']@ (_an Array of file names!_)
+
+
+        Yes, the @p@ method works like @print@.  But where @print@ is designed for displaying strings,
+        @p@ will print _anything_.  Check this out. 
+        
+
+        bq. @p File::methods@ will print:
+
+
+        bq. @["send", "display", "name", "exist?", "split",@ ... _a whole list of method names!_ @]@ 
+
+
+#        h3. Extra Credit: PStore
+#
+#        
+#        <pre>
+#         require 'pstore'
+#         journal = PStore.new( 'journal.p' )
+#         journal.transaction do
+#           journal.
+#         end
+#        </pre>
+
+

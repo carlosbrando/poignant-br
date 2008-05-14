@@ -1,0 +1,593 @@
+    - The Parts of Speech: >
+
+        Just like the white stripe down a skunk's back and the winding, white train of a bride, many of
+        Ruby's parts of speech have visual cues to help you identify them.  Punctuation and capitalization
+        will help your brain to see bits of code and feel intense recognition.
+        Your mind will frequently yell _Hey, I know that guy!_  You'll also be able to name-drop in
+        conversations with other Rubyists.
+
+
+        Try to focus on the look of each of these parts of speech.  The rest of the book will
+        detail the specifics.  I give short descriptions for each part of speech, but you don't
+        have to understand the explanation.  By the end of this chapter, you should be 
+        able to recognize every part of a Ruby program.
+
+
+        h3. Variables
+
+
+        Any plain, lowercase word is a variable in ruby.  Variables may consist of
+        letters, digits and underscores.
+
+
+        bq. @x@, @y@, @banana2@ or @phone_a_quail@ are examples.
+
+
+        Variables are like nicknames.  Remember when everyone used to call you Stinky Pete?
+        People would say, "Get over here, Stinky Pete!"  And everyone miraculously knew that 
+        Stinky Pete was you.
+
+
+        With variables, you give a nickname to something you use frequently.  For instance, let's
+        say you run an orphanage.  It's a mean orphanage.  And whenever Daddy Warbucks comes to buy
+        more kids, we insist that he pay us *one-hundred twenty-one dollars and eight cents* for the
+        kid's teddy bear, which the kid has become attached to over in the darker moments of living in
+        such nightmarish custody.
+
+
+        bq. @teddy_bear_fee = 121.08@
+
+
+        Later, when you ring him up at the cash register (a really souped-up cash register which runs
+        Ruby!), you'll need to add together all his charges into a *total*.
+
+
+        bq. @total = orphan_fee + teddy_bear_fee + gratuity@
+
+
+        Those variable nicknames sure help.  And in the seedy underground of child sales, any help is
+        appreciated I'm sure.
+
+
+        !i/the.foxes-4a.png(They mock my examples.)!
+ 
+
+
+        h3. Numbers
+
+
+        The most basic type of number is an _integer_, a *series of digits* which can start
+        with a *plus or minus sign*.
+
+
+        bq. @1@, @23@, and @-10000@ are examples.
+
+
+        Commas are not allowed in numbers, but underscores are.  So if you feel the need to
+        mark your thousands so the numbers are more readable, use an underscore.
+
+
+        bq. @population = 12_000_000_000@
+
+
+        Decimal numbers are called _floats_ in Ruby.  Floats consist of numbers with *a decimal
+        place* or *scientific notation*.
+
+
+        bq. @3.14@, @-808.08@ and @12.043e-04@ are examples.
+
+
+
+        h3. Strings
+
+
+        Strings are any sort of characters (letters, digits, punctuation) surrounded by
+        quotes.  Both single and double *quotes* are used to create strings.
+
+
+        bq. @"sealab"@, @'2021'@, or @"These cartoons are hilarious!"@
+        are examples.
+
+
+        When you enclose characters in quotes, they are stored together as a single string.
+        
+
+        Think of a reporter who is jotting down the mouthnoises of a rambling celebrity.  "I'm a lot
+        wiser," says Avril Lavigne.  "Now I know what the business is like -- what you have to do and
+        how to work it."
+
+
+        <pre>
+          avril_quote = "I'm a lot wiser.  Now I know 
+          what the business is like -- what you have 
+          to do and how to work it."
+        </pre>
+
+
+        So, just as we stored a number in the *teddy_bear_fee* variable, now we're storing a collection
+        of characters (a string) in the *avril_quote* variable.  The reporter sends this quote
+        to the printers, who just happen to use Ruby to operate their printing press.
+
+
+        <pre>
+         <setup>
+           oprah_quote = "O"
+           avril_quote = "A"
+           ashlee_simpson_debacle = "D"
+         </setup>
+         print oprah_quote
+         print avril_quote
+         print ashlee_simpson_debacle
+        </pre>
+
+
+        !i/the.foxes-4b.png(They desire to be in my examples.)!
+
+
+
+        h3. Symbols
+
+
+        Symbols are words that look just like variables.  Again, they may contain letters,
+        digits, or underscores.  But they *start with a colon*.
+
+
+        bq. @:a@, @:b@, or @:ponce_de_leon@ are examples.
+
+
+        Symbols are lightweight strings.  Usually, symbols are used in situations where you need a string
+        but you won't be printing it to the screen.
+
+
+        You could say a symbol is a bit easier on the computer.  It's like an antacid.  The colon indicates
+        the bubbles trickling up from your computer's stomach as it digests the symbol.  Ah.  Sweet, sweet
+        relief.
+
+
+        !i/the.foxes-4c.png(Chunky bacon!!)!
+
+
+
+        h3. Constants
+
+
+        Constants are words like variables, but constants are *capitalized*.  If variables are the
+        nouns of Ruby, then think of constants as the proper nouns.
+
+
+        bq. @Time@, @Array@ or @Bunny_Lake_is_Missing@ are examples.
+
+
+        In English, proper nouns are capitalized.  The Empire State Building.  You can't just move The Empire
+        State Building.  You can't just decide that the Empire State Building is something else.
+        Proper nouns are like that.  They refer to something very specific and usually don't
+        change over time.
+
+
+        In the same way, constants can't be changed after they are set.
+
+
+        bq. @EmpireStateBuilding = "350 5th Avenue, NYC, NY"@
+
+
+        If we try to change the constant, Ruby will complain to us.  Such things are frowned upon.
+
+
+        !i/the.foxes-4d.png(Come on, chunky bacon.)!
+
+
+
+        h3. Methods
+
+
+        If variables and constants are the nouns, then methods are the verbs.
+        Methods are usually attached to the end of variables and constants by a *dot*.  You've already 
+        seen methods at work.
+
+
+        bq. @front_door.open@
+
+
+        In the above, *open* is the method.  It is the action, the verb. In some cases, you'll see actions chained together.
+
+
+        bq. @front_door.open.close@
+
+
+        We've instructed the computer to open the front door and then immediately close it.
+
+
+        bq. @front_door.is_open?@
+
+
+        The above is an action as well.  We're instructing the computer to test the door to see if it's open.
+        The method could be called @Door.test_to_see_if_its_open@, but the @is_open?@ name is succinct and 
+        just as correct.  Both exclamation marks and question marks may be used in method names.
+
+
+        h3. Method arguments
+
+
+        A method may require more information in order to perform its action.  If we want the computer
+        to paint the door, we should provide a color as well.
+
+
+        Method arguments are attached to the end of a method.  The arguments are usually surrounded by
+        *parentheses* and separated by *commas*.
+
+
+        bq. @front_door.paint( 3, :red )@
+
+
+        The above paints the front door 3 coats of red.
+
+
+        Think of it as an inner tube the method is pulling along, containing its extra instructions.
+        The parentheses form the wet, round edges of the inner tube.  The commas are the feet of each argument,
+        sticking over the edge.  The last argument has its feet tucked under so they don't show.
+
+
+        Like a boat pulling many inner tubes, methods with arguments can be chained.
+
+
+        bq. @front_door.paint( 3, :red ).dry( 30 ).close()@
+
+
+        The above paints the front door 3 coats of red, dries for 30 minutes, and closes the door.  Even though
+        the last method has no arguments, you can still put parentheses if you like.  There is
+        no use dragging an empty inner tube, so the parentheses are normally dropped.
+
+
+        Some methods (such as @print@) are kernel methods.  These methods are used throughout Ruby.  Since they
+        are so common, you won't use the dot.
+
+
+        bq. @print "See, no dot."@
+
+
+        h3. Class methods
+
+
+        Like the methods described above (also called _instance_ methods), class methods
+        are usually attached after variables and constants.  Rather than a dot, a *double colon* is used.
+
+
+        bq. @Door::new( :oak )@
+
+
+        As seen above, the @new@ class method is most often used to create things.  In the above example, we're asking
+        Ruby to make a new oak door for us.  Of course, Ruby has to have an understanding of how to make a
+        door--as well as a wealth of timber, lumberjacks, and those long, wiggily, two-man saws.
+
+
+        !i/the.foxes-4e.png(Plenty of chunky bacon to go around.)!
+
+
+
+        h3. Global variables
+
+
+        Variables which begin with a *dollar sign* are global.
+
+
+        bq. @$x@, @$1@, @$chunky@ and @$CHunKY_bACOn@ are examples.
+
+
+        Most variables are rather temporary in nature.  Some parts of your program are like little houses.
+        You walk in and they have their own variables.  In one house, you may have a @dad@ that represents
+        Archie, a travelling salesman and skeleton collector.  In another house, @dad@ could represent
+        Peter, a lion tamer with a great love for flannel.  Each house has its own meaning for @dad@.
+
+
+        With global variables, you can be guaranteed that the variable is the same in every little house.
+        The dollar sign is very appropriate.  Every American home respects the value of the dollar.  We're
+        crazy for the stuff.  Try knocking on any door in America and hand them cash.  I can guarantee
+        you won't get the same reaction if you knock on a door and offer Peter, a lion tamer with a great
+        love for flannel.
+
+
+        Global variables can be used anywhere in your program.  They never go out of sight.
+
+
+
+        h3. Instance variables
+
+
+        Variables which begin with an *at* symbol are instance variables.
+
+
+        bq. @@x@, @@y@, and @@only_the_chunkiest_cut_of_bacon_I_have_ever_seen@ are examples.
+
+
+        These variables are often used to define the attributes of something.  For example, you might
+        provide Ruby with the width of the @front_door@ by setting the @@width@ variable inside that
+        @front_door@.  Instance variables are used to define characteristics of a single object in
+        Ruby.
+
+
+        Think of the *at* symbol as meaning *attribute*.
+        
+
+
+        h3. Class variables
+
+
+        Variables which begin with *double at* symbols are class variables.
+
+
+        bq. @@@x@, @@@y@, and @@@i_will_take_your_chunky_bacon_and_raise_you_two@ are examples.
+
+
+        Class variables, too, are used to define attributes.  But rather than defining an attribute
+        for a single object in Ruby, class variables give an attribute to many related objects in
+        Ruby.  If instance variables set attributes for a single @front_door@, then class variables 
+        set attributes for everything that is a @Door@.
+
+
+        Think of the *double at* prefix as meaning *attribute all*.  Additionally, you can think of a swarm
+        of *AT-ATs* from _Star Wars_, which are all commanded by Ruby.  You change a class variable
+        and not just one changes, they all change.
+
+
+        !i/the.foxes-4f.png(Woohoo! Chunky bacon accomplished!)!
+
+
+
+        h3. Blocks
+
+
+        Any code surrounded by *curly braces* is a block.
+
+
+        bq. @2.times { print "Yes, I've used chunky bacon in my examples, but never again!" }@ is an example.
+
+
+        With blocks, you can group a set of instructions together so that they can be passed
+        around your program.  
+        The curly braces give the appearance of crab pincers that have snatched the code
+        and are holding it together.  When you see these two pincers, remember that the
+        code inside has been pressed into a single unit.
+
+
+        It's like one of those little Hello Kitty boxes they sell at
+        the mall that's stuffed with tiny pencils and microscopic paper, all crammed into
+        a glittery transparent case that can be concealed in your palm for covert stationary
+        operations.  Except that blocks don't require so much squinting.
+
+
+        The curly braces can also be traded for the words *do* and *end*, which is nice if your
+        block is longer than one line.
+
+
+        <pre>
+         loop do
+           print "Much better."
+           print "Ah.  More space!"
+           print "My back was killin' me in those crab pincers."
+         end
+         <stdout>Much better.Ah.  More space!My back was killin' me in those crab pincers.</stdout>
+        </pre>
+        
+
+
+        h3. Block arguments
+
+
+        Block arguments are a set of variables surrounded by *pipe* 
+        characters and separated by *commas*.
+
+
+        bq. @|en||x|@, @|x,y|@, and @|up, down, all_around|@ are examples.
+
+
+        Block arguments are used at the beginning of a block.
+
+
+        bq. @{ |x,y| x + y }@
+
+
+        In the above example, @|x,y|@ are the arguments.  After the arguments, we have a bit of
+        code.  The expression @x + y@ adds the two arguments together.
+
+
+        I like to think of the pipe characters as representing a tunnel.  They give the appearance
+        of a chute that the variables are sliding down.  (An @x@ goes down spread eagle, while the @y@
+        neatly crosses her legs.)  This chute acts as a passageway between blocks and the world around them.  
+
+
+        Variables are passed through this chute (or tunnel) into the block.
+
+
+        !i/the.foxes-4g.png(And then, the dismal truth.)!
+
+
+
+        h3. Ranges
+
+
+        A range is two values surrounded by *parentheses* and separated by *an ellipsis* (in the
+        form of two or three dots).
+
+
+        bq. @(1..3)@ is a range, representing the numbers 1 through 3.
+
+
+        bq. @('a'..'z')@ is a range, representing a lowercase alphabet.
+
+
+        Think of it as an accordion which has been squeezed down for carrying.  (Sure, you can build
+        a great sense of self-worth by carrying around an unfolded accordion, but sometimes a person
+        needs to wallow in self-doubt, carefully concealing the squeeze-box.)  The parentheses are
+        the handles on the sides of a smaller, handheld accordion.  The dots are the chain, keeping
+        the folds tightly closed.
+
+
+        Normally, only two dots are used.  If a third dot is used, the last value in the range is
+        excluded.
+
+
+        bq. @(0...5)@ represents the numbers 0 through 4.
+
+
+        When you see that third dot, imagine opening the accordion slightly.  Just enough to let one
+        note from its chamber.  The note is that end value.  We'll let the sky eat it.
+
+
+        h3. Arrays
+
+
+        An array is a list surrounded by *square brackets* and separated by *commas*.
+
+
+        bq. @[1, 2, 3]@ is an array of numbers.
+
+
+        bq. @['coat', 'mittens', 'snowboard']@ is an array of strings.
+
+
+        Think of it as a caterpillar which has been stapled into your code.  The two square brackets
+        are staples which keep the caterpillar from moving, so you can keep track of which end is the head and
+        which is the tail.  The commas are the caterpillar's legs, wiggling between each section
+        of its body.
+
+
+        Once there was a caterpillar who had commas for legs.  Which meant he had to allow a literary
+        pause after each step.  The other caterpillars really respected him for it and he came to have 
+        quite a commanding presence.  Oh, and talk about a philanthropist!  He was notorious for
+        giving fresh leaves to those less-fortunate.
+
+
+        Yes, an array is a collection of things, but it also keeps those things in a specific order.
+
+
+
+        h3. Hashes
+
+
+        A hash is a dictionary surrounded by *curly braces*.  Dictionaries match words
+        with their definitions.  Ruby does so with *arrows* made from an equals sign, followed by
+        a greater-than sign.
+
+
+        bq. @{'a' => 'aardvark', 'b' => 'badger'}@ is an example.
+
+
+        This time, the curly braces represent little book symbols.  See how they look like
+        little, open books with creases down the middle?  They represent opening and closing
+        our dictionary. 
+
+
+        Imagine our dictionary has a definition on each of its pages.  The commas represent
+        the corner of each page, which we turn to see the next definition.  And on each page:
+        a word followed by an arrow pointing to the definition.
+
+
+        <pre>
+         {
+           'name' => 'Peter',
+           'profession' => 'lion tamer',
+           'great love' => 'flannel'
+         }
+        </pre>
+
+
+        I'm not comparing hashes to dictionaries because you can only store definitions in
+        a hash.  In the example above, I stored personal information for Peter, the lion
+        tamer with a great love for flannel.  Hashes are like dictionaries because they
+        can be very easy to search through.
+
+
+        Unlike arrays, the items in a hash are not kept in a specific order.
+
+
+        !i/the.foxes-5.png(The foxes think silence will kill the comic.)!
+
+
+
+        h3. Regular Expressions
+
+
+        A regular expression (or _regexp_) is a set of characters surrounded by *slashes*.
+
+
+        bq. @/ruby/@, @/[0-9]+/@ and @/^\d{3}-\d{3}-\d{4}/@ are examples.
+
+
+        Regular expressions are used
+        to find words or patterns in text.  The slashes on each side of the expression are pins.  
+
+
+        Imagine if you had a little word with pins on
+        both side and you held it over a book.  You pass the word over the book and when it
+        gets near a matching word, it starts blinking.  You pin the regular expression onto the book,
+        right over the match and it glows with the letters of the matching word.
+
+
+        Oh, and when you poke the pins into the book, the paper sneezes, _reg-exp!_
+
+
+        Regular expressions are much faster than passing your hand over pages of a book.  Ruby
+        can use a regular expression to search volumes of books very quickly.
+
+
+        h3. Operators
+
+
+        You'll use the following list of operators to do math in Ruby or to compare things.
+        Scan over the list, recognize a few.  You know, addition @+@ and subtraction @-@
+        and so on.
+
+
+        <pre class="text">
+          ** !  ~  *  /  %  +  -  &  
+          << >> |  ^  >  >= <  <= <=>
+          || != =~ !~ && += -= == ===
+          .. ... not and or          
+        </pre>
+
+
+        h3. Keywords
+
+
+        Ruby has a number of built-in words, imbued with meaning.  These words cannot
+        be used as variables or changed to suit your purposes.  Some of these we've already
+        discussed.  They are in the safe house, my friend.  You touch these and you'll be 
+        served an official syntax error.
+
+
+        <pre class="text">
+          alias   and     BEGIN   begin   break   case    class   def     defined 
+          do      else    elsif   END     end     ensure  false   for     if 
+          in      module  next    nil     not     or      redo    rescue  retry 
+          return  self    super   then    true    undef   unless  until   when 
+          while   yield 
+        </pre>
+
+
+        Good enough.  These are the illustrious members of the Ruby language.  We'll be having
+        quite the junket for the next three chapters, gluing these parts together into sly bits
+        of (poignant) code.
+
+
+        I'd recommend skimming all of the parts of speech once again.  Give yourself a broad
+        view of them.  I'll be testing your metal in the next section.
+
+
+        !i/the.foxes-6.png(Out in the pickup truck.)!
+
+
+#        h3. You and Your Dictionary 
+#
+#        You are out in a public park with your dictionary, enjoying a nice afternoon in the park.
+#        A light breeze ruffles lexicon's pages carelessly in your lap.  A bird is gently beating
+#        its head against a tree.  A tatterdemalion careens by on his unicycle.  All is well.
+#
+#        Hold up.  Your brain wonders about that word.  Tatterdemalion.  Does it really mean
+#        "a shabbily clothed street urchin" like you think it means?  You look at your dictionary.
+#
+#        Now, here is the question.  How will you answer this question with your dictionary?  Where
+#        will you start?  Will you go page-by-page, scanning for "a shabbily clothed street urchin,"
+#        the definition?  Or will you use the dictionary's tabs to jump straight to the T section,
+#        narrowing down the pages toward "tatterdemalion," the word itself?
+#
+        

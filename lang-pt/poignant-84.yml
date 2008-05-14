@@ -1,0 +1,211 @@
+    - >
+      Let's install the very latest Ruby on your computer so you can follow all the examples
+      in the (Poignant) Guide and actually do things right now!  (Yes, things!)
+
+
+      * If you are using *Microsoft Windows*, begin by downloading the "Ruby Installer for
+      Windows":http://rubyforge.org/frs/?group_id=167.  Running this "one-click" installer will
+      setup Ruby for you, as well as a tidy pack of useful software, such as a small text editor and some
+      additional libraries.
+
+      * If you are on Apple's *Mac OS X*, then Ruby might already be installed.  Versions 10.2 and
+      10.3 of OS X both came with Ruby.  Still, I encourage you to upgrade Ruby so that all the examples
+      in this book will work for you.  Download a *stable* "disk image":http://homepage.mac.com/discord/Ruby/.
+      You will need OS X 10.3 (Panther) and the XCode Tools in order to use this image.
+
+      * On *FreeBSD*, Ruby is right there in the ports system.  In fact, if you've used the essential
+      @portupgrade@ tool, then Ruby is already installed.  Akinori Musha, one of Ruby's immensely
+      talented core developers, wrote portupgrade, which means that you can use your Ruby learning
+      right away to hack up your @pkgtools.conf@.
+
+      _* <pre class="text">
+       cd /usr/ports/lang/ruby18
+       sudo make install
+      </pre>
+
+      * On *RedHat* or *Mandrake* Linux, you can find "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby.
+      I believe Ruby is also available through Ximian's Red Carpet.
+
+      * On *Debian*, use @apt-get install ruby@.
+
+      * On *Gentoo*, @emerge ruby@.
+
+      * Other *Linux* and *UNIX* platforms, even *OS X* (if the disk images don't work for you): 
+      Download the "latest source code":http://ruby-lang.org/en/20020102.html.  
+      For instance, "Ruby 1.8.3":ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.3.tar.gz.  To unpack and compile:
+
+      _* <pre class="text">
+       tar xzvf ruby-1.8.3.tar.gz
+       cd ruby-1.8.3
+       ./configure
+       make
+       make install
+      </pre>
+
+      _* (Again, the above commands are for installing Ruby from the source code.  You may need to use
+      @su@ or @sudo@ to give you permission to run the @make install@.)
+
+
+      To test if Ruby is installed, open a command shell and run: @ruby -v@.  If Ruby is installed
+      properly, you'll see a bit of version info.
+
+
+      <pre class="text">
+       ruby 1.8.3 (2005-11-25) [i386-mswin32]
+      </pre>
+
+
+      * To open a command shell in *Microsoft Windows*, go to the Start Menu and select @Run...@.
+      Type in: @cmd@.  Press OK.  A command shell window will appear.
+
+      * To open a command shell on *Mac OS X*, go to *Applications > Utilities*.  Run the *Terminal*
+      program.
+
+ 
+      Okay, keep that command shell open cause we'll need it if the Earth gets rescued from its
+      plummet toward the sun.
+
+
+      !i/tigers.vest-2.gif(Tiger saves Earth with Ice Gun.  Girl robot zooms around tuxed shop...)!
+
+
+      Ruby comes with a very, very, very extremely helpful tool called *Irb*.  Interactive Ruby.
+      In your command shell, type: @irb@.
+
+
+      <pre>
+       irb(main):001:0>
+      </pre>
+
+
+      You should see the prompt above.  This Irb prompt will allow you to enter Ruby code and,
+      upon pressing _Enter_, the code will run.
+
+
+      So, at the Irb prompt, do a: @3000 + 500@.
+
+
+      <pre>
+       irb(main):001:0> 3000 + 500
+       => 3500
+       irb(main):002:0>      
+      </pre>
+      
+
+      The example @3000 + 500@ is legitimate code.  We're just not assigning the answer to a variable.
+      Which is okay in Irb, because Irb prints the answer given back by code you run.
+
+
+      Irb is a great calculator.
+
+
+      <pre>
+       irb(main):002:0> ( ( 220.00 + 34.15 ) * 1.08 ) / 12
+       => 22.8735
+       irb(main):003:0> "1011010".to_i( 2 )
+       => 90
+       irb(main):004:0> Time.now - Time.local( 2003, "Jul", 31, 8, 10, 0 )
+       => 31119052.510118
+      </pre>
+
+
+      The first example demonstrates a bit of math and is read as: _220.00 plus 34.15 times 1.08 divided by 12_.
+      The second example takes a binary string and converts it to a decimal number.  The third example computes
+      the number of seconds between @now@ and July 31, 2003 at 8:10 AM.  The answers to all of these are
+      printed back to us by Irb with a little ASCII arrow pointing.
+
+
+      h3. Reading the Prompt
+
+
+      I know the prompt surely looks bewildering.  Well, let's not delay in dissecting it.  It's very simple.
+      The prompt has three parts, each separated by *colons*.
+
+
+      The first section, which reads @irb(main)@, shows *the name of the program* we are running.  The second
+      section shows a line number, *a count of how many lines of Ruby we've typed*.  The third section is *a
+      depth level*.  Whenever you open a statement which needs closing, the depth level will increase by one.
+      And whenever Irb senses that your code is unfinished, *the end of the prompt will become an asterisk.*  
+
+
+      <pre>
+       irb(main):001:0> bell = :pressed
+       => :pressed
+       irb(main):002:0> ice_gun =
+       irb(main):003:0*   if bell == :pressed
+       irb(main):004:1>     :on
+       irb(main):005:1>   else
+       irb(main):006:1*     :off
+       irb(main):007:1>   end
+       => :on
+      </pre>
+        
+
+      Notice how the depth level increased to 1 when I opened the @if@ statement.  And how the asterisk
+      indicates the continuation of a line.
+
+
+      h3. Tweaking the Prompt
+
+
+      You don't have to like the prompt's appearance, though.  I'm not forcing you to do anything and,
+      if you want to hack it up, I'm right here beside you.
+
+
+      Irb has a few other included prompts which may better appease your senses.  Try @irb --prompt simple@.
+      This time Irb will treat you to a very basic set of arrows, allowing you to enter your code without
+      the whole status report.
+
+
+      <pre>
+       >> %w(my best friend's arm)
+       => ["my", "best", "friend's", "arm"]
+       >> 
+      </pre>
+
+
+      Ruby comes with a few prompts.  The *simple* prompt seen above.  The *xmp* prompt which has no
+      prompt at all and indents the answer arrow.  (It's supposed to look nice for printing.)  Also,
+      the *null* prompt, which eliminates prompts altogether.  Set the prompt by just supplying the
+      name with the @--prompt@ option.  (So, @irb --prompt null@.)
+
+
+      Making your own prompt is okay as well.  Irb is completely customizable from inside of itself.
+      The @conf@ object contains all of Irb's configuration settings.  Some of these configuration
+      settings are for controlling the prompt.
+
+
+      <pre>
+       >> conf.methods.grep /prompt/
+       => ["prompting?", "prompt_s", "prompt_s=", "prompt_c", "prompt_c=", 
+           "prompt_i", "prompt_mode", "prompt_i=", "prompt_mode="]
+      </pre>
+
+
+      Let's setup our prompt to display line numbers with just a bit of decor.
+
+
+      <pre>
+       >> conf.prompt_i = "%3n :> "           # the normal prompt
+       >> conf.prompt_s = "%3n .%l "          # the string continuation prompt
+       >> conf.prompt_c = "%3n .^ "           # the code continuation prompt
+       >> conf.return_format = "    => %s\n"  # the answer arrow
+      </pre>
+
+
+      Above are the four parts to an Irb prompt.  The string continuation prompt is displayed when
+      a string is still open when you hit _Enter_.  The @%3n@ describes that Irb should reserve three
+      characters for the line number.  The @%l@ saves a place for displaying the type of string being
+      continued.  (If you're continuing a double-quoted string, it shows a double quote.  If you're
+      continuing a regular expression, it shows a slash.)
+
+
+      The rest are little symbols to decorate the prompt.  So, in the case of a continuing code line,
+      I show a caret which points up to the line where that line of code started. 
+
+
+      You can read more about customizing Irb and saving your configuration to a file in 
+      the complete "guide to Irb":http://www.rubycentral.com/book/irb.html, available in
+      the free-for-your-wandering-Internet-eyes _Programming Ruby_.
+
+

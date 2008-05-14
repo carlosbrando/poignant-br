@@ -1,0 +1,306 @@
+    - >
+        Since you and I are becoming closer friends as we share this time together, I should
+        probably let you in on a bit of the history going on here.  It's a good time for a break
+        I say.
+
+
+        First, you should know that Blix is my cat.  My second pet to Bigelow.
+        Granted, we hardly see each other anymore.  He's completely self-sufficient.
+        I'm not exactly sure where he's living these days, but he no longer lives in the antechamber
+        to my quarters.  He emptied his savings account about seven months ago.
+
+
+        He does have a set of keys for the house and the Seville.  Should he ever
+        find himself stranded, I will gladly step away from our differences and entertain his
+        antics around the house again.
+
+
+        Make no mistake.  I miss having him around.  Can't imagine he misses my company, but
+        I miss his.
+
+
+        h3. A Siren and A Prayer
+
+
+        I first saw Blix on television when I was a boy.  He had a starring role on a very gritty police drama
+        called _A Siren and A Prayer_.  The show was about a god-fearing police squad that did
+        their jobs, did them well, and saw their share of miracles out on the beat.  I mean
+        the officers on this show were _great_ guys, very religious, practically clergy.  But, 
+        you know, even clergymen don't have the good sense to kill a guy after he's gone too far.
+        These guys knew where to draw that line.  They walked that line every day.
+
+
+        So, it was a pretty bloody show, but they always had a good moral at the end.  Most times
+        the moral was something along the lines of, "Wow, we got out of that one quick."  But there's
+        serious camaraderie in a statement like that.
+
+        
+        The show basically revolved around this one officer.  "Mad" Dick Robinson.  People called
+        him Mad because he was basically insane.  I can't remember if he was actually clinically
+        insane, but people were always questioning his decisions.  Mad often blew his top and chewed
+        out some of the other officers, most of whom had unquestionable moral character.  But we
+        all know it's a tough world, the stakes are high out there, and everyone who watched the
+        show held Mad in great regard.  I think everyone on the squad grew quite a bit as people,
+        thanks to Mad's passion.
+
+
+        The officers couldn't do it all themselves though.  In every single episode, they plead with a
+        greater force for assistance.  And, in every single episode, they got their tips from a cat
+        named Terry (played by my cat Blix.)  He was just a kitten at the time and, as a young boy
+        tuning into _A Siren and A Prayer_, I found myself longing for my own crime-sniffing cat.
+        Terry took these guys down the subway tunnels, through
+        the rotting stench of abandoned marinas, into backdoors of tall, industrial smokestacks.  
+
+
+        Sometimes he was all over an episode, darting in and out, preparing traps and directing traffic.
+        But other times you wouldn't see him the whole episode.  Then you'd rewind through the whole show
+        and look and look and look.  You'd give up.  He can't be in that episode.  
+
+
+        Still, you can't bear
+        to let it go, so you go comb through the whole episode with the jog on your remote, combing, pouring
+        over each scene.  And there he is.  Way up behind the floodlight that was turned up too high.  The
+        one that left Mad with permanent eye damage.  Why?  Why burn out the retinas of your own colleague,
+        Terry?
+
+
+        But the question never got answered because the series was cancelled.  They started to do special
+        effects with the cat and it all fell apart.  In the last episode of the show, there is a moment where
+        Terry is trapped at the top of a crane, about to fall into the searing slag in the furnace of an
+        iron smelt.  He looks back.  No going back.  He looks down.  Paws over eyes (_no joke!_), he
+        leaps from the crane and, mid-flight, snags a rope and swings to safety, coming down on a soft antelope
+        hide that one of the workers had presumably been tanning that afternoon.
+
+
+        People switched off the television set the very moment the scene aired.  They tried changing the name.
+        First it was _God Gave Us a Squad_.  _Kiss of Pain_.  Then, _Kiss of Pain in Maine_, since the
+        entire precinct ended up relocating there.  But the magic was gone.  I went back to summer school that year
+        to make up some classes and all the kids had pretty much moved on to football pencils.
+
+        
+        h3. Blocks
+
+
+        A couple years ago, I started teaching Blix about Ruby.  When we got to this part in his lessons,
+        the part that covers blocks, he said to me, "Blocks remind me of Mad Dick Robinson."
+
+
+        "Oh?"  I hadn't heard that name in awhile.  "I can't see how that could be."
+
+
+        "Well, you say blocks can be difficult to understand."
+
+
+        "They're not difficult," I said.  "A *block* is just *code that's grouped together*."
+
+
+        "And Mad was just an officer, sworn to uphold his duty," he said.  "But he was a real miracle to
+        watch out in the field.  Now, this first example you've shown me..."  He pointed to an
+        example I'd written down for him.
+
+        
+        <pre>
+         kitty_toys =
+           [:shape => 'sock', :fabric => 'cashmere'] +
+           [:shape => 'mouse', :fabric => 'calico'] +
+           [:shape => 'eggroll', :fabric => 'chenille']
+         kitty_toys.sort_by { |toy| toy[:fabric] }
+        </pre>
+
+
+        "This is a small miracle," he said. "I can't deny its beauty.  Look, there are my kitty toys, laid
+        out with their characteristics.  Below them, the block, sorting them by fabric."
+
+
+        "I apologize if your list of toys looks a bit tricky," I said.  Like you, he had learned about the
+        Array, the caterpillar stapled into the code, with square brackets on each side
+        and each item separated by commas.  (Ah, here is one: @['sock', 'mouse', 'eggroll']@.) 
+        He had also been taught the Hash, which is like a dictionary, with curly braces on each end
+        which look like small, open books.  Commas in the Hash between each pair.  Each word
+        in the dictionary matched up with its definition by an arrow.  (Be beholden: @{'blix' => 'cat',
+        'why' => 'human'}@.)
+        
+
+        "Yes, vexing," he said.  "It has square brackets like it's an Array, but with the arrows like it's a Hash.
+        I don't think you're going to get away with that."
+
+
+        "It does seem a bit subversive, doesn't it?"  I said, tease-nudging him with a spoon.  "I've done your kitty toy list
+        in a mix of the two.  I'm using a shortcut.  Which is: *If you use arrows inside of an Array, 
+        you'll end up with a Hash inside of that Array.*"
+
+
+        "Oh, I see," he said.  "You criss-crossed 'em.  How neat!"
+
+
+        "Yes, yes, you're on it," I said.  He was also very good with a protractor.  "I have three Arrays,
+        each with a Hash inside.  Notice the plus signs?  I'm adding them into one big Array.  Here's
+        another way of writing it..."  I jotted down.
+
+
+        <pre>
+         kitty_toys = [
+           {:shape => 'sock', :fabric => 'cashmere'},
+           {:shape => 'mouse', :fabric => 'calico'},
+           {:shape => 'eggroll', :fabric => 'chenille'}
+         ]
+        </pre>
+
+
+        One Array, which acts as our list of chew toys.  Three Hashes in the Array to describe each toy.
+
+
+        h3. Sorting and Iterating to Save Lives
+
+
+        "Let's sort your toys by shape now," I said.  "Then, we'll print them out in that order."
+
+
+        <pre>
+         kitty_toys.sort_by { |toy| toy[:shape] }.each do |toy|
+           puts "Blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+         end
+        </pre>
+
+
+        "How does @sort_by@ work?" asked Blix.  "I can tell it's a method you can use with Arrays.  Because
+        @kitty_toys@ is an Array.  But what is @toy@?"
+
+
+        "Okay, @toy@ is a *block argument*," I said.  "Remember: the skinny pipes on each side of @toy@ make it
+        a *chute*."
+
+
+        "Sure, but it looks like you're using it like a Hash.  Inside the block you have @toy[:shape]@.
+        That looks like a Hash."
+
+
+        "The @sort_by@ method is an *iterator*, Blix.  It *iterates*, or *cycles*, through *a list of things*.  You
+        remember that episode when Mad..." 
+
+
+        "Episode?" he said.  Yeah, he can't understand the concept of TV dramas.  
+        Yeah, I've tried explaining.
+
+
+        "Or, yeah, remember that one _eyewitness account_ we watched where Mad was trying to talk
+        down that crazy spelling bee contestant from the ledge of an college library?" 
+
+
+        "I remember it better than you because I was riding in a remote control plane."  Yep, it was
+        one of those episodes.
+
+
+        "Do you remember how Mad got the guy to come down?" I asked.
+
+
+        "People in spelling bees love letters," said Blix.  "So what Mad did was a genius move on his part.
+        He started with the letter A and gave reasons, for all the letters of the alphabet, why the guy
+        should walk back down the building and be safe on the ground."
+
+
+        "'A is for the Architecture of buildings like this,'" I said, in a gruff Mad voice.
+        "'Which give us hope in a crumbling world.'"
+
+
+        "'B is for Big Guys, like your friend Mad the Cop,'" said Blix.  "'Guys who help people all the time
+        and don't know how to spell too great, but still help guys who spell really great.'"
+        
+        
+        "See, he went through all the letters, one at a time.  He was _iterating_ through them." _It Err Ate Ing._
+
+
+        "But the guy jumped anyway, Why.  He jumped off on letter Q or something."
+
+
+        "'Q is for Quiet Moments that help us calm down and think about all of life's little pleasures,
+        so we don't get all uptight and starting goofing around on tiptoes at the very edge of a big, bad building.'"
+
+
+        "And then he jumped," said Blix.  He shook his head.  "You can't blame Mad.  He did his best."
+        
+        
+        "He had a big heart, that's for sure," I said, patting Blix on the shoulder.
+
+
+        <pre>
+         kitty_toys.sort_by { |toy| toy[:shape] }.each do |toy|
+           puts "Blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+         end
+        </pre>
+
+
+        "As for your @sort_by@, it *starts at the top* of the list and *goes through each item*, one at a time.
+        So @toy@ is one of those items.  With each item, @sort_by@ stops and *slides that item down the
+        chute*, under the @toy@ name, and let's you figure out what to do with it."
+ 
+
+        "Okay, so @toy@ takes turns being each of the different toys I have."
+
+
+        "That's right," I said.  "You know how I've really been harping on _using the answers that methods give
+        you_?  Here, we're simply looking up the toy's shape inside the block.  The block then answers to @sort_by@
+        with the shape string, such as @"mouse"@ or @"sock"@.  Once it's done cycling through the whole list, @sort_by@
+        will have alphabetically compared each of the shape strings and will give back a new sorted Array."
+
+
+        h3.  An Unfinished Lesson
+
+
+        "That's good enough for today," said Blix.  "Can I have a fresh saucer of milk, please?"
+
+
+        I filled his saucer to the brim and he guzzled from it for some time while I took a poker and
+        jabbed at coals in the fireplace.  My mind wandered and I couldn't help but think further of
+        blocks.  I wondered what I would teach Blix next.
+
+
+        I probably would have taught him about @next@.  When you are iterating through a list, you
+        may use @next@ to *skip on to the next item*.  Here we're counting toys that have a non-eggroll
+        shape by skipping those that do with @next@.
+
+
+        <pre>
+         non_eggroll = 0
+         kitty_toys.each do |toy|
+           next if toy[:shape] == 'eggroll'
+           non_eggroll = non_eggroll + 1
+         end
+        </pre>
+
+
+        I could also have taught him about @break@, which *kicks you out of an iterating loop*.
+        In the code below, we'll print out (with @p@) each of the toy Hashes until we hit
+        the toy whose fabric is chenille.  The @break@ will cause the @each@ to abruptly end.
+
+
+        <pre>
+         kitty_toys.each do |toy|
+           break if toy[:fabric] == 'chenille'
+           p toy
+         end
+        </pre>
+
+
+        I never got to teach him such things.  I continued poking away at a particularly stubborn coal
+        which was caught in the iron curtain of the fireplace and threatened to drop on my antelope
+        skin rug.  
+
+
+        As I hacked away ferociously at the black stone, Blix slipped away, presumably on
+        the bus bound for Wixl, the very bustling metropolis of the animal economies.  Who knows, he may
+        have first stopped in Ambrose or Riathna or any of the other villages along the way.  My
+        instinct say that Wixl was his definitely his final stop. 
+
+
+        Without any student to instruct and coax along, I found myself quite lonely, holed up in
+        the estate.  In the stillness of the dead corridors, I began to sketch out a biography in the 
+        form of this guide.
+
+
+        I worked on it whenever I found myself bored.  And when I wasn't bored, I could always
+        switch on _The Phantom Menace_ to get me in the mood.
+
+
+        !i/the.elf-7.jpg(Someone let them all out.)!
+  

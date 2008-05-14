@@ -1,0 +1,404 @@
+    - The Theft of the Lottery Captain: >
+
+
+        !>i/my.daughters.organ-3.gif(The piping and mixtures of the lotteries.)!
+
+
+        And now, Paij-ree's stories of the Lotteries.
+
+
+        On Endertromb, the organist's father invented the lottery.  The idea came while
+        he was praying to Digger Dosh.
+
+
+        Digger Dosh is sort of like their God.  But ten times scarier.  This
+        guy dug an infinitely deep tunnel straight through the planet and came out dead.
+        But he's really not dead.  He's really just _one second_ behind them.  And he eats time.
+
+
+        It's kind of complicated because Digger Dosh totally kills people.  But I guess if 
+        you do what he says, it's not so bad.  Maybe I'll talk about it later.  It's such a
+        pain to talk about because it's so scary and yet one of my friends actually believes
+        the whole thing.  I get kind of choked up -- not like I'm crying, more like I'm choking.
+
+
+        Anyway, once while praying, three numbers came to Paij-ree's father.
+
+
+        He then asked his mind, "What are these numbers?"
+
+
+        And his mind played a short video clip of him selling all kinds of numbers.  And, for
+        years and years, travelling and selling numbers.
+
+
+        And he asked his brain, "People will buy numbers?"
+
+
+        And his brain said, "If they buy the right three numbers, give them a prize."
+
+
+        At which he imagined himself launching off a ski jump and showering people with
+        presents.  No question: he would be an icon.
+
+
+        So he went and did as his brain said and sold numbers.  The father's simple lottery
+        consisted of three unique numbers, drawn from a set of 25 numbers.
+
+
+        <pre>
+         class LotteryTicket
+
+           NUMERIC_RANGE = 1..25
+
+           attr_reader :picks, :purchased
+
+           def initialize( *picks )
+             if picks.length != 3
+               raise ArgumentError, "three numbers must be picked"
+             elsif picks.uniq.length != 3
+               raise ArgumentError, "the three picks must be different numbers"
+             elsif picks.detect { |p| not NUMERIC_RANGE === p }
+               raise ArgumentError, "the three picks must be numbers between 1 and 25."
+             end
+             @picks = picks
+             @purchased = Time.now
+           end
+
+         end
+        </pre>
+
+
+        Yes, the @LotteryTicket@ class contained the three numbers (@@picks@) and the
+        time when the ticket was bought (@@purchased@).  The allowed range of numbers
+        (from *one* to *twenty-five*) is kept in the constant @NUMERIC_RANGE@.
+
+
+        The @initialize@ method here can have any number of arguments passed in.  The
+        *asterisk* in the @picks@ argument means that *any arguments will be passed
+        in as an Array*.  Having the arguments in an Array means that methods like
+        @uniq@ and @detect@ can be used on the arguments together.
+
+
+        This class contains two definitions: the method definition (@def@) and
+        an attributes definition (@attr_reader@).  Both are *really just method definitions*
+        though.
+
+
+        The @attr_reader@ shortcut is identical to writing this Ruby code:
+
+
+        <pre>
+         class LotteryTicket
+           def picks; @picks; end
+           def purchased; @purchased; end
+         end
+        </pre>
+
+
+        Attributes are wrapper methods for instance variables (such as @@picks@) which can be used
+        *outside of the class itself*.  Paij-ree's father wanted to code a machine which
+        could read the numbers and the date of purchase from the ticket.  In order to do that,
+        those instance variables must be exposed.
+
+
+        Let's create a random ticket and read back the numbers:
+
+
+        <pre>
+         ticket = LotteryTicket.new( rand( 25 ) + 1,
+                     rand( 25 ) + 1, rand( 25 ) + 1 )
+         p ticket.picks
+        </pre>
+
+
+        Running the above, I just got: @[23, 14, 20]@.  You will get an error if two of
+        the random numbers happen to be identical.
+
+
+        However, I can't change the lottery ticket's picks from outside of the class.
+
+
+        <pre>
+         ticket.picks = [2, 6, 19]
+        </pre>
+
+
+        I get an error: @undefined method `picks='@.
+        This is because @attr_reader@ only adds a *reader* method, not a writer method.
+        That's fine, though.  We don't want the numbers or the date to change.
+
+
+        So, the tickets are _objects_.  Instances of the @LotteryTicket@ class.  Make a
+        ticket with @LotteryTicket.new@.  Each ticket has it's own @@picks@ and it's own
+        @@purchased@ instance variables.
+
+
+        The lottery captain would need to draw three random numbers at the close
+        of the lottery, so we'll add a convenient class method for generating random
+        tickets.
+
+
+        <pre>
+         class LotteryTicket
+           def self.new_random
+             new( rand( 25 ) + 1, rand( 25 ) + 1, rand( 25 ) + 1 )
+           end
+         end
+        </pre>
+
+
+        Oh, no.  But we have that stupid error that pops up if two of the random numbers
+        happen to be identical.  If two numbers are the same, the @initialize@ throws
+        an @ArgumentError@.
+
+
+        The trick is going to be restarting the method if an error happens.
+        We can use Ruby's @rescue@ to handle the error and @redo@ to start the method
+        over.
+
+
+        <pre>
+         class LotteryTicket
+           def self.new_random
+             new( rand( 25 ) + 1, rand( 25 ) + 1, rand( 25 ) + 1 )
+           rescue ArgumentError
+             redo
+           end
+         end
+        </pre>
+
+
+        Better.  It may take a couple times for the numbers to fall together right,
+        but it'll happen.  The wait will build suspense, huh?
+
+
+        The lottery captain kept a roster of everyone who bought tickets, along
+        with the numbers they drew.
+
+
+        <pre>
+         class LotteryDraw
+           @@tickets = {}
+           def LotteryDraw.buy( customer, *tickets )
+             unless @@tickets.has_key?( customer )
+               @@tickets[customer] = []
+             end
+             @@tickets[customer] += tickets
+           end
+         end
+        </pre>
+
+
+        Yal-dal-rip-sip was the first customer.
+
+
+        <pre>
+         LotteryDraw.buy 'Yal-dal-rip-sip',
+             LotteryTicket.new( 12, 6, 19 ),
+             LotteryTicket.new( 5, 1, 3 ),
+             LotteryTicket.new( 24, 6, 8 )
+        </pre>
+
+
+        When it came time for the lottery draw, Paij-ree's father (the lottery captain) added
+        a bit of code to randomly select the numbers.
+
+
+        <pre>
+         class LotteryTicket
+           def score( final )
+             count = 0
+             final.picks.each do |note|
+               count +=1 if picks.include? note
+             end
+             count
+           end
+         end
+        </pre>
+
+
+        The @score@ method compares a @LotteryTicket@ against a random ticket,
+        which represents the winning combination.  The random ticket is passed in
+        through the @final@ variable.  The ticket gets one point for every winning
+        number.  The point total is returned from the @score@ method.
+
+
+        <pre>
+         irb> ticket = LotteryTicket.new( 2, 5, 19 )
+         irb> winner = LotteryTicket.new( 4, 5, 19 )
+         irb> ticket.score( winner )
+           => 2
+        </pre>
+
+
+        You will see how brilliant Paij-ree is, in time.  His father commissioned him
+        to finish the lottery for him, while the demand for tickets consumed the
+        lottery captain's daylight hours.  Can't you just imagine young Paij-ree in his stuffy
+        suit, snapping a rubber band in his young thumbs at the company meetings where he proposed the
+        final piece of the system?  Sure, when he stood up, his dad did all the talking for
+        him, but he flipped on the projector and performed all the hand motions.
+
+ 
+        <pre>
+         class << LotteryDraw
+           def play
+             final = LotteryTicket.new_random
+             winners = {}
+             @@tickets.each do |buyer, ticket_list|
+               ticket_list.each do |ticket|
+                 score = ticket.score( final )
+                 next if score.zero?
+                 winners[buyer] ||= []
+                 winners[buyer] << [ ticket, score ]
+               end
+             end
+             @@tickets.clear
+             winners
+           end
+         end
+        </pre>
+
+
+        His father's associates were stunned.  What was this?  (Paij-ree knew this
+        was just another class method definition -- they would all feel completely
+        demoralized when he told them so.)  They couldn't understand the *double
+        angle bracket* up there!  Yes, it was a concatenator, but how is it in
+        the class title?
+
+
+        _Infants_, thought Paij-ree, although he held everyone of those men in very
+        high esteem.  He was just a kid and kids are tough as a brick's teeth. 
+
+
+        The @<<@ operator allows you to alter the definition of an object.
+        Had Paij-ree simply used @class LotteryDraw@, his @play@ method would be
+        a normal instance method.  But since he used the @<<@ operator, the @play@
+        method will be added directly to the class, as a class method.  
+
+
+        When you see @class << obj@, believe in your heart, _I'm adding directly to the definition
+        of @obj@._
+
+
+        The budding organ instructor also threw in a tricky syntax worth examining.
+        In the ninth line, a winner has been found.
+
+
+        <pre>
+         winners[buyer] ||= []
+         winners[buyer] << [ ticket, score ]
+        </pre>
+
+
+        The @||=@ syntax is a shortcut.
+
+
+        <pre>
+         winners[buyer] = winners[buyer] || []
+        </pre>
+
+
+        The *double pipe* is an *or* logic.  Set @winners[buyer]@ equal to @winners[buyer]@ or,
+        if @winners[buyer]@ is nil, set it to @[]@.  This shortcut is a little strange, but if you
+        can really plant it in your head, it's a nice timesaver.  You're just making sure a variable
+        is set before using it.
+
+
+        <pre>
+         irb> LotteryDraw.play.each do |winner, tickets|
+         irb>   puts winner + "won on " + tickets.length + " ticket(s)!"
+         irb>   tickets.each do |ticket, score|
+         irb>     puts "\t" + ticket.picks.join( ', ' ) + ": " + score
+         irb>   end
+         irb> end
+
+         Gram-yol won on 2 ticket(s)!
+             25, 14, 33: 1
+             12, 11, 29: 1
+         Tarker-azain won on 1 ticket(s)!
+             13, 15, 29: 2
+         Bramlor-exxon won on 1 ticket(s)!
+             2, 6, 14: 1
+        </pre>
+
+
+        But these salad days were not to continue for Paij-ree and his father.  His father often
+        neglected to launder his uniform and contracted a moss disease on his shoulders.  The disease
+        gradually stole his equilibrium and his sense of direction.
+
+
+        His father still futilely attempted to keep the business running.  He spiraled through the
+        city, sometimes tumbling leg-over-leg down the cobbled stone, most often slowly feeling the walls,
+        counting bricks to the math parlours and coachmen stations, where he would thrust tickets
+        at the bystanders, who hounded him and slapped him away with long, wet beets.  Later, Paij-ree
+        would find him in a corner, his blood running into the city drains alongside the juices of the
+        dark, splattered beets, which juice weaseled its way up into his veins and stung and clotted
+        and glowed fiercely like a congested army of brake lights fighting their way through toll bridges.
+
+
+        h3. A Word About Accessors (Because I Love You and I Hope For Your Success and My Hair is On End
+        About This and Dreams Really Do Come True)
+        
+
+        Earlier, I mentioned that @attr_reader@ adds *reader* methods, but not *writer* methods.
+
+
+        <pre>
+         irb> ticket = LotteryTicket.new
+         irb> ticket.picks = 3
+         NoMethodError: undefined method `picks=' for #<LotteryTicket:0xb7d49110>
+        </pre>
+
+
+        Which is okay in this case, since Paij-ree's father didn't want the numbers to be
+        changed after the ticket was bought.  If we were interested in having instance
+        variables which had *both readers and writers*, we would use @attr_accessor@.
+
+
+        <pre>
+         class LotteryTicket
+           attr_accessor :picks, :purchased
+         end
+        </pre>
+
+
+        Which is exactly the same as this lengthier code:
+
+
+        <pre>
+         class LotteryTicket
+           def picks;           @picks;            end
+           def picks=(var);     @picks = var;      end
+           def purchased;       @purchased;        end
+           def purchased=(var); @purchased = var;  end
+         end
+        </pre>
+
+
+        Holy cats!  Look at those writer methods for a moment.  They are the methods named
+        @picks=@ and @purchased=@.  These methods *intercept outside assignment* to instance variables.
+        Usually you will just let @attr_reader@ or @attr_accessor@ (or even perhaps @attr_writer@)
+        do the work for you.
+        Other times you may want to put a guard at the door yourself, checking variables in closer
+        detail.
+
+
+        <pre>
+         class SkatingContest
+           def the_winner; @the_winner; end
+           def the_winner=( name )
+             unless name.respond_to? :to_str
+               raise ArgumentError, "The winner's name must be a String,
+                 not a math problem or a list of names or any of that business."
+             end
+             @the_winner = name
+           end
+         end
+        </pre>
+
+
+        Most of the time you won't use this.  But, as we move along through your lessons, you'll find that
+        Ruby has lots of escape hatches and alley ways you can sneak into and hack code into.  I'm also
+        preparing you for metaprogramming, which, if you can smell that dragon, is ominously near.
+

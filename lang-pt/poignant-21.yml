@@ -1,0 +1,90 @@
+    - An Example to Help You Grow Up: >
+
+        !i/the.foxes-7.png(Gettin' cabin fever.)!
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        <pre>
+         require 'net/http'
+         Net::HTTP.start( 'www.ruby-lang.org', 80 ) do |http|
+             print( http.get( '/en/LICENSE.txt' ).body )
+         end
+        </pre>
+
+
+        The first line is a method call.  The _method_ called @require@ is used.  A _string_ is passed to
+        the method containing @'net/http'@.  Think of this first line of code as a sentence.  We have
+        told Ruby to load some helper code, the @Net::HTTP@ library.
+
+
+        The next three lines all go together.  The _constant_ @Net::HTTP@ refers to the library we loaded above.
+        We are using the _method_ @start@ from the library.  Into the method, we're sending a _string_
+        @'www.ruby-lang.org'@ and the _number_ @80@.
+
+
+        The word @do@ opens a _block_.  The block has one _block variable_ @http@.  Inside the block, the _method_
+        @print@ is called.  What is being printed?
+
+
+        From the _variable_ @http@, the _method_ @get@ is called.  Into @get@, we pass a _string_ containing
+        the path @'/en/LICENSE.txt'@.  Now, notice that another method is chained onto @get@.  The _method_
+        @body@.  Then, the block closes with @end@.
+
+
+        Doing okay?  Just out of curiousity, can you guess what this example does?  Hopefully, you're seeing 
+        some patterns in Ruby.  If not, just shake your head vigorously while you've got these examples in 
+        your mind.  The code should break apart into manageable pieces.
+
+
+        For example, this pattern is used a number of times:
+
+
+        bq. _variable_ . _method_ ( _method arguments_ )
+
+
+        You see it inside the block:
+
+
+        bq. @http.get( '/en/LICENSE.txt' )@
+
+
+        We're using Ruby to get a web page.  You've probably used HTTP with your web browser.  HTTP is
+        the Hypertext Transfer Protocol.  HTTP is used to transfer web pages across the internet.  Conceptualize
+        a bus driver that can drive across the internet and bring back web pages for us.  On his hat are stitched
+        the letters HTTP.
+
+
+        The variable @http@ is that bus driver.  The _method_ is a message to the bus driver.  Go @get@
+        the web page called @/en/LICENSE.txt@.
+
+
+        So where you see the chain of methods:
+
+
+        bq. @http.get( '/en/LICENSE.txt' ).body@
+
+
+        Since we'll be getting back a web page from the @http@ bus driver, you can read this in your
+        brain as:
+
+
+        bq. _web page_ .body
+
+
+        And this bit of code:
+
+
+        bq. @print( http.get( '/en/LICENSE.txt' ).body )@
+
+
+        This code gets the web page.  We send a @body@ message to the web page, which gives us all the
+        HTML in a _string_.  We then @print@ that string.  See how the basic dot-method pattern happens
+        in a chain.  The next chapter will explore all these sorts of patterns in Ruby.  It'll be good fun.
+
+
+        So, what does this code do?  It prints the HTML for the Ruby home page to the screen.  Using 
+        an web-enabled bus driver.
+
+

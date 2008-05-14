@@ -1,0 +1,328 @@
+    - The Continued Story of My Daughter's Organ Instructor: >
+
+        I know you may be alarmed to hear that I have a daughter.  You think my writing is indicative
+        of a palsied or infantile mind.  Well, please rest.  I don't have a daughter.
+        But I can't let that stop me from sorting out her musical training.
+
+
+        As I was related these elaborate histories of the planet Endertromb, I found myself
+        wandering through hallways, running my fingertips along the tightly buttoned sofas
+        and soaking myself in the saturated bellowings of the pipes, as played by my daughter's
+        organ instructor.  His notes resounded so deep and hollow in the walls of his manor
+        that I began to casually mistake them for an ominous silence, and found it even
+        easier to retreat into deep space with my thoughts.  To think upon the ancient
+        planet and its darker philosophies: its flesh temples, tanned from the dermal remains
+        of its martyrs; its whale cartels, ingesting their enemies and holding them within for
+        decades, dragging them up and down the staircases of ribs; its poison fogs and its
+        painful doorways; and, the atrocious dynasties
+        of The Originals, the species which claims fathership to all of the intellegent beings
+        across the universe.
+
+
+        But, eventually, I'd hear those pipes of a higher octave sing and I'd be back in the very same
+        breezy afternoon where I'd left.
+
+
+        How interesting that even the breeze of our planet is quite a strange thing to some
+        outsiders.  For he had also told me of the travellers from Rath-d, who ventured to Earth
+        five centuries ago, but quickly dissipated in our air currents since they and their crafts
+        and their armor were all composed of charcoal.
+
+
+        I had sat at the organ, listening to his faint tales of his colony, while he punctuated his
+        symphonies to greater volumes and the story would disappear for awhile, until the coda came back around.
+        He spoke of he and his brothers piling into the hollow of his mother's tail and tearing the
+        waxy crescent tissue from the inner wall.  Juicy and spongy and syrupy soap which bleached
+        their mouths and purged their esophagus as it went down.  They chewed and chomped the stuff
+        and it foamed.  After they ate, they blew bubbles at each other, each bubble filled with a dense
+        foam, which they slept upon.  And early in the morning, when mother opened her tail again, she watched
+        serenely as her babies lay cradled in the stew of dark meatballs and sweet, sticky froth.
+
+        
+        He spelled out all the tastes of Endertromb.  Of their salmon's starchy organs, which cooked
+        into a pasta, and its eyes which melted into rich cream.  Of their buttermelon with tentacles.
+        And he was just beginning to appreciate the delicacies as a child, only to be lifted from a
+        schoolyard by a pair of upright pygmy elephants who reached at him, through the heavens, and
+        snatched upon his collar with a vast length of crane.
+
+
+        They transplanted him on Earth, led him from their craft, trumpeting their snouts loudly for the city of
+        Grand Rapids to hear, then left, weeping and embracing each other.
+
+
+        "But, strangely (em-pithy-dah), I learned upon, played upon (pon-shoo) the organs on my
+        home (oth-rea) planet," he said.
+
+
+        My daughter's organ instructor speaks these extra words you see in parentheses.  Who knows
+        if they are from his native tongue or if they are his own soundful hiccups.  He keeps
+        another relic from Endertromb as well: he has twelve names.
+
+
+        "No, (wen-is-wen)," he said.  "I have one name (im-apalla) which is said (iff)
+        many-many different ways."
+
+
+        I call him Paij-ree in the morning and Paij-plo in the later evening.
+        Since it is day as I write, I will call him Paij-ree here.
+
+
+        h3. Mumble-Free Earplugs
+
+
+        !>i/my.daughters.organ-1.gif(Alien at the keys.)!
+
+
+        So I told Paij-ree, "Paij-ree, I am writing a book.  To teach the world Ruby."
+
+
+        "Oh, (pill-nog-pill-yacht) nice," he said.  He's known Ruby longer than I have, but still:
+        _I_ will be my daughter's Ruby instructor.
+
+
+        And I said, "Paij-ree, you are in the book.  And the stories of your planet."  I talk to
+        him like he's E.T.  I don't know why.  Just like how I said next, "And then maybe someday
+        you can go home to your mom and dad!"
+
+
+        To which he said, "(pon-shoo) (pon-shoo) (em-pithy-dah)."  Which is his way of speaking
+        out loud his silence and awe.
+
+
+        He wanted to see what I'd written, so I showed him this short method I've written for you.
+    
+
+        <pre>
+         def wipe_mutterings_from( sentence )
+           while sentence.include? '('
+             open = sentence.index( '(' )
+             close = sentence.index( ')', open )
+             sentence[open..close] = '' if close
+           end
+         end
+        </pre>
+
+
+        "Can you see what this does, Paij-ree?  Any old Smotchkkiss can use this method
+        to take all the incoherent babblings out of your speaking," I said.
+
+
+        And I fed something he said earlier into the method.
+
+
+        <pre>
+         what_he_said = "But, strangely (em-pithy-dah), 
+           I learned upon, played upon (pon-shoo) the 
+           organs on my home (oth-rea) planet."
+         wipe_mutterings_from( what_he_said )
+         print what_he_said
+        </pre>
+
+
+        And it came out as a rather plain sentence.
+
+
+        <pre>
+         But, strangely , 
+         I learned upon, played upon the
+         organs on my home planet.
+        </pre>
+
+
+        "You shouldn't use that (wary-to) while loop," he said.  "There are lovelier, (thopt-er),
+        gentler ways."
+
+
+        In the @wipe_mutterings_from@ method, I'm basically searching for opening parentheses.  When I
+        find one, I scan for a closing paren which follows it.  Once I've found both, I replace them and
+        their contents with an empty string.  The @while@ loop continues until all parentheses are gone.
+        The mutterings are removed and the method ends.
+
+
+        "Now that I look at this method," I said.  "I see that there are some confusing aspects 
+        and some ways I could do this better."  Please don't look down on me as your teacher for 
+        writing some of this code.  I figure that it's okay to show you some sloppy techniques 
+        to help you work through them with me.  So let's.
+
+
+        Okay, *Confusing Aspect No. 1*: This method cleans a string.  But what if we accidentally
+        give it a @File@?  Or a number?  What happens?  What if we run @wipe_mutterings_from( 1 )@?
+
+
+        If we give @wipe_mutterings_from@ the number 1, Ruby will print the following and exit.
+
+
+        <pre>
+         NoMethodError: undefined method `include?' for 1:Fixnum
+                 from (irb):2:in `wipe_mutterings_from'
+                 from (irb):8
+        </pre>
+
+
+        What you see here is a rather twisted and verbose (but at times very helpful) little fellow
+        called the *backtrace*.  He's a wound-up policeman who, at the slightest sign of trouble,
+        immediately apprehends any and all suspects, pinning them against the wall and spelling out their
+        rights so quickly that none can quite hear it all.  But it's plain that there's
+        a problem.  And, of course, it's all a big misunderstanding, right?
+
+
+        When Ruby reads you these Miranda rights, listen hardest to the beginning.  The first line
+        is often all you need.  In this first line is contained the essential message.  And in
+        the above, the first line is telling us that there is no @include?@ method for the number 1.
+        Remember, when we were talking about the @reverse@ method in the last chapter?  Back then, I said,
+        "*a lot of methods are only available with certain types of values*."  Both @reverse@ and
+        @include?@ are methods which work with strings but are meaningless and unavailable for numbers.
+
+
+        To be clear: the method tries to use to the number.  The method will start with @sentence@ set to 1.
+        Then, it hits the second line: @while sentence.include? '('@.  Numbers have no @include?@
+        method.  Great, the backtrace has shown us where the problem is.  I didn't expect anyone to pass in
+        a number, so I'm using methods that don't work with numbers.
+
+
+        *See, this is just it.*  Our method is its own little pocket tool, right?  It acts as its own
+        widget independent of anything else.  To anyone out there using the @wipe_mutterings_from@
+        method, should they pass in a number, they'll be tossed this panic message that doesn't
+        make sense to them.  They'll be asked to poke around inside the method, which really isn't
+        their business.  They don't know their way around in there.
+
+
+        Fortunately, we can throw our own errors, our own *exceptions*, which may make more sense
+        to someone who inadvertantly hands the wrong object in for cleaning.
+
+
+        <pre>
+         def wipe_mutterings_from( sentence )
+           unless sentence.respond_to? :include?
+             raise ArgumentError, 
+               "cannot wipe mutterings from a #{ sentence.class }"
+           end
+           while sentence.include? '('
+             open = sentence.index( '(' )
+             close = sentence.index( ')', open )
+             sentence[open..close] = '' if close
+           end
+         end
+        </pre>
+
+
+        This time, if we pass in a number (again, the number 1), we'll get something more sensible.
+
+
+        <pre>
+         ArgumentError: cannot wipe mutterings from a Fixnum
+                 from (irb):3:in `wipe_mutterings_from'
+                 from (irb):12
+        </pre>
+
+
+        The @respond_to?@ method is really nice and I plead that you never forget it's there.  The
+        @respond_to?@ checks any object to be sure that it has a certain method.  It then gives
+        back a @true@ or @false@.  In the above case, the incoming @sentence@ object is checked for an
+        @include?@ method.  If no @include?@ method is found, then we raise the error.
+
+
+        You might be wondering why I used a symbol with @respond_to?@.  I used a symbol @:include?@
+        instead of a string @'include?'@.  Actually, either will work with @respond_to?@.
+
+
+        Usually symbols are used when you are passing around the name of a method or any other Ruby construct.
+        It's more efficient, but it also catches the eye.  The @respond_to?@ asks Ruby to look inside itself
+        and see if a method is available.  We're talking to Ruby, so the symbol helps denote that.  It's not
+        a big deal, Ruby just recognizes symbols quicker than strings.
+
+
+        Now, *Confusing Aspect No. 2*: Have you noticed how our method changes the sentence?
+
+
+        <pre>
+         something_said = "A (gith) spaceship."
+         wipe_mutterings_from( something_said )
+         print something_said
+        </pre>
+
+
+        Did you notice this?  In the first line of the above code, the @something_said@ variable
+        contains the string @"A (gith) spaceship."@.  But, after the method invocation, on the
+        third line, we print the @something_said@ variable and by then it contains the cleaned
+        string @"A  spaceship."@.
+
+
+        How does this work?  How does the method change the string?  Shouldn't it make a copy
+        of the string before changing it?
+
+
+        Yes, absolutely, it should!  *It's bad manners to change strings like that.*  We've used @gsub@ and
+        @gsub!@ in the last chapter.  Do you remember which of those two methods is a *destructive
+        method*, which changes strings directly?
+
+
+        Either we need to call this method @wipe_mutterings_from!@ (as a courtesy to all the other
+        good folks out there that might use this method) or change the method to work on a copy of
+        the string rather than the real thing.  Which is an easy change!  We just need to @dup@
+        the string.
+
+
+        <pre>
+         def wipe_mutterings_from( sentence )
+           unless sentence.respond_to? :include?
+             raise ArgumentError, 
+               "cannot wipe mutterings from a #{ sentence.class }"
+           end
+           sentence = sentence.dup
+           while sentence.include? '('
+             open = sentence.index( '(' )
+             close = sentence.index( ')', open )
+             sentence[open..close] = '' if close
+           end
+           sentence
+         end
+        </pre>
+
+
+        The @dup@ method makes a copy of any object.  Look at that line we added again on its own:
+
+
+        <pre>
+         sentence = sentence.dup
+        </pre>
+
+
+        What a peculiar line of code.  How does @sentence@ become a copy of @sentence@?
+        Does it erase itself?  What happens to the original @sentence@?  Does it disappear?
+
+
+        Remember that variables are just nicknames.  When you see @sentence = "A (gith) spaceship."@,
+        you see Ruby creating a string and then giving that string a nickname.
+
+
+        Likewise, when you see @sentence = sentence.dup@, you see Ruby creating a new string and then
+        giving that string a nickname.  This is handy inside your method because now @sentence@ is
+        a nickname for a new copy of the string that you can safely use *without changing the
+        string that was passed into the method*.
+
+
+        You'll see plenty of examples of variable names being reused.
+
+
+        <pre>
+         x = 5
+         x = x + 1
+         # x now equals 6
+
+         y = "Endertromb"
+         y = y.length
+         # y now equals 10
+         
+         z = :include?
+         z = "a string".respond_to? z
+         # z now equals true
+        </pre>
+
+
+        And, yes, sometimes objects disappear.  *If you can't get to an object through a variable, then
+        Ruby will figure you are done with it and will get rid of it.*  Periodically, Ruby sends out its
+        *garbage collector* to set these objects free.  Every object is kept in your computer's memory
+        until the garbage collector gets rid of it.
+
+

@@ -1,0 +1,119 @@
+    - This One's For the Disenfranchised: >
+
+        !i/elderly-1.gif(Some people still can't get past what he did.)!
+
+
+        If you give me a number, which is any year from Dr. Cham's life, I'll give you a synopsis of that
+        time period.  And I'll do it as a Ruby method, so it's an independent piece, an isolated chunk of
+        code which can be hooked up to the voice of a robotic volcano, when such a thing becomes the apex
+        of authoritative voice talents.
+
+
+        Okay, so I need you to notice @def@ and @case@ and @when@.  You've seen the Ranges, the closed
+        accordions of @1895..1913@, back in chapter 3.  They contain both ends and in between.  And the
+        backslashes at the end of each line simply ignore the _Enter_ key at the end of each line, assuring
+        Ruby that there is _more of this line to come_.
+
+
+        So, please: @def@ and @case@ and @when@.
+
+
+        <pre>
+         def dr_chams_timeline( year )
+           case year
+           when 1894
+             "Born."
+           when 1895..1913
+             "Childhood in Lousville, Winston Co., Mississippi."
+           when 1914..1919
+             "Worked at a pecan nursery; punched a Quaker."
+           when 1920..1928
+             "Sailed in the Brotherhood of River Wisdomming, which journeyed \
+              the Mississippi River and engaged in thoughtful self-improvement, \
+              where he finished 140 credit hours from their Oarniversity."
+           when 1929
+             "Returned to Louisville to pen a novel about time-travelling pheasant hunters."
+           when 1930..1933
+             "Took up a respectable career insuring pecan nurseries.  Financially stable, he \
+              spent time in Brazil and New Mexico, buying up rare paper-shell pecan trees.  Just \
+              as his notariety came to a crescendo: gosh, he tried to buried himself alive."
+           when 1934
+             "Went back to writing his novel.  Changed the hunters to insurance tycoons and the \
+              pheasants to Quakers."
+           when 1935..1940
+             "Took Arthur Cone, the Headmaster of the Brotherhood of River Wisdomming, as a \
+              houseguest.  Together for five years, engineering and inventing."
+           when 1941
+             "And this is where things got interesting."
+           end
+         end
+        </pre>
+
+
+        The @def@ keyword.  Here is our first *method definition*.  A plain kernel method, which can
+        be used anywhere in Ruby.  And how do we run it?
+
+
+        <pre>
+         puts dr_chams_timeline( 1941 )
+        </pre>
+
+
+        Which answers with "And this is where things got interesting."  It's the same story again and again:
+        _use your answers._  I've set things up above so that the @case@ statement always answers with a string.
+        And since the case statement is the final (and only) statement in the method, then the method
+        answers with that string.  Trickling water spilling down from ledge to ledge.
+
+
+        Let me be clear about the @case@ statement.  Actually, I should call it a @case..when@ statement,
+        since they cannot be used separately.  The @case@ keyword is followed by a value, which is compared against
+        each of the values which follow @when@ keywords.  The first value to qualify as a match is the one the
+        case uses and the rest are ignored.  You can do the same thing with a bunch of @if..elsif@ statements,
+        but it's wordier.
+       
+
+        <pre>
+         case year
+         when 1894
+           "Born."
+         when 1895..1913
+           "Childhood in Lousville, Winston Co., Mississippi."
+         else
+           "No information about this year."
+         end
+        </pre>
+
+
+        Is identical to:
+
+
+        <pre>
+         if 1894 === year
+           "Born."
+         elsif 1895..1913 === year
+           "Childhood in Lousville, Winston Co., Mississippi."
+         else
+           "No information about this year."
+         end
+        </pre>
+
+
+        The *triple equals* is a length of velvet rope, checking values much like the double equals.  It's just:
+        the triple equals is a longer rope and it sags a bit in the middle.  It's not as strict, it's a bit
+        more flexible.
+
+
+        Take the Ranges above.  @(1895..1913)@ isn't at all *equal* to @1905@.  No, the Range @(1895..1913)@ is only
+        truly *equal* to any other Range @(1895..1913)@.  In the case of a Range, the triple equals cuts you a break
+        and lets the Integer @1905@ in, because even though it's not *equal* to the Range, it's *included* in the
+        set of Integers represented by the Range.  Which is good enough in some cases, such as the timeline I put
+        together earlier.
+
+
+        Which actually looked like a timeline, didn't it?  I mean, sure, @dr_chams_timeline@ method is code, but
+        it does read like a timeline, clean and lovely.
+
+
+        !i/elderly-2.gif(What research revealed.)!
+
+

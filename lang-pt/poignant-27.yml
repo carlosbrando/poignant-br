@@ -1,0 +1,116 @@
+    - >
+        Nonono.  Hang on a sec.  You're not ready for what the Elf here is doing in his caves.
+        You'll think it's all positively inhumane, naughty, sick, tweeested, yada yada.
+
+
+        h3.  Now You're Going to Hear the Animal Perfect Mission Statement Because This Is A
+        Book And We Have Time And No Rush, Right?
+
+
+        Back, back, way back before speedboats, I owned a prize race horse who took a stumble on 
+        the track.  She did ten front flips and crashed into a guy who was carrying a full jar 
+        of mayonnaisse.  We had blood and mayonnaisse up and down the track.  Needless to say, 
+        she was a disaster.
+
+
+        The vet took one look at her and swore she'd never walk again.  Her legs were gone and
+        the vet wouldn't allow a legless horse to just sit around.  We'd need to put her down.  
+        He swore his life and career on it, insisting we divide into two parallel lines.  The people 
+        who could not refute the doctor's claims on one side; those too stubborn to accept his 
+        infallable medical reasoning on the other.  The Elf, his pet ham, and I were the only 
+        ones in that second line.
+
+
+        So while the others heaped up trophies and great wreaths around the horse, bidding it a 
+        fond farewell before the bullet came to take him home, the Elf and I frantically pawed the Internet for 
+        answers.  We took matter into our own hands, cauterizing her leg wounds with live crawdads.  
+        It worked great!  We now had a horse again.   Or at least: a horse body with a crustaceous abdominal
+        frosting.  
+
+
+        She scurried everywhere after that and lived for years in pleasantly moist underground cavities.
+
+
+        Animal Perfect is now the future of animal enhancement.  They build new animals and salvage 
+        old-style animals for parts.  Of course, they've come a long ways.
+        When Animal Perfect started, you'd see a full-grown bear walk into Animal Perfect and you'd
+        see a full-grown bear with sunglasses walk out.  Completely cheesy.
+
+
+        Stick around and you'll see a crab with _his own jet pack_.  That's a new 2004 model jetcrab.
+
+
+        But now, the whole operation is up and running.  And the cleanliness of the place is astonishing.
+        All the equipment is so shiny.  Everything is in chrome.  Oh, and all the staff have concealed
+        weapons.  They're trained to kill anyone who enters unannounced.  Or, if they run out of bullets,
+        they're trained to pistol whip anyone who enters unannounced.
+
+
+        Elf, make me a starmonkey.
+
+
+        !i/the.elf-5a.jpg(First, the star is caught.)!
+
+
+        Some imaginary Ruby for you:
+
+
+        bq. @pipe.catch_a_star@
+        
+        
+        Variable @pipe@.  Method @catch_a_star@.  A lot of Rubyists like to think of methods as a message.
+        Whatever comes before the dot is handed the message.  The above code tells the @pipe@ to
+        @catch_a_star@.
+
+
+        This is the *second half* of Ruby.  Putting things in motion.  These things you define and create
+        in the first half start to _act_ in the second half.
+
+
+        # Defining things.
+
+        # Putting those things into action.
+
+
+        So what if the star catching code works?  Where does the star go?
+
+
+        bq. @captive_star = pipe.catch_a_star@
+
+
+        See, it's up to you to collect the miserable, little star.  If you don't, it'll simply vanish.
+        Whenever you use a method, you'll always be given something back.  You can ignore it or use it.
+
+
+        _If you can learn to use the answers that methods give you back, then you will *dominate*._
+
+
+        !i/the.elf-5b.jpg(Star is ratcheted to the monkey's face.)!
+
+
+        Quickly then.
+
+
+        bq. @starmonkey = ratchet.attach( captive_monkey, captive_star )@
+
+
+        The @ratchet@ gets an @attach@ message.  What needs to be attached?  The _method arguments_: the
+        @captive_monkey@ and the @captive_star@.  We are given back a @starmonkey@, which we have
+        decided to hang on to.
+
+
+        !i/the.elf-5c.gif(Frog on the hand.)!
+
+
+        This is turning out to be such a short, little proggie that I'm just going to put it
+        all together as one statement.
+
+
+        bq. @starmonkey = ratchet.attach( captive_monkey, pipe.catch_a_star ) + deco_hand_frog@
+
+
+        See how @pipe.catch_a_star@ is right in the arguments for the method?  The caught 
+        star will get passed right to the ratchet.  No need to find a place to put it.  Just
+        let it go.
+
+

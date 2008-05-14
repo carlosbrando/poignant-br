@@ -1,0 +1,223 @@
+    - Walking, Walking, Walking, Walking and So Forth: >
+
+        The evening grew dark around the pair of foxes.  They had wound their way through
+        alleys packed with singing possums, and streets where giraffes in rumpled sportscoats
+        bumped past them with their briefcases.  They kept walking.  
+
+
+        And now the stores rolled shut their corrugated metal lids.  
+        Crickets crawled out from the gutters and nudged at the loose change.
+
+
+        !i/wixl-6.gif(Why such hard feelings?)!
+
+
+        "Anyway, you must admit he's a terrible President," said Fox Small. _"Why_ does President Marcos have a rabbit as Vice President of
+        the Foxes."
+
+
+        "The Vice President?  The rabbit with the _eyebrows_?"
+
+
+        "No, the rabbit with the *huge sausage lips*," said Fox Small.
+
+
+        But their conversation was abruptly interupted by a freckly cat head which popped from the sky just above the sidewalk.
+
+
+        !i/wixl.blix-1.gif(At least they're still in the book...)!
+
+
+        What is this about?!
+
+
+        !i/wixl-14.gif(Will the book finish?)!
+
+
+        Oh, come on.  This is rich.  More meta.
+
+
+        I'm not going to bother illustrating this discussion Blixy had with the foxes at this point!
+        It's all a *bunch of _conjecture_*.  _HOW_ can they presume to know the landscape of my family drama?
+        I love my sister.  For a long time, I _worshipped_ her. (This is my sister Quil.)
+
+
+        I admit that there was a pretty painful day a few months ago and I kind of freaked out.  I was
+        laid out on the long patio chair by the pool in my mom's backyard.  I had a Dr. Pepper and a bit
+        of german chocolate cake.  I was eating with a kid fork.  Everything else was in the dishwasher,
+        that's all they had.  Three prongs.
+
+
+        My mom started talking about Quil.  All about how much money she was blowing on pants and purses.
+        A five-hundred dollar purse.  And then she said, "She's losing it.
+        She sounded totally high on the phone." (She nailed it on the head, Quil was smoking dope and
+        loving it.)
+
+
+        So I'd been noticing how observant my mom could be.  That's why, when she said, "I actually think she's on
+        cocaine," I _physically_ stood up and chucked my soda across the yard.
+
+
+        It sailed off into the woods somewhere.  We had been talking awhile, so it was dark when the can flew.
+        I paced a bit.  And then I screamed at the top of my lungs.
+
+
+        My uncle Mike was standing there with the glass door open, staring at me.  He said something totally
+        nervous like, "Oh, okay.  Well, I'll--"  And the tea in his glass was swishing back and forth, sloshing
+        all over.  He disappeared.  He's not very good at saying things to people.  He's more of a whistler.  And resonant.
+
+
+        !i/wixl.blix-2.gif(Moving along.)!
+
+
+        So, to be completely honest, yes, I got a little mad.  I got mad.  You know.  I dealt with it.
+        Quil calls me regularly.  For some stupid reason, I rarely call her.
+
+
+        Plus, she didn't end up killing herself.  So it's just not an issue.  Who knows if it was real.
+        She just had a lot of vodka.  And she's little.  So it was just scary to see Quil guzzling it down like that.
+        I mean forcing it down.
+ 
+
+        But why talk about it?  It'll just make her feel like I'm disappointed.  Or like I'm a jerk.
+
+
+        Well, I got off track there a bit.  Where was I?  Blix is basically helping the foxes around, getting them on
+        the trail of their truck.  Yeah, back to all that.
+
+
+        !i/wixl-3.gif(Frogs who save seats on the bus.)!
+
+
+        "We can't squeeze on to this bus," said the smallest fox.
+
+
+        "Guys, walk on up," said Blix.  "What's the hold up?  Oh, the frogs.  Yeah, just squeeze through."
+        Blixy pushed from behind.
+
+
+        "Hey," said the Tall Fox.  "I'm crammed on this little step!  Somebody move!"
+
+
+        "Did you get through-- young fox??" said the cat.
+
+
+        "No," said Fox Small, "can't you see?  The driver keeps shaking his head and it's _really_
+        making me nervous.  I don't think he wants us on."
+
+
+        "Go," said Blix.  He stepped down from his step and walked around the bus, peering through
+        the plexiglass windows.  "Well, I don't know, guys.  I dunno.  I guess it's got a lot of frogs."  He pounded
+        on the window.  "Hey!  Move over!"
+
+
+        And that's the reality of riding intercity transit in Wixl.  It's terribly competitive.  The morning
+        bus is so crowded that most white collar animals get frogs to hold their seat through the nighttime.
+        For whatever reason, it works.  It's become this staple of their workflow and their economy.
+
+
+        If you can muster up a bit of imagination, you can see a *percent sign* as a frog's slanted face.
+        Got the picture in your head?  Now let me show you frogs that camp out inside strings.
+
+
+        <pre>
+         # The %s format is for placing full strings.
+         irb> "Seats are taken by %s and %s." % ['a frog', 'a frog with teeth']
+           => "Seats are taken by a frog and a frog with teeth."
+
+         # The %d format is for placing numbers, while the %f format is for
+         # floats (decimal numbers).
+         irb> frogs = [44, 162.30]
+         irb> stats = "Frogs have filled %d seats and paid %f blue crystals."
+         irb> stats % frogs
+           => "Frogs have filled 44 seats and paid 162.30 blue crystals."
+
+         # Formatting is flexible with types, you can pass in strings
+         # and format them like numbers.
+         irb> frogs = ['44', '162.30']
+         irb> stats % frogs
+           => "Frogs have filled 44 seats and paid 162.30 blue crystals."
+        </pre>
+
+
+        What you are seeing above uses the @%@ method in the @String@ class.
+        This method takes *a string* and *an array* and slurps them in together
+        to create a new string.  The items from the list are yanked out (in order) and
+        placed in their saved seats.  It's the open of the business
+        day and the frogs have done their job.
+
+
+        <pre>
+         # See, here's the String#% method called like other methods.
+         irb> "Please move over, %s.".%( 'toothless frog' )
+           => "Please move over, toothless frog"
+
+         # Now let's call it the prettier way, with the percent sign
+         # right between the string and the array.
+         irb> "Here is your 1098 statement for the year, %s." % ['teeth frog']
+           => "Here is your 1098 statement for the year, teeth frog."
+        </pre>
+
+
+        This is also available as the @Kernel::format@ method or @Kernel::sprintf@
+        method.  (In the C language, there is a @sprintf@ method which operates
+        just like this.)
+
+
+        <pre>
+         irb> format "Frogs are piled %d deep and travel at %d mph.", [5, 56]
+           => "Frogs are piled 5 deep and travel at 56 mph."
+        </pre>
+
+
+        For the most part, you'll only need @%s@ (strings), @%d@ (integer numbers)
+        or @%f@ (float numbers) format specifiers.  The @%p@ placeholder will
+        run @inspect@ on an object.
+
+
+        Yeah, so, frog formatting is really handy for building strings that are
+        assembled from different kinds of data.  You can learn all the various
+        kinds of format specifiers by reading the @ri sprintf@ page.  I'm just
+        going to give you a few quick pointers.
+
+
+        Let's say you have the array but you want the items to appear in
+        *a different order* in the string.  In such a situation, you can identify
+        specific items by placing a number (@1$@ for the first item, @2$@ for the second,
+        and so on) right after the percent sign.
+
+
+        <pre>
+         irb> "This bus has %1$d more stops before %2$d o'clock.  That's %1$d more stops." % [16, 8]
+           => "This bus has 16 more stops before 8 o'clock.  That's 16 more stops."
+        </pre>
+
+
+        The second tip I have for you is that you can allot a certain number of characters for
+        each item, a width.  And if an item is smaller than the width, extra spaces
+        will be used before the item.  To pad it.
+        If the width is a negative number, the item will be forced to left and the
+        padding will come after it.
+
+
+        <pre>
+         # Give one item 30 characters of width
+         irb> "In the back of the bus: %30s." % ['frogs']
+           => "In the back of the bus:                          frogs."
+
+         # Give one left-justified item 30 characters of width
+         irb> "At the front of the bus: %-30s." % ['frogs']
+           => "At the front of the bus: frogs                         ."
+        </pre>
+
+
+        Fox Small kept looking up at the bus driver.  Remember, he wouldn't enter the bus!
+
+
+        "What's the deal?" said Fox Tall.  "Can't you just get on and we'll just stand in the aisle?"
+
+
+        "You really want to get on this bus?  That driver has no hands," said Fox Small, speaking close
+        and hushed to Fox Tall, "and all he has, instead of hands, are sucker cups."
+
+

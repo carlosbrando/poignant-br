@@ -1,0 +1,19 @@
+locale:        pt-br
+version:       '0.6'
+next_page:     próxima
+previous_page: anterior
+encoding:      utf-8
+turn_page:     Virar a página
+open_the_book: Abrir o livro
+written_by: |
+        Este livro foi carinhosamente escrito e ilustrado por
+        "why the lucky stiff":http://whytheluckystiff.net/.
+header_title:  why's (poignant) guide to ruby 
+sidebar: sidebar!
+contents: Conteúdo
+expansion_pak: Pacote de Expansão
+expansion_pak_no: Pacote de Expansão No.
+expansion_paks: Pacotes de Expansão
+adverrtissements: Anúnccios
+see_also: Veja também
+english_version: Versão em Português

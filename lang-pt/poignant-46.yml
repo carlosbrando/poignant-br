@@ -1,0 +1,294 @@
+    - >
+        Oh, and one more thing about @dup@.  Some things can't be dup'd.  Numbers, for instance.  
+        Symbols (which look like @:death@) are identical when spelled the same.  Like numbers.
+
+
+        Also, some of the special variables: @nil@, @true@, @false@.  These are things that Ruby won't let
+        you alter, so there's so point making a copy anyway.  I mean, imagine if you could change @false@
+        to be @true@.  The whole thing becomes a lie.
+
+
+        Perhaps *Confusing Aspect No. 3* is a simple one.  I'm using those square brackets on the 
+        string.  I'm treating the string like it's an Array or Hash.  I can do that.  Because strings
+        have a @[]@ method.
+
+
+        When used on a string, the square brackets will extract part of the string.  Again,
+        slots for a forklift's prongs.  The string is a long shelf and the forklift is pulling out a slab
+        of the string.
+
+
+        Inside the brackets, we pass the _index_.  It's the label we've placed right between the prongs
+        where the worker can see it.  When it comes to strings, we can use a variety of objects as our 
+        index.
+        
+
+        <pre>
+         str = "A string is a long shelf of letters and spaces."
+         puts str[0]       # prints 65 (the character code for an 'A')
+         puts str[0..-1]   # prints 'A string is a long shelf of letters and spaces.'
+         puts str[1..-2]   # prints ' string is a long shelf of letters and spaces'
+         puts str[1, 3]    # prints 'A s'
+         puts str['shelf'] # prints 'shelf'
+        </pre>
+
+
+        Alright, the last *Confusing Aspect No. 4*: this method can be sent into an endless loop.
+        You can give this method a string which will cause the method to hang and never come back.
+        Take a look at the method.  Can you throw in a muddy stick to clog the loop?
+
+
+        <pre>
+         def wipe_mutterings_from( sentence )
+           unless sentence.respond_to? :include?
+             raise ArgumentError, 
+               "cannot wipe mutterings from a #{ sentence.class }"
+           end
+           sentence = sentence.dup
+           while sentence.include? '('
+             open = sentence.index( '(' )
+             close = sentence.index( ')', open )
+             sentence[open..close] = '' if close
+           end
+           sentence
+         end
+        </pre>
+
+
+        Here, give the muddy stick a curve before you jam it.
+
+
+        <pre>
+         muddy_stick = "Here's a ( curve."
+         wipe_mutterings_from( muddy_stick )
+        </pre>
+
+
+        Why does the method hang?  Well, the @while@ loop waits until all the open parentheses
+        are gone before it stops looping.  And it only replaces open parentheses that have a matching
+        closing parentheses.  So, if no closing paren is found, the open paren won't be replaced
+        and the @while@ will never be satisfied.
+
+
+        How would you rewrite this method?  Me, I know my way around Ruby, so I'd use a regular
+        expression.
+
+
+        <pre>
+         def wipe_mutterings_from( sentence )
+           unless sentence.respond_to? :gsub
+             raise ArgumentError, 
+               "cannot wipe mutterings from a #{ sentence.class }"
+           end
+           sentence.gsub( /\([-\w]+\)/, '' )
+         end
+        </pre>
+
+
+        Do your best to think through your loops.  It's especially easy for @while@ and @until@ loops
+        to get out of hand.  Best to use an iterator.  And we'll get to regular expressions in time.
+
+
+        In summary, here's what we've learned about writing methods:
+
+
+        # Don't be surprised if people pass unexpected objects into your methods.
+        If you absolutely can't use what they give you, @raise@ an error.
+
+        # It's poor etiquette to change objects your method is given.  Use @dup@ to
+        make a copy.  Or find a method like @gsub@ that automatically makes a copy
+        as it does its job.
+
+        # The square brackets can be used to lookup parts inside any @Array@, @Hash@ or @String@ objects,
+        as these objects provide a @[]@ method.  Also, since these objects provide a @[]=@ method,
+        the square brackets can be used in assignment (on the left-hand side of the equals sign) to
+        change the parts of those objects.
+
+        # Watch for runaway loops.  Avoid @while@ and @until@ if you can.
+ 
+
+        h3. The Mechanisms of Name-Calling
+
+
+        !>i/my.daughters.organ-2.gif(Cat salesmen from the sky.)!
+
+
+        Forthwith there is a rustling in the trees behind Paij-ree's house and it turns out to
+        be a man falling from the sky.  His name is Doug and he sells cats.
+
+
+        So, just as he comes into to view, when his shadow (and the shadows of the cats tied to his
+        foot) obscures the bird on the lawn that we're trying to hit with a racquetball, 
+        as he's squeezing a wisp of helium from his big balloon, we shout, "Hello, Doug!"
+
+
+        And he says, "Hello, Gonk-ree!  Hello, Why!"
+
+
+        Paij-ree checks his pockets to be sure he has the dollar-twenty-seven he'll need in order to
+        buy the three cats he'll need to keep the furnace stoked and the satellite dish turning.  These
+        cats generate gobs of static once Paij-ree tosses them in the generator, where they'll be
+        outnumbered by the giant glass rods, which caress the cats continually-- But, wait!  Did you see
+        how the cat broker called him Gonk-ree?
+
+        
+        And he calls him Gonk-ree in the morning and Gonk-plo at night.
+
+
+        So the suffix is definitely subject to the sunlight.  As far as I can tell, the prefix indicates
+        the namecaller's relationship to Paij-ree.
+
+        
+        <pre>
+         class String
+
+           # The parts of my daughter's organ
+           # instructor's name.
+           @@syllables = [
+             { 'Paij' => 'Personal',
+               'Gonk' => 'Business',
+               'Blon' => 'Slave',
+               'Stro' => 'Master',
+               'Wert' => 'Father',
+               'Onnn' => 'Mother' },
+             { 'ree'  => 'AM',
+               'plo'  => 'PM' }
+           ]
+
+           # A method to determine what a
+           # certain name of his means.
+           def name_significance
+             parts = self.split( '-' )
+             syllables = @@syllables.dup
+             signif = parts.collect do |p|
+               syllables.shift[p]
+             end
+             signif.join( ' ' )
+           end
+
+         end
+        </pre>
+
+
+        Now I've gone beyond just showing you sloppy code.  Here be a grave debauchery and a crime
+        against nature.  A crime most languages won't allow you to commit.  We're changing the
+        @String@, *one of the core classes of Ruby*!
+
+
+        "I know this is a bit dangerous," I said, when I passed this one under Paij-ree's nose.
+        "I hope nobody gets hurt."
+
+
+        "Every Smotchkkiss must taste what this (kep-yo-iko) danger does," he said.  "Dogs and logs
+        and swampy bogs (kul-ip), all must be tasted."  And he took a swig of his Beagle Berry
+        marsh drink.
+
+
+        So what is it that I'm adding to the @String@ class?  Two things: a class variable and
+        a method.  A normal *instance method*.
+
+
+        I like to look at the *at* symbol as a character meaning *attribute*.  The *double at*
+        stands for *attribute all*.  A class variable.  All instances of a class can look at
+        this variable and it is the same for all of them.  The @@@syllables@ variable is an
+        Array that can now be used inside the String class.
+
+
+        The new method is @name_significance@ and this new method can be used with any string.
+
+
+        bq. @print "Paij-ree".name_significance@ prints out @Personal AM@.
+
+
+        As you can see, Paij-ree is a personal name.  A name friends use in the early hours.
+
+
+        Make sure you see the line of code which uses @self@.  This is a special variable, a
+        variable which represents the object whose method you are calling.  To simplify things
+        a bit, let's try making a method which breaks up a string on its dashes.
+
+
+        <pre>
+         class String
+           def dash_split
+             self.split( '-' )
+           end
+         end
+        </pre>
+
+
+        Again, here's a method which can be used with any string.
+
+
+        bq. @"Gonk-plo".dash_split@ return the Array @['Gonk', 'plo']@.
+
+
+        Using @self@ marks the beginning of crossing over into many of the more advanced ideas in Ruby.
+        This is definition language.  You're defining a method, designing it before it gets used.  You're
+        preparing for the existence of an object which uses that method.  You're saying, "When @dash_split@ 
+        gets used, there will be a string at that time which is the one we're dash-splitting.  And @self@ is a 
+        special variable which refers to that string."
+
+
+        Ruby is a knockout definition language.  A succulent and brain-splitting discussion is coming your
+        way deeper in this book.
+
+
+        Most often you won't need to use @self@ explicitly, since you can call methods directly from inside
+        other method definitions.
+
+
+        <pre>
+         class String
+           def dash_split; split( '-' ); end
+         end
+        </pre>
+
+
+        In the @name_significance@ method, find the loop.  Learning about @Array#collect@ is essential.
+        Let's look close.
+
+
+        <pre>
+         signif = parts.collect do |p|
+           syllables.shift[p]
+         end
+        </pre>
+
+
+        The @parts@ Array contains the separated name.  @['Paij', 'plo']@, for instance.  We're iterating
+        through each item in that Array with @collect@.  But @collect@ steps beyond what @each@ does.  Like
+        @each@, collect slides each item down the chute as a block variable.  And then, at the end of the
+        block, @collect@ *keeps the answer the block gives back and adds it to a new Array*.  The @collect@
+        method is the perfect way of building a new Array which is based on the items in an existing Array.
+
+
+        Doug has three cats for sale.  One is twelve cents, one is sixty-three cents, one is nine cents.
+        Let's see how much each cat would cost if we added a 20% tip.
+
+
+        <pre>
+         catsandtips = [0.12, 0.63, 0.09].collect { |catcost| catcost + ( catcost * 0.20 ) }
+        </pre>
+
+
+        I say Paij-ree's property is a very charming section of woods when it's not raining cats and Doug.
+        For many days, Paij-ree and I camped in tents by the river behind his house, subsisting on smoked
+        blackbird and whittling little sleeping indians by the dusklight.  On occassion he would lose
+        a game of spades and I knew his mind was distracted, thinking of Endertromb.  All of this
+        must have been stirring inside of him for sometime.  I was the first ear he'd ever had.
+
+
+        "I just came from Ambrose," I said.  "Sort of my own underground home, a place where elves
+        strive to perfect animals."
+
+
+        He mumbled and nodded.  "You can't be (poth-in-oin) part of (in) such things."
+
+
+        "You think we will fail?"
+
+
+        "I (preep) have been there before," he said.  And then, he spoke of the Lotteries.
+
+

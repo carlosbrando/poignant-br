@@ -1,0 +1,64 @@
+    - If I Haven't Treated You Like a Child Enough Already: >
+
+        I'm proud of you.   Anyone will tell you how much I brag about you.  How I go on and on about
+        this great anonymous person out there who scrolls and reads and scrolls and reads.  "These
+        kids," I tell them.  "Man, these kids got heart.  I never..."  And I can't even finish a sentence
+        because I'm absolutely blubbering.
+        
+
+        And my heart glows bright red under my filmy, translucent skin and they have to administer 10cc 
+        of JavaScript to get me to come back.  (I respond well to toxins in the blood.)  Man, that stuff will 
+        kick the peaches right out your gills!
+
+
+        So, yes.  You've kept up nicely.  But now I must begin to be a brutal schoolmaster.
+        I need to start seeing good marks from you.  So far, you've done nothing but move your eyes
+        around a lot.  Okay, sure, you did some exceptional reading aloud earlier.  Now we need some
+        comprehension skills here, Smotchkkiss.
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        bq. @5.times { print "Odelay!" }@
+
+
+        You might want to even cover this paragraph up while you read, because your eyes might want
+        to sneak to the answer.  We have a _number_ @5@, followed by a _method_ @.times@.  Then, the first
+        crab pincers of a _block_.  The kernel _method_ @print@ has no dot and is followed by a _string_
+        @"Odelay!"@.  The final crab pincers close our _block_.
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        bq. @exit unless "restaurant".include? "aura"@
+
+
+        Like the @print@ method, @exit@ is a kernel _method_.  If you were paying attention during the big list
+        of keywords, you'll know that @unless@ is just such a _keyword_.  The _string_ @"restaurant"@ is clung to
+        by the _method_ @include?@.  And finally, the string @"aura"@.
+
+
+        *Say aloud each of the parts of speech used below.*
+
+
+        bq. @['toast', 'cheese', 'wine'].@
+
+        @each { |food| print( food.capitalize ) }@
+
+
+        This caterpillar partakes of finer delicacies.  An _array_ starts this example.  In the array, three
+        _strings_ @'toast'@, @'cheese'@, and @'wine'@.  The whole array is trailed by a _method_ @each@.  
+
+
+        Inside of a _block_, the _block argument_ @food@, travelling down its little waterslide into the
+        block.  The _method_ @capitalize@ then capitalizes the first letter of the block argument, which 
+        has become _variable_ @food@.  This capitalized _string_ is passed to kernel _method_ @print@.
+
+
+        Look over these examples once again.  Be sure you recognize the parts of speech used.  They each
+        have a distinct look, don't they?  Take a deep breath, press firmly on your temples.  Now, let's
+        dissect a cow's eye worth of code.
+
+        

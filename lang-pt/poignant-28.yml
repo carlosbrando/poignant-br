@@ -1,0 +1,129 @@
+    - Small and Nearly Worthless: >
+
+        !i/blix-1.gif(Law-va.)!
+
+
+        The hotel here in Ambrose is no good at all.  The beds are all lumpy.
+        The elevator is tiny.  One guy put all his bags in the elevator and found
+        out there wasn't room for him.  He hit the button and chased up the stairs after
+        it all.  But the stairwell turned out to be too narrow and his shoulders got wedged
+        going up.  
+
+
+        The soap mini-bars they give you are sized down for elves, so it's impossible to
+        work up a lather.  I hate it.  I keep mistaking them for contact lenses.
+
+
+        I turned on the faucet and nothing came out.  Thing is: Ambrose is
+        a place with magical properties, so I took a chance.  I put my hands under
+        the spigot.  Invisible, warm wetness.  I felt the hurried
+        sensation of running water, darting through my fingers.  When I took
+        my hands away, they were dry and clean.
+
+
+        It was an amazing nothingness to experience.  It was just like @nil@.
+
+
+        h3. Nil
+
+
+        In Ruby, @nil@ represents an emptiness.  It is *without value*.  It isn't zero.
+        Zero is a number.  
+
+
+        It's Ruby's own walking dead, a flatlined keyword.  You can't add
+        to it, it doesn't evolve.  But it's terribly popular.  This skeleton's smiling
+        in all the pictures.
+
+
+        bq. @plastic_cup = nil@
+
+
+        The above @plastic_cup@ is *empty*.  You could argue that the @plastic_cup@
+        contains something, a @nil@.  The @nil@ represents the emptiness, though, so
+        go ahead and call it empty.
+
+
+        Some of you who have programmed before will be tempted to say the @plastic_cup@ is
+        *undefined*.  How about let's not.  When you say a variable is undefined,
+        you're saying that Ruby simply has no recollection of the variable, it doesn't
+        know the var, it's absolutely non-existent.
+
+
+        But Ruby is aware of the @plastic_cup@.  Ruby can easily look in the @plastic_cup@.
+        It's *empty*, but not *undefined*.
+
+
+        h3. False
+
+
+        !<i/blix-neg.gif(Shape of a cat.)!
+
+
+        _The cat Trady Blix.  Frozen in emptiness.  Immaculate whiskers rigid.  Placid
+        eyes of lake.  Tail of warm icicle.  Sponsored by a Very Powerful Pause Button._
+
+
+        The darkness surrounding Blix can be called *negative space*.  Hang on to that phrase.
+        Let it suggest that the emptiness has a negative connotation.  In a similar way,
+        @nil@ has a slightly sour note that it whistles.
+
+
+        Generally speaking, *everything in Ruby has a positive charge to it*.  This spark
+        flows through strings, numbers, regexps, all of it.  Only two keywords wear a
+        shady cloak: @nil@ and @false@ draggin us down.
+
+
+        You can *test that charge* with an @if@ keyword.  It looks very much like the
+        @do@ blocks we saw in the last chapter, in that both end with an @end@.
+
+
+        <pre>
+         if plastic_cup
+           print "Plastic cup is on the up 'n' up!"
+         end
+        </pre>
+
+
+        If @plastic_cup@ contains either @nil@ or @false@, you won't see anything print
+        to the screen.  They're not on the @if@ guest list.  So @if@ isn't going to run
+        any of the code it's protecting.
+
+
+        But @nil@ and @false@ need not walk away in shame.  They may be of questionable
+        character, but @unless@ runs a smaller establishment that caters to the bedraggled.
+        The @unless@ keyword has a policy of *only allowing those with a negative charge in*.
+        Who are: @nil@ and @false@.
+        
+
+        <pre>
+         unless plastic_cup
+           print "Plastic cup is on the down low."
+         end
+        </pre>
+
+
+        You can also use @if@ and @unless@ at the *end of a single line of code*, if that's
+        all that is being protected.
+
+
+        <pre>
+         print "Yeah, plastic cup is up again!" if plastic_cup
+         print "Hardly. It's down." unless plastic_cup
+        </pre>
+
+
+        And another nice trick: stack the @if@ and @unless@.
+
+
+        <pre>
+         print "We're using plastic 'cause we don't have glass." if plastic_cup unless glass_cup
+        </pre>
+
+
+        This trick is a gorgeous way of expressing, _Do this only if *a* is true and *b* isn't
+        true_.
+
+
+        Now that you've met @false@, I'm sure you can see what's on next.
+

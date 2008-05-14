@@ -1,0 +1,520 @@
+    - A Castle Has Its Computers: >
+
+        !i/dr.cham-3.jpg(The panoramic vales of Sedna on Endertromb.)!
+
+
+        Our intrepid Doctor set off for the alien castle, dashing through the flowers.  The ground belted
+        past his heels.  The castle inched up the horizon.  He desired a stallion, but no stallion
+        appeared.  And that's how he discovered that the planet wouldn't read his mind and
+        answer his wishes.
+
+
+        As my daughter's organ instructor explained it, however, the planet *could read minds* and it *could
+        grant wishes*.  Just not both at the same time.
+
+
+        One day as I quizzed the organ maestro, he sketched out the following Ruby code on a pad
+        of cheese-colored paper.  (And queer cheese smells were coming from somewhere, I
+        can't say where.)
+
+
+        <pre>
+         require 'endertromb'
+         class WishMaker
+           def initialize
+             @energy = rand( 6 )
+           end
+           def grant( wish )
+             if wish.length > 10 or wish.include? ' '
+               raise ArgumentError, "Bad wish."
+             end
+             if @energy.zero?
+               raise Exception, "No energy left."
+             end
+             @energy -= 1
+             Endertromb::make( wish )
+           end
+         end
+        </pre>
+
+
+        This is the wish maker.  
+
+
+        Actually, no, this is a *definition for a wish maker.*  To Ruby, it's a *class definition*.
+        The code describes how a certain *object* will work.
+
+
+        Each morning, the wish maker starts out with up to five wishes available for granting.
+        A new @WishMaker@ is created at sun up.
+
+
+        <pre>
+         todays_wishes = WishMaker.new
+        </pre>
+
+
+        The @new@ method is a class method which creates a new, blank object.  It also calls the
+        object's @initialize@ method automatically.  In the @WishMaker@ definition, you'll see
+        the @initalize@ method, which contains a single line of code: @@energy = rand( 6 )@.
+
+
+        The @rand( 6 )@ picks a number between 0 and 5.  This number will represent the number
+        of wishes left in the day.  So, occassionally there are no wishes available
+        from the wish maker.
+
+
+        The random number is assigned to an *instance variable* which is named @@energy@.
+        This instance variable will be available any time throughout the class.  The variable
+        can't be used outside the *scope* of the class.
+
+
+        In chapter three, we briefly looked at instance variables and decided to respect them
+        as *attributes*.  (The *at symbol* could mean *attribute*.)  Instance variables can used
+        to store any kind of information, but they're most often use to store bits of information
+        about the object represented by the class.
+
+
+        In the above case, each wish maker for the day has its own energy level.  If the wish maker
+        were a machine, you might see a gauge on it that points to the energy left inside.
+        The @@energy@ instance variable is going to act as that gauge.
+
+
+        <pre>
+         todays_wishes = WishMaker.new
+         todays_wishes.grant( "antlers" )
+        </pre>
+
+
+        Okay, step back and ensure you understand the example here.  The @WishMaker@ class is
+        an outline we've laid out for how the whole magic wish program works.  It's not the _actual_ genie in
+        the bottle, it's the paperwork behind the scenes.  It's the rules and obligations the genie
+        has to live by.
+
+
+        It's @todays_wishes@ that's the genie in the bottle.  And here we're giving it a wish to grant.
+        Give us antlers, genie.  (If you really get antlers from this example, I don't want to hear
+        about it.  Go leap in meadows with your own kind now.)
+
+
+        In the last chapter, the drill was: Ruby has two halves.
+
+
+        # Defining things.
+
+        # Putting those things into action.
+
+
+        What are the actions in Ruby?  Methods.  And now, you're having a lick of the definition language
+        built-in to Ruby.  Method definitions using @def@.  Class definitions using @class@.
+
+
+        At this point in your instruction, it's easier to understand that *everything in Ruby is an object.*
+
+
+        <pre>
+         number = 5
+         print number.next                  # prints '6'
+
+         phrase = 'wishing for antlers'
+         print phrase.length                # prints '19'
+
+         todays_wishes = WishMaker.new
+         todays_wishes.grant( "antlers" )
+        </pre>
+
+
+        And, consequently, each object has a class behind the scenes.
+
+
+        <pre>
+         print 5.class                       # prints 'Integer'
+         print 'wishing for antlers'.class   # prints 'String'
+         print WishMaker.new.class           # prints 'WishMaker'
+        </pre>
+
+
+        Dr. Cham never saw the wish maker as he hustled across the landspace.
+        It lay far beyond his landing in the valley of Sedna.  Down sheer cliffs
+        stuffed with layers of thicket, where you might toss your wish (written
+        on a small 1" x 6" slip), down into the gaping void.  Hopefully it will
+        land on a lizard's back, sticking to its spindly little horn.
+
+
+        And let's say your wish makes it that far.  Well, then, _down the twisted wood_ goes
+        the skinny salamander, scurrying through the decaying churches which had been
+        *pushed* over that steep canyon ledge once and for all.  And the expired priest inside, _who
+        weathered the fall_ as well, will kill the little amphibian -- strangle it
+        to death with a blessed gold chain -- and save it for the annual _Getting To
+        Know You_ breakfast.  He'll step on your precious little wish and, when the
+        *thieves come*, that slip will still be there, stuck on his sole.  Of course,
+        the thieves' *preferred method of torture* is to cut a priest in thin deli-shaved slices _from
+        top to bottom_.  Who can cull evidence from that?  And when they chop that last thin
+        slice of shoe sole, they'll have that *rubber scalp* in hand for _good luck_ and _good times_.
+        But they *canoe* much too hard, these thieves.  They slap their paddles swiftly in the current
+        to get that great _outboard motor mist_ going.  But the shoe sole is _on a weak chain_, tied
+        to one man's belt.  And a *hairy old carp* _leaps, latches_ on to that minute fraction of
+        footwear.  And the thieves _can try_, but they don't see _underwater_.  If they could, they'd
+        see that *mighty cable*, packed with millions of _needly_ fiber optics.  Indeed, *that fish is
+        a peripheral plugged* right into the _core workings_ of the planet Endertromb.  *All it takes
+        is one swallow* from that fish *and your wish is home free!*
+
+
+        And that's how wishes come true for children in this place.
+
+
+        Once my daughter's organ instructor had drawn up the class for the wish maker, he then followed
+        with a class for the planet's mind reader.
+
+
+        <pre>
+         require 'endertromb'
+         class MindReader
+           def initialize
+             @minds = Endertromb::scan_for_sentience
+           end
+           def read
+             @minds.collect do |mind|
+                mind.read
+             end
+           end
+         end
+        </pre>
+
+
+        Much as you've seen before, the @initalize@ happens when a new @MindReader@ object is created.
+        This @initialize@ gathers scans the planet for mindshare.  It looks like
+        these minds are stored in an array, since they are later iterated over using the @collect@ method.
+
+
+        Both the wish maker and the mind reader refer to a class named @Endertromb@.  This class is
+        stored in a file @endertromb.rb@, which is loaded with the code: @require 'endertromb'@.
+        Often you'll use other classes to accomplish part of your task.  Most of the latter half of this
+        book will explore the wide variety of helpful classes that can be loaded in Ruby.
+
+
+        h3. Dr. Cham Ventures Inside
+
+
+        But as Dr. Cham neared the castle, although the planet was aware of his thoughts, sensing his
+        wonderment and anticipation, all Dr. Cham felt was deadness.  He tromped up the steps of its
+        open gate and through the entrance of the most beautiful architecture and was almost certain it
+        was deserted.
+
+
+        For a while he knocked.  Which paid off.
+
+
+        !i/castle-1.jpg(Blocky whale greeting.)!
+
+
+        He watched the baby whale rise like a determined balloon.  He marvelled at his first alien introduction
+        and felt some concern that it had passed so quickly.  Well, he would wait inside.
+
+
+        As he stepped through the castle door, he felt fortunate that the door hadn't been answered by 
+        a huge eagle with greedy talons, eager to play.  Or a giant mouse head.  Or even a man-sized hurricane.  
+        Just a tubby little choo-choo whale.
+
+
+        "Not a place to sit down in this castle," he said.
+
+
+        At first, he had thought he had just entered a very dim hallway, but as his eyes adjusted, he saw
+        the entrance extended into a tunnel.  The castle door had opened right into a passage made of 
+        long, flat slabs of rock.  Some parts were congruous and resembled a corridor.  Other parts 
+        narrowed, and even tilted, then finally tipped away out of view.
+
+
+        The passage was lit by small doorless refrigerators, big enough to hold an armful of cabbage, 
+        down by his feet.  He peered inside one, which was hollow, illuminated along all sides, and
+        turning out ice shards methodically.
+
+
+        He pawed the ice chips, which clung dryly to his fingertips, and he scrubbed his hands in the
+        ice.  Which left some muddy streaks on his hands, but satisfied a small part of his longing to bathe.
+        How long had it been?  Ten years?  Thirty?
+
+
+        Along the passage, long tubes of cloth cluttered some sections.  Later, bright pixel matter in porcelain
+        scoops and buckets.
+
+
+        He happened upon a room which had been burrowed out of the tunnel which had a few empty turtle
+        shells on the ground and a large illuminated wall.  He stared into the room, bewildered.  What could
+        this be?  In one state of mind, he thought of having a seat on a shell.  This could be the entrace at
+        last, some kind of receiving room.  On the other hand, spiders could pour out of the shell's hollow when he
+        sat.  He moved on.
+
+        
+        h3. Meal in a Castle's Pocket
+
+
+        As he journeyed along the passageways (for the central tunnel forked and joined larger, vacuous caverns), he picked up
+        themes in some locations.  Groups of rooms infested with pumping machinery.  Cloth and vats of glue
+        dominated another area.  He followed voices down a plush, pillowed cavity, which led him to a
+        dead end: a curved wall with a small room carved at eye-level.
+
+
+        He approached the wall and, right in the cubby hole, were two aardvarks eating at a table.
+
+
+        They gazed at him serenely, both munching on some excavated beetle twice their size, cracked 
+        open and frozen on its back on the table.
+
+
+        "Hello, little puppets," he said, and they finished their bites and kept looking with their forks
+        held aloof.
+
+
+        "I wish my niece Hannah were here to meet you," he told the attentive miniature aardvarks.  "She'd
+        think you were an intricate puppet show."  He peered in at the dining area, shelves with sets of
+        plates, hand towels.  Half of a tiny rabbit was jutting out from the top a machine,
+        creamy red noodles were spilling out underneath it.  A door at the back of the room hung ajar.  Dr. Cham could
+        see a flickering room with chairs and whirring motors through the door.
+
+
+        "Any child would want this dollhouse," he said.  "Hannah, my niece, as I mentioned, she has
+        a wind-up doll that sits at a spindle and spins yarn.  It's an illusion, of course.  
+        The doll produces no yarn at all."
+
+
+        One of the aardvarks opened a trapdoor in the floor and pressed a button down inside, which lit.
+        Then, a small film projector slowly came up on a rod.  The other aardvark sat and watched Dr. Cham.
+       
+
+        "But Hannah still reaches down into the dollhouse and collects all the imaginary yarn into a
+        bundle.  Which she takes to her mother, my sister, who is very good at humoring Hannah.
+        She sews a dress to the doll's dimensions, which Hannah takes back to the doll.
+
+
+        "And she tells
+        the doll, 'Here, look, your hard work and perserverance has resulted in this beautiful dress.
+        You can now accept the Chief of Police's invitation to join him tonight at the Governor's
+        Mansion.'  And she has a doll in a policeman's uniform who plays the part of the Chief. 
+        He's too scrawny to be an actual Chief, that would require quite a bit of plastic."
+
+
+        The aardvark responsible for the film projector loaded a reel and aimed the projector at the
+        back wall.  The film spun to life and the aardvark took a seat.  A green square appeared on the
+        wall.  The attentive aardvark stared at Dr. Cham still.
+
+
+        "Your films are coloured," said Dr. Cham.  "What a lovely, little life."
+
+
+        The film played on: a blue square.  Then, a red circle.  Then, an orange square.  The attentive
+        aardvark turned away, watched the screen change to a pink triangle, and both aardvarks resumed eating.
+
+
+        A purple star.  A red square.  With quietness settling, Dr. Cham could hear notes droning
+        from the projector.  Like a slow, plodding music box trying to roll its gears along the train
+        tracks.
+
+
+        "Yes, enjoy your supper," said Dr. Cham and he politely tipped his head away, marching
+        back up the path he'd taken.
+
+
+        h3. Another Dead End Where Things Began
+
+
+        He found himself lost in the castle's tunnels.  Nothing looked familiar.  He wasn't worried much,
+        though.  He was on another planet.  He would be lost regardless.
+
+
+        He wound through the tunnels, attempting to recall his paths, but far too interested
+        in exploring to keep track of his steps.  He followed a single tunnel deep, down, down,
+        which slanted so steeply that he had to leap across ledges and carefully watch his footholds.
+        The gravity here seemed no different than Earth.  His legs were pulled into slides just
+        as easily.
+
+
+        Although he had no absolute way of knowing where he was, he felt certain that he had left
+        the castle's boundaries.  This deep, this long of a walk.  It had been an hour since he'd
+        entered through the door.  And, as the tunnel wound back up, he was sure that he would
+        emerge into a new dwelling, perhaps even a manhole which he could peek out from and see
+        the castle.  Perhaps he shouldn't have come so far down this route.  He hoped nothing was
+        hibernating down here.
+
+
+        The tunnel came to a stop.   A dark, dead end.
+
+
+        !i/dr.cham-4.gif(At the end of the tunnels: a computer and a book.)!
+
+
+        He had time.  So he read the book.  He read of the foxes and their pursuit of the porcupine who stole their
+        pickup truck.  He read of the elf and the ham.  He saw the pictographs of himself and found he
+        could really relate to his own struggles.  He even learned Ruby.  He saw how it all ended.
+
+
+        Were I him, I couldn't have stomached it.  But he did.  And he pledged in his bosom to see
+        things out just as they happened.
+
+
+        On the computer monitor, Dr. Cham saw the flashing @irb@ prompt.  Like Dr. Cham, you might
+        recognize the @irb@ prompt from "The Tiger's Vest":expansion-pak-1.html
+        (the first expansion pak to this book, which includes a basic introduction to Interactive Ruby.)
+
+
+        Whereas he had just been exploring tunnels by foot, he now explored the machine's setup with
+        the prompt.  He set the book back where he had found it.  He didn't need it anymore.  This was
+        all going to happen whether he used it or not.
+
+
+        He started with:
+
+
+        <pre>
+         irb> Object::constants
+           => ["Marshal", "String", "Dir", "LoadError", "Float", ... and so on ]
+        </pre>
+
+
+        This command lists all the top-level constants.  Classes are also listed as constants, so
+        this list can be great to see what's loaded into Ruby at any time.
+
+
+        He scanned the list for anything unfamiliar.  Any classes which didn't come with Ruby.
+        @Marshal@, @String@, @Dir@, @LoadError@, @Float@.  Each of those came with Ruby.
+
+
+        But further down the list:
+
+
+        <pre>
+         ... "Struct", "Values", "Time", "Elevator", "Range" ...
+        </pre>
+        
+
+        _Elevator?_  Exactly the kind of class to poke around with.  He had a go.
+
+
+        <pre>
+         irb> Elevator::methods
+           => ["method", "freeze", "allocate", ... another long list ... ]
+         irb> Elevator::class_variables
+           => ['@@diagnostic_report', '@@power_circuit_active', '@@maintenance_password']
+         irb> Elevator::constants
+           => []
+        </pre>
+
+
+        Looks like the @Elevator@ class had plenty of methods.  Most of these looked
+        like they were the same methods every object has in Ruby.  For example,
+        @method@, @freeze@ and @allocate@ come with every class in Ruby.  (@Elevator::freeze@
+        would keep the @Elevator@ class from being changed.  @Elevator::allocate@ would
+        make a new @Elevator@ object without calling the @initialize@ method.)
+
+
+        The @class_variables@ were interesting to Dr. Cham.  This elevator appeared genuine.
+        But no available @constants@.  This tells us there are no classes nested inside
+        the @Elevator@ class.
+
+
+        He tried to create an @Elevator@ object.
+
+
+        <pre>
+         irb> e = Elevator::new
+         ArgumentError: wrong number of arguments (0 for 1), requires a password
+                 from (irb):2:in `initialize'
+                 from (irb):2:in `new'
+                 from (irb):2
+                 from :0
+        </pre>
+
+
+        He tried a few passwords.
+
+ 
+        <pre>
+         irb> e = Elevator::new( "going up" )
+         AccessDeniedError: bad password
+         irb> e = Elevator::new( "going_up" )
+         AccessDeniedError: bad password
+         irb> e = Elevator::new( "stairs_are_bad" )
+         AccessDeniedError: bad password
+         irb> e = Elevator::new( "StairsAreBad" )
+         AccessDeniedError: bad password
+        </pre>
+
+
+        That was useless.  _Oh, wait!_  The maintenance password.  Listed in the @class_variables@.
+
+
+        <pre>
+         irb> Elevator::maintenance_password
+         NoMethodError: undefined method `maintenance_password' for Elevator:Class
+                 from (irb):1
+                 from :0
+        </pre>
+
+
+        Hmm.  Instance variables are only available inside an object.  And class variables are only
+        available inside a class.  How to get at that password?
+
+
+        <pre>
+         irb> class Elevator
+         irb>   def Elevator.maintenance_password
+         irb>     @@maintenance_password
+         irb>   end
+         irb> end
+           => nil
+         irb> Elevator::maintenance_password
+           => "stairs_are_history!"
+        </pre>
+ 
+
+        Alright!  He got the password.  Did you see that?
+
+
+        He added a class method to the @Elevator@ class.  Isn't that great how you can start a new class
+        definition for @Elevator@ and Ruby just adds your changes to the existing class definition?
+
+
+        Class methods are usually called with the *double colon*.  But, a period is fine as well.
+        Since @Elevator@ is a class itself, Ruby will figure that if you call @Elevator.maintenance_password@,
+        you're calling a class method.  The double colon simply helps make class methods obvious
+        to the reader.
+
+
+        And justly so.  Class methods are a bit unusual.  Normally you won't want to store information
+        directly inside of a class.  However, if you have a bit of information that you need to
+        share among all objects of a class, then you have a good reason to use the class for storage.
+        It's understandable that the @@@maintenance_password@ would be stored in the class, instead of
+        in each separate object.  This way, the objects can simply reach up into the class and see the
+        shared password.
+
+
+        Here's probably how the password protection works.
+
+
+        <pre>
+         class Elevator
+           def initialize( pass )
+             raise AccessDeniedError, "bad password" \
+               unless pass.equals? @@maintenance_password
+           end
+         end
+        </pre>
+
+
+        Passwording a class like this is pointless, since anything in Ruby can be altered and 
+        overwritten and remolded.  Dr. Cham had the password and ownership of the elevator is his.
+
+
+        <pre>
+         irb> e = Elevator.new( "stairs_are_history!" )
+         #<Elevator:0x81f12f4 @level=4>
+         irb> e.level = 1
+        </pre>
+
+
+        Dr. Cham was standing right there when the elevator doors, off behind the computer terminal,
+        opened for him.  With an exasperated sense of accomplishment and a good deal of excitement
+        surrounding all of the events that lie ahead, he stepped into the elevator and pressed 4.
+
+

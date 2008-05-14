@@ -1,0 +1,84 @@
+    - If I Were Looking For a Vehicle: >
+
+        !i/wixl-7.gif(Sitting for a moment.)!
+
+
+        I like seeing these two out in the wild.  They got pretty bored here in the studio.  They started making
+        up wierd slogans and stuff.  They had some phrase they kept repeating, forming fixations upon.
+        You can't be exposed to all that contrived fox nonsense.
+        
+
+        Let's just say: I am really trying my best to keep things collegiate.  Having never attended college, I can't
+        well say if every passage written chimes right with the stringent criteria which academia demands.
+        I have university friends aplenty, some who tour the globe in their pursuits, and I try to
+        inflect my voice with just their blend of high culture.
+
+
+        Sometimes I applaud myself for going beyond the work of my educated friends -- only in quiet corridors, we never
+        butt heads publicly -- because _I have actually subscribed_ to a school of thought while they are still
+        in their books, turning and turning.
+
+
+        *I am a preeventualist.*  I have dabbled in it long enough and am glad to come forth with it.
+        Inevitably, some of you have already started mining this book for Marxist symbology.  I am sad
+        to kill those interpretations, but I believe any nihilist conclusions you've drawn will still hold up
+        under scrutiny.
+
+
+        Anyway, I'll drop the rhetoric.  I only mention preeventualism because, aside from being a refreshing
+        and easy alternative to the post-modernism we're born with, _this_ meta-cult offers a free lost-and-found
+        service for the residents of Wixl.
+
+
+        <pre>
+         require 'open-uri'
+         open( "http://preeventualist.org/lost" ) do |lost|
+           puts lost.read
+         end
+        </pre>
+
+
+        I have no way of alerting the foxes to this service.  And I'm sure it's too soon for their truck to be listed.
+        Still, the good intentions are here.
+
+
+        If you're connected to the Internet, the above Ruby should have downloaded the web page from the Internet and
+        printed it to the screen.  In a message resembling this:
+
+
+        <pre class="text">
+                           THE PREEVENTUALIST'S LOSING AND FINDING REGISTRY
+                  (a free service benefiting the ENLIGHTENED who have been LIGHTENED)
+
+
+                                              ---
+                              updates are made daily, please check back!
+                                              ---
+
+
+                                 this service is commissioned and
+                             subsidized in part by The Ashley Raymond
+                                        Youth Study Clan
+
+
+                                              ...
+                              all seals and privileges have been filed
+                        under the notable authorship of Perry W. L. Von Frowling,
+                  Magistrate Polywaif of Dispossession.  Also, Seventh Straight Winner
+                           of the esteemed Persistent Beggar's Community Cup.
+                                              ...
+
+
+          ABOUT THE REGISTRY
+          ==================
+          Hello, if you are new, please stay with us.  A brief explanation of our service will 
+          follow.  First, a bit of important news from our beloved magistrate.  (The kids call
+          him Uncle Von Guffuncle. Tehe!)
+
+          IMPORTANT NEWS
+          ==============
+          / 15 April 2005 /
+          hi, big news.  we were on channel 8 in wixl and ordish.  cory saw it.  i was on and 
+          jerry mathers was on.  if you didn't see it, e-mail cory.  he tells it the best.  all 
+          i can say is those aren't MY hand motions!! (joke for people who watch channel 8.)  
+          thanks harry and whole channel 8 news team!!

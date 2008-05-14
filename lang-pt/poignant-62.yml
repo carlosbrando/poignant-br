@@ -1,0 +1,326 @@
+                                                           - perry
+        </pre>
+
+
+        I think the Youth Study Clan is doing a great job with this service.  It's a little hokey and
+        threadbare, but if it can get animals to stop using their instinctive means of declaring ownership,
+        then hats off.
+
+
+        Still, a preeventualist youth group?  How can that be?  You've got to at least _flirted with
+        real cynicism_ before you can become a preeventualist.  And you definitely can't attend school.
+        So, I don't know.
+
+
+        Going back to the list of instructions from the Preeventualist's Losing and Finding Registry.
+
+
+        <pre class="text">
+         USING THE L&F SERVER
+         ====================
+         The L&F is a free service.  The acts of losing and finding are essential qualities in
+         building a preeventualist lifestyle.  We hope to accomodate your belief.
+
+
+         We do not use HTML, in order to simplify our work here.  Our guys are already working
+         fifteen hour days.  (Thanks, Terk!!  Thanks, Horace!!)
+
+
+         You may search our service for your lost items.  Or you may add your lost (or found)
+         item to our registry.  This is done by typing the proper address into your browser.
+
+         SEARCHING
+         =========
+         To search for lost items, use the following address:
+
+           http://preeventualist.org/lost/search?q={search word}
+
+         You may replace {search word} with your search term.  For example, to search for "cup":
+
+           http://preeventualist.org/lost/search?q=cup
+
+         You will be given a list of cups which have been lost or found.
+
+         If you want to search for only lost cups or only found cups, use the `searchlost' and
+         `searchfound' pages:
+
+           http://preeventualist.org/lost/searchlost?q=cup
+        </pre>
+
+
+        I'm not playing games.  I know where the truck is.  Really, I'm not teasing you.  I'll 
+        show you in just a sec.  I'm just saying, look at the foxes:
+
+
+        !i/wixl-11.gif(Hummmmm.)!
+
+
+        They are helpless.  And yet, here is this great tool.  A possible key to getting out of this mess.
+        I just want to poke around, see if there are any clues here.
+
+
+        <pre>
+         require 'open-uri'
+         
+         # Searching all found items containing the word `truck'.
+         open( "http://preeventualist.org/lost/searchfound?q=truck" ) do |truck|
+           puts truck.read
+         end
+        </pre>
+
+
+        I'm not seeing anything about the tall fox's truck in this list.  That's okay.
+        The foxes are out of it anyway.  We have some time.
+
+
+        You've learned a very simple technique for retrieving a web page from the Internet.  The code
+        uses the @OpenURI@ library, which was written by one of my favorite Rubyists, Akira Tanaka.  He's
+        simplified reading from the Internet so that it's identical to reading a file from your computer.
+
+
+        In a previous chapter, we stored your diabolical ideas in a text file.  You read these files in Ruby
+        using @open@.
+
+
+        <pre>
+         require 'open-uri'
+
+         # Opening an idea file from a folder on your computer.
+         open( "folder/idea-about-hiding-lettuce-in-the-church-chairs.txt" ) do |idea|
+           puts idea.read
+         end
+        </pre>
+
+
+        Files are *input-output objects*.  You can read and write to a file.  In Ruby, all IO (input-output)
+        objects have @read@ and @write@ methods.  The @open@ method slides an IO object *down the chute*
+        into a block for your use.  IO is your ticket to the outside world.  It's the rays of sunlight cast
+        through the prison bars.  (However, you can't @write@ to a web page with @OpenURI@.  You'll need to find a
+        tool for copying to your web server.  An FTP program, for instance.)
+
+
+        If someone wants to read your diabolical idea about hiding lettuce in the church chairs, assuming
+        you've posted it as a web page:
+
+
+        <pre>
+         require 'open-uri'
+
+         # Opening an idea file available on a web site.
+         open( "http://your.com/idea-about-hiding-lettuce-in-the-church-chairs.txt" ) do |idea|
+           puts idea.read
+         end
+        </pre>
+
+
+        The @OpenURI@ library also understands FTP addresses as well.  This widens the possibilities for
+        where you can store files.  On your system or elsewhere on the Internet.
+
+
+        h3. Reading Files Line by Line
+
+
+        When you're using @OpenURI@ to get information from the web with the @open@ and @read@ methods,
+        the page is given to you as a @String@.  You can also read the page one line at a time, if you're
+        searching for something.  Or if the page is big and you want to conserve your computer's memory.
+
+
+        <pre>
+         require 'open-uri'
+         open( "http://preeventualist.org/lost/searchfound?q=truck" ) do |truck|
+           truck.each_line do |line|
+             puts line if line['pickup']
+           end
+         end
+        </pre>
+
+
+        The above code will retrieve the list of trucks found by preeventualists, then display only
+        those lines that actually contain the word 'pickup'.
+        That way we can trim out the descriptions and look for only the pertinent lines.
+
+
+        Above, the *index brackets* are used on a string, so the string is searched for whatever is inside
+        the brackets.  Since the string @'pickup'@ is inside the brackets, the @line@ string is searched
+        for the word "pickup".
+
+
+        !i/wixl-13.gif(On being funny.)!
+
+
+        When a web page is loaded with @read@, the entire page is loaded into memory.  Usually this
+        only takes up a few thousand bytes.  But if a page is big (several megabytes), you'll probably
+        want to use @each_line@, which loads one line at a time to avoid exhausting memory.
+
+
+        h3. Yielding is Kiddie Blocks
+
+
+        Ruby often uses iterators in this fashion.  Yes, iterators are used for cycling through each item in
+        a collection of items, such as an array or hash.  Now look at an IO source as a collection of lines. 
+        The iterator can crawl that collection of lines.
+
+
+        <pre>
+         class IO
+           # Definition for the each_line method.  Notice how it has no
+           # argument list.  Blocks don't need to be listed as arguments.
+           def each_line
+             until eof?        # until we reach the end of the file...
+               yield readline  # pass a line into the block
+             end
+           end
+         end
+        </pre>
+
+
+        The @yield@ keyword is the easiest way to use a block.  One word.  Just like a curtain has
+        a pullstring or like a suitcase has a handle.  Inside a method, you can press the blinking
+        @yield@ button and it will run the block attached to that method.  Glowing a strong red color
+        until the code inside the block is done.  And then it goes back to blinking and you can press
+        the button again if you like.
+
+
+        <pre>
+         def yield_thrice
+           yield
+           yield
+           yield
+         end
+        </pre>
+
+
+        Punch the @yield@ button three times quick and the block gets to live its life three times.
+
+
+        <pre>
+         irb> a = ['first, birth.', 'then, a life of flickering images.', 'and, finally, the end.']
+         irb> yield_thrice { puts a.shift }
+         # prints out:
+         #   first, birth.
+         #   then, a life of flickering images.
+         #   and, finally, the end.
+        </pre>
+
+
+        The @shift@ method pulls the first item off an array.  The barber @shift@ cuts the hair off
+        and hands it over.  Then, the scalp.  And just keeps going, whittling the poor guy down to
+        nothing.
+
+
+        You've seen blocks attached to methods.  Any Ruby method can have block attached to the end.
+
+
+        <pre>
+         # The brief style of attaching a block to a method.
+         # Here the block is surrounded with curly braces.
+         open( "idea.txt" ) { |f| f.read }
+
+         # The verbose style of attaching a block to a method.
+         # Here the block is surrounded with `do' and `end'
+         open( "idea.txt" ) do |f|
+           f.read
+         end
+        </pre>
+
+
+        If you pass arguments to @yield@, those arguments will also be passed to the block.
+        The block is riding in a little sidecar attached to the method's motorcycle.  The method
+        yells out a list arguments, screaming to the block over all the wind as they're
+        racing through the desert.  The block taps his helmet like, "I get it, my brain gets it."
+
+
+        <pre>
+         # The method opens two files and slides the resulting IO objects down the
+         # chute to an attached block.
+         def double_open filename1, filename2
+           open( filename1 ) do |f1|
+             open( filename2 ) do |f2|
+               yield f1, f2
+             end
+           end
+         end
+
+         # Prints the files out side-by-side.
+         double_open( "idea1.txt", "idea2.txt" ) do |f1, f2|
+           puts f1.readline + " | " + f2.readline
+         end
+        </pre>
+
+
+        You may also wonder what the @yield@ keyword has to do with street signs.  And really,
+        it's a good question with, I believe, a good answer.  When you run a method, you are giving
+        that method control of your program.  Control to do its job and then come back to with an
+        answer.
+
+
+        With @yield@, the method is stopping at the intersection, giving control back to you, to your block.  The method is letting
+        you do your work before resuming its work.  So while the @each_line@ method does the work of actually
+        reading lines from a file, the *block attached to the @each_line@ method* is handed the line
+        itself and gets a chance to hammer away at it in the sidecar.
+
+
+        h3. Preeventualism in a Gilded Box
+
+
+        You've learned so much about @OpenURI@ and using @yield@ to write your own iterators.
+        You know your way around the lost-and-found service.  Really, you can starting hunting
+        through the Wixl junk drawer without me.
+
+
+        Let's neatly _encapsulate_ the entire service into a single class.
+
+        
+        <pre>
+         require 'open-uri'
+         module PreEventualist
+           def self.open page, query
+             qs = 
+               query.map do |k, v|
+                 URI.escape "#{ k }=#{ v }"
+               end.join "&"
+             URI.parse( "http://preeventualist.org/lost/" + page + "?" + qs ).open do |lost|
+               lost.read.split( "--\n" )
+             end
+           end
+           def self.search word
+             open "search", "q" => word
+           end
+           def self.searchlost word
+             open "searchlost", "q" => word
+           end
+           def self.searchfound word
+             open "searchfound", "q" => word
+           end
+           def self.addfound your_name, item_lost, found_at, description
+             open "addfound", "name" => your_name, "item" => item_lost, 
+                              "at" => found_at, "desc" => description
+           end
+           def self.addlost your_name, item_found, last_seen, description
+             open "addlost", "name" => your_name, "item" => item_found,
+                             "seen" => last_seen, "desc" => description
+           end
+         end
+        </pre>
+
+
+        At some point with your code, you need to start shaping it into something neat.  Save the above
+        module in a file called @preeventualist.rb@.
+
+
+        This module is a very simple library for using the Preeventualist's service.  This is exactly the
+        way libraries are written.  You whip up a module or a class, store it in a file, and, if you're
+        happy with it and want the world to benefit, put it on the web.
+
+
+        These stragglers can you use your module just like I used @OpenURI@ earlier.
+
+
+        <pre>
+         irb> require 'preeventualist'
+         irb> puts PreEventualist.search( 'truck' )
+         irb> puts PreEventualist.addfound( 'Why', 'Ruby skills', 'Wixl park',
+                "I can give you Ruby skills!\nCome visit poignantguide.net!" )
+        </pre>
+
+

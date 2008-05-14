@@ -1,0 +1,41 @@
+    - !^sidebar
+      About Ruby Versions: >
+
+        If you've visited any sites which offer Ruby for download, you've probably seen a number
+        of different versions of Ruby available.  Obviously, the greater the version number, the
+        more recent the version of Ruby.  But that's not exactly true.  Version numbers have meaning
+        in Rubyland and I'd like you to make an educated choice.
+
+
+        *1.8.3* is the latest *stable* version of Ruby.  Stable versions offer the latest features
+        which have been widely tested and are recommended for general use.  When new stable versions
+        come out, you can safely upgrade to these new versions.
+
+
+        *1.9.0* is the latest *development* release of Ruby.  The development release includes
+        experimental changes to Ruby and unfixed problems.  This release is for anyone who wants
+        take a peep into the future of Ruby at the risk of encountering some bugs.
+
+
+        Now, you'll notice that the version number is comprised of three individual numbers,
+        which are: *the major version*, *the minor version*, and *the teeny version*.  The 
+        major version counts each complete rewrite of Ruby.  The minor version is changed based
+        on sweeping changes to Ruby.  The teeny version is incremented every few months as smaller
+        changes and bug fixes are brought in.
+
+
+        All editions of Ruby thus far have a major version of 1.  When Ruby2 comes along, you'll
+        see this notch up one.
+
+
+        The minor version indicates whether a version is stable or not.  *If the minor version
+        is an even number, then that version of Ruby is stable.   If it's odd, then that Ruby
+        is a development version.*  After a year or so, when the development version is ready 
+        for the world, both numbers are increased and the teeny version is returned to zero.
+
+
+        Oh, and if I could give you a taste of how smoothly Ruby moves along!  I can't count
+        how often a fresh idea lands on the Ruby-Core mailing list, where the Emperors of
+        Ruby converse, and *that same idea* gets worked into Ruby within a few days.  It is
+        a lovely machine says I.
+

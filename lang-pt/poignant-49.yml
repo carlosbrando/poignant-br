@@ -1,0 +1,521 @@
+    - >
+        "I haven't been to my planet in a long time.  It would be difficult to consider it my
+        home at this stage."
+
+
+        "Well, Warren Beatty is delightful.  His character is basically socially crippled.  He
+        actually tries to kill himself, but Dustin Hoffman sits in the window sill and starts
+        crying and singing this totally hilarious heartbreak song.  I've got it here, you
+        should see it."
+
+
+        "Can I get something to eat?" asked the Doctor.  And he still felt filthy.
+
+
+        "How about we watch a film and you can have a buttermelon with tentacles?" said the goat.
+
+
+        So, they worked their way back toward the goat's projector.  Back by the freezer locker,
+        they sat on a giant rug and broke off the appendages of frozen buttermelons.  The shell
+        was solid, but once it cracked, rich fruit cream was in abundance.  Sweet to taste and
+        a very pleasant scent.
+
+
+        "First film, you've got to see," said the goat.  "Locally filmed and produced.  I'm
+        good friends with the lady who did casting.  Dated her for awhile.  Knew everyone
+        who was going to play the different roles long before it was announced."
+
+
+        The goat set the projector by Dr. Cham.  "I've got the music on the surround sound.
+        You can man the knob."
+
+
+        !i/filmstrip-1.gif(The Originals and their lonesome planet.)!
+
+
+        Dr. Cham's mind wandered at this point in the presentation, just as the land war
+        mounted between the two throngs of animal settlers.  The details of their wars
+        and campaigns continued to consume the spool of transparent film that Dr. Cham
+        was feeding through the projector.  
+
+
+        War after war after war.  The Sieging of Elmer Lake.  The Last Stand of Newton P. Giraffe
+        and Sons.  Dog Invasion of Little Abandoned Cloud.  No animals died in 
+        these wars.  Most often an attack consisted of bopping another
+        animal on the head.  And they philipped each other's noses.  But, believe me,
+        it was humiliating.
+
+
+        Blasted crying shame.  Things could have worked out.
+
+
+        h3. The Birth of an Object
+
+
+        "Don't worry," said the goat, anxious to sway Dr. Cham's attention back to the film.  "Things _do_
+        work out."
+
+
+        In Ruby, the Object is the very center of all things.  It is The Original.
+
+
+        <pre>
+         class ToastyBear < Object; end
+        </pre>
+
+
+        The angle bracket indicates *inheritance*.  This means that the new @ToastyBear@ class
+        is a new class based on the @Object@ class.  Every method that @Object@ has will be
+        available in @ToastyBear@.  Constants available in @Object@ will be available in
+        @ToastyBear@.
+
+
+        But every object inherits from @Object@.  The code...
+
+
+        <pre>
+         class ToastyBear; end
+        </pre>
+
+
+        Is identical to...
+
+
+        <pre>
+         class ToastyBear < Object; end
+        </pre>
+
+
+        Inheritance is handy.  You can create species of objects which relate to each other.
+        Often, when you're dissecting a problem, you'll come across various objects which share
+        attributes.  You can save yourself work by inheriting from classes which already solve
+        part of that problem.
+
+
+        You may have a @UnitedStatesAddress@ class which stores the address, city, state,
+        and zip code for someone living in the United States.  When you start storing
+        addresses from England, you could add a @UnitedKingdomAddress@ class.  If you then
+        ensure that both addresses inherit from a parent @Address@ class, you can design
+        your mailing software to accept any kind of address.
+
+
+        <pre>
+         def mail_them_a_kit( address )
+           unless address.is_a? Address
+             raise ArgumentError, "No Address object found."
+           end
+           print address.formatted
+         end
+        </pre>
+ 
+
+        Also, inheritance is great if you want to override certain behaviours in a class.
+        For example, perhaps you want to make your own slight variation to the @Array@ class.
+        You want to enhance the @join@ method.  But if you change @Array#join@ directly, you
+        will affect other classes in Ruby that use Arrays.
+
+
+        So you start your own class called @ArrayMine@, which is based on The Original
+        @Array@.
+        
+
+        <pre>
+         class ArrayMine < Array
+           # Build a string from this array, formatting each entry
+           # then joining them together.
+           def join( sep = $,, format = "%s" )
+             collect do |item|
+               sprintf( format, item )
+             end.join( sep )
+           end
+         end
+        </pre>
+
+
+        @ArrayMine@ is now a custom @Array@ class with its own @join@ method.  @Array@ is
+        the *superclass* of @ArrayMine@.  Every object has a @superclass@ method where you
+        can verify this relationship.
+
+
+        <pre>
+         irb> ArrayMine.superclass
+           => Array
+        </pre>
+
+
+        Perfect.  We manage a hotel and we have an @Array@ of our room sizes: @[3, 4, 6]@.
+        Let's get it nicely printed for a brochure.
+
+
+        <pre>
+         rooms = ArrayMine[3, 4, 6]
+         print "We have " + rooms.join( ", ", "%d bed" ) + " rooms available."
+        </pre>
+
+
+        Which prints, "We have 3 bed, 4 bed, 6 bed rooms available."
+
+
+        Dr. Cham was looking around for a bathroom, but archival video tape was everywhere.
+        He eventually found a place, it may have been a bathroom.  It had a metal bin.
+        More importantly, it was dark and out of eyesight.
+        
+
+        While he's in there, let me add that while The Originals slaughtered The Invaders
+        to prove their rights as First Creatures, the Ruby Object doesn't have any such
+        dispute.  It is the absolute king Object the First.
+
+
+        Watch.
+
+
+        <pre>
+         irb> Class.superclass
+           => Module
+         irb> Kernel.class
+           => Module
+         irb> Module.superclass
+           => Object
+         irb> Object.superclass
+           => nil
+        </pre>
+
+
+        Even @Class@ is an @Object@!  See, although classes are the definition language for objects,
+        we still call class methods on them and treat them like objects occassionally.  It may seem
+        like a dizzying circle, but it's truly a very strict parentage.  And it ensures that when you
+        alter the @Object@, you alter *everything in Ruby*.  Which is impossibly scary and all-powerful
+        and cataclysmic and awesome!  *Ruby does not restrict you, my sister, my brother!* 
+
+
+        Between @Class@ and @Object@, do you see @Module@?  If @Object@ is the king, the one who has
+        sired every other part of Ruby, then @Module@ is the poor waifish nun, shielding
+        and protecting all her little Ruby townspeople children.  (To complete the analogy:
+        @Class@ is the village school teacher and @Kernel@ is the self-important colonel.)
+
+
+        The whole point of @Module@'s existence is to give food and shelter to code.  Methods
+        can stay dry under @Module@'s shawl.  @Module@ can hold classes and constants and 
+        variables of any kind.
+
+
+        "But what does a Module _do_?" you ask.  "How is it gainfully employed??"
+
+
+        "That's all it does!!" I retort, stretching out my open palms in the greatest expression
+        of futility known to man.  "Now hear me -- for I will never speak it again -- that Module Mother
+        Superior has given these wretched objects a place to stay!!"
+
+
+        <pre>
+         # See, here is the module -- where else could our code possibly stay?
+         module WatchfulSaintAgnes
+
+           # A CONSTANT is laying here by the doorway.  Fine.
+           TOOTHLESS_MAN_WITH_FORK = ['man', 'fork', 'exposed gums']
+
+           # A Class is eating, living well in the kitchen.
+           class FatWaxyChild; end
+
+           # A Method is hiding back in the banana closet, God knows why.
+           def timid_foxfaced_girl; {'please' => 'i want an acorn please'}; end
+
+         end
+        </pre>
+           
+           
+        Now you have to go through Saint Agnes to find them.
+
+
+        <pre>
+         >> WatchfulSaintAgnes::TOOTHLESS_MAN_WITH_FORK
+         => ["man", "fork", "exposed gums"]
+         >> WatchfulSaintAgnes::FatWaxyChild.new
+         => #<WatchfulSaintAgnes::FatWaxyChild:0xb7d2ad78>
+         >> WatchfulSaintAgnes::instance_methods
+         => ["timid_foxfaced_girl"]
+        </pre>
+
+
+        Always remember that a @Module@ is only an inn.  A roof over their heads.  It is not
+        a self-aware @Class@ and, therefore, cannot be brought to life with @new@.
+
+
+        <pre>
+         >> WatchfulSaintAgnes.new
+         NoMethodError: undefined method `new' for WatchfulSaintAgnes:Module
+                 from (irb):2
+        </pre>
+
+
+        St. Agnes has given up her whole life in order that she may care for these desperate bits of code.
+        Please.  Don't take that away from her.
+
+
+        If you wanted to steal from St. Agnes, though, I can help you.
+        You can bring in a larger abbey to swallow up the ministry of @WatchfulSaintAgnes@ and then
+        what is she left with?
+
+
+        For this you can use @extend@, which will pull all the methods from a module into a class or an object.
+
+
+        <pre>
+         >> class TheTimeWarnerAolCitibankCaringAndLovingFacility; end
+         >> TheTimeWarnerAolCitibankCaringAndLovingFacility.extend WatchfulSaintAgnes
+         >> TheTimeWarnerAolCitibankCaringAndLovingFacility::instance_methods
+         => ["timid_foxfaced_girl"]
+        </pre>
+
+
+        In truth, no one's _stolen_ from @WatchfulSaintAgnes@, only borrowed.  The @timid_foxfaced_girl@
+        now has two addresses.
+
+
+        You gotta admit.  The old abbey can get bought out a zillion times and that little fox-faced
+        girl will _still_ be back in the banana closet wanting an acorn!  Too bad we can't feed her.
+        She's a method with no arguments.
+
+
+        When Dr. Cham came out refreshed, the filmstrip was a bit behind.  But the goat hadn't
+        noticed, so the Doctor advanced frames until it made some sense.
+
+
+        !i/filmstrip-2.gif(The goats that told a planet it was ugly.)!
+
+
+        So the invaders left the planet.
+
+
+        "This planet _is_ decrepit," said Dr. Cham.  "The castle is nice.  But inside
+        it's a disaster."
+
+
+        "The whole castle look is a projection," said the goat.  "All the flowers
+        and apple blossoms and the sky even.  It's a low-resolution projection."
+
+
+        "Yes?  It is enchanting."
+
+
+        "I guess."
+
+
+        !i/filmstrip-3.gif(The spool ends.)!
+
+
+        "That's messed up!" said the goat.  "That's not the way the film ends!
+        There's no blood!  What happened?  What happened?  Did you screw up the knob, idiot?"
+
+
+        "Well, I don't know," said Dr. Cham.  He turned the knob reverse and forward.
+        Tapped the lens.
+
+
+        "Check the film!  Check the film!"
+
+
+        Dr. Cham pulled out a length of film from the projection feed, melted and dripping
+        from its end.
+
+
+        "Curse that!  These projectors are quality!  I've never had this happen.  There's
+        no way."
+
+
+        h3. Hunting For a Voice
+
+
+        "I don't think it was the projector," said Dr. Cham.  "Something flew across that screen
+        and uttered a blistering moan."
+
+
+        "I don't have any dupes of that movie," said the goat somberly.  "And that girl.  That casting
+        director.  I never see her anymore."
+
+
+        Dr. Cham stood up and looked over the dumpy aisles of magnetic carnage, searching.
+
+
+        "Oh, hey, you should call that girl," the goat went on. "You could talk to her, get an understanding.
+        Tell her about me.  Don't act like your my friend, just, you know, 'Oh, that guy?
+        Yeah, whatta maroon.'"
+
+
+        Dr. Cham spotted the doorway and exited.
+
+
+        The hallways were an entirely new world of mess.  In the goat's archives, the shelves had been messy.
+        In the hallway, shelves were completely tipped.  Sinks were falling through the ceiling.  
+        The Doctor ventured under the debris, kicking through plywood when necessary.
+
+
+        "You shouldn't be out here," said the goat.  "You're on someone else's property at this point.
+        A couple of pygmy elephants own all this.  They're nasty guys.  They'll beat the crap outta you
+        with their trunks.  They ball it up and just whack ya."
+
+
+        Dr. Cham pushed a file cabinet out of his way, which fell through a flimsy wall, then through
+        the floor of the next room over.  And they heard it fall through several floors after that.
+
+
+        "I'm trying to remember how it goes in the book," said Dr. Cham, as he walked swiftly through
+        the hall.  "That milky fog that swept
+        across the projection.  We find that thing."  He jiggled a door handle, broke it off.  Forged
+        through the doorway and disappeared inside.
+
+
+        "You really get a kick out of beating stuff up, don't you?" said the goat.  "Walls, doors."
+        The goat headbutted a wall.  The wall shuddered and then laid still.
+
+
+        Then, it was quiet.  And black.
+
+
+        The goat stayed put in the bleak hallway, expecting Dr. Cham to flip over a few desks and emerge,
+        ready to move on from the room he'd busted into.  But Dr. Cham didn't return, and the goat opted
+        to share a moment with the neglected wreckage left by his neighbors.  Not that he could see at all.
+        He could only hear the occassional rustling of the piles of invoices and carbon copy masters and
+        manila envelopes when he shifted his legs.
+
+
+        The ground seemed to buckling right under the goat, as if the heaps of kipple around him were
+        beginning to slide toward his weight.  He would be at the center of this whirlpool of elephant
+        documentation.  Would he die of papercuts first?  Or would he suffocate under the solid burial
+        by office supplies?
+
+
+        A soft light, however, crept up to him.  A floating, silver fish.  No, it was a -- was it scissors?
+        The scissors grew into a shimmering cluster of intellegent bread, each slice choking on glitter.
+        But, no, it was hands.  And an Easter hat.
+
+
+        !i/hannah-1.gif(The goat alone in the hallway, meets an apparition.)!
+
+
+        In another room, Dr. Cham stood under the clear glass silently.  The ceiling had abruptly
+        gone transparent, then starlight washed over his pants and jacket.  He walked further to
+        the room's center in muted colors, lit as softly as an ancient manuscript in its own box at
+        the museum.  More stars, more cotton clusters of fire, unveiled as he came across the floor.
+        And it peeked into view soon enough, he expected it to be larger, but it wasn't.
+
+
+        Earth.  Like a painted egg, still fresh.  He felt long cello strings sing right up
+        against his spine.  How could that be called Peoplemud?  Here was a vibrant and grassy
+        lightbulb.  The one big ball that had something going for it.
+
+
+        He thought of The Rockettes.  Actually, he missed The Rockettes.  What a bunch of
+        great dancers.  He had yelled something to The Rockettes when he saw them.  Something
+        very observant and flattering.
+
+
+        Oh, yes, while The Rockettes were spinning, arm in arm, he had yelled, "Concentric circles!"
+        Which no one else cared to observe. 
+        
+
+        And this thought was enough to feed Dr. Cham's superiority complex.  He wore a goofy
+        smile as he retraced his footsteps.  He truthfully felt his genius coming through in
+        such a statement.  To realize the simplicity of a circle was his.  He reflected on it
+        all the way back to the hallway.
+
+
+        Which I think is great.  Adore yourself when you have a second.
+
+ 
+        !i/hannah-2.gif(The Doctor knows this ghost.)!
+
+
+        "Oh, right," said the goat.  "Your niece.  The niece you killed.  I'm with ya now."
+
+
+        For just a few moments, they all looked at each other.  Just enough
+        time for both Dr. Cham and the goat to think: _Oh, yeah.  Hannah
+        causes us a lot of trouble.  She's already talking about maple donuts._
+
+
+        "Does she start talking about maple donuts right away like that?"
+        asked the goat.
+
+
+        "Yes, she does," said the Doctor.  "She brings it up to you, then
+        she brings it up to me.  She sees a maple donut somewhere -- I don't
+        quite remember where."
+
+
+        "Do I see a real maple donut?" Hannah said.  "I need a real one."
+
+
+        "Okay, okay," said the goat.  "Yeah, I remember: here's where she says
+        that if she gets a real maple donut, she'll become a real person again.
+        Because her real destiny was to own a bakery and you ruined that destiny
+        and now she's trapped as a ghost."
+
+
+        "Hey, that's the truth!" Hannah yelped.
+
+
+        "It's terrible that we must bear through this whole scene again," said
+        the Doctor.  "The donuts are immaterial.  They should be left out altogether."
+
+
+        "Man, I am having a _hard_ time remembering all of this chapter," said
+        the goat.  "I don't even remember how to get out of this hallway.  I must
+        have read that book like thirty times.  Do we blast through a wall?   Do
+        we scream until someone finds us?"
+
+
+        "We get Hannah to float through walls and she finds some kind of machine,"
+        says Dr. Cham.  "I have to write a program -- it all works out somehow."
+
+
+        "But, you know what I'm saying?" said the goat.  "I forget all the details.
+        Especially the earlier chapters.  I mean I can remember the ending perfectly.
+        It's hard to sit through all this.  The end is so much better."
+
+
+        Dr. Cham folded his arms and teetered on a heel.  "The porcupine."  He
+        smiled greedily at the goat.
+
+
+        "Oh, totally.  The porcupine is definitely who I want to meet," said the
+        goat.  "I wonder what he does with all that money when the book is over."
+
+
+        Dr. Cham nodded respectfully.  "I'm very excited to see him wearing slippers."
+
+
+        "Those infernal slippers!" said the goat and he haw-hawed coarsely, a shower
+        of saliva cascading from his jaws.
+
+
+        Hannah's mind rattled, waiting for this nonsense to break for a moment.
+        She tipped her head on its side and the rattle slid along the curve of
+        her cranium.  The little noise died away, though, as the back of her head
+        vanished (_fluxed out_ is what she called it) and then her head was  
+        back again with its little rattle and she caught herself doing that
+        careless moaning again.  *HRRRRRR-RRR-OH-RRRR-RRRR.*
+
+
+        "I'm not as into the chunky bacon stuff," said the goat.  "I don't see
+        what's so great about it."
+
+
+        Could she speak while moaning? *BON-BON.*  With a French moan.  *BOHN-BOHN.
+        BOHN-APPE-TEET-OHHHH-RRRR.*
+
+
+        "I know she's harmless, but that sound freaks me out.  My hair is
+        *completely* on end."
+
+
+        "Hannah?" said Dr. Cham.  "Where are you, child?  Come do a good turn
+        for us, my niece."
+
+
+        She was right near them, in and out.  And they could hear her
+        cleaning up her voice, bright, speaking like a angel scattering stardust.
+        Yes, the whole maple donut story came out again, and more about the
+        bakery she would own, the muffins and rolls and baguettes.
+
+

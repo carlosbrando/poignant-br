@@ -1,0 +1,77 @@
+    - Language and I MEAN Language: >
+        !i/the.foxes-3.png(Our friends, those two helpless foxies, finally realize
+        the gravity of their predicament.)!
+
+
+        My conscience won't let me call Ruby a _computer_ language.  That would imply that the
+        language works primarily on the computer's terms.  That the language is designed to accomodate
+        the computer, first and foremost.  That therefore, we, the coders, are foreigners, seeking citizenship in the
+        computer's locale.  It's the computer's language and we are translators for the world.
+
+
+        But what do you call the language when your brain begins to think in that language?  When you
+        start to use the language's own words and colloquialisms to express yourself.  Say, the computer
+        can't do that.  How can it be the computer's language?  It is ours, we speak it natively!
+
+
+        We can no longer truthfully call it a _computer_ language.  It is _coderspeak_.  It is the language 
+        of our thoughts.
+
+
+        *Read the following aloud to yourself.*
+
+
+        bq. @5.times { print "Odelay!" }@
+
+
+        In English sentences, punctuation (such as periods, exclamations, parentheses) are silent.  Punctuation
+        adds meaning to words, helps give cues as to what the author intended by a sentence.  So let's read the
+        above as: _Five times print "Odelay!"._
+
+
+        Which is exactly what this small Ruby program does.  Beck's 
+        "mutated Spanish":http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation will print
+        five times on the computer screen.
+
+
+        *Read the following aloud to yourself.*
+
+
+        bq. @exit unless "restaurant".include? "aura"@
+
+
+        Here we're doing a basic reality check.  Our program will *exit* (the program will end) *unless* 
+        the word *restaurant* contains (or *includes*) the word *aura*.  Again, in English: _Exit unless the word
+        restaurant includes the word aura._
+
+
+        Ever seen a programming language use question marks so effectively?  Ruby uses some punctuation,
+        such as exclamations and question marks, to enhance readability of the code.  We're asking a question
+        in the above code, so why not make that apparent?
+
+
+        *Read the following aloud to yourself.*
+
+
+        bq. @['toast', 'cheese', 'wine'].each { |food| print food.capitalize  }@
+
+
+        While this bit of code is less readable and sentence-like than the previous examples, I'd still encourage
+        you to read it aloud.  While Ruby may sometimes read like English, it sometimes reads as a shorter
+        English.  Fully translated into English, you might read the above as: _With the words 'toast', 'cheese',
+        and 'wine': take each food and print it capitalized._
+        
+
+        The computer then courteously responds: @Toast@, @Cheese@ and @Wine@.
+
+
+        At this point, you're probably wondering how these words actually fit together.  Smotchkkiss is wondering
+        what the dots and brackets mean.  I'm going to discuss the various _parts of speech_ next.
+
+
+        All you need to know thus far is that Ruby is basically built from sentences.  They aren't exactly English
+        sentences.  They are short collections of words and punctuation which encompass a single thought.  These
+        sentences can form books.  They can form pages.  They can form entire novels, when strung together.
+        Novels that can be read by humans, but also by computers.
+
+

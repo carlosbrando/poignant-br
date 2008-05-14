@@ -1,0 +1,37 @@
+--- !whytheluckystiff.net,2003/^book
+title: why's (poignant) guide to ruby
+author: why the lucky stiff
+
+terms: >
+  bq(#terms). The text of this book and the encompassing web matter are released under the wholy sympathetic 
+  "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/2.5/
+  license, part of the brilliant family of licenses produced
+  by the "Creative Commons":http://creativecommons.org/.
+
+
+deed: |
+  Attribution-ShareAlike 2.5
+
+  You are free:
+
+      * to copy, distribute, display, and perform the work
+      * to make derivative works
+      * to make commercial use of the work
+
+  Under the following conditions:
+      
+  *Attribution*. You must give the original author credit.
+      
+  *Share Alike*. If you alter, transform, or build upon this work, you may distribute the 
+  resulting work only under a license identical to this one.
+
+      * For any reuse or distribution, you must make clear to others the license terms of this work.
+      * Any of these conditions can be waived if you get permission from the author.
+
+  Your fair use and other rights are in no way affected by the above.
+
+  This is a human-readable summary of the Legal Code (the full license).
+
+image: !^img 2006.cover.jpg
+teaser:
+

@@ -1,0 +1,18 @@
+    - !^sidebar
+      Windows Hiccups: >      
+
+        Okay, here's what you do to get tab completion working in Windows.  
+        "Download this.":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
+        A zip with two files inside.  These get copied into your Ruby installation.
+        Place readline.dll in the *bin* folder.  The readline.so goes in
+        *lib/ruby/1.8/i386-mswin32* folder.
+
+
+        Then, run in your command shell: @irb --readline -r irb/completion@.
+
+
+        And for Europeans, you'll need "this.":http://whytheluckystiff.net/ruby/dist/Input.euro
+        Save it as *.inputrc* and place it in your home directory.  (Your personal directory
+        which contains your Desktop and My Documents folders.)
+
+
