@@ -20,7 +20,7 @@
         "No way," said Fox Small.
 
 
-        "Yep," said Blix.  "And that guy was me."  Blix reached over his shoulder and latched onto
+        "Sim," disse Blix.  "Aquele cara era eu."  Blix reached over his shoulder and latched onto
         a spiral column of smoke that was twisting just above his head.  "You just have to know
         which clouds are wimpy and which clouds are grandiloquent."  Blix let the cloud pull him along
         and when the cloud banked upwards, Blix loosed his grip and kept his feet moving slowly
@@ -75,7 +75,7 @@
         underscores.  No less than eight and no more than fifteen._
 
 
-        Regular expressions are a mini-language built into Ruby and many other programming languages.
+        Expressões Regulares são uma mini-linguagem built into Ruby and many other programming languages.
         I really shouldn't say _mini_, though, since regexps can be twisted and complicated and much more
         difficult than any Ruby program.
 

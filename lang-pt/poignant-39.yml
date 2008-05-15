@@ -1,50 +1,50 @@
-    - This One's For the Disenfranchised: >
+    - Esta é para os desprivilegiados: >
 
         !i/elderly-1.gif(Some people still can't get past what he did.)!
 
 
-        If you give me a number, which is any year from Dr. Cham's life, I'll give you a synopsis of that
-        time period.  And I'll do it as a Ruby method, so it's an independent piece, an isolated chunk of
-        code which can be hooked up to the voice of a robotic volcano, when such a thing becomes the apex
-        of authoritative voice talents.
+        Se você me der um número, seja ele um período da vida do Dr. Cham, lhe darei uma sinopse daquele
+        período.  E eu falei isso com um método Ruby, isso será uma peça independente, um pedaço de código
+        isolado que pode ser ligado à voz de um vulcão robótico, quando essas coisas forem o ápice
+        das vozes talentosas não autoritárias.
 
 
-        Okay, so I need you to notice @def@ and @case@ and @when@.  You've seen the Ranges, the closed
-        accordions of @1895..1913@, back in chapter 3.  They contain both ends and in between.  And the
-        backslashes at the end of each line simply ignore the _Enter_ key at the end of each line, assuring
-        Ruby that there is _more of this line to come_.
+        Okay, eu preciso que você preste atenção nas palavras @def@ , @case@ e @when@.  Você já viu períodos (Ranges), os
+        acordiões fechados @1895..1913@, no capítulo 3.  Eles contém as pontas e todos os números entre.  E as barras
+        no fim de cada linha simplesmente ignoram o _Enter_, assegurando ao Ruby que _há mais linhas por vir_.
+        
 
 
-        So, please: @def@ and @case@ and @when@.
+        Então, por favor: @def@, @case@ e @when@.
 
 
         <pre>
-         def dr_chams_timeline( year )
-           case year
+         def biografia_do_dr_cham( ano )
+           case ano
            when 1894
-             "Born."
+             "Nasceu."
            when 1895..1913
-             "Childhood in Lousville, Winston Co., Mississippi."
+             "Infância em Lousville, Winston Co., Mississippi."
            when 1914..1919
-             "Worked at a pecan nursery; punched a Quaker."
+             "Trabalhou numa enfermaria de Pecãs; socou um protestante."
            when 1920..1928
-             "Sailed in the Brotherhood of River Wisdomming, which journeyed \
+             "Navegou na companhia do Rio Wisdomming, which journeyed \
               the Mississippi River and engaged in thoughtful self-improvement, \
               where he finished 140 credit hours from their Oarniversity."
            when 1929
-             "Returned to Louisville to pen a novel about time-travelling pheasant hunters."
+             "Voltou à Louisville para escrever um romance sobre camponeses caçadores que viajam no tempo."
            when 1930..1933
-             "Took up a respectable career insuring pecan nurseries.  Financially stable, he \
-              spent time in Brazil and New Mexico, buying up rare paper-shell pecan trees.  Just \
+             "Took up a respectable career insuring pecan nurseries.  Financeiramente estável, ele \
+              passou algum tempo no Brasil e Novo México, buying up rare paper-shell pecan trees.  Just \
               as his notariety came to a crescendo: gosh, he tried to buried himself alive."
            when 1934
-             "Went back to writing his novel.  Changed the hunters to insurance tycoons and the \
-              pheasants to Quakers."
+             "Voltou a escrever seu romance.  Mudou de caçadores para funcionários de seguradora e \
+              de camponeses para protestantes."
            when 1935..1940
              "Took Arthur Cone, the Headmaster of the Brotherhood of River Wisdomming, as a \
               houseguest.  Together for five years, engineering and inventing."
            when 1941
-             "And this is where things got interesting."
+             "Aqui as coisas começam a ficar interessantes."
            end
          end
         </pre>
@@ -55,7 +55,7 @@
 
 
         <pre>
-         puts dr_chams_timeline( 1941 )
+         puts biografia_do_dr_cham( 1941 )
         </pre>
 
 
@@ -65,40 +65,40 @@
         answers with that string.  Trickling water spilling down from ledge to ledge.
 
 
-        Let me be clear about the @case@ statement.  Actually, I should call it a @case..when@ statement,
-        since they cannot be used separately.  The @case@ keyword is followed by a value, which is compared against
-        each of the values which follow @when@ keywords.  The first value to qualify as a match is the one the
-        case uses and the rest are ignored.  You can do the same thing with a bunch of @if..elsif@ statements,
-        but it's wordier.
+        Deixe me ser mais claro sobre a condição @case@.  Na verdade, eu deveria chamá-la de @case..when@,
+        já que elas não pode ser usadas separadamente.  A palavra-chave @case@ é serguida de um valor, que é comparado contra
+        cada valor que segue a palavra-chave @when@.  O primeiro valor a coincidir é usado pelo @case@,
+        o resto é ignorado.  Você pode fazer a mesma coisa com um monte de @if..elsif@,
+        mas isso é mto palavreado.
        
 
         <pre>
          case year
          when 1894
-           "Born."
+           "Nasceu."
          when 1895..1913
-           "Childhood in Lousville, Winston Co., Mississippi."
+           "Infância em Lousville, Winston Co., Mississippi."
          else
-           "No information about this year."
+           "Sem informações sobre este ano."
          end
         </pre>
 
 
-        Is identical to:
+        É a mesma coisa que:
 
 
         <pre>
          if 1894 === year
-           "Born."
+           "Nasceu."
          elsif 1895..1913 === year
-           "Childhood in Lousville, Winston Co., Mississippi."
+           "Infância em Lousville, Winston Co., Mississippi."
          else
-           "No information about this year."
+           "Sem informações para este ano."
          end
         </pre>
 
 
-        The *triple equals* is a length of velvet rope, checking values much like the double equals.  It's just:
+        Os *três iguais (===)* is a length of velvet rope, checking values much like the double equals.  It's just:
         the triple equals is a longer rope and it sags a bit in the middle.  It's not as strict, it's a bit
         more flexible.
 
