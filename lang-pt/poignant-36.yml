@@ -10,8 +10,8 @@
         do meu quarto.  He esvaziou a conta bancária há cerca de sete meses.
 
 
-        He does have a set of keys for the house and the Seville.  Should he ever
-        find himself stranded, I will gladly step away from our differences and entertain his
+        Ele tem uma cópia da chave de casa e uma do (Cadillac) Seville.  Should he ever
+        find himself stranded, Eu alegremente deixarei de lado nossas diferenças e entreterei and entertain his
         antics around the house again.
 
 
@@ -19,34 +19,34 @@
         eu sindo a dele.
 
 
-        h3. A Sereia e o Devoto
+        h3. A Sereia e O Devoto
 
 
         Eu vi o Blix a primeira vez pela televisão quando eu era um garoto.  Ele estrelava um drama policial empoeirado
-        chamado _A Sereia e O Devoto_.  O show era some temência a Deus: esquadrão policial que fazia
-        seu serviço, e o fazia bem, and saw their share of miracles out on the beat.  I mean
-        os oficiais no show eram _ótimas_ pessoas, muito religiosos, praticamente um clérgico.  Mas, 
+        chamado _A Sereia e O Devoto_.  O seriado era some temência a Deus: esquadrão policial que fazia
+        seu serviço, e o fazia bem, and saw their share of miracles out on the beat.  Quero dizer,
+        os oficiais no show eram _ótimas_ pessoas, muito religiosos, praticamente clérgicos.  Mas, 
         você sabe, até clérgicos não tem o bom senso de matar um cara que tenha ido longe demais.
-        Esses caras sabiamThese guys knew where to draw that line.  They walked that line every day.
+        Esses caras sabiam disso. E o faziam todo dia.
 
 
-        Então, aquilo era um show bem sangrento, mas eles sempre tinham uma boa licão de moral no final. Na maioria
-        das vezes algo como, "Nossa, escapamos dessa bem rápido."  But there's
-        serious camaraderie in a statement like that.
+        Então, aquilo era um seriado bem sangrento, mas eles sempre tinham uma boa lição de moral no final. Na maioria
+        das vezes algo como, "Nossa, escapamos dessa bem rápido."  Há uma
+        séria camaradagem numa declaração como essa.
 
         
-        O show basicamente girava em torno deste policial.  "Doidão" Dick Robinson.  As Pessoas o
-        chamavam de Doidão porque basicamente ele era insano. Não me lembro se ele era diagnosticadolinically
-        insane, but people were always questioning his decisions.  Mad often blew his top and chewed
-        out some of the other officers, most of whom had unquestionable moral character.  But we
-        all know it's a tough world, the stakes are high out there, and everyone who watched the
-        show held Mad in great regard.  I think everyone on the squad grew quite a bit as people,
-        thanks to Mad's passion.
+        O show basicamente girava em torno deste policial.  Dick Robinson "O Doidão".  As Pessoas o
+        chamavam de "O Doidão" porque basicamente ele era insano. Não me lembro se ele isso foi diagnosticado
+        clinicamente, mas as pessoas sempre questionavam suas decisões.  O Doidão regularmente often blew his top and chewed
+        out some of the other officers, most of whom had unquestionable moral character.  Mas todos
+        sabemos que esse é um mundo cão, as apostas são altas, e todos que assistiam ao seriado
+        tinham O Doião com grande estima.  Eu penso que todos no esquadrão cresceram bastante como pessoas,
+        graças à determinação do Doidão.
 
 
-        The officers couldn't do it all themselves though.  In every single episode, they plead with a
-        greater force for assistance.  And, in every single episode, they got their tips from a cat
-        named Terry (played by my cat Blix.)  He was just a kitten at the time and, as a young boy
+        Todavia, os policiais não conseguiam dar conta do serviço por si mesmos. Em cada um dos episódios eles
+        imploravam greater force for assistance.  E, em cada um dos episódios, eles conseguiam ajudas de um gato
+        chamdo Terry (encenado pelo meu gato Blix.)  He was just a kitten at the time and, as a young boy
         tuning into _A Siren and A Prayer_, I found myself longing for my own crime-sniffing cat.
         Terry took these guys down the subway tunnels, through
         the rotting stench of abandoned marinas, into backdoors of tall, industrial smokestacks.  
@@ -78,23 +78,23 @@
         to make up some classes and all the kids had pretty much moved on to football pencils.
 
         
-        h3. Blocks
+        h3. Blocos
 
 
-        A couple years ago, I started teaching Blix about Ruby.  When we got to this part in his lessons,
-        the part that covers blocks, he said to me, "Blocks remind me of Mad Dick Robinson."
+        Há alguns anos, eu comecei a ensinar o Blix sobre Ruby.  Quando nós chegamos nesta parte,
+        a parte que cobre blocos, ele me disse, "Blocos me lembram o Dick Robinson Doidão."
 
 
-        "Oh?"  I hadn't heard that name in awhile.  "I can't see how that could be."
+        "Mesmo?"  Eu não ouvia esse nome faz tempo.  "Não sei como você se lembrou disso."
 
 
-        "Well, you say blocks can be difficult to understand."
+        "Bem, você disse que blocos são difíceis de entender."
 
 
         "Eles não são difíceis", eu disse.  "Um *bloco* é apenas *código agrupado*."
 
 
-        "And Mad was just an officer, sworn to uphold his duty," he said.  "But he was a real miracle to
+        "E o Doidão era apenas um policial, que jurou cumprir seu dever," ele disse.  "But he was a real miracle to
         watch out in the field.  Now, this first example you've shown me..."  He pointed to an
         example I'd written down for him.
 
@@ -103,18 +103,18 @@
          brinquedos_do_gatinho =
            [:formato => 'sock', :material => 'cashmere'] +
            [:formato => 'mouse', :material => 'calico'] +
-           [:formato => 'eggroll', :material => 'chenille']
+           [:formato => 'bolinho-primavera', :material => 'chenille']
          brinquedos_do_gatinho.sort_by { |brinquedo| brinquedo[:material] }
         </pre>
 
 
-        "Isto é um pequeno milagre", ele disse. "Não posso negar sua beleza.  Olhe, lá estão meus brinquedos, laid
-        out with their characteristics.  Below them, the block, sorting them by fabric."
+        "Isto é um pequeno milagre", ele disse. "Não posso negar sua beleza.  Olhe, lá estão meus brinquedos, junto
+        com suas características.  Abaixo deles, o bloco, ordenando eles por material."
 
 
-        "I apologize if your list of toys looks a bit tricky," I said.  Like you, he had learned about the
-        Array, the caterpillar stapled into the code, with square brackets on each side
-        and each item separated by commas.  (Ah, here is one: @['sock', 'mouse', 'eggroll']@.) 
+        "Peço desculpas se a sua lista de brinquedos parece um pouco complicada," eu disse. Assim como você, ele já
+        havia aprendido sobre conjunto (Array), a centopéia caida no código, colchetes de cada lado
+        e cada item separado por vírgulas.  (Ah, aqui está uma: @['meia', 'rato', 'bolinho-primavera']@.) 
         He had also been taught the Hash, which is like a dictionary, with curly braces on each end
         which look like small, open books.  Commas in the Hash between each pair.  Each word
         in the dictionary matched up with its definition by an arrow.  (Be beholden: @{'blix' => 'cat',
@@ -126,8 +126,8 @@
 
 
         "It does seem a bit subversive, doesn't it?"  I said, tease-nudging him with a spoon.  "I've done your kitty toy list
-        in a mix of the two.  I'm using a shortcut.  Which is: *If you use arrows inside of an Array, 
-        you'll end up with a Hash inside of that Array.*"
+        in a mix of the two.  I'm using a shortcut.  Which is: *Se você usar a seta (=>) dentro de um Conjunto, 
+        você vai ter uma Mistura invés de um Conjunto.*"
 
 
         "Oh, I see," he said.  "You criss-crossed 'em.  How neat!"
@@ -142,23 +142,24 @@
          brinquedos_do_gatinho = [
            {:formato => 'meia', :material => 'cashmere'},
            {:formato => 'rato', :material => 'calico'},
-           {:formato => 'eggroll', :material => 'chenille'}
+           {:formato => 'bolinho-primavera', :material => 'chenille'}
          ]
         </pre>
 
 
-        One Array, which acts as our list of chew toys.  Three Hashes in the Array to describe each toy.
+        Um conjunto (Array), que age como uma lista de brinquedos de mastigar.  Três Bolos|Misturas (Hashes) estão no conjunto descrevendo
+        cada brinquedo.
 
 
-        h3. Sorting and Iterating to Save Lives
+        h3. Ordenando e Iterando Para Salvar Vidas
 
 
-        "Vamos organizar seus brinquedos por forma agora," Eu disse.  "Then, we'll print them out in that order."
+        "Vamos ordenar seus brinquedos por forma agora," Eu disse.  "E depois, imprimi-los nesta ordem."
 
 
         <pre>
          brinquedos_do_gatinho.sort_by { |brinquedo| brinquedo[:formato] }.each do |brinquedo|
-           puts "Blixy has a #{ brinquedo[:formato] } made of #{ brinquedo[:material] }"
+           puts "Blixy tem um #{ brinquedo[:formato] } feito de #{ brinquedo[:material] }"
          end
         </pre>
 
@@ -167,23 +168,23 @@
         @brinquedos_do_gatinho@ é um conjunto (Array).  Mas e quanto a @brinquedo@?"
 
 
-        "Okay, @brinquedo@ is a *block argument*," I said.  "Remember: the skinny pipes on each side of @brinquedo@ make it
-        a *chute*."
+        "Okay, @brinquedo@ is a *argumento do bloco*," Eu disse.  "Lembre-se: os corrimãos magrelos de cada lado do @brinquedo@ fazem dele
+        um *escorrega*."
 
 
-        "Sure, but it looks like you're using it like a Hash.  Inside the block you have @brinquedo[:formato]@.
-        That looks like a Hash."
+        "Claro, mas parece que você o está usando como Mistura (Hash). Dentro do bloco vc tem @brinquedo[:formato]@.
+        Isto se parece com uma Mistura."
 
 
-        "The @sort_by@ method is an *iterator*, Blix.  It *iterates*, or *cycles*, through *a list of things*.  You
-        remember that episode when Mad..." 
+        "O método @sort_by@ é um *iterador*, Blix.  Ele *iterage*, ou *cycles*, com a *lista de coisas*.  Você
+        se lembra daquele episódio quando o Doidão..." 
 
 
-        "Episode?" he said.  Yeah, he can't understand the concept of TV dramas.  
-        Yeah, I've tried explaining.
+        "Episódio?" ele disse.  Sim, ele não consegue entender o conceito de seriados de TV.  
+        Sim, eu tentei explicar.
 
 
-        "Or, yeah, remember that one _eyewitness account_ we watched where Mad was trying to talk
+        "Ou, yeah, remember that one _eyewitness account_ we watched where Mad was trying to talk
         down that crazy spelling bee contestant from the ledge of an college library?" 
 
 
@@ -191,7 +192,7 @@
         one of those episodes.
 
 
-        "Do you remember how Mad got the guy to come down?" I asked.
+        "Você se lembra como o Doidão fez pro cara descer?" Eu indaguei.
 
 
         "People in spelling bees love letters," said Blix.  "So what Mad did was a genius move on his part.
@@ -217,10 +218,10 @@
         so we don't get all uptight and starting goofing around on tiptoes at the very edge of a big, bad building.'"
 
 
-        "Aí ele pulou," disse Blix.  He shook his head.  "You can't blame Mad.  He did his best."
+        "Aí ele pulou," disse Blix. Ele balançou a cabeça.  "Você não pode culpar o Doidão. Ele fez o melhor q pode."
         
         
-        "He had a big heart, that's for sure," I said, patting Blix on the shoulder.
+        "Ele tinha um coração grande, isso é verdade," eu disse, dando um tapinha no ombro do Blix.
 
 
         <pre>
@@ -230,41 +231,41 @@
         </pre>
 
 
-        "As for your @sort_by@, it *starts at the top* of the list and *goes through each item*, one at a time.
+        "As for your @sort_by@, it *começa no topo* da lista e vai *descendo até o ultimo ítem*, one at a time.
         So @brinquedo@ is one of those items.  With each item, @sort_by@ stops and *slides that item down the
         chute*, under the @brinquedo@ name, and let's you figure out what to do with it."
  
 
-        "Okay, so @brinquedo@ takes turns being each of the different toys I have."
+        "Ok, então @brinquedo@ será, cada hora, um dos brinquedos que eu tenho."
 
 
-        "That's right," I said.  "You know how I've really been harping on _using the answers that methods give
-        you_?  Here, we're simply looking up the toy's shape inside the block.  The block then answers to @sort_by@
-        with the shape string, such as @"mouse"@ or @"sock"@.  Once it's done cycling through the whole list, @sort_by@
+        "Correto," eu disse.  "You know how I've really been harping on _using the answers that methods give
+        you_?  Here, we're simply looking up the toy's shape inside the block.  O bloco então responde para o @sort_by@
+        uma frase contendo o formato, algo como @"rato"@ ou @"meia"@.  Once it's done cycling through the whole list, @sort_by@
         will have alphabetically compared each of the shape strings and will give back a new sorted Array."
 
 
         h3.  Uma Lição Inacabada
 
 
-        "Tá bom por hoje," disse o Blix.  "Posso ter uma tijeCan I have a fresh saucer of milk, please?"
+        "Tá bom por hoje," disse o Blix.  "Que tal um pires de leite fresco, por favor?"
 
 
-        I filled his saucer to the brim and he guzzled from it for some time while I took a poker and
+        Eu enchi o I filled his saucer to the brim and he guzzled from it for some time while I took a poker and
         jabbed at coals in the fireplace.  My mind wandered and I couldn't help but think further of
         blocks.  I wondered what I would teach Blix next.
 
 
         Eu provavelmente o teria ensinado sobre @next@.  Quando você esta interando uma lista, você
-        pode usar @next@ para *pular para o próximo item*.  Here we're counting toys that have a non-eggroll
+        pode usar @next@ para *pular para o próximo item*.  Here we're counting toys that have a non-bolinho-primavera
         shape by skipping those that do with @next@.
 
 
         <pre>
-         non_eggroll = 0
+         non_bolinho-primavera = 0
          brinquedos_do_gatinho.each do |brinquedo|
-           next if brinquedo[:formato] == 'eggroll'
-           non_eggroll = non_eggroll + 1
+           next if brinquedo[:formato] == 'bolinho-primavera'
+           non_bolinho-primavera = non_bolinho-primavera + 1
          end
         </pre>
 
@@ -298,8 +299,8 @@
         form of this guide.
 
 
-        I worked on it whenever I found myself bored.  And when I wasn't bored, I could always
-        switch on _The Phantom Menace_ to get me in the mood.
+        Eu trabalhei nisso sempre que me sentia entendiado. E quando não estava entendiado, eu ia assistir
+        _The Phantom Menace_ (Guerra nas Estrelas - A Ameaça Fantasma) pra ficar no clima.
 
 
         !i/the.elf-7.jpg(Someone let them all out.)!

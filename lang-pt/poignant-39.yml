@@ -103,8 +103,8 @@
         flexível.
 
 
-        Veja os períodos assim.  @(1895..1913)@ não é nem um pouco *igual* a @1905@.  Não, o período @(1895..1913)@ só é
-        realmente *iagual* a qualquer outro período @(1895..1913)@.  No caso de um período, os três iguais lhe dão uma folga
+        Veja os períodos assim:  @(1895..1913)@ não é nem um pouco *igual* a @1905@.  Não, o período @(1895..1913)@ só é
+        realmente *igual* a qualquer outro período @(1895..1913)@.  Os três iguais, no caso de um período,  dão uma folga
         e deixam o número inteiro @1905@ entrar, pois mesmo ele não sendo *igual* ao período, ele está *incluído* na lista
         de número inteiros representados pelo perído.  Oque é suficiente em alguns casos, como o da biografia que
         eu fiz anteriormente.
