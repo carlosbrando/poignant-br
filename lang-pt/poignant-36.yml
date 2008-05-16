@@ -1,13 +1,13 @@
     - >
-        Since you and I are becoming closer friends as we share this time together, I should
-        probably let you in on a bit of the history going on here.  It's a good time for a break
-        I say.
+        Já que estamos nos tornando amigos íntimos enquanto compartilhamos este tempo juntos, eu 
+        provavelmente deveria te falar um pouco mais sobre a história aqui.  É uma boa hora pruma pausa,
+        eu diria.
 
 
-        First, you should know that Blix is my cat.  My second pet to Bigelow.
-        Granted, we hardly see each other anymore.  He's completely self-sufficient.
-        I'm not exactly sure where he's living these days, but he no longer lives in the antechamber
-        to my quarters.  He emptied his savings account about seven months ago.
+        Primeiramente, você deve saber que o Blix é meu gato.  Meu segundo animal de estimação é o Bigelow.
+        E digo, nós raramente nos vemos.  Ele é totalmente auto-suficiente.
+        Eu não sei exatamente onde ele mora hoje em dia, ele não mora mais na antesala
+        do meu quarto.  He esvaziou a conta bancária há cerca de sete meses.
 
 
         He does have a set of keys for the house and the Seville.  Should he ever
@@ -15,28 +15,28 @@
         antics around the house again.
 
 
-        Make no mistake.  I miss having him around.  Can't imagine he misses my company, but
-        I miss his.
+        Mas não se engane.  Eu sinto falta dele por perto.  Não sei se ele sente falta da minha companhia, mas
+        eu sindo a dele.
 
 
-        h3. A Siren and A Prayer
+        h3. A Sereia e o Devoto
 
 
-        I first saw Blix on television when I was a boy.  He had a starring role on a very gritty police drama
-        called _A Siren and A Prayer_.  The show was about a god-fearing police squad that did
-        their jobs, did them well, and saw their share of miracles out on the beat.  I mean
-        the officers on this show were _great_ guys, very religious, practically clergy.  But, 
-        you know, even clergymen don't have the good sense to kill a guy after he's gone too far.
-        These guys knew where to draw that line.  They walked that line every day.
+        Eu vi o Blix a primeira vez pela televisão quando eu era um garoto.  Ele estrelava um drama policial empoeirado
+        chamado _A Sereia e O Devoto_.  O show era some temência a Deus: esquadrão policial que fazia
+        seu serviço, e o fazia bem, and saw their share of miracles out on the beat.  I mean
+        os oficiais no show eram _ótimas_ pessoas, muito religiosos, praticamente um clérgico.  Mas, 
+        você sabe, até clérgicos não tem o bom senso de matar um cara que tenha ido longe demais.
+        Esses caras sabiamThese guys knew where to draw that line.  They walked that line every day.
 
 
-        So, it was a pretty bloody show, but they always had a good moral at the end.  Most times
-        the moral was something along the lines of, "Wow, we got out of that one quick."  But there's
+        Então, aquilo era um show bem sangrento, mas eles sempre tinham uma boa licão de moral no final. Na maioria
+        das vezes algo como, "Nossa, escapamos dessa bem rápido."  But there's
         serious camaraderie in a statement like that.
 
         
-        The show basically revolved around this one officer.  "Mad" Dick Robinson.  People called
-        him Mad because he was basically insane.  I can't remember if he was actually clinically
+        O show basicamente girava em torno deste policial.  "Doidão" Dick Robinson.  As Pessoas o
+        chamavam de Doidão porque basicamente ele era insano. Não me lembro se ele era diagnosticadolinically
         insane, but people were always questioning his decisions.  Mad often blew his top and chewed
         out some of the other officers, most of whom had unquestionable moral character.  But we
         all know it's a tough world, the stakes are high out there, and everyone who watched the
@@ -91,7 +91,7 @@
         "Well, you say blocks can be difficult to understand."
 
 
-        "They're not difficult," I said.  "A *block* is just *code that's grouped together*."
+        "Eles não são difíceis", eu disse.  "Um *bloco* é apenas *código agrupado*."
 
 
         "And Mad was just an officer, sworn to uphold his duty," he said.  "But he was a real miracle to
@@ -100,15 +100,15 @@
 
         
         <pre>
-         kitty_toys =
-           [:shape => 'sock', :fabric => 'cashmere'] +
-           [:shape => 'mouse', :fabric => 'calico'] +
-           [:shape => 'eggroll', :fabric => 'chenille']
-         kitty_toys.sort_by { |toy| toy[:fabric] }
+         brinquedos_do_gatinho =
+           [:formato => 'sock', :material => 'cashmere'] +
+           [:formato => 'mouse', :material => 'calico'] +
+           [:formato => 'eggroll', :material => 'chenille']
+         brinquedos_do_gatinho.sort_by { |brinquedo| brinquedo[:material] }
         </pre>
 
 
-        "This is a small miracle," he said. "I can't deny its beauty.  Look, there are my kitty toys, laid
+        "Isto é um pequeno milagre", ele disse. "Não posso negar sua beleza.  Olhe, lá estão meus brinquedos, laid
         out with their characteristics.  Below them, the block, sorting them by fabric."
 
 
@@ -139,10 +139,10 @@
 
 
         <pre>
-         kitty_toys = [
-           {:shape => 'sock', :fabric => 'cashmere'},
-           {:shape => 'mouse', :fabric => 'calico'},
-           {:shape => 'eggroll', :fabric => 'chenille'}
+         brinquedos_do_gatinho = [
+           {:formato => 'meia', :material => 'cashmere'},
+           {:formato => 'rato', :material => 'calico'},
+           {:formato => 'eggroll', :material => 'chenille'}
          ]
         </pre>
 
@@ -153,25 +153,25 @@
         h3. Sorting and Iterating to Save Lives
 
 
-        "Let's sort your toys by shape now," I said.  "Then, we'll print them out in that order."
+        "Vamos organizar seus brinquedos por forma agora," Eu disse.  "Then, we'll print them out in that order."
 
 
         <pre>
-         kitty_toys.sort_by { |toy| toy[:shape] }.each do |toy|
-           puts "Blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+         brinquedos_do_gatinho.sort_by { |brinquedo| brinquedo[:formato] }.each do |brinquedo|
+           puts "Blixy has a #{ brinquedo[:formato] } made of #{ brinquedo[:material] }"
          end
         </pre>
 
 
-        "How does @sort_by@ work?" asked Blix.  "I can tell it's a method you can use with Arrays.  Because
-        @kitty_toys@ is an Array.  But what is @toy@?"
+        "Como @sort_by@ funciona?" perguntou Blix.  "Eu sei que é um método que você pode usar com conjuntos (Arrays).  Pois
+        @brinquedos_do_gatinho@ é um conjunto (Array).  Mas e quanto a @brinquedo@?"
 
 
-        "Okay, @toy@ is a *block argument*," I said.  "Remember: the skinny pipes on each side of @toy@ make it
+        "Okay, @brinquedo@ is a *block argument*," I said.  "Remember: the skinny pipes on each side of @brinquedo@ make it
         a *chute*."
 
 
-        "Sure, but it looks like you're using it like a Hash.  Inside the block you have @toy[:shape]@.
+        "Sure, but it looks like you're using it like a Hash.  Inside the block you have @brinquedo[:formato]@.
         That looks like a Hash."
 
 
@@ -217,25 +217,25 @@
         so we don't get all uptight and starting goofing around on tiptoes at the very edge of a big, bad building.'"
 
 
-        "And then he jumped," said Blix.  He shook his head.  "You can't blame Mad.  He did his best."
+        "Aí ele pulou," disse Blix.  He shook his head.  "You can't blame Mad.  He did his best."
         
         
         "He had a big heart, that's for sure," I said, patting Blix on the shoulder.
 
 
         <pre>
-         kitty_toys.sort_by { |toy| toy[:shape] }.each do |toy|
-           puts "Blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+         brinquedos_do_gatinho.sort_by { |brinquedo| brinquedo[:formato] }.each do |brinquedo|
+           puts "Blixy has a #{ brinquedo[:formato] } made of #{ brinquedo[:material] }"
          end
         </pre>
 
 
         "As for your @sort_by@, it *starts at the top* of the list and *goes through each item*, one at a time.
-        So @toy@ is one of those items.  With each item, @sort_by@ stops and *slides that item down the
-        chute*, under the @toy@ name, and let's you figure out what to do with it."
+        So @brinquedo@ is one of those items.  With each item, @sort_by@ stops and *slides that item down the
+        chute*, under the @brinquedo@ name, and let's you figure out what to do with it."
  
 
-        "Okay, so @toy@ takes turns being each of the different toys I have."
+        "Okay, so @brinquedo@ takes turns being each of the different toys I have."
 
 
         "That's right," I said.  "You know how I've really been harping on _using the answers that methods give
@@ -244,10 +244,10 @@
         will have alphabetically compared each of the shape strings and will give back a new sorted Array."
 
 
-        h3.  An Unfinished Lesson
+        h3.  Uma Lição Inacabada
 
 
-        "That's good enough for today," said Blix.  "Can I have a fresh saucer of milk, please?"
+        "Tá bom por hoje," disse o Blix.  "Posso ter uma tijeCan I have a fresh saucer of milk, please?"
 
 
         I filled his saucer to the brim and he guzzled from it for some time while I took a poker and
@@ -255,34 +255,34 @@
         blocks.  I wondered what I would teach Blix next.
 
 
-        I probably would have taught him about @next@.  When you are iterating through a list, you
-        may use @next@ to *skip on to the next item*.  Here we're counting toys that have a non-eggroll
+        Eu provavelmente o teria ensinado sobre @next@.  Quando você esta interando uma lista, você
+        pode usar @next@ para *pular para o próximo item*.  Here we're counting toys that have a non-eggroll
         shape by skipping those that do with @next@.
 
 
         <pre>
          non_eggroll = 0
-         kitty_toys.each do |toy|
-           next if toy[:shape] == 'eggroll'
+         brinquedos_do_gatinho.each do |brinquedo|
+           next if brinquedo[:formato] == 'eggroll'
            non_eggroll = non_eggroll + 1
          end
         </pre>
 
 
-        I could also have taught him about @break@, which *kicks you out of an iterating loop*.
-        In the code below, we'll print out (with @p@) each of the toy Hashes until we hit
-        the toy whose fabric is chenille.  The @break@ will cause the @each@ to abruptly end.
+        Eu poderia também tê-lo ensinado sobre @break@, que *te joga pra fora de um loop*.
+        No código abaixo, vamo imprimir (usando @p@) cada brinquedo até encontrarmos
+        o brinquedo cujo material seja chenille.  O @break@ fará com que o @each@ termine abruptamente.
 
 
         <pre>
-         kitty_toys.each do |toy|
-           break if toy[:fabric] == 'chenille'
-           p toy
+         brinquedos_do_gatinho.each do |brinquedo|
+           break if brinquedo[:material] == 'chenille'
+           p brinquedo
          end
         </pre>
 
 
-        I never got to teach him such things.  I continued poking away at a particularly stubborn coal
+        Eu nunca cheguei a ensinar a ele essas coisas.  I continued poking away at a particularly stubborn coal
         which was caught in the iron curtain of the fireplace and threatened to drop on my antelope
         skin rug.  
 
@@ -293,7 +293,7 @@
         instinct say that Wixl was his definitely his final stop. 
 
 
-        Without any student to instruct and coax along, I found myself quite lonely, holed up in
+        Sem nenhum estudante para instruirtudent to instruct and coax along, I found myself quite lonely, holed up in
         the estate.  In the stillness of the dead corridors, I began to sketch out a biography in the 
         form of this guide.
 

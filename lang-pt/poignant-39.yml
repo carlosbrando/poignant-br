@@ -1,6 +1,6 @@
     - Esta é para os desprivilegiados: >
 
-        !i/elderly-1.gif(Some people still can't get past what he did.)!
+        !i/elderly-1.gif(Algumas pessoas ainda nao conseguem acreditar no que fizemos.)!
 
 
         Se você me der um número, seja ele um período da vida do Dr. Cham, lhe darei uma sinopse daquele
@@ -28,15 +28,15 @@
            when 1914..1919
              "Trabalhou numa enfermaria de Pecãs; socou um protestante."
            when 1920..1928
-             "Navegou na companhia do Rio Wisdomming, which journeyed \
-              the Mississippi River and engaged in thoughtful self-improvement, \
-              where he finished 140 credit hours from their Oarniversity."
+             "Navegou na companhia do Rio Wisdomming, que se juntou \
+              ao Rio Mississippi e se engajou em reflexão e auto-aprimoramento, \
+              onde ele concluiu 140 horas de crédito para sua Remoniversidade"
            when 1929
              "Voltou à Louisville para escrever um romance sobre camponeses caçadores que viajam no tempo."
            when 1930..1933
              "Ergueu uma respeitável carreira medicando pecãs.  Financeiramente estável, ele \
-              passou algum tempo no Brasil e Novo México, buying up rare paper-shell pecan trees.  Just \
-              as his notariety came to a crescendo: gosh, ele tentou se enterrar vivo."
+              passou algum tempo no Brasil e Novo México, comprando raras árvores de pecã de casca fina.  Assim \
+              que sua notoriedade chegou a um alto patamar: caramba, ele tentou se enterrar vivo."
            when 1934
              "Voltou a escrever seu romance.  Mudou de caçadores para funcionários de seguradora e \
               de camponeses para protestantes."
@@ -98,22 +98,22 @@
         </pre>
 
 
-        Os *três iguais (===)* is a length of velvet rope, checando valores como dois iguais.  Resumindo:
-        os três iguais sao uma corda maior rope and it sags a bit in the middle.  It's not as strict, it's a bit
-        more flexible.
+        Os *três iguais (===)* são o comprimento da corda de veludo, checando valores como assim como dois iguais (==).  
+        Resumindo: os três iguais são uma corda maior e ela folga um pouco no meio.  Não é tão tensionada, é um pouco mais
+        flexível.
 
 
-        Veja os períodos assim.  @(1895..1913)@ não é nem um pouco *igual* a @1905@.  Não, o período @(1895..1913)@ é
-        truly *equal* to any other Range @(1895..1913)@.  No caso de um período, os três iguais lhe dão uma folga
-        e deixam o número inteiro @1905@ entra, pois mesmo ele não sendo *igual* ao período, ele está *incluído* na lista
+        Veja os períodos assim.  @(1895..1913)@ não é nem um pouco *igual* a @1905@.  Não, o período @(1895..1913)@ só é
+        realmente *iagual* a qualquer outro período @(1895..1913)@.  No caso de um período, os três iguais lhe dão uma folga
+        e deixam o número inteiro @1905@ entrar, pois mesmo ele não sendo *igual* ao período, ele está *incluído* na lista
         de número inteiros representados pelo perído.  Oque é suficiente em alguns casos, como o da biografia que
         eu fiz anteriormente.
 
 
-        A qual realmente parece uma biografia, não?  Quero dizer, claro, o método @biografia_do_dr_cham@ é código, mas
+        A qual realmente se parece com uma biografia, não?  Quero dizer, claro, o método @biografia_do_dr_cham@ é código, mas
         ele se parece com uma biografia, limpa e afável.
 
 
-        !i/elderly-2.gif(What research revealed.)!
+        !i/elderly-2.gif(O que a pesquisa revelou.)!
 
 
