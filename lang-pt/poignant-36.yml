@@ -19,11 +19,11 @@
         eu sindo a dele.
 
 
-        h3. A Sereia e O Devoto
+        h3. Uma Sirene e Um Devoto
 
 
         Eu vi o Blix a primeira vez pela televisão quando eu era um garoto.  Ele estrelava um drama policial empoeirado
-        chamado _A Sereia e O Devoto_.  O seriado era some temência a Deus: esquadrão policial que fazia
+        chamado _Uma Sirene e Um Devoto_.  O seriado era sobre um esquadrão policial religioso que fazia
         seu serviço, e o fazia bem, and saw their share of miracles out on the beat.  Quero dizer,
         os oficiais no show eram _ótimas_ pessoas, muito religiosos, praticamente clérgicos.  Mas, 
         você sabe, até clérgicos não tem o bom senso de matar um cara que tenha ido longe demais.
@@ -31,14 +31,13 @@
 
 
         Então, aquilo era um seriado bem sangrento, mas eles sempre tinham uma boa lição de moral no final. Na maioria
-        das vezes algo como, "Nossa, escapamos dessa bem rápido."  Há uma
-        séria camaradagem numa declaração como essa.
+        das vezes algo como, "Nossa, escapamos dessa bem rápido."  Há uma séria camaradagem numa declaração como essa.
 
         
         O show basicamente girava em torno deste policial.  Dick Robinson "O Doidão".  As Pessoas o
-        chamavam de "O Doidão" porque basicamente ele era insano. Não me lembro se ele isso foi diagnosticado
-        clinicamente, mas as pessoas sempre questionavam suas decisões.  O Doidão regularmente often blew his top and chewed
-        out some of the other officers, most of whom had unquestionable moral character.  Mas todos
+        chamavam de "O Doidão" porque basicamente ele era insano. Não me lembro se isso foi diagnosticado
+        clinicamente, mas as pessoas sempre questionavam suas decisões.  O Doidão regularmente estourava e
+        mordia alguns policiais, a maioria sendo personagens de moral inquestionável.  Mas todos
         sabemos que esse é um mundo cão, as apostas são altas, e todos que assistiam ao seriado
         tinham O Doião com grande estima.  Eu penso que todos no esquadrão cresceram bastante como pessoas,
         graças à determinação do Doidão.
@@ -46,10 +45,10 @@
 
         Todavia, os policiais não conseguiam dar conta do serviço por si mesmos. Em cada um dos episódios eles
         imploravam greater force for assistance.  E, em cada um dos episódios, eles conseguiam ajudas de um gato
-        chamdo Terry (encenado pelo meu gato Blix.)  He was just a kitten at the time and, as a young boy
-        tuning into _A Siren and A Prayer_, I found myself longing for my own crime-sniffing cat.
-        Terry took these guys down the subway tunnels, through
-        the rotting stench of abandoned marinas, into backdoors of tall, industrial smokestacks.  
+        chamdo Terry (encenado pelo meu gato Blix).  Ele era apenas um gatinho na época, e como um garoto novo
+        ávido por _Uma Sirene e Um Devoto_, me encontrei na busca do meu próprio gato solucionador-de-crimes.
+        Terry levava aqueles caras por túneis subterrâneos, marinas abandonadas, altos galpões industriais.
+        the rotting stinto backdoors of tall, industrial smokestacks.  
 
 
         Sometimes he was all over an episode, darting in and out, preparing traps and directing traffic.
@@ -64,7 +63,7 @@
         Terry?
 
 
-        But the question never got answered because the series was cancelled.  They started to do special
+        Mas a pergunta nunca foi respondida pois a série foi cancelada. They started to do special
         effects with the cat and it all fell apart.  In the last episode of the show, there is a moment where
         Terry is trapped at the top of a crane, about to fall into the searing slag in the furnace of an
         iron smelt.  He looks back.  No going back.  He looks down.  Paws over eyes (_no joke!_), he
@@ -125,17 +124,17 @@
         I don't think you're going to get away with that."
 
 
-        "It does seem a bit subversive, doesn't it?"  I said, tease-nudging him with a spoon.  "I've done your kitty toy list
-        in a mix of the two.  I'm using a shortcut.  Which is: *Se você usar a seta (=>) dentro de um Conjunto, 
-        você vai ter uma Mistura invés de um Conjunto.*"
+        "It does seem a bit subversive, doesn't it?"  I said, tease-nudging him with a spoon.  "Eu fiz sua lista de brinquedos
+        misturando os dois.  Estou usando um atalho.  Que é: *Se você usar a seta (=>) dentro de um Conjunto, 
+        você terá uma Mistura invés de um Conjunto.*"
 
 
-        "Oh, I see," he said.  "You criss-crossed 'em.  How neat!"
+        "Ah, entendi," ele disse.  "Você cruzou eles.  Que bacana!"
 
 
-        "Yes, yes, you're on it," I said.  He was also very good with a protractor.  "I have three Arrays,
-        each with a Hash inside.  Notice the plus signs?  I'm adding them into one big Array.  Here's
-        another way of writing it..."  I jotted down.
+        "Sim, sim, você tá entendendo," eu disse.  Ele era muito bom com um transferidor também.  "Eu tenho três conjuntos (Arrays),
+        cada contém uma Mistura (Hash). Notou o sinal de mais?  Eu os estou adicionando num conjunto maior. Aqui
+        está outro jeito de escrever isto..."  Eu rabisquei.
 
 
         <pre>
@@ -176,7 +175,7 @@
         Isto se parece com uma Mistura."
 
 
-        "O método @sort_by@ é um *iterador*, Blix.  Ele *iterage*, ou *cycles*, com a *lista de coisas*.  Você
+        "O método @sort_by@ é um *iterador*, Blix.  Ele *iterage*, ou *faz o ciclo*, com a *lista de coisas*.  Você
         se lembra daquele episódio quando o Doidão..." 
 
 
@@ -184,38 +183,38 @@
         Sim, eu tentei explicar.
 
 
-        "Ou, yeah, remember that one _eyewitness account_ we watched where Mad was trying to talk
-        down that crazy spelling bee contestant from the ledge of an college library?" 
+        "Ou, sim, lembra daquele _O caso da testemunha ocular_ que nós assistimos que o Doidão estava tentando conversar
+        com aquele concorrente do soletrando que queria pular da biblioteca do colégio?" 
 
 
-        "I remember it better than you because I was riding in a remote control plane."  Yep, it was
-        one of those episodes.
+        "Eu me lembro melhor do que você porque eu estava voando num avião de controle remoto."  Sim, foi um
+        daqueles episódios.
 
 
         "Você se lembra como o Doidão fez pro cara descer?" Eu indaguei.
 
 
-        "People in spelling bees love letters," said Blix.  "So what Mad did was a genius move on his part.
-        He started with the letter A and gave reasons, for all the letters of the alphabet, why the guy
-        should walk back down the building and be safe on the ground."
+        "Pessoas que concorrem ao soletrando adoram cartas," disse Blix.  "Então o Doidão teve uma idéia de gênio.
+        Ele começou uma carta com a letra A e deu razões, para cada letra do alfabeto, de porque o cara devia
+        sair do beiral do prédio e voltar a salvo pro chão."
 
 
-        "'A is for the Architecture of buildings like this,'" I said, in a gruff Mad voice.
-        "'Which give us hope in a crumbling world.'"
+        "'A é para Arquitetura de prédios como esse,'" eu disse, com a voz rude do Doidão.
+        "'Que nos dá esperança num mundo a ruir.'"
 
 
-        "'B is for Big Guys, like your friend Mad the Cop,'" said Blix.  "'Guys who help people all the time
-        and don't know how to spell too great, but still help guys who spell really great.'"
+        "'B é para Brutamontes, assim como seu amigo O Policial Doidão,'" disse Blix.  "'Caras que ajudam pessoas todo o tempo
+        e não sabem escrever muito bem, mas mesmo assim ajudam caras que escrevem muito bem.'"
         
         
-        "See, he went through all the letters, one at a time.  He was _iterating_ through them." _It Err Ate Ing._
+        "Viu, ele passou por todas as letras, uma a uma.  Ele estava _iterando_ por elas." _It Err Ate Ing._ (Iterando)
 
 
-        "But the guy jumped anyway, Why.  He jumped off on letter Q or something."
+        "Mas o cara desistiu, Why.  Ele desistiu na letra Q eu acho."
 
 
-        "'Q is for Quiet Moments that help us calm down and think about all of life's little pleasures,
-        so we don't get all uptight and starting goofing around on tiptoes at the very edge of a big, bad building.'"
+        "'Q é para momentos Quietos que nos ajudam a relaxar e pensar sobre todos os pequenos prazeres da vida, assim 
+        nós nao ficamos tensos e começamos a fazer besteira andando na ponta do pé na beira de algum edifício alto e maligno.'"
 
 
         "Aí ele pulou," disse Blix. Ele balançou a cabeça.  "Você não pode culpar o Doidão. Ele fez o melhor q pode."
@@ -226,23 +225,23 @@
 
         <pre>
          brinquedos_do_gatinho.sort_by { |brinquedo| brinquedo[:formato] }.each do |brinquedo|
-           puts "Blixy has a #{ brinquedo[:formato] } made of #{ brinquedo[:material] }"
+           puts "Blixy tem um #{ brinquedo[:formato] } feito de #{ brinquedo[:material] }"
          end
         </pre>
 
 
-        "As for your @sort_by@, it *começa no topo* da lista e vai *descendo até o ultimo ítem*, one at a time.
-        So @brinquedo@ is one of those items.  With each item, @sort_by@ stops and *slides that item down the
-        chute*, under the @brinquedo@ name, and let's you figure out what to do with it."
+        "Quanto ao seu @sort_by@, ele *começa no topo* da lista e vai *descendo até o ultimo ítem*, um de cada vez.
+        Então @brinquedo@ é um destes items.  Em cada item, o @sort_by@ para e *joga aquele item pelo escorrega*,
+        sob o nome de @brinquedo@, e deixa você decidir o que fazer com ele."
  
 
         "Ok, então @brinquedo@ será, cada hora, um dos brinquedos que eu tenho."
 
 
         "Correto," eu disse.  "You know how I've really been harping on _using the answers that methods give
-        you_?  Here, we're simply looking up the toy's shape inside the block.  O bloco então responde para o @sort_by@
-        uma frase contendo o formato, algo como @"rato"@ ou @"meia"@.  Once it's done cycling through the whole list, @sort_by@
-        will have alphabetically compared each of the shape strings and will give back a new sorted Array."
+        you_?  Aqui, nós estamos apenas olhando a forma do brinquedo dentro do bloco.  O bloco então responde para o @sort_by@
+        uma frase contendo o formato, algo como @"rato"@ ou @"meia"@.  Uma vez que ele passe por toda a lista, o @sort_by@
+        terá comparado alfabéticamente o texto de cada forma e vai retornar um novo conjuntom, agora ordenado."
 
 
         h3.  Uma Lição Inacabada
@@ -251,21 +250,21 @@
         "Tá bom por hoje," disse o Blix.  "Que tal um pires de leite fresco, por favor?"
 
 
-        Eu enchi o I filled his saucer to the brim and he guzzled from it for some time while I took a poker and
-        jabbed at coals in the fireplace.  My mind wandered and I couldn't help but think further of
-        blocks.  I wondered what I would teach Blix next.
+        Eu enchi o pires dele até a borda e ele se daquilo por algum tempo enquanto im and he guzzled from it for some time while I took a poker and
+        jabbed at coals in the fireplace.  Minha mente vagou e eu nao pude não pensar mais sobre blocos.
+        Eu pensei no que ensinar pro Blix em seguida.
 
 
         Eu provavelmente o teria ensinado sobre @next@.  Quando você esta interando uma lista, você
-        pode usar @next@ para *pular para o próximo item*.  Here we're counting toys that have a non-bolinho-primavera
-        shape by skipping those that do with @next@.
+        pode usar @next@ para *pular para o próximo item*.  Aqui estamos contando brinquedos que não tenham
+        a forma de bolinho-primavera pulando eles com @next@.
 
 
         <pre>
-         non_bolinho-primavera = 0
+         nao_e_bolinho_primavera = 0
          brinquedos_do_gatinho.each do |brinquedo|
            next if brinquedo[:formato] == 'bolinho-primavera'
-           non_bolinho-primavera = non_bolinho-primavera + 1
+           nao_e_bolinho_primavera = nao_e_bolinho_primavera + 1
          end
         </pre>
 
@@ -283,20 +282,19 @@
         </pre>
 
 
-        Eu nunca cheguei a ensinar a ele essas coisas.  I continued poking away at a particularly stubborn coal
-        which was caught in the iron curtain of the fireplace and threatened to drop on my antelope
-        skin rug.  
+        Eu nunca cheguei a ensinar a ele essas coisas. Eu continuei viajando num pedaço de lenha em particular
+        que acabou preso na proteção da lareira e quase que cai no meu tapete de pele de antílope.
+        
+
+        Assim que me esquivei ferozmente daquela pedra negra, Blix sumiu, presumo que pro
+        ônibus para Wixl, a capital ecômica dos animais.  Quem sabe, ele pode ter parado
+        em Ambrose ou Riathna ou qualquer outra vila pelo caminho.  Meu instinto me diz
+        que Wixl era definitivamente sua última parada. 
 
 
-        As I hacked away ferociously at the black stone, Blix slipped away, presumably on
-        the bus bound for Wixl, the very bustling metropolis of the animal economies.  Who knows, he may
-        have first stopped in Ambrose or Riathna or any of the other villages along the way.  My
-        instinct say that Wixl was his definitely his final stop. 
-
-
-        Sem nenhum estudante para instruirtudent to instruct and coax along, I found myself quite lonely, holed up in
-        the estate.  In the stillness of the dead corridors, I began to sketch out a biography in the 
-        form of this guide.
+        Sem nenhum estudante para instruir ou prosear, me encontrei sozinho, enfurnado em casa.
+        Na quietude dos corredores mortos, eu comecei a rascunhar uma bioagrafia na 
+        forma deste guia.
 
 
         Eu trabalhei nisso sempre que me sentia entendiado. E quando não estava entendiado, eu ia assistir
