@@ -1,5 +1,5 @@
     - >
-        h3. But Was He Sick??
+        h3. Mas Ele Era Doente??
 
 
         You know, he had such bad timing.  He was scattered as a novelist, but his ventures into alchemy
@@ -13,11 +13,11 @@
         Really.  She did an article on him.  Gave him a rating.
 
 
-        Just know that Dr. N. Harold Cham felt terrible about his niece.  He felt the shock treatment
-        would work.  The polio probably would have killed her anyway, but he took the chance.
+        Mas saiba que o Dr. N. Harold Cham se sentia muito mal com relação à sua sobrinha.  Ele acreditou que o tratamento
+        de choque funcionaria.  A polio a teria matado de qualquer jeito, mas ele tentou.
 
 
-        On Sept. 9, 1941, after sedating her with a dose of phenacetin in his private operating room, he attached
+        Em 9 de Setembro de 1941, depois de sedá-la como uma dose de phenacetin na sua sala de operações, he attached
         the conducting clips to Hannah's nose, tongue, toes, and elbows.  Assisted by his apprentice, a bespeckled
         undergraduate named Marvin Holyoake, they sprinkled the girl with the flakes of a substance the doctor
         called _opus magnum_.  A white powder gold which would carry the current and blatantly energize the girl,
@@ -36,21 +36,21 @@
 
         <pre>
          opus_magnum = true
-         def save_hannah
-           success = opus_magnum
+         def salve_hannah
+           sucesso = opus_magnum
          end
         </pre>
 
 
-        A method is its own island.  And what goes on inside is unaffected by the simple variables around it.
-        Dr. Cham couldn't breach the illness of his niece, no more than an @opus_magnum@ variable can penetrate
-        the steely exterior of a method.
+        Um método na sua ilha.  E oque vai dentro não é afetado por simples váriaveis externas.
+        O Dr. Cham não podia penetrar na doença da sua sobrinha assim como uma variável @opus_magnum@
+        não pode penetrar o fechado método.
 
 
-        Should we run the @save_hannah@ method, Ruby will squawk at us, claiming it sees no @opus_magnum@.
+        Se rodarmos o método @salve_hannah@, o Ruby vai gritar com a gente, alegando que não sabe de @opus_magnum@ nenhuma.
 
 
-        I'm talking about *scope*.  Microscopes narrow and magnify your vision.  Telescopes extend the
+        Eu tô falando sobre *foco*.  Microscopes narrow and magnify your vision.  Telescopes extend the
         range of your vision.  In Ruby, *scope* refers to a field of vision inside methods and blocks.
 
 
@@ -60,38 +60,38 @@
         the method are only good for its scope.
 
 
-        Some variables have wider scope.  Global variables like @$LOAD_PATH@, which start with a *cash*
-        symbol, are available in any scope.  Instance variables like @@names@, which start with an *at*
-        are available anywhere inside a class scope.  Same goes for class variables like @@@tickets@.
-        Class and instance variables will be explored in a moment.
+        Algumas váriveis tem um foco mais amplo.  Variáveis globais, como @$LOAD_PATH@, que começam com um *cifrão*
+        estão disponíveis sob qualquer foco.  Variáveis de instância como @@nomes@, que começam com uma *arroba*
+        estão disponíveis em todo lugar dentro do foco da classe.  A mesma coisa serve para variáveis de classe como @@@ingressos@.
+        Variáveis de classe e de instância serão exploradas em breve.
 
 
-        Blocks have scope, but it's a bit fuzzier.  More flexible.
+        Blocos tem foco, mas um foco mais embaçado.  Mais flexível.
 
 
         <pre>
-         verb = 'rescued'
-         ['sedated', 'sprinkled', 'electrocuted'].
-         each do |verb|
-           puts "Dr. Cham " + verb + " his niece Hannah."
+         verbo = 'resgatou'
+         ['sedou', 'sprinkled', 'eletrocutou'].
+         each do |verbo|
+           puts "O Dr. Cham " + verbo + " sua sobinha Hannah."
          end
-         puts "Yes, Dr. Cham " + verb + " his niece Hannah."
+         puts "Sim, o Dr. Cham " + verbo + " sua sobrinha Hannah."
         </pre>
 
 
-        The block _iterates_ (spins, cycles) through each of the Doctor's actions.  The @verb@ variable
-        changes with each pass.  In one pass, he's sedating.  In the next, he's powdering.  Then, he's
-        electrocuting.
+        O bloco _iterage_ (circunda, revolve) pelas ações do Doutor.  A variável @verbo@
+        muda em cada passagem.  Em uma passagem, ele a está sedando.  Na próxima, ele a está queimando.  
+        E aí, eletrocutando.
 
 
-        So, the question is: after the block's over, will he have rescued Hannah?
+        Então, a questão é: após o término do bloco, terá ele resgatado a Hannah?
 
 
         <pre class="result">
-         Dr. Cham sedated his niece Hannah.
-         Dr. Cham sprinkled his niece Hannah.
-         Dr. Cham electrocuted his niece Hannah.
-         Yes, Dr. Cham electrocuted his niece Hannah.
+         O Dr. Cham sedated sua sobrinha Hannah.
+         O Dr. Cham sprinkled sua sobrinha Hannah.
+         O Dr. Cham electrocuted sua sobrinha Hannah.
+         Yes, o Dr. Cham electrocuted sua sobrinha Hannah.
         </pre>
 
 
@@ -106,15 +106,15 @@
 
 
         <pre>
-         ['sedated', 'powdered', 'electrocuted'].
-         each do |verb|
-           puts "Dr. Cham " + verb + " his niece Hannah."
+         ['sedou', 'queimou', 'eletrocutou'].
+         each do |verbo|
+           puts "O Dr. Cham " + verbo + " sua sobrinha Hannah."
          end
-         puts "Yes, Dr. Cham " + verb + " his niece Hannah."
+         puts "Sim, O Dr. Cham " + verbo + " sua sobrinha Hannah."
         </pre>
 
 
-        Pulls an error: @undefined local variable or method `verb'@.  Poof.
+        Dá um erro: @undefined local variable or method `verbo'@.  Poof.
 
 
         It must be something difficult, even for a great scientist, to carry away the corpse of a young girl
@@ -137,9 +137,9 @@
         !i/dr.cham-2.gif(Safe landing.  Amazement.)!
 
 
-        What you are witnessing is the landing of Dr. Cham on the planet Endertromb.  From what I
-        can gather, he landed during the cusp of the Desolate Season, a time when there really isn't
-        much happening on the planet.  Most of the inhabitants find their minds locked into a listless
+        Oque você esta testemunhando é o pouso do Dr. Cham no planeta Endertromb.  Do que eu pude
+        perceber, ele pousou no meio de uma estação desolada, quando não tem muita coisa acontecendo
+        no planeta.  A maioria dos habitantes Most of the inhabitants find their minds locked into a listless
         hum which causes them to disintegrate into just vapid ghosts of one-part-wisdom and three-parts-steam
         for a time.
 
