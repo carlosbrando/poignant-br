@@ -9,7 +9,7 @@
         das vozes talentosas não autoritárias.
 
 
-        Okay, eu preciso que você preste atenção nos comandos @def@ , @case@ e @when@.  Você já viu períodos (Ranges), os
+        Ok, eu preciso que você preste atenção nos comandos @def@ , @case@ e @when@.  Você já viu Ranges (Períodos), os
         acordiões fechados @1895..1913@, no capítulo 3.  Eles contém as pontas e todos os números entre.  E as barras
         no fim de cada linha simplesmente ignoram o _Enter_, assegurando ao Ruby que _há mais linhas por vir_.
         
@@ -60,9 +60,9 @@
 
 
         Que por sua vez responde "Aqui as coisas começam a ficar interessantes."  É sempre a mesma história:
-        _use suas respostas._  Eu fiz as coisas ali de tal modo que o @case@ sempre responderá com uma frase (String).
+        _use suas respostas._  Eu fiz as coisas ali de tal modo que o @case@ sempre responderá com uma String.
         E já que o case é o último (e único) comando no método, então o método
-        responderá aquela frase.  Trickling water spilling down from ledge to ledge.
+        responderá aquela String.  Trickling water spilling down from ledge to ledge.
 
 
         Deixe me ser mais claro sobre a condição @case@.  Na verdade, eu deveria chamá-la de @case..when@,
@@ -100,7 +100,7 @@
 
         Os *três iguais (===)* são o comprimento da corda de veludo, checando valores como assim como dois iguais (==).  
         Resumindo: os três iguais são uma corda maior e ela folga um pouco no meio.  Não é tão tensionada, é um pouco mais
-        flexível.
+        maleável.
 
 
         Veja os períodos assim:  @(1895..1913)@ não é nem um pouco *igual* a @1905@.  Não, o período @(1895..1913)@ só é

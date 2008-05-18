@@ -16,7 +16,7 @@
 
 
         Mas não se engane.  Eu sinto falta dele por perto.  Não sei se ele sente falta da minha companhia, mas
-        eu sindo a dele.
+        eu sinto a dele.
 
 
         h3. Uma Sirene e Uma Oração
@@ -37,43 +37,41 @@
         O show basicamente girava em torno deste policial.  Dick Robinson "O Doidão".  As Pessoas o
         chamavam de "O Doidão" porque basicamente ele era insano. Não me lembro se isso foi diagnosticado
         clinicamente, mas as pessoas sempre questionavam suas decisões.  O Doidão regularmente estourava e
-        mordia alguns policiais, a maioria sendo personagens de moral inquestionável.  Mas todos
+        mordia alguns policiais, a maioria deles personagens de moral inquestionável.  Mas todos
         sabemos que esse é um mundo cão, as apostas são altas, e todos que assistiam ao seriado
         tinham O Doião com grande estima.  Eu penso que todos no esquadrão cresceram bastante como pessoas,
         graças à determinação do Doidão.
 
 
         Todavia, os policiais não conseguiam dar conta do serviço por si mesmos. Em cada um dos episódios eles
-        imploravam greater force for assistance.  E, em cada um dos episódios, eles conseguiam ajudas de um gato
+        imploravam por uma ajuda maior.  E, em cada um dos episódios, eles conseguiam ajuda de um gato
         chamdo Terry (encenado pelo meu gato Blix).  Ele era apenas um gatinho na época, e como um garoto novo
-        ávido por _Uma Sirene e Uma Oração_, me encontrei na busca do meu próprio gato solucionador-de-crimes.
-        Terry levava aqueles caras por túneis subterrâneos, marinas abandonadas, altos galpões industriais.
-        the rotting stinto backdoors of tall, industrial smokestacks.  
+        ávido por _Uma Sirene e Uma Oração_, me encontrei na busca do meu próprio gato-solucionador-de-crimes.
+        Terry levava aqueles caras por túneis subterrâneos, marinas abandonadas, imensos galpões industriais.
 
 
-        Sometimes he was all over an episode, darting in and out, preparing traps and directing traffic.
-        But other times you wouldn't see him the whole episode.  Then you'd rewind through the whole show
-        and look and look and look.  You'd give up.  He can't be in that episode.  
+        Algumas vezes ele aparecia o episódio inteiro, indo e vindo, fazendo armadilhas e controlando o trânsito.
+        Mas outras vezes você quase não o via no episódio.  Então você rebobinava e assistia e assistia
+        e assistia.  Você desistia.  Ele não estava naquele episódio.  
 
 
-        Still, you can't bear
-        to let it go, so you go comb through the whole episode with the jog on your remote, combing, pouring
-        over each scene.  And there he is.  Way up behind the floodlight that was turned up too high.  The
-        one that left Mad with permanent eye damage.  Why?  Why burn out the retinas of your own colleague,
+        Ainda assim, você nao desistia, você ia quadro por quadro com o jog do controle, analisando cada cena.
+        E esteva lá.  Way up behind the floodlight that was turned up too high.  The
+        one that left Mad with permanent eye damage.  Por quê?  Por quê queimar as retinas do seu companheiro,
         Terry?
 
 
-        Mas a pergunta nunca foi respondida pois a série foi cancelada. They started to do special
-        effects with the cat and it all fell apart.  In the last episode of the show, there is a moment where
-        Terry is trapped at the top of a crane, about to fall into the searing slag in the furnace of an
-        iron smelt.  He looks back.  No going back.  He looks down.  Paws over eyes (_no joke!_), he
-        leaps from the crane and, mid-flight, snags a rope and swings to safety, coming down on a soft antelope
+        Mas a pergunta nunca foi respondida pois a série foi cancelada. Eles começaram a fazer efeitos especiais
+        com o gato e tudo foi por água abaixo.  No último episódio, houve um momento em que
+        Terry estava preso em cima de um guindaste, preste a cair na fornalha de uma fundição de ferro.
+        Ele olha pra trás.  Não dá pra voltar.  Ele olha pra baixo.  Tapa os olhos com as patas (_sério!_), ele puta
+        do guindates e, no meio do vôo, agarra uma corda e se salva, coming down on a soft antelope
         hide that one of the workers had presumably been tanning that afternoon.
 
 
-        People switched off the television set the very moment the scene aired.  They tried changing the name.
-        First it was _God Gave Us a Squad_.  _Kiss of Pain_.  Then, _Kiss of Pain in Maine_, since the
-        entire precinct ended up relocating there.  But the magic was gone.  I went back to summer school that year
+        As pessoas desligavam a televisão na hora que o seriado ia ao ar. Tentaram mudar o nome.
+        Primeiro foi _Deus nos Deu um Esquadrão_.  _Beijo de Dor_.  Then, _Beijo de Dor em Maine_, já que o
+        distrito inteiro acabou se mudando pra lá.  Mas a mágica se fora.  I went back to summer school that year
         to make up some classes and all the kids had pretty much moved on to football pencils.
 
         
@@ -93,14 +91,14 @@
         "Eles não são difíceis", eu disse.  "Um *bloco* é apenas *código agrupado*."
 
 
-        "E o Doidão era apenas um policial, que jurou cumprir seu dever," ele disse.  "But he was a real miracle to
-        watch out in the field.  Now, this first example you've shown me..."  He pointed to an
-        example I'd written down for him.
+        "E o Doidão era apenas um policial, que jurou cumprir seu dever," ele disse.  "Mas ele era um verdadeiro
+        milagre ambulante.  E agora, este primeiro exemplo que você me mostrou..."  Ele aponta um exemplo
+        que eu havia escrito.
 
         
         <pre>
          brinquedos_do_gatinho =
-           [:formato => 'sock', :material => 'cashmere'] +
+           [:formato => 'meia', :material => 'caximira'] +
            [:formato => 'mouse', :material => 'calico'] +
            [:formato => 'bolinho-primavera', :material => 'chenille']
          brinquedos_do_gatinho.sort_by { |brinquedo| brinquedo[:material] }
@@ -112,41 +110,41 @@
 
 
         "Peço desculpas se a sua lista de brinquedos parece um pouco complicada," eu disse. Assim como você, ele já
-        havia aprendido sobre conjunto (Array), a centopéia caida no código, colchetes de cada lado
+        havia aprendido sobre Array, a centopéia caida no código, colchetes de cada lado
         e cada item separado por vírgulas.  (Ah, aqui está uma: @['meia', 'rato', 'bolinho-primavera']@.) 
-        He had also been taught the Hash, which is like a dictionary, with curly braces on each end
-        which look like small, open books.  Commas in the Hash between each pair.  Each word
-        in the dictionary matched up with its definition by an arrow.  (Be beholden: @{'blix' => 'cat',
-        'why' => 'human'}@.)
+        Ele também sabia sobre a Hash, que é como um dicionário, com chaves de cada lado
+        que parecem livrinhos abertos.  Vírgulas na Hash entre cada par.  Cada palavra
+        no dicionário encontra seu par por uma seta.  (Estupefa-se: @{'blix' => 'gato',
+        'why' => 'humano'}@.)
         
 
-        "Yes, vexing," he said.  "It has square brackets like it's an Array, but with the arrows like it's a Hash.
-        I don't think you're going to get away with that."
+        "Sim, pertubante," ele disse.  "Isso tem colchetes como se fosse Array, mas com as setas é uma Hash.
+        Você vai ter que explicar isso."
 
 
-        "It does seem a bit subversive, doesn't it?"  I said, tease-nudging him with a spoon.  "Eu fiz sua lista de brinquedos
-        misturando os dois.  Estou usando um atalho.  Que é: *Se você usar a seta (=>) dentro de um Conjunto, 
-        você terá uma Mistura invés de um Conjunto.*"
+        "Subversivo ele, não?"  Eu disse, cutucando ele com uma colher.  "Eu fiz sua lista de brinquedos
+        misturando os dois.  Estou usando um atalho.  Que é: *Se você usar a seta (=>) dentro de um Array, 
+        você terá uma Hash invés de um Array.*"
 
 
         "Ah, entendi," ele disse.  "Você cruzou eles.  Que bacana!"
 
 
-        "Sim, sim, você tá entendendo," eu disse.  Ele era muito bom com um transferidor também.  "Eu tenho três conjuntos (Arrays),
-        cada contém uma Mistura (Hash). Notou o sinal de mais?  Eu os estou adicionando num conjunto maior. Aqui
+        "Sim, sim, você tá entendendo," eu disse.  Ele era muito bom com um transferidor também.  "Eu tenho três Arrays,
+        cada contém uma Hash. Notou o sinal de mais?  Eu os estou adicionando num Array maior. Aqui
         está outro jeito de escrever isto..."  Eu rabisquei.
 
 
         <pre>
          brinquedos_do_gatinho = [
-           {:formato => 'meia', :material => 'cashmere'},
+           {:formato => 'meia', :material => 'caximira'},
            {:formato => 'rato', :material => 'calico'},
            {:formato => 'bolinho-primavera', :material => 'chenille'}
          ]
         </pre>
 
 
-        Um conjunto (Array), que age como uma lista de brinquedos de mastigar.  Três Bolos|Misturas (Hashes) estão no conjunto descrevendo
+        Um Array, que age como uma lista de brinquedos de mastigar.  Três Hashes estão no Array descrevendo
         cada brinquedo.
 
 
@@ -163,16 +161,16 @@
         </pre>
 
 
-        "Como @sort_by@ funciona?" perguntou Blix.  "Eu sei que é um método que você pode usar com conjuntos (Arrays).  Pois
-        @brinquedos_do_gatinho@ é um conjunto (Array).  Mas e quanto a @brinquedo@?"
+        "Como @sort_by@ funciona?" perguntou Blix.  "Eu sei que é um método que você pode usar com Arrays.  Pois
+        @brinquedos_do_gatinho@ é um Array.  Mas e quanto a @brinquedo@?"
 
 
         "Okay, @brinquedo@ is a *argumento do bloco*," Eu disse.  "Lembre-se: os corrimãos magrelos de cada lado do @brinquedo@ fazem dele
         um *escorrega*."
 
 
-        "Claro, mas parece que você o está usando como Mistura (Hash). Dentro do bloco vc tem @brinquedo[:formato]@.
-        Isto se parece com uma Mistura."
+        "Claro, mas parece que você o está usando como Hash. Dentro do bloco vc tem @brinquedo[:formato]@.
+        Isto se parece com uma Hash."
 
 
         "O método @sort_by@ é um *iterador*, Blix.  Ele *iterage*, ou *faz o ciclo*, com a *lista de coisas*.  Você
@@ -241,7 +239,7 @@
         "Correto," eu disse.  "You know how I've really been harping on _using the answers that methods give
         you_?  Aqui, nós estamos apenas olhando a forma do brinquedo dentro do bloco.  O bloco então responde para o @sort_by@
         uma frase contendo o formato, algo como @"rato"@ ou @"meia"@.  Uma vez que ele passe por toda a lista, o @sort_by@
-        terá comparado alfabéticamente o texto de cada forma e vai retornar um novo conjuntom, agora ordenado."
+        terá comparado alfabéticamente o texto de cada forma e vai retornar um novo Array, agora ordenado."
 
 
         h3.  Uma Lição Inacabada
@@ -250,7 +248,7 @@
         "Tá bom por hoje," disse o Blix.  "Que tal um pires de leite fresco, por favor?"
 
 
-        Eu enchi o pires dele até a borda e ele se daquilo por algum tempo enquanto im and he guzzled from it for some time while I took a poker and
+        Eu enchi o pires dele até a borda e ele se esbaldou daquilo por algum tempo enquanto while I took a poker and
         jabbed at coals in the fireplace.  Minha mente vagou e eu nao pude não pensar mais sobre blocos.
         Eu pensei no que ensinar pro Blix em seguida.
 
