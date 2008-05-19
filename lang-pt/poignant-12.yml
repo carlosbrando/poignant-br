@@ -1,55 +1,55 @@
-    - The Red Sun Rises: >
+    - Nasce o sol vermelho: >
 
-        So, now you're wondering why I changed my mind about Ruby.  The quick answer is:
-        we clicked.
-
-
-        Like when you meet Somebody in college and they look like somebody who
-        used to hit you in the face with paintbrushes when you were a kid.  And so, impulsively,
-        you conclude that this new Somebody is likely a non-friend.  You wince at their
-        hair.  You hang up phones loudly during crucial moments in their anecdotes.  You use
-        your pogo stick right there where they are trying to walk!
+        Então, agora você está se perguntando porque eu mudei de idéia em relação ao Ruby.  A resposta rápida é:
+        rolou química.
 
 
-        Six months later, somehow, you and Somebody are sitting at a fountain having a perfectly good
-        chat.  Their face doesn't look so much like that childhood nemesis.  You've met
-        the Good Twin.  You clicked.
+        Como quando você encontra alguém na faculdade e ela parece com alguém que 
+        costumava bater na sua cara com um pincel quando você era criança.  E então, impulsivamente,
+        você conclui que esse novo alguém é provavelmente seu hostil.  Você faz careta quando vê o cabelo
+        dela.  Você desliga o telefone bruscamente nos momentos cruciais das piadas dela.  Você resolve
+        usar seu pula-pula bem onde ela está querendo caminhar!
 
 
-        So whereas I should probably be pounding your teeth in with hype about Ruby and the
-        tightly-knit cadre of pertinent ancronyms that accompany it everywhere 
-        (whetting the collective whistles of
-        your bosses and their bosses' bosses), instead I will just let you coast.  I'll let
-        you freefall through some code, interjecting occassionally with my own heartfelt
-        experiences.  It'll be quite easy, quite natural.
+        Seis meses depois, de alguma forma, você e alguém estão sentados a beira de uma fonte tendo
+        uma conversa perfeitamente normal.  A face dela não lembra mais seu nemesis infantil.  Você conheceu
+        o gêmeo bom.  Rolou química.
 
 
-        I should offer you some sort of motivation, though.  So, Smotchkkiss, I'm going to give my three
-        best reasons to learn Ruby and be done with it.
+        Logo, apesar de que eu provavelmente devesse estar martelando seus dentes com todo o hype sobre Ruby
+        e todos os minuciosamente preparados acrônimos que a acompanham para todo lugar
+        (afiando as gargantas dos seus chefes e dos chefes do seus chefes), 
+        em vez disso eu vou te deixar velejar.  Vou deixar você
+        em mergulhar no código, me intrometendo ocasionalmente com minhas próprias experiências.
+        Vai ser bem fácil, bem natural.
 
 
-        # *Brain health.* <p>Vitamin R.  Goes straight to the head.  Ruby will
-        teach you to _express_ your ideas through a computer.  You will be writing
-        stories for a machine.</p> <p>Creative skills, people.  Deduction.  Reason.  Nodding intelligently.
-        The language will become a tool for you to better connect your mind to the world.
-        I've noticed that many experienced users of Ruby seem to be clear thinkers and
-        objective.  (In contrast to: heavily biased and coarse.)</p>
+        Eu devia, entretanto, te oferecer alguma espécie de motivação.  Então, Smotchkkiss, eu vou lhe dar minhas três
+        melhores razões para aprender ruby e te deixar em paz.
+
+
+        # *Saúde menta.* <p>Vitamina R.  Vai direto pra cabeça.  Ruby vai te ensinar a
+        _expressar_ suas idéias através de um computador.  Você vai estar escrevendo
+        estórias para uma máquina.</p> <p>Habilidades criativas, gente.  Dedução.  Razão.  Acenar com a cabeça inteligentemente.
+        A linguagem vai se tornar uma ferramenta para melhorar a comunicação entre sua mente e o mundo.
+        Eu notei que muitos usuários experientes de Ruby parecem pensadores mais claros e
+        objetivos.  (Em contraste a: altamente preconceituoso e grosseiro.)</p>
         
-        # *One man on one island.* <p>Ruby was born in Japan.  Which is freaky.  Japan is not known
-        for its software.  And since programming languages are largely written in English, who
-        would suspect a language to come from Japan?</p> <p>And yet, here we have Ruby.  Against the odds,
-        Yukihiro Matsumoto created Ruby on February 24, 1993.  For the past ten years, he has steadily
-        brought Ruby to a global audience.  It's triumphant and noble and all that.  Support diversity.
-        Help us tilt the earth just a bit.</p>
+        # *Um homem em uma ilha.* <p>Ruby nasceu no Japão.  O que é bizarro.  O Japão não é conhecido
+        por seu software.  E como linguagens de programação são largamente escritas em inglês, quem
+        iria imaginar uma linguagem vinda do Japão?</p> <p>E ainda assim, aqui temos Ruby.  Contra todas as adversidades,
+        Yukihiro Matsumoto criou Ruby em 24 de Fevereiro de 1993.  Pelos últimos dez anos, ele tem obstinadamente
+        trazido Ruby para uma audiência global.  É triunfante, nobre e tudo mais.  Apóie a diversidade.
+        Nos ajude a dobrar a Terra, só um pouquinho.</p>
 
-        # *Free.* <p>Using Ruby costs nothing.  The code to Ruby itself is open for all of the world
-        to inhale/exhale.  Heck, this book is free.  It's all part of a great, big giveaway that should
-        have some big hitch to it.</p> <p>You'd think we'd make you buy vacuums or timeshare or fake Monets.
-        You'd think there'd be a 90 minute presentation where the owner of the company comes out at
-        the end and knuckles you into sealing the deal.</p> <p>Nope, free.</p>
+        # *Gratís.* <p>Usar Ruby não custa nada.  O código do próprio Ruby está aberto para todo o mundo
+        inspirar/expirar.  Até esse livro é de graça.  É tudo parte de uma enorme doação que deveria
+        ter alguma venda casada junto.</p> <p>Você poderia pensar que nós faríamos você comprar aspiradores-de-pó
+        ou tempo de uso, ou falsos Monet. Você poderia pensar que haveria uma palestra de 90 minutos onde o dono 
+        da empresa aparece no final e força você a fechar negócio.</p> <p>Não, é grátis.</p>
 
 
-        With that, it's time for the book to begin.  You can now get out your highlighter and start dragging
-        it along each captivating word from this sentence on.  I think I have enough hairspray and
-        funny money on my person to keep me sustained until the final page.
+        Com isso, é hora do livro começar.  Você pode pegar seu marca-texto e começar a arrastá-lo
+        sobre cada palavra cativante a partir desta sentença.  Eu acho que tenho spray de cabelo e dinheiro 
+        de brinquedo o suficiente comigo para me sustentar até a página final.
 
