@@ -1,12 +1,12 @@
     - !^sidebar
-      Get Ahead with The Tiger's Vest: >
+      Saia na frente com A Roupa do Tigre: >
 
         !i/ad-tiger.gif!:expansion-pak-1.html
 
 
-        Want to start using Ruby alongside your reading?  Split your attention and head off to
-        "Expansion Pak I: The Tiger's Vest":expansion-pak-1.html, a trite mini-chapter which
-        will aid you in installing Ruby.  In addition, you'll learn how to use Irb and Ri, two
-        teaching aids that come with Ruby which will really speed you up in your learning.
+        Quer começar a usar o Ruby junto com a leitura?  Divida sua atenção e veja o
+        "Pacote de Expansão I: A Roupa do Tigre":expansion-pak-1.html, um mini-capítulo usual
+        que vai te ajudar a instalar o Ruby.  E ainda, aprender como usar Irb e Ri, dois
+        modos de ajuda que vem com o Ruby e irão agilizar seu aprendizado.
 
 
