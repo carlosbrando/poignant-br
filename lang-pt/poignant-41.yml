@@ -10,7 +10,7 @@
 
 
         Um jornal local uma vez visitou o Dr. Cham.  A crítica literária deles deu a ele quatro estrelas.
-        Sério.  Ela fez um artigo sobre ele.  Ela o classificou.
+        Sério.  Ela fez um artigo sobre ele.  Ela deu uma nota.
 
 
         Mas saiba que o Dr. N. Harold Cham se sentia muito mal com relação à sua sobrinha.  Ele acreditou que o tratamento
@@ -20,15 +20,15 @@
         Em 9 de Setembro de 1941, depois de sedá-la como uma dose de phenacetin na sua sala de operações, ele colocou
         os clips condutores no nariz, língua, dedos e ombros de Hannah.  Com a ajuda de seu aprendiz, um estudante
         perspicaz chamado Marvin Holyoake, eles polvilharam a garota com flocos de uma substância que o doutor
-        chamou de _opus magnum_.   white powder gold which would carry the current and blatantly energize the girl,
-        forcing her blood to bloom and fight and vanquish.
+        chamou de _opus magnum_. Um pó de ouro branco que levaria a corrente e evidentemente energizaria a menina,
+        forçando seu sangue a aflorar e lutar e vencer.
         
 
         Mas aquilo não deu muito certo, quando a alavanca foi puxada, ela se debateu e chutou -- e 
-        *KABLAM!* -- e *BLOY-OY-OY-KKPOY!*  Ringlets of hair and a wall of light, and the 
-        bell of death rang.  The experiment collapsed in a dire plume of
-        smoke and her innocence (_for weeks, everyone started out with, "Ela nunca vai ter
-        a chance de..."_) was a great pit in the floor and in their lungs.
+        *KABLAM!* -- e *BLOY-OY-OY-KKPOY!*  Anéis de cabelo e uma parede de luz, e o sino 
+        da morte tocou.  A experiência sucumbiu em uma estreita pluma de fumaça
+        e a inocência dela (_durante semas, todo mundo só falava, "Ela nunca vai ter
+        a chance de..."_) foi um rombo no chão e nos pulmões deles.
 
 
         Para Hannah, eu programo.
@@ -42,7 +42,7 @@
         </pre>
 
 
-        Um método na sua ilha.  E oque vai dentro não é afetado por simples váriaveis externas.
+        Um método na sua ilha.  E o que vai dentro não é afetado por simples váriaveis externas.
         O Dr. Cham não podia penetrar na doença da sua sobrinha assim como uma variável @opus_magnum@
         não pode penetrar o fechado método.
 
@@ -66,7 +66,7 @@
         Variáveis de classe e de instância serão exploradas em breve.
 
 
-        Blocos tem foco, mas um foco mais embaçado.  Mais flexível.
+        Blocos tem foco, mas um foco mais difuso.  Mais flexível.
 
 
         <pre>
@@ -96,7 +96,7 @@
 
 
         Os blocos podem ver variáveis da vizinhança.  O bloco viu que a variável @verbo@ existia,
-        ele reescreveu oque ela continha e continuou.  Quando o bloco acabou e sua pequena vida 
+        ele reescreveu o que ela continha e continuou.  Quando o bloco acabou e sua pequena vida 
         se esvaiu, a variável @verbo@ saiu de lá uma outra criatura.
 
 
@@ -114,38 +114,39 @@
         </pre>
 
 
-        Dá um erro: @undefined local variable or method `verbo'@.  Poof.
+        Dá um erro: @undefined local variable or method 'verbo'@.  Poof.
+        (Método ou variável local 'verbo' não definido.)
 
 
-        It must be something difficult, even for a great scientist, to carry away the corpse of a young girl
-        whose dress is still starched and embroidered, but whose mouth is darkly clotted purple at the corners.  
-        In Dr. Cham's journal, he writes that he was tormented by her ghost, which glistened gold and scorched
+        Deve ser difícil, mesmo para um grande cientista, sumir com o corpo de uma garotinha
+        cujo vestido dress is still starched and embroidered, but whose mouth is darkly clotted purple at the corners.  
+        No jornal do Dr. Cham, ele relata que fora atormentado pelo fantasma dela, que reluzia ouwhich glistened gold and scorched
         lace.  His delusions grew and he ran from hellhounds and massive vengeful, angelic hands.
 
 
-        Only weeks later, he was gone, propelled from these regrets, vanishing in the explosion 
-        that lifted him from the planet.
+        Somente semanas mais tarde, ele foi embora, impulsionado desses arrependimentos, sumindo na 
+        explosão que o levaria pra fora do planeta.
 
 
-        And even as you are reading this now, sometime in these moments, the bell jar craft of our
-        lone Dr. Cham touched down upon a distant planet after a sixty year burn.  
+        E até enquanto você lê isso agora, em algum momento, a jarra em formato de sinod o nosso
+        solitário Dr. Cham pousou num distante planeta planet after a sixty year burn.  
         As the new world came into view, as the curvature of the planet widened, 
         as the bell jar whisked through the upset heavens, tearing through sheets of aurora and
-        solar wind, Dr. Cham's eyes were shaken open.
+        solar wind, Dr. Chams eyes were shaken open.
 
 
-        !i/dr.cham-2.gif(Safe landing.  Amazement.)!
+        !i/dr.cham-2.gif(Pouso seguro.  Amazement.)!
 
 
-        Oque você esta testemunhando é o pouso do Dr. Cham no planeta Endertromb.  Do que eu pude
+        O que você esta testemunhando é o pouso do Dr. Cham no planeta Endertromb.  Do que eu pude
         perceber, ele pousou no meio de uma estação desolada, quando não tem muita coisa acontecendo
         no planeta.  A maioria dos habitantes Most of the inhabitants find their minds locked into a listless
         hum which causes them to disintegrate into just vapid ghosts of one-part-wisdom and three-parts-steam
         for a time.
 
 
-        My modest grasp of the history and climate of Endertromb has been assembled from hanging around
-        my daughter's organ instructor, who grew up on the planet.
+        Meu modesto conhecimento sobre a história e clima de Endertromb foi adquirido de andar
+        com o professor de piano da minha filha, que nasceu lá.
 
 
         !i/elderly-3.gif(Dead husbands could destroy the Doctor.)!
@@ -158,9 +159,9 @@
         which will last into 2060.
 
         
-        For three days (by his pocket watch's account), Dr. Cham travelled the dark shafts of air,
-        sucking the dusty wind of the barren planet.
-        But on the third day, he found the Desolate Season ending and he awoke to a brilliant vista, 
+        Por três dias (de acordo com seu relógio de bolso), o Dr. Cham viajou nas escuras passagens de ar,
+        respirando o vento empoeirado daquele planeta inóspito.
+        Mas no terceiro dia, he found the Desolate Season ending and he awoke to a brilliant vista, 
         decorated with spontaneous apple blossoms and dewy castle tiers.
 
 
