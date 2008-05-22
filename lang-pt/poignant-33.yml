@@ -27,13 +27,13 @@
         Que são ditas toda hora.
 
 
-        Vamos disfarçar estes termos bobos, meu irmãor.  Let us obscure them from itching eyes that
-        cry to know our delicate schemes and to thwart us from having great pleasure and many go-carts.
+        Vamos disfarçar estes termos bobos, meu irmão.  Vamos ofuscá-los de olhos comichantes que
+        choram para saber nossos delicados planos e para nos impedir de ter grande prazer e muitos karts.
         Vamos trocá-los por linguagem inocente.  Novas palavras com significado secreto.
 
 
-        Eu comecei uma lista de palavras, uma @Hash@ do Ruby, que contém these oft seen and dangerous words of yours.
-        Na Hash, cada palavra perigosa eh comparada contra uma palavra código (ou frase).  A palavra código então
+        Eu comecei uma lista de palavras, uma @Hash@ do Ruby, que contém estas suas palavras tão freqüentes e perigosas.
+        Na Hash, cada palavra perigosa é comparada contra uma palavra código (ou frase).  A palavra código então
         será trocada pela palavra real.
 
 
@@ -41,7 +41,7 @@
          palavras_codigo = {
            'starmonkeys' => 'Phil e Pete, those prickly chancellors of the New Reich', 
            'catapulta' => 'chucky go-go', 'firebomb' => 'Heat-Assisted Living', 
-           'Nigeria' => "Ny e Jerry's Lavagem à Seco (com Donuts)",
+           'Nigeria' => "Ny e Jerry's Lavagem a Seco (com Donuts)",
            'Put the kabosh on' => 'LiPut the cable box on'
          }
         </pre>
@@ -51,10 +51,10 @@
         das setas, as definições, geralmente são chamadas de *valores* simplesmente.
 
 
-        Notou as aspas duplas em volta de @Ny e Jerry Lavagem à Seco (com Donuts)@.  Já quen numa
-        aspa simples está sendo usando um apóstrofo, nós não podemos usar aspas simples em torno
-        da string.  (De qualquAlthough, you can use single quotes if you put a backslash before the apostrophe
-        such as: @'Ny e Jerry Lavagem à Seco (com Donuts)'@.)
+        Note as aspas duplas em volta de @Ny e Jerry' Lavagem a Seco (com Donuts)@.  Já que uma
+        aspa simples está sendo usada como um apóstrofo, nós não podemos usar aspas simples em torno
+        da string.  (Embora você possa usar aspas simples se você colocar uma contrabarra antes do apóstrofo,
+        como em: @'Ny e Jerry\'s Lavagem a Seco (com Donuts)'@.)
 
 
         Se você precisar procurar por uma palavra em específico, você pode usar o método das *chaves*.
@@ -70,7 +70,7 @@
         o valor correspondente.
 
 
-        Se você nunca esteve num depósito, você pode ver as chaves como  handles.
+        Se você nunca esteve num depósito, você pode ver as chaves como alças.
         Imagine an industrious worker putting on his work gloves and hefting the index back to
         your custody.  If you've never used handles before, then I'm giving you about
         thirty seconds to find a handle and use it before I blow my lid.
@@ -121,7 +121,7 @@
         see Expansion Pak #1!)
 
 
-        Eu gosto de comentários porque posso deixar de lado pilhas de código e marcar pontos importantes.
+        Eu gosto de comentários porque posso deixar de lado pilhas de código e identificar pontos importantes.
 
 
         Como os comentários nos dizem, a primeira seção de pergunta uma idéia maléfica e a troca por uma
@@ -130,7 +130,7 @@
 
         <pre>
          palavras_codigo.each do |real, codigo| 
-           idea.gsub!( real, codigo )
+           ideia.gsub!( real, codigo )
          end
         </pre>
 
@@ -153,7 +153,7 @@
 
 
         <pre>
-         ideia_segura = idea.gsub( real, codigo )
+         ideia_segura = ideia.gsub( real, codigo )
         </pre>
 
 
@@ -197,7 +197,7 @@
         Depois que temos o nome da idéia, vamos abrir um novo arquivo de texto em branco.  O nome do arquivo é
         contruído adicionando-se strings.  Se você digitou @'mustard-plus-codeine'@, nossa matemática será: @'ideia-' +
         'mustard-plus-codeine' + '.txt'@.  O Ruby pressiona isso em uma única string.
-        @'idea-mustard-plus-codeine.txt'@ é o arquivo.
+        @'ideia-mustard-plus-codeine.txt'@ é o arquivo.
 
 
         Estamos usando o método de classe @File::open@ para criar um novo arquivo.  Até agora, nós usamos
@@ -219,8 +219,8 @@
         renomeiam, ou deletam arquivos.  Eles estão todos organizados dentro da classe @File@.
 
 
-        bq. @File::read( "idea-mustard-plus-codeine.txt" )@ vai responder uma com uma string
-        contendo todo o texto do seu arquivo idéia. (Read significa ler).
+        bq. @File::read( "ideia-mustard-plus-codeine.txt" )@ vai responder uma com uma string
+        contendo todo o texto do seu arquivo de idéias. (Read significa ler.)
 
 
         bq. @File::rename( "aquivd_antigo.txt", "aquivo_novo.txt" )@ irá renomear o @aquivo_antigo.txt@.
@@ -286,7 +286,7 @@
         pode ser métodos de Classe.  (Começando a ver a brilhante, glinting gorgeousness of Ruby?)
 
 
-        Então nós estamos usando a empilhadeira para pegar os arquivos no diretório que coincidem @'idea-*.txt'@.  The
+        Então nós estamos usando a empilhadeira para pegar os arquivos no diretório que coincidem @'ideia-*.txt'@.  The
         @Dir::[]@ irá usar o asterisco como um coringa.  Estamos basicamente dizendo, "Encontre tudo que
         comece com _ideia-_ e termine com _.txt_."  A empilhadeira vai para o diretório e volta
         com uma lista de arquivos encontrados.
@@ -296,10 +296,10 @@
         arquivo.  Se você está curioso e que brincar com @Dir::[]@, tente isso:
 
 
-        bq. @p Dir['idea-*.txt']@ irá imprimir:
+        bq. @p Dir['ideia-*.txt']@ irá imprimir:
 
 
-        bq. @['idea-mustard-plus-codeine.txt']@ (_um Array de nomes de arquivos!_)
+        bq. @['ideia-mustard-plus-codeine.txt']@ (_um Array de nomes de arquivos!_)
 
 
         Sim, o método @p@ funciona igual @print@.  Mas @print@ é para se imprimir strings,
