@@ -9,8 +9,8 @@
         "airégiN ad elortnoc o emoT."  Prenderão a gente quando as starmonkeys começarem a pousar em Lagos.
 
 
-        As letras maiúsculas estão entregando o ouro.  Talvez se nós passarmos todas as letras na string
-        pra maiúsculas antes de inverter.
+        As letras maiúsculas estão entregando o ouro.  Talvez se nós passássemos todas as letras na string
+        para maiúsculas antes de inverter.
 
     
         <pre>
@@ -18,12 +18,12 @@
         </pre>
 
 
-        h3. Your Repetitiveness Pays Off
+        h3. Sua Repetitividade Compensa
 
 
-        You hand me a legal pad, doused in illegible shorthand.  Scanning over it, I start to
-        notice patterns.  That you seem to use the same set of words repeatedly in your musings.  
-        Palavras como _starmonkey_, _Nigéria_, _bomba_.  Algumas frases até.  _Put the kabosh on._
+        You hand me a legal pad, doused in illegible shorthand.  Analisando ele, eu começo a notar
+        padrões.  Notar que você parece usar as mesmas palavras repetidamente in your musings.  
+        Palavras como _macacoestrela_, _Nigéria_, _bomba_.  Algumas frases até.  _Put the kabosh on._
         Que são ditas toda hora.
 
 
@@ -39,10 +39,10 @@
 
         <pre>
          palavras_codigo = {
-           'starmonkeys' => 'Phil e Pete, those prickly chancellors of the New Reich', 
-           'catapulta' => 'chucky go-go', 'firebomb' => 'Heat-Assisted Living', 
+           'macacosestrela' => 'Phil e Pete, those prickly chancellors of the New Reich', 
+           'catapulta' => 'chucky go-go', 'bomba' => 'Heat-Assisted Living', 
            'Nigeria' => "Ny e Jerry's Lavagem a Seco (com Donuts)",
-           'Put the kabosh on' => 'LiPut the cable box on'
+           'Put the kabosh on' => 'Put the cable box on'
          }
         </pre>
 
@@ -51,10 +51,10 @@
         das setas, as definições, geralmente são chamadas de *valores* simplesmente.
 
 
-        Note as aspas duplas em volta de @Ny e Jerry' Lavagem a Seco (com Donuts)@.  Já que uma
-        aspa simples está sendo usada como um apóstrofo, nós não podemos usar aspas simples em torno
-        da string.  (Embora você possa usar aspas simples se você colocar uma contrabarra antes do apóstrofo,
-        como em: @'Ny e Jerry\'s Lavagem a Seco (com Donuts)'@.)
+        Note as aspas duplas em volta de @Ny e Jerry' Lavagem a Seco (com Donuts)@.  Já que nas
+        aspas está sendo usado um apóstrofo, nós não podemos usar aspas simples em torno
+        da string.  (Todavia, você pode usar aspas simples se você colocar uma barra invertida antes
+        do apóstrofo como em: @'Ny e Jerry\'s Lavagem a Seco (com Donuts)'@.)
 
 
         Se você precisar procurar por uma palavra em específico, você pode usar o método das *chaves*.
@@ -76,7 +76,7 @@
         thirty seconds to find a handle and use it before I blow my lid.
 
 
-        Assim como vários operadores que você viu recentemente, as chaves indexadoras são
+        Assim como os vários operadores que você viu recentemente, as chaves indexadoras são
         simplesmente um atalho para um método.
 
 
@@ -99,7 +99,7 @@
            ideia.gsub!( real, codigo )
          end
 
-         # Save the jibberish to a new file
+         # Salva o papo-furado num novo arquivo
          print "Arquivo codificado.  Favor entrar com um nome para esta idéia: "
          nome_ideia = gets.strip
          File::open( "ideia-" + nome_ideia + ".txt", "w" ) do |f|
@@ -115,10 +115,10 @@
 
         Depois disso, há duas seções.  Estou marcando estas seções com comentários, as linhas que começam
         com o símbolo *cerquilha #*.  Comentários são  *notas úteis* que acompanham seu código.  Colegas que
-        come wandering through your code will appreciate the help.  When going through your own code
-        after some time has passed, comments will help you get back into your mindset.  And there's
-        software out there that can take your comments and build documents from them.  (RDoc and Ri --
-        see Expansion Pak #1!)
+        vierem ver seu código vão apreciar tal ajuda.  Quanto você mesmo vier no seu código novamente
+        depois de algum tempo, comentários vão te ajudar a retomar o fio da meada.  E ainda existe
+        software por aí que pegam seus comentários e fazem documentação à partir deles.  (RDoc e Ri --
+        veja o Pacote de Expansão #1!)
 
 
         Eu gosto de comentários porque posso deixar de lado pilhas de código e identificar pontos importantes.
@@ -142,13 +142,13 @@
         o méotodo @gsub!@ para a troca atual.
 
 
-        No Ruby, @gsub@ é abreviação de _global substitution_ (substituição global).  O método é usadoed to search and replace.
-        Here, we want to find all the occurences of a dangerous word and replace with its safe
-        code word.  With @gsub@, you provide the *word to find as the first argument*, then the *word
-        to put in its place as the second argument*.
+        No Ruby, @gsub@ é abreviação de _global substitution_ (substituição global).  O método é usado para procurar
+        e substituir.  Aqui, queremos achar todas as ocôrrencias de palavras perigosas e substituí-las com a segura
+        palavra código.  Com @gsub@, você provê a *palavra a ser achada como primeiro argunmento*, depois a *palavra
+        que tomará o lugar como segundo argumento*.
 
 
-        Why aren't we hanging on to the answer from @gsub@?  Doesn't @gsub@ give us an answer back that
+        Por que nós não estamos  we hanging on to the answer from @gsub@?  Doesn't @gsub@ give us an answer back that
         we should keep?  You'd think the line would read:
 
 
@@ -158,10 +158,10 @@
 
 
         Sim, com @gsub@ nós temos que ficar com a resposta.  Estamos usando uma variação do @gsub@ que é
-        totalmente animal.  Notou a *exclamação* no @gsub!@ usada dentro de cada bloco @each@?  A
-        exclamação é um sinal que @gsub!@ is a bit of a zealot.  See, @gsub!@ will go ahead and
-        *replace the words in @idea@ directly*.  When it's done @idea@ will contain the newly altered string
-        and you won't be able to find the old string.
+        totalmente hyper.  Notou a *exclamação* no @gsub!@ usada dentro de cada bloco @each@?  A
+        exclamação é um sinal de que @gsub!@ é meio radical.  Veja, @gsub!@ vai mais longe e
+        *troca as palavras em @ideia@ diretamente*.  Quando ele termina @ideia@ vai conter a nova string
+        alterada e você não vai mais achar a string velha.
 
 
         Pode chamar @gsub!@ de *método destrutivo*.  Ele faz susas modificações no valor diretamente. Enquanto @gsub@
@@ -172,7 +172,7 @@
         h3.  Arquivo de Texto de um Homem Louco
 
 
-        Vamos salvar a idéia codifica em um arquivo.
+        Vamos salvar a idéia codificada em um arquivo.
 
 
         <pre>
@@ -206,7 +206,7 @@
         *métodos de classe*.
 
 
-        bq. @Kernel::print( "55,000 Starmonkey o Saúdam!" )@
+        bq. @Kernel::print( "55,000 Macacosestrela o Saúdam!" )@
 
 
         O que isto significa?  Por que isto importa?  Isto significa que o @Kernel@ é o centro do universo Ruby.
@@ -264,7 +264,7 @@
 
 
         <pre>
-         require 'wordlist'
+         require 'listadepalavras'
 
          # Imprima cada idéia com as palavras corretas
          Dir['ideia-*.txt'].each do |nome_arquivo|
@@ -277,7 +277,7 @@
         </pre>
 
 
-        Nessa altura, you should be up to snuff with most of this example.  Não vou te incomodar com
+        Nessa altura, você já deve estar sabendo o que este exemplo faz.  Não vou te incomodar com
         detalhes mundanos.  Veja se você consegue entender sozinho como isso funciona.
 
 
