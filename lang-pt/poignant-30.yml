@@ -1,93 +1,93 @@
     - >
-        h3. True
+        h3. True (Verdadeiro)
 
 
-        bq. @approaching_guy = true@
+        bq. @sujeito_aproximando = true@
 
 
-        I saw @true@ at the hotel buffet tables today.  I cannot stand that guy.
-        His stance is way too wide.  And you've never met anyone who planted his
+        Eu vi o @true@ na buffet do hotel hoje.  Eu não suporto aquele cara.
+        Ele aparece demais.  And you've never met anyone who planted his
         feet so hard in the ground.  He wears this corny necklace made out of
         shells.  His face exudes this brash confidence.  (You can tell he's exerting
         all of his restraint just to keep from bursting into Neo flight.)
 
 
-        To be honest, I can't be around someone who always has to be right.
-        This @true@ is always saying, "A-OK."  Flashing hang ten.  And seriously, 
-        he loves that necklace.  Wears it constantly.
+        Pra ser honesto, não consigo ficar do lado de alguém que sempre tem de estar certo.
+        Esse @true@ está sempre dizendo, "A-OK."  Flashing hang ten.  E é sério, 
+        ele ama aquele colar.  Ele o usa constantemente.
 
 
-        As you'd suspect, he's backstage at everything on the @if@ event schedule.
+        Assim como você suspeitou, ele é condição sine qua non em tudo que o @if@ agende.
 
 
-        bq. @print "Hugo Boss" if true@ acts like @print "Hugo Boss"@.
+        bq. @print "Hugo Boss" if true@ se comporta como @print "Hugo Boss"@.
 
 
-        Occassionally, @if@ will haul out the velvet ropes to exercise some crowd control.  
-        The *double equals* gives the appearance of a short link of ropes, right along the
-        sides of a red carpet where only @true@ can be admitted.
+        Ocasionalmente, o @if@ vai will haul out the velvet ropes to exercise some crowd control.  
+        Os *dois iguais* dão a aparência de uma passarela, como cordas dos lados
+        de um carpete vermelho onde só @true@ é aceito.
 
 
         <pre>
-         if approaching_guy == true
-           print "That necklace is classic."
+         if sujeito_aproximando == true
+           print "Esse colar é clássico."
          end
         </pre>
 
 
-        The double equals is simply *an ID check*.  Do the gentleman at both ends of this
-        rope appear to match?
+        Os dois iguais são simplesmente *uma checagem de identificação*.  Os cavalheiros dos lados desta corda
+        parecem ser iguais?
 
 
-        In this way, you control who @if@ lets in.  If you have a hard time getting along with
-        @true@ as I do, you can heartily welcome @false@.
+        Deste jeito, você controle quem o @if@ deixa entrar.  Se você não suporta o @true@ assim como eu,
+        receba de peito aberto o @false@ (falso).
 
 
         <pre>
-         if approaching_guy == false
-           print "Get in here, you conniving devil."
+         if sujeito_aproximando == false
+           print "Chega mais, seu diabo conivente."
          end
         </pre>
 
 
-        Same goes for @unless@.  The gateway is yours.  Take possession of it.
+        Mesma coisa pra @unless@.  O portão é seu.  Tome o controle dele.
 
 
-        h3. Again, I Want You to Dominate
+        h3. Novamente, Eu Quero Que Você Domine
 
 
-        Now, you want a head trip?  *The double equals sign is a method.*  Can you guess how
-        it works?  Here, check it out with the dot and parens:
+        Agora, tá afim de uma viagem mental?  *O sinal de dois iguais é um método.*  Você consegue adivinhar
+        como ele funciona?  Aqui, dê uma olhada nele com ponto e parentêses:
 
 
-        bq. @approaching_guy.==( true )@
+        bq. @sujeito_aproximando.==( true )@
 
 
-        Ruby allows the shortcut, though.  You can drop the dot and back away slowly.
+        Ruby permite o atalho, sem problemas.  Jogue a ponto e vá pra trás devagar.
 
 
-        Now, do you remember what you need to do to *dominate* in Ruby?  _Use the answers the
-        methods give you._
+        Agora, você se lembra o que deve fazer pra *dominar* no Ruby?  _Use as respostas que
+        os métodos te dão._
 
 
         <pre>
          if nil.==( true )
-           print "This will never see realization."
+           print "Isto nunca vai acontecer."
          end
         </pre>
 
 
-        In the above, how is the method's answer being used?
+        No exemplo acima, como a resposta do método esta sendo usada?
 
 
-        Let's take the statement @nil == true@.  This will fail every time.  No match.  
-        When there's no match, the double equals method answers with @false@.  A shake of the head.
-        That answer is given to @if@, who can't accept a @false@.  The @print@ never sees realization.
+        Pegue a afirmação @nil == true@.  Isso vai falhar toda hora.  Não são iguais.  
+        Quando não há igualdade, o método dos dois iguais responde com @false@.  Uma balançada de cabeça.
+        Esta resposta é dada ao @if@, que não pode aceitar um @false@.  O @print@ nunca acontecerá.
 
 
         <pre>
-         at_hotel = true
-         email = if at_hotel
+         no_hotel = true
+         email = if no_hotel
                    "why@hotelambrose.com"
                  else
                    "why@drnhowardcham.com"
@@ -95,74 +95,73 @@
         </pre>
 
 
-        Even though @if@ isn't a method, @if@ does give a return answer.  Look at the above and
-        wonder over what happens when @at_hotel@ is @true@.
+        Mesmo que @if@ não seja um método, o @if@ retorna uma resposta.  Observe o exemplo acima
+        e imagine o que acontece quando @no_hotel@ é @true@.
 
 
-        The @if@ will return the answer given by the code it chooses to run.  In the case of 
-        @at_hotel@ being true, the first string, my e-mail address at Hotel Ambrose, will be
-        returned.  The @else@ keyword marks code which will run, should @if@ fail.  If @at_hotel@
-        is false, the @if@ will answer with my e-mail address at Dr. N. Howard Cham's office, 
-        where I take my apprenticeship.
+        O @if@ retornará a resposta dada pelo código que ele decidir rodar.  No caso de 
+        @no_hotel@ ser true, a primeira string, meu endereço de e-mail no Hotel Ambrose, será
+        retornado.  A palavra reservada @else@ marca o código a ser rodado, uma vez que o @if@ falhe.  Se @no_hotel@
+        é false, o @if@ responderá com meu endereço de e-mail do escritório do Dr. N. Howard Cham, 
+        onde eu recebo meu aprendizado.
 
 
-        Should you have several lines of code in an @if@ or @unless@, *only the answer from the
-        last full statement will be used*.
+        Você deve ter várias linhas de código dentro de um @if@ ou @unless@, *mas somente a resposta oriunda
+        da última afirmacão completa será usada*.
 
 
         <pre>
-         email = if at_hotel
-                   address = "why"
-                   address << "@hotelambrose"
-                   address << ".com"
+         email = if no_hotel
+                   endereco = "why"
+                   endereco << "@hotelambrose"
+                   endereco << ".com"
                  end
         </pre>
 
 
-        Three lines of code inside the @if@.  The first line assigns a string with my name in it to a variable.
-        The second and third lines add the rest of my e-mail address on to the end.  The *double less-than @<<@
-        is the concatenation operator*.  To concatenate is to *append*, or *add to the end*.
+        Três linhas de código dentro do @if@.  A primeira linha atribui uma string com meu nome dentro a uma variável.
+        A segunda e terceira linha adicionam o resto do meu endereço de e-mail no fim.  O *menor que duplo @<<@
+        é o operador da concatenação*.  Concatenar é o mesmo que *apender*, or *adicionar no fim*.
 
 
-        Just as we saw with the equality checker @==@, the concatenator is a method.  After adding to the end
-        of the string, the concatenator also *answers with that very string*.  So, the third line, which could be
-        read as @address.<<( ".com" )@, gives back @address@, which the @if@ then hands back for @email@'s
-        assignment.
+        Assim como vimos com o checador de igualdade @==@, o concatenador é um método.  Após adicionar no fim
+        da string, o concatenador ainda *responde com aquela mesma stringt*.  Então, a terceira linha, que pode ser
+        lida como as @endereco.<<( ".com" )@, retorna @endereco@, que o @if@ então devolve pra a atribuição @email@.
 
 
-        Here's a question: what if the @if@ fails?  What if @at_hotel@ is false in the above example?
-        Is anything returned?  Nothing is assigned to @email@, right?
+        Uma pergunta: E se o @if@ falhar?  E se @no_hotel@ for false no exemplo acimoa?
+        Alguma coisa será retornada?  Nada é atribuído a @email@, certo?
 
 
-        Yes, nothing is returned.  By which I mean: @nil@ is returned.  And often @nil@ is a very
-        useful answer.
+        Sim, nada é retornado.  Que significa que: @nil@ foi retornado.  E @nil@ é muitas vezes uma
+        resposta muito útil.
 
         
         <pre>
-         print( if at_hotel.nil?
-                  "No clue if he's in the hotel."
-                elsif at_hotel == true
-                  "Definitely in."
-                elsif at_hotel == false
-                  "He's out."
+         print( if no_hotel.nil?
+                  "Se pistas se ele está no hotel."
+                elsif no_hotel == true
+                  "Definitivamente sim."
+                elsif no_hotel == false
+                  "Ele saiu."
                 else
-                  "The system is on the freee-itz."
+                  "O sistema está traaaaav-iz"
                 end )
         </pre>
 
 
-        You can use the @nil?@ method on any value in Ruby.  Again, think of it as a message.
-        To the value: "Are you nil?  Are you empty?"
+        Você pode usar o método @nil?@ em qualquer valor no Ruby.  Denovo, pense nele com uma mensagem.
+        Para o valor: "Você é nil?  Você está vazio?"
 
 
-        If @at_hotel@ is empty, Ruby doesn't have any idea if I'm in the hotel or not.  So @if@
-        answers with the "No clue" string.  In order to handle the @true@ or @false@ possibilities,
-        the @elsif@ keyword is used.  While you can have only one @if@ and one @else@, you can fill
-        the inbetween with an exorbitant number of @elsif@ keywords.  Each @elsif@ acts as *a further @if@
-        test*.  Checking for a positive charge.
+        Se @no_hotel@ estiver vazia, o Ruby não tem idéia se eu estou no hotel ou não.  Então o @if@
+        responde com a string "Sem pistas".  Para manejar as possibilidades de @true@ ou @false@,
+        a palavra reservada @elsif@ é usada.  Enquanto você pode ter apenas um @if@ e um @else@, você pode encher
+        as entranhas com um exorbitante número de palavras chave @elsif@.  Cada @elsif@ age como *um outro teste @if@*.
+        Checando por uma carga positiva.
 
 
-        If you're doing okay at this point, then you're in tip-top shape for the rest of the
-        book.  You have seen some pretty tough code in the last few examples.  You strong fellow.
+        Se você está indo bem até este ponto, então você está em boa forma para o resto do
+        livro.  Você viu um código bem parrudo nos últimos exemplos.  Você é um forte companheiro.
 
 
