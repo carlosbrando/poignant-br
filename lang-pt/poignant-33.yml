@@ -51,7 +51,7 @@
         das setas, as definições, geralmente são chamadas de *valores* simplesmente.
 
 
-        Note as aspas duplas em volta de @Ny e Jerry' Lavagem a Seco (com Donuts)@.  Já que nas
+        Note as aspas duplas em volta de @Ny e Jerry's Lavagem a Seco (com Donuts)@.  Já que nas
         aspas está sendo usado um apóstrofo, nós não podemos usar aspas simples em torno
         da string.  (Todavia, você pode usar aspas simples se você colocar uma barra invertida antes
         do apóstrofo como em: @'Ny e Jerry\'s Lavagem a Seco (com Donuts)'@.)
@@ -121,7 +121,7 @@
         veja o Pacote de Expansão #1!)
 
 
-        Eu gosto de comentários porque posso deixar de lado pilhas de código e identificar pontos importantes.
+        Eu gosto de comentários porque posso passar os olhos por uma grande pilha de código e identificar pontos importantes.
 
 
         Como os comentários nos dizem, a primeira seção de pergunta uma idéia maléfica e a troca por uma
