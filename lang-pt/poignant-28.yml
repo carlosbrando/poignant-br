@@ -1,129 +1,126 @@
-    - Small and Nearly Worthless: >
+    - Pequeno e Quase Sem Valor: >
 
         !i/blix-1.gif(Law-va.)!
 
 
-        The hotel here in Ambrose is no good at all.  The beds are all lumpy.
-        The elevator is tiny.  One guy put all his bags in the elevator and found
-        out there wasn't room for him.  He hit the button and chased up the stairs after
-        it all.  But the stairwell turned out to be too narrow and his shoulders got wedged
-        going up.  
+        O hotel aqui em Ambrose não é nem um pouco bom.  As camas são todas tortas.
+        O elevador é minúsculo.  Um cara pôs toda sua bagagem no elevador e não sobrou
+        mais lugar pra ele.  Ele apertou o botão e as perseguiu pelas escadas.
+        Mas as escadas eram muito estreitas e ele ficou entalado tentando subir.  
 
 
-        The soap mini-bars they give you are sized down for elves, so it's impossible to
-        work up a lather.  I hate it.  I keep mistaking them for contact lenses.
+        Os mini-sabonetes que eles te dão são de tamanho gnomo, então é impossível
+        fazer uma espuma.  Eu odeio isso.  Toda hora eu confundo eles com lentes de contato.
 
 
-        I turned on the faucet and nothing came out.  Thing is: Ambrose is
-        a place with magical properties, so I took a chance.  I put my hands under
-        the spigot.  Invisible, warm wetness.  I felt the hurried
-        sensation of running water, darting through my fingers.  When I took
-        my hands away, they were dry and clean.
+        Eu abri a torneira e nada saiu.  O caso é o seguinte: Ambrose é um
+        lugar com propriedades mágicas, então eu me arrisquei.  Coloquei minha mão embaixo
+        torneira.  Invisible, warm wetness.  Eu senti a sensação de água corrente,
+        passando pelos meus dedos.  Quando tirei minha mão de lá,
+        elas estavam secas e limpas.
 
 
-        It was an amazing nothingness to experience.  It was just like @nil@.
+        Foi um incrível experiência de vazio total.  Foi como @nil@.
 
 
-        h3. Nil
+        h3. Nil (Nada)
 
 
-        In Ruby, @nil@ represents an emptiness.  It is *without value*.  It isn't zero.
-        Zero is a number.  
+        No Ruby, o @nil@ representa o vazio.  Ele representa *falta de valor*.  Ele não é zero.
+        Zero é um número.  
 
 
-        It's Ruby's own walking dead, a flatlined keyword.  You can't add
-        to it, it doesn't evolve.  But it's terribly popular.  This skeleton's smiling
-        in all the pictures.
+        É um morto-vivo do Ruby, uma palavra chave falecida.  Você não pode adicionar à ele,
+        ele não evolui.  Mas ele é terrivelmente popular.  É este esqueleto sorrindo nas fotos.
 
 
-        bq. @plastic_cup = nil@
+        bq. @copo_plastico = nil@
 
 
-        The above @plastic_cup@ is *empty*.  You could argue that the @plastic_cup@
-        contains something, a @nil@.  The @nil@ represents the emptiness, though, so
-        go ahead and call it empty.
+        No código acima @copo_plastico@ está *vazio*.  Você pode argumentar que o @copo_plastico@
+        contém algo, um @nil@.  O @nil@ representa vazio, logo, então,
+        adiante-se e chame-o de vazio.
 
 
-        Some of you who have programmed before will be tempted to say the @plastic_cup@ is
-        *undefined*.  How about let's not.  When you say a variable is undefined,
-        you're saying that Ruby simply has no recollection of the variable, it doesn't
-        know the var, it's absolutely non-existent.
+        Alguns de vocês que já programaram antes estarão tentados a dizer que @copo_plastico@ está
+        *indefinido* (undefined).  Que tal não.  Quando você diz que uma variável está indefinida,
+        você está dizendo hat Ruby simply has no recollection of the variable, ele não conhece
+        a var, ela é absolutamente não existe.
 
 
-        But Ruby is aware of the @plastic_cup@.  Ruby can easily look in the @plastic_cup@.
-        It's *empty*, but not *undefined*.
+        Mas o Ruby está sabendo do @copo_plastico@.  Ruby pode facilmente olhar dentro do @copo_plastico@.
+        Está *vazio*, mas não está *indefinido*.
 
 
-        h3. False
+        h3. False (Falso)
 
 
-        !<i/blix-neg.gif(Shape of a cat.)!
+        !<i/blix-neg.gif(Forma de um gato.)!
 
 
         _The cat Trady Blix.  Frozen in emptiness.  Immaculate whiskers rigid.  Placid
         eyes of lake.  Tail of warm icicle.  Sponsored by a Very Powerful Pause Button._
 
 
-        The darkness surrounding Blix can be called *negative space*.  Hang on to that phrase.
-        Let it suggest that the emptiness has a negative connotation.  In a similar way,
-        @nil@ has a slightly sour note that it whistles.
+        A escuridão que circunda o Blix pode ser chamada de *espaço negativo*.  AteHang on to that phrase.
+        Deixe ela sugerir que o vazio tem conotação negativa.  De um jeito similar,
+        @nil@ tem a slightly sour note that it whistles.
 
 
-        Generally speaking, *everything in Ruby has a positive charge to it*.  This spark
-        flows through strings, numbers, regexps, all of it.  Only two keywords wear a
-        shady cloak: @nil@ and @false@ draggin us down.
+        Generalizando, *tudo no Ruby tem uma carga positiva*.  Esta fagulha
+        corre por strings, números, regexps, todos eles.  Somente duas palavras reservadas vestem uma
+        capa sombria: @nil@ e @false@ nos trazendo pra baixo.
 
 
-        You can *test that charge* with an @if@ keyword.  It looks very much like the
-        @do@ blocks we saw in the last chapter, in that both end with an @end@.
+        Você pode *testar essa carga* com a palavra chave @if@.  Ela se parece muito como
+        o bloco @do@ que vimos no último capítulo, no qual ambas terminal com um @end@.
 
 
         <pre>
-         if plastic_cup
-           print "Plastic cup is on the up 'n' up!"
+         if copo_plastico
+           print "O copo de plástico tá até transbordando!"
          end
         </pre>
 
 
-        If @plastic_cup@ contains either @nil@ or @false@, you won't see anything print
-        to the screen.  They're not on the @if@ guest list.  So @if@ isn't going to run
-        any of the code it's protecting.
+        Se @copo_plastico@ conter @nil@ ou @false@, você não vai ver nada impresso
+        na tela.  Eles não estão na lista de convidados do @if@.  Então o @if@ não vai rodar
+        nada do código que ele está protegendo.
 
 
-        But @nil@ and @false@ need not walk away in shame.  They may be of questionable
-        character, but @unless@ runs a smaller establishment that caters to the bedraggled.
-        The @unless@ keyword has a policy of *only allowing those with a negative charge in*.
-        Who are: @nil@ and @false@.
+        Mas @nil@ e @false@ não precisam ir embora constrangidos.  O caráter deles pode ser meio
+        questionável, mas o @unless@ gerencia uma estabelecimento que preza ser fuleiro.
+        A palavra chave @unless@ tem por regra *só deixar aqueles com carga negativa entrar*.
+        Aqueles são: @nil@ e @false@.
         
 
         <pre>
-         unless plastic_cup
-           print "Plastic cup is on the down low."
+         unless copo_plastico
+           print "O copo de plástico tá na hora de abastecer."
          end
         </pre>
 
 
-        You can also use @if@ and @unless@ at the *end of a single line of code*, if that's
-        all that is being protected.
+        Você também pode usar @if@ e @unless@ no *fim de uma linha de código*, se apenas
+        aquela linha estiver sendo protegida.
 
 
         <pre>
-         print "Yeah, plastic cup is up again!" if plastic_cup
-         print "Hardly. It's down." unless plastic_cup
+         print "Yeah, copo tá cheio denovo!" if copo_plastico
+         print "Difícilmente. Ele tá vazio." unless copo_plastico
         </pre>
 
 
-        And another nice trick: stack the @if@ and @unless@.
+        E mais uma manha: empilhar o @if@ e @unless@.
 
 
         <pre>
-         print "We're using plastic 'cause we don't have glass." if plastic_cup unless glass_cup
+         print "Estamos usando copos de plástico pois não temos de vidro." if copo_plastico unless copo_vidro
         </pre>
 
 
-        This trick is a gorgeous way of expressing, _Do this only if *a* is true and *b* isn't
-        true_.
+        Esta manha é um lindo jeito de expressar, _Faça isso só se *a* for true e *b* não for true_.
 
 
-        Now that you've met @false@, I'm sure you can see what's on next.
+        Agora que você já conheceu o @false@, Tenho certeza que você pode ver o que vem em seguida.
 
