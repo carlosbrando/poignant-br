@@ -23,15 +23,9 @@
 
         bq. @5.times { print "Odelay!" }@
       
-      
-        _Em português:_
-          
-          
-        bq. 5.vezes { imprimir "Odelay!" }
-
 
         No inglês, as pontuações (pontos, exclamações, parênteses) são mudas.  Pontuação agrega
-        significado às palavras, dá pistas da intencão do autor na frase.  Vamos então ler o trecho
+        significado às palavras, dá pistas da intenção do autor na frase.  Vamos então ler o trecho
         assim: _Cinco vezes imprima "Odelay!"._
 
 
@@ -46,14 +40,8 @@
         bq. @exit unless "restaurante".include? "aura"@
        
        
-        _Em português:_
-          
-          
-        bq. saia a-menos-que "restaurante".inclua? "aura"
-
-
         Aqui estamos fazendo um teste básico de realidade.  Nosso programa vai *exit (sair)* (o programa vai terminar) *unless (a menos que)* 
-        a palavra *restaurant* contenha (ou *inclua*) a palavra *aura*.  Denovo, em Português: _Saia a nao ser que a palavra
+        a palavra *restaurante* contenha (ou *inclua*) a palavra *aura*.  Denovo, em Português: _Saia a nao ser que a palavra
         restaurante inclua a palavra aura._
 
 
@@ -68,12 +56,6 @@
         bq. @['torrada', 'queijo', 'vinho'].each { |comida| print comida.capitalize  }@
        
       
-        _Em português:_
-
-
-        bq. ['torrada', 'queijo', 'vinho'].cada { |comida| imprima comida.primeira_letra_maiuscula  }
-
-
         Enquanto este pedaço de código é menos legível e parecido com uma frase que o anterior, eu ainda assim
         o encorajo a ler em voz alta.  Enquanto o Ruby algumas vezes soa como Português noutras soa como Português Curto.
         Totalmente traduzido pra Português, você poderia ler desta maneira: _Com as palavras 'torrada', 'queijo',
@@ -87,7 +69,7 @@
         o que os pontos e chaves significam.  Vou discutir as várias _partes da conversa_ em seguida.
 
 
-        Tudo que você precisa saber até agora é que o Ruby é basicamente contruído de sentenças.  Ela não são English
+        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Ela não são English
         sentences.  Elas são pequenas coleções de palavras e pontuação  which encompass a single thought.  Estas
         sentenças podem formar livros.  Elas podem formar páginas.  Elas podem formar romances inteiros, quando combinadas.
         Romances que modem ser lidos por humanos, mas também por computadores.
