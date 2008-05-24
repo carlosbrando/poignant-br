@@ -1,21 +1,21 @@
-    - Language and I MEAN Language: >
-        !i/the.foxes-3.png(Our friends, those two helpless foxies, finally realize
-        the gravity of their predicament.)!
+    - Linguagem e E QUERO DIZER Linguagem: >
+        !i/the.foxes-3.png(Nossos amigos, aqueles dois raposos indefesos, finalmente deram conta
+        da gravidade da situação em que se encontram.)!
 
 
-        Minha consciência não me deixa chamar o Ruby de uma linguagem de _computador._  Isso implicaat would imply that the
-        language works primarily on the computer's terms.  That the language is designed to accomodate
-        the computer, first and foremost.  E portanto, nós, os programadores, somos estrangeiros, buscando cidadania n the
-        computer's locale.  It's the computer's language and we are translators for the world.
+        Minha consciência não me deixa chamar o Ruby de uma linguagem de _computador._  Isso implica que
+        a linguagem funciona primariamente em termos de computador.  Que a linguagem é criada para acomodar
+        o computador, única e exclusivamente.  E portanto, nós, os programadores, somos estrangeiros, buscando cidadania n the
+        no país dos computadores.  É a linguagem do computador e nós somos os tradutores para o mundo.
 
 
-        But what do you call the language when your brain begins to think in that language?  When you
-        start to use the language's own words and colloquialisms to express yourself.  Say, the computer
-        can't do that.  How can it be the computer's language?  It is ours, we speak it natively!
+        Mas como você a chamaria quando seu cérebro começa a pensar nessa linguagem?  Quando você
+        começa a usar as próprias palavras e coloquismos da linguagem para se expressar.  Diga, o computador não
+        consegue fazer aquilo.  Como pode então ser a linguagem do computador?  Ela é nossa, nós a falamos nativamete!
 
 
-        We can no longer truthfully call it a _computer_ language.  It is _coderspeak_.  It is the language 
-        of our thoughts.
+        Nós não podemos mais verdadeiramente chamá-la de linguagem de _computador_.  
+        Ela é _papo de programador_.  É a linguagem dos nossos pensamentos.
 
 
         *Leia o trecho a seguir em voz alta.*
@@ -27,57 +27,69 @@
         _Em português:_
           
           
-        bq. _5.vezes { imprimir "Odelay!" }_
+        bq. 5.vezes { imprimir "Odelay!" }
 
 
-        No inglês, a pontuação (pontos, excamasuch as periods, exclamations, parentheses) are silent.  Punctuation
-        adds meaning to words, helps give cues as to what the author intended by a sentence.  So let's read the
-        above as: _Five times print "Odelay!"._
+        No inglês, as pontuações (pontos, exclamações, parênteses) são mudas.  Pontuação agrega
+        significado às palavras, dá pistas da intencão do autor na frase.  Vamos então ler o trecho
+        assim: _Cinco vezes imprima "Odelay!"._
 
 
-        Which is exactly what this small Ruby program does.  Beck's 
-        "mutated Spanish":http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation will print
+        Que é exatamente o que este peque programa Ruby faz.  O "espanhol mutante" da 
+        Beck:http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation will print
         five times on the computer screen.
 
 
-        *Read the following aloud to yourself.*
+        *Leia o trecho a seguir em voz alta.*
 
 
         bq. @exit unless "restaurante".include? "aura"@
+       
+       
+        _Em português:_
+          
+          
+        bq. saia a-menos-que "restaurante".inclua? "aura"
 
 
-        Here we're doing a basic reality check.  Our program will *exit* (the program will end) *unless* 
-        the word *restaurant* contains (or *includes*) the word *aura*.  Again, in English: _Exit unless the word
-        restaurant includes the word aura._
+        Aqui estamos fazendo um teste básico de realidade.  Nosso programa vai *exit (sair)* (o programa vai terminar) *unless (a menos que)* 
+        a palavra *restaurant* contenha (ou *inclua*) a palavra *aura*.  Denovo, em Português: _Saia a nao ser que a palavra
+        restaurante inclua a palavra aura._
 
 
-        Ever seen a programming language use question marks so effectively?  Ruby uses some punctuation,
-        such as exclamations and question marks, to enhance readability of the code.  We're asking a question
-        in the above code, so why not make that apparent?
+        Já viu alguma linguagem de programação usar a pontuação tão eficientemente?  Ruby usa alguma pontuação,
+        como exclamações e interrogações, pra melhorar a legibilidade do código.  Nós estamos fazendo uma pergunta
+        no código acima, então por quê não deixar isto aparente?
 
 
-        *Read the following aloud to yourself.*
+        *Leia o trecho a seguir em voz alta.*
 
 
         bq. @['torrada', 'queijo', 'vinho'].each { |comida| print comida.capitalize  }@
+       
+      
+        _Em português:_
 
 
-        While this bit of code is less readable and sentence-like than the previous examples, I'd still encourage
-        you to read it aloud.  While Ruby may sometimes read like English, it sometimes reads as a shorter
-        English.  Fully translated into English, you might read the above as: _With the words 'toast', 'cheese',
-        and 'wine': take each food and print it capitalized._
+        bq. ['torrada', 'queijo', 'vinho'].cada { |comida| imprima comida.primeira_letra_maiuscula  }
+
+
+        Enquanto este pedaço de código é menos legível e parecido com uma frase que o anterior, eu ainda assim
+        o encorajo a ler em voz alta.  Enquanto o Ruby algumas vezes soa como Português noutras soa como Português Curto.
+        Totalmente traduzido pra Português, você poderia ler desta maneira: _Com as palavras 'torrada', 'queijo',
+        e 'vinho': pegue cada comida e a imprima com a primeira letra maiúscula._
         
 
-        The computer then courteously responds: @Toast@, @Cheese@ and @Wine@.
+        O computador então responde de forma cortêz: @Torrada@, @Queijo@ e @Vinho@.
 
 
-        At this point, you're probably wondering how these words actually fit together.  Smotchkkiss is wondering
-        what the dots and brackets mean.  I'm going to discuss the various _parts of speech_ next.
+        Neste ponto, você deve estar se perguntando como essas palavras realmente funcionam juntas.  O Smotchkkiss está imaginando
+        o que os pontos e chaves significam.  Vou discutir as várias _partes da conversa_ em seguida.
 
 
-        All you need to know thus far is that Ruby is basically built from sentences.  They aren't exactly English
-        sentences.  They are short collections of words and punctuation which encompass a single thought.  These
-        sentences can form books.  They can form pages.  They can form entire novels, when strung together.
-        Novels that can be read by humans, but also by computers.
+        Tudo que você precisa saber até agora é que o Ruby é basicamente contruído de sentenças.  Ela não são English
+        sentences.  Elas são pequenas coleções de palavras e pontuação  which encompass a single thought.  Estas
+        sentenças podem formar livros.  Elas podem formar páginas.  Elas podem formar romances inteiros, quando combinadas.
+        Romances que modem ser lidos por humanos, mas também por computadores.
 
 
