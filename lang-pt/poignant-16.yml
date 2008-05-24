@@ -3,9 +3,9 @@
         the gravity of their predicament.)!
 
 
-        My conscience won't let me call Ruby a _computer_ language.  That would imply that the
+        Minha consciência não me deixa chamar o Ruby de uma linguagem de _computador._  Isso implicaat would imply that the
         language works primarily on the computer's terms.  That the language is designed to accomodate
-        the computer, first and foremost.  That therefore, we, the coders, are foreigners, seeking citizenship in the
+        the computer, first and foremost.  E portanto, nós, os programadores, somos estrangeiros, buscando cidadania n the
         computer's locale.  It's the computer's language and we are translators for the world.
 
 
@@ -18,10 +18,16 @@
         of our thoughts.
 
 
-        *Read the following aloud to yourself.*
+        *Leia o trecho a seguir em voz alta.* 00:06:4f:44:7d:22
 
 
         bq. @5.times { print "Odelay!" }@
+      
+      
+        _Em português:_
+          
+          
+        bq. @5.vezes { imprimir "Odelay!" }@
 
 
         In English sentences, punctuation (such as periods, exclamations, parentheses) are silent.  Punctuation
@@ -37,7 +43,7 @@
         *Read the following aloud to yourself.*
 
 
-        bq. @exit unless "restaurant".include? "aura"@
+        bq. @exit unless "restaurante".include? "aura"@
 
 
         Here we're doing a basic reality check.  Our program will *exit* (the program will end) *unless* 
@@ -53,7 +59,7 @@
         *Read the following aloud to yourself.*
 
 
-        bq. @['toast', 'cheese', 'wine'].each { |food| print food.capitalize  }@
+        bq. @['torrada', 'queijo', 'vinho'].each { |comida| print comida.capitalize  }@
 
 
         While this bit of code is less readable and sentence-like than the previous examples, I'd still encourage
