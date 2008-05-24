@@ -18,7 +18,7 @@
         of our thoughts.
 
 
-        *Leia o trecho a seguir em voz alta.* 00:06:4f:44:7d:22
+        *Leia o trecho a seguir em voz alta.*
 
 
         bq. @5.times { print "Odelay!" }@
@@ -27,10 +27,10 @@
         _Em português:_
           
           
-        bq. @5.vezes { imprimir "Odelay!" }@
+        bq. _5.vezes { imprimir "Odelay!" }_
 
 
-        In English sentences, punctuation (such as periods, exclamations, parentheses) are silent.  Punctuation
+        No inglês, a pontuação (pontos, excamasuch as periods, exclamations, parentheses) are silent.  Punctuation
         adds meaning to words, helps give cues as to what the author intended by a sentence.  So let's read the
         above as: _Five times print "Odelay!"._
 
