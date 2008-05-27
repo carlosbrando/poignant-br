@@ -1,123 +1,123 @@
-    - The Parts of Speech: >
+    - As Partes da Conversa: >
 
-        Just like the white stripe down a skunk's back and the winding, white train of a bride, many of
-        Ruby's parts of speech have visual cues to help you identify them.  Punctuation and capitalization
-        will help your brain to see bits of code and feel intense recognition.
-        Your mind will frequently yell _Hey, I know that guy!_  You'll also be able to name-drop in
+        Assim como a faixa branca nas costas do gambá e um d the winding, white train of a bride, várias partes
+        da conversa têm sinalizações visuias parar te ajudar a identificá-las.  Pontuação e maiúsculas, minúsculas
+        irão ajudar seu cérebro ver pedaços de código e o reconhecer produndamentefeel intense recognition.
+        Sua mente vai gritar frequentemente _Hey, Eu conheço aquele cara!_  Você vaYou  ll also be able to name-drop in
         conversations with other Rubyists.
 
 
-        Try to focus on the look of each of these parts of speech.  The rest of the book will
-        detail the specifics.  I give short descriptions for each part of speech, but you don't
-        have to understand the explanation.  By the end of this chapter, you should be 
-        able to recognize every part of a Ruby program.
+        Tente se focar na aparência de cada uma destas partes da conversa.  O resto do livro vai
+        entrar em detalhes.  Eu darei pequenas descrições de cada parte da conversa, mas você nao precisa
+        entender a explicação.  Ao término deste capítulo, você deve estar apto a reconhecer 
+        cada parte de um programa Ruby.
 
 
-        h3. Variables
+        h3. Variáveis
 
 
-        Any plain, lowercase word is a variable in ruby.  Variables may consist of
-        letters, digits and underscores.
+        Qualquer palavra simples, em minúsculas é uma variável no ruby.  Variáveis podem consistir de
+        letras, dígitos e travessões.
 
 
-        bq. @x@, @y@, @banana2@ or @phone_a_quail@ are examples.
+        bq. @x@, @y@, @banana2@ or @telefone_pruma_codorna@ são exemplos.
 
 
-        Variables are like nicknames.  Remember when everyone used to call you Stinky Pete?
-        People would say, "Get over here, Stinky Pete!"  And everyone miraculously knew that 
-        Stinky Pete was you.
+        Variáveis são como apelidos.  Lembra quando todo mundo te chamava de Pete Fedido?
+        As pessoas diziam, "Vem aqui, Pete Fedido!"  E todo mundo milagrosamente sabia que 
+        você era o Pete Fedido.
 
 
-        With variables, you give a nickname to something you use frequently.  For instance, let's
-        say you run an orphanage.  It's a mean orphanage.  And whenever Daddy Warbucks comes to buy
-        more kids, we insist that he pay us *one-hundred twenty-one dollars and eight cents* for the
-        kid's teddy bear, which the kid has become attached to over in the darker moments of living in
-        such nightmarish custody.
+        Com variáveis, você dá um apelido a algo que você use frequentemente.  Por exemplo, vamos dizer
+        que você tem um orfanato.  É um orfanato maléfico.  E quando o Papai Warbucks vem comprar 
+        mais crianças, nós insistimos que ele nos pague *cento e vinte um reais e oito centavos* pelo urso
+        teddy da criança, o qual ela ficau apegada nos momentos sombrios que passau vivendo neste pesadelo de
+        custódia.
 
 
-        bq. @teddy_bear_fee = 121.08@
+        bq. @taxa_de_urso_teddy = 121.08@
 
 
-        Later, when you ring him up at the cash register (a really souped-up cash register which runs
-        Ruby!), you'll need to add together all his charges into a *total*.
+        Mais tarde, quando você pegar ele no caixa (uma registradora turbinada que roda
+        Ruby!), você vai precisar juntar as somas em um *total*.
 
 
-        bq. @total = orphan_fee + teddy_bear_fee + gratuity@
+        bq. @total = taxa_de_orfao + taxa_de_urso_teddy + gorjeta@
 
 
-        Those variable nicknames sure help.  And in the seedy underground of child sales, any help is
-        appreciated I'm sure.
+        Estes apelidos pra variáveis vêm a calhar.  E no submundo sedento das vendas infantis, qualquer ajuda
+        é bem-vinda, tenho certeza.
 
 
         !i/the.foxes-4a.png(They mock my examples.)!
  
 
 
-        h3. Numbers
+        h3. Números
 
 
-        The most basic type of number is an _integer_, a *series of digits* which can start
-        with a *plus or minus sign*.
+        O tipo mais básico de número é um _integer_ (número inteiro), uma *série de dígitos* que podem começar
+        com um *sinal de menos ou de mais*.
 
 
-        bq. @1@, @23@, and @-10000@ are examples.
+        bq. @1@, @23@, e @-10000@ são exemplos.
 
 
-        Commas are not allowed in numbers, but underscores are.  So if you feel the need to
-        mark your thousands so the numbers are more readable, use an underscore.
+        Vírgulas não são permitidas em números, mas travessões sim.  Então se você acha melhor
+        marcar os milhares para que o número fique mais legível, use um travessão.
 
 
-        bq. @population = 12_000_000_000@
+        bq. @habitantes = 12_000_000_000@
 
 
-        Decimal numbers are called _floats_ in Ruby.  Floats consist of numbers with *a decimal
-        place* or *scientific notation*.
+        Número decimais são chamados de _floats_ (números reais) no Ruby.  Números reais consistem em números com
+        *casas decimais* ou *em notação científica*.
 
 
-        bq. @3.14@, @-808.08@ and @12.043e-04@ are examples.
+        bq. @3.14@, @-808.08@ e @12.043e-04@ são exemplos.
 
 
 
-        h3. Strings
+        h3. Strings (Conjunto de Caracteres)
 
 
-        Strings are any sort of characters (letters, digits, punctuation) surrounded by
-        quotes.  Both single and double *quotes* are used to create strings.
+        Strings são quaisquer tipos de caracteres (letras, dígitos, pontuação) cercados por aspas.  
+        *Aspas* simples ou duplas, são usadas para se criar strings.
 
 
-        bq. @"sealab"@, @'2021'@, or @"These cartoons are hilarious!"@
-        are examples.
+        bq. @"laboratoriodomar"@, @'2021'@, or @"Estes quadrinhos são hilários!"@
+        são exemplos.
 
 
-        When you enclose characters in quotes, they are stored together as a single string.
+        Quando você cerca caracteres em aspas, eles ficam guardados juntos como uma string só.
         
 
-        Think of a reporter who is jotting down the mouthnoises of a rambling celebrity.  "I'm a lot
-        wiser," says Avril Lavigne.  "Now I know what the business is like -- what you have to do and
-        how to work it."
+        Pense num repórter que está anotando otting down the mouthnoises of a rambling celebrity.  "Eu estou
+        muito mais sábia," disse Avril Lavigne.  "Agora eu sei como as coisas são -- o que você tem que fazer
+        e como trabalhar isso."
 
 
         <pre>
-          avril_quote = "I'm a lot wiser.  Now I know 
-          what the business is like -- what you have 
-          to do and how to work it."
+          frase_da_avril = "Eu estou muito mais sábia.  Agora eu sei 
+          como as coisas são -- o que você tem 
+          que fazer e como trabalhar isso."
         </pre>
 
 
-        So, just as we stored a number in the *teddy_bear_fee* variable, now we're storing a collection
-        of characters (a string) in the *avril_quote* variable.  The reporter sends this quote
-        to the printers, who just happen to use Ruby to operate their printing press.
+        Então, assim como nós guardamos um número na variável *taxa_de_urso_teddy,* agora nós estamos guardando
+        uma coleção de caracter (uma string) na variável *frase_da_avril*.  O repórter envia esta frase
+        para impressão, que por acaso usa  Ruby para operar as impressoras.
 
 
         <pre>
          <setup>
-           oprah_quote = "O"
-           avril_quote = "A"
-           ashlee_simpson_debacle = "D"
+           frase_da_oprah = "O"
+           frase_da_avril = "A"
+           debate_ashlee_simpson = "D"
          </setup>
-         print oprah_quote
-         print avril_quote
-         print ashlee_simpson_debacle
+         print frase_da_oprah
+         print frase_da_avril
+         print debate_ashlee_simpson
         </pre>
 
 
@@ -125,417 +125,415 @@
 
 
 
-        h3. Symbols
+        h3. Symbols (Símbolos)
 
 
-        Symbols are words that look just like variables.  Again, they may contain letters,
-        digits, or underscores.  But they *start with a colon*.
+        Symbols são palavras que parecem variáveis.  Novamente, elas podem conter letras,
+        dígitos e travessões.  Mas elas *começam com dois pontos*.
 
 
-        bq. @:a@, @:b@, or @:ponce_de_leon@ are examples.
+        bq. @:a@, @:b@, ou @:ponce_de_leon@ are examples.
 
 
-        Symbols are lightweight strings.  Usually, symbols are used in situations where you need a string
-        but you won't be printing it to the screen.
+        Symbols são strings leves.  Geralmente, symbols são usados em situações em que você precisa de uma string
+        mas não vai imprimí-la na tela.
 
 
-        You could say a symbol is a bit easier on the computer.  It's like an antacid.  The colon indicates
-        the bubbles trickling up from your computer's stomach as it digests the symbol.  Ah.  Sweet, sweet
-        relief.
+        Você pode dizer que um symbol é pouco mais digerível no computador.  É como um anti-ácido.  Os dois pontos
+        indicam as bolhas saindo com estômago do computador enquanto ele digere o símbolo.  Ah.  Doce, doce alívio.
 
 
-        !i/the.foxes-4c.png(Chunky bacon!!)!
+        !i/the.foxes-4c.png(Bacon Pedaçudo!!)!
 
 
 
-        h3. Constants
+        h3. Constantes
 
 
-        Constants are words like variables, but constants are *capitalized*.  If variables are the
-        nouns of Ruby, then think of constants as the proper nouns.
+        Constantes são palavras como variáveis, mas constantes são *maiúsculas*.  Se variáveis são os
+        substativos do Ruby, então pense nas constantes como substantivos próprios.
 
 
-        bq. @Time@, @Array@ or @Bunny_Lake_is_Missing@ are examples.
+        bq. @Time@, @Array@ or @Bunny_Lake_Desapareceu@ são exemplos.
 
 
-        In English, proper nouns are capitalized.  The Empire State Building.  You can't just move The Empire
-        State Building.  You can't just decide that the Empire State Building is something else.
-        Proper nouns are like that.  They refer to something very specific and usually don't
-        change over time.
+        Em inglês, substantivos próprios têm a primeira letra maiúscula.  O Edifício Empire State.  Você não pode simplesmente
+        mudar o Edíficio Empire State.  Você não pode simplesmente decidir que o Edifício Empire State Building é outra coisa.
+        Substantivos próprios são assim.  Eles se referem a algo muito específico e que usualmente não
+        muda com o tempo.
 
 
-        In the same way, constants can't be changed after they are set.
+        Do mesmo modo, constantes não podem ser alteradas depois de criadas.
 
 
-        bq. @EmpireStateBuilding = "350 5th Avenue, NYC, NY"@
+        bq. @EdificioEmpireState = "350 5th Avenue, NYC, NY"@
 
 
-        If we try to change the constant, Ruby will complain to us.  Such things are frowned upon.
+        Se tentarmos mudar a constante, Ruby vai reclamar com a gente.  Coisas assim desagradam ele.
 
 
         !i/the.foxes-4d.png(Come on, chunky bacon.)!
 
 
 
-        h3. Methods
+        h3. Metódos
 
 
-        If variables and constants are the nouns, then methods are the verbs.
-        Methods are usually attached to the end of variables and constants by a *dot*.  You've already 
-        seen methods at work.
+        Se variáveis e constantes são substantivos, então métodos são verbos.
+        Métodos geralmente estão ligados ao final das variáveis e constantes por um *ponto*.  Você já viu 
+        métodos trabalhando.
 
 
-        bq. @front_door.open@
+        bq. @porta_da_frente.abra@
 
 
-        In the above, *open* is the method.  It is the action, the verb. In some cases, you'll see actions chained together.
+        Acima, *abra* é o método.  Nesta ação, o verbo. Em alguns casos, você vai ver ações ligadas juntas.
 
 
-        bq. @front_door.open.close@
+        bq. @porta_da_frente.abra.feche@
 
 
-        We've instructed the computer to open the front door and then immediately close it.
+        Instruímos o computador a abrir a porta da frente e depois imediatamente fechá-la.
 
 
-        bq. @front_door.is_open?@
+        bq. @porta_da_frente.esta_aberta?@
 
 
-        The above is an action as well.  We're instructing the computer to test the door to see if it's open.
-        The method could be called @Door.test_to_see_if_its_open@, but the @is_open?@ name is succinct and 
-        just as correct.  Both exclamation marks and question marks may be used in method names.
+        Acima temos uma ação também.  Estamos instruído o computador a testar a porta para ver se está aberta.
+        O método poderia se chamar @Porta.teste_para_ver_se_esta_aberta@, mas o nome @esta_aberta?@ é sucinto e 
+        também correto.  Exclamações e interrogações podem ser usadas em nomes de métodos.
 
 
-        h3. Method arguments
+        h3. Argumentos de Método
 
 
-        A method may require more information in order to perform its action.  If we want the computer
-        to paint the door, we should provide a color as well.
+        Um método talvez precise de mais informação pra realizar sua ação.  Se quisermos que o computador
+        pinte a porta, devemos prover uma cor também.
 
 
-        Method arguments are attached to the end of a method.  The arguments are usually surrounded by
+        Argumentos de método vão ligados ao final do método.  Os argumentos estão  usually surrounded by
         *parentheses* and separated by *commas*.
 
 
-        bq. @front_door.paint( 3, :red )@
+        bq. @porta_da_frente.pintar( 3, :vermelho )@
 
 
-        The above paints the front door 3 coats of red.
+        O código acima pinta a porta da frente com 3 demãos de vermelho.
 
 
-        Think of it as an inner tube the method is pulling along, containing its extra instructions.
-        The parentheses form the wet, round edges of the inner tube.  The commas are the feet of each argument,
-        sticking over the edge.  The last argument has its feet tucked under so they don't show.
+        Pense nisso como um tubo inteiror que o método arrumou, conténdo suas instruções extras.
+        Os parênteses formam as redondas e molhadas paredes do tubo.  As vírgulas são os pés de cada argumento,
+        saindo pra fora da beirada.  O último argumento tem o pé preso embaixo então eles não mostram.
 
 
         Like a boat pulling many inner tubes, methods with arguments can be chained.
 
 
-        bq. @front_door.paint( 3, :red ).dry( 30 ).close()@
+        bq. @porta_da_frente.pintar( 3, :vermelho ).secar( 30 ).fechar()@
 
 
-        The above paints the front door 3 coats of red, dries for 30 minutes, and closes the door.  Even though
-        the last method has no arguments, you can still put parentheses if you like.  There is
-        no use dragging an empty inner tube, so the parentheses are normally dropped.
+        O código acima pinta a porta da frente com 3 demãos de vermelho, seca por 30 minutos, e fecha a porta.  Mesmo que
+        o último método não tenha argumentos, você pode colocar parênteses se quiser.  Um cano vazio não tem
+        muito uso, então os parênteses são geralmente deixados pra lá.
 
 
-        Some methods (such as @print@) are kernel methods.  These methods are used throughout Ruby.  Since they
-        are so common, you won't use the dot.
+        Alguns métodos (como @print@) são métodos do kernel.  Estes métodos são usados por todo Ruby.  Já que elese
+        são tão comuns, você não usa o ponto.
 
 
-        bq. @print "See, no dot."@
+        bq. @print "Veja, sem ponto."@
 
 
-        h3. Class methods
+        h3. Métodos de Classe
 
 
-        Like the methods described above (also called _instance_ methods), class methods
-        are usually attached after variables and constants.  Rather than a dot, a *double colon* is used.
+        Assim como os métodos descritos acima (também chamdos métodos _ de instância_), métodos de classe
+        são geralmente ligados depois de variáveis e constantes.  Invés de ponto, usa-se *dois pontos duplo.*
 
 
-        bq. @Door::new( :oak )@
+        bq. @Porta::new( :carvalho )@
 
 
-        As seen above, the @new@ class method is most often used to create things.  In the above example, we're asking
-        Ruby to make a new oak door for us.  Of course, Ruby has to have an understanding of how to make a
-        door--as well as a wealth of timber, lumberjacks, and those long, wiggily, two-man saws.
+        Como foi visto acima, o método de classe @new@ é mais usado para se criar coisas.  No exemploa cima, estamos pedindo
+        ao Ruby para fazer uma nova porta de carvalho pra gente.  Claro, o Ruby não tem conhecimento de como fazer uma
+        door--assim como um a pilha de madeira, madeireiros, e aquelas longas, wiggily, two-man saws.
 
 
         !i/the.foxes-4e.png(Plenty of chunky bacon to go around.)!
 
 
 
-        h3. Global variables
+        h3. Variáveis Globais
 
 
-        Variables which begin with a *dollar sign* are global.
+        Variáveis que começam com um *cifrão* são globais.
 
 
-        bq. @$x@, @$1@, @$chunky@ and @$CHunKY_bACOn@ are examples.
+        bq. @$x@, @$1@, @$pedacudo@ and @$BAcOn_PeDAcUDo@ são exemplos.
 
 
-        Most variables are rather temporary in nature.  Some parts of your program are like little houses.
-        You walk in and they have their own variables.  In one house, you may have a @dad@ that represents
-        Archie, a travelling salesman and skeleton collector.  In another house, @dad@ could represent
-        Peter, a lion tamer with a great love for flannel.  Each house has its own meaning for @dad@.
+        A maioria das váriaveis são temporárias por natureza.  Algumas partes do seu programa são como casas.
+        Você entra e elas tem suas próprias variáveis.  Em um casa, voce pode der um @pai@ que representa
+        Archie, um caixeiro-viajante colecionador de esqueletos.  Em outra casa, @pai@ pode representar
+        Peter, um domador de leões com grande apreço por flanela.  Cada casa tem um sentido próprio pra @pai@.
 
 
-        With global variables, you can be guaranteed that the variable is the same in every little house.
-        The dollar sign is very appropriate.  Every American home respects the value of the dollar.  We're
-        crazy for the stuff.  Try knocking on any door in America and hand them cash.  I can guarantee
-        you won't get the same reaction if you knock on a door and offer Peter, a lion tamer with a great
-        love for flannel.
+        Com variáveis globais, você garante que a varivel será a mesma em cada casinha.
+        O sinal de cifrão é bem apropriado.  Todo lar Americano respeita o valor do cifrão.  Somos
+        doidos pela coisa.  Tente bater em qualquer porta na América e dê a eles dinheiro.  Eu posso garantir
+        que você não verá a mesma reação se bater em uma porta e oferecer o Peter, um domador de leões com grande
+        apreço por flanela.
 
 
-        Global variables can be used anywhere in your program.  They never go out of sight.
+        Variáveis globais podem ser usadas em qualquer lugar no seu programa.  Elas nunca saem da vista.
 
 
 
-        h3. Instance variables
+        h3. Variáveis de Instância
 
 
-        Variables which begin with an *at* symbol are instance variables.
+        Variáveis que começam com uma *arroba* são variáveis de instância.
 
 
-        bq. @@x@, @@y@, and @@only_the_chunkiest_cut_of_bacon_I_have_ever_seen@ are examples.
+        bq. @@x@, @@y@, e @@somente_o_maior_pedaco_de_bacon_que_eu_ja_vi@ são exemplos.
 
 
-        These variables are often used to define the attributes of something.  For example, you might
-        provide Ruby with the width of the @front_door@ by setting the @@width@ variable inside that
-        @front_door@.  Instance variables are used to define characteristics of a single object in
-        Ruby.
+        Estas variáveis são muito usadas para se definir atributos de alguma coisa.  Por exemplo, você pode
+        prover o Ruby com a largura da @porta_da_frente@ criando a variável @@largura@ dentro daquela
+        @porta_da_frente@.  Variáveis de instância são usadas para se definir características de um objeto
+        em Ruby.
 
 
-        Think of the *at* symbol as meaning *attribute*.
+        Pense na *arroba (at)* signficando *atributo*.
         
 
 
-        h3. Class variables
+        h3. Variáveis de Classe
 
 
-        Variables which begin with *double at* symbols are class variables.
+        Variáveis que começam com *duas arrobas* são variáveis de classe.
 
 
-        bq. @@@x@, @@@y@, and @@@i_will_take_your_chunky_bacon_and_raise_you_two@ are examples.
+        bq. @@@x@, @@@y@, e @@@i_will_take_your_chunky_bacon_and_raise_you_two@ são exemplos.
 
 
-        Class variables, too, are used to define attributes.  But rather than defining an attribute
-        for a single object in Ruby, class variables give an attribute to many related objects in
-        Ruby.  If instance variables set attributes for a single @front_door@, then class variables 
+        Variáveis de classe são usadas, também, para se definir atributos.  Mas ao invés de definir um atributo
+        a apenas um objeto no Ruby, variáveis de classe dão um atributo a vários objetos relacionados no Ruby.
+        Se as variáveis de instância estipulam atributos para só uma @porta_da_frente@, then class variables 
         set attributes for everything that is a @Door@.
 
 
-        Think of the *double at* prefix as meaning *attribute all*.  Additionally, you can think of a swarm
-        of *AT-ATs* from _Star Wars_, which are all commanded by Ruby.  You change a class variable
-        and not just one changes, they all change.
+        Pense no prefixo das *duas arrobas* significando *atribua a todos*.  Adicionalmente, você pode pensar em uma
+        manada de *AT-ATs* de _Star Wars_, que são comandados pelo Ruby.  Você muda uma variável de classe
+        e não apenas um muda, todos ele mudams.
 
 
         !i/the.foxes-4f.png(Woohoo! Chunky bacon accomplished!)!
 
 
 
-        h3. Blocks
+        h3. Blocos
 
 
-        Any code surrounded by *curly braces* is a block.
+        Qualquer código cercado por *colchetes* é um bloco.
 
 
-        bq. @2.times { print "Yes, I've used chunky bacon in my examples, but never again!" }@ is an example.
+        bq. @2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei denovo!" }@ is an example.
 
 
-        With blocks, you can group a set of instructions together so that they can be passed
+        Com blocos, você pode agrupar um pedaço de instruções juntas assim elas pode ser passadas
         around your program.  
-        The curly braces give the appearance of crab pincers that have snatched the code
-        and are holding it together.  When you see these two pincers, remember that the
-        code inside has been pressed into a single unit.
+        Os colcheter dão a aparência de patas de caranguejo que pegar o código e o estão
+        segurando.  Quando você vir estas duas patas, lembre-se que o código dentro
+        foi pressinado em uma unidade só.
 
 
-        It's like one of those little Hello Kitty boxes they sell at
-        the mall that's stuffed with tiny pencils and microscopic paper, all crammed into
+        É como uma daquelas caixas da Hello Kitty que eles vendem no shopping
+        que vem lotadas de pequenos lápis e papel microscópico, all crammed into
         a glittery transparent case that can be concealed in your palm for covert stationary
-        operations.  Except that blocks don't require so much squinting.
+        operations.  Except that blocks don t require so much squinting.
 
 
-        The curly braces can also be traded for the words *do* and *end*, which is nice if your
-        block is longer than one line.
+        As chaves pode ser substituídas pelas palavras *do* e *end*, o que é bacana se seu bloco for
+        maior que uma linha.
 
 
         <pre>
          loop do
-           print "Much better."
-           print "Ah.  More space!"
-           print "My back was killin' me in those crab pincers."
+           print "Bem melhor."
+           print "Ah.  Mais espaço!"
+           print "Minhas costas estavam me matando dentro daquelas garras de caranguejo."
          end
-         <stdout>Much better.Ah.  More space!My back was killin' me in those crab pincers.</stdout>
+         <stdout>Bem melhor.Ah.  Mais espaço!Minhas costas estavam me matando dentro daquelas garras de caranguejo.</stdout>
         </pre>
         
 
 
-        h3. Block arguments
+        h3. Argumentos de Bloco
 
 
-        Block arguments are a set of variables surrounded by *pipe* 
-        characters and separated by *commas*.
+        Argumentos de bloco são uma série de variáveis cercadas por símbolos *tal que* 
+        e separadas por *vírgulas*.
 
 
-        bq. @|en||x|@, @|x,y|@, and @|up, down, all_around|@ are examples.
+        bq. @|en||x|@, @|x,y|@, e @|cima, baixo, todo_lado|@ são exemplo.
 
 
-        Block arguments are used at the beginning of a block.
+        Argumentos de bloco são usando no início do bloco.
 
 
         bq. @{ |x,y| x + y }@
 
 
-        In the above example, @|x,y|@ are the arguments.  After the arguments, we have a bit of
-        code.  The expression @x + y@ adds the two arguments together.
+        No código acima, @|x,y|@ são os argumentos. Depois do argumentos, temos um pedaço de código
+        A expressão @x + y@ soma os argumentos.
 
 
-        I like to think of the pipe characters as representing a tunnel.  They give the appearance
-        of a chute that the variables are sliding down.  (An @x@ goes down spread eagle, while the @y@
-        neatly crosses her legs.)  This chute acts as a passageway between blocks and the world around them.  
+        Eu gosto de pensar nos símbolos tal que representando um túnel.  Ele dão a aparência de um
+        escorrega no qual as váriaveis estão descendo.  (O @x@ desce com as pernas abertas, enquanto o @y@
+        neatly crosses her legs.)  Esse escorrega age como uma passagem entre os blocos e o mundo lá fora.  
 
 
-        Variables are passed through this chute (or tunnel) into the block.
+        Variáveis são passadas por esse escorrega (ou túnel) dentro do bloco.
 
 
         !i/the.foxes-4g.png(And then, the dismal truth.)!
 
 
 
-        h3. Ranges
+        h3. Ranges (Períodos)
 
 
-        A range is two values surrounded by *parentheses* and separated by *an ellipsis* (in the
-        form of two or three dots).
+        Range são dois valores cercados por *parênteses* e separados por *uma elípse* (na forma de
+        dois ou três pontos).
 
 
-        bq. @(1..3)@ is a range, representing the numbers 1 through 3.
+        bq. @(1..3)@ é um range, representando os números de 1 até 3.
 
 
-        bq. @('a'..'z')@ is a range, representing a lowercase alphabet.
+        bq. @('a'..'z')@ é um range, representando o alfabeto em minúsculas.
 
 
-        Think of it as an accordion which has been squeezed down for carrying.  (Sure, you can build
+        Pense neles como um acordeão que fora fechado para se carregar.  (Sure, you can build
         a great sense of self-worth by carrying around an unfolded accordion, but sometimes a person
-        needs to wallow in self-doubt, carefully concealing the squeeze-box.)  The parentheses are
-        the handles on the sides of a smaller, handheld accordion.  The dots are the chain, keeping
-        the folds tightly closed.
+        needs to wallow in self-doubt, carefully concealing the squeeze-box.)  Os parênteses são
+        os lados deste pequeno acordeão de mão.  Os pontão são a fole, mantendo os lados as partes
+        bem unidas.
 
 
-        Normally, only two dots are used.  If a third dot is used, the last value in the range is
-        excluded.
+        Normalmente, apenas dois pontos são usados. Se um terceiro ponto for usado, o último valor no range será
+        excluído.
 
 
-        bq. @(0...5)@ represents the numbers 0 through 4.
+        bq. @(0...5)@ representa os números de 0 até 4.
 
 
-        When you see that third dot, imagine opening the accordion slightly.  Just enough to let one
-        note from its chamber.  The note is that end value.  We'll let the sky eat it.
+        Quando você vê o terceiro ponto, imagine abrir o acordeão um pouco menos.  O necessário para uma nota
+        apenas de seu fole.  A nota é este último valor.  We ll let the sky eat it.
 
 
-        h3. Arrays
+        h3. Arrays (Conjuntos, Vetores)
 
 
-        An array is a list surrounded by *square brackets* and separated by *commas*.
+        Um array é uma lista cercada por *chaves* e separada por *vírgulas*.
 
 
-        bq. @[1, 2, 3]@ is an array of numbers.
+        bq. @[1, 2, 3]@ é um array de números.
 
 
-        bq. @['coat', 'mittens', 'snowboard']@ is an array of strings.
+        bq. @['casaco', 'luvas', 'snowboard']@ é um array de strings.
 
 
-        Think of it as a caterpillar which has been stapled into your code.  The two square brackets
-        are staples which keep the caterpillar from moving, so you can keep track of which end is the head and
-        which is the tail.  The commas are the caterpillar's legs, wiggling between each section
-        of its body.
+        Pense nele como uma centopéia que foi grampeada no nosso código.  As duas chaves
+        são grampos que não deixam a centopéira se movimentar, então você consegue distinguir onde é cabeça e
+        onde é a cauda.  As vírgulas são as pernas da centopéia, balançando entre cada seção do seu corpo.
 
 
-        Once there was a caterpillar who had commas for legs.  Which meant he had to allow a literary
-        pause after each step.  The other caterpillars really respected him for it and he came to have 
-        quite a commanding presence.  Oh, and talk about a philanthropist!  He was notorious for
+        Era uma vez uma centopéia que tinha vírgulas ao invés de pernas.  O que significa que ela tinha que
+        dar uma pausa literária a cada passo.  As outra centopéias a respeitavam muito por isso e ela veio a ter
+        uma bela presença de comando.  Oh, and talk about a philanthropist!  He was notorious for
         giving fresh leaves to those less-fortunate.
 
 
-        Yes, an array is a collection of things, but it also keeps those things in a specific order.
+        Sim, um array é uma coleção de coisas, mas ele também mantém estas coisas em uma ordem específica.
 
 
 
-        h3. Hashes
+        h3. Hashes (Bolo, Mistura)
 
 
-        A hash is a dictionary surrounded by *curly braces*.  Dictionaries match words
-        with their definitions.  Ruby does so with *arrows* made from an equals sign, followed by
-        a greater-than sign.
+        Um hash é um dicionário cercado por *colchetes*.  Dicionários servem para encontrar definições
+        das palavras.  O Ruby faz isso com *setas* feitas de sinais de igual, seguida por um sinal de
+        maior que.
 
 
-        bq. @{'a' => 'aardvark', 'b' => 'badger'}@ is an example.
+        bq. @{'a' => 'aardvark', 'b' => 'texugo'}@ são um exemplo.
 
 
-        This time, the curly braces represent little book symbols.  See how they look like
-        little, open books with creases down the middle?  They represent opening and closing
-        our dictionary. 
+        Desta vez, os colchetes representam livrinhos.  Veja como eles se parecem com
+        pequenos, livros abertos com dobras no meio?  Eles represntam abrir e fechar
+        nosso dicionário. 
 
 
-        Imagine our dictionary has a definition on each of its pages.  The commas represent
-        the corner of each page, which we turn to see the next definition.  And on each page:
-        a word followed by an arrow pointing to the definition.
+        Imagine que nosso dicionário tem um definição em cada página.  As vírgulas representam
+        os cantos de cada página, que nós viramos pra ver a próxima definição.  E em cada página:
+        uma palavra seguida por uma seta apontando a definição.
 
 
         <pre>
          {
-           'name' => 'Peter',
-           'profession' => 'lion tamer',
-           'great love' => 'flannel'
+           'nome' => 'Peter',
+           'profissao' => 'domador de leões',
+           'grande amor' => 'flanela'
          }
         </pre>
 
 
-        I'm not comparing hashes to dictionaries because you can only store definitions in
-        a hash.  In the example above, I stored personal information for Peter, the lion
-        tamer with a great love for flannel.  Hashes are like dictionaries because they
-        can be very easy to search through.
+        Não estou compararando hashes a dicionários por que você pode guardar só definições
+        na hash.  No exemplo acima, eu guardei informação pessoal de Peter, o domador
+        de leões com grande apreço por flanela.  Hashes são como dicionários porque elas são
+        muito fáceis de se procurar algo.
 
 
-        Unlike arrays, the items in a hash are not kept in a specific order.
+        Diferentemente dos arrays, os itens na hash não são mantidos em ordem específica.
 
 
         !i/the.foxes-5.png(The foxes think silence will kill the comic.)!
 
 
 
-        h3. Regular Expressions
+        h3. Expressões Regulares
 
 
-        A regular expression (or _regexp_) is a set of characters surrounded by *slashes*.
+        Uma expressão regular (ou _regexp_) é uma série de caracteres cercados por *barras*.
 
 
-        bq. @/ruby/@, @/[0-9]+/@ and @/^\d{3}-\d{3}-\d{4}/@ are examples.
+        bq. @/ruby/@, @/[0-9]+/@ e @/^\d{3}-\d{3}-\d{4}/@ são exemplos.
 
 
-        Regular expressions are used
-        to find words or patterns in text.  The slashes on each side of the expression are pins.  
+        Expressões regulares são usadas para se achar palavras ou padrões
+        no texto.  As barras dos lados da expressão são pinos.  
 
 
-        Imagine if you had a little word with pins on
-        both side and you held it over a book.  You pass the word over the book and when it
-        gets near a matching word, it starts blinking.  You pin the regular expression onto the book,
+        Imagine se você tivesse uma palavrinha com pinos de cada lado e você
+        a segurasse por cima de um livro. Você passa a palavra pelo livro e quando ela chega
+        chega perto de uma palavra que coincida, ela começa a piscar.  You pin the regular expression onto the book,
         right over the match and it glows with the letters of the matching word.
 
 
         Oh, and when you poke the pins into the book, the paper sneezes, _reg-exp!_
 
 
-        Regular expressions are much faster than passing your hand over pages of a book.  Ruby
-        can use a regular expression to search volumes of books very quickly.
+        Expressões regulares são muito mais rápidas que folhear um livro. O Ruby
+        pode usar uma expressão regular pra procurar volumes de livros muito rapidamente.
 
 
-        h3. Operators
+        h3. Operadores
 
 
-        You'll use the following list of operators to do math in Ruby or to compare things.
-        Scan over the list, recognize a few.  You know, addition @+@ and subtraction @-@
-        and so on.
+        Você vai usar a seguinte lista de operadores pra matemática ou pra comparar coisas no Ruby.
+        Analise a lista, reconheça alguns.  Você conhece, adição @+@ e subtração @-@
+        e por aí vai.
 
 
         <pre class="text">
@@ -546,13 +544,13 @@
         </pre>
 
 
-        h3. Keywords
+        h3. Keywords (Palavras-Chave, Palavras-Reservadas)
 
 
-        Ruby has a number of built-in words, imbued with meaning.  These words cannot
-        be used as variables or changed to suit your purposes.  Some of these we've already
-        discussed.  They are in the safe house, my friend.  You touch these and you'll be 
-        served an official syntax error.
+        O Ruby tem um número de palavra embutidas, imbuídas em significado.  Estas palavras não podem
+        ser usadas como variáveis ou modificadas às suas necessidades.  Algumas delas nós já
+        discutimos.  Elas estão na caixa forte, meu amigo.  É só relar nelas and você terá 
+        um erro oficial de sintaxe.
 
 
         <pre class="text">
@@ -564,13 +562,13 @@
         </pre>
 
 
-        Good enough.  These are the illustrious members of the Ruby language.  We'll be having
-        quite the junket for the next three chapters, gluing these parts together into sly bits
-        of (poignant) code.
+        Muito bom.  Estes são os ilustres membros da linguagem Ruby.  Teremos um belo
+        banquete nós proximos três capítulos, grudando estas partes em manhosos pedaços
+        de (comovente) código.
 
 
-        I'd recommend skimming all of the parts of speech once again.  Give yourself a broad
-        view of them.  I'll be testing your metal in the next section.
+        E recomendo que você dê mais um olhadela pelas partes da conversa.  Dê uma olhada ampla
+        nelas.  Eu estarei testando seu metal na próxima seção.
 
 
         !i/the.foxes-6.png(Out in the pickup truck.)!
