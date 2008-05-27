@@ -29,9 +29,9 @@
         assim: _Cinco vezes imprima "Odelay!"._
 
 
-        Que é exatamente o que este peque programa Ruby faz.  O "espanhol mutante" da 
-        Beck:http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation will print
-        five times on the computer screen.
+        Que é exatamente o que este pequeno programa Ruby faz.  O "espanhol mutante" do
+        Beck:http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation irá imprimir
+        cinco vezes na tela do computador.
 
 
         *Leia o trecho a seguir em voz alta.*
@@ -45,9 +45,9 @@
         restaurante inclua a palavra aura._
 
 
-        Já viu alguma linguagem de programação usar a pontuação tão eficientemente?  Ruby usa alguma pontuação,
+        Já viu alguma linguagem de programação usar a pontuação tão eficientemente?  Ruby usa a pontuação,
         como exclamações e interrogações, pra melhorar a legibilidade do código.  Nós estamos fazendo uma pergunta
-        no código acima, então por quê não deixar isto aparente?
+        no código acima, então por quê não deixar isso aparente?
 
 
         *Leia o trecho a seguir em voz alta.*

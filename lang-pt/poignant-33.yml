@@ -21,7 +21,7 @@
         h3. Sua Repetitividade Compensa
 
 
-        You hand me a legal pad, doused in illegible shorthand.  Analisando ele, eu começo a notar
+        Você me entrega um bloco de notas, cheio de garranchos ilegíveis.  Analisando ele, eu começo a notar
         padrões.  Notar que você parece usar as mesmas palavras repetidamente in your musings.  
         Palavras como _macacoestrela_, _Nigéria_, _bomba_.  Algumas frases até.  _Put the kabosh on._
         Que são ditas toda hora.
@@ -71,9 +71,9 @@
 
 
         Se você nunca esteve num depósito, você pode ver as chaves como alças.
-        Imagine an industrious worker putting on his work gloves and hefting the index back to
-        your custody.  If you've never used handles before, then I'm giving you about
-        thirty seconds to find a handle and use it before I blow my lid.
+        Imagine um trabalhador industrial colocando suas luvas e levando o index de volta à
+        sua custódia.  Se você nunca usou uma alça, ou te dar cerca de
+        trinta segundo pra achar uma e usar antes que eu fique nervoso.
 
 
         Assim como os vários operadores que você viu recentemente, as chaves indexadoras são
@@ -248,7 +248,7 @@
 
 
         O arquivo está aberto para escrita e nos é dado na forma de variável @f@, que pode ser vista
-        *descendo o escorrega dentro do nosso block*.  Dentro do bloco, nós escrevemos no arquivo.  Quando
+        *descendo a calha pra dentro do nosso block*.  Dentro do bloco, nós escrevemos no arquivo.  Quando
         o bloco se fecha com @end@, nosso arquivo é fechado também.
 
 
@@ -259,8 +259,8 @@
         h3. Acalme-se, Suas Idéias Não Estão Presas
 
 
-        Aqui, vamos pegar nossas idéia de volta em seus verbos originiais,
-        so you can rumminate over their brilliance.
+        Aqui, vamos pegar nossas idéia de volta em seus verbos originais,
+        para que você possa ruminar sobre o brilhantismo delas.
 
 
         <pre>

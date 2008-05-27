@@ -1,7 +1,7 @@
     - As Partes da Conversa: >
 
         Assim como a faixa branca nas costas do gambá e a branca e enrolada grinalda da noiva, várias partes
-        da conversa têm sinalizações visuias para te ajudar a identificá-las.  Pontuação, maiúsculas e minúsculas,
+        da conversa têm sinalizações visuais para te ajudar a identificá-las.  Pontuação, maiúsculas e minúsculas,
         irão ajudar seu cérebro ver pedaços de código e os reconhecê-los intensamente.
         Sua mente vai gritar frequentemente _Hey, Eu conheço aquele cara!_  Você vai também poder
         contar vantagem em conversas com outros Rubistas.
@@ -16,7 +16,7 @@
         h3. Variáveis
 
 
-        Qualquer palavra simples, em minúsculas é uma variável no ruby.  Variáveis podem consistir de
+        Qualquer palavra simples, em minúsculas, é uma variável no ruby.  Variáveis podem consistir de
         letras, dígitos e travessões.
 
 
@@ -31,7 +31,7 @@
         Com variáveis, você dá um apelido a algo que você use frequentemente.  Por exemplo, vamos dizer
         que você tem um orfanato.  É um orfanato maléfico.  E quando o Papai Warbucks vem comprar 
         mais crianças, nós insistimos que ele nos pague *cento e vinte um reais e oito centavos* pelo urso
-        teddy da criança, o qual ela ficau apegada nos momentos sombrios que passau vivendo neste pesadelo de
+        teddy da criança, o qual ela ficou apegada nos momentos sombrios que passou vivendo neste pesadelo de
         custódia.
 
 
@@ -105,7 +105,7 @@
 
 
         Então, assim como nós guardamos um número na variável *taxa_de_urso_teddy,* agora nós estamos guardando
-        uma coleção de caracter (uma string) na variável *frase_da_avril*.  O repórter envia esta frase
+        uma coleção de caracters (uma string) na variável *frase_da_avril*.  O repórter envia esta frase
         para impressão, que por acaso usa  Ruby para operar as impressoras.
 
 
@@ -226,7 +226,7 @@
         saindo pra fora da beirada.  O último argumento tem o pé preso embaixo então eles não mostram.
 
 
-        Like a boat pulling many inner tubes, methods with arguments can be chained.
+        Como um barco de bóias, métodos com argumentos podem ser ligados.
 
 
         bq. @porta_da_frente.pintar( 3, :vermelho ).secar( 30 ).fechar()@
@@ -319,13 +319,13 @@
 
         Variáveis de classe são usadas, também, para se definir atributos.  Mas ao invés de definir um atributo
         a apenas um objeto no Ruby, variáveis de classe dão um atributo a vários objetos relacionados no Ruby.
-        Se as variáveis de instância estipulam atributos para só uma @porta_da_frente@, then class variables 
-        set attributes for everything that is a @Door@.
+        Se as variáveis de instância estipulam atributos para só uma @porta_da_frente@, então variáveis de classe 
+        estipulam atributoes pra tudo que for @Porta@.
 
 
         Pense no prefixo das *duas arrobas* significando *atribua a todos*.  Adicionalmente, você pode pensar em uma
         manada de *AT-ATs* de _Star Wars_, que são comandados pelo Ruby.  Você muda uma variável de classe
-        e não apenas um muda, todos ele mudams.
+        e não apenas uma muda, todas elas mudam.
 
 
         !i/the.foxes-4f.png(Woohoo! Chunky bacon accomplished!)!
@@ -343,8 +343,8 @@
 
         Com blocos, você pode agrupar pedaços de instruções juntas, assim elas pode ser passadas
         pelo seu programa.  
-        Os colchetes dão a aparência de patas de caranguejo que pegaram o código e o estão
-        segurando.  Quando você ver estas duas patas, lembre-se que o código dentro
+        Os colchetes dão a aparência de garras de caranguejo que pegaram o código e o estão
+        segurando.  Quando você ver estas duas garras, lembre-se que o código dentro
         foi prensado em uma só unidade.
 
 
@@ -385,16 +385,16 @@
         bq. @{ |x,y| x + y }@
 
 
-        No código acima, @|x,y|@ são os argumentos. Depois do argumentos, temos um pedaço de código
+        No código acima, @|x,y|@ são os argumentos. Depois dos argumentos, temos um pedaço de código.
         A expressão @x + y@ soma os argumentos.
 
 
-        Eu gosto de pensar nos símbolos tal que representando um túnel.  Ele dão a aparência de um
-        escorrega no qual as váriaveis estão descendo.  (O @x@ desce com as pernas abertas, enquanto o @y@
-        neatly crosses her legs.)  Esse escorrega age como uma passagem entre os blocos e o mundo lá fora.  
+        Eu gosto de pensar nos símbolos tal que representando um túnel.  Ele dão a aparência de uma
+        calha na qual as váriaveis estão descendo.  (O @x@ desce com as pernas abertas, enquanto o @y@
+        harmoniosamente cruza as pernas.)  Essa calha age como uma passagem entre os blocos e o mundo lá fora.  
 
 
-        Variáveis são passadas por esse escorrega (ou túnel) dentro do bloco.
+        Variáveis são passadas por essa calha (ou túnel) pra dentro do bloco.
 
 
         !i/the.foxes-4g.png(And then, the dismal truth.)!
@@ -484,7 +484,7 @@
          {
            'nome' => 'Peter',
            'profissao' => 'domador de leões',
-           'grande amor' => 'flanela'
+           'grande apreco' => 'flanela'
          }
         </pre>
 
@@ -512,16 +512,16 @@
 
 
         Expressões regulares são usadas para se achar palavras ou padrões
-        no texto.  As barras dos lados da expressão são pinos.  
+        no texto.  As barras dos lados da expressão são alfinetes.  
 
 
-        Imagine se você tivesse uma palavrinha com pinos de cada lado e você
+        Imagine se você tivesse uma palavrinha com alfinetes de cada lado e você
         a segurasse por cima de um livro. Você passa a palavra pelo livro e quando ela chega
-        chega perto de uma palavra que coincida, ela começa a piscar.  You pin the regular expression onto the book,
-        right over the match and it glows with the letters of the matching word.
+        chega perto de uma palavra que coincida, ela começa a piscar.  Você espeta a expressão regular no livro,
+        bem em cima da palavra que bate e ela brilha com as letras da palavra encontrada.
 
 
-        Oh, and when you poke the pins into the book, the paper sneezes, _reg-exp!_
+        Oh, e quando você espeta os alfinetes no livro, o papel espirra, _reg-exp!_
 
 
         Expressões regulares são muito mais rápidas que folhear um livro. O Ruby

@@ -7,8 +7,8 @@
 
         Eu vi o @true@ na buffet do hotel hoje.  Eu não suporto aquele cara.
         Ele aparece demais.  And you've never met anyone who planted his
-        feet so hard in the ground.  He wears this corny necklace made out of
-        shells.  His face exudes this brash confidence.  (You can tell he's exerting
+        feet so hard in the ground.  Ele usa esse colar brega feito de
+        conchas.  Sua face exibe uma confiança insolente.  (You can tell he's exerting
         all of his restraint just to keep from bursting into Neo flight.)
 
 
@@ -23,8 +23,8 @@
         bq. @print "Hugo Boss" if true@ se comporta como @print "Hugo Boss"@.
 
 
-        Ocasionalmente, o @if@ vai will haul out the velvet ropes to exercise some crowd control.  
-        Os *dois iguais* dão a aparência de uma passarela, como cordas dos lados
+        Ocasionalmente, o @if@ vai puxar as cordas vermelhas pra exercer algum controle de multidão.  
+        Os *dois iguais* dão a aparência de uma passagem, como cordas dos lados
         de um carpete vermelho onde só @true@ é aceito.
 
 
@@ -63,7 +63,7 @@
         bq. @sujeito_aproximando.==( true )@
 
 
-        Ruby permite o atalho, sem problemas.  Jogue a ponto e vá pra trás devagar.
+        Ruby permite o atalho, sem problemas.  Jogue o ponto e vá pra trás, devagar.
 
 
         Agora, você se lembra o que deve fazer pra *dominar* no Ruby?  _Use as respostas que
@@ -145,7 +145,7 @@
                 elsif no_hotel == false
                   "Ele saiu."
                 else
-                  "O sistema está traaaaav-iz"
+                  "O sistema está traaaaavad-iz"
                 end )
         </pre>
 
