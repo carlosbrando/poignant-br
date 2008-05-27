@@ -1,14 +1,14 @@
     - As Partes da Conversa: >
 
-        Assim como a faixa branca nas costas do gambá e um d the winding, white train of a bride, várias partes
-        da conversa têm sinalizações visuias parar te ajudar a identificá-las.  Pontuação e maiúsculas, minúsculas
-        irão ajudar seu cérebro ver pedaços de código e o reconhecer produndamentefeel intense recognition.
-        Sua mente vai gritar frequentemente _Hey, Eu conheço aquele cara!_  Você vaYou  ll also be able to name-drop in
-        conversations with other Rubyists.
+        Assim como a faixa branca nas costas do gambá e a branca e enrolada grinalda da noiva, várias partes
+        da conversa têm sinalizações visuias para te ajudar a identificá-las.  Pontuação, maiúsculas e minúsculas,
+        irão ajudar seu cérebro ver pedaços de código e os reconhecê-los intensamente.
+        Sua mente vai gritar frequentemente _Hey, Eu conheço aquele cara!_  Você vai também poder
+        contar vantagem em conversas com outros Rubistas.
 
 
         Tente se focar na aparência de cada uma destas partes da conversa.  O resto do livro vai
-        entrar em detalhes.  Eu darei pequenas descrições de cada parte da conversa, mas você nao precisa
+        entrar em detalhes.  Eu darei pequenas descrições de cada parte da conversa, mas você não precisa
         entender a explicação.  Ao término deste capítulo, você deve estar apto a reconhecer 
         cada parte de um programa Ruby.
 
@@ -92,7 +92,7 @@
         Quando você cerca caracteres em aspas, eles ficam guardados juntos como uma string só.
         
 
-        Pense num repórter que está anotando otting down the mouthnoises of a rambling celebrity.  "Eu estou
+        Pense num repórter que está anotando as baboseiras de uma celebridade incoerente.  "Eu estou
         muito mais sábia," disse Avril Lavigne.  "Agora eu sei como as coisas são -- o que você tem que fazer
         e como trabalhar isso."
 
@@ -139,7 +139,7 @@
         mas não vai imprimí-la na tela.
 
 
-        Você pode dizer que um symbol é pouco mais digerível no computador.  É como um anti-ácido.  Os dois pontos
+        Você pode dizer que um symbol é pouco mais digerível pro computador.  É como um anti-ácido.  Os dois pontos
         indicam as bolhas saindo com estômago do computador enquanto ele digere o símbolo.  Ah.  Doce, doce alívio.
 
 
@@ -211,8 +211,8 @@
         pinte a porta, devemos prover uma cor também.
 
 
-        Argumentos de método vão ligados ao final do método.  Os argumentos estão  usually surrounded by
-        *parentheses* and separated by *commas*.
+        Argumentos de método vão ligados ao final do método.  Os argumentos estão geralmente cercados por
+        *parênteses* e separados por *vírgulas*.
 
 
         bq. @porta_da_frente.pintar( 3, :vermelho )@
@@ -314,7 +314,7 @@
         Variáveis que começam com *duas arrobas* são variáveis de classe.
 
 
-        bq. @@@x@, @@@y@, e @@@i_will_take_your_chunky_bacon_and_raise_you_two@ são exemplos.
+        bq. @@@x@, @@@y@, e @@@vou_pegar_seus_bacons_pedacudos_e_ensinar_uma_licao_pra_voces_dois@ são exemplos.
 
 
         Variáveis de classe são usadas, também, para se definir atributos.  Mas ao invés de definir um atributo
@@ -341,17 +341,17 @@
         bq. @2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei denovo!" }@ is an example.
 
 
-        Com blocos, você pode agrupar um pedaço de instruções juntas assim elas pode ser passadas
-        around your program.  
-        Os colcheter dão a aparência de patas de caranguejo que pegar o código e o estão
-        segurando.  Quando você vir estas duas patas, lembre-se que o código dentro
-        foi pressinado em uma unidade só.
+        Com blocos, você pode agrupar pedaços de instruções juntas, assim elas pode ser passadas
+        pelo seu programa.  
+        Os colchetes dão a aparência de patas de caranguejo que pegaram o código e o estão
+        segurando.  Quando você ver estas duas patas, lembre-se que o código dentro
+        foi prensado em uma só unidade.
 
 
         É como uma daquelas caixas da Hello Kitty que eles vendem no shopping
-        que vem lotadas de pequenos lápis e papel microscópico, all crammed into
-        a glittery transparent case that can be concealed in your palm for covert stationary
-        operations.  Except that blocks don t require so much squinting.
+        que vêm lotadas de pequenos lápis e papel microscópico, espremidos numa bolsa
+        transparente e brilhante que pode ser escondida na palma da mão para operações clandestinas
+        estacionárias.  Exceto que, blocos não ofuscam sua visão.
 
 
         As chaves pode ser substituídas pelas palavras *do* e *end*, o que é bacana se seu bloco for
@@ -451,8 +451,8 @@
 
         Era uma vez uma centopéia que tinha vírgulas ao invés de pernas.  O que significa que ela tinha que
         dar uma pausa literária a cada passo.  As outra centopéias a respeitavam muito por isso e ela veio a ter
-        uma bela presença de comando.  Oh, and talk about a philanthropist!  He was notorious for
-        giving fresh leaves to those less-fortunate.
+        uma bela presença no comando.  Oh, e que filantropo!  Ela ficou famosa por
+        dar folhas frescas aos menos afortunados.
 
 
         Sim, um array é uma coleção de coisas, mas ele também mantém estas coisas em uma ordem específica.
