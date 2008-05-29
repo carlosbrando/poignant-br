@@ -1,46 +1,46 @@
-  - Now Back to Your Regularly Scheduled Paragraph: >
-      I'll try not to feel utterly rejected if this book doesn't capture
-      your fancy.  I might experience a few long days of emptiness, accompanied
-      with profuse weeping, but other than that I'll be fine.  It's at least
-      comforting to know that the following fine texts cover my topic and will
-      doubtless fill you with Ruby lust:
+  - Então, Voltando ao Assunto: >
+      Eu vou tentar não me sentir veementemente rejeitado se este livro não capturar
+      sua simpatia.  Eu posso passar alguns dias intermináveis de depressão, acompanhados
+      de um tremendo choro, mas fora isso eu vou estar bem.  É ao menos
+      reconfortante saber que os textos a seguir cobrem o assunto e vão,
+      sem dúvida, cobri-lo de tesão pelo Ruby:
 
 
-      * "Learning to Program":http://pine.fm/LearnToProgram/
+      * "Aprenda a Programar":http://aprendaaprogramar.rubyonrails.pro.br/
 
-      ** A very basic, ground-level tutorial for the beginner to Ruby.  By Chris Pine.
+      ** Um tutorial básico para iniciantes em Ruby, do Chris Pine, traduzido pela comunidade brasileira.
 
       * "Programming Ruby":http://www.whytheluckystiff.net/ruby/pickaxe/
 
-      ** The original tome and complete reference for Ruby.  By Dave Thomas and Andy Hunt
-      (also known as _The Pickaxe_)
+      ** A referência completa e original de Ruby. do Dave thomas e Andy Hunt
+      (também conhecida como _The Pickaxe_)
 
       * "A Little Ruby, A Lot of Objects":http://www.visibleworkings.com/little-ruby/
 
-      ** Lovely little in-progress work to teach Ruby purely with simple code examples.
-      By Brian Marick.
+      ** Um tabalho adorável, ainda em progresso, que ensina Ruby com simples exemplos de códico.
+      Do Brian Marick.
 
       * "Ruby User's Guide":http://www.ruby-doc.org/docs/UsersGuide/rg/
 
-      ** A guide to learning Ruby (with code examples).  By Matz, the creator of
-      Ruby.  Translated into English.
+      ** Um guia para aprender Ruby (com exemplos de código). Do Matz, o criador do
+        Ruby.  Traduzido para o inglês.
 
       * "Ruby Book List":http://www.rubygarden.org/ruby?RubyBookList
 
-      ** A current list of printed material covering Ruby.
+      ** Uma lista atual de material impresso cobrindo Ruby..
 
       * "Ruby-Lang.org":http://www.ruby-lang.org/
 
-      ** The official home page for the Ruby language.
+      ** O site oficial da linguagem Ruby.
 
 
-      Now, if you can't seem to find the contents link on the left-hand side of the page,
-      then here's a link to the "first page":chapter-1.html
-      of the (Poignant) Guide.  If you want to venture onto my other projects, go
+      Agora, se você não consegue encontrar o link dos conteúdos do lado esquerdo da página,
+      então veja este link para a "primeira página":chapter-1.html
+      do (Comovente) Guia. Se você quiser se aventurar nos meus outros projetos, vá para
       "whytheluckystiff.net":http://www.whytheluckystiff.net.
 
 
-      Welcome to the pirate radio of technical manuals.
+      Bem-vindo à rádio pirata dos manuais técnicos.
 
 
 chapters:
