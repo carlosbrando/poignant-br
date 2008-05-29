@@ -414,11 +414,10 @@
         bq. @('a'..'z')@ é um range, representando o alfabeto em minúsculas.
 
 
-        Pense neles como um acordeão que fora fechado para se carregar.  (vc pode construir mto amor proprio 
-        levando consigo um acordeon aberto... mas, as vezesm uma pessoa tem q mergulhar em duvidas e esconder 
-        cuidadosamente sua sanfona)  Os parênteses são
-        os lados deste pequeno acordeão de mão.  Os pontão são a fole, mantendo os lados as partes
-        bem unidas.
+        Pense neles como um acordeão que fora fechado para se carregar.  (Você pode construir muito amor próprio 
+        levando consigo um acordeão aberto... mas, as vezes uma pessoa tem q mergulhar em dúvidas e esconder 
+        cuidadosamente a sanfona)  Os parênteses são os lados deste pequeno acordeão de mão.  
+        Os pontos são a fole, mantendo as partes bem unidas.
 
 
         Normalmente, apenas dois pontos são usados. Se um terceiro ponto for usado, o último valor no range será
