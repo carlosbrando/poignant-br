@@ -105,7 +105,7 @@
 
 
         Então, assim como nós guardamos um número na variável *taxa_de_urso_teddy,* agora nós estamos guardando
-        uma coleção de caracters (uma string) na variável *frase_da_avril*.  O repórter envia esta frase
+        uma coleção de caracteres (uma string) na variável *frase_da_avril*.  O repórter envia esta frase
         para impressão, que por acaso usa  Ruby para operar as impressoras.
 
 
@@ -128,18 +128,18 @@
         h3. Symbols (Símbolos)
 
 
-        Symbols são palavras que parecem variáveis.  Novamente, elas podem conter letras,
+        Símbolos são palavras que parecem variáveis.  Novamente, elas podem conter letras,
         dígitos e travessões.  Mas elas *começam com dois pontos*.
 
 
         bq. @:a@, @:b@, ou @:ponce_de_leon@ are examples.
 
 
-        Symbols são strings leves.  Geralmente, symbols são usados em situações em que você precisa de uma string
+        Símbolos são strings leves.  Geralmente, símbolos são usados em situações em que você precisa de uma string
         mas não vai imprimí-la na tela.
 
 
-        Você pode dizer que um symbol é pouco mais digerível pro computador.  É como um anti-ácido.  Os dois pontos
+        Você pode dizer que um símbolo é pouco mais digerível pro computador.  É como um anti-ácido.  Os dois pontos
         indicam as bolhas saindo com estômago do computador enquanto ele digere o símbolo.  Ah.  Doce, doce alívio.
 
 
@@ -254,9 +254,9 @@
         bq. @Porta::new( :carvalho )@
 
 
-        Como foi visto acima, o método de classe @new@ é mais usado para se criar coisas.  No exemploa cima, estamos pedindo
-        ao Ruby para fazer uma nova porta de carvalho pra gente.  Claro, o Ruby não tem conhecimento de como fazer uma
-        door--assim como um a pilha de madeira, madeireiros, e aquelas longas, wiggily, two-man saws.
+        Como foi visto acima, o método de classe @new@ é mais usado para se criar coisas.  No exemplo cima, estamos pedindo
+        ao Ruby para fazer uma porta de carvalho nova pra gente.  Claro, o Ruby não tem conhecimento de como fazer uma
+        porta--assim como um a pilha de madeira, madeireiros, e aquelas longas, wiggily, two-man saws.
 
 
         !i/the.foxes-4e.png(Plenty of chunky bacon to go around.)!
@@ -278,10 +278,10 @@
         Peter, um domador de leões com grande apreço por flanela.  Cada casa tem um sentido próprio pra @pai@.
 
 
-        Com variáveis globais, você garante que a varivel será a mesma em cada casinha.
+        Com variáveis globais, você garante que a variável será a mesma em cada casinha.
         O sinal de cifrão é bem apropriado.  Todo lar Americano respeita o valor do cifrão.  Somos
         doidos pela coisa.  Tente bater em qualquer porta na América e dê a eles dinheiro.  Eu posso garantir
-        que você não verá a mesma reação se bater em uma porta e oferecer o Peter, um domador de leões com grande
+        que você não verá a mesma reação se bater em uma porta e oferecer Peter, um domador de leões com grande
         apreço por flanela.
 
 
@@ -414,9 +414,9 @@
         bq. @('a'..'z')@ é um range, representando o alfabeto em minúsculas.
 
 
-        Pense neles como um acordeão que fora fechado para se carregar.  (Sure, you can build
-        a great sense of self-worth by carrying around an unfolded accordion, but sometimes a person
-        needs to wallow in self-doubt, carefully concealing the squeeze-box.)  Os parênteses são
+        Pense neles como um acordeão que fora fechado para se carregar.  (vc pode construir mto amor proprio 
+        levando consigo um acordeon aberto... mas, as vezesm uma pessoa tem q mergulhar em duvidas e esconder 
+        cuidadosamente sua sanfona)  Os parênteses são
         os lados deste pequeno acordeão de mão.  Os pontão são a fole, mantendo os lados as partes
         bem unidas.
 

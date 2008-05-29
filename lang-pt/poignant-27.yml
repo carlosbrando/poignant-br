@@ -1,5 +1,5 @@
     - >
-        Nonono.  Hang on a sec.  You're not ready for what the Elf here is doing in his caves.
+        Nãnãnã.  Pera um segundo.  You're not ready for what the Elf here is doing in his caves.
         You'll think it's all positively inhumane, naughty, sick, tweeested, yada yada.
 
 
@@ -46,25 +46,25 @@
         they're trained to pistol whip anyone who enters unannounced.
 
 
-        Elf, make me a starmonkey.
+        Elfo, me faça um macacoestrela.
 
 
-        !i/the.elf-5a.jpg(First, the star is caught.)!
+        !i/the.elf-5a.jpg(Primeiro, a estrela é capturada.)!
 
 
-        Some imaginary Ruby for you:
+        Um pouco de Ruby imaginário pra você:
 
 
-        bq. @pipe.catch_a_star@
+        bq. @tubo.pegue_uma_estrela@
         
         
-        Variable @pipe@.  Method @catch_a_star@.  A lot of Rubyists like to think of methods as a message.
-        Whatever comes before the dot is handed the message.  The above code tells the @pipe@ to
-        @catch_a_star@.
+        Variável @tubo@.  Método @pegue_uma_estrela@.  Muitos Rubistas gostam de pensar em métodos como mensagem.
+        A quem vier antes do método é dada a mensagem.  O código acima diz ao @tubo@ que
+        @pegue_uma_estrela@.
 
 
-        This is the *second half* of Ruby.  Putting things in motion.  These things you define and create
-        in the first half start to _act_ in the second half.
+        Esta é a *segunda metade* do Ruby.  Colocar as coisas em movimento.  Estas coisas que você define e cria
+        na primeira metade começam a _agir_ na segunda metade.
 
 
         # Defining things.
@@ -72,30 +72,30 @@
         # Putting those things into action.
 
 
-        So what if the star catching code works?  Where does the star go?
+        Então e se o código de pegar estrelas funcionar?  Pra onde a estrela vai?
 
 
-        bq. @captive_star = pipe.catch_a_star@
+        bq. @estrela_presa = pipe.pegue_uma_estrela@
 
 
-        See, it's up to you to collect the miserable, little star.  If you don't, it'll simply vanish.
-        Whenever you use a method, you'll always be given something back.  You can ignore it or use it.
+        Veja, você que deve coletar a miserável, estrelinha.  Se você nao o fizer, ela vai simplesmente desaparecer.
+        Toa vez que você usa um método, você recebe algo de volta.  Você pode ignorá-lo ou usá-lo.
 
 
-        _If you can learn to use the answers that methods give you back, then you will *dominate*._
+        _Se você conseguir aprender a usar as respostas que os métodos de dão, então você irá *dominar*._
 
 
         !i/the.elf-5b.jpg(Star is ratcheted to the monkey's face.)!
 
 
-        Quickly then.
+        Rapidamente então.
 
 
-        bq. @starmonkey = ratchet.attach( captive_monkey, captive_star )@
+        bq. @macacoestrela = ratchet.attach( macaco_preso, estrela_presa )@
 
 
         The @ratchet@ gets an @attach@ message.  What needs to be attached?  The _method arguments_: the
-        @captive_monkey@ and the @captive_star@.  We are given back a @starmonkey@, which we have
+        @macaco_preso@ e a @estrela_presa@.  É nos dada de volta um @macacoestrela@, which we have
         decided to hang on to.
 
 
@@ -106,10 +106,10 @@
         all together as one statement.
 
 
-        bq. @starmonkey = ratchet.attach( captive_monkey, pipe.catch_a_star ) + deco_hand_frog@
+        bq. @starmonkey = ratchet.attach( captive_monkey, pipe.pegue_uma_estrela ) + deco_hand_frog@
 
 
-        See how @pipe.catch_a_star@ is right in the arguments for the method?  The caught 
+        See how @pipe.pegue_uma_estrela@ is right in the arguments for the method?  The caught 
         star will get passed right to the ratchet.  No need to find a place to put it.  Just
         let it go.
 

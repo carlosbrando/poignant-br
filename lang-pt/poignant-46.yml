@@ -1,110 +1,110 @@
     - >
-        Oh, and one more thing about @dup@.  Some things can't be dup'd.  Numbers, for instance.  
-        Symbols (which look like @:death@) are identical when spelled the same.  Like numbers.
+        Oh, e mais uma coisa sobre o @dup@.  Algumas coisas não podem ser dup'adas.  Números, por exemplo.  
+        Símbolos (que se parecem com @:morte@) são identicos quando grafados iguais.  Assim como números.
 
 
-        Also, some of the special variables: @nil@, @true@, @false@.  These are things that Ruby won't let
-        you alter, so there's so point making a copy anyway.  I mean, imagine if you could change @false@
-        to be @true@.  The whole thing becomes a lie.
+        Além disso, algumas variáveis especiais: @nil@, @true@, @false@.  Estas são coisas que o Ruby não vai
+        te deixar alterar, então não faz sentido copiar mesmo.  Quero dizer, imagine se você pudesse mudar o @false@
+        para que seja @true@.  A coisa toda vira uma mentira.
 
 
-        Perhaps *Confusing Aspect No. 3* is a simple one.  I'm using those square brackets on the 
-        string.  I'm treating the string like it's an Array or Hash.  I can do that.  Because strings
-        have a @[]@ method.
+        Talvez o *Aspecto Confuso No. 3* seja um simples.  Estou usando aquelas chaves na string. 
+        Estou tratando a como se ela fosse um Array ou Hash.  Eu posso fazer isso.  Porque strings
+        têm um método @[]@.
 
 
-        When used on a string, the square brackets will extract part of the string.  Again,
-        slots for a forklift's prongs.  The string is a long shelf and the forklift is pulling out a slab
+        Quando usadas numa string, as chaves vão extrair parte daquela string.  Again,
+        espaço para as pás da empilhadeira. A string é uma longa prateleira the forklift is pulling out a slab
         of the string.
 
 
-        Inside the brackets, we pass the _index_.  It's the label we've placed right between the prongs
-        where the worker can see it.  When it comes to strings, we can use a variety of objects as our 
-        index.
+        Dentro das chaves, nós passamos o _index (índice)_.  É a etiqueta que colocamos entre as pás
+        onde o trabalhador pode vê-las.  Quando o assunto são strings, podemos usar vários objetos como
+        índices.
         
 
         <pre>
-         str = "A string is a long shelf of letters and spaces."
-         puts str[0]       # prints 65 (the character code for an 'A')
-         puts str[0..-1]   # prints 'A string is a long shelf of letters and spaces.'
-         puts str[1..-2]   # prints ' string is a long shelf of letters and spaces'
-         puts str[1, 3]    # prints 'A s'
-         puts str['shelf'] # prints 'shelf'
+         str = "Uma string é uma longa prateleira de letras e espaços."
+         puts str[0]       # imprime 85 (o código do caracter 'U')
+         puts str[0..-1]   # imprime 'Uma string é uma longa prateleira de letras e espaços.'
+         puts str[1..-2]   # imprime 'ma string é uma longa prateleira de letras e espaços'
+         puts str[1, 3]    # imprime 'ma '
+         puts str['prateleira'] # imrpime 'shelf'
         </pre>
 
 
-        Alright, the last *Confusing Aspect No. 4*: this method can be sent into an endless loop.
-        You can give this method a string which will cause the method to hang and never come back.
-        Take a look at the method.  Can you throw in a muddy stick to clog the loop?
+        Tudo bem, o último *Aspecto Confuso No. 4*: este método pode ser enviado a um loop sem fim.
+        Você pode dar uma string para este método que vai fazer com q ele trave e nunca mais volte.
+        Dê uma olhada no método.  Você pode jogar um graveto pra travar o loop?
 
 
         <pre>
-         def wipe_mutterings_from( sentence )
-           unless sentence.respond_to? :include?
+         def limpar_murmurios_de( frase )
+           unless frase.respond_to? :include?
              raise ArgumentError, 
-               "cannot wipe mutterings from a #{ sentence.class }"
+              "não posso limpar os múrmurios de um(a) #{ frase.class }"
            end
-           sentence = sentence.dup
-           while sentence.include? '('
-             open = sentence.index( '(' )
-             close = sentence.index( ')', open )
-             sentence[open..close] = '' if close
+           frase = frase.dup
+           while frase.include? '('
+             abre = frase.index( '(' )
+             fecha = frase.index( ')', abre )
+             frase[abre..fecha] = '' if fecha
            end
-           sentence
+           frase
          end
         </pre>
 
 
-        Here, give the muddy stick a curve before you jam it.
+        Aqui, entorte o graveto antes de enfiá-lo.
 
 
         <pre>
-         muddy_stick = "Here's a ( curve."
-         wipe_mutterings_from( muddy_stick )
+         graveto = "Aqui esta uma ( curva."
+         limpar_murmurios_de( graveto )
         </pre>
 
 
-        Why does the method hang?  Well, the @while@ loop waits until all the open parentheses
-        are gone before it stops looping.  And it only replaces open parentheses that have a matching
-        closing parentheses.  So, if no closing paren is found, the open paren won't be replaced
-        and the @while@ will never be satisfied.
+        Por que o método trava?  Bem, o loop @while@ espera até que todos os parênteses abertos se 
+        acabem antes de parar de looping.  E ele só modifica um parêntese aberto que tenha um par parêntese fechado.
+        Então, se nenhum parentêse fechado é encontrado, o parentêse aberto não será modificado
+        e o @while@ nunca ficará satisfeito.
 
 
-        How would you rewrite this method?  Me, I know my way around Ruby, so I'd use a regular
-        expression.
+        Como você reescreveria este método?  Eu sei como me virar no Ruby, então eu usaria uma expressão
+        regular.
 
 
         <pre>
-         def wipe_mutterings_from( sentence )
-           unless sentence.respond_to? :gsub
+         def limpar_murmurios_de( frase )
+           unless frase.respond_to? :gsub
              raise ArgumentError, 
-               "cannot wipe mutterings from a #{ sentence.class }"
+               "não posso limpar os múrmurios de um(a) #{ frase.class }"
            end
-           sentence.gsub( /\([-\w]+\)/, '' )
+           frase.gsub( /\([-\w]+\)/, '' )
          end
         </pre>
 
 
         Do your best to think through your loops.  It's especially easy for @while@ and @until@ loops
-        to get out of hand.  Best to use an iterator.  And we'll get to regular expressions in time.
+        to get out of hand.  Melhorar usar um iterador.  E nós chegaremos em expressões regulares na hora certa.
 
 
-        In summary, here's what we've learned about writing methods:
+        Resumidamente, aqui está o que aprendemos sobre escrever métodos:
 
 
-        # Don't be surprised if people pass unexpected objects into your methods.
-        If you absolutely can't use what they give you, @raise@ an error.
+        # Não se surpreenda se as pessoas passarem objetos inesperados pros seus métodos.
+        Se você não If you absolutely can't use what they give you, @raise@ an error.
 
-        # It's poor etiquette to change objects your method is given.  Use @dup@ to
-        make a copy.  Or find a method like @gsub@ that automatically makes a copy
-        as it does its job.
+        # É falta de educação muda objetos que são dados aos seus métodos.  Use @dup@ para
+        fazer uma cópia.  Ou encontre um método como @gsub@ que automaticamente faz uma cópia
+        enquanto faz seu serviço.
 
-        # The square brackets can be used to lookup parts inside any @Array@, @Hash@ or @String@ objects,
-        as these objects provide a @[]@ method.  Also, since these objects provide a @[]=@ method,
-        the square brackets can be used in assignment (on the left-hand side of the equals sign) to
+        # As chaves podem ser usadas para procurar partes dentro de qualquer objeto @Array@, @Hash@ ou @String@,
+        já que estes objetos provém um método @[]@.  E também, já que este objetos provém um método @[]=@,
+        as chaves podem ser usadas pra assignment (do lado esquerdo do sinal de igual) to
         change the parts of those objects.
 
-        # Watch for runaway loops.  Avoid @while@ and @until@ if you can.
+        # Cuidado com loops fujões.  Evite @while@ e @until@ se você puder.
  
 
         h3. The Mechanisms of Name-Calling
@@ -125,7 +125,7 @@
         And he says, "Hello, Gonk-ree!  Hello, Why!"
 
 
-        Paij-ree checks his pockets to be sure he has the dollar-twenty-seven he'll need in order to
+        Paij-ree checa os bolsos pra ter s to be sure he has the dollar-twenty-seven he'll need in order to
         buy the three cats he'll need to keep the furnace stoked and the satellite dish turning.  These
         cats generate gobs of static once Paij-ree tosses them in the generator, where they'll be
         outnumbered by the giant glass rods, which caress the cats continually-- But, wait!  Did you see
@@ -144,24 +144,24 @@
 
            # The parts of my daughter's organ
            # instructor's name.
-           @@syllables = [
-             { 'Paij' => 'Personal',
-               'Gonk' => 'Business',
-               'Blon' => 'Slave',
-               'Stro' => 'Master',
-               'Wert' => 'Father',
-               'Onnn' => 'Mother' },
+           @@silabas = [
+             { 'Paij' => 'Pessoal',
+               'Gonk' => 'Negócios',
+               'Blon' => 'Escravo',
+               'Stro' => 'Mestre',
+               'Wert' => 'Pai',
+               'Onnn' => 'Mãe' },
              { 'ree'  => 'AM',
                'plo'  => 'PM' }
            ]
 
            # A method to determine what a
            # certain name of his means.
-           def name_significance
-             parts = self.split( '-' )
-             syllables = @@syllables.dup
-             signif = parts.collect do |p|
-               syllables.shift[p]
+           def significado_do_nome
+             partes = self.split( '-' )
+             silabas = @@silabas.dup
+             signif = partes.collect do |p|
+               silabas.shift[p]
              end
              signif.join( ' ' )
            end
@@ -210,7 +210,7 @@
 
         <pre>
          class String
-           def dash_split
+           def separar_hifen
              self.split( '-' )
            end
          end
@@ -220,10 +220,10 @@
         Again, here's a method which can be used with any string.
 
 
-        bq. @"Gonk-plo".dash_split@ return the Array @['Gonk', 'plo']@.
+        bq. @"Gonk-plo".separar_hifen@ retorna o Array @['Gonk', 'plo']@.
 
 
-        Using @self@ marks the beginning of crossing over into many of the more advanced ideas in Ruby.
+        Usar @self@ marca o começoks the beginning of crossing over into many of the more advanced ideas in Ruby.
         This is definition language.  You're defining a method, designing it before it gets used.  You're
         preparing for the existence of an object which uses that method.  You're saying, "When @dash_split@ 
         gets used, there will be a string at that time which is the one we're dash-splitting.  And @self@ is a 
@@ -234,41 +234,41 @@
         way deeper in this book.
 
 
-        Most often you won't need to use @self@ explicitly, since you can call methods directly from inside
-        other method definitions.
+        Na maioria das vezes você nao vai precisar usar @self@ explicitamente, já que você pode chamar métodos
+        diretamente dentro de outra definição de método.
 
 
         <pre>
          class String
-           def dash_split; split( '-' ); end
+           def separar_hifen; split( '-' ); end
          end
         </pre>
 
 
-        In the @name_significance@ method, find the loop.  Learning about @Array#collect@ is essential.
-        Let's look close.
+        No método @significado_do_nome@, encontre o loop.  Aprender sobre @Array#collect@ é essencial.
+        Vamos olhar de perto.
 
 
         <pre>
-         signif = parts.collect do |p|
-           syllables.shift[p]
+         signif = partes.collect do |p|
+           silabas.shift[p]
          end
         </pre>
 
 
-        The @parts@ Array contains the separated name.  @['Paij', 'plo']@, for instance.  We're iterating
-        through each item in that Array with @collect@.  But @collect@ steps beyond what @each@ does.  Like
-        @each@, collect slides each item down the chute as a block variable.  And then, at the end of the
-        block, @collect@ *keeps the answer the block gives back and adds it to a new Array*.  The @collect@
-        method is the perfect way of building a new Array which is based on the items in an existing Array.
+        A Array @partes@ contém o nome separado.  @['Paij', 'plo']@, por exemplo.  Estamos iterando por
+        cada item naquela Array com @collect@.  Mas @collect@ vai uma passo a frente ao que o @each@ faz.  Assim
+        como @each@, collect joga cada item pela calha como uma variável de bloco.  E aí, ao término do 
+        block, @collect@ *mantém a resposta que o block gives dá e a adiciona em um novo Array*.  O método 
+        @collect@ é o jeito perfeito de se fazer um novo Array que é baseado em itens de um Array existente.
 
 
-        Doug has three cats for sale.  One is twelve cents, one is sixty-three cents, one is nine cents.
-        Let's see how much each cat would cost if we added a 20% tip.
+        O Doug tem três gatos à venda.  Um custa doze centavos, um sessenta e três centavos, um nove centavos.
+        Vamos ver quanto cada gato custaria se nós adicionássemos uma gorjeta de 20%.
 
 
         <pre>
-         catsandtips = [0.12, 0.63, 0.09].collect { |catcost| catcost + ( catcost * 0.20 ) }
+         gatosegorjetas = [0.12, 0.63, 0.09].collect { |custogato| custogato + ( custogato * 0.20 ) }
         </pre>
 
 
