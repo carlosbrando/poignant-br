@@ -1,9 +1,9 @@
-    - An Example to Help You Grow Up: >
+    - Um Exemplo Para Te Ajudar a Crescer: >
 
         !i/the.foxes-7.png(Gettin' cabin fever.)!
 
 
-        *Say aloud each of the parts of speech used below.*
+        *Diga em voz alta cada uma das partes da conversa usadas abaixo.*
 
 
         <pre>
@@ -14,77 +14,77 @@
         </pre>
 
 
-        The first line is a method call.  The _method_ called @require@ is used.  A _string_ is passed to
-        the method containing @'net/http'@.  Think of this first line of code as a sentence.  We have
-        told Ruby to load some helper code, the @Net::HTTP@ library.
+        A primeira linha chama um método. O _método_ chamado @require@ é usado.  Uma _string_ é passada ao
+        método contendo @'net/http'@.  Pense nesta primeira linha de código como uma sentença.  Nós dissemos
+        ao Ruby para carregar um código auxiliar, a biblioteca @Net::HTTP.@
 
 
-        The next three lines all go together.  The _constant_ @Net::HTTP@ refers to the library we loaded above.
-        We are using the _method_ @start@ from the library.  Into the method, we're sending a _string_
-        @'www.ruby-lang.org'@ and the _number_ @80@.
+        As próximas três linhas vão todas juntas.  A _constante_ @Net::HTTP@ refere à biblioteca que carregamos acima.
+        Nós estamos usando o _método_ @start@ da biblioteca.  Dentro do método, estamos enviando uma _string_
+        @'www.ruby-lang.org'@ e o _número_ @80@.
 
 
-        The word @do@ opens a _block_.  The block has one _block variable_ @http@.  Inside the block, the _method_
-        @print@ is called.  What is being printed?
+        A palvra @do@ abre um _block_.  O block tem _uma váriavel de bloco_ @http@.  Dentro do block, o _método_
+        @print@ é chamado.  O que está sendo imprimido?
 
 
-        From the _variable_ @http@, the _method_ @get@ is called.  Into @get@, we pass a _string_ containing
-        the path @'/en/LICENSE.txt'@.  Now, notice that another method is chained onto @get@.  The _method_
-        @body@.  Then, the block closes with @end@.
+        A partir da _variável_ @http@, o _método_ @get@ é chamado.  Dentro do @get@, nós passamos uma _string_ contendo
+        o caminho @'/en/LICENSE.txt'@.  Agora, repare que outro método está ligado no @get@.  O _método_
+        @body (corpo)@.  Então, o bloco se fecha com @end@.
 
 
-        Doing okay?  Just out of curiousity, can you guess what this example does?  Hopefully, you're seeing 
-        some patterns in Ruby.  If not, just shake your head vigorously while you've got these examples in 
-        your mind.  The code should break apart into manageable pieces.
+        Tá indo bem?  Só por curiosidade, você consegue advinhar o que este exemplo faz?  Espero eu, que você já esteja 
+        vendo alguns padrões no Ruby.  Se não, balance sua cabeça vigorosamente enquanto você põe estes exemplos
+        na sua mente.  O código deve se quebrar em pedaços gerenciáveis.
 
 
-        For example, this pattern is used a number of times:
+        Por exemplo, este padrão é usando um monte de vezes:
 
 
-        bq. _variable_ . _method_ ( _method arguments_ )
+        bq. _variavel_ . _metodo_ ( _argumentos do metodo_ )
 
 
-        You see it inside the block:
+        Você vê isso dentro do:
 
 
         bq. @http.get( '/en/LICENSE.txt' )@
 
 
-        We're using Ruby to get a web page.  You've probably used HTTP with your web browser.  HTTP is
-        the Hypertext Transfer Protocol.  HTTP is used to transfer web pages across the internet.  Conceptualize
-        a bus driver that can drive across the internet and bring back web pages for us.  On his hat are stitched
-        the letters HTTP.
+        Estamos usando o Ruby para pegar uma página da web.  Você provavelmente já usou HTTP com o seu navegador.  HTTP é
+        o Hypertext Transfer Protocol.  HTTP é usado para se transferir páginas pela internet.  Conceitualize
+        um motorista de ônibus que pode dirigir por toda a internet e trazer de volta páginas pra gente.  No quepe dele
+        estão estampadas as letras HTTP.
 
 
-        The variable @http@ is that bus driver.  The _method_ is a message to the bus driver.  Go @get@
-        the web page called @/en/LICENSE.txt@.
+        A variável @http@ é aquele motorista.  O -método_ é uma mensagem para o motorista.  Vá @get (pegar)@
+        a página da web chamada @/en/LICENSE.txt@.
 
 
-        So where you see the chain of methods:
+        Então quando você vê esta cadeia de métodos:
 
 
         bq. @http.get( '/en/LICENSE.txt' ).body@
 
 
-        Since we'll be getting back a web page from the @http@ bus driver, you can read this in your
-        brain as:
+        Já que estaremos recebendo a página de volta pelo motorista @http@, você pode ler isto na sua cabeça
+        assim:
 
 
-        bq. _web page_ .body
+        bq. _página web_ .body
 
 
-        And this bit of code:
+        E neste pedaço de código:
 
 
         bq. @print( http.get( '/en/LICENSE.txt' ).body )@
 
 
-        This code gets the web page.  We send a @body@ message to the web page, which gives us all the
-        HTML in a _string_.  We then @print@ that string.  See how the basic dot-method pattern happens
-        in a chain.  The next chapter will explore all these sorts of patterns in Ruby.  It'll be good fun.
+        Este código pega a página.  Nós mandamos uma mensagem: @body@ para a página, que por sua vez nos dá
+        HTML em uma _string_.  Nós então @imprimimos@ esta string.  Veja como o básico padrão ponto-método acontece
+        em cadeia.  No próximo capítulo vamos explorar todos estes tipos de padrões no Ruby.  Vai ser boa diversão.
 
 
-        So, what does this code do?  It prints the HTML for the Ruby home page to the screen.  Using 
-        an web-enabled bus driver.
+        Então, o que este código faz?  Ele imprime o HTML dá página web do Ruby na tela.  Usando 
+        um motorista de ônibus habilitado pra web.
 
 
