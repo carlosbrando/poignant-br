@@ -150,7 +150,7 @@
         </pre>
 
 
-        Você pode usar o método @nil?@ em qualquer valor no Ruby.  Denovo, pense nele com uma mensagem.
+        Você pode usar o método @nil?@ em qualquer valor no Ruby.  Novamente, pense nele com uma mensagem.
         Para o valor: "Você é nil?  Você está vazio?"
 
 

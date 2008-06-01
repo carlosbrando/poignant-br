@@ -106,7 +106,7 @@
 
 
         <pre>
-         print "Yeah, copo tá cheio denovo!" if copo_plastico
+         print "Yeah, copo tá cheio novamente!" if copo_plastico
          print "Difícilmente. Ele tá vazio." unless copo_plastico
         </pre>
 

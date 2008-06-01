@@ -1,6 +1,6 @@
     - >
-        Oh, e mais uma coisa sobre o @dup@.  Algumas coisas não podem ser dup'adas.  Números, por exemplo.  
-        Símbolos (que se parecem com @:morte@) são identicos quando grafados iguais.  Assim como números.
+        Oh, e mais uma coisa sobre o @dup@.  Algumas coisas não podem ser "dupadas".  Números, por exemplo.  
+        Símbolos (que se parecem com @:morte@) são idênticos quando grafados iguais.  Assim como números.
 
 
         Além disso, algumas variáveis especiais: @nil@, @true@, @false@.  Estas são coisas que o Ruby não vai
@@ -13,12 +13,12 @@
         têm um método @[]@.
 
 
-        Quando usadas numa string, as chaves vão extrair parte daquela string.  Again,
-        espaço para as pás da empilhadeira. A string é uma longa prateleira the forklift is pulling out a slab
-        of the string.
+        Quando usadas numa string, as chaves vão extrair parte daquela string.  Mais uma vez,
+        espaço para as pás da empilhadeira. A string é como uma longa prateleira e a empilhadeira
+        tira os pedaços da string.
 
 
-        Dentro das chaves, nós passamos o _index (índice)_.  É a etiqueta que colocamos entre as pás
+        Dentro das chaves, nós passamos o _index (índice)_.  É a etiqueta que colocamos entre as pás,
         onde o trabalhador pode vê-las.  Quando o assunto são strings, podemos usar vários objetos como
         índices.
         
@@ -34,8 +34,8 @@
 
 
         Tudo bem, o último *Aspecto Confuso No. 4*: este método pode ser enviado a um loop sem fim.
-        Você pode dar uma string para este método que vai fazer com q ele trave e nunca mais volte.
-        Dê uma olhada no método.  Você pode jogar um graveto pra travar o loop?
+        Você pode dar uma string para este método que vai fazer com que ele trave e nunca mais volte.
+        Dê uma olhada no método.  Você consegue jogar um graveto que trave o loop?
 
 
         <pre>
@@ -55,7 +55,7 @@
         </pre>
 
 
-        Aqui, entorte o graveto antes de enfiá-lo.
+        Aqui, entorte o graveto antes de jogá-lo.
 
 
         <pre>
@@ -85,19 +85,19 @@
         </pre>
 
 
-        Do your best to think through your loops.  It's especially easy for @while@ and @until@ loops
-        to get out of hand.  Melhorar usar um iterador.  E nós chegaremos em expressões regulares na hora certa.
+        Dê o seu melhor quando pensar nos seus.  É muito fácil especialmente pros loops @while@ e @until@
+        saírem do controle.  Melhorar usar um iterador.  E nós chegaremos em expressões regulares na hora certa.
 
 
         Resumidamente, aqui está o que aprendemos sobre escrever métodos:
 
 
         # Não se surpreenda se as pessoas passarem objetos inesperados pros seus métodos.
-        Se você não If you absolutely can't use what they give you, @raise@ an error.
+        Se você não pode maneira algum usar o que te deram, @raise (cause)@ um erro.
 
-        # É falta de educação muda objetos que são dados aos seus métodos.  Use @dup@ para
-        fazer uma cópia.  Ou encontre um método como @gsub@ que automaticamente faz uma cópia
-        enquanto faz seu serviço.
+        # É falta de educação mudar objetos que são dados aos seus métodos.  Use @dup@ para
+        fazer uma cópia.  Ou encontre um método como @gsub@ que automaticamente faz a cópia
+        enquanto faz o seu serviço.
 
         # As chaves podem ser usadas para procurar partes dentro de qualquer objeto @Array@, @Hash@ ou @String@,
         já que estes objetos provém um método @[]@.  E também, já que este objetos provém um método @[]=@,
@@ -107,14 +107,14 @@
         # Cuidado com loops fujões.  Evite @while@ e @until@ se você puder.
  
 
-        h3. The Mechanisms of Name-Calling
+        h3. Os Mecanismos do Estereótipo
 
 
-        !>i/my.daughters.organ-2.gif(Cat salesmen from the sky.)!
+        !>i/my.daughters.organ-2.gif(Gato vendedor do espaço.)!
 
 
-        Forthwith there is a rustling in the trees behind Paij-ree's house and it turns out to
-        be a man falling from the sky.  His name is Doug and he sells cats.
+        Imediatamente ouve-se um sussuro nas árvores atrás da casa do Paij-ree e acabou que era
+        o homem q caíra do céu.  Seu nome era Doug e ele vendia gatos.
 
 
         So, just as he comes into to view, when his shadow (and the shadows of the cats tied to his
@@ -122,28 +122,28 @@
         as he's squeezing a wisp of helium from his big balloon, we shout, "Hello, Doug!"
 
 
-        And he says, "Hello, Gonk-ree!  Hello, Why!"
+        E ele diz, "Olá, Gonk-ree!  Olá, Why!"
 
 
-        Paij-ree checa os bolsos pra ter s to be sure he has the dollar-twenty-seven he'll need in order to
-        buy the three cats he'll need to keep the furnace stoked and the satellite dish turning.  These
-        cats generate gobs of static once Paij-ree tosses them in the generator, where they'll be
-        outnumbered by the giant glass rods, which caress the cats continually-- But, wait!  Did you see
-        how the cat broker called him Gonk-ree?
+        Paij-ree checa os bolsos pra ter certeza que ele tem o real-e-vinte-sete que ele vai precisar pra comprar
+        comprar os três gatos que ele necessita pra mandar a fornalha abastecida e o parabólica virando. Estes
+        gatos cats generate gobs of static once Paij-ree tosses them in the generator, where they'll be
+        outnumbered by the giant glass rods, which caress the cats continually-- Mas, espere!  Você reparou
+        como how the cat broker called him Gonk-ree?
 
         
-        And he calls him Gonk-ree in the morning and Gonk-plo at night.
+        E ele o chama de Gonk-ree de dia e Gonk-plo de noite.
 
 
-        So the suffix is definitely subject to the sunlight.  As far as I can tell, the prefix indicates
-        the namecaller's relationship to Paij-ree.
+        Então o sufixo é definitivamente relacionado à luz do sol.  Até onde eu sei, o prefixo indica
+        a relação de que chama o Paij-ree.
 
         
         <pre>
          class String
 
-           # The parts of my daughter's organ
-           # instructor's name.
+           # As partes do nome do professor
+           # de órgão da minha filha.
            @@silabas = [
              { 'Paij' => 'Pessoal',
                'Gonk' => 'Negócios',
@@ -155,27 +155,27 @@
                'plo'  => 'PM' }
            ]
 
-           # A method to determine what a
-           # certain name of his means.
+           # Um método pra determinar o que
+           # signfica certos nomes dele.
            def significado_do_nome
              partes = self.split( '-' )
              silabas = @@silabas.dup
-             signif = partes.collect do |p|
+             significado = partes.collect do |p|
                silabas.shift[p]
              end
-             signif.join( ' ' )
+             significado.join( ' ' )
            end
 
          end
         </pre>
 
 
-        Now I've gone beyond just showing you sloppy code.  Here be a grave debauchery and a crime
-        against nature.  A crime most languages won't allow you to commit.  We're changing the
-        @String@, *one of the core classes of Ruby*!
+        Agora eu fui bem mais além do que te mostrar apenas código e beyond just showing you sloppy code.  Houve aqui uma grave libertinagem e um crime
+        contra a natureza.  Um crime que a maioria das linguagens não permitiriam que você cometesse.  Nós estamos mudando a
+        @String@, *uma das classes do núcleo do Ruby*!
 
 
-        "I know this is a bit dangerous," I said, when I passed this one under Paij-ree's nose.
+        "Eu sei que isto é um pouco perigoso," Eu disse, when I passed this one under Paij-ree's nose.
         "I hope nobody gets hurt."
 
 
@@ -184,28 +184,28 @@
         marsh drink.
 
 
-        So what is it that I'm adding to the @String@ class?  Two things: a class variable and
-        a method.  A normal *instance method*.
+        Então o que é que eu estou adicionando à classe @String?@  Duas coisas: uma variável de classe e
+        um método.  Um *método de instância* normal.
 
 
-        I like to look at the *at* symbol as a character meaning *attribute*.  The *double at*
-        stands for *attribute all*.  A class variable.  All instances of a class can look at
-        this variable and it is the same for all of them.  The @@@syllables@ variable is an
-        Array that can now be used inside the String class.
+        Eu gosto de ver a *arroba* como um caracter que signifique *atributo*.  A *arroba dupla*
+        stands for *attribute all*.  A class variable.  Todas as instâncias da classe podem olhar
+        pra esta váriavel e ela é a mesma pra todas.  A variável @@@silabas@ é um Array
+        que agora pode ser usando dentro da classe String.
 
 
-        The new method is @name_significance@ and this new method can be used with any string.
+        O novo método é @significado_do_nome@ e esse novo método pode ser usado com qualquer string.
 
 
-        bq. @print "Paij-ree".name_significance@ prints out @Personal AM@.
+        bq. @print "Paij-ree".significado_do_nome@ imprime @Pessoal AM@.
 
 
-        As you can see, Paij-ree is a personal name.  A name friends use in the early hours.
+        Como você pode ver, Paij-ree é um nome pessoal.  Um nome que os amigos usam nas manhãs.
 
 
-        Make sure you see the line of code which uses @self@.  This is a special variable, a
-        variable which represents the object whose method you are calling.  To simplify things
-        a bit, let's try making a method which breaks up a string on its dashes.
+        Tenha certeza de ter visto a linha de código que usa @self@.  Esta é uma váriavel especial, uma
+        variável que representa o objeto cujo método você está chamando.  Para simplificar as coisas um
+        pouco, vamos tentar fazer um método que separe uma string pelos hífens.
 
 
         <pre>
@@ -217,17 +217,17 @@
         </pre>
 
 
-        Again, here's a method which can be used with any string.
+        De novo, aqui está um método que pode ser usando com qualquer string.
 
 
         bq. @"Gonk-plo".separar_hifen@ retorna o Array @['Gonk', 'plo']@.
 
 
         Usar @self@ marca o começoks the beginning of crossing over into many of the more advanced ideas in Ruby.
-        This is definition language.  You're defining a method, designing it before it gets used.  You're
-        preparing for the existence of an object which uses that method.  You're saying, "When @dash_split@ 
-        gets used, there will be a string at that time which is the one we're dash-splitting.  And @self@ is a 
-        special variable which refers to that string."
+        This is definition language.  Você está definindo um método, desenhando ele antes dele ser usado.  Você está
+        preparando para a existência de um objeto que use aquele método.  Você está dizendo, "Quando @separar_hifen@ 
+        for usado, haverá uma string a qual estaremos separando-hifens.  E @self@ é uma variável especial 
+        que faz referência àquela string."
 
 
         Ruby is a knockout definition language.  A succulent and brain-splitting discussion is coming your

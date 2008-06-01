@@ -338,7 +338,7 @@
         Qualquer código cercado por *colchetes* é um bloco.
 
 
-        bq. @2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei denovo!" }@ is an example.
+        bq. @2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei de novo!" }@ is an example.
 
 
         Com blocos, você pode agrupar pedaços de instruções juntas, assim elas pode ser passadas
