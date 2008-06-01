@@ -70,7 +70,8 @@
         bq. @habitantes = 12_000_000_000@
 
 
-        Número decimais são chamados de _floats_ (números reais) no Ruby.  Números reais consistem em números com
+        Números decimais são chamados de _floats_ (números reais ou ponto flutuante) no Ruby.  
+        Números reais consistem em números com
         *casas decimais* ou *em notação científica*.
 
 

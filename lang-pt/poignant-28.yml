@@ -44,8 +44,8 @@
 
         Alguns de vocês que já programaram antes estarão tentados a dizer que @copo_plastico@ está
         *indefinido* (undefined).  Que tal não.  Quando você diz que uma variável está indefinida,
-        você está dizendo hat Ruby simply has no recollection of the variable, ele não conhece
-        a var, ela é absolutamente não existe.
+        você está dizendo que o Ruby simplesmente não tem lembrança da variável, ele não a conhece, 
+        ela absolutamente não existe.
 
 
         Mas o Ruby está sabendo do @copo_plastico@.  Ruby pode facilmente olhar dentro do @copo_plastico@.
@@ -62,7 +62,7 @@
         eyes of lake.  Tail of warm icicle.  Sponsored by a Very Powerful Pause Button._
 
 
-        A escuridão que circunda o Blix pode ser chamada de *espaço negativo*.  AteHang on to that phrase.
+        A escuridão que circunda o Blix pode ser chamada de *espaço negativo*.  Atente-se nessa frase.
         Deixe ela sugerir que o vazio tem conotação negativa.  De um jeito similar,
         @nil@ tem a slightly sour note that it whistles.
 
@@ -96,7 +96,7 @@
 
         <pre>
          unless copo_plastico
-           print "O copo de plástico tá na hora de abastecer."
+           print "Tá na hora de abastecer o copo plástico."
          end
         </pre>
 
@@ -106,8 +106,8 @@
 
 
         <pre>
-         print "Yeah, copo tá cheio novamente!" if copo_plastico
-         print "Difícilmente. Ele tá vazio." unless copo_plastico
+         print "Yeah, o copo tá cheio de novo!" if copo_plastico
+         print "Dificilmente. Ele tá vazio." unless copo_plastico
         </pre>
 
 
@@ -119,7 +119,7 @@
         </pre>
 
 
-        Esta manha é um lindo jeito de expressar, _Faça isso só se *a* for true e *b* não for true_.
+        Esta manha é um lindo jeito de expressar: _Faça isso só se *a* for true e *b* não for true_.
 
 
         Agora que você já conheceu o @false@, Tenho certeza que você pode ver o que vem em seguida.

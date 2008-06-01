@@ -110,16 +110,16 @@
         h3. Os Mecanismos do Estereótipo
 
 
-        !>i/my.daughters.organ-2.gif(Gato vendedor do espaço.)!
+        !>i/my.daughters.organ-2.gif(Vendedor de gatos do espaço.)!
 
 
         Imediatamente ouve-se um sussuro nas árvores atrás da casa do Paij-ree e acabou que era
-        o homem q caíra do céu.  Seu nome era Doug e ele vendia gatos.
+        o homem que caíra do céu.  Seu nome era Doug e ele vendia gatos.
 
 
-        So, just as he comes into to view, when his shadow (and the shadows of the cats tied to his
-        foot) obscures the bird on the lawn that we're trying to hit with a racquetball, 
-        as he's squeezing a wisp of helium from his big balloon, we shout, "Hello, Doug!"
+        Então, assim que deu pra vê-lo. quando sua sombra (e as sombras dos gatos amarrados aos seus
+        pés) obscures the bird on the lawn that we're trying to hit with a racquetball, 
+        as he's squeezing a wisp of helium from his big balloon, we shout, "Olá, Doug!"
 
 
         E ele diz, "Olá, Gonk-ree!  Olá, Why!"
@@ -129,14 +129,14 @@
         comprar os três gatos que ele necessita pra mandar a fornalha abastecida e o parabólica virando. Estes
         gatos cats generate gobs of static once Paij-ree tosses them in the generator, where they'll be
         outnumbered by the giant glass rods, which caress the cats continually-- Mas, espere!  Você reparou
-        como how the cat broker called him Gonk-ree?
+        como o corretor de gatos chamou ele de Gonk-ree?
 
         
         E ele o chama de Gonk-ree de dia e Gonk-plo de noite.
 
 
         Então o sufixo é definitivamente relacionado à luz do sol.  Até onde eu sei, o prefixo indica
-        a relação de que chama o Paij-ree.
+        a relação de quem chama o Paij-ree.
 
         
         <pre>
@@ -175,11 +175,11 @@
         @String@, *uma das classes do núcleo do Ruby*!
 
 
-        "Eu sei que isto é um pouco perigoso," Eu disse, when I passed this one under Paij-ree's nose.
-        "I hope nobody gets hurt."
+        "Eu sei que isto é um pouco perigoso," Eu disse, quando passei esse por baixo do nariz do Paij-ree.
+        "Eu espero que ninguém se machuque."
 
 
-        "Every Smotchkkiss must taste what this (kep-yo-iko) danger does," he said.  "Dogs and logs
+        "Todo Smotchkkiss deve experimentar o que esse (kep-yo-iko) perigo faz," ele disse.  "Dogs and logs
         and swampy bogs (kul-ip), all must be tasted."  And he took a swig of his Beagle Berry
         marsh drink.
 
@@ -188,10 +188,10 @@
         um método.  Um *método de instância* normal.
 
 
-        Eu gosto de ver a *arroba* como um caracter que signifique *atributo*.  A *arroba dupla*
-        stands for *attribute all*.  A class variable.  Todas as instâncias da classe podem olhar
+        Eu gosto de ver a *arroba* como um caracter que significa *atributo*.  A *arroba dupla*
+        *atributo coletivo*.  Uma variável de classe.  Todas as instâncias da classe podem olhar
         pra esta váriavel e ela é a mesma pra todas.  A variável @@@silabas@ é um Array
-        que agora pode ser usando dentro da classe String.
+        que agora pode ser usada dentro da classe String.
 
 
         O novo método é @significado_do_nome@ e esse novo método pode ser usado com qualquer string.
@@ -203,7 +203,7 @@
         Como você pode ver, Paij-ree é um nome pessoal.  Um nome que os amigos usam nas manhãs.
 
 
-        Tenha certeza de ter visto a linha de código que usa @self@.  Esta é uma váriavel especial, uma
+        Tenha certeza de ter visto a linha de código que usa @self@.  Esta é uma variável especial, uma
         variável que representa o objeto cujo método você está chamando.  Para simplificar as coisas um
         pouco, vamos tentar fazer um método que separe uma string pelos hífens.
 
@@ -223,18 +223,18 @@
         bq. @"Gonk-plo".separar_hifen@ retorna o Array @['Gonk', 'plo']@.
 
 
-        Usar @self@ marca o começoks the beginning of crossing over into many of the more advanced ideas in Ruby.
-        This is definition language.  Você está definindo um método, desenhando ele antes dele ser usado.  Você está
+        Usar @self@ marca o a entrada em um novo estágio com idéias mais avançadas no Ruby.
+        Esta é uma linguagem de definição.  Você está definindo um método, desenhando ele antes dele ser usado.  Você está
         preparando para a existência de um objeto que use aquele método.  Você está dizendo, "Quando @separar_hifen@ 
         for usado, haverá uma string a qual estaremos separando-hifens.  E @self@ é uma variável especial 
         que faz referência àquela string."
 
 
-        Ruby is a knockout definition language.  A succulent and brain-splitting discussion is coming your
+        Ruby é uma linguagem de definição imbatível.  A succulent and brain-splitting discussion is coming your
         way deeper in this book.
 
 
-        Na maioria das vezes você nao vai precisar usar @self@ explicitamente, já que você pode chamar métodos
+        Na maioria das vezes você não vai precisar usar @self@ explícitamente, já que você pode chamar métodos
         diretamente dentro de outra definição de método.
 
 
@@ -250,7 +250,7 @@
 
 
         <pre>
-         signif = partes.collect do |p|
+         significado = partes.collect do |p|
            silabas.shift[p]
          end
         </pre>
@@ -259,7 +259,7 @@
         A Array @partes@ contém o nome separado.  @['Paij', 'plo']@, por exemplo.  Estamos iterando por
         cada item naquela Array com @collect@.  Mas @collect@ vai uma passo a frente ao que o @each@ faz.  Assim
         como @each@, collect joga cada item pela calha como uma variável de bloco.  E aí, ao término do 
-        block, @collect@ *mantém a resposta que o block gives dá e a adiciona em um novo Array*.  O método 
+        block, @collect@ *mantém a resposta que o block dá e a adiciona em um novo Array*.  O método 
         @collect@ é o jeito perfeito de se fazer um novo Array que é baseado em itens de um Array existente.
 
 
@@ -273,13 +273,13 @@
 
 
         I say Paij-ree's property is a very charming section of woods when it's not raining cats and Doug.
-        For many days, Paij-ree and I camped in tents by the river behind his house, subsisting on smoked
-        blackbird and whittling little sleeping indians by the dusklight.  On occassion he would lose
-        a game of spades and I knew his mind was distracted, thinking of Endertromb.  All of this
+        Por vários dias, Paij-ree e eu acampamos em tendas perto do rio atrás da casa dele, subsisting on smoked
+        blackbird and whittling little sleeping indians by the dusklight.  Em uma ocasião ele perdeu no
+        carteado e eu sabia que sua mente estava distraída, pensando em Endertromb.  All of this
         must have been stirring inside of him for sometime.  I was the first ear he'd ever had.
 
 
-        "I just came from Ambrose," I said.  "Sort of my own underground home, a place where elves
+        "Acabei de vir de Ambrose," Eu disse.  "Sort of my own underground home, a place where elves
         strive to perfect animals."
 
 
