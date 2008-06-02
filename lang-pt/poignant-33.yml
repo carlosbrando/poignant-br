@@ -5,8 +5,8 @@
         só estão disponíveis para certos tipos de valores*.
 
 
-        Eu não acho que o @reverse@ vai dar muito certo.  As autoridades só precisam por um espelho da frente
-        "airégiN ad elortnoc o emoT."  Prenderão a gente quando as starmonkeys começarem a pousar em Lagos.
+        Eu não acho que o @reverse@ vai dar muito certo.  As autoridades só precisam por um espelho na frente
+        de "airégiN ad elortnoc o emoT."  Prenderão a gente quando as starmonkeys começarem a pousar em Lagos.
 
 
         As letras maiúsculas estão entregando o ouro.  Talvez se nós passássemos todas as letras na string
@@ -115,9 +115,9 @@
 
         Depois disso, há duas seções.  Estou marcando estas seções com comentários, as linhas que começam
         com o símbolo *cerquilha #*.  Comentários são  *notas úteis* que acompanham seu código.  Colegas que
-        vierem ver seu código vão apreciar tal ajuda.  Quanto você mesmo vier no seu código novamente
+        vierem ver seu código vão apreciar tal ajuda.  Você mesmo, quando vier no seu código novamente
         depois de algum tempo, comentários vão te ajudar a retomar o fio da meada.  E ainda existe
-        software por aí que pegam seus comentários e fazem documentação à partir deles.  (RDoc e Ri --
+        softwares por aí que pegam seus comentários e fazem documentação à partir deles.  (RDoc e Ri --
         veja o Pacote de Expansão #1!)
 
 
@@ -164,8 +164,8 @@
         alterada e você não vai mais achar a string velha.
 
 
-        Pode chamar @gsub!@ de *método destrutivo*.  Ele faz susas modificações no valor diretamente. Enquanto @gsub@
-        deixará o valor intacto, apenas respondendo com uma nova string que contém as alterações.
+        Pode chamar @gsub!@ de *método destrutivo*.  Ele faz suas modificações no valor diretamente. Enquanto @gsub@
+        deixa o valor intacto, apenas respondendo com uma nova string que contém as alterações.
         (Why must @gsub!@ scream when he descends upon his prey?  Merciless assailant!)
 
 
@@ -176,7 +176,7 @@
 
 
         <pre>
-         # Save the jibberish to a new file
+         # Salva as palavras sem sentido em um novo arquivo
          print "Arquivo codificado.  Favor entrar com um nome para esta idéia: "
          nome_ideia = gets.strip
          File::open( 'ideia-' + nome_ideia + '.txt', 'w' ) do |f|
@@ -195,9 +195,9 @@
 
 
         Depois que temos o nome da idéia, vamos abrir um novo arquivo de texto em branco.  O nome do arquivo é
-        contruído adicionando-se strings.  Se você digitou @'mustard-plus-codeine'@, nossa matemática será: @'ideia-' +
-        'mustard-plus-codeine' + '.txt'@.  O Ruby pressiona isso em uma única string.
-        @'ideia-mustard-plus-codeine.txt'@ é o arquivo.
+        contruído adicionando-se strings.  Se você digitou @'mostarda-mais-codeine'@, nossa matemática será: @'ideia-' +
+        'mostarda-mais-codeine' + '.txt'@.  O Ruby pressiona isso em uma única string.
+        @'ideia-mostarda-mais-codeine.txt'@ é o arquivo.
 
 
         Estamos usando o método de classe @File::open@ para criar um novo arquivo.  Até agora, nós usamos
@@ -219,7 +219,7 @@
         renomeiam, ou deletam arquivos.  Eles estão todos organizados dentro da classe @File@.
 
 
-        bq. @File::read( "ideia-mustard-plus-codeine.txt" )@ vai responder uma com uma string
+        bq. @File::read( "ideia-mostarda-mais-codeine.txt" )@ vai responder uma com uma string
         contendo todo o texto do seu arquivo de idéias. (Read significa ler.)
 
 
@@ -299,7 +299,7 @@
         bq. @p Dir['ideia-*.txt']@ irá imprimir:
 
 
-        bq. @['ideia-mustard-plus-codeine.txt']@ (_um Array de nomes de arquivos!_)
+        bq. @['ideia-mostarda-mais-codeine.txt']@ (_um Array de nomes de arquivos!_)
 
 
         Sim, o método @p@ funciona igual @print@.  Mas @print@ é para se imprimir strings,

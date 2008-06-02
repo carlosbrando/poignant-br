@@ -56,8 +56,8 @@
 
 
         Ainda assim, você nao desistia, você ia quadro por quadro com o jog do controle, analisando cada cena.
-        E esteva lá.  Way up behind the floodlight that was turned up too high.  The
-        one that left Mad with permanent eye damage.  Por quê?  Por quê queimar as retinas do seu companheiro,
+        E esteva lá.  No alto atrás do holofote que foi acionado com muita força.  O que deixou
+        o Doidão com danos permanentes nos olhos.  Por quê?  Por quê queimar as retinas do seu companheiro,
         Terry?
 
 
@@ -70,9 +70,9 @@
 
 
         As pessoas desligavam a televisão na hora que o seriado ia ao ar. Tentaram mudar o nome.
-        Primeiro foi _Deus nos Deu um Esquadrão_.  _Beijo de Dor_.  Then, _Beijo de Dor em Maine_, já que o
-        distrito inteiro acabou se mudando pra lá.  Mas a mágica se fora.  I went back to summer school that year
-        to make up some classes and all the kids had pretty much moved on to football pencils.
+        Primeiro foi _Deus nos Deu um Esquadrão_.  _Beijo de Dor_.  Então, _Beijo de Dor em Maine_, já que o
+        distrito inteiro acabou se mudando pra lá.  Mas a mágica se fora.  Eu voltei pra escola no verão daquele ano
+        pra algumas aulas e as crianças todas já estavam na onda dos lápis de futebol.
 
         
         h3. Blocos
@@ -166,7 +166,7 @@
 
 
         "Okay, @brinquedo@ is a *argumento do bloco*," Eu disse.  "Lembre-se: os corrimãos magrelos de cada lado do @brinquedo@ fazem dele
-        um *escorrega*."
+        uma *calha*."
 
 
         "Claro, mas parece que você o está usando como Hash. Dentro do bloco vc tem @brinquedo[:formato]@.
@@ -197,11 +197,11 @@
         sair do beiral do prédio e voltar a salvo pro chão."
 
 
-        "'A é para Arquitetura de prédios como esse,'" eu disse, com a voz rude do Doidão.
+        "'A' é para Arquitetura de prédios como esse,'" eu disse, com a voz rude do Doidão.
         "'Que nos dá esperança num mundo a ruir.'"
 
 
-        "'B é para Brutamontes, assim como seu amigo O Policial Doidão,'" disse Blix.  "'Caras que ajudam pessoas todo o tempo
+        "'B' é para Brutamontes, assim como seu amigo O Policial Doidão,'" disse Blix.  "'Caras que ajudam pessoas todo o tempo
         e não sabem escrever muito bem, mas mesmo assim ajudam caras que escrevem muito bem.'"
         
         
@@ -211,7 +211,7 @@
         "Mas o cara desistiu, Why.  Ele desistiu na letra Q eu acho."
 
 
-        "'Q é para momentos Quietos que nos ajudam a relaxar e pensar sobre todos os pequenos prazeres da vida, assim 
+        "'Q' é para momentos Quietos que nos ajudam a relaxar e pensar sobre todos os pequenos prazeres da vida, assim 
         nós nao ficamos tensos e começamos a fazer besteira andando na ponta do pé na beira de algum edifício alto e maligno.'"
 
 
@@ -229,15 +229,15 @@
 
 
         "Quanto ao seu @sort_by@, ele *começa no topo* da lista e vai *descendo até o ultimo ítem*, um de cada vez.
-        Então @brinquedo@ é um destes items.  Em cada item, o @sort_by@ para e *joga aquele item pelo escorrega*,
+        Então @brinquedo@ é um destes items.  Em cada item, o @sort_by@ para e *joga aquele item pela calha*,
         sob o nome de @brinquedo@, e deixa você decidir o que fazer com ele."
  
 
         "Ok, então @brinquedo@ será, cada hora, um dos brinquedos que eu tenho."
 
 
-        "Correto," eu disse.  "You know how I've really been harping on _using the answers that methods give
-        you_?  Aqui, nós estamos apenas olhando a forma do brinquedo dentro do bloco.  O bloco então responde para o @sort_by@
+        "Correto," eu disse.  "Você sabe como eu tenho batido na mesma tecla _usando as respostas que os método te
+        dão_?  Aqui, nós estamos apenas olhando a forma do brinquedo dentro do bloco.  O bloco então responde para o @sort_by@
         uma frase contendo o formato, algo como @"rato"@ ou @"meia"@.  Uma vez que ele passe por toda a lista, o @sort_by@
         terá comparado alfabéticamente o texto de cada forma e vai retornar um novo Array, agora ordenado."
 
@@ -248,21 +248,21 @@
         "Tá bom por hoje," disse o Blix.  "Que tal um pires de leite fresco, por favor?"
 
 
-        Eu enchi o pires dele até a borda e ele se esbaldou daquilo por algum tempo enquanto while I took a poker and
-        jabbed at coals in the fireplace.  Minha mente vagou e eu nao pude não pensar mais sobre blocos.
+        Eu enchi o pires dele até a borda e ele se esbaldou daquilo por algum tempo enquanto eu jogava poker e
+        jabbed at coals in the fireplace.  Minha mente vagou e eu não pude não pensar mais sobre blocos.
         Eu pensei no que ensinar pro Blix em seguida.
 
 
-        Eu provavelmente o teria ensinado sobre @next@.  Quando você esta interando uma lista, você
+        Eu provavelmente o teria ensinado sobre @next@.  Quando você está interando uma lista, você
         pode usar @next@ para *pular para o próximo item*.  Aqui estamos contando brinquedos que não tenham
-        a forma de bolinho-primavera pulando eles com @next@.
+        forma de bolinho-primavera,  pulando eles com @next@.
 
 
         <pre>
-         nao_e_bolinho_primavera = 0
+         nao_bolinho_primavera = 0
          brinquedos_do_gatinho.each do |brinquedo|
            next if brinquedo[:formato] == 'bolinho-primavera'
-           nao_e_bolinho_primavera = nao_e_bolinho_primavera + 1
+           nao_bolinho_primavera = nao_bolinho_primavera + 1
          end
         </pre>
 
@@ -285,7 +285,7 @@
         
 
         Assim que me esquivei ferozmente daquela pedra negra, Blix sumiu, presumo que pro
-        ônibus para Wixl, a capital ecômica dos animais.  Quem sabe, ele pode ter parado
+        ônibus para Wixl, a capital econômica dos animais.  Quem sabe, ele pode ter parado
         em Ambrose ou Riathna ou qualquer outra vila pelo caminho.  Meu instinto me diz
         que Wixl era definitivamente sua última parada. 
 
