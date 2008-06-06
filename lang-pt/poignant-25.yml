@@ -1,20 +1,21 @@
-    - The Leaf as a Status Symbol in Ambrose: >
+    - A Folha como um Símbolo de Status na Ambrose: >
 
-        Alright, Elf.  Give us a quick rundown of the currency issues you've faced there in your kingdom.
-
-
-        !i/the.elf-3.gif(Blue Crystals got the shaft.)!
+        Tudo certo, Gnomo.  Dê-no um rápido resumo dos problemas financeiros que você enfrentou em seu reino.
 
 
-        Yeah, that's not the way I remember it.  This Elf was paging me constantly.  When I refused to
-        call him back, he somehow left a message on my pager.  Meaning: it beeped a couple times and
-        then printed out a small slip of paper.  The slip said something to the effect of, "Get down here
-        quick!" and also, "We've got to rid the earth of this scourge of enterpreneurial caterpillars,
-        these twisted insect vikings are suffocating my blue crystals!"
+        !i/the.elf-3.gif(Cristais Azuis foram maltratados.)!
 
 
-        Lately, the exchange rate has settled down between leaves and crystals.  One treegrown note is
-        worth five crystals.  So the basic money situation looks like this:
+        Ei, esse não é o caminho que eu me lembro.  Esse Gnomo estava me bipando constantemente.  
+        Realmente, não é o caminho que eu me lembro.  Esse Gnomo estava me bipando constantemente.  Quando me
+        recusei a chamá-lo de volta, ele deixou uma mensagem no meu pager.  Significado: ele bipou duas vezes e
+        então exibiu uma pequena mensagem.  A mensagem disse alguma coisa sobre, "Desça aqui, rápido!" e também,
+        "Nós temos que livrar a terra destas pestes de lagartas empreendedoras, estes insetos insanos são vikings
+        sufocando meus cristais azuis!"
+        
+
+        Ultimamente, a taxa de câmbio já se estabelece entre as folhas e cristais. Uma nota de árvore velha vale
+        cinco cristais.  Então a situação básica do dinheiro é semelhante a isto:
 
 
         <pre>
@@ -23,20 +24,20 @@
         </pre>
 
 
-        This example is, like, _totally_ last chapter.  Still.  It's a start.  We're setting two _variables_.
-        The *equals sign* is used for _assignment_.
+        Este exemplo é _totalmente_ igual ao último capítulo.  Ainda.  Ele é um início.  Nós estamos ajustando
+        duas _variáveis_.  O *sinal igual* é usado para _atribuição_.
 
 
-        Now @leaf_tender@ represents the number @5@ (as in: five blue crystals.)  This concept right here is
-        *half of Ruby*.  We're _defining_.  We're _creating_.  This is half of the work.  
-        Assignment is the most basic form of defining.
+        Agora @leaf_tender@ representa o número @5@ (tal como em: cinco cristais azuis.)  Este conceito, até
+        aqui, é *metade de Ruby*.  Nós estamos _definindo_.  Nós estamos _criando_.  Isto é a metade do trabalho.
+        Atribuição é a forma mais básica de definição.
 
 
-        You can't complain though, can you Elf?  You've built an empire from cashing your blue crystals
-        into the new free market among the forest creatures.  (And even though he's an elf to us, he's a
-        tall monster to them.)
+        Você não pode se queixar, pode Gnomo?  Você construiu um império de provisões de seus cristais azuis para o
+        novo mercado livre entre as criaturas da floresta.  (E apesar de ele é ser um gnomo para nós, ele é um
+        monstro de altura para eles.)
        
 
-        !i/the.elf-4.jpg(Animal Perfect, LLC)!
+        !i/the.elf-4.jpg(Animal Perfeito, LLC)!
 
 
