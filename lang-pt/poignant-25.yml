@@ -1,17 +1,16 @@
     - A Folha como um Símbolo de Status na Ambrose: >
 
-        Tudo certo, Gnomo.  Dê-no um rápido resumo dos problemas financeiros que você enfrentou em seu reino.
+        Tudo certo, Gnomo.  Dê-nos um rápido resumo dos problemas financeiros que você enfrentou em seu reino.
 
 
         !i/the.elf-3.gif(Cristais Azuis foram maltratados.)!
 
 
-        Ei, esse não é o caminho que eu me lembro.  Esse Gnomo estava me bipando constantemente.  
         Realmente, não é o caminho que eu me lembro.  Esse Gnomo estava me bipando constantemente.  Quando me
         recusei a chamá-lo de volta, ele deixou uma mensagem no meu pager.  Significado: ele bipou duas vezes e
         então exibiu uma pequena mensagem.  A mensagem disse alguma coisa sobre, "Desça aqui, rápido!" e também,
-        "Nós temos que livrar a terra destas pestes de lagartas empreendedoras, estes insetos insanos são vikings
-        sufocando meus cristais azuis!"
+        "Nós temos que livrar a terra destas pestes de lagartas empreendedoras, estes insetos insanos vikings
+        estão sufocando meus cristais azuis!"
         
 
         Ultimamente, a taxa de câmbio já se estabelece entre as folhas e cristais. Uma nota de árvore velha vale
@@ -24,8 +23,8 @@
         </pre>
 
 
-        Este exemplo é _totalmente_ igual ao último capítulo.  Ainda.  Ele é um início.  Nós estamos ajustando
-        duas _variáveis_.  O *sinal igual* é usado para _atribuição_.
+        Este exemplo é _tão_  último capítulo.  Ainda assim.  Ele é um início.  Nós estamos definindo
+        duas _variáveis_.  O *sinal de igual* é usado para _atribuição_.
 
 
         Agora @leaf_tender@ representa o número @5@ (tal como em: cinco cristais azuis.)  Este conceito, até
@@ -33,9 +32,9 @@
         Atribuição é a forma mais básica de definição.
 
 
-        Você não pode se queixar, pode Gnomo?  Você construiu um império de provisões de seus cristais azuis para o
+        Você não pode se queixar, pode Gnomo?  Você construiu um império investindo seus cristais azuis no
         novo mercado livre entre as criaturas da floresta.  (E apesar de ele é ser um gnomo para nós, ele é um
-        monstro de altura para eles.)
+        monstro grande para eles.)
        
 
         !i/the.elf-4.jpg(Animal Perfeito, LLC)!
