@@ -3,64 +3,64 @@
         !i/dr.cham-3.jpg(The panoramic vales of Sedna on Endertromb.)!
 
 
-        Our intrepid Doctor set off for the alien castle, dashing through the flowers.  The ground belted
+        Nosso intrépido Doutor partiu para o castelo alienígena, dashing through the flowers.  The ground belted
         past his heels.  The castle inched up the horizon.  He desired a stallion, but no stallion
         appeared.  And that's how he discovered that the planet wouldn't read his mind and
         answer his wishes.
 
 
-        As my daughter's organ instructor explained it, however, the planet *could read minds* and it *could
-        grant wishes*.  Just not both at the same time.
+        Como o instrutor de órgão da minha filha havia me explicadp, porém, o planeta *podia ler mentes* e *podia
+        realizar desejos*.  Só que não ao mesmo tempo.
 
 
         One day as I quizzed the organ maestro, he sketched out the following Ruby code on a pad
         of cheese-colored paper.  (And queer cheese smells were coming from somewhere, I
-        can't say where.)
+        eu não posso dizer onde.)
 
 
         <pre>
          require 'endertromb'
-         class WishMaker
+         class FazedorPedidos
            def initialize
-             @energy = rand( 6 )
+             @energia = rand( 6 )
            end
-           def grant( wish )
-             if wish.length > 10 or wish.include? ' '
-               raise ArgumentError, "Bad wish."
+           def realize( pedido )
+             if pedido.length > 10 or pedido.include? ' '
+               raise ArgumentError, "Pedido ruim."
              end
-             if @energy.zero?
-               raise Exception, "No energy left."
+             if @energia.zero?
+               raise Exception, "Sem energia."
              end
-             @energy -= 1
-             Endertromb::make( wish )
+             @energia -= 1
+             Endertromb::realize( pedido )
            end
          end
         </pre>
 
 
-        This is the wish maker.  
+        Este é o fazedor de pedidos.  
 
 
-        Actually, no, this is a *definition for a wish maker.*  To Ruby, it's a *class definition*.
-        The code describes how a certain *object* will work.
+        Na verdade, não, esta é a *definição de um fazedor de pedidos.*  Para o Ruby, é uma *definição de classe*.
+        O código descreve como um certo *objeto* vai funcionar.
 
 
-        Each morning, the wish maker starts out with up to five wishes available for granting.
-        A new @WishMaker@ is created at sun up.
+        Cada manhã, o fazedor de pedidos arts out with up to five wishes available for granting.
+        Um novo @FazedorPedidos@ é criado quando o sol levanta.
 
 
         <pre>
-         todays_wishes = WishMaker.new
+         pedidos_do_dia = FazedorPedidos.new
         </pre>
 
 
-        The @new@ method is a class method which creates a new, blank object.  It also calls the
-        object's @initialize@ method automatically.  In the @WishMaker@ definition, you'll see
-        the @initalize@ method, which contains a single line of code: @@energy = rand( 6 )@.
+        O método @new@ é um método de classe que um novo, objeto em branco.  Ele também o chama o método
+        @initialize@ do objeto automaticamente.  Na definição do @FazedorPedidos,@ você vai ver o método
+        @initialize@, que contém uma única linha de código: @@energia = rand( 6 )@.
 
 
-        The @rand( 6 )@ picks a number between 0 and 5.  This number will represent the number
-        of wishes left in the day.  So, occassionally there are no wishes available
+        O @rand( 6 )@ sorteia um número entre 0 e 5.  Este número vai representar quantos pedidos
+        ainda restam no dia.  Então, occasionalmente não há pedidos disponíveis
         from the wish maker.
 
 
@@ -81,18 +81,18 @@
 
 
         <pre>
-         todays_wishes = WishMaker.new
-         todays_wishes.grant( "antlers" )
+         pedidos_do_dia = FazedorPedidos.new
+         pedidos_do_dia.realize( "antlers" )
         </pre>
 
 
-        Okay, step back and ensure you understand the example here.  The @WishMaker@ class is
+        Okay, step back and ensure you understand the example here.  The @FazedorPedidos@ class is
         an outline we've laid out for how the whole magic wish program works.  It's not the _actual_ genie in
         the bottle, it's the paperwork behind the scenes.  It's the rules and obligations the genie
         has to live by.
 
 
-        It's @todays_wishes@ that's the genie in the bottle.  And here we're giving it a wish to grant.
+        It's @pedidos_do_dia@ that's the genie in the bottle.  And here we're giving it a wish to grant.
         Give us antlers, genie.  (If you really get antlers from this example, I don't want to hear
         about it.  Go leap in meadows with your own kind now.)
 
@@ -109,28 +109,28 @@
         built-in to Ruby.  Method definitions using @def@.  Class definitions using @class@.
 
 
-        At this point in your instruction, it's easier to understand that *everything in Ruby is an object.*
+        At this point in your instruction, it's easier to understand that *tudo no Ruby é um objeto.*
 
 
         <pre>
-         number = 5
-         print number.next                  # prints '6'
+         numero = 5
+         print numero.next                 # imprime '6'
 
-         phrase = 'wishing for antlers'
-         print phrase.length                # prints '19'
+         frase = 'wishing for antlers'
+         print frase.length                # imprime '19'
 
-         todays_wishes = WishMaker.new
-         todays_wishes.grant( "antlers" )
+         pedidos_do_dia = FazedorPedidos.new
+         pedidos_do_dia.grant( "antlers" )
         </pre>
 
 
-        And, consequently, each object has a class behind the scenes.
+        E, consequentemente, cada objeto tem uma classe atrás da cortina.
 
 
         <pre>
-         print 5.class                       # prints 'Integer'
-         print 'wishing for antlers'.class   # prints 'String'
-         print WishMaker.new.class           # prints 'WishMaker'
+         print 5.class                       # imprime 'Integer'
+         print 'wishing for antlers'.class   # imprime 'String'
+         print FazedorPedidos.new.class           # imprime 'FazedorPedidos'
         </pre>
 
 
@@ -169,13 +169,13 @@
 
         <pre>
          require 'endertromb'
-         class MindReader
+         class LeitorMental
            def initialize
-             @minds = Endertromb::scan_for_sentience
+             @mentes = Endertromb::procurar_por_consciencia
            end
            def read
-             @minds.collect do |mind|
-                mind.read
+             @mentes.collect do |mente|
+                ments.read
              end
            end
          end
@@ -183,12 +183,12 @@
 
 
         Much as you've seen before, the @initalize@ happens when a new @MindReader@ object is created.
-        This @initialize@ gathers scans the planet for mindshare.  It looks like
-        these minds are stored in an array, since they are later iterated over using the @collect@ method.
+        This @initialize@ gathers scans the planet for mindshare.  Parece que as mentes
+        estão guardadas em um array, já que há uma iteração nelas no final usando o método @collect.@
 
 
-        Both the wish maker and the mind reader refer to a class named @Endertromb@.  This class is
-        stored in a file @endertromb.rb@, which is loaded with the code: @require 'endertromb'@.
+        Ambos o fazedor de pedidos e o leitor mental referem-se a uma classe chamada @Endertromb@.  Esta classe está
+        guardada em um arquivo @endertromb.rb@, que é carregado com o código: @require 'endertromb'@.
         Often you'll use other classes to accomplish part of your task.  Most of the latter half of this
         book will explore the wide variety of helpful classes that can be loaded in Ruby.
 
@@ -338,24 +338,24 @@
         hibernating down here.
 
 
-        The tunnel came to a stop.   A dark, dead end.
+        O túnel chegou ao fim.   Um escuro, fim sem saída.
 
 
         !i/dr.cham-4.gif(At the end of the tunnels: a computer and a book.)!
 
 
-        He had time.  So he read the book.  He read of the foxes and their pursuit of the porcupine who stole their
-        pickup truck.  He read of the elf and the ham.  He saw the pictographs of himself and found he
-        could really relate to his own struggles.  He even learned Ruby.  He saw how it all ended.
+        Ele tinha tempo.  Então ele leu o livro.  Ele leu sobre as raposas e a suapursuit of the porcupine who stole their
+        pickup truck.  Ele leu sobre o elf e o presunto.  He saw the pictographs of himself and found he
+        could really relate to his own struggles.  Ele até aprendeu Ruby.  Ele viu como isso tudo termina.
 
 
-        Were I him, I couldn't have stomached it.  But he did.  And he pledged in his bosom to see
+        Se eu fosse ele Were I him, I couldn't have stomached it.  But he did.  And he pledged in his bosom to see
         things out just as they happened.
 
 
-        On the computer monitor, Dr. Cham saw the flashing @irb@ prompt.  Like Dr. Cham, you might
-        recognize the @irb@ prompt from "The Tiger's Vest":expansion-pak-1.html
-        (the first expansion pak to this book, which includes a basic introduction to Interactive Ruby.)
+        No monitor do computador, o Dr. Cham viu o prompt do @irb@ piscando.  Assim como o Dr. Cham, você deve
+        reconhecer o prompt do @irb@ prompt do "A Roupa Do Tigre":expansion-pak-1.html
+        (o primeiro pacote de expansão deste livro, que inclui uma introdução básica ao IRB - Interactive Ruby.)
 
 
         Whereas he had just been exploring tunnels by foot, he now explored the machine's setup with
@@ -363,61 +363,61 @@
         all going to happen whether he used it or not.
 
 
-        He started with:
+        Ele começou com:
 
 
         <pre>
          irb> Object::constants
-           => ["Marshal", "String", "Dir", "LoadError", "Float", ... and so on ]
+           => ["Marshal", "String", "Dir", "LoadError", "Float", ... e por aí vai ]
         </pre>
 
 
-        This command lists all the top-level constants.  Classes are also listed as constants, so
-        this list can be great to see what's loaded into Ruby at any time.
+        Este comando lista as constantes de nível mais alto.  Classes são listadas como constantes também, 
+        então esta lista é ótima pra ver o que está carregado no ruby a qualquer momento.
 
 
-        He scanned the list for anything unfamiliar.  Any classes which didn't come with Ruby.
-        @Marshal@, @String@, @Dir@, @LoadError@, @Float@.  Each of those came with Ruby.
+        Ele examinou a lista procurando algo não familiar.  Qualquer classe que não vem com o Ruby.
+        @Marshal@, @String@, @Dir@, @LoadError@, @Float@.  Cada uma dessas vêm com o Ruby.
 
 
-        But further down the list:
+        Mas um pouco pra baixo na lista:
 
 
         <pre>
-         ... "Struct", "Values", "Time", "Elevator", "Range" ...
+         ... "Struct", "Values", "Time", "Elevador", "Range" ...
         </pre>
         
 
-        _Elevator?_  Exactly the kind of class to poke around with.  He had a go.
+        _Elevador?_  Exatamente o tipo de classe a se bisbilhotar.  He had a go.
 
 
         <pre>
-         irb> Elevator::methods
-           => ["method", "freeze", "allocate", ... another long list ... ]
-         irb> Elevator::class_variables
-           => ['@@diagnostic_report', '@@power_circuit_active', '@@maintenance_password']
-         irb> Elevator::constants
+         irb> Elevador::methods
+           => ["method", "freeze", "allocate", ... outra lista grande ... ]
+         irb> Elevador::class_variables
+           => ['@@relatorio_diagnostico', '@@circuito_eletrico_ativo', '@@senha_manutencao']
+         irb> Elevador::constants
            => []
         </pre>
 
 
-        Looks like the @Elevator@ class had plenty of methods.  Most of these looked
-        like they were the same methods every object has in Ruby.  For example,
-        @method@, @freeze@ and @allocate@ come with every class in Ruby.  (@Elevator::freeze@
-        would keep the @Elevator@ class from being changed.  @Elevator::allocate@ would
-        make a new @Elevator@ object without calling the @initialize@ method.)
+        Parece que a classe @Elevator@ tem um monte de métodos.  A maioria deles parece
+        ser os mesmo métodos que todo objeto tem no Ruby.  Por exemplo,
+        @method@, @freeze@ e @allocate@ vêm com toda classe no Ruby.  (@Elevador::freeze@
+        não deixaria que a classe @Elevator@ seja alterada.  @Elevador::allocate@ criaria
+        um novo objeto @Elevator@ sem chamar o método @initialize.@)
 
 
-        The @class_variables@ were interesting to Dr. Cham.  This elevator appeared genuine.
-        But no available @constants@.  This tells us there are no classes nested inside
-        the @Elevator@ class.
+        As @class_variables@ foram interessantes pro Dr. Cham.  Este elevador parece genuíno.
+        Mas sem @constantes@ disponíveis.  Isso nos diz que não há classes aninhadas dentro
+        da classe @Elevator.@
 
 
-        He tried to create an @Elevator@ object.
+        Ele tentou criar um objeto @Elevator.@
 
 
         <pre>
-         irb> e = Elevator::new
+         irb> e = Elevador::new
          ArgumentError: wrong number of arguments (0 for 1), requires a password
                  from (irb):2:in `initialize'
                  from (irb):2:in `new'
@@ -426,95 +426,95 @@
         </pre>
 
 
-        He tried a few passwords.
+        Ele tentou algumas senhas.
 
  
         <pre>
-         irb> e = Elevator::new( "going up" )
+         irb> e = Elevador::new( "pra cima" )
          AccessDeniedError: bad password
-         irb> e = Elevator::new( "going_up" )
+         irb> e = Elevador::new( "subindo" )
          AccessDeniedError: bad password
-         irb> e = Elevator::new( "stairs_are_bad" )
+         irb> e = Elevador::new( "escadas_sao_terriveis" )
          AccessDeniedError: bad password
-         irb> e = Elevator::new( "StairsAreBad" )
+         irb> e = Elevador::new( "EscadasSaoTerriveis" )
          AccessDeniedError: bad password
         </pre>
 
 
-        That was useless.  _Oh, wait!_  The maintenance password.  Listed in the @class_variables@.
+        Aqui foi inútil.  _Oh, espere!_  A senha de manutenção.  Listada nas @class_variables@.
 
 
         <pre>
-         irb> Elevator::maintenance_password
-         NoMethodError: undefined method `maintenance_password' for Elevator:Class
+         irb> Elevador::senha_manutencao
+         NoMethodError: undefined method `senha_manutencao' for Elevador:Class
                  from (irb):1
                  from :0
         </pre>
 
 
-        Hmm.  Instance variables are only available inside an object.  And class variables are only
-        available inside a class.  How to get at that password?
+        Hmm.  Variáveis de intância só estão disponíveis dentro de um objeto.  E variáveis de classe só estão
+        disponíveis dentro de uma classe.  Como conseguir aquela senha?
 
 
         <pre>
          irb> class Elevator
-         irb>   def Elevator.maintenance_password
-         irb>     @@maintenance_password
+         irb>   def Elevador.senha_manutencao
+         irb>     @@senha_manutencao
          irb>   end
          irb> end
            => nil
-         irb> Elevator::maintenance_password
-           => "stairs_are_history!"
+         irb> Elevador::senha_manutencao
+           => "escadas_sao_passado!"
         </pre>
  
 
-        Alright!  He got the password.  Did you see that?
+        Agora sim!  Conseguimos a senha.  Você viu aquilo?
 
 
-        He added a class method to the @Elevator@ class.  Isn't that great how you can start a new class
-        definition for @Elevator@ and Ruby just adds your changes to the existing class definition?
+        Ele adicionou um método de classe à classe @Elevator.@  Não é ótimo como você pode começar a definir
+        uma nova classe @Elevador@ e o Ruby simplesmente adiciona susas modificações na definição de classe já existente?
 
 
-        Class methods are usually called with the *double colon*.  But, a period is fine as well.
-        Since @Elevator@ is a class itself, Ruby will figure that if you call @Elevator.maintenance_password@,
-        you're calling a class method.  The double colon simply helps make class methods obvious
-        to the reader.
+        Métodos de classe são geralmente chamadaos com os *dois pontos duplo*.  Mas, um ponto também serve.
+        Já que @Elevador@ é uma classe por si só, Ruby vai entender que se você chama @Elevador.senha_manutencao@,
+        você está chamando um método de classe.  Os dois pontos duplo simplesmente ajudam a tornar métodos de classe óbvios
+        para o leitor.
 
 
-        And justly so.  Class methods are a bit unusual.  Normally you won't want to store information
-        directly inside of a class.  However, if you have a bit of information that you need to
+        And justly so.  Class methods are a bit unusual.  Normalmente você não quer guardar informação
+        diretamente dentro de uma classe.  Contudo, se você tem um pedaço de informação ion that you need to
         share among all objects of a class, then you have a good reason to use the class for storage.
-        It's understandable that the @@@maintenance_password@ would be stored in the class, instead of
+        It's understandable that the @@@senha_manutencao@ would be stored in the class, instead of
         in each separate object.  This way, the objects can simply reach up into the class and see the
         shared password.
 
 
-        Here's probably how the password protection works.
+        Provavelmente é assim que a proteção por senha funciona.
 
 
         <pre>
-         class Elevator
-           def initialize( pass )
-             raise AccessDeniedError, "bad password" \
-               unless pass.equals? @@maintenance_password
+         class Elevador
+           def initialize( senha )
+             raise AccessDeniedError, "senha incorreta" \
+               unless senha.equals? @@senha_manutencao
            end
          end
         </pre>
 
 
-        Passwording a class like this is pointless, since anything in Ruby can be altered and 
-        overwritten and remolded.  Dr. Cham had the password and ownership of the elevator is his.
+        Proteger uma classe assim não faz sentido, já que tudo no Ruby pode ser alterado e 
+        reescrito e remoldado.  O Dr. Cham tinha a senha e agora o elevador é dele.
 
 
         <pre>
-         irb> e = Elevator.new( "stairs_are_history!" )
-         #<Elevator:0x81f12f4 @level=4>
-         irb> e.level = 1
+         irb> e = Elevador.new( "escadas_sao_passado!" )
+         #<Elevador:0x81f12f4 @level=4>
+         irb> e.andar = 1
         </pre>
 
 
-        Dr. Cham was standing right there when the elevator doors, off behind the computer terminal,
-        opened for him.  With an exasperated sense of accomplishment and a good deal of excitement
+        Dr. Cham estava parado lá quando as portas do elevador, atrás do terminal do computador,
+        se abriram pra ele.  With an exasperated sense of accomplishment and a good deal of excitement
         surrounding all of the events that lie ahead, he stepped into the elevator and pressed 4.
 
 
