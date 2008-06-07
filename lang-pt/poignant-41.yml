@@ -50,23 +50,23 @@
         Se rodarmos o método @salve_hannah@, o Ruby vai gritar com a gente, alegando que não sabe de @opus_magnum@ nenhuma.
 
 
-        Eu tô falando de *foco*.  Microscópios restringem e magnificam sua visão.  Telescópios extendem
-        seu campo de visão.  No Ruby, *foco* referecia o campo de visão dentro de métodos e blocos.
+        Eu tô falando de *foco, escopo*.  Microscópios restringem e magnificam sua visão.  Telescópios extendem
+        seu campo de visão.  No Ruby, *escopo* referecia o campo de visão dentro de métodos e blocos.
 
 
         A declaração @def@ do método abre sua visão.  Nomes de variáveis introduzidos ali serão vistos
         pelo método e continuarão valendo até que o @end@ feche seus olhos.  Você pode passar dados para um
         método usando argumentos e dados podem ser resgatados de método, mas os nomes usados dentro
-        do método só valem no foco dele.
+        do método só valem no escopo dele.
 
 
-        Algumas váriveis tem um foco mais amplo.  Variáveis globais, como @$LOAD_PATH@, que começam com um *cifrão*
-        estão disponíveis sob qualquer foco.  Variáveis de instância como @@nomes@, que começam com uma *arroba*
-        estão disponíveis em todo lugar dentro do foco da classe.  A mesma coisa serve para variáveis de classe como @@@ingressos@.
+        Algumas váriveis tem um escopo mais amplo.  Variáveis globais, como @$LOAD_PATH@, que começam com um *cifrão*
+        estão disponíveis sob qualquer escopo.  Variáveis de instância como @@nomes@, que começam com uma *arroba*
+        estão disponíveis em todo lugar dentro do escopo da classe.  A mesma coisa serve para variáveis de classe como @@@ingressos@.
         Variáveis de classe e de instância serão exploradas em breve.
 
 
-        Blocos tem foco, mas um foco mais difuso.  Mais flexível.
+        Blocos têm escopo, mas um escopo mais difuso.  Mais flexível.
 
 
         <pre>
@@ -101,7 +101,7 @@
 
 
         Se o bloco usar uma variável que ainda não tenha sido usada previamente, essa variável desaparece após
-        o término do bloco.  O *foco* do bloco se fecha e a variável vai junto.  Aqui um exemplo em que @verbo@
+        o término do bloco.  O *escopo* do bloco se fecha e a variável vai junto.  Aqui um exemplo em que @verbo@
         não foi usado antes do bloco:
 
 

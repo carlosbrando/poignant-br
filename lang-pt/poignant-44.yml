@@ -89,15 +89,15 @@
         out loud his silence and awe.
 
 
-        He wanted to see what I'd written, so I showed him this short method I've written for you.
+        Ele queria ver o que eu havia escrito, então eu mostrei a ele este pequeno método que escrevi pra você.
     
 
         <pre>
-         def wipe_mutterings_from( sentence )
-           while sentence.include? '('
-             open = sentence.index( '(' )
-             close = sentence.index( ')', open )
-             sentence[open..close] = '' if close
+         def limpar_murmurios_de( frase )
+           while frase.include? '('
+             open = frase.index( '(' )
+             close = frase.index( ')', open )
+             frase[open..close] = '' if close
            end
          end
         </pre>
@@ -111,11 +111,11 @@
 
 
         <pre>
-         what_he_said = "But, strangely (em-pithy-dah), 
+         o_que_ele_disse = "But, strangely (em-pithy-dah), 
            I learned upon, played upon (pon-shoo) the 
            organs on my home (oth-rea) planet."
-         wipe_mutterings_from( what_he_said )
-         print what_he_said
+         limpar_murmurios_de( o_que_ele_disse )
+         print o_que_ele_disse
         </pre>
 
 
@@ -133,7 +133,7 @@
         gentler ways."
 
 
-        In the @wipe_mutterings_from@ method, I'm basically searching for opening parentheses.  When I
+        In the @limpar_murmurios_de@ method, I'm basically searching for opening parentheses.  When I
         find one, I scan for a closing paren which follows it.  Once I've found both, I replace them and
         their contents with an empty string.  The @while@ loop continues until all parentheses are gone.
         The mutterings are removed and the method ends.
@@ -146,15 +146,15 @@
 
 
         Okay, *Confusing Aspect No. 1*: This method cleans a string.  But what if we accidentally
-        give it a @File@?  Or a number?  What happens?  What if we run @wipe_mutterings_from( 1 )@?
+        give it a @File@?  Or a number?  What happens?  What if we run @limpar_murmurios_de( 1 )@?
 
 
-        If we give @wipe_mutterings_from@ the number 1, Ruby will print the following and exit.
+        If we give @limpar_murmurios_de@ the number 1, Ruby will print the following and exit.
 
 
         <pre>
          NoMethodError: undefined method `include?' for 1:Fixnum
-                 from (irb):2:in `wipe_mutterings_from'
+                 from (irb):2:in `limpar_murmurios_de'
                  from (irb):8
         </pre>
 
@@ -174,14 +174,14 @@
         @include?@ are methods which work with strings but are meaningless and unavailable for numbers.
 
 
-        To be clear: the method tries to use to the number.  The method will start with @sentence@ set to 1.
-        Then, it hits the second line: @while sentence.include? '('@.  Numbers have no @include?@
+        To be clear: the method tries to use to the number.  The method will start with @frase@ set to 1.
+        Then, it hits the second line: @while frase.include? '('@.  Numbers have no @include?@
         method.  Great, the backtrace has shown us where the problem is.  I didn't expect anyone to pass in
         a number, so I'm using methods that don't work with numbers.
 
 
         *See, this is just it.*  Our method is its own little pocket tool, right?  It acts as its own
-        widget independent of anything else.  To anyone out there using the @wipe_mutterings_from@
+        widget independent of anything else.  To anyone out there using the @limpar_murmurios_de@
         method, should they pass in a number, they'll be tossed this panic message that doesn't
         make sense to them.  They'll be asked to poke around inside the method, which really isn't
         their business.  They don't know their way around in there.
@@ -192,15 +192,15 @@
 
 
         <pre>
-         def wipe_mutterings_from( sentence )
-           unless sentence.respond_to? :include?
+         def limpar_murmurios_de( frase )
+           unless frase.respond_to? :include?
              raise ArgumentError, 
-               "cannot wipe mutterings from a #{ sentence.class }"
+              "não posso limpar os múrmurios de um(a) #{ frase.class }"
            end
-           while sentence.include? '('
-             open = sentence.index( '(' )
-             close = sentence.index( ')', open )
-             sentence[open..close] = '' if close
+           while frase.include? '('
+             abre = frase.index( '(' )
+             fecha = frase.index( ')', abre )
+             frase[abre..fecha] = '' if fecha
            end
          end
         </pre>
@@ -210,15 +210,15 @@
 
 
         <pre>
-         ArgumentError: cannot wipe mutterings from a Fixnum
-                 from (irb):3:in `wipe_mutterings_from'
+         ArgumentError: não posso limpar os múrmurios de um(a) Fixnum
+                 from (irb):3:in `limpar_murmurios_de'
                  from (irb):12
         </pre>
 
 
         The @respond_to?@ method is really nice and I plead that you never forget it's there.  The
         @respond_to?@ checks any object to be sure that it has a certain method.  It then gives
-        back a @true@ or @false@.  In the above case, the incoming @sentence@ object is checked for an
+        back a @true@ or @false@.  In the above case, the incoming @frase@ object is checked for an
         @include?@ method.  If no @include?@ method is found, then we raise the error.
 
 
@@ -236,9 +236,9 @@
 
 
         <pre>
-         something_said = "A (gith) spaceship."
-         wipe_mutterings_from( something_said )
-         print something_said
+         algo_dito = "Uma espaçonave (gith)."
+         limpar_murmurios_de( algo_dito )
+         print algo_dito
         </pre>
 
 
@@ -257,25 +257,25 @@
         method*, which changes strings directly?
 
 
-        Either we need to call this method @wipe_mutterings_from!@ (as a courtesy to all the other
+        Either we need to call this method @limpar_murmurios_de!@ (as a courtesy to all the other
         good folks out there that might use this method) or change the method to work on a copy of
         the string rather than the real thing.  Which is an easy change!  We just need to @dup@
         the string.
 
 
         <pre>
-         def wipe_mutterings_from( sentence )
-           unless sentence.respond_to? :include?
+         def limpar_murmurios_de( frase )
+           unless frase.respond_to? :include?
              raise ArgumentError, 
-               "cannot wipe mutterings from a #{ sentence.class }"
+              "não posso limpar os múrmurios de um(a) #{ frase.class }"
            end
-           sentence = sentence.dup
-           while sentence.include? '('
-             open = sentence.index( '(' )
-             close = sentence.index( ')', open )
-             sentence[open..close] = '' if close
+           frase = frase.dup
+           while frase.include? '('
+             abre = frase.index( '(' )
+             fecha = frase.index( ')', abre )
+             frase[abre..fecha] = '' if fecha
            end
-           sentence
+           frase
          end
         </pre>
 
@@ -284,20 +284,20 @@
 
 
         <pre>
-         sentence = sentence.dup
+         frase = frase.dup
         </pre>
 
 
-        What a peculiar line of code.  How does @sentence@ become a copy of @sentence@?
-        Does it erase itself?  What happens to the original @sentence@?  Does it disappear?
+        What a peculiar line of code.  How does @frase@ become a copy of @frase@?
+        Does it erase itself?  What happens to the original @frase@?  Does it disappear?
 
 
-        Remember that variables are just nicknames.  When you see @sentence = "A (gith) spaceship."@,
+        Remember that variables are just nicknames.  When you see @frase = "A (gith) spaceship."@,
         you see Ruby creating a string and then giving that string a nickname.
 
 
-        Likewise, when you see @sentence = sentence.dup@, you see Ruby creating a new string and then
-        giving that string a nickname.  This is handy inside your method because now @sentence@ is
+        Likewise, when you see @frase = frase.dup@, you see Ruby creating a new string and then
+        giving that string a nickname.  This is handy inside your method because now @frase@ is
         a nickname for a new copy of the string that you can safely use *without changing the
         string that was passed into the method*.
 
@@ -308,15 +308,15 @@
         <pre>
          x = 5
          x = x + 1
-         # x now equals 6
+         # x agora é igual a 6
 
          y = "Endertromb"
          y = y.length
-         # y now equals 10
+         # y agora é igual a 10
          
          z = :include?
          z = "a string".respond_to? z
-         # z now equals true
+         # z agora é igual a true
         </pre>
 
 

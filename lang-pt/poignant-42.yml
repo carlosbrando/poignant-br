@@ -3,18 +3,18 @@
         !i/dr.cham-3.jpg(The panoramic vales of Sedna on Endertromb.)!
 
 
-        Nosso intrépido Doutor partiu para o castelo alienígena, dashing through the flowers.  The ground belted
-        past his heels.  The castle inched up the horizon.  He desired a stallion, but no stallion
-        appeared.  And that's how he discovered that the planet wouldn't read his mind and
-        answer his wishes.
+        Nosso intrépido Doutor partiu para o castelo alienígena, lançando-se sobre as flores.  The ground belted
+        past his heels.  The castle inched up the horizon.  Ele gostaria de um cavalo, mas nenhum cavalo
+        apareceu.  E foi assim que ele descobriu que o planeta não leria sua mente e não responderia seus
+        pedidos.
 
 
-        Como o instrutor de órgão da minha filha havia me explicadp, porém, o planeta *podia ler mentes* e *podia
-        realizar desejos*.  Só que não ao mesmo tempo.
+        Porém, como o instrutor de órgão da minha filha havia me explicado, o planeta *podia ler mentes* e *podia
+        realizar desejos*.  Só que não os dois ao mesmo tempo.
 
 
-        One day as I quizzed the organ maestro, he sketched out the following Ruby code on a pad
-        of cheese-colored paper.  (And queer cheese smells were coming from somewhere, I
+        Um dia questionando o maestro de órgão, ele rascunhou o seguinte código Ruby numa folha
+        de papel cor-de-queijo.  (E cheiros estranhos de queijo estão vindo de algum lugar,
         eu não posso dizer onde.)
 
 
@@ -60,67 +60,66 @@
 
 
         O @rand( 6 )@ sorteia um número entre 0 e 5.  Este número vai representar quantos pedidos
-        ainda restam no dia.  Então, occasionalmente não há pedidos disponíveis
-        from the wish maker.
+        ainda restam no dia.  Então, occasionalmente não haverão pedidos disponíveis do fazedor de
+        pedidos.
 
 
-        The random number is assigned to an *instance variable* which is named @@energy@.
-        This instance variable will be available any time throughout the class.  The variable
-        can't be used outside the *scope* of the class.
+        O número aleatório é dado à uma *variável de instância* de nome @@energia@.
+        Esta variável instância vai estar disponível a qualquer por entre a classe.  A variável
+        não pode ser usada fora do *escopo* da classe.
 
 
-        In chapter three, we briefly looked at instance variables and decided to respect them
-        as *attributes*.  (The *at symbol* could mean *attribute*.)  Instance variables can used
-        to store any kind of information, but they're most often use to store bits of information
-        about the object represented by the class.
+        No capítulo três, demos uma breve olhada em variáveis de instância e decidimos respeitá-las
+        como *atributos*.  (O símbolo *arroba* poderia significar *atributo*.)  Variáveis de instância podem
+        ser usadas para guardar qualquer tipo de informação, mas elas são mais usadas para se guardar pedaços
+        de informação sobre o objeto representado pela classe.
 
 
-        In the above case, each wish maker for the day has its own energy level.  If the wish maker
-        were a machine, you might see a gauge on it that points to the energy left inside.
-        The @@energy@ instance variable is going to act as that gauge.
+        No caso acima, cada fazendor de pedidos para o dia tem seu próprio nível de energia.  Se o fazendor de pedidos
+        fosse uma máquina, você talvez veria um medidor nele que marca a energia restante.
+        A variável de instância @@energia@ age como esse medidor.
 
 
         <pre>
          pedidos_do_dia = FazedorPedidos.new
-         pedidos_do_dia.realize( "antlers" )
+         pedidos_do_dia.realize( "chifres" )
         </pre>
 
 
-        Okay, step back and ensure you understand the example here.  The @FazedorPedidos@ class is
-        an outline we've laid out for how the whole magic wish program works.  It's not the _actual_ genie in
-        the bottle, it's the paperwork behind the scenes.  It's the rules and obligations the genie
-        has to live by.
+        Okay, volte um pouco e tenha certeza de entender o exemplo aqui.  A classe @FazedorPedidos@ é a planta
+        que elaboramos para como toda a mágica dos pedidos funciona.  Não é o _realmente_ o gênio na lâmpada,
+        é a papelada por trás das cenas.  São as regras e obrigações em que o gênio vive.
 
 
         It's @pedidos_do_dia@ that's the genie in the bottle.  And here we're giving it a wish to grant.
-        Give us antlers, genie.  (If you really get antlers from this example, I don't want to hear
+        Nos dê chifres, genie.  (If you really get antlers from this example, I don't want to hear
         about it.  Go leap in meadows with your own kind now.)
 
 
-        In the last chapter, the drill was: Ruby has two halves.
+        No capítulo anterior, o treinamento era: Ruby tem duas metades.
 
 
-        # Defining things.
+        # Definindo coisas.
 
-        # Putting those things into action.
-
-
-        What are the actions in Ruby?  Methods.  And now, you're having a lick of the definition language
-        built-in to Ruby.  Method definitions using @def@.  Class definitions using @class@.
+        # Colocando estas coisas em ação.
 
 
-        At this point in your instruction, it's easier to understand that *tudo no Ruby é um objeto.*
+        O que são as ações no Ruby?  Métodos.  E agora, você está provando a linguagem de definição
+        interna do Ruby.  Definições de métodos usando @def@.  Definições de classe usando @class@.
+
+
+        Neste ponto da sua instrução, é mais fácil entender que *tudo no Ruby é um objeto.*
 
 
         <pre>
          numero = 5
          print numero.next                 # imprime '6'
 
-         frase = 'wishing for antlers'
+         frase = 'desejando chifres'
          print frase.length                # imprime '19'
 
          pedidos_do_dia = FazedorPedidos.new
-         pedidos_do_dia.grant( "antlers" )
+         pedidos_do_dia.grant( "chifres" )
         </pre>
 
 
@@ -129,8 +128,8 @@
 
         <pre>
          print 5.class                       # imprime 'Integer'
-         print 'wishing for antlers'.class   # imprime 'String'
-         print FazedorPedidos.new.class           # imprime 'FazedorPedidos'
+         print 'desejando chifres'.class     # imprime 'String'
+         print FazedorPedidos.new.class      # imprime 'FazedorPedidos'
         </pre>
 
 
@@ -160,7 +159,7 @@
         is one swallow* from that fish *and your wish is home free!*
 
 
-        And that's how wishes come true for children in this place.
+        E é assim que os pedidos das crianças se realizam neste lugar.
 
 
         Once my daughter's organ instructor had drawn up the class for the wish maker, he then followed
@@ -175,25 +174,25 @@
            end
            def read
              @mentes.collect do |mente|
-                ments.read
+                mente.read
              end
            end
          end
         </pre>
 
 
-        Much as you've seen before, the @initalize@ happens when a new @MindReader@ object is created.
-        This @initialize@ gathers scans the planet for mindshare.  Parece que as mentes
+        Como você já viu antes, o @initalize@ acontece quando um novo (new) objeto @LeitorMental@ é criado.
+        Este @initialize@ gathers scans the planet for mindshare.  Parece que as mentes
         estão guardadas em um array, já que há uma iteração nelas no final usando o método @collect.@
 
 
         Ambos o fazedor de pedidos e o leitor mental referem-se a uma classe chamada @Endertromb@.  Esta classe está
         guardada em um arquivo @endertromb.rb@, que é carregado com o código: @require 'endertromb'@.
-        Often you'll use other classes to accomplish part of your task.  Most of the latter half of this
-        book will explore the wide variety of helpful classes that can be loaded in Ruby.
+        Você vai, muitas vezes, usar outras classes para realizar parte da sua tarefa.  Most of the latter half of this
+        book will explore the a grande variedade de classes úteis que podem ser carregadas no Ruby.
 
 
-        h3. Dr. Cham Ventures Inside
+        h3. Dr. Cham Arrisca Entrar
 
 
         But as Dr. Cham neared the castle, although the planet was aware of his thoughts, sensing his
@@ -316,21 +315,21 @@
         back up the path he'd taken.
 
 
-        h3. Another Dead End Where Things Began
+        h3. Outra Rua Sem Saída Onde as Coisas Começam
 
 
-        He found himself lost in the castle's tunnels.  Nothing looked familiar.  He wasn't worried much,
-        though.  He was on another planet.  He would be lost regardless.
+        Ele se encontrou perdido nos túneis do castelo.  Nada parecia familiar.  Todavia, ele não estava muito preocupado.
+        Ele estava noutro planeta.  He would be lost regardless.
 
 
-        He wound through the tunnels, attempting to recall his paths, but far too interested
-        in exploring to keep track of his steps.  He followed a single tunnel deep, down, down,
+        Ele se contorceu pelos túneis, tentando lembrar o caminho, mas muito mais interessado
+        em explorar para lembrar seus passos.  Ele seguiu um único túnel profundamente, down, down,
         which slanted so steeply that he had to leap across ledges and carefully watch his footholds.
         The gravity here seemed no different than Earth.  His legs were pulled into slides just
         as easily.
 
 
-        Although he had no absolute way of knowing where he was, he felt certain that he had left
+        Mesmo sem ter absolutamente nenhuma maneira de saber onde ele estava, ele tinha certeza que deixou
         the castle's boundaries.  This deep, this long of a walk.  It had been an hour since he'd
         entered through the door.  And, as the tunnel wound back up, he was sure that he would
         emerge into a new dwelling, perhaps even a manhole which he could peek out from and see
@@ -341,7 +340,7 @@
         O túnel chegou ao fim.   Um escuro, fim sem saída.
 
 
-        !i/dr.cham-4.gif(At the end of the tunnels: a computer and a book.)!
+        !i/dr.cham-4.gif(No fim dos túneis: um computador e um livro.)!
 
 
         Ele tinha tempo.  Então ele leu o livro.  Ele leu sobre as raposas e a suapursuit of the porcupine who stole their
@@ -349,7 +348,7 @@
         could really relate to his own struggles.  Ele até aprendeu Ruby.  Ele viu como isso tudo termina.
 
 
-        Se eu fosse ele Were I him, I couldn't have stomached it.  But he did.  And he pledged in his bosom to see
+        Eu não teria estômago pra isso, no lugar dele.  Mas ele teve.  And he pledged in his bosom to see
         things out just as they happened.
 
 
@@ -358,8 +357,8 @@
         (o primeiro pacote de expansão deste livro, que inclui uma introdução básica ao IRB - Interactive Ruby.)
 
 
-        Whereas he had just been exploring tunnels by foot, he now explored the machine's setup with
-        the prompt.  He set the book back where he had found it.  He didn't need it anymore.  This was
+        Assim como ele acabou de explorar os túneis a pé, agora ele explora as configurações da máquina com
+        a prompt.  Ele He set the book back where he had found it.  He didn't need it anymore.  This was
         all going to happen whether he used it or not.
 
 
@@ -475,18 +474,18 @@
         uma nova classe @Elevador@ e o Ruby simplesmente adiciona susas modificações na definição de classe já existente?
 
 
-        Métodos de classe são geralmente chamadaos com os *dois pontos duplo*.  Mas, um ponto também serve.
+        Métodos de classe são geralmente chamadaos com os *dois pontos duplos*.  Mas, um ponto também serve.
         Já que @Elevador@ é uma classe por si só, Ruby vai entender que se você chama @Elevador.senha_manutencao@,
         você está chamando um método de classe.  Os dois pontos duplo simplesmente ajudam a tornar métodos de classe óbvios
         para o leitor.
 
 
-        And justly so.  Class methods are a bit unusual.  Normalmente você não quer guardar informação
-        diretamente dentro de uma classe.  Contudo, se você tem um pedaço de informação ion that you need to
-        share among all objects of a class, then you have a good reason to use the class for storage.
-        It's understandable that the @@@senha_manutencao@ would be stored in the class, instead of
-        in each separate object.  This way, the objects can simply reach up into the class and see the
-        shared password.
+        And justly so.  Métodos de classe são um pouco comuns.  Normalmente você não quer guardar informação
+        diretamente dentro de uma classe.  Contudo, se você tem um pedaço de informação que você precisa
+        compartilhar com todos os objetos de uma classe, ento você tem um bom motivo pra usar a classe como armazenamento.
+        É compreensível que a @@@senha_manutencao@ tenha sido armazenada na classe, invés de
+        cada objeto separado.  Deste modo, O objeto pode simplismente alcançar a classe e ver a senha
+        compartilhada.
 
 
         Provavelmente é assim que a proteção por senha funciona.
@@ -503,7 +502,7 @@
 
 
         Proteger uma classe assim não faz sentido, já que tudo no Ruby pode ser alterado e 
-        reescrito e remoldado.  O Dr. Cham tinha a senha e agora o elevador é dele.
+        reescrito e remoldado.  O Dr. Cham tinha a senha e agora o elevador era dele.
 
 
         <pre>
@@ -515,6 +514,6 @@
 
         Dr. Cham estava parado lá quando as portas do elevador, atrás do terminal do computador,
         se abriram pra ele.  With an exasperated sense of accomplishment and a good deal of excitement
-        surrounding all of the events that lie ahead, he stepped into the elevator and pressed 4.
+        surrounding all of the events that lie ahead, ele entrou no elevador e apertou o 4.
 
 

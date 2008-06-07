@@ -49,7 +49,7 @@
         Blasted crying shame.  Things could have worked out.
 
 
-        h3. The Birth of an Object
+        h3. O Nascimento de um Objeto
 
 
         "Don't worry," said the goat, anxious to sway Dr. Cham's attention back to the film.  "Things _do_
@@ -60,29 +60,29 @@
 
 
         <pre>
-         class ToastyBear < Object; end
+         class UrsoTostado < Object; end
         </pre>
 
 
-        The angle bracket indicates *inheritance*.  This means that the new @ToastyBear@ class
+        The angle bracket indicates *inheritance*.  This means that the new @UrsoTostado@ class
         is a new class based on the @Object@ class.  Every method that @Object@ has will be
-        available in @ToastyBear@.  Constants available in @Object@ will be available in
-        @ToastyBear@.
+        available in @UrsoTostado@.  Constants available in @Object@ will be available in
+        @UrsoTostado@.
 
 
-        But every object inherits from @Object@.  The code...
+        Mas todo objeto é herdeiro de @Objeto@.  O código...
 
 
         <pre>
-         class ToastyBear; end
+         class UrsoTostado; end
         </pre>
 
 
-        Is identical to...
+        É idêntico idêntico a...
 
 
         <pre>
-         class ToastyBear < Object; end
+         class UrsoTostado < Object; end
         </pre>
 
 
@@ -115,12 +115,12 @@
         will affect other classes in Ruby that use Arrays.
 
 
-        So you start your own class called @ArrayMine@, which is based on The Original
+        So you start your own class called @MinhaArray@, which is based on The Original
         @Array@.
         
 
         <pre>
-         class ArrayMine < Array
+         class MinhaArray < Array
            # Build a string from this array, formatting each entry
            # then joining them together.
            def join( sep = $,, format = "%s" )
@@ -132,13 +132,13 @@
         </pre>
 
 
-        @ArrayMine@ is now a custom @Array@ class with its own @join@ method.  @Array@ is
-        the *superclass* of @ArrayMine@.  Every object has a @superclass@ method where you
+        @MinhaArray@ is now a custom @Array@ class with its own @join@ method.  @Array@ is
+        the *superclass* of @MinhaArray@.  Every object has a @superclass@ method where you
         can verify this relationship.
 
 
         <pre>
-         irb> ArrayMine.superclass
+         irb> MinhaArray.superclass
            => Array
         </pre>
 
@@ -148,8 +148,8 @@
 
 
         <pre>
-         rooms = ArrayMine[3, 4, 6]
-         print "We have " + rooms.join( ", ", "%d bed" ) + " rooms available."
+         rooms = MinhaArray[3, 4, 6]
+         print "Nós temos quartos de " + rooms.join( ", ", "%d bed" ) + " disponíveis."
         </pre>
 
 
