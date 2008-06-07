@@ -50,11 +50,11 @@
         Grand Rapids to hear, then left, weeping and embracing each other.
 
 
-        "But, strangely (em-pithy-dah), I learned upon, played upon (pon-shoo) the organs on my
-        home (oth-rea) planet," he said.
+        "Mas, estranhamente (em-pithy-dah), Eu aprendi, toquei (pon-shoo) nos órgãos no meu planeta
+        (oth-rea) natal," ele disse.
 
 
-        My daughter's organ instructor speaks these extra words you see in parentheses.  Who knows
+        O instrutor de órgão da minha filha fala essas palavras extras que você vê em parênteses.  Who knows
         if they are from his native tongue or if they are his own soundful hiccups.  He keeps
         another relic from Endertromb as well: he has twelve names.
 
@@ -67,20 +67,20 @@
         Since it is day as I write, I will call him Paij-ree here.
 
 
-        h3. Mumble-Free Earplugs
+        h3. Protetores de Ouvido Múrmurio-Free
 
 
         !>i/my.daughters.organ-1.gif(Alien at the keys.)!
 
 
-        So I told Paij-ree, "Paij-ree, I am writing a book.  To teach the world Ruby."
+        Então eu disse a Paij-ree, "Paij-ree, eu estou escrevendo um livro.  Para ensinar ao mundo Ruby."
 
 
-        "Oh, (pill-nog-pill-yacht) nice," he said.  He's known Ruby longer than I have, but still:
-        _I_ will be my daughter's Ruby instructor.
+        "Oh, (pill-nog-pill-yacht) bacana," ele disse.  Ele conhece Ruby há mais tempo que eu, mas mesmo assim:
+        _Eu_ serei o instrutor de Ruby da minha filha.
 
 
-        And I said, "Paij-ree, you are in the book.  And the stories of your planet."  I talk to
+        E eu disse, "Paij-ree, você está no livro.  E as estórias do seu planeta."  I talk to
         him like he's E.T.  I don't know why.  Just like how I said next, "And then maybe someday
         you can go home to your mom and dad!"
 
@@ -103,29 +103,29 @@
         </pre>
 
 
-        "Can you see what this does, Paij-ree?  Any old Smotchkkiss can use this method
-        to take all the incoherent babblings out of your speaking," I said.
+        "Viu o que isto faz, Paij-ree?  Qualquer Smotchkkiss velho pode usar este método
+        pra remover todas as o take all the incoherent babblings out of your speaking," I said.
 
 
-        And I fed something he said earlier into the method.
+        E eu alimentei o método com algo que ele havia dito mais cedo.
 
 
         <pre>
-         o_que_ele_disse = "But, strangely (em-pithy-dah), 
-           I learned upon, played upon (pon-shoo) the 
-           organs on my home (oth-rea) planet."
+         o_que_ele_disse = "Mas, estranhamente (em-pithy-dah), 
+         Eu aprendi, toquei (pon-shoo) em órgãos no meu planeta
+         (oth-rea) natal."
          limpar_murmurios_de( o_que_ele_disse )
          print o_que_ele_disse
         </pre>
 
 
-        And it came out as a rather plain sentence.
+        E saiu de certa forma uma frase mais clara.
 
 
         <pre>
-         But, strangely , 
-         I learned upon, played upon the
-         organs on my home planet.
+        Mas, estranhamente , 
+        Eu aprendi, toquei em órgãos no meu planeta
+        natal.
         </pre>
 
 
@@ -145,7 +145,7 @@
         to help you work through them with me.  So let's.
 
 
-        Okay, *Confusing Aspect No. 1*: This method cleans a string.  But what if we accidentally
+        Okay, *Aspecto confuso No. 1*: Este método limpa uma string.  Mas e se nós acidentalmente
         give it a @File@?  Or a number?  What happens?  What if we run @limpar_murmurios_de( 1 )@?
 
 
@@ -159,11 +159,11 @@
         </pre>
 
 
-        What you see here is a rather twisted and verbose (but at times very helpful) little fellow
-        called the *backtrace*.  He's a wound-up policeman who, at the slightest sign of trouble,
-        immediately apprehends any and all suspects, pinning them against the wall and spelling out their
+        O que você vê aquiere is a rather twisted and verbose (but at times very helpful) little fellow
+        called the *backtrace*.  He's a wound-up policeman who, ao menor sinal de problema,
+        imediatamente apreende todo e qualquer suspeito, os põe contra a parede all and spelling out their
         rights so quickly that none can quite hear it all.  But it's plain that there's
-        a problem.  And, of course, it's all a big misunderstanding, right?
+        a problem.  E, é claro, não passou de um mal entendido, certo?
 
 
         When Ruby reads you these Miranda rights, listen hardest to the beginning.  The first line
@@ -175,8 +175,8 @@
 
 
         To be clear: the method tries to use to the number.  The method will start with @frase@ set to 1.
-        Then, it hits the second line: @while frase.include? '('@.  Numbers have no @include?@
-        method.  Great, the backtrace has shown us where the problem is.  I didn't expect anyone to pass in
+        Então, ele chega na segunda linha: @while frase.include? '('@.  Números não têm método @include?@.
+        Great, the backtrace has shown us where the problem is.  I didn't expect anyone to pass in
         a number, so I'm using methods that don't work with numbers.
 
 
@@ -187,8 +187,8 @@
         their business.  They don't know their way around in there.
 
 
-        Fortunately, we can throw our own errors, our own *exceptions*, which may make more sense
-        to someone who inadvertantly hands the wrong object in for cleaning.
+        Felizmente, nós podemos inserir nossos próprios erros, nossas próprias *exceções*, o que pode fazer mais
+        sentido à alguém que sem avisowho inadvertantly hands the wrong object in for cleaning.
 
 
         <pre>
@@ -206,7 +206,7 @@
         </pre>
 
 
-        This time, if we pass in a number (again, the number 1), we'll get something more sensible.
+        Desta vez, se passarmos um número (de novo, o número 1), we'll get something more sensible.
 
 
         <pre>
@@ -216,23 +216,23 @@
         </pre>
 
 
-        The @respond_to?@ method is really nice and I plead that you never forget it's there.  The
-        @respond_to?@ checks any object to be sure that it has a certain method.  It then gives
-        back a @true@ or @false@.  In the above case, the incoming @frase@ object is checked for an
-        @include?@ method.  If no @include?@ method is found, then we raise the error.
+        O método @respond_to?@ é realmente bacana e eu imploro que você nunca se esqueça dele.
+        O @respond_to?@ checa qualquer objeto para garantir que ele tenha um certo método.  Ele então retorna
+        com @true@ o @false@.  No caso acima, é checado se o objeto @frase@ recebido tem um método
+        @include?@.  Se nenhum método @include?@ for encontrado, então causamos o erro.
 
 
-        You might be wondering why I used a symbol with @respond_to?@.  I used a symbol @:include?@
-        instead of a string @'include?'@.  Actually, either will work with @respond_to?@.
+        Você deve estar pensando por que eu usei um símbolo com o @respond_to?@.  Eu usei um símbolo @:include?@
+        invés da string @'include?'@.  Na verdade, ambos funcionarão com o @respond_to?@.
 
 
-        Usually symbols are used when you are passing around the name of a method or any other Ruby construct.
-        It's more efficient, but it also catches the eye.  The @respond_to?@ asks Ruby to look inside itself
+        Geralmente símbolos são usados quando você está passando o nome de um método ou qualquer outro contru.
+        É mais eficiente, but it also catches the eye.  The @respond_to?@ asks Ruby to look inside itself
         and see if a method is available.  We're talking to Ruby, so the symbol helps denote that.  It's not
         a big deal, Ruby just recognizes symbols quicker than strings.
 
 
-        Now, *Confusing Aspect No. 2*: Have you noticed how our method changes the sentence?
+        Agora, *Aspecto Confuso No. 2*: Você notou como nosso método modifica a frase?
 
 
         <pre>
@@ -242,25 +242,25 @@
         </pre>
 
 
-        Did you notice this?  In the first line of the above code, the @something_said@ variable
-        contains the string @"A (gith) spaceship."@.  But, after the method invocation, on the
-        third line, we print the @something_said@ variable and by then it contains the cleaned
+        Você notou isso?  Na primeira linha do código acima, a variável @algo_dito@
+        contém a string @"Uma espaçonave (gith)."@.  Mas, depois de invocar o método, na terceira
+        linha, nós imprimimos a variável @algo_dito@  and by then it contains the cleaned
         string @"A  spaceship."@.
 
 
-        How does this work?  How does the method change the string?  Shouldn't it make a copy
-        of the string before changing it?
+        Como isso funciona?  Como o método modifica a string?  Ele não deveria fazer uma cópia
+        da string antes de modificá-la?
 
 
-        Yes, absolutely, it should!  *It's bad manners to change strings like that.*  We've used @gsub@ and
+        Sim, absolutamente, it should!  *It's bad manners to change strings like that.*  We've used @gsub@ and
         @gsub!@ in the last chapter.  Do you remember which of those two methods is a *destructive
         method*, which changes strings directly?
 
 
-        Either we need to call this method @limpar_murmurios_de!@ (as a courtesy to all the other
-        good folks out there that might use this method) or change the method to work on a copy of
-        the string rather than the real thing.  Which is an easy change!  We just need to @dup@
-        the string.
+        Ou nós chamamos este método de @limpar_murmurios_de!@ (cortesia a todos os colegas bacanas
+        por aí que podem vir a usar este método) ou modificar o método para trabalhar em uma cópia
+        da string invés da coisa real.  O que é uma modificação muito fácil!  Nós só precisamos dar
+        um @dup@ na string.
 
 
         <pre>
@@ -280,7 +280,7 @@
         </pre>
 
 
-        The @dup@ method makes a copy of any object.  Look at that line we added again on its own:
+        O método @dup@ faz uma cópia de qualquer objeto.  Veja a linha que adicionamos separada:
 
 
         <pre>
@@ -288,21 +288,21 @@
         </pre>
 
 
-        What a peculiar line of code.  How does @frase@ become a copy of @frase@?
-        Does it erase itself?  What happens to the original @frase@?  Does it disappear?
+        Que linha de código peculiar.  Como que @frase@ vira uma cópia de @frase@?
+        Ela se apaga?  O que acontece com a @frase@ original?  Ela desaparece?
 
 
-        Remember that variables are just nicknames.  When you see @frase = "A (gith) spaceship."@,
-        you see Ruby creating a string and then giving that string a nickname.
+        Lembre que variáveis são como apelidos.  Quando você vê @frase = "Uma espaçonave (gith)."@,
+        você o Ruby criando uma string e então dando um apelido a essa string.
 
 
-        Likewise, when you see @frase = frase.dup@, you see Ruby creating a new string and then
-        giving that string a nickname.  This is handy inside your method because now @frase@ is
-        a nickname for a new copy of the string that you can safely use *without changing the
-        string that was passed into the method*.
+        Do mesmo modo, quando você vê @frase = frase.dup@, você ve o Ruby criando uma nova string e então
+        dando um apelido a essa string.  Iso é útil dentro do seu método porque agora @frase@ é
+        um pelido para uma nova cópia da string que você pode usar seguramente *sem modificar a string
+        que foi passada pro método*.
 
 
-        You'll see plenty of examples of variable names being reused.
+        Você vai ver muitos examplos de nomes de variáveis seudo reusados.
 
 
         <pre>
@@ -320,9 +320,9 @@
         </pre>
 
 
-        And, yes, sometimes objects disappear.  *If you can't get to an object through a variable, then
-        Ruby will figure you are done with it and will get rid of it.*  Periodically, Ruby sends out its
-        *garbage collector* to set these objects free.  Every object is kept in your computer's memory
-        until the garbage collector gets rid of it.
+        E, sim, algumas vezes objetos desaparecem.  *Se você não consege pegar um objeto por uma váriavel, then
+        Ruby will figure you are done with it and will get rid of it.*  Periodicamente, o Ruby envia seu 
+        *garbage collector (coletor de lixo)* to set these objects free.  Todo objeto é mantido na memória do seu computador
+        até que o coletor de lixo se livre dele.
 
 

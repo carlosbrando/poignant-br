@@ -82,7 +82,7 @@
 
         <pre>
          pedidos_do_dia = FazedorPedidos.new
-         pedidos_do_dia.realize( "chifres" )
+         pedidos_do_dia.realize( "galhada" )
         </pre>
 
 
@@ -91,9 +91,9 @@
         é a papelada por trás das cenas.  São as regras e obrigações em que o gênio vive.
 
 
-        It's @pedidos_do_dia@ that's the genie in the bottle.  And here we're giving it a wish to grant.
-        Nos dê chifres, genie.  (If you really get antlers from this example, I don't want to hear
-        about it.  Go leap in meadows with your own kind now.)
+        O @pedidos_do_dia@ é o gênio da lâmpada.  E aqui estamos dando um pedido pra a ser realizado.
+        Nos dê uma galhada, gênio.  (Se você realmente arranjar uma galhada neste exemplo, eu nem quero saber.
+        Vá saltitar em campinas verdes com seus amigos.)
 
 
         No capítulo anterior, o treinamento era: Ruby tem duas metades.
@@ -115,11 +115,11 @@
          numero = 5
          print numero.next                 # imprime '6'
 
-         frase = 'desejando chifres'
+         frase = 'desejando uma galhada'
          print frase.length                # imprime '19'
 
          pedidos_do_dia = FazedorPedidos.new
-         pedidos_do_dia.grant( "chifres" )
+         pedidos_do_dia.grant( "galhada" )
         </pre>
 
 
@@ -127,20 +127,20 @@
 
 
         <pre>
-         print 5.class                       # imprime 'Integer'
-         print 'desejando chifres'.class     # imprime 'String'
-         print FazedorPedidos.new.class      # imprime 'FazedorPedidos'
+         print 5.class                         # imprime 'Integer'
+         print 'desejando uma galhada'.class   # imprime 'String'
+         print FazedorPedidos.new.class        # imprime 'FazedorPedidos'
         </pre>
 
 
-        Dr. Cham never saw the wish maker as he hustled across the landspace.
+        Dr. Cham nunca viu o fazendor de pedidos enquanto desbravava a paisagem.
         It lay far beyond his landing in the valley of Sedna.  Down sheer cliffs
         stuffed with layers of thicket, where you might toss your wish (written
         on a small 1" x 6" slip), down into the gaping void.  Hopefully it will
         land on a lizard's back, sticking to its spindly little horn.
 
 
-        And let's say your wish makes it that far.  Well, then, _down the twisted wood_ goes
+        E digamos que seu pedido chegue lá.  Well, then, _down the twisted wood_ goes
         the skinny salamander, scurrying through the decaying churches which had been
         *pushed* over that steep canyon ledge once and for all.  And the expired priest inside, _who
         weathered the fall_ as well, will kill the little amphibian -- strangle it
@@ -152,7 +152,7 @@
         slice of shoe sole, they'll have that *rubber scalp* in hand for _good luck_ and _good times_.
         But they *canoe* much too hard, these thieves.  They slap their paddles swiftly in the current
         to get that great _outboard motor mist_ going.  But the shoe sole is _on a weak chain_, tied
-        to one man's belt.  And a *hairy old carp* _leaps, latches_ on to that minute fraction of
+        to one man s belt.  And a *hairy old carp* _leaps, latches_ on to that minute fraction of
         footwear.  And the thieves _can try_, but they don't see _underwater_.  If they could, they'd
         see that *mighty cable*, packed with millions of _needly_ fiber optics.  Indeed, *that fish is
         a peripheral plugged* right into the _core workings_ of the planet Endertromb.  *All it takes
@@ -162,8 +162,8 @@
         E é assim que os pedidos das crianças se realizam neste lugar.
 
 
-        Once my daughter's organ instructor had drawn up the class for the wish maker, he then followed
-        with a class for the planet's mind reader.
+        Depois que o instrutor de órgão da minha filha ter desenhado a classe para o fazendor de pedidos, 
+        ele continuou com uma classe para o leito de mentes do planeta.
 
 
         <pre>
@@ -195,7 +195,7 @@
         h3. Dr. Cham Arrisca Entrar
 
 
-        But as Dr. Cham neared the castle, although the planet was aware of his thoughts, sensing his
+        Mas assim que o Dr. Cham se aproximava do castelo, although the planet was aware of his thoughts, sensing his
         wonderment and anticipation, all Dr. Cham felt was deadness.  He tromped up the steps of its
         open gate and through the entrance of the most beautiful architecture and was almost certain it
         was deserted.
@@ -211,28 +211,28 @@
         and felt some concern that it had passed so quickly.  Well, he would wait inside.
 
 
-        As he stepped through the castle door, he felt fortunate that the door hadn't been answered by 
-        a huge eagle with greedy talons, eager to play.  Or a giant mouse head.  Or even a man-sized hurricane.  
-        Just a tubby little choo-choo whale.
+        Assim que ele entrou pela porta do castelo, se sentiu com sorte pela porta não ter sido atendida por 
+        uma águia gigante com garras afiadas, ávida pra brincar.  Ou um cabeça de rato gigante.  Ou até mesmo um
+        furacão Or even a man-sized hurricane.  Somente uma pequena baleia rechonchuda choo-choo.
 
 
         "Not a place to sit down in this castle," he said.
 
 
-        At first, he had thought he had just entered a very dim hallway, but as his eyes adjusted, he saw
-        the entrance extended into a tunnel.  The castle door had opened right into a passage made of 
-        long, flat slabs of rock.  Some parts were congruous and resembled a corridor.  Other parts 
-        narrowed, and even tilted, then finally tipped away out of view.
+        À primeira vista, ele pensou ter entrado em um saguão escuro, mas assim que seus olhos se ajustaram, ele viu
+        que a entrada se extendia em um túnel.  A porta do castelo seu abriu bem em uma passagem feita de pedaços 
+        longos, e planos de rocha.  Algumas partes eram congruentes e lembravam um corredor.  Outras partes 
+        eram estreitas, e até se inclinadas, o fim sumia de vista.
 
 
-        The passage was lit by small doorless refrigerators, big enough to hold an armful of cabbage, 
+        A passagem era iluminada por pequenas geladeiras sem portas, big enough to hold an armful of cabbage, 
         down by his feet.  He peered inside one, which was hollow, illuminated along all sides, and
         turning out ice shards methodically.
 
 
         He pawed the ice chips, which clung dryly to his fingertips, and he scrubbed his hands in the
-        ice.  Which left some muddy streaks on his hands, but satisfied a small part of his longing to bathe.
-        How long had it been?  Ten years?  Thirty?
+        ice.  Which left some muddy streaks on his hands, mas satisfez um pouco sua saudade de um banho.
+        Quanto tempo já fazia?  Dez anos?  Trinta?
 
 
         Along the passage, long tubes of cloth cluttered some sections.  Later, bright pixel matter in porcelain
@@ -255,19 +255,19 @@
         dead end: a curved wall with a small room carved at eye-level.
 
 
-        He approached the wall and, right in the cubby hole, were two aardvarks eating at a table.
+        Ele se aproximou da parede e, dentro do buraco quadrado, estavam dois porcos-da-terra comendendo à mesa.
 
 
-        They gazed at him serenely, both munching on some excavated beetle twice their size, cracked 
-        open and frozen on its back on the table.
+        Eles o encaram serenamente, ambos degustando um pouco de besouros escavados, que davam dois deles, abertos ao meio 
+        e parados com as costas na mesa.
 
 
-        "Hello, little puppets," he said, and they finished their bites and kept looking with their forks
+        "Olá, bonequinhos," ele disse, e eles terminaram suas mordidas e ficaram olhando com seus garfos
         held aloof.
 
 
-        "I wish my niece Hannah were here to meet you," he told the attentive miniature aardvarks.  "She'd
-        think you were an intricate puppet show."  He peered in at the dining area, shelves with sets of
+        "Eu queria que minha sobrinha Hannah estive aqui para conhecê-los," disse ele aos atenciosos porcos-da-terra.
+        "She'd think you were an intricate puppet show."  He peered in at the dining area, shelves with sets of
         plates, hand towels.  Half of a tiny rabbit was jutting out from the top a machine,
         creamy red noodles were spilling out underneath it.  A door at the back of the room hung ajar.  Dr. Cham could
         see a flickering room with chairs and whirring motors through the door.
@@ -279,62 +279,62 @@
 
 
         One of the aardvarks opened a trapdoor in the floor and pressed a button down inside, which lit.
-        Then, a small film projector slowly came up on a rod.  The other aardvark sat and watched Dr. Cham.
+        Então, um pequeno projetor de filme veio lentamente em rod.  O outro porco-da-terra sentou e olhou o Dr. Cham.
        
 
         "But Hannah still reaches down into the dollhouse and collects all the imaginary yarn into a
         bundle.  Which she takes to her mother, my sister, who is very good at humoring Hannah.
-        She sews a dress to the doll's dimensions, which Hannah takes back to the doll.
+        Ela costura um vestido no tamanho da boneca, o qual Hannah leva até a boneca.
 
 
-        "And she tells
-        the doll, 'Here, look, your hard work and perserverance has resulted in this beautiful dress.
-        You can now accept the Chief of Police's invitation to join him tonight at the Governor's
-        Mansion.'  And she has a doll in a policeman's uniform who plays the part of the Chief. 
-        He's too scrawny to be an actual Chief, that would require quite a bit of plastic."
+        "E ela diz à boneca,
+        'Aqui, olhe, seu trabalho duro e perseverança resultaram neste lindo vestido.
+        Agora você pode aceitar o convite e acompanhar o Chefe de Polícia hoje à noite na Mansão
+        do Governador.'  E ela tem uma boneca vestida de pocial que faz o papel do Chefe. 
+        Ele é muito raquítico pra ser o Chefe de verdade, isso precisaria de um bom pedaço de plástico."
 
 
-        The aardvark responsible for the film projector loaded a reel and aimed the projector at the
-        back wall.  The film spun to life and the aardvark took a seat.  A green square appeared on the
-        wall.  The attentive aardvark stared at Dr. Cham still.
+        O porco-da-terra responsável pelo projetor o carregou com um rolo e o mirou na parede do
+        fundo.  O filme começou e os porcos-da-terra se sentaram.  Um quadrado verde apareceu na
+        parede.  O atencioso porco-da-terra encarou o Dr. Cham parado.
 
 
-        "Your films are coloured," said Dr. Cham.  "What a lovely, little life."
+        "Seus filmes são coloridos," disse o Dr. Cham.  "What a lovely, little life."
 
 
-        The film played on: a blue square.  Then, a red circle.  Then, an orange square.  The attentive
-        aardvark turned away, watched the screen change to a pink triangle, and both aardvarks resumed eating.
+        O filme exibido foi: um quadrado azul.  Aí, um círculo vermelho.  Aí, um quadrado laranja.  Os atenciosos
+        porcos-da-terra se viraram, assistiram a tela virar um triângulo rosa, e ambos porcos-da-terra voltaram a comer.
 
 
-        A purple star.  A red square.  With quietness settling, Dr. Cham could hear notes droning
+        Uma estrela roxa.  Um quadrado vermelho.  With quietness settling, Dr. Cham could hear notes droning
         from the projector.  Like a slow, plodding music box trying to roll its gears along the train
         tracks.
 
 
-        "Yes, enjoy your supper," said Dr. Cham and he politely tipped his head away, marching
-        back up the path he'd taken.
+        "Sim, aproveitem o jantar," disse o Dr. Cham e educadamente se virou, marchando
+        de volta no caminho que ele tomara.
 
 
         h3. Outra Rua Sem Saída Onde as Coisas Começam
 
 
         Ele se encontrou perdido nos túneis do castelo.  Nada parecia familiar.  Todavia, ele não estava muito preocupado.
-        Ele estava noutro planeta.  He would be lost regardless.
+        Ele estava noutro planeta.  Ele estava perdido de qualquer maneira.
 
 
         Ele se contorceu pelos túneis, tentando lembrar o caminho, mas muito mais interessado
-        em explorar para lembrar seus passos.  Ele seguiu um único túnel profundamente, down, down,
-        which slanted so steeply that he had to leap across ledges and carefully watch his footholds.
-        The gravity here seemed no different than Earth.  His legs were pulled into slides just
+        em explorar para lembrar seus passos.  Ele seguiu um único túnel profundamente, descendo, descendo,
+        ficou tão inclinado que ele tinha que pular entre as beiradas e cuidadosamente achar apoio para os pés.
+        A gravidade aqui não parecia ser diferente da Terra.  His legs were pulled into slides just
         as easily.
 
 
-        Mesmo sem ter absolutamente nenhuma maneira de saber onde ele estava, ele tinha certeza que deixou
-        the castle's boundaries.  This deep, this long of a walk.  It had been an hour since he'd
-        entered through the door.  And, as the tunnel wound back up, he was sure that he would
+        Mesmo sem ter absolutamente nenhuma maneira de saber onde ele estava, ele tinha certeza de ter saído
+        dos limites do castelo.  Esta profundidade, este tanto de caminhada.  Já fazia uma hora desde que ele
+        adentrara a porta.  E, as the tunnel wound back up, he was sure that he would
         emerge into a new dwelling, perhaps even a manhole which he could peek out from and see
-        the castle.  Perhaps he shouldn't have come so far down this route.  He hoped nothing was
-        hibernating down here.
+        the castle.  Talvez ele não devesse ter ido tão longe nessa rota.  Ele espera que nada esteja
+        hibernando aqui emabaixo.
 
 
         O túnel chegou ao fim.   Um escuro, fim sem saída.
@@ -343,8 +343,8 @@
         !i/dr.cham-4.gif(No fim dos túneis: um computador e um livro.)!
 
 
-        Ele tinha tempo.  Então ele leu o livro.  Ele leu sobre as raposas e a suapursuit of the porcupine who stole their
-        pickup truck.  Ele leu sobre o elf e o presunto.  He saw the pictographs of himself and found he
+        Ele tinha tempo.  Então ele leu o livro.  Ele leu sobre os raposos e sua perseguição ao porco-espinho que roubou
+        a caminhonete deles.  Ele leu sobre o elfo e o presunto.  Ele He saw the pictographs of himself and found he
         could really relate to his own struggles.  Ele até aprendeu Ruby.  Ele viu como isso tudo termina.
 
 
@@ -358,7 +358,7 @@
 
 
         Assim como ele acabou de explorar os túneis a pé, agora ele explora as configurações da máquina com
-        a prompt.  Ele He set the book back where he had found it.  He didn't need it anymore.  This was
+        a prompt.  Ele colocou o livro onde o encontrou.  Ele não precisava mais dele.  This was
         all going to happen whether he used it or not.
 
 
