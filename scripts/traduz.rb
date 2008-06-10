@@ -12,8 +12,13 @@ puts b.gsub(/(\n\n)|(Erros Nunca Mais)|(Abaixe este dicionário)/, '')
 
 # #
 # URBAN DICTIONARY
-u = Hpricot(open("http://www.urbandictionary.com/define.php?term=#{ARGV[0]}")).at('#entries').inner_text
-puts u.gsub(/(\n\n)|(comments)/,'')
+begin
+  u = Hpricot(open("http://www.urbandictionary.com/define.php?term=#{ARGV[0]}"))
+  u = u.at('#entries').inner_text.gsub(/(\n\n)|(comments)/,'') 
+  puts u
+rescue => e
+  nil
+end
 
 # #
 # GOOGLE
