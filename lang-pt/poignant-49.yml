@@ -148,12 +148,12 @@
 
 
         <pre>
-         rooms = MinhaArray[3, 4, 6]
-         print "Nós temos quartos de " + rooms.join( ", ", "%d bed" ) + " disponíveis."
+         quartos = MinhaArray[3, 4, 6]
+         print "Nós temos quartos de " + quartos.join( ", ", "%d bed" ) + " disponíveis."
         </pre>
 
 
-        Which prints, "We have 3 bed, 4 bed, 6 bed rooms available."
+        Which prints, "We have 3 bed, 4 bed, 6 bed quartos available."
 
 
         Dr. Cham was looking around for a bathroom, but archival video tape was everywhere.

@@ -54,17 +54,17 @@
         (oth-rea) natal," ele disse.
 
 
-        O instrutor de órgão da minha filha fala essas palavras extras que você vê em parênteses.  Who knows
-        if they are from his native tongue or if they are his own soundful hiccups.  He keeps
-        another relic from Endertromb as well: he has twelve names.
+        O instrutor de órgão da minha filha fala essas palavras extras que você vê em parênteses.  Quem é
+        que sabe se é sua língua nativa ou seu soluço sonoro.  Ele mantém outro
+        traço de Endertromb: ele tem doze nomes.
 
 
-        "No, (wen-is-wen)," he said.  "I have one name (im-apalla) which is said (iff)
-        many-many different ways."
+        "Não, (wen-is-wen)," ele disse.  "Eu tenho um nome (im-apalla) que é dito (iff)
+        de muitas-muitas maneiras difentes."
 
 
-        I call him Paij-ree in the morning and Paij-plo in the later evening.
-        Since it is day as I write, I will call him Paij-ree here.
+        Eu o chamo de Paij-ree nas manhãs e Paij-plo de tarde.
+        Já que estou escrevendo de dia, o chamarei de Paij-ree aqui.
 
 
         h3. Protetores de Ouvido Múrmurio-Free
@@ -80,13 +80,13 @@
         _Eu_ serei o instrutor de Ruby da minha filha.
 
 
-        E eu disse, "Paij-ree, você está no livro.  E as estórias do seu planeta."  I talk to
-        him like he's E.T.  I don't know why.  Just like how I said next, "And then maybe someday
-        you can go home to your mom and dad!"
+        E eu disse, "Paij-ree, você está no livro.  E as estórias do seu planeta."  Eu falo com ele como
+        se ele fosse o E.T.  Eu não sei porquê. Como o que disse em seguida, "E daí talvez algum dia
+        você possa ir pra casa pro seu pai e pra sua mãe!"
 
 
-        To which he said, "(pon-shoo) (pon-shoo) (em-pithy-dah)."  Which is his way of speaking
-        out loud his silence and awe.
+        Ele replicou, "(pon-shoo) (pon-shoo) (em-pithy-dah)."  Que é o jeito dele de expressar
+        out loud seu silêncio e temor.
 
 
         Ele queria ver o que eu havia escrito, então eu mostrei a ele este pequeno método que escrevi pra você.
@@ -95,9 +95,9 @@
         <pre>
          def limpar_murmurios_de( frase )
            while frase.include? '('
-             open = frase.index( '(' )
-             close = frase.index( ')', open )
-             frase[open..close] = '' if close
+             abre = frase.index( '(' )
+             fecha = frase.index( ')', abre )
+             frase[abre..fecha] = '' if fecha
            end
          end
         </pre>
@@ -133,23 +133,23 @@
         gentler ways."
 
 
-        In the @limpar_murmurios_de@ method, I'm basically searching for opening parentheses.  When I
-        find one, I scan for a closing paren which follows it.  Once I've found both, I replace them and
-        their contents with an empty string.  The @while@ loop continues until all parentheses are gone.
-        The mutterings are removed and the method ends.
+        No método @limpar_murmurios_de@, estou basicamente procurando por abre parênteses.  Quando eu
+        encontrou um, eu procuro um fecha parênteses na sequencia.  Uma vez que tenha encontrado ambos, eu troco
+        eles e seu conteúdo por uma string vazia.  O loop @while@ continua até que todos os parênteses se acabem.
+        Os murmúrios são removidos e o método termina.
 
 
-        "Now that I look at this method," I said.  "I see that there are some confusing aspects 
-        and some ways I could do this better."  Please don't look down on me as your teacher for 
-        writing some of this code.  I figure that it's okay to show you some sloppy techniques 
-        to help you work through them with me.  So let's.
+        "Agora olhando este método," eu disse.  "Eu vejo que há alguns aspectos confusos 
+        e outras coisas que eu poderia ter feito melhor."  Por favor não me olhe estranho por seu professor 
+        ter escrito este código.  Eu acho certo the mostrar algumas técnicas sloppy techniques 
+        pra te ajudar  to help you work through them with me.  Então vamos.
 
 
         Okay, *Aspecto confuso No. 1*: Este método limpa uma string.  Mas e se nós acidentalmente
-        give it a @File@?  Or a number?  What happens?  What if we run @limpar_murmurios_de( 1 )@?
+        dermos a ele um @File@?  Ou um número?  O que acontece?  E se rodarmos @limpar_murmurios_de( 1 )@?
 
 
-        If we give @limpar_murmurios_de@ the number 1, Ruby will print the following and exit.
+        Se nós dermos ao @limpar_murmurios_de@ o número 1, o Ruby irá imprimir o seguinte e depois sair.
 
 
         <pre>
