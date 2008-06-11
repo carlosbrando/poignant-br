@@ -92,7 +92,7 @@
         part of that problem.
 
 
-        You may have a @UnitedStatesAddress@ class which stores the address, city, state,
+        Você pode ter uma classe @BrasilEndereco@ que guarda o endereço, cidade, estado,
         and zip code for someone living in the United States.  When you start storing
         addresses from England, you could add a @UnitedKingdomAddress@ class.  If you then
         ensure that both addresses inherit from a parent @Address@ class, you can design
@@ -115,14 +115,13 @@
         will affect other classes in Ruby that use Arrays.
 
 
-        So you start your own class called @MinhaArray@, which is based on The Original
-        @Array@.
+        Então você começa sua própria classe chamada @MinhaArray@, que é baseada Na @Array@ Original.
         
 
         <pre>
          class MinhaArray < Array
-           # Build a string from this array, formatting each entry
-           # then joining them together.
+           # Contruir uma string nesta array, formatando cada entrada
+           # e depois as unindo.
            def join( sep = $,, format = "%s" )
              collect do |item|
                sprintf( format, item )
@@ -132,9 +131,9 @@
         </pre>
 
 
-        @MinhaArray@ is now a custom @Array@ class with its own @join@ method.  @Array@ is
-        the *superclass* of @MinhaArray@.  Every object has a @superclass@ method where you
-        can verify this relationship.
+        @MinhaArray@ é agora uma classe @Array@ customizada com o seu próprio método @join@.  @Array@ é
+        a *superclass (classe-superior, classe-mãe)* da @MinhaArray@.  Cada objeto tem um método @superclass@ 
+        onde você pode verificar esta relação.
 
 
         <pre>
@@ -143,30 +142,30 @@
         </pre>
 
 
-        Perfect.  We manage a hotel and we have an @Array@ of our room sizes: @[3, 4, 6]@.
+        Perfeito.  Nós administramos um hotel e nós temos uma @Array@ dos tamanhos dos nossos quarots: @[3, 4, 6]@.
         Let's get it nicely printed for a brochure.
 
 
         <pre>
          quartos = MinhaArray[3, 4, 6]
-         print "Nós temos quartos de " + quartos.join( ", ", "%d bed" ) + " disponíveis."
+         print "Nós temos quartos de " + quartos.join( ", ", "%d camas" ) + " disponíveis."
         </pre>
 
 
-        Which prints, "We have 3 bed, 4 bed, 6 bed quartos available."
+        Que imprime, "Nós temos quartos de 3 camas, 4 camas, 6 camas disponíveis."
 
 
-        Dr. Cham was looking around for a bathroom, but archival video tape was everywhere.
-        He eventually found a place, it may have been a bathroom.  It had a metal bin.
-        More importantly, it was dark and out of eyesight.
+        Dr. Cham estava procurando por um banheiro, but archival video tape was everywhere.
+        Ele acabou encontrando um lugar, que poderia ser um banheiro.  Tinha um vaso de metal.
+        Mas mais importante, era escuro e escondido.
         
 
-        While he's in there, let me add that while The Originals slaughtered The Invaders
+        Enquanto s in there, let me add that while The Originals slaughtered The Invaders
         to prove their rights as First Creatures, the Ruby Object doesn't have any such
         dispute.  It is the absolute king Object the First.
 
 
-        Watch.
+        Observe.
 
 
         <pre>
@@ -181,25 +180,25 @@
         </pre>
 
 
-        Even @Class@ is an @Object@!  See, although classes are the definition language for objects,
+        Até @Class@ é um @Object@!  See, although classes are the definition language for objects,
         we still call class methods on them and treat them like objects occassionally.  It may seem
         like a dizzying circle, but it's truly a very strict parentage.  And it ensures that when you
         alter the @Object@, you alter *everything in Ruby*.  Which is impossibly scary and all-powerful
-        and cataclysmic and awesome!  *Ruby does not restrict you, my sister, my brother!* 
+        and cataclysmic and awesome!  *Ruby não te restringe, minha irmã, meu irmão!* 
 
 
-        Between @Class@ and @Object@, do you see @Module@?  If @Object@ is the king, the one who has
+        Entre @Class@ e @Object@, você vê @Module@?  Se @Object@ é o rei, the one who has
         sired every other part of Ruby, then @Module@ is the poor waifish nun, shielding
         and protecting all her little Ruby townspeople children.  (To complete the analogy:
-        @Class@ is the village school teacher and @Kernel@ is the self-important colonel.)
+        @Class@ é a professora da escola da vila e @Kernel@ é the self-important colonel.)
 
 
         The whole point of @Module@'s existence is to give food and shelter to code.  Methods
-        can stay dry under @Module@'s shawl.  @Module@ can hold classes and constants and 
-        variables of any kind.
+        can stay dry under @Module@'s shawl.  @Module@ pode conter classes e constantes e 
+        variáveis de qualquer tipo.
 
 
-        "But what does a Module _do_?" you ask.  "How is it gainfully employed??"
+        "Mas o que um Module _faz_?" você pergunta.  "How is it gainfully employed??"
 
 
         "That's all it does!!" I retort, stretching out my open palms in the greatest expression
@@ -208,13 +207,13 @@
 
 
         <pre>
-         # See, here is the module -- where else could our code possibly stay?
+         # Veja, aqui está o module -- onde mais seu código poderia estar?
          module WatchfulSaintAgnes
 
-           # A CONSTANT is laying here by the doorway.  Fine.
+           # Uma CONSTANTE repousa perto da porta.  Ótimo.
            TOOTHLESS_MAN_WITH_FORK = ['man', 'fork', 'exposed gums']
 
-           # A Class is eating, living well in the kitchen.
+           # Uma Class está comendo, vivendo bem na cozinha.
            class FatWaxyChild; end
 
            # A Method is hiding back in the banana closet, God knows why.
@@ -237,7 +236,7 @@
         </pre>
 
 
-        Always remember that a @Module@ is only an inn.  A roof over their heads.  It is not
+        Lembre-se sempre que um @Module@ é somente um hotel.  Um teto sob as cabeças deles.  It is not
         a self-aware @Class@ and, therefore, cannot be brought to life with @new@.
 
 
