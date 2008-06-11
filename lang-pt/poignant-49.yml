@@ -1,15 +1,15 @@
     - >
-        "I haven't been to my planet in a long time.  It would be difficult to consider it my
-        home at this stage."
+        "Eu não visito o meu planeta há muito tempo.  Seria difícil considerá-lo minha casa
+        a esta altura do campeonato."
 
 
-        "Well, Warren Beatty is delightful.  His character is basically socially crippled.  He
-        actually tries to kill himself, but Dustin Hoffman sits in the window sill and starts
-        crying and singing this totally hilarious heartbreak song.  I've got it here, you
-        should see it."
+        "Bem, Warren Beatty é maravilhoso.  Sua personagem é basicamente socialmente aleijada.  Ele
+        até tenta se matar, mas Dustin Hoffman senta no peitoril da janela e começa a chorar
+        e cantar uma música totalmente hilária, é de partir o coração.  Eu tenho ele aqui,
+        você devia assistí-lo."
 
 
-        "Can I get something to eat?" asked the Doctor.  And he still felt filthy.
+        "Posso pegar algo para comer?" perguntou o Doctor.  E ainda se sentia sujo.
 
 
         "How about we watch a film and you can have a buttermelon with tentacles?" said the goat.
@@ -115,12 +115,12 @@
         will affect other classes in Ruby that use Arrays.
 
 
-        Então você começa sua própria classe chamada @MinhaArray@, que é baseada Na @Array@ Original.
+        Então você começa sua própria classe chamada @MeuArray@, que é baseada na classe @Array@ original.
         
 
         <pre>
-         class MinhaArray < Array
-           # Contruir uma string nesta array, formatando cada entrada
+         class MeuArray < Array
+           # Contruir uma string neste array, formatando cada entrada
            # e depois as unindo.
            def join( sep = $,, format = "%s" )
              collect do |item|
