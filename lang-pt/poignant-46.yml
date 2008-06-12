@@ -4,8 +4,8 @@
 
 
         Além disso, algumas variáveis especiais: @nil@, @true@, @false@.  Estas são coisas que o Ruby não vai
-        te deixar alterar, então não faz sentido copiar mesmo.  Quero dizer, imagine se você pudesse mudar o @false@
-        para que seja @true@.  A coisa toda vira uma mentira.
+        te deixar alterar, então não faz sentido copiar mesmo.  Quero dizer, imagine se você pudesse mudar o 
+        @false@ para que seja @true@.  A coisa toda vira uma mentira.
 
 
         Talvez o *Aspecto Confuso No. 3* seja um simples.  Estou usando aquelas chaves na string. 
@@ -66,7 +66,7 @@
 
         Por que o método trava?  Bem, o loop @while@ espera até que todos os parênteses abertos se 
         acabem antes de parar de looping.  E ele só modifica um parêntese aberto que tenha um par parêntese fechado.
-        Então, se nenhum parentêse fechado é encontrado, o parentêse aberto não será modificado
+        Então, se nenhum parêntese fechado é encontrado, o parêntese aberto não será modificado
         e o @while@ nunca ficará satisfeito.
 
 
@@ -127,9 +127,9 @@
 
         Paij-ree checa os bolsos pra ter certeza que ele tem o real-e-vinte-sete que vai precisar pra comprar
         comprar os três gatos que ele necessita pra manter a fornalha abastecida e a parabólica virando. Estes
-        gatos cats geram montes de eletricidade estática quando Paij-ree os joga no gerador, where they'll be
-        outnumbered by the giant glass rods, which caress the cats continually-- Mas, espere!  Você reparou
-        como o corretor de gatos chamou ele de Gonk-ree?
+        gatos geram montes de eletricidade estática quando Paij-ree os joga no gerador, onde eles esetarão em
+        inferioridade numérica a gigantes bastões de vidro, que os acariciam continuamente-- Mas, espere!  
+        Você reparou como o corretor de gatos chamou ele de Gonk-ree?
 
         
         E ele o chama de Gonk-ree de dia e Gonk-plo de noite.
@@ -170,12 +170,12 @@
         </pre>
 
 
-        Agora eu fui bem mais além do que te mostrar apenas código e beyond just showing you sloppy code.  Houve aqui uma grave libertinagem e um crime
-        contra a natureza.  Um crime que a maioria das linguagens não permitiriam que você cometesse.  Nós estamos mudando a
-        @String@, *uma das classes do núcleo do Ruby*!
+        Agora eu fui bem mais além do que te mostrar apenas código banal.  Houve aqui uma grave libertinagem 
+        e um crime contra a natureza.  Um crime que a maioria das linguagens não permitiriam que você cometesse.  
+        Nós estamos mudando a @String@, *uma das classes do núcleo do Ruby*!
 
 
-        "Eu sei que isto é um pouco perigoso," Eu disse, quando passei esse por baixo do nariz do Paij-ree.
+        "Eu sei que isto é um pouco perigoso," Eu disse, quando passei isso por baixo do nariz do Paij-ree.
         "Eu espero que ninguém se machuque."
 
 
@@ -255,8 +255,8 @@
         </pre>
 
 
-        A Array @partes@ contém o nome separado.  @['Paij', 'plo']@, por exemplo.  Estamos iterando por
-        cada item naquela Array com @collect@.  Mas @collect@ vai uma passo a frente ao que o @each@ faz.  Assim
+        O Array @partes@ contém o nome separado.  @['Paij', 'plo']@, por exemplo.  Estamos iterando por
+        cada item naquele Array com @collect@.  Mas @collect@ vai uma passo a frente ao que o @each@ faz.  Assim
         como @each@, collect joga cada item pela calha como uma variável de bloco.  E aí, ao término do 
         block, @collect@ *mantém a resposta que o block dá e a adiciona em um novo Array*.  O método 
         @collect@ é o jeito perfeito de se fazer um novo Array que é baseado em itens de um Array existente.
@@ -285,9 +285,9 @@
         He mumbled and nodded.  "You can't be (poth-in-oin) part of (in) such things."
 
 
-        "You think we will fail?"
+        "Você acha que nós falharemos?"
 
 
-        "I (preep) have been there before," he said.  E daí, ele falou sobre a Loteria.
+        "Eu (preep) já vi isso antes," ele disse.  E daí, ele falou sobre a Loteria.
 
 
