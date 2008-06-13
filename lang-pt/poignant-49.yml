@@ -201,9 +201,9 @@
         "Mas o que um Module _faz_?" você pergunta.  "Como ele é lucrativamente utilizado??"
 
 
-        "That's all it does!!" I retort, stretching out my open palms in the greatest expression
-        of futility known to man.  "Now hear me -- for I will never speak it again -- that Module Mother
-        Superior has given these wretched objects a place to stay!!"
+        "Isso é tudo que ele faz!!" Eu replico, mostrando as palmas da mão na maior expressão
+        de futilidade conhecida pelo homem.  "Agora me escute -- pois não me repetirei -- essa 
+        Mãe Módulo Superior deu a estes pobres objetos um lugar pra morar!!"
 
 
         <pre>
@@ -211,13 +211,13 @@
          module AtenciosaSantaInes
 
            # Uma CONSTANTE repousa perto da porta.  Ótimo.
-           TOOTHLESS_MAN_WITH_FORK = ['man', 'fork', 'exposed gums']
+           HOMEM_DESDENTADO_COM_GARFO = ['homem', 'garfo', 'exposed gums']
 
            # Uma Class está comendo, vivendo bem na cozinha.
-           class FatWaxyChild; end
+           class CriancaGordaDeCera; end
 
-           # A Method is hiding back in the banana closet, God knows why.
-           def timid_foxfaced_girl; {'please' => 'i want an acorn please'}; end
+           # Um Método está se escondendo lá atrás no armário banana, Deus sabe porquê.
+           def timida_garota_com_cara_de_raposa; {'please' => 'eu quero uma bolota de carvalho por favor'}; end
 
          end
         </pre>
@@ -227,71 +227,71 @@
 
 
         <pre>
-         >> WatchfulSaintAgnes::TOOTHLESS_MAN_WITH_FORK
-         => ["man", "fork", "exposed gums"]
-         >> WatchfulSaintAgnes::FatWaxyChild.new
-         => #<WatchfulSaintAgnes::FatWaxyChild:0xb7d2ad78>
-         >> WatchfulSaintAgnes::instance_methods
-         => ["timid_foxfaced_girl"]
+         >> AtenciosaSantaInes::HOMEM_DESDENTADO_COM_GARFO
+         => ["homem", "garfo", "exposed gums"]
+         >> AtenciosaSantaInes::CriancaGordaDeCera.new
+         => #<AtenciosaSantaInes::FatWaxyChild:0xb7d2ad78>
+         >> AtenciosaSantaInes::instance_methods
+         => ["timida_garota_com_cara_de_raposa"]
         </pre>
 
 
         Lembre-se sempre que um @Module@ é somente um hotel.  Um teto sob as cabeças deles.  Ele não é uma
-        auto-consciêente @Classe@ e,  portanto, não pode ser trazida à vida com @new@.
+        auto-consciente @Classe@ e,  portanto, não pode ser trazida à vida com @new@.
 
 
         <pre>
-         >> WatchfulSaintAgnes.new
-         NoMethodError: undefined method `new' for WatchfulSaintAgnes:Module
+         >> AtenciosaSantaInes.new
+         NoMethodError: undefined method `new' for AtenciosaSantaInes:Module
                  from (irb):2
         </pre>
 
 
-        Sanat Inês deu a própria vida has given up her whole life in order that she may care for these desperate bits of code.
-        Please.  Don't take that away from her.
+        Santa Inês deu a própria vida pra cuidar desses pedaços de código desesperados.
+        Por favor.  Não tire isso dela.
 
 
-        Se você queria roubar rom St. Agnes, though, I can help you.
-        You can bring in a larger abbey to swallow up the ministry of @WatchfulSaintAgnes@ and then
-        what is she left with?
+        Se, todavia, você quer roubar da Santa Inês, eu posso te ajudar.
+        Você pode arrumar um grande mosteiro pra engrupir o ministério da @AtenciosaSantaInes@ e daí
+        o quê sobrará pra ela?
 
 
-        Para isso você pode usar @extend@, que vai which will pull all the methods from a module into a class or an object.
+        Para isso você pode usar @extend@, que vai puxar todos os métodos do módulo pra dentro de uma classe ou um objeto.
 
 
         <pre>
-         >> class TheTimeWarnerAolCitibankCaringAndLovingFacility; end
-         >> TheTimeWarnerAolCitibankCaringAndLovingFacility.extend WatchfulSaintAgnes
-         >> TheTimeWarnerAolCitibankCaringAndLovingFacility::instance_methods
-         => ["timid_foxfaced_girl"]
+         >> class FundacaoDeAmorEAmparoTimeWarnerAolCitibank; end
+         >> FundacaoDeAmorEAmparoTimeWarnerAolCitibank.extend AtenciosaSantaInes
+         >> FundacaoDeAmorEAmparoTimeWarnerAolCitibank::instance_methods
+         => ["timida_garota_com_cara_de_raposa"]
         </pre>
 
 
-        Na verdade, ninguém _roubou_ da @WatchfulSaintAgnes@, somente pegou emprestado.  A @timid_foxfaced_girl@
-        agora tem dois endereços.
+        Na verdade, ninguém _roubou_ da @AtenciosaSantaInes@, somente pegaram emprestado.
+        A @timida_garota_com_cara_de_raposa@ agora tem dois endereços.
 
 
-        You gotta admit.  The old abbey can get bought out a zillion times and that little fox-faced
-        girl will _still_ be back in the banana closet wanting an acorn!  Too bad we can't feed her.
-        She's a method with no arguments.
+        Você deve admitir.  O velho mosteiro pode ser comprado um zilhão de vezes e a pequena garota-com-cara-de-raposa
+        _ainda_ estará nos fundos no armário banana esperando uma bolota de carvalho!  Que pena que não podemos alimentá-la.
+        Ela é um método sem argumentos.
 
 
-        When Dr. Cham came out refreshed, the filmstrip was a bit behind.  But the goat hadn't
-        noticed, so the Doctor advanced frames until it made some sense.
+        When Dr. Cham came out refreshed, the filmstrip was a bit behind.  Mas a cabra não notou,
+        então o Doutor avançou alguns quadros até fazer algum sentido.
 
 
         !i/filmstrip-2.gif(The goats that told a planet it was ugly.)!
 
 
-        So the invaders left the planet.
+        Então os invasores deixaram o planeta.
 
 
-        "This planet _is_ decrepit," disse o Dr. Cham.  "O castelo é bacana.  Mas por dentro
+        "Este planeta _é_ decrépito," disse o Dr. Cham.  "O castelo é bacana.  Mas por dentro
         é um desastre."
 
 
         "O castelo parece uma projeção," disse a cabra.  "All the flowers
-        and apple blossoms and the sky even.  It's a low-resolution projection."
+        and apple blossoms and the sky even.  É uma projeção de baixa resolução."
 
 
         "Yes?  It is enchanting."
@@ -304,7 +304,7 @@
 
 
         "That's messed up!" said the goat.  "That's not the way the film ends!
-        There's no blood!  What happened?  What happened?  Did you screw up the knob, idiot?"
+        Não teve sangue!  O que aconteceu?  O que aconteceu?  Você apertou o botão errado, idiota?"
 
 
         "Well, I don't know," said Dr. Cham.  He turned the knob reverse and forward.

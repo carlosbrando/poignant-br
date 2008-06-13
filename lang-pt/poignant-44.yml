@@ -1,4 +1,4 @@
-    - A continuação da história do instrutor de órgão da minha filha: >
+    - A Continuação da História do Instrutor de Órgão da Minha Filha: >
 
         Eu sei que você pode estar surpreso em saber que eu tenho uma filha.  Você pensa que meu estilo
         de escrita indica uma mente imatura ou infantil.  Bem, por favor relaxe.  Eu não tenho uma filha.
@@ -18,11 +18,11 @@
         dos Originais, a espécie que clama paternidade de toda vida inteligente no universo.
 
 
-        Mas, eventualmente, eu ouvia aqueles tubos de oitavas mais altas cantar sing e acabava voltando
+        Mas, eventualmente, eu ouvia aqueles tubos de oitavas mais altas cantar e acabava voltando
         para a mesma tarde jovial de onde havia saído.
 
 
-        É interessando como até a brisa do nosso planeta é uma coisa um tanto estranha para
+        É interessante como até a brisa do nosso planeta é uma coisa um tanto estranha para
         forasteiros.  Ele também me contou sobre viajantes de Rat-d Rath-d, que se aventuraram na Terra
         cinco séculos atrás, mas se dissiparam rapidamente nas nossas correntes de ar já que eles, seus equipamentos e
         sua armadura eram todos feitos de carvão.
@@ -128,8 +128,8 @@
         </pre>
 
 
-        "You shouldn't use that (wary-to) while loop," he said.  "There are lovelier, (thopt-er),
-        gentler ways."
+        "Você não deveria usar este (wary-to) loop while," ele disse.  "Existem jeitos mais amáveis, (thopt-er),
+        e gentis."
 
 
         No método @limpar_murmurios_de@, estou basicamente procurando por abre parênteses.  Quando eu
@@ -158,11 +158,11 @@
         </pre>
 
 
-        O que você vê aquiere is a rather twisted and verbose (but at times very helpful) little fellow
-        called the *backtrace*.  He's a wound-up policeman who, ao menor sinal de problema,
-        imediatamente apreende todo e qualquer suspeito, os põe contra a parede all e lê os direitos deles
-        tão rapidamente que ninguém consegue ouvir tudo.  Mas está claro que há
-        um problema.  E, é claro, tudo não passou de um mal entendido, certo?
+        O que você vê aqui ere is a rather twisted and verbose (mas noutras vezes muito útil) amiguinho
+        chamado de o *depurador*.  He's a wound-up policeman who, ao menor sinal de problema,
+        imediatamente apreende todo e qualquer suspeito, os põe contra a parede e lê os direitos deles
+        tão rapidamente que ninguém consegue ouvir tudo.  Mas está claro que há um problema.
+        E, é claro, tudo não passou de um mal entendido, certo?
 
 
         Quando o Ruby ler pra você esses direitos de Miranda, preste atenção no começo.  A primeira linha
@@ -173,16 +173,16 @@
         @include?@ são métodos que funcionam com strings mas são sem sentido e indisponíveis para números.
 
 
-        Pra deixar claro: o método tenta usar o número.  O método vai começar com @frase@ valendo 1.
+        Pra deixar claro: o método tenta usar o número.  O método vai iniciar com @frase@ valendo 1.
         Então, ele chega na segunda linha: @while frase.include? '('@.  Números não têm método @include?@.
-        Great, the backtrace has shown us where the problem is.  Eu não esperava que alguém fosse passar
+        Maravilha, o depurador nos mostrou onde o problema está.  Eu não esperava que alguém fosse passar
         um número, então estou usando métodos que não funcionam com números.
 
 
-        *See, this is just it.*  Our method is its own little pocket tool, right?  It acts as its own
-        widget independent of anything else.  To anyone out there using the @limpar_murmurios_de@
-        method, should they pass in a number, they'll be tossed this panic message that doesn't
-        make sense to them.  Eles serão convidados a bisbilhotar o métodd, o que realmente não é
+        *Viu, é só isso.*  Nosso método é seu próprio bolso de ferramentas, certo?  Ele age como seu próprio
+        widget independente de todo o resto.  Pra todos por aí usando o método @limpar_murmurios_de@,
+        se eles passarem um número, será atirado pra eles esta mensagem de pânico que não faz
+        sentido pra eles.  Eles serão convidados a bisbilhotar o método, o que realmente não é
         trabalho deles.  Eles não sabem como se virar lá dentro.
 
 
