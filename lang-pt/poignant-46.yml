@@ -190,7 +190,7 @@
         Eu gosto de ver a *arroba* como um caracter que significa *atributo*.  A *arroba dupla*
         *atributo coletivo*.  Uma variável de classe.  Todas as instâncias da classe podem olhar
         pra esta váriavel e ela é a mesma pra todas.  A variável @@@silabas@ é um Array
-        que agora pode ser usada dentro da classe String.
+        que agora pode ser usado dentro da classe String.
 
 
         O novo método é @significado_do_nome@ e esse novo método pode ser usado com qualquer string.
@@ -225,7 +225,7 @@
         Usar @self@ marca o a entrada em um novo estágio com idéias mais avançadas no Ruby.
         Esta é uma linguagem de definição.  Você está definindo um método, desenhando ele antes dele ser usado.  Você está
         preparando para a existência de um objeto que use aquele método.  Você está dizendo, "Quando @separar_hifen@ 
-        for usado, haverá uma string a qual estaremos separando-hifens.  E @self@ é uma variável especial 
+        for usado, haverá uma string a qual estaremos separando-hífens.  E @self@ é uma variável especial 
         que faz referência àquela string."
 
 

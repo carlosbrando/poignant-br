@@ -161,34 +161,34 @@
 
         O que você vê aquiere is a rather twisted and verbose (but at times very helpful) little fellow
         called the *backtrace*.  He's a wound-up policeman who, ao menor sinal de problema,
-        imediatamente apreende todo e qualquer suspeito, os põe contra a parede all and spelling out their
-        rights so quickly that none can quite hear it all.  But it's plain that there's
-        a problem.  E, é claro, não passou de um mal entendido, certo?
+        imediatamente apreende todo e qualquer suspeito, os põe contra a parede all e lê os direitos deles
+        tão rapidamente que ninguém consegue ouvir tudo.  Mas está claro que há
+        um problema.  E, é claro, tudo não passou de um mal entendido, certo?
 
 
-        When Ruby reads you these Miranda rights, listen hardest to the beginning.  The first line
-        is often all you need.  In this first line is contained the essential message.  And in
-        the above, the first line is telling us that there is no @include?@ method for the number 1.
-        Remember, when we were talking about the @reverse@ method in the last chapter?  Back then, I said,
-        "*a lot of methods are only available with certain types of values*."  Both @reverse@ and
-        @include?@ are methods which work with strings but are meaningless and unavailable for numbers.
+        Quando o Ruby ler pra você esses direitos de Miranda, preste atenção no começo.  A primeira linha
+        é quase sempre tudo que você precisa.  Nessa primeira linha está contido a mensagem essencial.  E ali
+        em cima, a primeira linha está nos dizendo que não há método @include?@ para o número 1.
+        Lembra, quando estávamos conversando sobre o método @reverse@ no capítulo anterior?  Naquela hora, eu disse,
+        "*vários métodos só estão disponíveis com certos tipos de valores*."  Ambos @reverse@ e
+        @include?@ são métodos que funcionam com strings mas são sem sentido e indisponíveis para números.
 
 
-        To be clear: the method tries to use to the number.  The method will start with @frase@ set to 1.
+        Pra deixar claro: o método tenta usar o número.  O método vai começar com @frase@ valendo 1.
         Então, ele chega na segunda linha: @while frase.include? '('@.  Números não têm método @include?@.
-        Great, the backtrace has shown us where the problem is.  I didn't expect anyone to pass in
-        a number, so I'm using methods that don't work with numbers.
+        Great, the backtrace has shown us where the problem is.  Eu não esperava que alguém fosse passar
+        um número, então estou usando métodos que não funcionam com números.
 
 
         *See, this is just it.*  Our method is its own little pocket tool, right?  It acts as its own
         widget independent of anything else.  To anyone out there using the @limpar_murmurios_de@
         method, should they pass in a number, they'll be tossed this panic message that doesn't
-        make sense to them.  They'll be asked to poke around inside the method, which really isn't
-        their business.  They don't know their way around in there.
+        make sense to them.  Eles serão convidados a bisbilhotar o métodd, o que realmente não é
+        trabalho deles.  Eles não sabem como se virar lá dentro.
 
 
         Felizmente, nós podemos inserir nossos próprios erros, nossas próprias *exceções*, o que pode fazer mais
-        sentido à alguém que sem avisowho inadvertantly hands the wrong object in for cleaning.
+        sentido a algum desavisado que dê um objeto errado pra ser limpo.
 
 
         <pre>
@@ -206,7 +206,7 @@
         </pre>
 
 
-        Desta vez, se passarmos um número (de novo, o número 1), we'll get something more sensible.
+        Desta vez, se passarmos um número (de novo, o número 1), teremos algo mais sensato.
 
 
         <pre>
@@ -226,17 +226,17 @@
         invés da string @'include?'@.  Na verdade, ambos funcionarão com o @respond_to?@.
 
 
-        Geralmente símbolos são usados quando você está passando o nome de um método ou qualquer outro contru.
-        É mais eficiente, but it also catches the eye.  The @respond_to?@ asks Ruby to look inside itself
-        and see if a method is available.  We're talking to Ruby, so the symbol helps denote that.  It's not
-        a big deal, Ruby just recognizes symbols quicker than strings.
+        Geralmente símbolos são usados quando você está passando o nome de um método ou qualquer outro construtor.
+        É mais eficiente, chama mais atenção.  O @respond_to?@ pergunta ao Ruby to look inside itself
+        and see if a method is available.  Estamos conversando com o Ruby, então o símbolo helps denote that.
+        Não é grande coisa, Ruby só reconhece símbolos mais rapidamente que strings.
 
 
         Agora, *Aspecto Confuso No. 2*: Você notou como nosso método modifica a frase?
 
 
         <pre>
-         algo_dito = "Uma espaçonave (gith)."
+         algo_dito = "Uma (gith) espaçonave."
          limpar_murmurios_de( algo_dito )
          print algo_dito
         </pre>
@@ -244,17 +244,17 @@
 
         Você notou isso?  Na primeira linha do código acima, a variável @algo_dito@
         contém a string @"Uma espaçonave (gith)."@.  Mas, depois de invocar o método, na terceira
-        linha, nós imprimimos a variável @algo_dito@  and by then it contains the cleaned
-        string @"A  spaceship."@.
+        linha, nós imprimimos a variável @algo_dito@ e nesse momemento ela contém a string limpa
+        string @"Uma  espaçonave."@.
 
 
         Como isso funciona?  Como o método modifica a string?  Ele não deveria fazer uma cópia
         da string antes de modificá-la?
 
 
-        Sim, absolutamente, it should!  *It's bad manners to change strings like that.*  We've used @gsub@ and
-        @gsub!@ in the last chapter.  Do you remember which of those two methods is a *destructive
-        method*, which changes strings directly?
+        Sim, absolutamente, ele deveria!  *É falta de educação modificar strings daquele jeito.*  Nós usamos @gsub@ e
+        @gsub!@ no capítulo passado.  Você se lembra qual destes dois métodos é um *método destrutivo*,
+        que modifica strings diretamente?
 
 
         Ou nós chamamos este método de @limpar_murmurios_de!@ (cortesia a todos os colegas bacanas
@@ -292,7 +292,7 @@
         Ela se apaga?  O que acontece com a @frase@ original?  Ela desaparece?
 
 
-        Lembre que variáveis são como apelidos.  Quando você vê @frase = "Uma espaçonave (gith)."@,
+        Lembre que variáveis são como apelidos.  Quando você vê @frase = "Uma (gith) espaçonave."@,
         você o Ruby criando uma string e então dando um apelido a essa string.
 
 
@@ -320,9 +320,9 @@
         </pre>
 
 
-        E, sim, algumas vezes objetos desaparecem.  *Se você não consege pegar um objeto por uma váriavel, then
-        Ruby will figure you are done with it and will get rid of it.*  Periodicamente, o Ruby envia seu 
-        *garbage collector (coletor de lixo)* to set these objects free.  Todo objeto é mantido na memória do seu computador
-        até que o coletor de lixo se livre dele.
+        E, sim, algumas vezes objetos desaparecem.  *Se você não consege pegar um objeto por uma váriavel, então
+        o Ruby vai entender que você já terminou com ele e vai se livrar dele.*  Periodicamente, o Ruby envia seu 
+        *garbage collector (coletor de lixo)* pra libertar estes objetos.  Todo objeto é mantido na memória do 
+        seu computador até que o coletor de lixo se livre dele.
 
 
