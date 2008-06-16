@@ -26,7 +26,7 @@
         who was going to play the different roles long before it was announced."
 
 
-        The goat set the projector by Dr. Cham.  "I've got the music on the surround sound.
+        The goat set the projector by Dr. Cham.  "I ve got the music on the surround sound.
         You can man the knob."
 
 
@@ -42,7 +42,7 @@
         War after war after war.  The Sieging of Elmer Lake.  The Last Stand of Newton P. Giraffe
         and Sons.  Dog Invasion of Little Abandoned Cloud.  Nenhum animal morreu nessas guerras. 
         Most often an attack consisted of bopping another
-        animal on the head.  And they philipped each other's noses.  But, believe me,
+        animal on the head.  And they philipped each other s noses.  But, believe me,
         it was humiliating.
 
 
@@ -52,7 +52,7 @@
         h3. O Nascimento de um Objeto
 
 
-        "Don't worry," said the goat, anxious to sway Dr. Cham's attention back to the film.  "Things _do_
+        "Não se preocupe," disse a cabra, anxious to sway Dr. Chams attention back to the film.  "Things _do_
         work out."
 
 
@@ -70,7 +70,7 @@
         @UrsoTostado@.
 
 
-        Mas todo objeto é herdeiro de @Objeto@.  O código...
+        Mas todo objeto é herdeiro de @Object@.  O código...
 
 
         <pre>
@@ -87,16 +87,16 @@
 
 
         Herança é útil.  Você pode criar espécies de objetos que se relacionam entre si.
-        Often, when you're dissecting a problem, you'll come across various objects which share
-        attributes.  You can save yourself work by inheriting from classes which already solve
-        part of that problem.
+        Quase sempre, quando você está dissecando um problema, você vai se deparar com vários objetos que
+        compartilham atributos.  Você pode ter menos trabalho herdando de classes que já solucionam
+        parte desse problema.
 
 
         Você pode ter uma classe @BrasilEndereco@ que guarda o endereço, cidade, estado,
         e cep de alguem que more no Brasil.  Quando você começar a guardar endereços
         da Inglaterra, você pode adicionar uma classe @ReinoUnidoEnderecos@.  Se você então
-        garantir que os dois endereços herdem  inherit from a parent @Endereco@ class, você pode
-        planekar seu software de correspondência de modo que aceite todo tipo de endereço.
+        garantir que os dois endereços herdem de uma classe mãe @Endereco@, você pode
+        planejar seu software de correspondência de modo que aceite todo tipo de endereço.
 
 
         <pre>
@@ -109,7 +109,7 @@
         </pre>
  
 
-        Also, inheritance is great if you want to override certain behaviours in a class.
+        Além disso, herança é ótimo se você quer sobreescrever certos comportamentos numa classe.
         Por exemplo, talvez você queira fazer a sua própria variação variation to the @Array@ class.
         You want to enhance the @join@ method.  But if you change @Array#join@ directly, you
         will affect other classes in Ruby that use Arrays.
@@ -294,7 +294,7 @@
         and apple blossoms and the sky even.  É uma projeção de baixa resolução."
 
 
-        "Yes?  It is enchanting."
+        "Sim?  Ele é encantador."
 
 
         "I guess."
@@ -303,29 +303,28 @@
         !i/filmstrip-3.gif(The spool ends.)!
 
 
-        "That's messed up!" said the goat.  "That's not the way the film ends!
+        "That's messed up!" said the goat.  "Não é assim que o filme termina!
         Não teve sangue!  O que aconteceu?  O que aconteceu?  Você apertou o botão errado, idiota?"
 
 
-        "Well, I don't know," said Dr. Cham.  He turned the knob reverse and forward.
+        "Bem, eu não sei," disse o Dr. Cham.  Ele girou o botão pra frente e pra trás.
         Tapped the lens.
 
 
-        "Check the film!  Check the film!"
+        "Cheque a fita!  Cheque a fita!"
 
 
-        Dr. Cham pulled out a length of film from the projection feed, melted and dripping
-        from its end.
+        Dr. Cham tirou um pedaço do filme do alimentador do projetor, derretido e pingando
+        nas pontas.
 
 
-        "Curse that!  These projectors are quality!  I've never had this happen.  There's
-        no way."
+        "Maldição!  Estes projetores são de qualidade!  Nunca vi isso acontecer.  Não pode ser."
 
 
         h3. Hunting For a Voice
 
 
-        "I don't think it was the projector," said Dr. Cham.  "Something flew across that screen
+        "Eu não acho que tenha sido o projetor," disse o Dr. Cham.  "Something flew across that screen
         and uttered a blistering moan."
 
 
@@ -500,7 +499,7 @@
         what's so great about it."
 
 
-        Could she speak while moaning? *BON-BON.*  With a French moan.  *BOHN-BOHN.
+        Could she speak while moaning? *BON-BON.*  Com um sotaque francês.  *BOHN-BOHN.
         BOHN-APPE-TEET-OHHHH-RRRR.*
 
 
@@ -508,7 +507,7 @@
         *completely* on end."
 
 
-        "Hannah?" said Dr. Cham.  "Where are you, child?  Come do a good turn
+        "Hannah?" disse o Dr. Cham.  "Onde você está, criança?  Come do a good turn
         for us, my niece."
 
 

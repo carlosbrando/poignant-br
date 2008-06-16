@@ -84,8 +84,8 @@
         você possa ir pra casa pro seu pai e pra sua mãe!"
 
 
-        Ele replicou, "(pon-shoo) (pon-shoo) (em-pithy-dah)."  Que é o jeito dele de expressar
-        out loud seu silêncio e temor.
+        Ele replicou, "(pon-shoo) (pon-shoo) (em-pithy-dah)."  Que é o jeito dele de expressar em voz alta
+        seu silêncio e medo.
 
 
         Ele queria ver o que eu havia escrito, então eu mostrei a ele este pequeno método que escrevi pra você.
@@ -216,8 +216,8 @@
 
 
         O método @respond_to?@ é realmente bacana e eu imploro que você nunca se esqueça dele.
-        O @respond_to?@ checa qualquer objeto para garantir que ele tenha um certo método.  Ele então retorna
-        com @true@ o @false@.  No caso acima, é checado se o objeto @frase@ recebido tem um método
+        O @respond_to?@ checa qualquer objeto para garantir que nele contém um determinado método.  Ele então retorna
+        com @true@ o @false@.  No caso acima, é checado se o objeto @frase@ recebido contém algum método
         @include?@.  Se nenhum método @include?@ for encontrado, então causamos o erro.
 
 
