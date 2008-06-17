@@ -3,11 +3,11 @@
 
 
       Uma característica do Irb raramente mencionada é a vantagem do recurso de auto-completar com a tecla TAB.
-      Este tópico é um pouco de tabú no momento, uma vez que trabalhar cm ele no windows é um tanto horroroso.
-      (Não, não tenha medo. Agora, mais do que nunca, olhe à sua direita.)      
+      Este tópico é um pouco de tabu no momento, uma vez que trabalhar com ele no Windows é um tanto horroroso.
+      (Não, não tenha medo. Agora, mais do que nunca, olhe à sua direita.)
 
       Se você estiver no Linux ou no FreeBSD, o recurso de auto-completar com a tecla TAB deverá funcionar imediatamente.
-      E se estiver usando OS C, você deverá ter certeza que está atualizado para última versão 1.8 e quando executar o Irb, use:
+      E se estiver usando OS X, você deverá ter certeza que está atualizado para última versão 1.8 e quando executar o Irb, use:
 
       <pre class="text">
        irb --readline -r irb/completion
@@ -19,7 +19,7 @@
       seu cursor até o final então você pode adicionar mais conteúdo.      
 
 
-      Se existem várias combinações, apenas teclar _TAB_ não adiantará. Mas clique duas vezes
+      Se existem várias combinações, apenas teclar _TAB_ não adiantará. Mas pressione duas vezes
       e o Ruby lhe dará uma lista completa de possíveis combinações.
 
 
