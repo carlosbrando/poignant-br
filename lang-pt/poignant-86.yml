@@ -2,31 +2,29 @@
       h3. Tab Completion
 
 
-      One feature of Irb which is rarely mentioned is its beneficial tab completion.  And it's
-      a bit of a taboo topic at the moment, since getting it to work on Windows is a slight horror.
-      (No, don't be afraid.  All at once now, look to your right.)
+      Uma característica do Irb raramente mencionada é a vantagem do recurso de auto-completar com a tecla TAB.
+      Este tópico é um pouco de tabú no momento, uma vez que trabalhar cm ele no windows é um tanto horroroso.
+      (Não, não tenha medo. Agora, mais do que nunca, olhe à sua direita.)      
 
-
-      If you're on Linux or FreeBSD, the tab completion should work right off.  And if you're
-      using OS X, you should be sure you're upgrade to the latest 1.8 and when run Irb, use:
-
+      Se você estiver no Linux ou no FreeBSD, o recurso de auto-completar com a tecla TAB deverá funcionar imediatamente.
+      E se estiver usando OS C, você deverá ter certeza que está atualizado para última versão 1.8 e quando executar o Irb, use:
 
       <pre class="text">
        irb --readline -r irb/completion
       </pre> 
 
 
-      Basically, when you hit _Tab_, Irb will take a guess at what you're trying to type.
-      Try typing: @[].col@ and hit _Tab_.  Irb will finish it.  @[].collect@ and it leaves your
-      cursor at the end so you can add further.
+      Basicamente, quando você teclar _TAB_, o Irb tentará adivinhar o que você está tentando digitar.
+      Tente digitar: @[].col@ e tecle _TAB_. o Irb finalizará isto. @[].collect@ e isto levará
+      seu cursor até o final então você pode adicionar mais conteúdo.      
 
 
-      If there are several matches, just hitting _Tab_ will do nothing.  But hit it twice
-      and Ruby will give you a complete list of possible matches.
+      Se existem várias combinações, apenas teclar _TAB_ não adiantará. Mas clique duas vezes
+      e o Ruby lhe dará uma lista completa de possíveis combinações.
 
 
-      This is great if you just want to see all the methods for a certain object.  Type in any
-      number, a dot, and use _Tab_.
+      Isto é ótimo se você quer apenas ver todos os metodos para um certo objeto. Digite em qualquer
+      número, um ponto, e use _TAB_.
 
 
       <pre class="text">
@@ -52,29 +50,29 @@
       </pre>
 
 
-      Now, trying typing @Kernel::@ and then _Tab_.  All the core methods.  Don't ever forget this
-      and use it all the time.
+      Agora, tentando teclar @Kernel::@ e depois _TAB_. Todos os métodos do core. Nunca esqueça disto
+      e use o tempo todo.
 
 
       !i/tigers.vest-3.gif(Except the robot flew away and the ice gun went on and on...)!
 
 
-      Okay, one last thing and then I'll quit bugging you with all this great technology.
-      But I have to say it loud, so take cover!  I'm across the world here, folks, but the
-      volume comes down from the sky -- a bold, red crescendo of --
+      Ok, uma última coisa então vou parar de incomodar com toda esta ótima tecnologia.
+      Mas eu vou ter que falar isto alto, então tapem os ouvidos! Estou do outro lado do mundo, galera, mas o
+      volume vem do céu -- a bold, red crescendo of --
 
 
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
 
 
       h3={color: #300}. (Ruby's Own 411 or 555-1212 or _Yes, Operator, Get Belgrade on the Line_ -- I'll 
-      Be Right Here -- Just Plain Hammering The Pound Key Until Someone Picks Up...)
+      Venha cá -- Apenas batendo na tecla "jogo da velha" até alguém atender...
 
 
-      And Ri picks up the line.  "This is Ri.  Class and colon, please."
+      E o Ri atende. "Aqui é o Ri. Classe e dois pontos, por favor"
 
 
-      You rush in, "This is an instance method, Operator.  Enumerable#zip."
+      Você entra correndo, "Isto é a instância de um metodo, Operador. Enumerável#zip."
 
   
       <pre class="text">
@@ -82,9 +80,9 @@
       </pre>
 
 
-      Without delay, right up on your teletype display (so swiftly that even the cat perched
-      atop cranes his neck around, gapes and hands it the royal cup _Most Blatantly Great
-      Thing Since Michael Dorn_):
+      Sem demora, corrija no seu display (tão rápido que até o gato sentado na
+      quina estica o pescoço, boceja e alcança a sua caneca real _A coisa mais
+      barulhenta desde Michael Dorn_):
 
 
       <pre class="text">
@@ -92,13 +90,13 @@
             enum.zip(arg, ...)                   => array
             enum.zip(arg, ...) {|arr| block }    => nil
        ------------------------------------------------------------------------
-            Converts any arguments to arrays, then merges elements of _enum_
-            with corresponding elements from each argument. This generates a
-            sequence of +enum#size+ _n_-element arrays, where _n_ is one more
-            that the count of arguments. If the size of any argument is less
-            than +enum#size+, +nil+ values are supplied. If a block given, it
-            is invoked for each output array, otherwise an array of arrays is
-            returned.
+            Converte qualquer argumento em array, então une elementos de _enum_
+            com elementos correpondentes de cada argumento. Isto gera uma
+            sequência de +enum#size+ _n_-element arrays, onde _n_ é um a mais
+            que a conta de argumentos. Se o tamanho de algum argumento é menos
+            que +enum#size+, valores de +nil+ são providênciados. Se é dado um
+            bloco, este é convocado para cada saída do array, caso contrário um
+            array de arrays é retornado.
 
                a = [ 4, 5, 6 ]
                b = [ 7, 8, 9 ]
@@ -109,65 +107,65 @@
       </pre>
 
 
-      It's an unabridged Ruby dictionary servo -- the Power of Just Asking is at your
-      fingertips -- _don't tell me you've never heard of this no-money-down 
-      lifetime-supply-of-proper-explanations!_
+      Isto é um dicinário íntegro de Ruby -- O poder de apenas perguntar está na ponta
+      de seus dedos -- não diga que nunca ouviu sobre este nenhum-dinheiro-supre-uma-vida-inteira-de
+      explicações-apropriadas!_
 
 
-      To get an explanation of any class, along with a complete directory to all of its
-      methods, all in a very soothing voice fit for calming any of you panicking cosmonauts 
-      out there fighting the pull of some zero-tolerance tractor beam, just use at your
-      command shell: @ri Class@.
+      Para ter uma explicação de qualquer classe, junto com diretório completo para
+      todos seus metodos, todos com uma voz suave que serve para acalmar qualquer um de
+      vocês cosmonautas em pânico aí lutando contra a atração de um raio trator de tolerância zero,
+      apenas use na shell: @ri Class@.
 
 
-      But for help on class methods, you cuff on: @ri Class::method@.
+      Mas para ajudar nos metodos da classe, você tira da manga: @ri Class::method@.
 
 
-      Though instance methods use a pound key rather than a dot.  (Since the dot can mean class *or*
-      instance methods.)  I mean: @ri Class#method@.
+      Apesar de metodos de instância usarem o jogo da velha ao invés do ponto. (Uma vez que ponto pode significar class *ou*
+      métodos de instância.) Digo: @ri Class#method@.
 
 
-      The full spread of classes, a full list from the Very Top down to the Earth's core, can be
-      achieved with @ri -c@.
+      A completa distribuição das classe, uma lista completa desde o mais alto topo até o centro da Terra,
+      pode ser alcançado com @ri -c@.
 
 
-      And beyond text, you can make HTML: @ri -Tf html String#gsub > gsub.html@.
+      e além do texto, você pode fazer HTML: @ri -Tf html String#gsub > gsub.html@.
 
 
-      *Or show colory ANSI: @ri -Tf ansi String#gsub@.*  And this is last and best.
+      *Ou mostrar ANSI colorido: @ri -Tf ansi String#gsub@.*  E este é ultimo e o melhor.
 
 
-      h3. Into the Ri Switchboard
+      h3. Dentro do Painel de controle do Ri
 
 
-      Behind Ri sings a chorus of human voices, primarily Dave Thomas, an author of _Programming
-      Ruby_, and absolutely the American foster parent of Ruby.  Many of these elaborate
-      spiels from Ri are straight from the references of _Programming Ruby_.  Don't forget
-      to thank Dave periodically.
+      Atrá do Ri cantam um coro de vozes humanas, primeiramente Dave Thomas, um autor de _Programming
+      Ruby_, e absolutamente o pai adotivo americano do Ruby. Muitos destes discursos elaborado
+      do Ri são diretamente das referencias de _Programming Ruby_.  Não esqueça de 
+      agradecer ao Dave periodicamente.
 
 
-      Ri culls its lush information set from the very code that Ruby is built from.  In each
-      of the files of code back in the Ruby Headquarter's file cabinet, detailed comments
-      describe everything in sight.
+      O Ri extrai seu exuberante conjunto de informações do mesmo código que o Ruby é construído. Em cada um dos
+      arquivos de código contidos no armário de arquivo da chefia Ruby, comentários detalhados
+      descrevem tudo claramente.
 
 
-      In Ruby's @date@ class, here we have such commented methods:
+      Na classe @date@ de Ruby, aqui temos métodos bem comentados:      
 
 
       <pre>
-       # Get the time of this date as [hours, minutes, seconds,
-       # fraction_of_a_second]
+       # Obtenha o tempo desta data como [horas, minutos, segundos,
+       # fração de segundos]       
        def time() self.class.day_fraction_to_time(day_fraction) end
        
-       # Get the hour of this date.
+       # Obtenha a hora desta data.       
        def hour() time[0] end
          
-       # Get the minute of this date.
+       # Obtenha o minuto desta data.
        def min() time[1] end
       </pre>
 
 
-      The comments show up in Ri.  We type: @ri Date#time@.
+      Os comentários surgem no Ri. Digitamos: @ri Date#time@.
 
 
       <pre class="text">
@@ -180,45 +178,45 @@
       </pre>
 
 
-      Ri figures out much of how a method works, although it expects coders to
-      write a brief description in the comments just before a method or class definition.
-      I would suggest that whenever you write a method, add a brief
-      description in the comments before that method.  In time, you can generate
-      Ri documentation for that method.
+      O Ri advinha muito de como um método funciona, embora espera que os codificadores
+      escrevam uma breve descrição nos comentários, pouco antes da definição de um método ou classe.
+      Eu sugeriria que sempre que for escrever um método, adicione uma breve descrição
+      nos comentários antes daquele método. Em tempo, você pode gerar uma
+      documentação Ri para aquele método.
 
 
-      You can also use a few special characters to enhance your description.  For
-      example, if you indent a paragraph and use an asterisk @*@ or a dash @-@
-      just before the letters of the first sentence, the paragraph will be recognized
-      as a list item.  Then, if your description needs to be converted to HTML, you'll
-      see the list item appear as an HTML unordered list.
+      Você também pode usar alguns caracteres especiais para aumentar sua descrição. Por
+      exemplo, se você indentar um parágrafo e usar um asterisco @*@ ou um hífen @-@      
+      pouco antes das letras da primeira frase, o parágrafo será reconhecido como um
+      ítem de lista. Então, se a sua descrição precisa ser convertida para HTML, você
+      verá o ítem de lista aparecer como uma lista de HTML desordenada.
 
 
       <pre>
-       # Get the time of this date as an Array of:
-       # * hours
-       # * minutes
-       # * seconds
-       # * fraction_of_a_second
+       # Obtenha o tempo desta data como um array de:      
+       # * horas
+       # * minutos
+       # * segundos
+       # * fração de segundos
        def time() self.class.day_fraction_to_time(day_fraction) end
       </pre>
 
 
-      Other rules as well:  Lists which start with digits followed by periods are
-      recognized as numbered lists.  Emphasized words are surrounded by underscores,
-      bold words by asterisks, code words by plus signs.  Examples are simply blocks
-      of text indented a few spaces.  All of these rules together are called RDoc.
+      Outra regras semelhantes: Listas que começam com digitos seguidos de períodos,
+      são reconhecidas como listas numéricas. Palavras enfatizadas são cercadas por traço baixo(underscore),
+      palavras em negrito por asteriscos, palavras em código por sinais de soma. Exemplos são simples blocos
+      de texto indentados por alguns espaços. Todas estas regras juntas são chamadas RDoc.
 
 
-      Here's a bit of RDoc from the @initialize@ method in one of my projects
-      called RedCloth.  Notice the indented example as well as the Ruby class
-      and method names flanked with plusses.
+      Aqui está um pedaço do RDoc do método @initialize@ em um dos meus projetos
+      chamado RedCloth. Observe o exemplo identado bem como a classe Ruby e
+      nomes de métodos alinhados com sinais de soma.
 
 
       <pre>
        #
-       # Returns a new RedCloth object, based on +String+ and
-       # enforcing all the included +restrictions+.
+       # Retorna um novo objeto RedCloth, baseado em +String+ e
+       # cumprindo todas as +restrições+ incluídas.       
        #
        #   r = RedCloth.new( "h1. A <b>bold</b> man", [:filter_html] )
        #   r.to_html
@@ -232,16 +230,16 @@
       </pre>
 
 
-      For the full set of RDoc rules see the *Markup* section of the 
+      Para a série completa de regras RDoc veja a seção *Markup* do
       "README":http://rdoc.sourceforge.net/doc/files/README.html.
 
 
-      h3. Pushing Out Your Own Ri
+      h3. Impulsionando seu próprio Ri
 
 
-      Ri doesn't automatically read your files for you, though.  You've got to push it along,
-      show it the way.  Change to the directory of the code you'd like to scan.  Then, use
-      the RDoc tool to make it happen.
+      O Ri porém não lê automáticamente seus arquivos para você. Você tem que guiá-lo,
+      mostrar o caminho. Mude para o diretório do código que você gostaria de examinar. Então,
+      use a ferramenta RDoc para executar.
 
 
       <pre class="text">
@@ -250,8 +248,9 @@
       </pre>
 
 
-      Now, try using @ri YourClass@ to ensure all your descriptions are showing up properly.
-      If you want to make HTML documentation, try this:
+      Agora, tente usar @ri SuaClasse@ para assegurar que todas as suas descrições estão aparecendo
+      apropriadamente.
+      Se você quer fazer documentação HTML, tente isto:
 
 
       <pre class="text">
@@ -260,18 +259,19 @@
       </pre>
 
 
-      The @~/cvs/your-code@ directory should now also have a fresh @doc@ directory containing
-      HTML documentation for all of your classes.  View @index.html@ for the pleasant news.
+      O diretório @~/cvs/seu-código@ deverá agora também ter um diretório @doc@
+      recente contendo documentação HTML para todas as suas classes. Veja @index.html@
+      para as notícias agradáveis.
 
 
-      Well then.  Your hands are in it all now.  Welcome to Ruby.
+      Pois então. Está tudo em suas mãos agora. Bem vindo ao Ruby.      
 
 
       !i/tigers.vest-4.gif(The tiger finds a new home and learns to eventually move on.)!
 
 
 #
-#        Just as the sun goes down and I have to call him Paij-plo, I check the time.
+#       Assim como o sol se pões e eu tenho que chamá-lo Paij-plo, Eu checo o tempo.
 #
 #
 #        bq. @puts Time.now@
@@ -279,32 +279,31 @@
 #        which prints: @Sun Sep 12 18:34:50 EDT 2004@
 #
 #
-#        Paij-plo leans over my shoulder, "And then it's (re-eep) eaten."
+#        Paij-plo se debruça no meu ombro, "E então está (re-eep) devorado."
 #
 #
-#        When he says this, my spine leaks out of my back.  It's a whole (frightening)
-#        religion and it comes out in these kooky colloquialisms.  When Paij-plo
-#        starts his solemn _eating time_ or _he's right behind us_ talk.
+#        Quando ele diz isto, minha espinha escapa das minhas costas. É uma religião
+#        inteira (aterrorizado) e ela surge neste coloquialismo barato. Quando Paij-plo
+#        começa sua solente _é hora de comer_ ou seu _ele está bem atrás de nós_ falatório.
 #
 #
-#      I guess there was a time on Endertromb when everyone lived without death.  Paij-plo
-#      says a "panther-like man" fell into a huge chasm, a deep tunnel that wound around the
-#      planet.  His body was found on the other side of the planet.  But he had no bruises, his
-#      body was still warm.  He was only dead by one second.
+#      Eu acho que havia um tempo em Endertromb quando todos viviam sem a morte.  Paij-plo
+#      diz um "homem pantera" caíu em um enorme abismo, um túnel profundo ao redor do  
+#      planeta. Seu corpo foi encontrado do outro lado do planeta. Mas ele não tinha ferimentos, seu
+#      corpo estava quente. Ele estava morto por apenas um segundo.
 #
 #
-#      His body stayed dead for one second.  It continued to be warm and it never rotted.
+#      Seu corpo ficou morto por um segundo. Continuou quente e nunca apodreceu.
 #      
-#      
-#      Eb-F-F-A.  Then, Bb-D-D-F.
+#      Eb-F-F-A.  Então, Bb-D-D-F.
 
 
-#        Dr. Cham turned to the goat. "You know how to work these controls, don't you?  I need to
-#        file a program."
+#        Dr. Cham virou-se para a cabra. "Você sabe trabalhar com estes controles, né? Eu preciso
+#        arquivar um programa."
 #
 #
 #        "
-#        The goat tossed his legs up on the panel and eased a few plush handles into an array of positions
-#        until a slot opened at the base, from which a long silver chain spilled.  At the end of the chain
-#        dangled a thick retainer the size of a fish filet.
+#        A cabra lançou suas pernas sobre o painel e com isto afrouxou algumas maçanetas suntuosas em um array de posições 
+#        até que um slot abriu na base, do qual derramou uma longa corrente de prata. No final da corrente
+#        balançava uma densa retainer do tamanho de um filé de peixe.
 
