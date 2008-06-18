@@ -1,68 +1,70 @@
-    - The Theft of the Lottery Captain: >
+    - O Roubo do Capitão da Loteria: >
 
 
-        !>i/my.daughters.organ-3.gif(The piping and mixtures of the lotteries.)!
+        !>i/my.daughters.organ-3.gif(A tubulação e as misturas das loterias.)!
 
 
-        And now, Paij-ree's stories of the Lotteries.
+        E agora, as histórias de Paij-ree sobre as Loterias.
 
 
-        On Endertromb, the organist's father invented the lottery.  The idea came while
-        he was praying to Digger Dosh.
+        Em Endertromb, o pai do organista inventou a loteria.  A idéia veio enquanto
+        ele estava rezando para Escavador Dosh.
 
 
-        Digger Dosh is sort of like their God.  But ten times scarier.  This
-        guy dug an infinitely deep tunnel straight through the planet and came out dead.
-        But he's really not dead.  He's really just _one second_ behind them.  And he eats time.
+        Escavador Dosh é uma espécie de Deus para eles.  Mas dez vezes mais assustador.  Este
+        cara cavou um túnel infinitamente profundo através do planeta e saiu morto.
+        Mas ele não está realmente morto.  Ele na verdade está apenas _um segundo_ atrás deles.
+        E ele come tempo.
 
 
-        It's kind of complicated because Digger Dosh totally kills people.  But I guess if 
-        you do what he says, it's not so bad.  Maybe I'll talk about it later.  It's such a
-        pain to talk about because it's so scary and yet one of my friends actually believes
-        the whole thing.  I get kind of choked up -- not like I'm crying, more like I'm choking.
+        É meio complicado, porque Escavador Dosh mata gente.  Mas acho que se
+        você faz o que ele diz, não é tão ruim.  Talvez falarei sobre isso depois.  É tão
+        difícil falar sobre, pois é tão assustador e ainda assmi nenhum de meus amigos realmente
+        acredita na coisa toda.  Isso me engasga -- não como se eu estivesse chorando, mas como
+        se eu estivesse engasgado.
 
 
-        Anyway, once while praying, three numbers came to Paij-ree's father.
+        De qualquer jeito, uma vez enquanto rezava, três números vieram ao pai de Paij-ree.
 
 
-        He then asked his mind, "What are these numbers?"
+        Ele então perguntou à sua mente, "O que são esses números?"
 
 
-        And his mind played a short video clip of him selling all kinds of numbers.  And, for
-        years and years, travelling and selling numbers.
+        E sua mente mostrou um pequeno videoclipe dele vendendo todos os tipos de números.  E,
+        por anos e anos, viajando e vendendo números.
 
 
-        And he asked his brain, "People will buy numbers?"
+        E ele perguntou a seu cérebro, "Pessoas vão comprar números?"
 
 
-        And his brain said, "If they buy the right three numbers, give them a prize."
+        E seu cérebro disse, "Se eles comprarem os três números certos, dê-lhes um prêmio."
 
 
-        At which he imagined himself launching off a ski jump and showering people with
-        presents.  No question: he would be an icon.
+        Foi quando ele se imaginou lançando de um salto com ski e fazendo chover prêmios sobre
+        as pessoas.  Não havia dúvida: ele seria um ícone.
 
 
-        So he went and did as his brain said and sold numbers.  The father's simple lottery
-        consisted of three unique numbers, drawn from a set of 25 numbers.
+        Então ele foi e fez como seu cérebro disse, e vendeu números.  A loteria simples do pai
+        consistia de três números únicos, escolhidos de um conjunto de 25 números.
 
 
         <pre>
-         class LotteryTicket
+         class BilheteLoteria
 
-           NUMERIC_RANGE = 1..25
+           INTERVALO_NUMERICO = 1..25
 
-           attr_reader :picks, :purchased
+           attr_reader :numeros_escolhidos, :data_compra
 
-           def initialize( *picks )
-             if picks.length != 3
-               raise ArgumentError, "three numbers must be picked"
-             elsif picks.uniq.length != 3
-               raise ArgumentError, "the three picks must be different numbers"
-             elsif picks.detect { |p| not NUMERIC_RANGE === p }
-               raise ArgumentError, "the three picks must be numbers between 1 and 25."
+           def initialize( *numeros_escolhidos )
+             if numeros_escolhidos.length != 3
+               raise ArgumentError, "três números devem ser escolhidos"
+             elsif numeros_escolhidos.uniq.length != 3
+               raise ArgumentError, "os três números escolhidos devem ser distintos"
+             elsif numeros_escolhidos.detect { |p| not INTERVALO_NUMERICO === p }
+               raise ArgumentError, "os três números escolhidos devem estar entre 1 e 25."
              end
-             @picks = picks
-             @purchased = Time.now
+             @numeros_escolhidos = numeros_escolhidos
+             @data_compra = Time.now
            end
 
          end
