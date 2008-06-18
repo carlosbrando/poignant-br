@@ -1,171 +1,166 @@
-    - O Roubo do Capitão Loteria: >
+    - The Theft of the Lottery Captain: >
 
 
-        !>i/my.daughters.organ-3.gif(Os tubos e misturas das loterias.)!
+        !>i/my.daughters.organ-3.gif(The piping and mixtures of the lotteries.)!
 
 
-        E agora, as histórias das Loterias Paij-ree.
+        And now, Paij-ree's stories of the Lotteries.
 
 
-        Em Endertromb, o pai do organista inventou a loteria.  A idéia surgiu quando ele estava rezando
-        para o Escavador Dosh.
+        On Endertromb, the organist's father invented the lottery.  The idea came while
+        he was praying to Digger Dosh.
 
 
-        Escavador Dosh é uma espécie de Deus para eles.  Mas dez vezes mais
-        assustador.  Esse cara cava um túnel infinitamente profundo através do planeta
-        e sai morto.  Mas ele não está realmente morto.  Ele está realmente _um segundo_
-        atrás deles.  E ele come tempo.
+        Digger Dosh is sort of like their God.  But ten times scarier.  This
+        guy dug an infinitely deep tunnel straight through the planet and came out dead.
+        But he's really not dead.  He's really just _one second_ behind them.  And he eats time.
 
 
-        É mais ou menos complicado, porque o Escavador Dosh mata totalmente as pessoas.  Mas
-        eu convido você a fazer o que ele diz, ele não é tão mal.  Talvez eu fale sobre isso
-        mais tarde.  É um tal de fala sobre dor, porque isso é tão assustador e ainda um dos
-        meus amigos realmente acredita em tudo isso.  Eu consigo um tipo de
-        estrangulador -- não que eu esteja precisando, mais
-        I get kind of choked up -- not like I'm crying, more like I'm choking.
+        It's kind of complicated because Digger Dosh totally kills people.  But I guess if 
+        you do what he says, it's not so bad.  Maybe I'll talk about it later.  It's such a
+        pain to talk about because it's so scary and yet one of my friends actually believes
+        the whole thing.  I get kind of choked up -- not like I'm crying, more like I'm choking.
 
 
-        De qualquer forma, enquanto rezava, três números vieram para o pai do Paij-ree.
+        Anyway, once while praying, three numbers came to Paij-ree's father.
 
 
-        Ele então se perguntou. "O que são esses números?"
+        He then asked his mind, "What are these numbers?"
 
 
-        E sua mente passou um pequeno vídeo clip dele vendendo todos os tipos de números.  E,
-        por anos e anos, viajando e vendendo números.
+        And his mind played a short video clip of him selling all kinds of numbers.  And, for
+        years and years, travelling and selling numbers.
 
 
-        E ele perguntou ao seu cérebro, "Pessoas comprarão números?"
+        And he asked his brain, "People will buy numbers?"
 
 
-        E seu cérebro disse, "Se eles comprarem os três números corretos, dê a eles um prêmio."
+        And his brain said, "If they buy the right three numbers, give them a prize."
 
 
-        Pelo que ele mesmo imaginava um salto alto com um ski e jogando neve nas pessoas
-        presentes.  Não questione: ele seria um ícone.
+        At which he imagined himself launching off a ski jump and showering people with
+        presents.  No question: he would be an icon.
 
 
-        Então ele foi e fez o que seu cérebro disse e vendeu números. O pai da loteria
-        simples consistia em três únicos números, retirados de um conjunto de 25 números.
+        So he went and did as his brain said and sold numbers.  The father's simple lottery
+        consisted of three unique numbers, drawn from a set of 25 numbers.
 
 
         <pre>
-         class BilheteLoteria
+         class LotteryTicket
 
-           INTERVALO_NUMERICO = 1..25
+           NUMERIC_RANGE = 1..25
 
-           attr_reader :numeros_escolhidos, :data_compra
+           attr_reader :picks, :purchased
 
-           def initialize( *numeros_escolhidos )
-             if numeros_escolhidos.length != 3
-               raise ArgumentError, "três números devem ser escolhidos"
-             elsif numeros_escolhidos.uniq.length != 3
-               raise ArgumentError, "os três escolhidos devem ser diferentes"
-             elsif numeros_escolhidos.detect { |p| not INTERVALO_NUMERICO === p }
-               raise ArgumentError, "os três escolhidos devem ser números entre 1 e 25."
+           def initialize( *picks )
+             if picks.length != 3
+               raise ArgumentError, "three numbers must be picked"
+             elsif picks.uniq.length != 3
+               raise ArgumentError, "the three picks must be different numbers"
+             elsif picks.detect { |p| not NUMERIC_RANGE === p }
+               raise ArgumentError, "the three picks must be numbers between 1 and 25."
              end
-             @numeros_escolhidos = numeros_escolhidos
-             @data_compra = Time.now
+             @picks = picks
+             @purchased = Time.now
            end
 
          end
         </pre>
 
 
-        Sim, a classe @BilheteLoteria@ contém os três números (@@numeros_escolhidos@) e o
-        momento em que o bilhete foi adquirido (@@data_compra@).  O intervalo de números
-        permitidos (de *um* a *vinte e cinco*) é mantido na constante @INTERVALO_NUMERICO@.
+        Yes, the @LotteryTicket@ class contained the three numbers (@@picks@) and the
+        time when the ticket was bought (@@purchased@).  The allowed range of numbers
+        (from *one* to *twenty-five*) is kept in the constant @NUMERIC_RANGE@.
 
 
-        O método @initialize@ pode ter qualquer número de argumentos passados. O *asterisco*
-        no argumento @numeros_escolhidos@ significa que *quaisquer argumentos serão passados
-        como um Array*.  Ter os argumentos em um Array significa que métodos como @uniq@ e
-        @detect@ podem ser usados juntos aos argumentos.
+        The @initialize@ method here can have any number of arguments passed in.  The
+        *asterisk* in the @picks@ argument means that *any arguments will be passed
+        in as an Array*.  Having the arguments in an Array means that methods like
+        @uniq@ and @detect@ can be used on the arguments together.
 
 
-        Esta classe contém duas definições: o método de definição (@def@) e um
-        de definição de atributos (@attr_reader@).  Ambos são, realmente, *apenas métodos de
-        definição*.
+        This class contains two definitions: the method definition (@def@) and
+        an attributes definition (@attr_reader@).  Both are *really just method definitions*
+        though.
 
 
-        O @attr_reader@ é um atalho idêntico à escrever o este código Ruby:
+        The @attr_reader@ shortcut is identical to writing this Ruby code:
 
 
         <pre>
-         class BilheteLoteria
-           def numeros_escolhidos; @numeros_escolhidos; end
-           def data_compra; @data_compra; end
+         class LotteryTicket
+           def picks; @picks; end
+           def purchased; @purchased; end
          end
         </pre>
 
 
-        Atributos são métodos empacotados para variáveis de instância (assim como
-        @@numeros_escolhidos@) que podem ser usados *fora da própria classe*.  O pai do
-        Paij-ree queria codificar uma máquina que pudesse ler números e a data da
-        compra do bilhete.  Para fazer isso, estas variáveis de instância devem ser expostas.
+        Attributes are wrapper methods for instance variables (such as @@picks@) which can be used
+        *outside of the class itself*.  Paij-ree's father wanted to code a machine which
+        could read the numbers and the date of purchase from the ticket.  In order to do that,
+        those instance variables must be exposed.
 
 
-        Vamos criar um bilhete aleatório e ler os números de volta:
+        Let's create a random ticket and read back the numbers:
 
 
         <pre>
-         bilhete = BilheteLoteria.new( rand( 25 ) + 1,
+         ticket = LotteryTicket.new( rand( 25 ) + 1,
                      rand( 25 ) + 1, rand( 25 ) + 1 )
-         p bilhete.numeros_escolhidos
+         p ticket.picks
         </pre>
 
 
-        Executando o código acima, eu apenas pego: @[23, 14, 20]@.  Você receberá um
-        erro se acontecer dos dois números aleatórios serem idênticos.
+        Running the above, I just got: @[23, 14, 20]@.  You will get an error if two of
+        the random numbers happen to be identical.
 
 
-        Entretanto, eu não posso mudar os números escolhidos no bilhete de loteria de
-        fora da classe.
+        However, I can't change the lottery ticket's picks from outside of the class.
 
 
         <pre>
-         bilhete.numeros_escolhidos = [2, 6, 19]
+         ticket.picks = [2, 6, 19]
         </pre>
 
 
-        Eu receberei um erro: @undefined method `numeros_escolhidos=`@
-        Isto porque @attr_reader@ somente adiciona um método de *leitura*, não um método
-        de escrita.  Embora isso seja bom.  Nós não queremos mudanças nos números ou na
-        data.
+        I get an error: @undefined method `picks='@.
+        This is because @attr_reader@ only adds a *reader* method, not a writer method.
+        That's fine, though.  We don't want the numbers or the date to change.
 
 
-        Então, os bilhetes são _objetos_.  Instâncias da classe @BilheteLoteria@.  Faça
-        um bilhete com @BilheteLoteria.new@.  Cada bilhete tem as suas variáveis de instância
-        @@numeros_escolhidos@ e @@data_compra@.
+        So, the tickets are _objects_.  Instances of the @LotteryTicket@ class.  Make a
+        ticket with @LotteryTicket.new@.  Each ticket has it's own @@picks@ and it's own
+        @@purchased@ instance variables.
 
 
-        O capitão loteria teria necessidade de gerar três números aleatórios no
-        encerramento do sorteio, por isso vamos acrescentar um método de classe
-        conveniente para geração aleatória de bilhetes.
+        The lottery captain would need to draw three random numbers at the close
+        of the lottery, so we'll add a convenient class method for generating random
+        tickets.
 
 
         <pre>
-         class BilheteLoteria
-           def self.novo_aleatorio
+         class LotteryTicket
+           def self.new_random
              new( rand( 25 ) + 1, rand( 25 ) + 1, rand( 25 ) + 1 )
            end
          end
         </pre>
 
 
-        Oh, não.  Mas nós temos um estúpido erro que aparece quando dois dos números
-        aleatórios são idênticos.  Se dois números são iguais, o @initialize@ lança um
-        @ArgumentError@.
+        Oh, no.  But we have that stupid error that pops up if two of the random numbers
+        happen to be identical.  If two numbers are the same, the @initialize@ throws
+        an @ArgumentError@.
 
 
-        O truque é voltar e reiniciar o método se um erro acontecer.
-        Nós podemos usar o @rescue@ (_resgate_) do Ruby para apanhar o erro e @redo@
-        (_refazer_) o método do início.
+        The trick is going to be restarting the method if an error happens.
+        We can use Ruby's @rescue@ to handle the error and @redo@ to start the method
+        over.
 
 
         <pre>
-         class BilheteLoteria
-           def self.novo_aleatorio
+         class LotteryTicket
+           def self.new_random
              new( rand( 25 ) + 1, rand( 25 ) + 1, rand( 25 ) + 1 )
            rescue ArgumentError
              redo
@@ -174,128 +169,125 @@
         </pre>
 
 
-        Melhor.  Pode demorar duas vezes mais para os números cairem juntos
-        corretamente, mas cairão.  O tempo de espera fará o suspense, não?
+        Better.  It may take a couple times for the numbers to fall together right,
+        but it'll happen.  The wait will build suspense, huh?
 
 
-        O capitão loteria mantém um registro de todos que compraram bilhetes,
-        junto com os números sorteados.
+        The lottery captain kept a roster of everyone who bought tickets, along
+        with the numbers they drew.
 
 
         <pre>
-         class SorteioLoteria
-           @@bilhetes = {}
-           def SorteioLoteria.comprado_por( cliente, *bilhetes )
-             unless @@bilhetes.has_key?( cliente )
-               @@bilhetes[cliente] = []
+         class LotteryDraw
+           @@tickets = {}
+           def LotteryDraw.buy( customer, *tickets )
+             unless @@tickets.has_key?( customer )
+               @@tickets[customer] = []
              end
-             @@bilhetes[cliente] += bilhetes
+             @@tickets[customer] += tickets
            end
          end
         </pre>
 
 
-        Yal-dal-rip-sip foi o primeiro cliente.
+        Yal-dal-rip-sip was the first customer.
 
 
         <pre>
-         SorteioLoteria.comprado_por 'Yal-dal-rip-sip',
-             BilheteLoteria.new( 12, 6, 19 ),
-             BilheteLoteria.new( 5, 1, 3 ),
-             BilheteLoteria.new( 24, 6, 8 )
+         LotteryDraw.buy 'Yal-dal-rip-sip',
+             LotteryTicket.new( 12, 6, 19 ),
+             LotteryTicket.new( 5, 1, 3 ),
+             LotteryTicket.new( 24, 6, 8 )
         </pre>
 
 
-        Quando chega a hora de sortear a loteria, o pai do Paij-ree (o capitão loteria)
-        adiciona um bit de código para selecionar aleatoriamente os números.
+        When it came time for the lottery draw, Paij-ree's father (the lottery captain) added
+        a bit of code to randomly select the numbers.
 
 
         <pre>
-         class BilheteLoteria
-           def pontuacao( final )
-             contador = 0
-             final.numeros_escolhidos.each do |nota|
-               contador += 1 if numeros_escolhidos.include? nota
+         class LotteryTicket
+           def score( final )
+             count = 0
+             final.picks.each do |note|
+               count +=1 if picks.include? note
              end
-             contador
+             count
            end
          end
         </pre>
 
 
-        O método @pontuacao@ compara um @BilheteLoteria@ com um bilhete aleatório,
-        o qual representa a combinação vencedora.  O bilhete aleatório é passado
-        através da variável @final@.  O bilhete recupera um ponto para todo número
-        vencedor.  A pontuação final é retornada pelo método @pontuacao@.
+        The @score@ method compares a @LotteryTicket@ against a random ticket,
+        which represents the winning combination.  The random ticket is passed in
+        through the @final@ variable.  The ticket gets one point for every winning
+        number.  The point total is returned from the @score@ method.
 
 
         <pre>
-         irb> bilhete  = BilheteLoteria.new( 2, 5, 19 )
-         irb> vencedor = BilheteLoteria.new( 4, 5, 19 )
-         irb> bilhete.pontuacao( vencedor )
+         irb> ticket = LotteryTicket.new( 2, 5, 19 )
+         irb> winner = LotteryTicket.new( 4, 5, 19 )
+         irb> ticket.score( winner )
            => 2
         </pre>
 
 
-        Com o tempo você perceberá o quão brilhante Paij-ree é (ou era). Seu pai o
-        encarregou de conduzir a loteria por ele, e a demanda por bilhetes só crescia,
-        à medida que o dia passava.  Você consegue imaginar o jovem Paij-ree - em seu
-        terno pomposo - brincando com eláticos de dinheiro com seus dedos jovens, em
-        meio à reunião da empresa na qual propôs a última parte do sistema?  Com certeza,
-        quando se levantou, seu pai falou tudo para ele, mas ele se apoiou ligou o
-        projetor e explicou tudo apontando com as mãos.
+        You will see how brilliant Paij-ree is, in time.  His father commissioned him
+        to finish the lottery for him, while the demand for tickets consumed the
+        lottery captain's daylight hours.  Can't you just imagine young Paij-ree in his stuffy
+        suit, snapping a rubber band in his young thumbs at the company meetings where he proposed the
+        final piece of the system?  Sure, when he stood up, his dad did all the talking for
+        him, but he flipped on the projector and performed all the hand motions.
 
  
         <pre>
-         class << SorteioLoteria
-           def jogo
-             final = BilheteLoteria.novo_aleatorio
-             vencedores = {}
-             @@bilhetes.each do |comprador, lista_bilhetes|
-               lista_bilhetes.each do |bilhete|
-                 pontuacao = bilhete.pontuacao( final )
-                 next if pontuacao.zero?
-                 vencedores[comprador] ||= []
-                 vencedores[comprador] << [ bilhete, pontuacao ]
+         class << LotteryDraw
+           def play
+             final = LotteryTicket.new_random
+             winners = {}
+             @@tickets.each do |buyer, ticket_list|
+               ticket_list.each do |ticket|
+                 score = ticket.score( final )
+                 next if score.zero?
+                 winners[buyer] ||= []
+                 winners[buyer] << [ ticket, score ]
                end
              end
-             @@bilhetes.clear
-             vencedores
+             @@tickets.clear
+             winners
            end
          end
         </pre>
 
 
-        Os sócios de seu pai ficaram atordoados.  O que era aquilo?  (Paij-ree
-        sabia que era apenas a definição de um método de classe -- eles se
-        sentiram completamente desmoralizados quando ele disse isso).  Eles não
-        conseguiam entender as *duas setas para esquerda*.  Sim, era um
-        concatenador, mas o que estaria ele fazendo em meio à definição da classe?
-        
-
-        Crianças, pensava Paij-ree, embora levantasse a auto-estima dos sócios.
-        Ele era apenas uma criança e crianças são duras como uma parede de tijolos.
+        His father's associates were stunned.  What was this?  (Paij-ree knew this
+        was just another class method definition -- they would all feel completely
+        demoralized when he told them so.)  They couldn't understand the *double
+        angle bracket* up there!  Yes, it was a concatenator, but how is it in
+        the class title?
 
 
-        O operador @<<@ permite à você alterar a definição de um objeto.
-        Paij-ree simplesmente havia usado a classe @SorteioLoteria@, e o método
-        dele, @jogo@, seria um método de instância normal.  Mas, uma vez que usou o
-        operador @<<@, o método @jogo@ será adicionado diretamente à classe,
-        como um método de classe.
+        _Infants_, thought Paij-ree, although he held everyone of those men in very
+        high esteem.  He was just a kid and kids are tough as a brick's teeth. 
 
 
-        Quando você viu @class << objeto@, acredite em seu coração, _eu estou adicionando
-        diretamente para a definição de @objeto@._
+        The @<<@ operator allows you to alter the definition of an object.
+        Had Paij-ree simply used @class LotteryDraw@, his @play@ method would be
+        a normal instance method.  But since he used the @<<@ operator, the @play@
+        method will be added directly to the class, as a class method.  
 
 
-        A 
+        When you see @class << obj@, believe in your heart, _I'm adding directly to the definition
+        of @obj@._
+
+
         The budding organ instructor also threw in a tricky syntax worth examining.
         In the ninth line, a winner has been found.
 
 
         <pre>
-         vencedores[comprador] ||= []
-         vencedores[comprador] << [ bilhete, pontuacao ]
+         winners[buyer] ||= []
+         winners[buyer] << [ ticket, score ]
         </pre>
 
 
@@ -303,7 +295,7 @@
 
 
         <pre>
-         vendendores[comprador] = vencedores[comprador] || []
+         winners[buyer] = winners[buyer] || []
         </pre>
 
 
@@ -314,8 +306,8 @@
 
 
         <pre>
-         irb> SorteioLoteria.jogo.each do |vencedor, bilhetes|
-         irb>   puts vencedor + "won on " + bilhetes.length + " ticket(s)!"
+         irb> LotteryDraw.play.each do |winner, tickets|
+         irb>   puts winner + "won on " + tickets.length + " ticket(s)!"
          irb>   tickets.each do |ticket, score|
          irb>     puts "\t" + ticket.picks.join( ', ' ) + ": " + score
          irb>   end
@@ -353,8 +345,8 @@
 
 
         <pre>
-         irb> bilhete = BilheteLoteria.new
-         irb> bilhete.picks = 3
+         irb> ticket = LotteryTicket.new
+         irb> ticket.picks = 3
          NoMethodError: undefined method `picks=' for #<LotteryTicket:0xb7d49110>
         </pre>
 
