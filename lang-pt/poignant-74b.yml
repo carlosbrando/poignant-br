@@ -1,0 +1,123 @@
+        Variables which start with the American cash sign are global variables.  They can
+        be seen from anywhere in the program, *from inside any scope*.  (Dr. Cham used this
+        variable while snooping around The Originals' computer bay.)
+
+
+        So why does the *cash sign followed by a colon* represent an array of *all directories
+        where Ruby will search when you try to load a file with @require@*?  The cash sign
+        means "global."  But why the colon?
+
+
+        Historically, on many operating systems, a list of directories contains colons which
+        separated each entry.  I like to see the colon as a pair of eyes, scanning the directories
+        for files.  We store our lookout list behind the eyes.
+
+
+        Here's a few more special global variables:
+
+
+        <pre>
+         irb> $"      # The $" variable contains all files which have been loaded with `require'
+           => ["irb.rb", "e2mmap.rb", "irb/init.rb", ... "rbconfig.rb"]
+                      # These files are stored somewhere else, but their code is being used
+                      # in this program.  Much like quoting someone else's work -- these are the
+                      # footnotes -- hence the double-quote.
+
+         irb> $0      # The $0 variable contains the running program's filename.
+           => "irb"   # A zero can be considered the beginning of a number count.
+                      # This variable answers the question, "Where did this program begin?"
+
+         irb> $*      # The $* variable contains all the arguments passed into a program.
+           => ['--prompt', 'simple']
+                      # This one is easy to remember, if you remember that Ruby methods
+                      # also use the asterisk to capture arguments into an array.
+
+         # The $! contains the current exception raised.
+         # The exclamation indicates a state of alarm.  An exception!
+         irb> begin
+         irb>   raise TypeError, "I don't believe this information."
+         irb> rescue
+         irb>   p $!
+         irb> end
+           => #<TypeError: I don't believe this information.>
+
+         # The $@ contains the current backtrace, if an exception was raised.
+         # The backtrace shows were Ruby was _at_ when the exception fired.
+         irb> begin
+         irb>   raise TypeError, "I don't believe this information."
+         irb> rescue
+         irb>   p $@
+         irb> end
+           => ["(irb):25:in `irb_binding'", "/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'", 
+               "/usr/lib/ruby/1.8/irb/workspace.rb:52"]
+        </pre>
+
+
+        "I don't remember you."  Blix looked at the gorilla with great interest.
+        "Are you one of R.K.'s kids or something?"
+
+
+        "Oh, come on!" said Fox Small, holding up a bill with an exclamation mark on it up to the gorilla's nose.
+        "Don't tell me this means _nothing_ to you!  This one is probably _really important_
+        since it has an exclamation on it.  Maybe it pays for emergency stuff!  Hospital
+        bills or something!"
+
+
+        *"Yeah, surgery!"* said Fox Tall.
+
+
+        The gorilla looked at the foxes with disgust from under the brim of his cap.  "No,
+        you're wrong.  You can't pay for surgeries with that."
+
+
+        "But you see our point," said the small fox.  He grabbed some of the other bills.
+        "And you say this bill _cannot_ pay for surgeries?  Well that sounds like it has
+        a specific _non-surgery-related_ purpose.  Now, the question mark one.  Oh, what would that one be for?"
+
+        
+        "Hey, give me those," the gorilla snatched at the bills over the counter, but 
+        his long thumb kept getting in the way and every time he thought he had grabbed bills, 
+        it turned out he had only grabbed his long thumb.
+
+
+        "Hey, hey, look, he's mad," said Fox Tall, happily clapping.  "I wonder why.  Did you notice
+        how mad he started getting once we mentioned all these interesting meanings?  *We're on to
+        you!  We figured out your game so fast!"*
+
+
+        "We totally did!" said Fox Small, one of his elbows caught in the grip of the gorilla,
+        the other arm waving a bill that featured an underscore.
+        "This one's for buying floor supplies, maybe even big rolls of tile and linoleum."
+
+
+        "See," said Fox Tall, working to pry the gorilla's fingers free, "we just have to figure out which is more expensive:
+        surgery or linoleum!  This is _so easy!"_
+
+
+        *"NO IT'S NOT!"* yelled the gorilla, yanking at the smaller fox and battering the
+        fox with his palms.  *"YOU DON'T KNOW ANYTHING ABOUT MONKEY MONEY!!  YOU DON'T EVEN _HAVE_
+        YOUR OWN KINDS OF MONEY!!"*
+
+
+        "We could _easily_ have our own kinds of money!" said Fox Tall, taking the chimp's
+        hat and tossing it to the back of the room, where it sailed behind a wall of safety
+        deposit boxes.  "And -- _your hat is outta here!_"
+
+
+        "Come on, give him back his bills," said Blix, waving his arms helplessly from the
+        sidelines.  "We could really use this guy's help."
+
+
+        "Stop hitting me!" screamed the littlest fox.  "I've almost figured out this one
+        with the dots on it!!"
+
+
+        Suddenly, with great precision and without warning, Fox Tall grabbed the monkey's nose
+        and slammed his face down against the counter.  The pens and inkpads on its surface
+        rattled and "Bam!" said the fox.  The gorilla's eyes spun sleepily
+        as his arms... then his neck... then his head slithered to the floor behind the counter.
+
+
+        Here are a few more global variables you might care to use:
+
+

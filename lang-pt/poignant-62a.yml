@@ -1,0 +1,125 @@
+
+
+        The above code will retrieve the list of trucks found by preeventualists, then display only
+        those lines that actually contain the word 'pickup'.
+        That way we can trim out the descriptions and look for only the pertinent lines.
+
+
+        Above, the *index brackets* are used on a string, so the string is searched for whatever is inside
+        the brackets.  Since the string @'pickup'@ is inside the brackets, the @line@ string is searched
+        for the word "pickup".
+
+
+        !i/wixl-13.gif(On being funny.)!
+
+
+        When a web page is loaded with @read@, the entire page is loaded into memory.  Usually this
+        only takes up a few thousand bytes.  But if a page is big (several megabytes), you'll probably
+        want to use @each_line@, which loads one line at a time to avoid exhausting memory.
+
+
+        h3. Yielding is Kiddie Blocks
+
+
+        Ruby often uses iterators in this fashion.  Yes, iterators are used for cycling through each item in
+        a collection of items, such as an array or hash.  Now look at an IO source as a collection of lines. 
+        The iterator can crawl that collection of lines.
+
+
+        <pre>
+         class IO
+           # Definition for the each_line method.  Notice how it has no
+           # argument list.  Blocks don't need to be listed as arguments.
+           def each_line
+             until eof?        # until we reach the end of the file...
+               yield readline  # pass a line into the block
+             end
+           end
+         end
+        </pre>
+
+
+        The @yield@ keyword is the easiest way to use a block.  One word.  Just like a curtain has
+        a pullstring or like a suitcase has a handle.  Inside a method, you can press the blinking
+        @yield@ button and it will run the block attached to that method.  Glowing a strong red color
+        until the code inside the block is done.  And then it goes back to blinking and you can press
+        the button again if you like.
+
+
+        <pre>
+         def yield_thrice
+           yield
+           yield
+           yield
+         end
+        </pre>
+
+
+        Punch the @yield@ button three times quick and the block gets to live its life three times.
+
+
+        <pre>
+         irb> a = ['first, birth.', 'then, a life of flickering images.', 'and, finally, the end.']
+         irb> yield_thrice { puts a.shift }
+         # prints out:
+         #   first, birth.
+         #   then, a life of flickering images.
+         #   and, finally, the end.
+        </pre>
+
+
+        The @shift@ method pulls the first item off an array.  The barber @shift@ cuts the hair off
+        and hands it over.  Then, the scalp.  And just keeps going, whittling the poor guy down to
+        nothing.
+
+
+        You've seen blocks attached to methods.  Any Ruby method can have block attached to the end.
+
+
+        <pre>
+         # The brief style of attaching a block to a method.
+         # Here the block is surrounded with curly braces.
+         open( "idea.txt" ) { |f| f.read }
+
+         # The verbose style of attaching a block to a method.
+         # Here the block is surrounded with `do' and `end'
+         open( "idea.txt" ) do |f|
+           f.read
+         end
+        </pre>
+
+
+        If you pass arguments to @yield@, those arguments will also be passed to the block.
+        The block is riding in a little sidecar attached to the method's motorcycle.  The method
+        yells out a list arguments, screaming to the block over all the wind as they're
+        racing through the desert.  The block taps his helmet like, "I get it, my brain gets it."
+
+
+        <pre>
+         # The method opens two files and slides the resulting IO objects down the
+         # chute to an attached block.
+         def double_open filename1, filename2
+           open( filename1 ) do |f1|
+             open( filename2 ) do |f2|
+               yield f1, f2
+             end
+           end
+         end
+
+         # Prints the files out side-by-side.
+         double_open( "idea1.txt", "idea2.txt" ) do |f1, f2|
+           puts f1.readline + " | " + f2.readline
+         end
+        </pre>
+
+
+        You may also wonder what the @yield@ keyword has to do with street signs.  And really,
+        it's a good question with, I believe, a good answer.  When you run a method, you are giving
+        that method control of your program.  Control to do its job and then come back to with an
+        answer.
+
+
+        With @yield@, the method is stopping at the intersection, giving control back to you, to your block.  The method is letting
+        you do your work before resuming its work.  So while the @each_line@ method does the work of actually
+        reading lines from a file, the *block attached to the @each_line@ method* is handed the line
+        itself and gets a chance to hammer away at it in the sidecar.

@@ -1,0 +1,131 @@
+
+
+        Both @traits@ and @attr_reader@ are simply class methods.  When @attr_reader@ is used in the @LotteryTicket@,
+        metaprogramming kicks in behind the scenes and starts blowing up balloons, creating
+        *reader* methods for the instance variables @@picks@ and @@purchased@ above.
+
+
+        The code for the @traits@ method is the metaprogramming I've been alluding to.
+        Comments in the code reveal the three stages the method goes through when adding
+        traits.
+
+
+        # The *list of traits is passed on to @attr_accessor@*, which builds *reader* and
+        *writer* code for instance variables.  One for each trait.
+
+        # *Class methods are added* for each trait.  (A @life@ class method is added for a @:life@
+        trait.)  These class methods are used
+        in the class definition just like you would use @traits@ or @attr_accessor@.  This way, you can specify
+        the trait, along with the points given for a trait to a certain creature.
+
+        # *Add an initialize method* which sets up a new monster properly,
+        grabbing the right points and _POWER UP! POWER UP!_ the monster is
+        alive!
+
+
+        The beauty of these three steps is that you've taught Ruby how to code
+        monsters for you.  So when Ruby gets to the @traits@:
+
+
+        <pre>
+         class Creature
+           traits :life, :strength, :charisma, :weapon
+         end
+        </pre>
+
+
+        Ruby fills in the code behind the scenes and transplants a spiny green
+        heart and jumpstarts the body with a pullcord.
+        Ruby will use the metaprogramming from the @Creature@ class and build
+        out all the various methods, expanding the @traits@ list like this:
+
+
+        <pre>
+         class Creature
+         
+           # 1. set up reader and writer methods
+           attr_accessor :life, :strength, :charisma, :weapon
+
+           # 2. add new class methods to use in creature
+           def self.life( val )
+             @traits ||= {}
+             @traits['life'] = val
+           end
+
+           def self.strength( val )
+             @traits ||= {}
+             @traits['strength'] = val
+           end
+
+           def self.charisma( val )
+             @traits ||= {}
+             @traits['charisma'] = val
+           end
+
+           def self.weapon( val )
+             @traits ||= {}
+             @traits['weapon'] = val
+           end
+
+           # 3. initialize sets the default points for
+           #    each trait
+           def initialize
+             self.class.traits.each do |k,v|
+               instance_variable_set("@#{k}", v)
+             end
+           end
+
+         end
+        </pre>
+
+
+        Now, Ruby will gladly accept this
+        six-line @Dragon@ code, short enough to look nice when printed on playing
+        cards:
+
+
+        <pre>
+         class Dragon < Creature
+           life 1340     # tough scales
+           strength 451  # bristling veins
+           charisma 1020 # toothy smile
+           weapon 939    # fire breath
+         end
+        </pre>
+
+
+        h3. Eval, the Littlest Metaprogrammer
+
+
+        While the metaprogramming code above is just plain Ruby, it can be difficult to follow still.
+        I totally understand if you've come to this point and your eyes are spinning in their sockets
+        and your knees have locked up.  The trickiest parts of the above are the lines which call
+        the methods @instance_eval@ and @class_eval@.  Just rub some tiger balm on your joints while
+        I talk about @eval@.
+
+
+        We've been talking about *metaprogramming*.  Writing code which writes code.  The @eval@
+        method hangs out in this alley.
+        The vagrant @eval@ takes code you have stored up in a string and it executes that code.
+
+
+        <pre>
+         drgn = Dragon.new
+         # is identical to...
+         drgn = eval( "Dragon.new" )
+         # or, alternatively...
+         eval( "drgn = Dragon.new" )
+        </pre>
+
+
+        Here, let's write a program which has a hole in it.  Instead of writing a program
+        which creates a new @Dragon@, let's leave a hole where the @Dragon@ would be.
+
+
+        <pre>
+         print "What monster class have you come to battle? "
+         monster_class = gets
+         eval( "monster = " + monster_class + ".new" )
+         p monster
+        </pre>
+

@@ -1,0 +1,127 @@
+        <pre>
+         irb> $/      # The $/ is the line separator, it is normally set to \n, which represents _Enter_
+           => "\n"    # or "end of line".  The slash represents a sword slashing lines in a file.
+
+         # The line separator controls how methods like each_line or readlines breaks up strings.
+         irb> "Jeff,Jerry,Jill\nMichael,Mary,Myrtle".each_line { |names| p names }
+           => "Jeff,Jerry,Jill\n"
+           => "Michael,Mary,Myrtle"
+
+         # If you change the line separator, you change how many methods work, such as each_line.
+         # See what happens when I change the line separator to a comma.
+         irb> $/ = ','
+         irb> "Jeff,Jerry,Jill\nMichael,Mary,Myrtle".each_line { |names| p names }
+           => "Jeff,"
+           => "Jerry,"
+           => "Jill\nMichael,"
+           => "Mary,"
+           => "Myrtle"
+
+         irb> $,     # The $, variable is the join separator, used when joining strings with
+           => nil    # Array#join or Kernel::print.  The comma is a common join character.
+
+         # The join separator is normally empty.
+         irb> ['candle', 'soup', 'mackarel'].join
+           => "candlesoupmackarel"
+         irb> $, = ' * '; ['candle', 'soup', 'mackarel'].join
+           => "candle * soup * mackarel"
+         
+         # But, usually, you won't need the global variable.
+         irb> ['candle', 'soup', 'mackarel'].join ' # '
+           => "candle # soup # mackarel"
+
+         irb> $;     # The $; variable is the split separator, used when splitting strings
+           => nil    # with String#split.
+
+         # The split separator is normally empty, which means String#split will separate
+         # the string where there is whitespace.
+         irb> "candle  soup\nmackarel".split
+           => ["candle", "soup", "mackarel"]
+         irb> $; = 'a'; "candle  soup\nmackarel".split
+           => ["c", "ndle  soup\nm", "ck", "rel"]
+
+         # But, usually, you won't need the global variable.
+         irb> "candle # soup # mackarel".split ' # '
+           => ['candle', 'soup', 'mackarel']
+        </pre>
+
+
+        Outside the _Gorilla Mint_, Blix scolded the foxes.  "We could have used that guy's help!  If he knows
+        where R.K. is, we could use his cunning!"
+
+
+        "*We don't need that ape's money!*" said Fox Small.  "*We can make our _own_ money!*"
+
+
+        "*We could support electronic wristbands!*" said Fox Tall.
+
+
+        "His money is worthless," said Blix.  "It's gorilla money.  It has no value.  It's worse than
+        blue crystals."
+
+
+        "But it serves a purpose," said Fox Tall.
+
+
+        "No it doesn't," said Fox Small.  "He just said it's worthless."
+
+
+        "But what about linoleum and surgeries?" said Fox Tall.
+
+
+        "Yeah," said Fox Small, up at Blix.  "What about linoleum and surgeries?"
+
+
+        "If all the hospitals were staffed by gorillas and all the home improvement chains were strictly operated
+        by gorillas, then -- YES -- you could buy linoleum and surgeries.  But I _guarantee_ that you would have
+        very sloppy linoleum and very hideous surgeries.  I don't think you'd make it out of that economy alive."
+
+
+        "So, if R.K. is so cunning," said Fox Tall, grinning slyly, "why does he print such worthless currency?"
+
+
+        "It's a cover for other activities," said Blix.  "Besides, if you're so smart, why did you resort to
+        violently pounding that poor gorilla?"
+
+
+        "I guess that was a bad play," said Fox Tall, hanging his head.  "My friend here will tell you that I've
+        been on edge all day."
+
+
+        "And your rage finally reared its fuming snout!" said Fox Small.  "You're finally living up to your
+        goatee."
+
+
+        !i/wixl-10.gif!
+
+
+        Down the lanes they travelled, the two foxes oblivious to their direction, but having a good time
+        now that they had Blix leading the way with such urgency.  They lapsed into a careless wandering right behind Blix
+        and spent their afternoon heckling most of the passersby.
+
+
+        One such target of their ongoing commentary was The Winged Scroll Carriers, pairs of bats that carry
+        documents which need to be immediately sworn and notarized.  There can be no delay, they must go swift,
+        there is not even time to roll up the scroll, no, they must drop their swiss cheese and be out the door.
+
+
+        These couriers resemble a kind of Ruby construct called *delimited types*.  A long series of characters
+        comprises the scroll, flanked on each side by a bat bracing its curly wings to hold the scroll together.
+        The opening bat wears a hat on which is written @%w@, which identifies the scroll as a set of words.
+
+
+        <pre>
+         irb> bats = %w{The Winged Scroll Carriers}
+           => ['The', 'Winged', 'Scroll', 'Carriers']
+        </pre>
+
+
+        The @%w@ bats and their scroll, when fed into Ruby, emerge as an array of words.  This syntax is a shortcut
+        in case you don't want to go through the trouble of decorating each word with commas and quotes.  You are
+        in a hurry, too, there can be no delay.  You jot out the words between the bats and let Ruby figure out where
+        to cut.
+
+
+        Other bats, other hats.  For instance, the @%x@ hat runs an external program.
+
+

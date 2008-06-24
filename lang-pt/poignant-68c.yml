@@ -1,0 +1,74 @@
+        You have four weapons.  The boomerang.  The hero's sword.  The lettuce.  And the bombs.
+
+
+        To start off, open up @irb@ and load the libraries we've created above.
+
+
+        <pre>
+         irb> require 'dwemthy'
+         irb> require 'rabbit'
+        </pre>
+
+         
+        Now, unroll yourself.
+
+
+        <pre>
+         irb> r = Rabbit.new
+         irb> r.life
+           => 10
+         irb> r.strength
+           => 2
+        </pre>
+
+
+        Good, good.
+
+
+        h3. Rabbit Fights ScubaArgentine!
+
+
+        You cannot just go rushing into Dwemthy's Array, unseatbelted and merely
+        perfumed!!  You must advance deliberately through the demonic cotillion.  Or south,
+        through the thickets and labyrinth of coal.
+
+
+        For now, let's lurk covertly through the milky residue alongside the aqueducts.  And 
+        sneak up on the @ScubaArgentine@.
+
+
+        <pre>
+         class ScubaArgentine < Creature
+           life 46
+           strength 35
+           charisma 91
+           weapon 2
+         end
+        </pre>
+
+
+        To get the fight started, make sure you've created one of you and one of the
+        @ScubaArgentine@.
+
+
+        <pre>
+         irb> r = Rabbit.new
+         irb> s = ScubaArgentine.new
+        </pre>
+
+
+        Now use the little boomerang!
+
+
+        <pre>
+         irb> r ^ s
+         [You hit with 2 points of damage!]
+         #<ScubaArgentine:0x808c864 @charisma=91, @strength=35, @life=44, @weapon=2>
+         [Your enemy hit with 28 points of damage!]
+         [Rabbit has died.]
+        </pre>
+
+
+        For crying out loud!!  Our sample rabbit died!!
+
+

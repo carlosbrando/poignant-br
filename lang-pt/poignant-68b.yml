@@ -1,0 +1,176 @@
+        The program asks for a monster.  If you type in @Dragon@, then the @monster_class@ variable
+        will contain the string @"Dragon"@.  Inside the @eval@, a few strings get added together
+        to make the string @"monster = Dragon.new"@.  And when the @eval@ executes this string,
+        the @monster@ variable contains a @Dragon@ object.  Ready for battle.
+
+
+        This is great!  Now we can leave it up to the player to pick a monster!  Of course,
+        we're trusting the player to supply a real monster class.  If they type in @BotanicalWitch@
+        and there is no @BotanicalWitch@ class, they'll get an exception tossed in their face.
+
+
+        So, in short, @eval@ lets you make up code as you go.  Which can be useful and which can
+        be dangerous as well.
+
+
+        The @instance_eval@ and @class_eval@ method used in the metaprogramming for the @Creature@
+        class are slightly different from the normal @eval@.  These two special methods run code just like
+        @eval@ does, but they duck into classes and objects and run the code there.
+
+
+        <pre>
+         # The instance_eval method runs code as if it were run inside an
+         # object's instance method.
+         irb> drgn = Dragon.new
+         irb> drgn.instance_eval do
+         irb>   @name = "Tobias"
+         irb> end
+
+         irb> drgn.instance_variable_get( "@name" )
+           => "Tobias"
+
+         # The class_eval method runs code is if inside a class definition.
+         irb> Dragon.class_eval do
+         irb>   def name; @name; end
+         irb> end
+
+         irb> drgn.name
+           => "Tobias"
+        </pre>
+
+
+        As you can see above, the @instance_eval@ and @class_eval@ methods also can take a code block
+        instead of a string.  Which is just how things are done in Dwemthy's Array.
+
+
+        h3. Enough Belittling Instruction and Sly Juxtaposition -- Where Is Dwemthy's Array??
+
+
+        Tread carefully -- here is *the other half of DWEMTHY'S ARRAY!!*
+        *Add these lines to @dwemthy.rb@.*
+
+
+        <pre>
+         class Creature
+
+           # This method applies a hit taken during a fight.
+           def hit( damage )
+             p_up = rand( charisma )
+             if p_up % 9 == 7
+               @life += p_up / 4
+               puts "[#{ self.class } magick powers up #{ p_up }!]"
+             end 
+             @life -= damage
+             puts "[#{ self.class } has died.]" if @life <= 0
+           end
+
+           # This method takes one turn in a fight.
+           def fight( enemy, weapon )
+             if life <= 0
+               puts "[#{ self.class } is too dead to fight!]"
+               return
+             end
+
+             # Attack the opponent
+             your_hit = rand( strength + weapon )
+             puts "[You hit with #{ your_hit } points of damage!]"
+             enemy.hit( your_hit )
+
+             # Retaliation
+             p enemy
+             if enemy.life > 0
+               enemy_hit = rand( enemy.strength + enemy.weapon )
+               puts "[Your enemy hit with #{ enemy_hit } points of damage!]"
+               self.hit( enemy_hit )
+             end
+           end
+
+         end
+
+         class DwemthysArray < Array
+           alias _inspect inspect
+           def inspect; "#<#{ self.class }#{ _inspect }>"; end
+           def method_missing( meth, *args )
+             answer = first.send( meth, *args )
+             if first.life <= 0
+               shift
+               if empty?
+                 puts "[Whoa.  You decimated Dwemthy's Array!]"
+               else
+                 puts "[Get ready. #{ first.class } has emerged.]"
+               end
+             end
+             answer || 0
+           end
+         end
+        </pre>
+
+
+        This code adds two methods to @Creature@.  The @hit@ method which reacts to a hit from another
+        @Creature@.  And the @fight@ method which lets you place your own blows against that @Creature@.
+
+
+        When your @Creature@ takes a hit, a bit of defense kicks in and your @charisma@ value is used to generate a power-up.  Don't
+        ask me to explain the secrets behind this phenomenon.  A random number is picked, some simple math
+        is done, and, if you're lucky, you get a couple life points.  @@life += p_up / 4@.
+
+
+        Then, the enemy's blow is landed.  @@life -= damage@.  That's how the @Creature#hit@ method works.
+
+
+        The @fight@ method checks to see if your @Creature@ is alive.  Next, a random
+        hit is placed on your opponent.  If your opponent lives through the hit, it gets
+        a chance to strike back.  Those are the workings of the @Creature#fight@ method.
+
+
+        I'll explain @DwemthysArray@ in a second.  I really will.  I'm having fun doing it.
+        Let's stick with hitting and fighting for now.
+
+
+        h3. Introducing: You.
+
+
+        You may certainly tinker with derivations on this rabbit.  But official
+        Dwemthy Paradigms explicitly denote the code -- and the altogether character -- inscribed
+        below.  *Save this as @rabbit.rb@.*
+
+
+        <pre>
+         class Rabbit < Creature
+           traits :bombs
+
+           life 10
+           strength 2
+           charisma 44
+           weapon 4
+           bombs 3
+
+           # little boomerang
+           def ^( enemy )
+             fight( enemy, 13 )
+           end
+           # the hero's sword is unlimited!!
+           def /( enemy )
+             fight( enemy, rand( 4 + ( ( enemy.life % 10 ) ** 2 ) ) )
+           end
+           # lettuce will build your strength and extra ruffage
+           # will fly in the face of your opponent!!
+           def %( enemy )
+             lettuce = rand( charisma )
+             puts "[Healthy lettuce gives you #{ lettuce } life points!!]"
+             @life += lettuce
+             fight( enemy, 0 )
+           end
+           # bombs, but you only have three!!
+           def *( enemy )
+             if @bombs.zero?
+               puts "[UHN!! You're out of bombs!!]"
+               return
+             end
+             @bombs -= 1
+             fight( enemy, 86 )
+           end
+         end
+        </pre>
+
+

@@ -1,0 +1,66 @@
+
+
+        h3. Preeventualism in a Gilded Box
+
+
+        You've learned so much about @OpenURI@ and using @yield@ to write your own iterators.
+        You know your way around the lost-and-found service.  Really, you can starting hunting
+        through the Wixl junk drawer without me.
+
+
+        Let's neatly _encapsulate_ the entire service into a single class.
+
+        
+        <pre>
+         require 'open-uri'
+         module PreEventualist
+           def self.open page, query
+             qs = 
+               query.map do |k, v|
+                 URI.escape "#{ k }=#{ v }"
+               end.join "&"
+             URI.parse( "http://preeventualist.org/lost/" + page + "?" + qs ).open do |lost|
+               lost.read.split( "--\n" )
+             end
+           end
+           def self.search word
+             open "search", "q" => word
+           end
+           def self.searchlost word
+             open "searchlost", "q" => word
+           end
+           def self.searchfound word
+             open "searchfound", "q" => word
+           end
+           def self.addfound your_name, item_lost, found_at, description
+             open "addfound", "name" => your_name, "item" => item_lost, 
+                              "at" => found_at, "desc" => description
+           end
+           def self.addlost your_name, item_found, last_seen, description
+             open "addlost", "name" => your_name, "item" => item_found,
+                             "seen" => last_seen, "desc" => description
+           end
+         end
+        </pre>
+
+
+        At some point with your code, you need to start shaping it into something neat.  Save the above
+        module in a file called @preeventualist.rb@.
+
+
+        This module is a very simple library for using the Preeventualist's service.  This is exactly the
+        way libraries are written.  You whip up a module or a class, store it in a file, and, if you're
+        happy with it and want the world to benefit, put it on the web.
+
+
+        These stragglers can you use your module just like I used @OpenURI@ earlier.
+
+
+        <pre>
+         irb> require 'preeventualist'
+         irb> puts PreEventualist.search( 'truck' )
+         irb> puts PreEventualist.addfound( 'Why', 'Ruby skills', 'Wixl park',
+                "I can give you Ruby skills!\nCome visit poignantguide.net!" )
+        </pre>
+
+

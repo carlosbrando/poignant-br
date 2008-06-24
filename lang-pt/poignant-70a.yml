@@ -1,0 +1,109 @@
+
+
+        These are the living, breathing monstrosities of Dwemthy's Array.  I don't
+        know how they got there.  No one knows.  Actually, I'm guessing the @IntrepidDecomposedCyclist@
+        rode his ten-speed.  But the others: NO ONE knows.
+
+
+        If it's really important for you to know, let's just say the others were born there.
+        Can we move on??
+
+
+        As Dwemthy's Array gets deeper, the challenge becomes more difficult.
+
+
+        <pre>
+         dwary = DwemthysArray[IndustrialRaverMonkey.new,
+                               DwarvenAngel.new,
+                               AssistantViceTentacleAndOmbudsman.new,
+                               TeethDeer.new,
+                               IntrepidDecomposedCyclist.new,
+                               Dragon.new]
+        </pre>
+
+
+        Fight the Array and the monsters will appear as you go.  Godspeed
+        and may you return with harrowing tales and nary an angel talon piercing
+        through your shoulder.
+
+
+        Start here:
+
+
+        <pre>
+         irb> r % dwary
+        </pre>
+
+
+        Oh, and none of this "I'm too young to die" business.  I'm sick of that crap.
+        I'm not going to have you insulting our undead young people.  They are our future.
+        After our future is over, that is.
+
+
+        !i/wixl.dwemthy-3.gif(The rabbit has changed us.)!
+
+
+        h3. The Making of Dwemthy's Array
+
+
+        Fast forward to a time when the winds have calmed.  
+        The dragon is vanquished.  The unwashed masses bow.  We love you.
+        We are loyal to you.
+
+
+        But what is this centipede nibbling in your eardrum?  You dig with your finger, but you can't
+        get him out!  Blasted!  It's that infernal Dwemthy's Array again.  *Explain yourself
+        Dwemthy!*
+
+
+        Here, I shall unmask the Array itself for you.
+
+
+        <pre>
+         class DwemthysArray < Array
+           alias _inspect inspect
+           def inspect; "#<#{ self.class }#{ inspect }>"; end
+           def method_missing( meth, *args )
+             answer = first.send( meth, *args )
+             if first.life <= 0
+               shift
+               if empty?
+                 puts "[Whoa.  You decimated Dwemthy's Array!]"
+               else
+                 puts "[Get ready. #{ first.class } has emerged.]"
+               end
+             end
+             answer || 0
+           end
+         end
+        </pre>
+
+
+        By now, you're probably feeling very familiar with inheritance.  The @DwemthysArray@ class
+        inherits from @Array@ and, thus, behaves just like one.  For being such a mystery, it's
+        alarmingly brief, yeah?
+
+
+        So it's an Array.  Filled with monsters.  But what does this extra code do?
+
+
+        h3. Inspect
+
+
+        The @inspect@ method isn't really a necessary part of Dwemthy's Array.  It's something
+        Dwemthy added as a courtesy to his guests.  (Many call him twisted, many call him 
+        austere, but we'd all be ignorant to go without admiring the footwork he puts in for us.)        
+
+
+        Every object in Ruby has an @inspect@ method.  It is defined in the @Object@ class,
+        so it trickles down through the pedigree to every wee child object just born.
+
+
+        <pre>
+         irb> o = Object.new
+           => #<Object:0x81d60c0>
+         irb> o.inspect
+           => "#<Object:0x81d60c0>"
+        </pre>
+
+

@@ -1,0 +1,110 @@
+        Have you noticed this?  Whenever we create an object in @irb@, this noisy @#<Object>@
+        verbage stumbles out!  It's a little name badge for the object.  The @inspect@
+        method creates that name badge.  The badge is just a string.
+
+
+        <pre>
+         irb> class Rabbit
+         irb>   attr_accessor :slogan
+         irb>   def initialize s; @slogan = s; end
+         irb>   def inspect; "#<#{ self.class } says '#{ @slogan }'>"; end
+         irb> end
+
+         irb> class FakeRabbit < Rabbit
+         irb> end
+
+         irb> Rabbit.new "i blow'd the drgn's face off!!"
+           => #<Rabbit says 'i blow'd the drgn's face off!!'>
+         irb> FakeRabbit.new "Thusly and thusly and thusly..."
+           => #<FakeRabbit says 'Thusly and thusly and thusly...'>
+        </pre>
+
+        
+        The thing is: @irb@ is talking back.  Every time you run some code in @irb@,
+        the _return value_ from that code is inspected.  How handy.  It's a little
+        conversation between you and @irb@.  And @irb@ is just reiterating what you're
+        saying so you can see it for your self.
+
+
+        You could write your own Ruby prompt very easily:
+
+
+        <pre>
+         loop do
+           print ">> "
+           puts  "=> " + eval( gets ).inspect
+         end
+        </pre>
+         
+
+        This prompt won't let you write Ruby code longer than a single line.  It's the essence
+        of interactive Ruby, though.  How do you like that?  Two of your recently learned concepts
+        have come together in a most flavorful way.  The @eval@ takes the typed code and runs it.
+        The response from @eval@ is then inspected.
+
+
+        Now, as you are fighting monsters in @irb@, Dwemthy's Array will be inspected and
+        replying with the monsters you have left to fight.
+
+
+        !i/wixl-5.gif(The foxes eat out.)!
+
+
+        h3. Method Missing
+
+
+        Don't you hate it when you yell "Deirdre!" and like ten people answer?  That _never_ happens in
+        Ruby.  If you call the @deirdre@ method, only one @deirdre@ method answers.  You can't have
+        two methods named the same.  If you add a second @deirdre@ method, the first one disappears.
+
+
+        You can, however, have a method which *answers to many names*.
+
+
+        <pre>
+         class NameCaller
+           def method_missing( name, *args )
+             puts "You're calling `" + name + "' and you say:"
+             args.each { |say| puts "  " + say }
+             puts "But no one is there yet."
+           end
+           def deirdre( *args )
+             puts "Deirdre is right here and you say:"
+             args.each { |say| puts "  " + say }
+             puts "And she loves every second of it."
+             puts "(I think she thinks you're poetic.)"
+         end
+        </pre>
+
+
+        When you call the method @deirdre@ above, I'm sure you know what will happen.  Deirdre will
+        love every second of it, you and your dazzling poetry.
+
+
+        But what if you call @simon@?
+
+
+        <pre>
+         irb> NameCaller.new.simon( 'Hello?', 'Hello? Simon?' )
+         You're calling `simon' and you say:
+           Hello?
+           Hello? Simon?
+         But no one is there yet.
+        </pre>
+        
+
+        Yes, @method_missing@ is like an answering machine, which intercepts your method call.  In Dwemthy's
+        Array we use call forwarding, so that when you attack the Array, it passes that attack on straight to
+        the first monster in the Array.
+
+
+        <pre>
+         def method_missing( meth, *args )
+           answer = first.send( meth, *args )
+           # ... snipped code here ...
+         end
+        </pre>
+
+
+        See!  See!  That skinny little @method_missing@ passes the buck!
+

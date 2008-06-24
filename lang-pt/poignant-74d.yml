@@ -1,0 +1,126 @@
+        <pre>
+         irb> %w{ruby --help}
+           => ["ruby", "--help"]
+         irb> %x{ruby --help}
+           => "Usage: ruby [switches] [--] [programfile] [arguments] ..."
+        </pre>
+
+
+        My favorite is the @%Q@ hat, which can also be written as just @%@.  This acts just like a double-quoted string,
+        but looks nice when used with strings that run-on for many lines.  Like, say you're adding a new method with @eval@.
+
+
+        <pre>
+         m = "bats!"
+         eval %{
+           def #{ m }
+             puts "{" * 100
+           end
+         }
+        </pre>
+
+
+        Just like a double-quoted string, you can use the string interpolation lilypads inside.
+
+
+        !i/wixl-15.png(Cloneberries: The More You Eat, The More *You*.)!
+
+
+        Blixy wagged his head.  "Oh, dear me."
+
+
+        "Egads! My hand is pregnant," said Fox Tall, watching the little fox embryo slide about in his palm.
+
+
+        "They are good berries, though," said Blix.  "The wine they make from these berries
+        will make ya grow a few eyeballs in your teeth.  But no more than that."
+
+
+        "Ah, pain!" yelled Fox Small, as his miniature squeezed out through the pores in his scalp.  But soon he
+        was cradling his little self and murmuring lullablies.  _Nevermore, nevermore, sweetly sang the
+        nightingale.  Winking starlight, sleeping still, whilst perched on a Sycamore stump._
+
+
+        Making duplicates of Ruby objects is no more than a berry's worth of code.
+
+
+        <pre>
+         irb> tree = [:berry, :berry, :berry]
+           => [:berry, :berry, :berry]
+         irb> treechild = tree.clone
+           => [:berry, :berry, :berry]
+        </pre>
+
+
+        The @clone@ method makes an exact copy of a Ruby object.  How does this differ from regular
+        assignment?
+
+
+        <pre>
+         irb> tree_charles_william_iii = tree
+           => [:berry, :berry, :berry]
+        </pre>
+
+
+        Assigning object to variables only creates more nicknames.  The above Array can be called @tree_charles_william_iii@
+        now.  Or the shorter @tree@.  The same object, but different names.
+
+
+        However, a clone is a copy of an object.  You can modify it without affecting the original.
+
+
+        <pre>
+         irb> treechild << 'flower'
+           => [:berry, :berry, :berry, 'flower']
+         irb> tree
+           => [:berry, :berry, :berry]
+        </pre>
+
+
+        The @clone@ method doesn't make copies of everything attached to the object, though.  In the array above, only the
+        array is copied, not all the symbols and strings inside.
+
+
+        You may also see the @dup@ method used to copy objects.  The @dup@ method makes copies which aren't as exact.  For example,
+        there are objects in Ruby which are "frozen" and can't be altered.  If you @clone@ the object, you get an exact copy which
+        is also frozen.  If you use @dup@, you get an unfrozen copy that you can change if you like.
+
+
+        The @clone@ method also copies the metaclass of an object, whereas @dup@ does not.
+
+
+        <pre>
+         irb> o = Object.new
+         irb> class << o
+         irb>   def nevermore; :nevermore; end
+         irb> end
+
+         irb> o.clone.nevermore
+           => :nevermore
+         irb> o.dup.nevermore
+         # NoMethodError: undefined method `nevermore' for #<Object:0xb7d4a484>
+         #         from (irb):7
+         </pre>
+
+
+        You don't always need to make copies of objects, though, since many methods like @collect@ and @gsub@
+        and @format@ make copies for you as part of their work.
+
+
+        !i/wixl-4.gif(Deer of the Smoky Pink Puffing.)!
+
+
+        Over the hills and down the valleys, they ran through the grass where the Deer of the Smoky Pink
+        Puffing roam.  The sun was obscured by the lumbering pink clouds, emblazened with deer language,
+        tinting the horizon a gradient of grapefruit and secreting a glow over the meadow.  The clouds
+        slid past each other, some bobbing upwards, destined for Canadian relatives.  Others landing a
+        readable distance from a recipient's hooves.
+
+
+        "Let's stop!  _Please!_" yelled Fox Tall.  "You can't expect us to run in this *unbreathable fluff!*"
+
+
+        "Why are you yelling?" said Blix, as a thin stratus telegram wafted behind his legs.  "You don't
+        need to raise your voice above a whisper.  These long skinny clouds are usually just a mumble or
+        a sigh.  They may not even make it all the way."
+
