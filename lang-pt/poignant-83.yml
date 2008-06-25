@@ -1,41 +1,39 @@
     - !^sidebar
-      About Ruby Versions: >
-
-        If you've visited any sites which offer Ruby for download, you've probably seen a number
-        of different versions of Ruby available.  Obviously, the greater the version number, the
-        more recent the version of Ruby.  But that's not exactly true.  Version numbers have meaning
-        in Rubyland and I'd like you to make an educated choice.
-
-
-        *1.8.3* is the latest *stable* version of Ruby.  Stable versions offer the latest features
-        which have been widely tested and are recommended for general use.  When new stable versions
-        come out, you can safely upgrade to these new versions.
+      Sobre versões do Ruby: >
+		
+		Se você tem visitado vários site que oferecem download do Ruby, você provavelmente viu vários número
+		de diferentes versões disponíveis. Lógico que quanto maior for o número da versão, mais recente é a versão
+        do Ruby. Mas isso não é verdade. Na terra do Ruby, números de versões tem significados e eu gostaria que
+        você fizesse uma escolha educada.
 
 
-        *1.9.0* is the latest *development* release of Ruby.  The development release includes
-        experimental changes to Ruby and unfixed problems.  This release is for anyone who wants
-        take a peep into the future of Ruby at the risk of encountering some bugs.
+        A últma versão *estável* do Ruby é a *1.8.3*. Versões estáveis oferecem os recursos mais recentes
+        onde são testadas várias vezes e são recomendados para uso geral.  Quando novas versoes estáveis,
+        são lançadas, você pode seguramente atualizar para estas novas versões.
 
 
-        Now, you'll notice that the version number is comprised of three individual numbers,
-        which are: *the major version*, *the minor version*, and *the teeny version*.  The 
-        major version counts each complete rewrite of Ruby.  The minor version is changed based
-        on sweeping changes to Ruby.  The teeny version is incremented every few months as smaller
-        changes and bug fixes are brought in.
+        A última liberação do Ruby para *desenvolvimento* é a *1.9.0*. A liberação de desenvolvimento inclui
+		alterações experimentais para o Ruby e problemas não resolvidos. A liberação é destinada a todos que queiram		
+        espiar o futuro do Ruby correndo o risco de encontrar alguns erros.
 
 
-        All editions of Ruby thus far have a major version of 1.  When Ruby2 comes along, you'll
-        see this notch up one.
+        Agora, você notará que o número da versão é composta por três números individuais,
+        que são: *a versão maior*, *a versão menor*, e *a versão pequenina*. A versão maior conta cada completa
+        reescrita do Ruby Ruby.  A menor versão é alterada baseada em mudanças radicais do Ruby.
+        A versão mais leve é incrementada a cada poucos meses como menores alterações e soluções para alguns erros.
 
 
-        The minor version indicates whether a version is stable or not.  *If the minor version
-        is an even number, then that version of Ruby is stable.   If it's odd, then that Ruby
-        is a development version.*  After a year or so, when the development version is ready 
-        for the world, both numbers are increased and the teeny version is returned to zero.
+        Todas as edições do Ruby, até agora, têm uma grande versão de números 1. Quando Ruby2 vier, você verá
+		este aumentar para 2.
 
 
-        Oh, and if I could give you a taste of how smoothly Ruby moves along!  I can't count
-        how often a fresh idea lands on the Ruby-Core mailing list, where the Emperors of
-        Ruby converse, and *that same idea* gets worked into Ruby within a few days.  It is
-        a lovely machine says I.
+        A menor versão indica se a versão é estável ou não. *Se a versão menor é um numero par, 
+		então a versão é estável.  Se é ímpar, então aquele Ruby é uma versão para desenvolvimento.* 
+		Depois de um ano ou mais, quando versão de desenvolvimento está pronta para o mundo,
+		ambos os números são incrementados e o número da versão pequenina volta para zero.
+
+
+        Oh, e se eu podesee-se lhe dar um gostinho de como Ruby evolui! Eu não posso contar quantas vezes
+		uma ídeia frequinha aterra na lista de email do Ruby-Core, onde os Imperadores do Ruy conversam,
+		e *aquela mesma idéia* começa a ser trabalhada em poucos dias. Ela é uma bela máquina, eu digo.
 
