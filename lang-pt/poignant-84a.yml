@@ -1,63 +1,64 @@
 
 
-      h3. Reading the Prompt
+      h3. Lendo o prompt
 
 
-      I know the prompt surely looks bewildering.  Well, let's not delay in dissecting it.  It's very simple.
-      The prompt has three parts, each separated by *colons*.
+      Eu sei que o prompt com certeza parece desconcertante.  Bem, vamos logo dissecá-lo.  É muito simples.
+      O prompt tem três partes, cada uma separada por *dois pontos*.
 
 
-      The first section, which reads @irb(main)@, shows *the name of the program* we are running.  The second
-      section shows a line number, *a count of how many lines of Ruby we've typed*.  The third section is *a
-      depth level*.  Whenever you open a statement which needs closing, the depth level will increase by one.
-      And whenever Irb senses that your code is unfinished, *the end of the prompt will become an asterisk.*  
+      A primeira seção, onde está escrito @irb(main)@, mostra *o nome do programa* que estamos rodando.  A segunda
+      seção mostra o número da linha, *um contador de quantas linhas de Ruby nós digitamos*.  A terceira seção é *um
+      nível de profundidade*.  Toda vez que você abrir uma expressão que precisa ser fechada, o nível de profundidade 
+      vai aumentar uma unidade. E toda vez que o Irb detectar que seu código não está terminado, *o fim do prompt
+      vai virar um asterisco.*  
 
 
       <pre>
-       irb(main):001:0> bell = :pressed
-       => :pressed
-       irb(main):002:0> ice_gun =
-       irb(main):003:0*   if bell == :pressed
-       irb(main):004:1>     :on
+       irb(main):001:0> campainha = :apertada
+       => :apertada
+       irb(main):002:0> pistola_de_gelo =
+       irb(main):003:0*   if campainha == :apertada
+       irb(main):004:1>     :ligar
        irb(main):005:1>   else
-       irb(main):006:1*     :off
+       irb(main):006:1*     :desligar
        irb(main):007:1>   end
-       => :on
+       => :ligar
       </pre>
         
 
-      Notice how the depth level increased to 1 when I opened the @if@ statement.  And how the asterisk
-      indicates the continuation of a line.
+      Veja como o nível de profundidade aumentou para 1 quando eu abri o @if@.  E como o asterisco indica a
+      continuação da linha.
 
 
-      h3. Tweaking the Prompt
+      h3. Ajustando o Prompt
 
 
-      You don't have to like the prompt's appearance, though.  I'm not forcing you to do anything and,
-      if you want to hack it up, I'm right here beside you.
+      Você não tem que gostar da aparência do prompt, entretanto.  Não estou forçando você a fazer nada e,
+      se você quer hackeá-lo, estou do seu lado.
 
 
-      Irb has a few other included prompts which may better appease your senses.  Try @irb --prompt simple@.
-      This time Irb will treat you to a very basic set of arrows, allowing you to enter your code without
-      the whole status report.
+      O Irb tem mais alguns prompts que podem agradar seus sentidos.  Tente @irb --prompt simple@.
+      Desta vez o Irb vai lhe proporcionar um conjunto bem básico de setas, permitindo a você digitar seu
+      código sem todo o relatório de status.
 
 
       <pre>
-       >> %w(my best friend's arm)
-       => ["my", "best", "friend's", "arm"]
+       >> %w(braço do meu melhor amigo)
+       => ["braço", "do", "meu", "melhor", "amigo"]
        >> 
       </pre>
 
 
-      Ruby comes with a few prompts.  The *simple* prompt seen above.  The *xmp* prompt which has no
-      prompt at all and indents the answer arrow.  (It's supposed to look nice for printing.)  Also,
-      the *null* prompt, which eliminates prompts altogether.  Set the prompt by just supplying the
-      name with the @--prompt@ option.  (So, @irb --prompt null@.)
+      Ruby vem com alguns prompts.  O prompt *simple* visto acima.  O prompt *xmp* que não tem nenhum
+      prompt e identa a seta de resposta.  (Deve ficar bom para impressão.)  Além disso, o prompt
+      *null*, que elimina todos os prompts.  Defina o prompt fornecendo o nome dele na opção
+      @--prompt@.  (Portanto, @irb --prompt null@.)
 
 
-      Making your own prompt is okay as well.  Irb is completely customizable from inside of itself.
-      The @conf@ object contains all of Irb's configuration settings.  Some of these configuration
-      settings are for controlling the prompt.
+      Você também pode fazer seu próprio prompt.  O Irb é completamente customizável de dentro dele mesmo.
+      O objeto @conf@ contém todas as configurações do Irb.  Algumas destas configurações são para o 
+      controle do prompt.
 
 
       <pre>
@@ -67,30 +68,30 @@
       </pre>
 
 
-      Let's setup our prompt to display line numbers with just a bit of decor.
+      Vamos configurar nosso prompt para mostrar o número da linha com um pouquinho de decoração.
 
 
       <pre>
-       >> conf.prompt_i = "%3n :> "           # the normal prompt
-       >> conf.prompt_s = "%3n .%l "          # the string continuation prompt
-       >> conf.prompt_c = "%3n .^ "           # the code continuation prompt
-       >> conf.return_format = "    => %s\n"  # the answer arrow
+       >> conf.prompt_i = "%3n :> "           # o prompt normal
+       >> conf.prompt_s = "%3n .%l "          # o prompt de continuação de string
+       >> conf.prompt_c = "%3n .^ "           # o prompt de continuação de código
+       >> conf.return_format = "    => %s\n"  # a seta de resposta
       </pre>
 
 
-      Above are the four parts to an Irb prompt.  The string continuation prompt is displayed when
-      a string is still open when you hit _Enter_.  The @%3n@ describes that Irb should reserve three
-      characters for the line number.  The @%l@ saves a place for displaying the type of string being
-      continued.  (If you're continuing a double-quoted string, it shows a double quote.  If you're
-      continuing a regular expression, it shows a slash.)
+      Acima estão as quatro partes de um prompt Irb.  O prompt de continuação de string é mostrado quando
+      uma string ainda está aberta quando você aperta _Enter_.  O @%3n@ descreve que o Irb deve reservar três
+      caracteres para o número da linha.  O @%l@ guarda um lugar para mostrar o tipo da string que será
+      continuada.  (Se você está continuando uma string de aspas duplas, ele mostra aspas duplas.  Se você
+      está continuando uma expressão regular, ele mostra uma barra.)
 
 
-      The rest are little symbols to decorate the prompt.  So, in the case of a continuing code line,
-      I show a caret which points up to the line where that line of code started. 
+      O resto são apenas símbolos para decorar o prompt.  Então, em caso de continuação de uma linha de código,
+      eu mostro um acento circunflexo que aponta para a linha onde aquela linha de código começou. 
 
 
-      You can read more about customizing Irb and saving your configuration to a file in 
-      the complete "guide to Irb":http://www.rubycentral.com/book/irb.html, available in
-      the free-for-your-wandering-Internet-eyes _Programming Ruby_.
+      Você pode ler mais sobre a customização do Irb e sobre salvar sua configuração num arquivo no 
+      completo "guia para o Irb":http://www.ruby-doc.org/docs/ProgrammingRuby/html/irb.html, disponível no
+      _Programming Ruby_, grátis-para-seus-olhos-de-Internet-perambulantes.
 
 
