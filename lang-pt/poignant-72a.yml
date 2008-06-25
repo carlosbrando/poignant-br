@@ -1,112 +1,111 @@
 
 
-        And that's the reality of riding intercity transit in Wixl.  It's terribly competitive.  The morning
-        bus is so crowded that most white collar animals get frogs to hold their seat through the nighttime.
-        For whatever reason, it works.  It's become this staple of their workflow and their economy.
+        E esta é a realidade de andar no trânsito intermunicipal em Wixl. É terrivelmente competitivo. O ônibus
+        da manhã é tão cheio que a maioria dos animais de colarinho branco conseguem sapos para guardar seus lugares durante o período da noite.
+        Por qualquer razão, isto funciona. Se tornou mercadoria do fluxo de trabalho de sua economia.
 
 
-        If you can muster up a bit of imagination, you can see a *percent sign* as a frog's slanted face.
-        Got the picture in your head?  Now let me show you frogs that camp out inside strings.
-
-
-        <pre>
-         # The %s format is for placing full strings.
-         irb> "Seats are taken by %s and %s." % ['a frog', 'a frog with teeth']
-           => "Seats are taken by a frog and a frog with teeth."
-
-         # The %d format is for placing numbers, while the %f format is for
-         # floats (decimal numbers).
-         irb> frogs = [44, 162.30]
-         irb> stats = "Frogs have filled %d seats and paid %f blue crystals."
-         irb> stats % frogs
-           => "Frogs have filled 44 seats and paid 162.30 blue crystals."
-
-         # Formatting is flexible with types, you can pass in strings
-         # and format them like numbers.
-         irb> frogs = ['44', '162.30']
-         irb> stats % frogs
-           => "Frogs have filled 44 seats and paid 162.30 blue crystals."
-        </pre>
-
-
-        What you are seeing above uses the @%@ method in the @String@ class.
-        This method takes *a string* and *an array* and slurps them in together
-        to create a new string.  The items from the list are yanked out (in order) and
-        placed in their saved seats.  It's the open of the business
-        day and the frogs have done their job.
+        Se você consegue reunir um pouco de imaginação, pode ver um *sinal de percentagem* como um rosto inclinado de um sapo.
+        Visualisou a figura em sua cabeça? Agora deixe-me mostrar os sapos que acampam em strings.
 
 
         <pre>
-         # See, here's the String#% method called like other methods.
-         irb> "Please move over, %s.".%( 'toothless frog' )
-           => "Please move over, toothless frog"
+         # O formato %s serve para posicionar strings cheias.
+         irb> "Assentos são ocupados por %s e %s." % ['um sapo', 'um sapo com dentes']
+           => "Assentos são ocupados por um sapo e um sapo com dentes."
 
-         # Now let's call it the prettier way, with the percent sign
-         # right between the string and the array.
-         irb> "Here is your 1098 statement for the year, %s." % ['teeth frog']
-           => "Here is your 1098 statement for the year, teeth frog."
+         # O %d formato serve para colocar numeros, enquanto o formato %f serve para
+         # floats (números decimais).
+         irb> sapos = [44, 162.30]
+         irb> imediatamente = "Os sapos preencheram %d assentos e pagaram %f cristais azuis."
+         irb> imediatamente % sapos
+           => "Os sapos preencheram 44 assentos e pagaram 162.30 cristais azuis."
+
+         # A formatação é flexivel com tipos, você pode transmitir em strings
+         # e formatá-los como números.
+         irb> sapos = ['44', '162.30']
+         irb> imediatamente % sapos
+           => "Os sapos preencheram 44 assentos e pagaram 162.30 cristais azuis."
         </pre>
 
 
-        This is also available as the @Kernel::format@ method or @Kernel::sprintf@
-        method.  (In the C language, there is a @sprintf@ method which operates
-        just like this.)
+        O que você está vendo acima usa o método @%@ nas classes @String@.
+        Este método pega *um string* e *um array* e mastiga-os para criar
+        uma nova string.  Os itens da lista são puxados (em ordem) e
+        colocados em seus lugares reservados. É o começo de um dia de negócios
+        e os sapos já fizeram seu trabalho.
 
 
         <pre>
-         irb> format "Frogs are piled %d deep and travel at %d mph.", [5, 56]
-           => "Frogs are piled 5 deep and travel at 56 mph."
+         # Observe, aqui está o método String#% chamado como os outros métodos.
+         irb> "Mexa-se por favor, %s.".%( 'sapo desdentado' )
+           => "Mexa-se por favor, sapo desdentado"
+
+         # Agora vamos chamar da maneira mais bonita, com o sinal de porcentagem
+         # entre o string e o array.
+         irb> "Aqui está sua frase 1098 para o ano, %s." % ['sapo com dentes']
+           => "Aqui está sua frase 1098 para o ano, sapo com dentes."
         </pre>
 
 
-        For the most part, you'll only need @%s@ (strings), @%d@ (integer numbers)
-        or @%f@ (float numbers) format specifiers.  The @%p@ placeholder will
-        run @inspect@ on an object.
-
-
-        Yeah, so, frog formatting is really handy for building strings that are
-        assembled from different kinds of data.  You can learn all the various
-        kinds of format specifiers by reading the @ri sprintf@ page.  I'm just
-        going to give you a few quick pointers.
-
-
-        Let's say you have the array but you want the items to appear in
-        *a different order* in the string.  In such a situation, you can identify
-        specific items by placing a number (@1$@ for the first item, @2$@ for the second,
-        and so on) right after the percent sign.
+        Isto também está disponível como o método @Kernel::format@ ou o método @Kernel::sprintf@
+        (Na linguagem C, tem um método @sprintf@ que opera assim.)
 
 
         <pre>
-         irb> "This bus has %1$d more stops before %2$d o'clock.  That's %1$d more stops." % [16, 8]
-           => "This bus has 16 more stops before 8 o'clock.  That's 16 more stops."
+         irb> format "Sapos são empilhados %d de profundidade e viajam a %d mph.", [5, 56]
+           => "Sapos são empilhados 5 de profundidade e viajam a 56 mph."
         </pre>
 
 
-        The second tip I have for you is that you can allot a certain number of characters for
-        each item, a width.  And if an item is smaller than the width, extra spaces
-        will be used before the item.  To pad it.
-        If the width is a negative number, the item will be forced to left and the
-        padding will come after it.
+        Para a maioria das partes, você precisará somente @%s@ (strings), @%d@ (números inteiros)
+        ou @%f@ (números float) especificadores de formato.  O símbolo @%p@ irá 
+        executar @inspect@ num objeto.
+
+
+        Sim, então, o formato sapo é realmente útil para construir strings que são
+        montados por diferentes tipos de dados.  Você pode aprender todos os vários tipos
+        de especificadores de formatos lendo a pagina @ri sprintf@.  Só te darei
+        alguns rápidos indicadores.
+
+
+        Vamos dizer que você tem um array mas quer que os itens apareçam em uma
+        *ordem diferente* na string.  Numa situação como esta, você pode identificar
+        itens específicos (colocando @1$@ para o primeiro item, @2$@ para o segundo,
+        e assim por diante) depois do sinal de porcentagem.
 
 
         <pre>
-         # Give one item 30 characters of width
-         irb> "In the back of the bus: %30s." % ['frogs']
-           => "In the back of the bus:                          frogs."
-
-         # Give one left-justified item 30 characters of width
-         irb> "At the front of the bus: %-30s." % ['frogs']
-           => "At the front of the bus: frogs                         ."
+         irb> "Este ônibus tem mais %1$d paradas antes das %2$d horas.  Isto são mais %1$d paradas." % [16, 8]
+           => "Este ônibus tem mais 16 paradas antes das 8 horas.  Isto são mais 16 paradas."
         </pre>
 
 
-        Fox Small kept looking up at the bus driver.  Remember, he wouldn't enter the bus!
+        A segunda dica que tenho para você é que pode destinar um certo numero de caracteres
+        para cada item, uma largura. E se um item é menor que a largura, espaços extras
+        serão usados antes do item.  Para preenchê-lo.
+        Se a largura é um número negativo, o item será forçado para esquerda e o
+        preenchimento virá depois dele.
 
 
-        "What's the deal?" said Fox Tall.  "Can't you just get on and we'll just stand in the aisle?"
+        <pre>
+         # Dê a um item 30 caracters de largura
+         irb> "Na traseira do ônibus: %30s." % ['sapos']
+           => "Na traseira do ônibus:                          sapos."
+
+         # Dê a um item justificado a esquerda 30 caracteres de largura
+         irb> "Na parte da frente do ônibus: %-30s." % ['sapos']
+           => "Na parte da frente do ônibus: sapos                         ."
+        </pre>
 
 
-        "You really want to get on this bus?  That driver has no hands," said Fox Small, speaking close
-        and hushed to Fox Tall, "and all he has, instead of hands, are sucker cups."
+        Raposa Pequena continuou olhando para o motorista do ônibus.  Lembre-se, ele não entraria no ônibus!
+
+
+        "Qual o problema?" disse a Raposa Alta.  "Você não pode entrar e ficamos no corredor?"
+
+
+        "Você realmente quer entrar neste ônibus?  Aquele motorista não tem mãos," disse Raposa Pequena, falando perto
+        de maneira a aquietar Raposa Alta, "e tudo o que ele tem, ao invés de mãos, são copos com canudos."
 
 
