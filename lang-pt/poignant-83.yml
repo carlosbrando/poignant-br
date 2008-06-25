@@ -1,10 +1,10 @@
     - !^sidebar
-      Sobre versões do Ruby: >
+      Sobre as versões do Ruby: >
 		
-        Se você tem visitado vários site que oferecem download do Ruby, você provavelmente viu vários números
-        de diferentes versões disponíveis. Lógico que quanto maior for o número da versão,
+        Se você tem visitado vários site que oferecem download do Ruby, você provavelmente viu várias versões
+        diferentes disponíveis. Parece lógico que quanto maior for o número da versão,
         mais recente é a versão do Ruby. Mas isso não é verdade. Na terra do Ruby, números de versões têm significados
-        e eu gostaria que você fizesse uma escolha educada.
+        e eu gostaria que você fizesse a escolha certa.
 
 
         A última versão *estável* do Ruby é a *1.8.3*. Versões estáveis oferecem os recursos mais recentes
@@ -12,20 +12,20 @@
         são lançadas, você pode seguramente atualizar seu Ruby para estas novas versões.
 
 
-        A última liberação do Ruby para *desenvolvimento* é a *1.9.0*. A liberação de desenvolvimento inclui
-        alterações experimentais e problemas não resolvidos. A liberação é destinada a todos que queiram
+        A última versão do Ruby liberada para *desenvolvimento* é a *1.9.0*. A versão de desenvolvimento inclui
+        alterações experimentais e problemas não resolvidos. Esta versão é destinada a todos que queiram
         espiar o futuro do Ruby, correndo o risco de encontrar alguns erros.
 
 
         Agora, você notará que o número da versão é composto por três números individuais,
         que são: *a versão maior*, *a versão menor*, e *a versão pequenina*. A
-        versão maior conta cada reescrita completa do Ruby.  A menor versão é alterada baseada
+        versão maior é aumentada toda vez que o Ruby é reescrito.  A menor versão é alterada baseando-se
         em mudanças radicais do Ruby. A versão pequenina é incrementada de poucos em poucos meses como menores
         alterações e soluções para alguns erros.
 
 
-        Todas as edições do Ruby, até agora, têm uma grande versão de números 1. Quando Ruby2 vier, você verá
-        este número aumentar para 2.
+        Todas as edições do Ruby, até agora, têm a versão maior como 1. Quando o Ruby 2.0 vier, você verá
+        este número mudar para 2.
 
 
         A menor versão indica se a versão é estável ou não. *Se a versão menor
@@ -34,8 +34,8 @@
         para o mundo, ambos os números são incrementados e o número da versão pequenina volta para zero.
 
 
-        Oh, e se eu pudesse lhe dar um gostinho de como Ruby evolui! Eu não posso contar
-        quantas vezes uma idéia fresquinha aterra na lista de email do Ruby-Core, onde os Imperadores do
-        Ruy conversam, e *aquela mesma idéia* começa a ser trabalhada em poucos dias. Ela é
-        uma bela máquina, eu digo.
+        Ahh se eu pudesse lhe dar um gostinho de como o Ruby evolui! Eu não posso contar
+        quantas vezes uma idéia fresquinha pousa na lista de emails do Ruby-Core, onde os Imperadores do
+        Ruby conversam, e *aquela mesma idéia* começa a ser trabalhada em poucos dias. Como eu costumo
+        dizer, é uma bela engrenagem.
 
