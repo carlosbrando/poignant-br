@@ -1,14 +1,14 @@
     - !^sidebar
       Sobre as versões do Ruby: >
 		
-        Se você tem visitado vários site que oferecem download do Ruby, você provavelmente viu várias versões
+        Se você tem visitado vários sites que oferecem download do Ruby, você provavelmente viu várias versões
         diferentes disponíveis. Parece lógico que quanto maior for o número da versão,
         mais recente é a versão do Ruby. Mas isso não é verdade. Na terra do Ruby, números de versões têm significados
         e eu gostaria que você fizesse a escolha certa.
 
 
         A última versão *estável* do Ruby é a *1.8.3*. Versões estáveis oferecem os recursos mais recentes
-        onde são testadas várias vezes e são recomendados para uso geral.  Quando novas versões estáveis
+        que são testadas várias vezes e são recomendados para uso geral.  Quando novas versões estáveis
         são lançadas, você pode seguramente atualizar seu Ruby para estas novas versões.
 
 
