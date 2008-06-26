@@ -1,34 +1,30 @@
-    - If I Were Looking For a Vehicle: >
+﻿    - Se Eu Estivesse Procurando Por um Veículo: >
 
         !i/wixl-7.gif(Sitting for a moment.)!
 
-
-        I like seeing these two out in the wild.  They got pretty bored here in the studio.  They started making
-        up wierd slogans and stuff.  They had some phrase they kept repeating, forming fixations upon.
-        You can't be exposed to all that contrived fox nonsense.
+        Eu gosto de ver estes dois em um lugar selvagem. Eles ficam entendiados pra caramba aqui no estúdio.
+        Começaram fazendo slogans estranhos e coisas assim. Tinham algumas frases que matinham
+        repetindo, formando fixações.
+        Você não pode ser exposto a todas estas tolices exageradas da raposa.
         
+    Vamos apenas dizer: Estou realmente tentando o meu melhor para manter as coisas num nível acadêmico.
+        Como nunca estive na faculdade, não posso dizer bem se cada passagem escrita adere bem ao severo critério
+        demandado pela academia.
+        Eu tenho amigos universitários em abundância, alguns que fazem um tour global em suas buscas, e eu tento
+        inflexionar minha voz apenas com a mistura de alta cultura deles.
+        
+        Às vezes eu aplaudo a mim mesmo por ir além do trabalho dos meus amigos educados - apenas em corredores vazios,
+        nós nunca somos arrogantes em público - porque _Eu na verdade me registrei_ numa escola de pensamento enquanto
+        eles ainda estão em seus livros, virando e virando.
 
-        Let's just say: I am really trying my best to keep things collegiate.  Having never attended college, I can't
-        well say if every passage written chimes right with the stringent criteria which academia demands.
-        I have university friends aplenty, some who tour the globe in their pursuits, and I try to
-        inflect my voice with just their blend of high culture.
-
-
-        Sometimes I applaud myself for going beyond the work of my educated friends -- only in quiet corridors, we never
-        butt heads publicly -- because _I have actually subscribed_ to a school of thought while they are still
-        in their books, turning and turning.
-
-
-        *I am a preeventualist.*  I have dabbled in it long enough and am glad to come forth with it.
-        Inevitably, some of you have already started mining this book for Marxist symbology.  I am sad
-        to kill those interpretations, but I believe any nihilist conclusions you've drawn will still hold up
-        under scrutiny.
-
-
-        Anyway, I'll drop the rhetoric.  I only mention preeventualism because, aside from being a refreshing
-        and easy alternative to the post-modernism we're born with, _this_ meta-cult offers a free lost-and-found
-        service for the residents of Wixl.
-
+        *Eu sou um pré-eventualista.* Eu tenho me interessado por isto por tempo suficiente e me orgulho disto ter acontecido.
+        Inevitavelmente, alguns de vocês já devem ter começado a vasculhar esse livro atrás de simbologia Marxista.
+        Sinto muito em matar estas interpretações, mas acredito que qualquer conclusão niilista que você possa ter
+        será mantida sobre vigilância.
+      
+        De qualquer modo, vou deixar a retórica de lado. Eu apenas menciono o pré-eventualismo porque, além de
+        ser uma alternativa renovada e fácil ao pós-modernismo com que nascemos, _este_ meta-culto oferece um
+        serviço de achados e perdidos gratuito para os residentes de Wixl.
 
         <pre>
          require 'open-uri'
@@ -40,45 +36,50 @@
 
         I have no way of alerting the foxes to this service.  And I'm sure it's too soon for their truck to be listed.
         Still, the good intentions are here.
-
-
-        If you're connected to the Internet, the above Ruby should have downloaded the web page from the Internet and
-        printed it to the screen.  In a message resembling this:
-
-
+        
+        Não tenho como alertar as raposas deste serviço. E tenho certeza que ainda é muito cedo para que seu caminhão seja listado.
+        Ainda assim, as boas intenções estão aqui.
+        
+        Se você está conectado à Internet, o código Ruby acima deve ter baixado a página da Internet e impresso na tela 
+        uma mensagem que se parece com isto:
+        
         <pre class="text">
-                           THE PREEVENTUALIST'S LOSING AND FINDING REGISTRY
-                  (a free service benefiting the ENLIGHTENED who have been LIGHTENED)
+                  REGISTO DE ACHADOS E PERDIDOS DOS PRÉ-EVENTUALISTAS
+                (um serviço gratuito para os ESCLARECIDOS que foram  ILUMINADOS)
 
 
-                                              ---
-                              updates are made daily, please check back!
-                                              ---
+                                                                  ---
+                            atualizações são feitas diariamente, por favor, verifique!
+                                                                  ---
 
 
-                                 this service is commissioned and
-                             subsidized in part by The Ashley Raymond
-                                        Youth Study Clan
+                                        este serviço é comissionado e subsidiado
+                                            em parte pelo Clã de Estudo Jovem
+                                                        Ashley Raymond
+                                      
 
 
-                                              ...
-                              all seals and privileges have been filed
-                        under the notable authorship of Perry W. L. Von Frowling,
-                  Magistrate Polywaif of Dispossession.  Also, Seventh Straight Winner
-                           of the esteemed Persistent Beggar's Community Cup.
-                                              ...
+                                                                  ...
+                                todos os selos e privilégios são da notável autoria
+                                            de Perry W. L. Von Frowling,
+                                    Magistrado Polywaif de Desapropriação
+                              Também vencedor sete vezes seguida da respeitada
+                                    Copa Comunitária do Mendigo Insistente
+                                                                  ...
 
 
-          ABOUT THE REGISTRY
+          SOBRE O REGISTRO
           ==================
-          Hello, if you are new, please stay with us.  A brief explanation of our service will 
-          follow.  First, a bit of important news from our beloved magistrate.  (The kids call
-          him Uncle Von Guffuncle. Tehe!)
+          Olá, se você é novo, por favor, fique conosco. A seguir será dada uma breve explicação
+          do nosso serviço. Em primeiro lugar, algumas notícias do nosso amado magistrado.
+          (As crianças o chamam de Tio Von Besteirotio. Haha!)
 
-          IMPORTANT NEWS
-          ==============
-          / 15 April 2005 /
-          hi, big news.  we were on channel 8 in wixl and ordish.  cory saw it.  i was on and 
-          jerry mathers was on.  if you didn't see it, e-mail cory.  he tells it the best.  all 
-          i can say is those aren't MY hand motions!! (joke for people who watch channel 8.)  
-          thanks harry and whole channel 8 news team!!
+          NOTÍCIAS IMPORTANTES
+          =======================
+          / 15 de Abril de 2005 /
+          oi, grandes novidades. estivemos no canal 8 em wixl e ordish. o cory viu.
+          eu apareci e também o jerry mathers. se você não viu, mande um e-mail pro cory.
+          ele conta o melhor. tudo o que posso dizer é que esta não são MINHAS mãos
+          em movimento!! (piada para quem assiste o canal 8.)
+          obrigado harry e toda a equipe de notícias do canal 8!!
+          
