@@ -57,19 +57,11 @@ end
 desc "Combina os trechos do poignant em um único arquivo"
 task :merge_pt do
   File.open('lang-pt/poignant.yml', 'w') do |output|
-    dir = Dir.new("lang-pt")
-    files = dir.entries
-    files.delete("localization.yml")
-    files.delete("poignant.yml")
-    files.delete(".")
-    files.delete("..")
+    files = Dir["lang-pt/*.yml"]
+    files -= %w[lang-pt/localization.yml lang-pt/poignant.yml]
     files.sort!
     files.each do |ind|
-      File.open("lang-pt/#{ind}", "r") do |part|
-        part.each_line do |line|
-          output.write line
-        end
-      end
+      output.write File.read(ind)
     end
   end
 end
