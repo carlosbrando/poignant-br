@@ -36,34 +36,36 @@
            puts lost.read
          end
         </pre>
-        
+
+
         Não tenho como alertar as raposas deste serviço. E tenho certeza que ainda é muito cedo para que seu caminhão seja listado.
         Ainda assim, as boas intenções estão aqui.
-        
+
+
         Se você está conectado à Internet, o código Ruby acima deve ter baixado a página da Internet e impresso na tela 
         uma mensagem que se parece com isto:
-        
+
+
         <pre class="text">
-						REGISTO DE ACHADOS E PERDIDOS DOS PRÉ-EVENTUALISTAS
-                (um serviço gratuito para os ESCLARECIDOS que foram  ILUMINADOS)
+                      REGISTRO DE ACHADOS E PERDIDOS DOS PRÉ-EVENTUALISTAS
+              (um serviço gratuito para os ESCLARECIDOS que foram  ILUMINADOS)
 
-                                                ---
-					atualizações são feitas diariamente, por favor, verifique!
-                                                ---
+                                              ---
+                   atualizações são feitas diariamente, por favor, verifique!
+                                              ---
 
 
-                            este serviço é comissionado e subsidiado
-                                em parte pelo Clã de Estudo Jovem
-                                         Ashley Raymond
-                                      
-                                                
-												...
-						todos os selos e privilégios são da notável autoria
-									de Perry W. L. Von Frowling,
-								Magistrado Polywaif de Desapropriação
-							Também vencedor sete vezes seguida da respeitada
-								Copa Comunitária do Mendigo Insistente
-                                                ...
+                           este serviço é comissionado e subsidiado
+                               em parte pelo Clã de Estudo Jovem
+                                        Ashley Raymond
+
+
+                                              ...
+                         todos os selos e privilégios são apresentados
+                       sob a notável autoria de Perry W. L. Von Frowling,
+               Magistrado Polywaif de Desapropriação. Também vencedor sete vezes
+                 seguidas da respeitada Copa Comunitária do Mendigo Insistente
+                                              ...
 
 
           SOBRE O REGISTRO
@@ -80,4 +82,3 @@
           ele conta o melhor. tudo o que posso dizer é que esta não são MINHAS mãos
           em movimento!! (piada para quem assiste o canal 8.)
           obrigado harry e toda a equipe de notícias do canal 8!!
-          
