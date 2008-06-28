@@ -31,18 +31,18 @@
         Ele então se perguntou. "O que são esses números?"
 
 
-        E sua mente tocou um pequen vídeo clip dele vendendo todos os tipos de números.  E,
+        E sua mente tocou um pequeno vídeo clip dele vendendo todos os tipos de números.  E,
         por anos e anos, viajando e vendendo números.
 
 
         E ele perguntou ao seu cérebro, "Pessoas comprarão números?"
 
 
-        E seu cérebro disse, "Se ele compram o direito três números, dê-lhes um prémio."
+        E seu cérebro disse, "Se eles compram o direito de três números, dê-lhes um prémio."
 
 
         Pelo que ele mesmo imaginava um salto alto com um ski e jogando neve nas pessoas
-        presents.  Não questione: ele seria um ícone.
+        presentes.  Não questione: ele seria um ícone.
 
 
         Então ele foi e fez o que seu cérebro disse e vendeu números. O pai da loteria
@@ -199,7 +199,7 @@
 
 
         <pre>
-         SorteaLoteria.comprado_por 'Yal-dal-rip-sip',
+         SorteioLoteria.comprado_por 'Yal-dal-rip-sip',
              BilheteLoteria.new( 12, 6, 19 ),
              BilheteLoteria.new( 5, 1, 3 ),
              BilheteLoteria.new( 24, 6, 8 )
@@ -212,7 +212,7 @@
 
         <pre>
          class BilheteLoteria
-           def contagem( final )
+           def pontuacao( final )
              contador = 0
              final.numeros_escolhidos.each do |nota|
                contador += 1 if numeros_escolhidos.include? nota
@@ -223,19 +223,24 @@
         </pre>
 
 
-        O método @contagem@ compara um @BilheteLoteria@ com um bilhete aleatório,
+        O método @pontuacao@ compara um @BilheteLoteria@ com um bilhete aleatório,
         o qual representa a combinação vencedora.  O bilhete aleatório é passado
         através da variável @final@.  O bilhete recupera um ponto para todo número
-        vencedor.  O ponto total é retornado do método @contagem@.
+        vencedor.  A pontuação final é retornada pelo método @pontuacao@.
 
 
         <pre>
          irb> bilhete  = BilheteLoteria.new( 2, 5, 19 )
          irb> vencedor = BilheteLoteria.new( 4, 5, 19 )
-         irb> bilhete.contagem( vencedor )
+         irb> bilhete.pontuacao( vencedor )
            => 2
         </pre>
 
+
+        Você verá como Paij-ree é brilhante, em tempo hábil.  Seu pai lhe encarregou
+        de finalizar a loteria para ele, enquanto a demanda de bilhetes consumidos...
+
+        Você não pode apenas imaginar o jovem Paij-ree em seu escritório, 
 
         You will see how brilliant Paij-ree is, in time.  His father commissioned him
         to finish the lottery for him, while the demand for tickets consumed the
@@ -246,20 +251,20 @@
 
  
         <pre>
-         class << LotteryDraw
-           def play
-             final = LotteryTicket.new_random
-             winners = {}
-             @@tickets.each do |buyer, ticket_list|
-               ticket_list.each do |ticket|
-                 score = ticket.score( final )
-                 next if score.zero?
-                 winners[buyer] ||= []
-                 winners[buyer] << [ ticket, score ]
+         class << SorteioLoteria
+           def joga
+             final = BilheteLoteria.novo_aleatorio
+             vencedores = {}
+             @@bilhetes.each do |comprador, lista_bilhetes|
+               lista_bilhetes.each do |bilhete|
+                 pontuacao = bilhete.pontuacao( final )
+                 next if pontuacao.zero?
+                 vencedores[comprador] ||= []
+                 vencedores[comprador] << [ bilhete, pontuacao ]
                end
              end
-             @@tickets.clear
-             winners
+             @@bilhetes.clear
+             vencedores
            end
          end
         </pre>
@@ -276,16 +281,18 @@
         high esteem.  He was just a kid and kids are tough as a brick's teeth. 
 
 
-        The @<<@ operator allows you to alter the definition of an object.
-        Had Paij-ree simply used @class LotteryDraw@, his @play@ method would be
-        a normal instance method.  But since he used the @<<@ operator, the @play@
-        method will be added directly to the class, as a class method.  
+        O operador @<<@ permite à você alterar a definição de um objeto.
+        Paij-ree simplesmente tinha usado a classe @SorteioLoteria@, e o método
+        dele, @joga@, seria um método de instância normal.  Mas, uma vez que ele
+        usou o operador @<<@, o método @joga@ será adicionado diretamente à classe,
+        como um método de classe.
 
 
-        When you see @class << obj@, believe in your heart, _I'm adding directly to the definition
-        of @obj@._
+        Quando você viu @class << objeto@, acredite em seu coração, _eu estou adicionando diretamente
+        para a definição de @objeto@._
 
 
+        A 
         The budding organ instructor also threw in a tricky syntax worth examining.
         In the ninth line, a winner has been found.
 
