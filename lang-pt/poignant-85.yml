@@ -1,5 +1,5 @@
     - !^sidebar
-      Soluços do Window: >      
+      Soluços do Windows: >      
 
         Certo, aqui está o que você precisa para fazer funcionar no Windows o auto-completar com o TAB.
         "Baixe este arquivo.":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
