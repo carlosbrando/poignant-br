@@ -237,22 +237,20 @@
         </pre>
 
 
-        Você verá como Paij-ree é brilhante, em tempo hábil.  Seu pai lhe encarregou
-        de finalizar a loteria para ele, enquanto a demanda de bilhetes consumidos...
+        Com o tempo você perceberá o quão brilhante Paij-ree é (ou era). Seu pai o
+        encarregou de conduzir a loteria por ele, e a demanda por bilhetes só crescia,
+        à medida que o dia passava.  Você consegue imaginar o jovem Paij-ree - em seu
+        terno pomposo - brincando com eláticos de dinheiro com seus dedos jovens, em
+        meio à reunião da empresa na qual propôs a última parte do sistema?  Com certeza,
+        quando se levantou, seu pai falou tudo para ele, mas ele se apoiou no projetor e
 
-        Você não pode apenas imaginar o jovem Paij-ree em seu escritório, 
-
-        You will see how brilliant Paij-ree is, in time.  His father commissioned him
-        to finish the lottery for him, while the demand for tickets consumed the
-        lottery captain's daylight hours.  Can't you just imagine young Paij-ree in his stuffy
-        suit, snapping a rubber band in his young thumbs at the company meetings where he proposed the
         final piece of the system?  Sure, when he stood up, his dad did all the talking for
         him, but he flipped on the projector and performed all the hand motions.
 
  
         <pre>
          class << SorteioLoteria
-           def joga
+           def jogo
              final = BilheteLoteria.novo_aleatorio
              vencedores = {}
              @@bilhetes.each do |comprador, lista_bilhetes|
@@ -270,26 +268,26 @@
         </pre>
 
 
-        His father's associates were stunned.  What was this?  (Paij-ree knew this
-        was just another class method definition -- they would all feel completely
-        demoralized when he told them so.)  They couldn't understand the *double
-        angle bracket* up there!  Yes, it was a concatenator, but how is it in
-        the class title?
+        Os sócios de seu pai ficaram atordoados.  O que era aquilo?  (Paij-ree
+        sabia que era apenas a definição de um método de classe -- eles se
+        sentiram completamente desmoralizados quando ele disse isso).  Eles não
+        conseguiam entender as *duas setas para esquerda*.  Sim, era um
+        concatenador, mas o que estaria ele fazendo em meio à definição da classe?
+        
 
-
-        _Infants_, thought Paij-ree, although he held everyone of those men in very
-        high esteem.  He was just a kid and kids are tough as a brick's teeth. 
+        Crianças, pensava Paij-ree, embora levantasse a auto-estima dos sócios.
+        Ele era apenas uma criança e crianças são duras como uma parede de tijolos.
 
 
         O operador @<<@ permite à você alterar a definição de um objeto.
-        Paij-ree simplesmente tinha usado a classe @SorteioLoteria@, e o método
-        dele, @joga@, seria um método de instância normal.  Mas, uma vez que ele
-        usou o operador @<<@, o método @joga@ será adicionado diretamente à classe,
+        Paij-ree simplesmente havia usado a classe @SorteioLoteria@, e o método
+        dele, @jogo@, seria um método de instância normal.  Mas, uma vez que usou o
+        operador @<<@, o método @jogo@ será adicionado diretamente à classe,
         como um método de classe.
 
 
-        Quando você viu @class << objeto@, acredite em seu coração, _eu estou adicionando diretamente
-        para a definição de @objeto@._
+        Quando você viu @class << objeto@, acredite em seu coração, _eu estou adicionando
+        diretamente para a definição de @objeto@._
 
 
         A 
@@ -298,8 +296,8 @@
 
 
         <pre>
-         winners[buyer] ||= []
-         winners[buyer] << [ ticket, score ]
+         vencedores[comprador] ||= []
+         vencedores[comprador] << [ bilhete, pontuacao ]
         </pre>
 
 
@@ -307,7 +305,7 @@
 
 
         <pre>
-         winners[buyer] = winners[buyer] || []
+         vendendores[comprador] = vencedores[comprador] || []
         </pre>
 
 
@@ -318,8 +316,8 @@
 
 
         <pre>
-         irb> LotteryDraw.play.each do |winner, tickets|
-         irb>   puts winner + "won on " + tickets.length + " ticket(s)!"
+         irb> SorteioLoteria.jogo.each do |vencedor, bilhetes|
+         irb>   puts vencedor + "won on " + bilhetes.length + " ticket(s)!"
          irb>   tickets.each do |ticket, score|
          irb>     puts "\t" + ticket.picks.join( ', ' ) + ": " + score
          irb>   end
@@ -357,8 +355,8 @@
 
 
         <pre>
-         irb> ticket = LotteryTicket.new
-         irb> ticket.picks = 3
+         irb> bilhete = BilheteLoteria.new
+         irb> bilhete.picks = 3
          NoMethodError: undefined method `picks=' for #<LotteryTicket:0xb7d49110>
         </pre>
 
