@@ -1,17 +1,17 @@
     - !^sidebar
-      Soluços do Window: >      
+      SoluÃ§os do Window: >      
 
-        Certo, aqui está o que você precisa para fazer funcionar no Windows o auto-completar com o TAB.
+        Certo, aqui estÃ¡ o que vocÃª precisa para fazer funcionar no Windows o auto-completar com o TAB.
         "Baixe este arquivo.":http://whytheluckystiff.net/ruby/dist/readline.so-for-1.8.zip
-        Um zip com dois arquivos. Copie para dentro do instalação do seu Ruby.
+        Um zip com dois arquivos. Copie para dentro do instalaÃ§Ã£o do seu Ruby.
         Coloque readline.dll na pasta *bin*. O arquivo readline.so vai na
         pasta *lib/ruby/1.8/i386-mswin32*
 
 
-        Então, digite na sua linha de comando: @irb --readline -r irb/completion@.
+        EntÃ£o, digite na sua linha de comando: @irb --readline -r irb/completion@.
 
 
-        E para os Europeus, você precisará "disto.":http://whytheluckystiff.net/ruby/dist/Input.euro
-        Salve como *.inputrc* e coloque-o no seu diretório raiz. (Seu diretório pessoal
-        que contém suas pastas Desktop e Meus Documentos.)
+        E para os Europeus, vocÃª precisarÃ¡ "disto.":http://whytheluckystiff.net/ruby/dist/Input.euro
+        Salve como *.inputrc* e coloque-o no seu diretÃ³rio raiz. (Seu diretÃ³rio pessoal
+        que contÃ©m suas pastas Desktop e Meus Documentos.)
 
