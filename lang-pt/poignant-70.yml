@@ -1,144 +1,145 @@
     - >
-        Grim prospects.  I can't ask you to return to the rabbit kingdom, though.
-        Just pretend like you didn't die and make a whole new rabbit.
+        Duras perspectivas.  Eu não posso te pedir para retornar ao reino
+        dos coelhos, no entanto, basta fingir como se você não tivesse morrido e
+        fazer um novo coelho.
 
 
         <pre>
-         irb> r = Rabbit.new
+         irb> r = Coelho.new
 
-         # attacking with boomerang!
+         # atacando com bumerangue!
          irb> r ^ s
 
-         # the hero's sword slashes!
+         # os golpes de espada do herói!
          irb> r / s
 
-         # eating lettuce gives you life!
+         # comendo alface lhe dá vida!
          irb> r % s
 
-         # you have three bombs!
+         # você possui três bombas!
          irb> r * s
         </pre>
 
 
-        Pretty neat looking, wouldn't you say?  The code in @rabbit.rb@ alters a few math symbols
-        which work only with the @Rabbit@.  Ruby allows you to change the behavior of math operators.  After all,
-        *math operators are just methods!*
+        Muito claro, você não diria?  O código em @coelho.rb@ modifica alguns simbolos matemáticos que trabalham
+        somente com @Coelho@.  Ruby lhe permite alterar o comportamento dos operadores matemáticos.  Afinal, 
+        *operadores matemáticos são apenas métodos!*
 
 
         <pre>
-         # the boomerang is normally an XOR operator.
+         # o bumerangue é normalmente um operador XOR.
          irb> 1.^( 1 )
            => 0
 
-         # the hero's sword normally divides numbers.
+         # a espada do herói normalmente divide números.
          irb> 10./( 2 )
            => 5
 
-         # the lettuce gives the remainder of a division.
+         # o alface dá o resto da divisão.
          irb> 10.%( 3 )
            => 1
 
-         # the bomb is for multiplication.
+         # a bomba é para multiplicação.
          irb> 10.*( 3 )
            => 30
         </pre>
 
 
-        Where it makes sense, you may choose to use math operators on some of your Classes.  Ruby
-        uses these math operators on many of its own classes.  Arrays, for example, have a handful
-        of math operators which you can see in the list of instance methods when you type: @ri Array@.
+        Quando faz sentido, você pode optar por utilizar operadores matemáticos em algumas de suas classes.  Ruby 
+        usa esses operadores matemáticos em muitas de suas próprias classes.  Arrays, por exemplo, tem uma porção 
+        de operadores matemáticos que você poder ver na lista de instância dos métodos quando você digita: @ri Array@.
 
 
         <pre>
-         # the plus operator combines two arrays into a single array
+         # o operador mais combina dois arrays em um único array
          irb> ["D", "W", "E"] + ["M", "T", "H", "Y"]
            => ["D", "W", "E", "M", "T", "H", "Y"]
 
-         # minus removes all items in the second array found in the first
+         # menos remove todos os itens do segundo array encontrados no primeiro
          irb> ["D", "W", "E", "M", "T", "H", "Y"] - ["W", "T"]
            => ["D", "E", "M", "H", "Y"]
 
-         # the multiplier repeats the elements of an array
+         # o multiplicador repete os elementos de um array
          irb> ["D", "W"] * 3
            => ["D", "W", "D", "W", "D", "W"]
         </pre>
 
 
-        You may be wondering: what does this mean for math, though?  What if I add the number three
-        to an array?  What if I add a string and a number?  *How is Ruby going to react?*
+        Você deve estar se perguntando: afinal, o que isso significa para a matemática?  E se eu adicionar o número 
+        três para um array?  E se eu adicionar uma string e um número?  *Como Ruby irá reagir?*
 
 
-        Please remember these operators are just methods.  But, since these operators _aren't readable
-        words_, it can be harder to tell what they do.  Use @ri@.  Often you'll find that the operators
-        are identical to other readable methods.  You can then choose to use the operator or the method.
-        Whichever is clearer to you.
+        Por favor, lembre-se, esses operadores são apenas métodos.  Mas, uma vez que esses operadores 
+        _não são palavras legíveis, fica difícil dizer o que eles fazem.  Use o @ri@, muitas vezes você
+        verá que os operadores são idênticos a outros métodos legíveis.  Você pode optar por utilizar o
+        operador ou o método, o que for mais claro para você.
 
 
         <pre>
-         # divide with an operator method ...
+         # divida com um método operador ...
          irb> 10 / 3
            => 3
 
-         # ... or a readable method?
+         # ... ou um método legível?
          irb> 10.div 3
            => 3
         </pre>
 
 
-        And that's how the Rabbit's sword divides. 
+        Esta é forma que a espada do coelho divide.
 
 
-        h3. The Harsh Realities of Dwemthy's Array AWAIT YOU TO MASH YOU!!
+        h3. A Dura Realidade de Dwemthy's Array TE AGUARDA PARA LHE ESMAGAR !!
 
 
-        Once you're done playchoking the last guy with his oxygen tube, it's time
-        to enter The Array.  I doubt you can do it.  You left your hatchet at home.  And
-        I hope you didn't use all your bombs on the easy guy.
+        Depois que você terminou de brincar de afogar o último cara com o tubo de oxigênio dele, é hora
+        de entrar No Array.  Eu dúvido que você possa fazer isso.  Você deixou sua machadinha em casa.
+        Eu espero que você não tenha usado todas as suas bombas com o cara fácil.
 
 
-        You have six foes.
+        Você possui seis inimigos.
 
 
         <pre>
-         class IndustrialRaverMonkey < Creature
-           life 46
-           strength 35
-           charisma 91
-           weapon 2
+         class MacacoIndustrialEntusiasmante < Criatura
+           vida 46
+           forca 35
+           carisma 91
+           arma 2
          end
 
-         class DwarvenAngel < Creature
-           life 540
-           strength 6
-           charisma 144
-           weapon 50
+         class AnjoDosAnoes < Criatura
+           vida 540
+           forca 6
+           carisma 144
+           arma 50
          end
 
-         class AssistantViceTentacleAndOmbudsman < Creature
-           life 320
-           strength 6
-           charisma 144
-           weapon 50
+         class TentaculoViceAssistenteEOmbudsman < Criatura
+           vida 320
+           forca 6
+           carisma 144
+           arma 50
          end
 
-         class TeethDeer < Creature
-           life 655
-           strength 192
-           charisma 19
-           weapon 109
+         class CervoDeDentes < Criatura
+           vida 655
+           forca 192
+           carisma 19
+           arma 109
          end
 
-         class IntrepidDecomposedCyclist < Creature
-           life 901
-           strength 560
-           charisma 422
-           weapon 105
+         class IntrepidoCiclistaDecomposto < Criatura
+           vida 901
+           forca 560
+           carisma 422
+           arma 105
          end
 
-         class Dragon < Creature
-           life 1340     # tough scales
-           strength 451  # bristling veins
-           charisma 1020 # toothy smile
-           weapon 939    # fire breath
+         class Dragao < Criatura
+           vida 1340     # escamas duras
+           forca 451  # veias ressaltadas
+           carisma 1020 # sorridente
+           arma 939    # cospe fogo
          end
         </pre>

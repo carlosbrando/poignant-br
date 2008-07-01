@@ -1,32 +1,32 @@
-        Have you noticed this?  Whenever we create an object in @irb@, this noisy @#<Object>@
-        verbage stumbles out!  It's a little name badge for the object.  The @inspect@
-        method creates that name badge.  The badge is just a string.
+        Você percebeu?  Sempre que criamos um objeto no @irb@, essa chamativa palavra @#<Object>@ 
+        é apresentado!  Isto é um pequeno nome identificador para o objeto.  O método @inspect@ cria
+        este identificador, que é apenas uma string.
 
 
         <pre>
-         irb> class Rabbit
+         irb> class Coelho
          irb>   attr_accessor :slogan
          irb>   def initialize s; @slogan = s; end
-         irb>   def inspect; "#<#{ self.class } says '#{ @slogan }'>"; end
+         irb>   def inspect; "#<#{ self.class } diz '#{ @slogan }'>"; end
          irb> end
 
-         irb> class FakeRabbit < Rabbit
+         irb> class FalsoCoelho < Coelho
          irb> end
 
-         irb> Rabbit.new "i blow'd the drgn's face off!!"
-           => #<Rabbit says 'i blow'd the drgn's face off!!'>
-         irb> FakeRabbit.new "Thusly and thusly and thusly..."
-           => #<FakeRabbit says 'Thusly and thusly and thusly...'>
+         irb> Coelho.new "eu arrebentei a cara do dragão!!"
+           => #<Coelho diz 'eu arrebentei a cara do dragão!!'>
+         irb> FalsoCoelho.new "Assim, assim e assim..."
+           => #< FalsoCoelho diz 'Assim, assim e assim...'>
         </pre>
 
         
-        The thing is: @irb@ is talking back.  Every time you run some code in @irb@,
-        the _return value_ from that code is inspected.  How handy.  It's a little
-        conversation between you and @irb@.  And @irb@ is just reiterating what you're
-        saying so you can see it for your self.
+        O fato é: @irb@ está respondendo.  Cada vez que você executa algum código no @irb@,
+        o _valor de retorno_ daquele código é inspecionado.  Que prático.  É uma conversinha
+        entre você e o @irb@. E @irb@ está apenas reiterando o que você está dizendo, então
+        você mesmo pode ver.
 
 
-        You could write your own Ruby prompt very easily:
+        Você poderia escrever seu próprio prompt Ruby de uma forma muito fácil:
 
 
         <pre>
@@ -37,74 +37,75 @@
         </pre>
          
 
-        This prompt won't let you write Ruby code longer than a single line.  It's the essence
-        of interactive Ruby, though.  How do you like that?  Two of your recently learned concepts
-        have come together in a most flavorful way.  The @eval@ takes the typed code and runs it.
-        The response from @eval@ is then inspected.
+        Este prompt não irá permitir que você escreva código Ruby mais longo do que uma única 
+        linha. No entanto, esta é a essência do Ruby interativo. Como que você gosta?  Dois de seus 
+        conceitos recentemente aprendidos vieram juntos de um modo mais saboroso.  O @eval@ pega o
+        código digitado e o executa.  A reposta de @eval@ é então inspecionada.
 
 
-        Now, as you are fighting monsters in @irb@, Dwemthy's Array will be inspected and
-        replying with the monsters you have left to fight.
+        Agora, como você está combatendo monstros no @irb@, Dwemthy's Array será inspecionado e 
+        respondido com os monstros que você deixou de lutar.
 
 
-        !i/wixl-5.gif(The foxes eat out.)!
+        !i/wixl-5.gif(As raposas comem fora.)!
 
 
         h3. Method Missing
 
 
-        Don't you hate it when you yell "Deirdre!" and like ten people answer?  That _never_ happens in
-        Ruby.  If you call the @deirdre@ method, only one @deirdre@ method answers.  You can't have
-        two methods named the same.  If you add a second @deirdre@ method, the first one disappears.
+        Você não odeia quando grita "Deirdre!" e aproximadamente dez pessoas respondem?  Isto _nunca_ 
+        acontece em Ruby.  Se você chamar o método @deirdre@, somente um método @deirdre@ responde.  
+        Você não pode ter dois métodos com o mesmo nome.  Se você adicionar um segundo método @deirdre@,
+        o primeiro desaparece.
 
 
-        You can, however, have a method which *answers to many names*.
+        Você pode, no entanto, ter um método no qual *responde para muitos nomes*.	
 
 
         <pre>
-         class NameCaller
-           def method_missing( name, *args )
-             puts "You're calling `" + name + "' and you say:"
-             args.each { |say| puts "  " + say }
-             puts "But no one is there yet."
+         class ChamadorDeNome
+           def method_missing( nome, *args )
+             puts "Você está chamando '" + nome + "' e você diz:"
+             args.each { |diz| puts "  " + diz }
+             puts "Mas ninguém está lá ainda."
            end
            def deirdre( *args )
-             puts "Deirdre is right here and you say:"
-             args.each { |say| puts "  " + say }
-             puts "And she loves every second of it."
-             puts "(I think she thinks you're poetic.)"
+             puts "Deirdre está bem aqui e diz:"
+             args.each { |diz| puts "  " + diz }
+             puts "E ela ama cada segundo disto."
+             puts "(Eu acho que ela pensa que você é poético.)"
          end
         </pre>
 
 
-        When you call the method @deirdre@ above, I'm sure you know what will happen.  Deirdre will
-        love every second of it, you and your dazzling poetry.
+        Quando você chamar o método @deirdre@ acima, eu tenho certeza que você sabe o que vai 
+        acontecer.  Deirdre vai amar cada segundo disto, você e suas fascinantes poesias.
 
 
-        But what if you call @simon@?
+        Mas e se você chamar @simon@?
 
 
         <pre>
-         irb> NameCaller.new.simon( 'Hello?', 'Hello? Simon?' )
-         You're calling `simon' and you say:
-           Hello?
-           Hello? Simon?
-         But no one is there yet.
+         irb> ChamadorDeNome.new.simon( Olá?', 'Olá? Simon?' )
+         Você está chamando `simon' e você diz:
+           Olá?
+           Olá? Simon?
+         Mas ninguém está lá ainda.
         </pre>
         
 
-        Yes, @method_missing@ is like an answering machine, which intercepts your method call.  In Dwemthy's
-        Array we use call forwarding, so that when you attack the Array, it passes that attack on straight to
-        the first monster in the Array.
+        Sim, @method_missing@ é como uma secretária eletrônica, que intercepta a chamada de
+        seu método.  Em Dwemthy's Array nos usamos um desvio, então quando você ataca o Array, ele passa
+        o ataque diretamente para o primeiro monstro no Array.
 
 
         <pre>
          def method_missing( meth, *args )
            answer = first.send( meth, *args )
-           # ... snipped code here ...
+           # ... código recortado aqui ...
          end
         </pre>
 
 
-        See!  See!  That skinny little @method_missing@ passes the buck!
+        Veja!  Veja!  Aquele magrelinho @method_missing@ passa a responsabilidade para outro!
 
