@@ -1,19 +1,18 @@
 
 
-        h3. Preeventualism in a Gilded Box
+        h3. Pre-eventualismo numa Caixinha Dourada
 
 
-        You've learned so much about @OpenURI@ and using @yield@ to write your own iterators.
-        You know your way around the lost-and-found service.  Really, you can starting hunting
-        through the Wixl junk drawer without me.
+        Você já aprendeu o bastante sobre @OpenURI@ e @yield@ para escrever os seus próprios
+        iterators. Você já sabe como usar o serviço de achados e perdidos. Na verdade, você já
+        pode começar a se aventurar nos achados e perdidos de Wixl sem mim.
 
-
-        Let's neatly _encapsulate_ the entire service into a single class.
+        Vamos _encapsular_ elegantemente todo o serviço numa única classe.
 
         
         <pre>
          require 'open-uri'
-         module PreEventualist
+         module PreEventualista
            def self.open page, query
              qs = 
                query.map do |k, v|
@@ -32,35 +31,34 @@
            def self.searchfound word
              open "searchfound", "q" => word
            end
-           def self.addfound your_name, item_lost, found_at, description
-             open "addfound", "name" => your_name, "item" => item_lost, 
-                              "at" => found_at, "desc" => description
+           def self.addfound seu_nome, item_perdido, achado_em, descricao
+             open "addfound", "name" => seu_nome, "item" => item_perdido, 
+                              "at" => achado_em, "desc" => descricao
            end
-           def self.addlost your_name, item_found, last_seen, description
-             open "addlost", "name" => your_name, "item" => item_found,
-                             "seen" => last_seen, "desc" => description
+           def self.addlost seu_nome, item_achado, visto_em, descricao
+             open "addlost", "name" => seu_nome, "item" => item_achado,
+                             "seen" => visto_em, "desc" => descricao
            end
          end
         </pre>
 
 
-        At some point with your code, you need to start shaping it into something neat.  Save the above
-        module in a file called @preeventualist.rb@.
+        Em algum momento, você tem que começar a modelar seu código em algo mais elegante. Salve o
+        módulo acima em um arquivo chamado @preeventualista.rb@.
 
 
-        This module is a very simple library for using the Preeventualist's service.  This is exactly the
-        way libraries are written.  You whip up a module or a class, store it in a file, and, if you're
-        happy with it and want the world to benefit, put it on the web.
+        Esse módulo é uma biblioteca muito simple para usar o serviço dos Pre-eventualistas. É exatamente
+        assim que bibliotecas são escritas. Você constrói um módulo ou uma classe, grava em um arquivo, e,
+        se ficou feliz com o resultado, disponibiliza na web para o resto do mundo poder utilizar.
 
 
-        These stragglers can you use your module just like I used @OpenURI@ earlier.
+        Esses vagabundos podem então usar o seu módulo da mesma forma que eu usei @OpenURI@ anteriormente.
 
 
         <pre>
-         irb> require 'preeventualist'
-         irb> puts PreEventualist.search( 'truck' )
-         irb> puts PreEventualist.addfound( 'Why', 'Ruby skills', 'Wixl park',
-                "I can give you Ruby skills!\nCome visit poignantguide.net!" )
+         irb> require 'preeventualista'
+         irb> puts PreEventualist.search( 'caminhao' )
+         irb> puts PreEventualist.addfound( 'Why', 'conhecimentos em Ruby', 'Parque Wixl',
+                "Eu posso lhe dar conhecimentos em Ruby!\nVenha visitar poignantguide.net!" )
         </pre>
-
 
