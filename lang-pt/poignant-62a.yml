@@ -1,49 +1,49 @@
 
 
-        The above code will retrieve the list of trucks found by preeventualists, then display only
-        those lines that actually contain the word 'pickup'.
-        That way we can trim out the descriptions and look for only the pertinent lines.
+        O código acima recupera a lista de caminhões achados por pre-eventualistas e exibe
+        somente as linhas que contenham a palavra 'pickup'.
+        Dessa maneira podemos limitar as descrições e procurar somente as linhas pertinentes.
 
 
-        Above, the *index brackets* are used on a string, so the string is searched for whatever is inside
-        the brackets.  Since the string @'pickup'@ is inside the brackets, the @line@ string is searched
-        for the word "pickup".
+        Acima, os *colchetes*  são usados em uma string, de forma que seja pesquisado nessa string o que
+        quer que esteja dentro dos colchetes. Como a string @'pickup'@ está dentro dos colchetes, a palavra
+        'pickup' é pesquisada na string @line@.
 
 
         !i/wixl-13.gif(On being funny.)!
 
 
-        When a web page is loaded with @read@, the entire page is loaded into memory.  Usually this
-        only takes up a few thousand bytes.  But if a page is big (several megabytes), you'll probably
-        want to use @each_line@, which loads one line at a time to avoid exhausting memory.
+        Quando uma web page é carregada com @read@, toda a página é carregada na memória. Normalmente
+        isso ocupa somente alguns kbytes. Mas se a página é grande (vários megabytes), é melhor usar
+        @each_line@, que carrega uma linha de cada vez, evitando ocupar toda memória.
 
 
-        h3. Yielding is Kiddie Blocks
+        h3. Yielding é como blocos de montar 
 
 
-        Ruby often uses iterators in this fashion.  Yes, iterators are used for cycling through each item in
-        a collection of items, such as an array or hash.  Now look at an IO source as a collection of lines. 
-        The iterator can crawl that collection of lines.
+        Ruby freqüentemente usa iterators dessa forma. Sim, iterators são usados para percorrer cada um
+        dos itens de uma collection, como um Array ou um Hash. Então, olhe para uma fonte de IO como uma
+        coleção de linhas. O iterator pode percorrer essa coleção de linhas.
 
 
         <pre>
          class IO
-           # Definition for the each_line method.  Notice how it has no
-           # argument list.  Blocks don't need to be listed as arguments.
+           # Definição do método each_line.  Veja que ele não tem
+           # uma lista de argumentos. Blocos não precisam ser listados como argumentos.
            def each_line
-             until eof?        # until we reach the end of the file...
-               yield readline  # pass a line into the block
+             until eof?        # até chegarmos ao final do arquivo...
+               yield readline  # passe a linha para o bloco
              end
            end
          end
         </pre>
 
 
-        The @yield@ keyword is the easiest way to use a block.  One word.  Just like a curtain has
-        a pullstring or like a suitcase has a handle.  Inside a method, you can press the blinking
-        @yield@ button and it will run the block attached to that method.  Glowing a strong red color
-        until the code inside the block is done.  And then it goes back to blinking and you can press
-        the button again if you like.
+        A palavra-chave @yield@ é a maneira mais fácil de se usar um bloco. Uma palavra. Da mesma forma
+        que uma cortina tem um puxador ou como uma maleta tem uma alça. Dentro de um método, você
+        pode apertar o botão piscante @yield@ e ele irá rodar o bloco anexado a esse método. Ele ficará
+        brilhando em vermelho até que o bloco seja executado. Então voltará a piscar de novo e você poderá
+        o botão novamente se quiser.
 
 
         <pre>
@@ -55,49 +55,48 @@
         </pre>
 
 
-        Punch the @yield@ button three times quick and the block gets to live its life three times.
+        Aperte o botão @yield@ três vezes rapidamente e o bloco ganha vida por três vezes.
 
 
         <pre>
-         irb> a = ['first, birth.', 'then, a life of flickering images.', 'and, finally, the end.']
+         irb> a = ['primeiro, o nascimento', 'depois, uma vida cheia de imagens bonitas', 'e finalmente, o fim']
          irb> yield_thrice { puts a.shift }
          # prints out:
-         #   first, birth.
-         #   then, a life of flickering images.
-         #   and, finally, the end.
+         #   primeiro, o nascimento
+         #   depois, uma vida cheia de imagens bonitas
+         #   e finalmente, o fim
         </pre>
 
 
-        The @shift@ method pulls the first item off an array.  The barber @shift@ cuts the hair off
-        and hands it over.  Then, the scalp.  And just keeps going, whittling the poor guy down to
-        nothing.
+        O método @shift@ tira o primeiro item de um Array. O barbeiro @shift@ corta o cabelo fora e
+        o entrega. Depois o escalpo. E assim segue, reduzindo o pobre coitado a nada.
 
 
-        You've seen blocks attached to methods.  Any Ruby method can have block attached to the end.
+        Você viu blocos anexado a métodos. Qualquer método Ruby pode ter um bloco anexado no final.
 
 
         <pre>
-         # The brief style of attaching a block to a method.
-         # Here the block is surrounded with curly braces.
+         # O estilo compacto de anexar um bloco a um método.
+         # Aqui o bloco é demarcado por chaves.
          open( "idea.txt" ) { |f| f.read }
 
-         # The verbose style of attaching a block to a method.
-         # Here the block is surrounded with `do' and `end'
+         # O estilo verboso de anexar um bloco.
+         # Aqui o bloco é demarcado por 'do' e 'end'
          open( "idea.txt" ) do |f|
            f.read
          end
         </pre>
 
 
-        If you pass arguments to @yield@, those arguments will also be passed to the block.
-        The block is riding in a little sidecar attached to the method's motorcycle.  The method
-        yells out a list arguments, screaming to the block over all the wind as they're
-        racing through the desert.  The block taps his helmet like, "I get it, my brain gets it."
+        Se você passar argumentos para o @yield@, esse argumentos também serão passados ao bloco. 
+        O bloco vai num pequeno sidecar preso à motocicleta do método. O método vocifera uma lista 
+        de argumentos, gritando para o bloco mesmo com todo o vento enquanto eles estão dirigindo 
+        pelo deserto. O bloco bate no capacete com se dissesse: "Ok, entendi. Meu cérebro captou tudo."
 
 
         <pre>
-         # The method opens two files and slides the resulting IO objects down the
-         # chute to an attached block.
+         # O método abre dois arquivos e repassa os objetos IO resultantes
+         # para o bloco anexo
          def double_open filename1, filename2
            open( filename1 ) do |f1|
              open( filename2 ) do |f2|
@@ -105,21 +104,21 @@
              end
            end
          end
-
-         # Prints the files out side-by-side.
+ 
+         # Imprime os arquivos lado a lado
          double_open( "idea1.txt", "idea2.txt" ) do |f1, f2|
            puts f1.readline + " | " + f2.readline
          end
         </pre>
 
 
-        You may also wonder what the @yield@ keyword has to do with street signs.  And really,
-        it's a good question with, I believe, a good answer.  When you run a method, you are giving
-        that method control of your program.  Control to do its job and then come back to with an
-        answer.
+        Você pode se perguntar o que o @yield@ tem a ver com sinais de trânsito. Na verdade, essa
+        é uma boa pergunta, e que eu acredito que tenha uma boa resposta. Quando você executa um método,
+        você está a esse método o controle do seu programa. Controle para fazer o seu trabalho e retornar
+        com uma resposta.
 
 
-        With @yield@, the method is stopping at the intersection, giving control back to you, to your block.  The method is letting
-        you do your work before resuming its work.  So while the @each_line@ method does the work of actually
-        reading lines from a file, the *block attached to the @each_line@ method* is handed the line
-        itself and gets a chance to hammer away at it in the sidecar.
+        Com @yield@, o método está parando nessa intersecção, devolvendo o controle para você, para o seu bloco.
+        O método está permitindo que você faça o seu trabalho antes de retornar ao trabalho dele. Então, enquanto
+        o método @each_line@ faz o trabalho de ler linhas de um arquivo, o *bloco anexado ao método @each_line@*
+        recebe a linha e tem a chance de dar um passeio com ela no sidecar.

@@ -2,132 +2,135 @@
         </pre>
 
 
-        I think the Youth Study Clan is doing a great job with this service.  It's a little hokey and
-        threadbare, but if it can get animals to stop using their instinctive means of declaring ownership,
-        then hats off.
+        Acho que o Youth Study Clan está fazendo um ótimo trabalho com esse serviço. Está meio piegas e
+        meio basicão, mas se conseguir fazer os animais pararem de usar seus meios mais instintivos de
+        demarcar território, então eu tiro meu chapéu.
 
 
-        Still, a preeventualist youth group?  How can that be?  You've got to at least _flirted with
-        real cynicism_ before you can become a preeventualist.  And you definitely can't attend school.
-        So, I don't know.
+        Mesmo assim, um grupo de jovens preeventualistas? Como é que pode? Você tem que ter pelo menos
+        _flertado com cinismo de verdade_ antes de poder se tornar um preeventualista. E definitivamente,
+        não pode ir ao colégio. Portanto, eu não sei.
 
 
-        Going back to the list of instructions from the Preeventualist's Losing and Finding Registry.
+        Voltando à lista de instruções do Registro de Achados e Perdidos Preenventualista.
 
 
         <pre class="text">
-         USING THE L&F SERVER
-         ====================
-         The L&F is a free service.  The acts of losing and finding are essential qualities in
-         building a preeventualist lifestyle.  We hope to accomodate your belief.
+         USANDO O SERVIDOR A&P
+         =====================
+
+         O A&P é um serviço gratuito. Os atos de perder e achar são qualidades essenciais para
+         a construção de um estilo de vida preeventualista. Esperamos atender a sua crença.
 
 
-         We do not use HTML, in order to simplify our work here.  Our guys are already working
-         fifteen hour days.  (Thanks, Terk!!  Thanks, Horace!!)
+         Não usamos HTML, para simplificar as coisa por aqui. Nosso pessoal já trabalha quinze
+         horas por dia. (Valeu, Terk!! Valeu, Horace!!)
 
 
-         You may search our service for your lost items.  Or you may add your lost (or found)
-         item to our registry.  This is done by typing the proper address into your browser.
+         Você pode usar nosso serviço para procurar coisas que você perdeu. Ou pode adicionar
+         coisas que você perdeu (ou achou) ao nosso registro. Isso é feito digitando o endereço
+         correspondente no seu browser.
 
-         SEARCHING
-         =========
-         To search for lost items, use the following address:
+         PESQUISANDO
+         ===========
+         Para procurar coisas perdidas, use o seguinte endereço:
 
-           http://preeventualist.org/lost/search?q={search word}
+           http://preeventualist.org/lost/search?q={palavra chave}
 
-         You may replace {search word} with your search term.  For example, to search for "cup":
+         Você pode substituir {palavra chave} pela sua pesquisa. Por exemplo, para pesquisar por "xícara"
 
-           http://preeventualist.org/lost/search?q=cup
+           http://preeventualist.org/lost/search?q=xicara
 
-         You will be given a list of cups which have been lost or found.
+         Assim, você receberá uma lista das xícaras que foram achadas ou perdidas.
 
-         If you want to search for only lost cups or only found cups, use the `searchlost' and
-         `searchfound' pages:
+         Se você quer pesquisar somente por xícaras perdidas ou somente por xícaras achadas, use as
+         páginas 'searchlost' e 'searchfounds':
 
-           http://preeventualist.org/lost/searchlost?q=cup
+           http://preeventualist.org/lost/searchlost?q=xicara
         </pre>
 
 
-        I'm not playing games.  I know where the truck is.  Really, I'm not teasing you.  I'll 
-        show you in just a sec.  I'm just saying, look at the foxes:
+        Não estou de brincadeira. Eu sei onde está o caminhão. Sério, não estou só provocando. Vou
+        mostrar em um segundo. Só estou dizendo, olhe as raposas:
 
 
         !i/wixl-11.gif(Hummmmm.)!
 
 
-        They are helpless.  And yet, here is this great tool.  A possible key to getting out of this mess.
-        I just want to poke around, see if there are any clues here.
+        Elas estão indefesas. E mesmo assim, aqui está essa ótima ferramenta. Possivelmente, a chave
+        para sair dessa confusão. Só quero dar uma fuçada, ver se há alguma pista por aqui.
 
 
         <pre>
          require 'open-uri'
          
-         # Searching all found items containing the word `truck'.
-         open( "http://preeventualist.org/lost/searchfound?q=truck" ) do |truck|
+         # Pesquisar todos os itens achados contendo a palavra 'caminhão'.
+         open( "http://preeventualist.org/lost/searchfound?q=caminhao" ) do |truck|
            puts truck.read
          end
         </pre>
 
 
-        I'm not seeing anything about the tall fox's truck in this list.  That's okay.
-        The foxes are out of it anyway.  We have some time.
+        Não vejo nada sobre o caminhão da raposa grande nessa lista. Tudo bem.
+        As raposas estão perdidas mesmo. Temos algum tempo.
 
 
-        You've learned a very simple technique for retrieving a web page from the Internet.  The code
-        uses the @OpenURI@ library, which was written by one of my favorite Rubyists, Akira Tanaka.  He's
-        simplified reading from the Internet so that it's identical to reading a file from your computer.
+        Você aprendeu uma técnica simples para recuperar uma página da Internet. O código usa
+        a biblioteca  @OpenURI@, que foi escrita por um dos meus rubistas preferidos, Akira Tanaka.
+        Ele simplificou a leitura de arquivos Internet, tornado-a igual leitura de arquivos do seu computador.
 
 
-        In a previous chapter, we stored your diabolical ideas in a text file.  You read these files in Ruby
-        using @open@.
+        Num capítulo anterior, armazenamos suas idéias diabólicas em um arquivo texto. Você lê esses
+        arquivos em Ruby usando @open@.
 
 
         <pre>
          require 'open-uri'
-
-         # Opening an idea file from a folder on your computer.
-         open( "folder/idea-about-hiding-lettuce-in-the-church-chairs.txt" ) do |idea|
+ 
+         # Abrindo um arquivo em um folder do seu computador.
+         open( "folder/ideia-sobre-esconder-alface-nas-cadeiras-da-igreja.txt" ) do |idea|
            puts idea.read
          end
         </pre>
 
 
-        Files are *input-output objects*.  You can read and write to a file.  In Ruby, all IO (input-output)
-        objects have @read@ and @write@ methods.  The @open@ method slides an IO object *down the chute*
-        into a block for your use.  IO is your ticket to the outside world.  It's the rays of sunlight cast
-        through the prison bars.  (However, you can't @write@ to a web page with @OpenURI@.  You'll need to find a
-        tool for copying to your web server.  An FTP program, for instance.)
+        Files (arquivos) são *input-output objects*. Você pode ler e escrever num arquivo. Em Ruby,
+        todo objeto IO (input-output) tem os métodos @read@ e @write@. O método @open@ passa
+        um objeto IO para num bloco para você usar. IO é a sua passagem para o mundo exterior. É como
+        os raios do sol passando através das barras da prisão. (Entretanto, você não pode escrever (@write@)
+        em uma página web usando @OpenURI@. Você terá que achar um ferramenta para copiar para
+        o seu Web Server. Um cliente FTP, por exemplo.
 
 
-        If someone wants to read your diabolical idea about hiding lettuce in the church chairs, assuming
-        you've posted it as a web page:
+        Se alguém quiser ler sua idéia diabólica de esconder alface nas cadeiras da igreja, presumindo
+        que você tenha colocado isso numa web page:
 
 
         <pre>
          require 'open-uri'
-
-         # Opening an idea file available on a web site.
-         open( "http://your.com/idea-about-hiding-lettuce-in-the-church-chairs.txt" ) do |idea|
+ 
+         # Abrindo um arquivo disponível num Web Site.
+         open( "http://sua.com/ideia-sobre-esconder-alface-nas-cadeiras-da-igreja.txt" ) do |idea|
            puts idea.read
          end
         </pre>
 
 
-        The @OpenURI@ library also understands FTP addresses as well.  This widens the possibilities for
-        where you can store files.  On your system or elsewhere on the Internet.
+        A biblioteca @OpenURI@ também entende endereços de FTP. Isso amplia as possibilidades de
+        onde você pode armazenar arquivos. No seu computador ou em algum outro lugar na Internet.
 
 
-        h3. Reading Files Line by Line
+        h3. Lendo arquivos linha a linha
 
 
-        When you're using @OpenURI@ to get information from the web with the @open@ and @read@ methods,
-        the page is given to you as a @String@.  You can also read the page one line at a time, if you're
-        searching for something.  Or if the page is big and you want to conserve your computer's memory.
+        Quando você usa @OpenURI@ para obter informações da web com os métodos @open@ and @read@,
+        a página é enviada como um @String@. Você também ler a página uma linha de cada vez, se está procurando algo.
+        Ou se a página é muito grande e você quer economizar memória do seu computador.
 
 
         <pre>
          require 'open-uri'
-         open( "http://preeventualist.org/lost/searchfound?q=truck" ) do |truck|
+         open( "http://preeventualist.org/lost/searchfound?q=caminhao" ) do |truck|
            truck.each_line do |line|
              puts line if line['pickup']
            end

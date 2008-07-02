@@ -7,11 +7,11 @@
         E agora, as histórias das Loterias Paij-ree.
 
 
-        Em Endertromb, o pai do inventou a loteria.  A idéia surgiu quando estava rezando
-        para Escavador Dosh.
+        Em Endertromb, o pai do organista inventou a loteria.  A idéia surgiu quando ele estava rezando
+        para o Escavador Dosh.
 
 
-        Escavador Dosh é uma espécie de deus para eles.  Mas dez vezes mais
+        Escavador Dosh é uma espécie de Deus para eles.  Mas dez vezes mais
         assustador.  Esse cara cava um túnel infinitamente profundo através do planeta
         e sai morto.  Mas ele não está realmente morto.  Ele está realmente _um segundo_
         atrás deles.  E ele come tempo.
@@ -31,14 +31,14 @@
         Ele então se perguntou. "O que são esses números?"
 
 
-        E sua mente tocou um pequeno vídeo clip dele vendendo todos os tipos de números.  E,
+        E sua mente passou um pequeno vídeo clip dele vendendo todos os tipos de números.  E,
         por anos e anos, viajando e vendendo números.
 
 
         E ele perguntou ao seu cérebro, "Pessoas comprarão números?"
 
 
-        E seu cérebro disse, "Se eles compram o direito de três números, dê-lhes um prémio."
+        E seu cérebro disse, "Se eles comprarem os três números corretos, dê a eles um prêmio."
 
 
         Pelo que ele mesmo imaginava um salto alto com um ski e jogando neve nas pessoas
@@ -58,9 +58,9 @@
 
            def initialize( *numeros_escolhidos )
              if numeros_escolhidos.length != 3
-               raise ArgumentError, "três números devem ser escolhido"
+               raise ArgumentError, "três números devem ser escolhidos"
              elsif numeros_escolhidos.uniq.length != 3
-               raise ArgumentError, "os três escolhidos devem ser números diferentes"
+               raise ArgumentError, "os três escolhidos devem ser diferentes"
              elsif numeros_escolhidos.detect { |p| not INTERVALO_NUMERICO === p }
                raise ArgumentError, "os três escolhidos devem ser números entre 1 e 25."
              end
@@ -77,10 +77,10 @@
         permitidos (de *um* a *vinte e cinco*) é mantido na constante @INTERVALO_NUMERICO@.
 
 
-        O método @initialize@ pode ter qualquer número de argumentos passados. O *asterísco*
+        O método @initialize@ pode ter qualquer número de argumentos passados. O *asterisco*
         no argumento @numeros_escolhidos@ significa que *quaisquer argumentos serão passados
-        como um Array*.  Tendo os argumentos em um Array significa que métodos como @uniq@ e
-        @detect@ podem ser usados juntos nos argumentos.
+        como um Array*.  Ter os argumentos em um Array significa que métodos como @uniq@ e
+        @detect@ podem ser usados juntos aos argumentos.
 
 
         Esta classe contém duas definições: o método de definição (@def@) e um
@@ -100,7 +100,7 @@
 
 
         Atributos são métodos empacotados para variáveis de instância (assim como
-        @@numeros_escolhidos@) que podem ser usados *fora da própria classe*.  Pai da
+        @@numeros_escolhidos@) que podem ser usados *fora da própria classe*.  O pai do
         Paij-ree queria codificar uma máquina que pudesse ler números e a data da
         compra do bilhete.  Para fazer isso, estas variáveis de instância devem ser expostas.
 
@@ -242,10 +242,8 @@
         à medida que o dia passava.  Você consegue imaginar o jovem Paij-ree - em seu
         terno pomposo - brincando com eláticos de dinheiro com seus dedos jovens, em
         meio à reunião da empresa na qual propôs a última parte do sistema?  Com certeza,
-        quando se levantou, seu pai falou tudo para ele, mas ele se apoiou no projetor e
-
-        final piece of the system?  Sure, when he stood up, his dad did all the talking for
-        him, but he flipped on the projector and performed all the hand motions.
+        quando se levantou, seu pai falou tudo para ele, mas ele se apoiou ligou o
+        projetor e explicou tudo apontando com as mãos.
 
  
         <pre>

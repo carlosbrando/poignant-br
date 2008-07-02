@@ -12,38 +12,38 @@
         "Posso pegar algo para comer?" perguntou o Doutor.  E ainda se sentia sujo.
 
 
-        "How about we watch a film and you can have a buttermelon with tentacles?" said the goat.
+        "Que tal assistirmos um filme e você pode comer mantegocias com tentáculos?" disse a cabra.
 
 
-        So, they worked their way back toward the goat's projector.  Back by the freezer locker,
-        they sat on a giant rug and broke off the appendages of frozen buttermelons.  The shell
-        was solid, but once it cracked, rich fruit cream was in abundance.  Sweet to taste and
-        a very pleasant scent.
+        Então, rumaram de volta ao projetor da cabra.  Back by the freezer locker,
+        they sat on a giant rug and broke off the appendages of frozen buttermelons.  A casca
+        era dura, mas depois de quebrada, rico creme de frutas em abundância.  Doce ao paladar e
+        de um aroma muito agradável.
 
 
-        "First film, you've got to see," said the goat.  "Locally filmed and produced.  I'm
-        good friends with the lady who did casting.  Dated her for awhile.  Knew everyone
-        who was going to play the different roles long before it was announced."
+        "Primeiro filme, que você tem que ver," disse a cabra.  "Filmado e produzido localmente.  Eu
+        sou íntimo da moça que decidiu o elenco.  Saí com ela por um tempo.  Sabia de todo
+        que acontecia quem ia protagonizar diferentes papéis muito antes que fosse anunciado."
 
 
-        The goat set the projector by Dr. Cham.  "I ve got the music on the surround sound.
-        You can man the knob."
+        A cabra ajeitou o projetor perto do Dr. Cham.  "A música tá em surround sound.
+        Você pode operar o botão."
 
 
         !i/filmstrip-1.gif(The Originals and their lonesome planet.)!
 
 
-        Dr. Cham's mind wandered at this point in the presentation, just as the land war
+        A mente do Dr. Cham vagou nesse ponto da apresentação, just as the land war
         mounted between the two throngs of animal settlers.  The details of their wars
         and campaigns continued to consume the spool of transparent film that Dr. Cham
         was feeding through the projector.  
 
 
-        War after war after war.  The Sieging of Elmer Lake.  The Last Stand of Newton P. Giraffe
-        and Sons.  Dog Invasion of Little Abandoned Cloud.  Nenhum animal morreu nessas guerras. 
-        Most often an attack consisted of bopping another
-        animal on the head.  And they philipped each other s noses.  But, believe me,
-        it was humiliating.
+        Guerra após guerra após guerra.  O Cerco do Elmer Lake.  A Última Estada de Newton P. Giraffe
+        e Filhos.  A Invasão Canil da Pequena Núvem Abandonada.  Nenhum animal morreu nessas guerras. 
+        Gerlamente um ataque consistia em ost often an attack consisted of bopping another
+        animal on the head.  And they philipped each other s noses.  Mas, acredite em mim,
+        aquilo era humilhante.
 
 
         Blasted crying shame.  Things could have worked out.
@@ -52,8 +52,8 @@
         h3. O Nascimento de um Objeto
 
 
-        "Não se preocupe," disse a cabra, anxious to sway Dr. Chams attention back to the film.  "Things _do_
-        work out."
+        "Não se preocupe," disse a cabra, ansiosa pra dissuadir a atenção do Dr. Chams 
+        de volta ao filme.  "As coisas _dão_ certo."
 
 
         No Ruby, o Objeto é o centro exato das todas as coisas.  Ele é O Original.
@@ -64,7 +64,7 @@
         </pre>
 
 
-        The angle bracket indicates *inheritance*.  Isto significa que a nova classe @UrsoTostado@
+        O menor que indica *herança*.  Isto significa que a nova classe @UrsoTostado@
         é um nova classe baseada na classe @Objeto@.  Todo método que @Objeto@ tem vai estar
         disponível na @UrsoTostado@.  Constantes disponíveis em @Objeto@ vão estar disponíveis em
         @UrsoTostado@.
@@ -93,7 +93,7 @@
 
 
         Você pode ter uma classe @BrasilEndereco@ que guarda o endereço, cidade, estado,
-        e cep de alguem que more no Brasil.  Quando você começar a guardar endereços
+        e cep de alguém que more no Brasil.  Quando você começar a guardar endereços
         da Inglaterra, você pode adicionar uma classe @ReinoUnidoEnderecos@.  Se você então
         garantir que os dois endereços herdem de uma classe mãe @Endereco@, você pode
         planejar seu software de correspondência de modo que aceite todo tipo de endereço.
@@ -110,9 +110,9 @@
  
 
         Além disso, herança é ótimo se você quer sobreescrever certos comportamentos numa classe.
-        Por exemplo, talvez você queira fazer a sua própria variação variation to the @Array@ class.
-        You want to enhance the @join@ method.  But if you change @Array#join@ directly, you
-        will affect other classes in Ruby that use Arrays.
+        Por exemplo, talvez você queira fazer a sua própria variação da classe @Array@.
+        Você quer melhorar o método @join@.  Mas se você mudar @Array#join@ diretamente, você
+        vai afetar outras classes no Ruby que usam Arrays.
 
 
         Então você começa sua própria classe chamada @MeuArray@, que é baseada na classe @Array@ original.
@@ -187,15 +187,15 @@
         and cataclysmic and awesome!  *Ruby não te restringe, minha irmã, meu irmão!* 
 
 
-        Entre @Class@ e @Object@, você vê @Module@?  Se @Object@ é o rei, the one who has
-        sired every other part of Ruby, then @Module@ is the poor waifish nun, shielding
-        and protecting all her little Ruby townspeople children.  (To complete the analogy:
-        @Class@ é a professora da escola da vila e @Kernel@ é the self-important colonel.)
+        Entre @Class@ e @Object@, você vê @Module@?  Se @Object@ é o rei, o pai de todas
+        as outras partes do Ruby, então @Module@ é uma pobre e raquítica freira, abrigando
+        e protengendo todos as suas pequeninas crianças camponesas.  (Pra completar a analogia:
+        @Class@ é a professora da escola da vila e @Kernel@ é o auto-proclamado importante coronel.)
 
 
         O motivo da existência do @Module@ é dar comida e abrigo a código.  Métodos
-        podem ficar abrigados embaixo da manta do @Module@.  @Module@ pode conter classes, constantes e 
-        variáveis de qualquer tipo.
+        podem ficar abrigados embaixo da manta do @Module@.  @Module@ pode conter classes, 
+        constantes e variáveis de qualquer tipo.
 
 
         "Mas o que um Module _faz_?" você pergunta.  "Como ele é lucrativamente utilizado??"
@@ -290,14 +290,14 @@
         é um desastre."
 
 
-        "O castelo parece uma projeção," disse a cabra.  "All the flowers
-        and apple blossoms and the sky even.  É uma projeção de baixa resolução."
+        "O castelo parece uma projeção," disse a cabra.  "Todas as flores
+        e brotos de maçã e até mesmo o céu.  É uma projeção de baixa resolução."
 
 
         "Sim?  Ele é encantador."
 
 
-        "I guess."
+        "Eu acho."
 
 
         !i/filmstrip-3.gif(The spool ends.)!
@@ -321,34 +321,34 @@
         "Maldição!  Estes projetores são de qualidade!  Nunca vi isso acontecer.  Não pode ser."
 
 
-        h3. Hunting For a Voice
+        h3. Caçando Por uma Voz
 
 
         "Eu não acho que tenha sido o projetor," disse o Dr. Cham.  "Something flew across that screen
         and uttered a blistering moan."
 
 
-        "I don't have any dupes of that movie," said the goat somberly.  "And that girl.  That casting
-        director.  I never see her anymore."
+        "Eu não tenho nenhuma cópia deste filme," disse melancólicamente a cabra.  "E aquela garota.  That casting
+        director.  Eu nunca mais a verei novamente."
 
 
         Dr. Cham stood up and looked over the dumpy aisles of magnetic carnage, searching.
 
 
-        "Oh, hey, you should call that girl," the goat went on. "You could talk to her, get an understanding.
-        Tell her about me.  Don't act like your my friend, just, you know, 'Oh, that guy?
-        Yeah, whatta maroon.'"
+        "Oh, ei, você deveria chamar aquela garota," a cabra continuou. "Você poderia conversar com ela, chegar
+        a um consenso.  Diga a ela sobre mim.  Don't act like your my friend, just, you know, 'Oh, aquele cara?
+        Yeah, que bobalhão whatta maroon.'"
 
 
-        Dr. Cham spotted the doorway and exited.
+        Dr. Cham mirou a porta e saiu.
 
 
-        The hallways were an entirely new world of mess.  In the goat's archives, the shelves had been messy.
+        Os corredores eram todo um outro mundo de bagunça.  Nos arquivos da cabra, the shelves had been messy.
         In the hallway, shelves were completely tipped.  Sinks were falling through the ceiling.  
-        The Doctor ventured under the debris, kicking through plywood when necessary.
+        O Doutor se aventurou por baixo dos escombros, kicking through plywood when necessary.
 
 
-        "You shouldn't be out here," said the goat.  "You're on someone else's property at this point.
+        "Você não deveria estar aqui fora," disse a cabra.  "Você está na propriedade de outra pessoa aqui.
         A couple of pygmy elephants own all this.  They're nasty guys.  They'll beat the crap outta you
         with their trunks.  They ball it up and just whack ya."
 
@@ -363,11 +363,11 @@
         through the doorway and disappeared inside.
 
 
-        "You really get a kick out of beating stuff up, don't you?" said the goat.  "Walls, doors."
-        The goat headbutted a wall.  The wall shuddered and then laid still.
+        "Você tem o dom de destruir as coisas com um chute, não tem?" disse a cabra.  "Paredes, portas."
+        A cabra chifrou a parede The goat headbutted a wall.  The wall shuddered and then laid still.
 
 
-        Then, it was quiet.  And black.
+        Então, tudo ficou calado.  E escuro.
 
 
         The goat stayed put in the bleak hallway, expecting Dr. Cham to flip over a few desks and emerge,
@@ -495,11 +495,11 @@
         careless moaning again.  *HRRRRRR-RRR-OH-RRRR-RRRR.*
 
 
-        "I'm not as into the chunky bacon stuff," said the goat.  "I don't see
-        what's so great about it."
+        "Eu não to nessa coisa de bacon pedaçudo" disse a cabr.  "Não vejo o quê
+        é tão legal nisso."
 
 
-        Could she speak while moaning? *BON-BON.*  Com um sotaque francês.  *BOHN-BOHN.
+        Ela podia falar enquanto gemia? *BON-BON.*  Com um sotaque francês.  *BOHN-BOHN.
         BOHN-APPE-TEET-OHHHH-RRRR.*
 
 

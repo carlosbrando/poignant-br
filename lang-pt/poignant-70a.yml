@@ -1,33 +1,33 @@
 
 
-        These are the living, breathing monstrosities of Dwemthy's Array.  I don't
-        know how they got there.  No one knows.  Actually, I'm guessing the @IntrepidDecomposedCyclist@
-        rode his ten-speed.  But the others: NO ONE knows.
+        Estes são os exemplos vivos da monstruosidade de Dwemthy's Array.  Eu não sei como eles
+        chegaram lá.  Ninguém sabe.  Na verdade, eu acho que o @ IntrepidoCiclistaDecomposto@
+        pedalou ate aqui a toda velocidade.  Mas os outros: NINGUÉM sabe.
 
 
-        If it's really important for you to know, let's just say the others were born there.
-        Can we move on??
+        Se isto é realmente importante você saber, vamos apenas dizer que os outros nasceram lá.
+        Podemos seguir em frente??
 
 
-        As Dwemthy's Array gets deeper, the challenge becomes more difficult.
+        Conforme Dwemthy's Array vai ficando mais complexo, o desafio se torna mais difícil.
 
 
         <pre>
-         dwary = DwemthysArray[IndustrialRaverMonkey.new,
-                               DwarvenAngel.new,
-                               AssistantViceTentacleAndOmbudsman.new,
-                               TeethDeer.new,
-                               IntrepidDecomposedCyclist.new,
-                               Dragon.new]
+         dwary = DwemthysArray[MacacoIndustrialEntusiasmante.new,
+                               AnjoDosAnoes.new,
+                               TentaculoViceAssistenteEOmbudsman.new,
+                               CervoDeDentes.new,
+                               IntrepidoCiclistaDecomposto.new,
+                               Dragao.new]
         </pre>
 
 
-        Fight the Array and the monsters will appear as you go.  Godspeed
-        and may you return with harrowing tales and nary an angel talon piercing
-        through your shoulder.
+        Combata o Array e os monstros aparecerão ao passo que você continua.  Boa viagem,
+        talvez você volte com histórias horríveis e nenhuma garra de anjo cravada através
+        de seus ombros.
 
 
-        Start here:
+        Começa aqui:
 
 
         <pre>
@@ -35,28 +35,27 @@
         </pre>
 
 
-        Oh, and none of this "I'm too young to die" business.  I'm sick of that crap.
-        I'm not going to have you insulting our undead young people.  They are our future.
-        After our future is over, that is.
+        Ah, e nada deste negócio "Eu sou muito jovem para morrer".  Estou farto desta besteira.
+        Não vou mais tolerar seus insultos aos nossos jovens que ainda nos restam.  Eles são nosso
+        futuro.  Assim que nosso futuro estiver terminado, ai sim.
 
 
-        !i/wixl.dwemthy-3.gif(The rabbit has changed us.)!
+        !i/wixl.dwemthy-3.gif(O coelho nos modificou.)!
 
 
-        h3. The Making of Dwemthy's Array
+        h3. Por Tráz de Dwemthy's Array
 
 
-        Fast forward to a time when the winds have calmed.  
-        The dragon is vanquished.  The unwashed masses bow.  We love you.
-        We are loyal to you.
+        Avance para o tempo onde os ventos ja tenham se acalmado. 
+        O Dragão foi derrotado.  Os impuros se curvarão.  Nós amamos você.
+        Nós somos leais a você.
 
 
-        But what is this centipede nibbling in your eardrum?  You dig with your finger, but you can't
-        get him out!  Blasted!  It's that infernal Dwemthy's Array again.  *Explain yourself
-        Dwemthy!*
+        Mas o que esta centopéia está mordiscando seu timpano?  Você enfia o dedo para tirá-lo, mas não
+        consegue!  Maldito!  É aquele infernal Dwemthy's Array novamente.  *Se explique Dwemthy!*
 
 
-        Here, I shall unmask the Array itself for you.
+        Aqui, eu revelo o próprio Array para você.
 
 
         <pre>
@@ -65,12 +64,12 @@
            def inspect; "#<#{ self.class }#{ inspect }>"; end
            def method_missing( meth, *args )
              answer = first.send( meth, *args )
-             if first.life <= 0
+             if first.vida <= 0
                shift
                if empty?
-                 puts "[Whoa.  You decimated Dwemthy's Array!]"
+                 puts "[Uouuu.  Você dizimou Dwemthy's Array!]"
                else
-                 puts "[Get ready. #{ first.class } has emerged.]"
+                 puts "[Prepare-se. #{ first.class } surgiu.]"
                end
              end
              answer || 0
@@ -79,24 +78,23 @@
         </pre>
 
 
-        By now, you're probably feeling very familiar with inheritance.  The @DwemthysArray@ class
-        inherits from @Array@ and, thus, behaves just like one.  For being such a mystery, it's
-        alarmingly brief, yeah?
+        Até agora, provavelmente você está se sentido muito familiarizado com herança.  A classe 
+        @DwemthysArray@ herda de @Array@, portanto se comporta como um.  Para tal sendo um mistério,
+        é assustadoramente curto, não?
 
 
-        So it's an Array.  Filled with monsters.  But what does this extra code do?
+        Portanto é um Array.  Preenchido com monstros.  Mas o que este código extra faz?
 
 
         h3. Inspect
 
 
-        The @inspect@ method isn't really a necessary part of Dwemthy's Array.  It's something
-        Dwemthy added as a courtesy to his guests.  (Many call him twisted, many call him 
-        austere, but we'd all be ignorant to go without admiring the footwork he puts in for us.)        
+        O método @inspect@ não é realmente uma parte necessária de Dwemthy's Array.  É algo adicionado
+        a Dwemthy como uma cortesia para seus visitantes.  (Muito o chamam de pervertido, muitos o chamam
+        de austero, mas todos nós somos ignorantes para ir sem admirar o trabalho que ele despendeu por nós.)        
 
-
-        Every object in Ruby has an @inspect@ method.  It is defined in the @Object@ class,
-        so it trickles down through the pedigree to every wee child object just born.
+        Cada objeto em Ruby possui um método @inspect@.  Isto está definido na classe @Object@,
+        então ele adiciona através da genealogia para cada pequenino objeto que nasce.
 
 
         <pre>

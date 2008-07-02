@@ -1,6 +1,6 @@
     - !^sidebar
       Sobre as versões do Ruby: >
-		
+
         Se você tem visitado vários sites que oferecem download do Ruby, você provavelmente viu várias versões
         diferentes disponíveis. Parece lógico que quanto maior for o número da versão,
         mais recente é a versão do Ruby. Mas isso não é verdade. Na terra do Ruby, números de versões têm significados
