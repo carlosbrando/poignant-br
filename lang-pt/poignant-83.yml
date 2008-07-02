@@ -1,41 +1,41 @@
     - !^sidebar
       About Ruby Versions: >
 
-        If you've visited any sites which offer Ruby for download, you've probably seen a number
-        of different versions of Ruby available.  Obviously, the greater the version number, the
-        more recent the version of Ruby.  But that's not exactly true.  Version numbers have meaning
-        in Rubyland and I'd like you to make an educated choice.
+        Se você visitou qualquer site oferecendo download do Ruby, você provavelmente viu um número
+        de diferentes versões do Ruby disponíveis. Obviamente, quanto maior o número da versão, mais
+	recente a versão do Ruby. Mas isto não é exatamente verdade. Números de versões possuem significado
+	na Rubylândia e eu gostaria que você fizesse uma escolha educada.
 
 
-        *1.8.3* is the latest *stable* version of Ruby.  Stable versions offer the latest features
-        which have been widely tested and are recommended for general use.  When new stable versions
-        come out, you can safely upgrade to these new versions.
+        *1.8.6* é a última versão *estável* do Ruby. Versões estáveis oferecem as últimas características
+	que foram amplamente testadas e são recomendadas para o uso geral. Quando novas versões estáveis 
+        saírem, você seguramente poderá atualizar para estas novas versões.
 
 
-        *1.9.0* is the latest *development* release of Ruby.  The development release includes
-        experimental changes to Ruby and unfixed problems.  This release is for anyone who wants
-        take a peep into the future of Ruby at the risk of encountering some bugs.
+        *1.9.0* é a última liberação de *desenvolvimento* do Ruby.  A liberação de desenvolvimento inclui
+        mudanças experimentais para o Ruby e problemas não corrigidos.  Esta liberação é para qualquer pessoa que quiser
+        dar uma espiada no futuro do Ruby com o risco de encontrar alguns erros.
 
 
-        Now, you'll notice that the version number is comprised of three individual numbers,
-        which are: *the major version*, *the minor version*, and *the teeny version*.  The 
-        major version counts each complete rewrite of Ruby.  The minor version is changed based
-        on sweeping changes to Ruby.  The teeny version is incremented every few months as smaller
-        changes and bug fixes are brought in.
+        Agora, você poderá notar que o número da versao inclui três números individuais,
+        que são: *a maior versão*, *a menor versão*, e *a pequenina versão*.  A 
+        versão maior conta cada regravação completa do Ruby.  A versão menor é modificada baseada
+        em mudanças de varredura para o Ruby.  A versão pequenina é incrementada a cada poucos meses como mudanças
+        menores e correções de erros são inseridas.
 
 
-        All editions of Ruby thus far have a major version of 1.  When Ruby2 comes along, you'll
-        see this notch up one.
+        Todas as edições do Ruby até então tem a maior versão do 1.  Quando vier Ruby2, você
+        verá esta edição de primeiro nível.
 
 
-        The minor version indicates whether a version is stable or not.  *If the minor version
-        is an even number, then that version of Ruby is stable.   If it's odd, then that Ruby
-        is a development version.*  After a year or so, when the development version is ready 
-        for the world, both numbers are increased and the teeny version is returned to zero.
+        A menor versão indica se uma versão é estável ou não.  *Se a menor versão
+        é um número par, então aquela versão do Ruby é estável.   Se é impar, então aquele Ruby
+        é uma versão de desenvolvimento.*  Depois de quase um ano, quando a versão de desenvolvimento está pronta
+        para o mundo, ambos os números são incrementados e a pequenina versão é retornada a zero.
 
 
-        Oh, and if I could give you a taste of how smoothly Ruby moves along!  I can't count
-        how often a fresh idea lands on the Ruby-Core mailing list, where the Emperors of
-        Ruby converse, and *that same idea* gets worked into Ruby within a few days.  It is
-        a lovely machine says I.
+        Oh, e se eu pudesse um gostinho de quão suave o Ruby se move!  Eu não posso contar
+        com que frequencia uma ideia fresca surge na lista de email do Ruby-Core, onde os Imperadores do
+        Ruby conversam, e *aquela mesma idéia* é trabalhada no Ruby dentro de poucos dias.  Esta é
+        uma máquina adorável eu digo.
 
