@@ -1,115 +1,115 @@
 
 
-        |\3. *Character Classes* |
+        |\3. *Classes de Caracteres* |
 
-        | @\d@ | matches digits | can also be written @[0-9]@ |
+        | @\d@ | casa dígitos | também pode ser escrita como @[0-9]@ |
 
-        | @\w@ | matches word characters (letters, numbers and the underscore) | can also be written @[A-Za-z0-9_]@ |
+        | @\w@ | casa caracteres de palavra (letras, números e o underscore) | também pode ser escrita como  @[A-Za-z0-9_]@ |
 
-        | @\s@ | matches whitespace (spaces, tabs, carriage returns, line feeds) | a.k.a. @[ \t\r\n]@ |
+        | @\s@ | casa espaços em branco (espaços, tabs, retorno de carro, pula linha) | a.k.a. @[ \t\r\n]@ |
 
-        | @\D@ | matches everything _but_ digits | a negated set @[^\d]@ |
+        | @\D@ | casa tudo _menos_ dígitos | um conjunto negado @[^\d]@ |
         
-        | @\W@ | matches everything _but_ word chars | just like @[^\w]@ |
+        | @\W@ | casa tudo _menos_ caracteres de palavra | assim como @[^\w]@ |
         
-        | @\S@ | matches everything _but_ whitespace | also @[^\s]@ |
+        | @\S@ | casa tudo _menos_ espaços em branco | também @[^\s]@ |
 
-        | @.@ | the period matches *everything*. |
-
-
-        Building a regexp involves chaining these placeholders together to express your search.  If you're looking for
-        a number, followed by whitespace: @/\d\s/@.  If you're looking for three numbers in a row: @/\d\d\d/@.  *The opening
-        and closing slashes mark the beginning and end of the regexp.*
+        | @.@ | o ponto casa *tudo*. |
 
 
-        A search for three numbers in a row can also be written as: @/\d{3}/@.  Immediately following a character class
-        like @\d@, you can use a quantifier symbol to mark how many times you want the character class to be repeat.
+        Construir uma expressão regular envolve encadear esses receptáculos para expressar sua busca. Se estiver procurando
+        por um número, seguido de espaço em branco: @/\d\s/@.  Se estiver procurando por três números em sequência: @/\d\d\d/@.  *As barras
+        que abrem e fecham marcam o início e o fim da expressão regular.*
 
 
-        |\3. *Quantifiers* |
-
-        | @{n}@ | match exactly _n_ times | Precisely three numbers in a row is @/\d{3}/@ |
-
-        | @{n,}@ | matches _n_ times or _more_ | Three or more letters in a row is @/[a-z]{3,}/i@ |
-
-        | @{n,n2}@ | matches at least _n_ times but no more than _n2_ times | So, @/[\d,]{3,9}/@ matches
-        between three and nine characters which are numbers or commas |
-
-        | @*@ | the asterisk @*@ is short for @{0,}@ | To match a colon, followed by zero or more word characters: @/:\w*/@ |
-
-        | @+@ | the plus is short for @{1,}@ | To match one or more minus or plus signs, use @/[-+]+/@ |
-
-        | @?@ | the question mark is short for @{0,1}@ | To match three numbers followed by an optional period: @/\d{3}[.]?/@ |
+        Uma busca por três números em sequência também pode ser escrita como: @/\d{3}/@.  Imediatamente após uma classe de caracter
+        como @\d@, você pode usar um símbolo de quantidade para dizer quantas vezes você quer que aquela classe de caracter seja repetida.
 
 
-        A really common regular expression is for matching phone numbers.  American phone numbers (including an area
-        code) can be matched using the digit character class and the precise quantifiers.
+        |\3. *Quantificadores* |
+
+        | @{n}@ | casa exatamente _n_ vezes | Precisamente três números em sequência é @/\d{3}/@ |
+
+        | @{n,}@ | casa _n_ vezes ou _mais_ | Três ou mais letras em sequência é @/[a-z]{3,}/i@ |
+
+        | @{n,n2}@ | casa pelo menos _n_ vezes mas não mais que _n2_ vezes | Então, @/[\d,]{3,9}/@ casa
+        entre três e nove caracteres que são números ou vírgulas |
+
+        | @*@ | o asterisco @*@ é a forma curta para @{0,}@ | Para casar dois pontos, seguidos de zero ou mais caracteres de palavra: @/:\w*/@ |
+
+        | @+@ | o sinal de mais é a forma curta para @{1,}@ | Para casar um ou mais sinais de menos ou mais, use @/[-+]+/@ |
+
+        | @?@ | a interrogação é a forma curta para @{0,1}@ | Para casar três números seguidos de um ponto opcional: @/\d{3}[.]?/@ |
+
+
+        Uma expressão regular bem comum é uma que case números de telefone.  Números de telefone norte-americanos (incluindo
+        código de área) podem ser casados usando a classe de caracter de dígito e os quantificadores precisos.
 
 
         <pre>
-         irb> "Call 909-375-4434" =~ /\d{3}-\d{3}-\d{4}/
-           => 5
-         irb> "The number is (909) 375-4434" =~ /[(]\d{3}[)]\s*\d{3}-\d{4}/
-           => 14
+         irb> "Ligue 909-375-4434" =~ /\d{3}-\d{3}-\d{4}/
+           => 6
+         irb> "O número é (909) 375-4434" =~ /[(]\d{3}[)]\s*\d{3}-\d{4}/
+           => 11
         </pre>
 
 
-        This time, instead of using @match@ to search for the expression, the @=~@ operator was used.  This operator is the
-        *match operator*, an equals sign followed by *a tilde*.  The tilde is like a bit of smoke coming off the edge of a
-        smokestack.  Remember the deer, the smoke they blow, a cryptic language just like regular expressions.  The smoky
-        tilde points toward the regexp.
+        Desta vez, em vez de usar @match@ para procurar pela expressão, o operador @=~@ foi usado.  Este operador é o
+        *operador de casamento*, um sinal de igual seguido de *um til*.  O til é como uma fumacinha saindo da ponta de uma
+        chaminé.  Lembre-se dos cervos, a fumaça que eles soltam, uma linguagem críptica assim como as expressões regulares.  O
+        til fumacento aponta para a expressão regular.
 
 
-        The match operator returns a number.  The number is the spot in the string where the regular expression matched.
-        So when the match operator returns @5@, it's saying, "Before the match, there are five characters in the string."
+        O operador de casamento retorna um número.  O número é a posição na string onde a expressão regular foi encontrada.
+        Então quando o operador retorna @6@, ele está dizendo, "Antes da expressão, há seis caracteres na string."
 
 
-        If you need to get the full string matched, you can use the special @$&@ global variable if you're using the
-        match operator.  Or, if you're using the @match@ method, you can get the full string by converting the @MatchData@ object
-        to a string.
+        Se você precisa casar a string inteira, você pode usar a variável global especial @$&@ se você está usando o 
+        operador de casamento.  Ou, se você estiver usando o método @match@, você pode conseguir a string inteira convertendo
+         o objeto @MatchData@ em uma string.
 
 
         <pre>
-         # Using =~ and $& together.
-         irb> "The number is (909) 375-4434" =~ /[(]\d{3}[)]\s*\d{3}-\d{4}/
-           => 14
+         # Usando =~ e $& juntos.
+         irb> "O número é (909) 375-4434" =~ /[(]\d{3}[)]\s*\d{3}-\d{4}/
+           => 11
          irb> $&
            => "(909) 375-4434"
 
-         # Using the MatchData object.
-         irb> phone = /[(]\d{3}[)]\s*\d{3}-\d{4}/.match("The number is (909) 375-4434")     
+         # Usando o objeto MatchData.
+         irb> telefone = /[(]\d{3}[)]\s*\d{3}-\d{4}/.match("O número é (909) 375-4434")     
            => #<MatchData:0xb7d51680>
-         irb> phone.to_s
+         irb> telefone.to_s
            => "(909) 375-4434"
         </pre>
 
 
-        Most Rubyists prefer the second approach, as it uses an object within a _local variable_ rather than a _global variable_.
-        Global variables are kind of sketchy, since they can be easily overwritten.  If you run two regular expressions in a
-        row, the global variable gets overwritten the second time.  But with local variables, you can keep both matches around
-        as long as the variables are named differently.
+        A maioria dos Rubistas prefere a segunda alternativa, uma vez que usa um objeto dentro de uma _variável local_ em vez de uma _variável global_.
+        Variáveis globais são meio questionáveis, uma vez que podem ser facilmente sobrescritas.  Se você rodar duas expressões regulares na
+        sequência, a variável global vai ser sobrescrita na segunda vez.  Mas com variáveis locais você pode manter as duas ocorrências
+        desde que as variáveis tenham nomes diferentes.
 
 
-        Other than matching, another common use of regular expression is to do *search-and-replace* from within Ruby.
-        You can search for the word "cat" and replace it with the word "banjo."  Sure, you can do that with strings or regexps.
+        Além de encontrar ocorrências, outro uso comum de expressões regulares é fazer *encontre-e-substitua* de dentro do Ruby.
+        Você pode buscar pela palavra "mala" e substituí-la pela palavra "banjo."  Claro, você pode fazer isso com strings ou expressões regulares.
 
 
         <pre>
-         irb> song = "I swiped your cat / And I stole your cathodes"
-         irb> song.gsub 'cat', 'banjo'
-           => "I swiped your banjo / And I stole your banjohodes"
+         irb> musica = "Eu furtei sua mala / E roubei o malabarista"
+         irb> musica.gsub 'mala', 'viola'
+           => "Eu furtei sua viola / E roubei o violabarista"
 
-         irb> song.gsub /\bcat\b/, 'banjo'
-           => "I swiped your banjo / And I stole your cathodes"
+         irb> musica.gsub /\bmala\b/, 'viola'
+           => "Eu furtei sua viola / E roubei o malabarista"
         </pre>
 
 
-        The @gsub@ method is named for "global substitution."  Notice how in the first example it replaced the word "cat" and the first
-        three letters of "cathodes."  Strings also have a simple @sub@ method which will substite only once.
+        O método @gsub@ significa "substituição global."  Note como no primeiro exemplo ele substituiu a palavra "mala" e as quatro
+        primeiras letras de "malabarista."  Strings também têm um método simples @sub@ que vai substituir apenas uma vez.
 
 
-        And so this chapter ends, with Blix and the Foxes cruising aloft the solid pink belched from a very outspoken
-        deer somewhere in those pastures.
+        E assim este capítulo acaba, com Blix e as Raposas voando no rosa sólido expelido de um cervo muito reservado em algum lugar
+        naquelas pastagens.
 
 
 #        Using regular expressions for substitution is incredibly sly.  
