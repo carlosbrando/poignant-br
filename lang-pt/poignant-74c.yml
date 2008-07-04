@@ -1,127 +1,127 @@
         <pre>
-         irb> $/      # The $/ is the line separator, it is normally set to \n, which represents _Enter_
-           => "\n"    # or "end of line".  The slash represents a sword slashing lines in a file.
-
-         # The line separator controls how methods like each_line or readlines breaks up strings.
-         irb> "Jeff,Jerry,Jill\nMichael,Mary,Myrtle".each_line { |names| p names }
+         irb> $/      # O $/ é a linha separadora, ele é normalmente configurado para \n, o qual representa o _Enter_
+           => "\n"    # ou "o final da linha".  A barra representa uma espada que corta e reduz linhas em um arquivo.
+		   
+         # A linha separadora controla como os métodos each_line ou readlines quebram as strings.		 
+         irb> "Jeff,Jerry,Jill\nMichael,Mary,Myrtle".each_line { |nomes| p nomes }
            => "Jeff,Jerry,Jill\n"
            => "Michael,Mary,Myrtle"
 
-         # If you change the line separator, you change how many methods work, such as each_line.
-         # See what happens when I change the line separator to a comma.
+         # Se você mudar a linha separadora, você muda como os métodos trabalham, tal como o each_line.
+         # Veja o que acontece quando eu mudar a linha separadora por uma vírgula.
          irb> $/ = ','
-         irb> "Jeff,Jerry,Jill\nMichael,Mary,Myrtle".each_line { |names| p names }
+         irb> "Jeff,Jerry,Jill\nMichael,Mary,Myrtle".each_line { |nomes| p nomes }
            => "Jeff,"
            => "Jerry,"
            => "Jill\nMichael,"
            => "Mary,"
            => "Myrtle"
 
-         irb> $,     # The $, variable is the join separator, used when joining strings with
-           => nil    # Array#join or Kernel::print.  The comma is a common join character.
+         irb> $,     # O $, é a variável que une o separador, usado ao unir strings com
+           => nil    # Array#join or Kernel::print. A vírgula é um caractere comum de junção.
 
-         # The join separator is normally empty.
-         irb> ['candle', 'soup', 'mackarel'].join
-           => "candlesoupmackarel"
-         irb> $, = ' * '; ['candle', 'soup', 'mackarel'].join
-           => "candle * soup * mackarel"
+         # O separador de junção está normalmente vazio.
+         irb> ['vela', 'sopa', 'mackarel'].join
+           => "velasopamackarel"
+         irb> $, = ' * '; ['vela', 'sopa', 'mackarel'].join
+           => "vela * sopa * mackarel"
          
-         # But, usually, you won't need the global variable.
-         irb> ['candle', 'soup', 'mackarel'].join ' # '
-           => "candle # soup # mackarel"
+         # Mas, geralmente, você não necessitará de uma variável global.
+         irb> ['vela', 'sopa', 'mackarel'].join ' # '
+           => "vela # sopa # mackarel"
 
-         irb> $;     # The $; variable is the split separator, used when splitting strings
-           => nil    # with String#split.
+         irb> $;     # O $; a variável é o separador que divide, usado ao dividir strings
+           => nil    # com String#split.
 
-         # The split separator is normally empty, which means String#split will separate
-         # the string where there is whitespace.
-         irb> "candle  soup\nmackarel".split
-           => ["candle", "soup", "mackarel"]
-         irb> $; = 'a'; "candle  soup\nmackarel".split
-           => ["c", "ndle  soup\nm", "ck", "rel"]
+         # O separador split está normalmente vazio, que significa que String#split separará
+         # a string onde há um espaço em branco.
+         irb> "vela  sopa\nmackarel".split
+           => ["vela", "sopa", "mackarel"]
+         irb> $; = 'a'; "vela  sopa\nmackarel".split
+           => ["vel", "sop", "\nm", "ck", "rel"]
 
-         # But, usually, you won't need the global variable.
-         irb> "candle # soup # mackarel".split ' # '
-           => ['candle', 'soup', 'mackarel']
+         # Mas, geralmente, você não necessitará de uma variável global.
+         irb> "vela # sopa # mackarel".split ' # '
+           => ['vela', 'sopa', 'mackarel']
         </pre>
 
 
-        Outside the _Gorilla Mint_, Blix scolded the foxes.  "We could have used that guy's help!  If he knows
-        where R.K. is, we could use his cunning!"
+        Fora do _Casa da Moeda do Gorila_, Blix repreendeu as raposas.  "Nós poderíamos ter aproveitado a ajuda desse cara'!  Se sabe
+        onde está R.K., nós poderíamos usar a astúcia dele!"		
+
+		
+        "*Nós não precisamos do dinheiro do macaco!*" disse a Raposa Pequena.  "*We podemos criar nosso _próprio_ dinheiro!*"
 
 
-        "*We don't need that ape's money!*" said Fox Small.  "*We can make our _own_ money!*"
+        "*Nós podemos suportar pulseiras eletrônicas!*" disse a Raposa Alta.
 
 
-        "*We could support electronic wristbands!*" said Fox Tall.
+        "Seu dinheiro é sem valor," disse Blix.  "O dinheiro é do gorila. Não tem valor.  Ele é pior do que
+        os cristais azuis."		
+
+		 
+        "Mas serve pra uma finalidade," disse a Raposa Alta.
 
 
-        "His money is worthless," said Blix.  "It's gorilla money.  It has no value.  It's worse than
-        blue crystals."
+        "Não ele não serve," disse a Raposa Pequena.  "Ele apenas disse que o dinheiro não tem importância."
 
 
-        "But it serves a purpose," said Fox Tall.
+        "Mas sobre o tapete impermeável e as cirurgias?" disse a Raposa Alta.
 
 
-        "No it doesn't," said Fox Small.  "He just said it's worthless."
+        "Sim," disse a Raposa Pequena para Blix.  "O que dizer do tapete impermeável e as cirurgias?"
 
 
-        "But what about linoleum and surgeries?" said Fox Tall.
+        "Se todos os hospitais possuem uma equipe de gorila e toda as casas receberam uma rede de melhorias estritamente operadas
+        por gorila, então -- SIM -- você poderia comprar o tapete impermeável e as cirurgias.  Mas Eu _garanto_ que você teria
+        um tapete impermeável desleixado e muito cirurgias horríveis.  Eu não acho que você tinha que torná-lo do que uma economia com vida."
+
+		
+        "Assim, se R.K. é tão esperto," disse a Raposa Alta, dando risada dissimuladamente, "por que imprime tal moeda sem valor?"
 
 
-        "Yeah," said Fox Small, up at Blix.  "What about linoleum and surgeries?"
+        "Ele é a tampa para outras atividades," disse Blix.  "Além do que, se você é tão esperto, porque você recorreu
+        violentamente derrotando aquele pobre gorila?"			
+
+		
+        "Eu suponho que foi um mau jogo," disse a Raposa Alta, pendendo sua cabeça.  "Meu amigo direi a você que eu fiquei
+        de saco cheio o dia inteiro."
 
 
-        "If all the hospitals were staffed by gorillas and all the home improvement chains were strictly operated
-        by gorillas, then -- YES -- you could buy linoleum and surgeries.  But I _guarantee_ that you would have
-        very sloppy linoleum and very hideous surgeries.  I don't think you'd make it out of that economy alive."
-
-
-        "So, if R.K. is so cunning," said Fox Tall, grinning slyly, "why does he print such worthless currency?"
-
-
-        "It's a cover for other activities," said Blix.  "Besides, if you're so smart, why did you resort to
-        violently pounding that poor gorilla?"
-
-
-        "I guess that was a bad play," said Fox Tall, hanging his head.  "My friend here will tell you that I've
-        been on edge all day."
-
-
-        "And your rage finally reared its fuming snout!" said Fox Small.  "You're finally living up to your
-        goatee."
+        "E sua raiva finalmente levantou seu focinho fumegante!" disse a Raposa Pequena.  "Você finalmente está vivendo a vida à altura do seu 
+        cavanhaque."
 
 
         !i/wixl-10.gif!
 
 
-        Down the lanes they travelled, the two foxes oblivious to their direction, but having a good time
-        now that they had Blix leading the way with such urgency.  They lapsed into a careless wandering right behind Blix
-        and spent their afternoon heckling most of the passersby.
+        Abaixo das pistas que eles viajaram, as duas raposas distraídas no seu rumo, mas tendo um bom tempo
+        agora que tiveram Blix conduzindo o caminho com tanta urgência.  Eles passaram o tempo desatentamente perambularam a direita atrás de Blix 
+        e perdendo sua tarde importunando a maioria dos pedestres.		
 
+		
+        Um dos alvo dos seus permanentes comentário era Os Transportadores Alados de rolo de papel, pares de morcegos que carregam 
+        documentos que precisam de ser imediatamente autenticados.  Não pode haver nenhum atraso, eles devem ir rápido, 
+        não há mesmo uma hora para enrolar o rolo de papel, não, eles devem deixar cair seus queijos suíço e ir para fora da porta.
+	
 
-        One such target of their ongoing commentary was The Winged Scroll Carriers, pairs of bats that carry
-        documents which need to be immediately sworn and notarized.  There can be no delay, they must go swift,
-        there is not even time to roll up the scroll, no, they must drop their swiss cheese and be out the door.
-
-
-        These couriers resemble a kind of Ruby construct called *delimited types*.  A long series of characters
-        comprises the scroll, flanked on each side by a bat bracing its curly wings to hold the scroll together.
-        The opening bat wears a hat on which is written @%w@, which identifies the scroll as a set of words.
+        Estes correios assemelham-se a um tipo de construção do Ruby chamado *tipos delimitados*.  Uma série longa de caracteres 
+        compreende o rolo de papel, em cada lado por um morcego estimulante que segura suas asas balançam para manter o rolo de papel unido. 
+        O morcego da ponto usa um chapéu em que está escrito @%w@, que identifica o rolo de papel como um conjunto de palavras.
 
 
         <pre>
-         irb> bats = %w{The Winged Scroll Carriers}
-           => ['The', 'Winged', 'Scroll', 'Carriers']
+         irb> bats = %w{Os Transportadores Alados de Rolo de Papel}
+           => ['Os', 'Transportadores', 'Alados', 'de', 'Rolo', 'de', 'Papel']
         </pre>
 
 
-        The @%w@ bats and their scroll, when fed into Ruby, emerge as an array of words.  This syntax is a shortcut
-        in case you don't want to go through the trouble of decorating each word with commas and quotes.  You are
-        in a hurry, too, there can be no delay.  You jot out the words between the bats and let Ruby figure out where
-        to cut.
+        Os morcegos de @%w@ e seus rolo de papel, quando alimentados dentro do Ruby, emergem como um array de palavras.  Esta sintaxe é um atalho 
+        caso que você não queira atravessar o problema de decorar cada palavra com vírgulas e citações.  Você está
+        com pressa, também, não pode haver nenhum atraso.  Você anota fora as palavras entre os morcegos e deixa o rubi calcular fora onde 
+        cortar.
 
-
-        Other bats, other hats.  For instance, the @%x@ hat runs an external program.
+		
+        Outros morcegos, outros chapéus. Por exemplo, o chapéu de @%x@ funciona um programa externo.
 
 
