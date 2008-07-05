@@ -2,36 +2,36 @@
          class AnimalLottoTicket
 
            # A list of valid notes.
-           NOTES = [:Ab, :A, :Bb, :B, :C, :Db, :D, :Eb, :E, :F, :Gb, :G]
+           NOTAS = [:Ab, :A, :Bb, :B, :C, :Db, :D, :Eb, :E, :F, :Gb, :G]
 
            # Stores the three picked notes and a purchase date.
-           attr_reader :picks, :purchased
+           attr_reader :escolhidas, :comprado
 
            # Creates a new ticket from three chosen notes.  The three notes
            # must be unique notes.
-           def initialize( note1, note2, note3 )
-             if [note1, note2, note3].uniq!
-               raise ArgumentError, "the three picks must be different notes"
-             elsif picks.detect { |p| not NOTES.include? p }
-               raise ArgumentError, "the three picks must be notes in the chromatic scale."
+           def initialize( nota1, nota2, nota3 )
+             if [nota1, nota2, nota3].uniq!
+               raise ArgumentError, "as três escolhidas devem ser diferentes entre si"
+             elsif escolhidas.detect { |p| not NOTAS.include? p }
+               raise ArgumentError, "as três escolhidas devem ser notas da escala cromática."
              end
-             @picks = picks
-             @purchased = Time.now
+             @escolhidas = escolhidas
+             @comprado = Time.now
            end
 
            # Score this ticket against the final draw.
            def score( final )
              count = 0
-             final.picks.each do |note|
-               count +=1 if picks.include? note
+             final.escolhidas.each do |note|
+               count +=1 if escolhidas.include? note
              end
              count
            end
 
            # Constructor to create a random AnimalLottoTicket
            def self.new_random
-             new( NOTES[ rand( NOTES.length ) ], NOTES[ rand( NOTES.length ) ],
-                  NOTES[ rand( NOTES.length ) ] )
+             new( NOTAS[ rand( NOTAS.length ) ], NOTAS[ rand( NOTAS.length ) ],
+                  NOTAS[ rand( NOTAS.length ) ] )
            rescue ArgumentError
              redo
            end
@@ -48,14 +48,14 @@
 
 
         Instead of using a class variable to store the musical note list, they're stored in
-        a constant called @AnimalLottoTicket::NOTES@.  Variables change and the note list
+        a constant called @AnimalLottoTicket::NOTAS@.  Variables change and the note list
         shouldn't change.  Constants are designed to stay the same.  You can still change the
         constant, but you'll have to be tricky or Ruby will speak up.
 
 
         <pre>
-         irb> AnimalLottoTicket::NOTES = [:TOOT, :TWEET, :BLAT]
-         (irb):3: warning: already initialized constant NOTES
+         irb> AnimalLottoTicket::NOTAS = [:TOOT, :TWEET, :BLAT]
+         (irb):3: warning: already initialized constant NOTAS
            => [:TOOT, :TWEET, :BLAT]
         </pre>
 
