@@ -5,11 +5,11 @@
 
         Além disso, algumas variáveis especiais: @nil@, @true@, @false@.  Estas são coisas que o Ruby não vai
         te deixar alterar, então não faz sentido copiar mesmo.  Quero dizer, imagine se você pudesse mudar o 
-        @false@ para que seja @true@.  A coisa toda vira uma mentira.
+        @false@ para que seja @true@.  A coisa toda vira uma grande mentira.
 
 
-        Talvez o *Aspecto Confuso No. 3* seja um simples.  Estou usando aquelas chaves na string. 
-        Estou tratando a como se ela fosse um Array ou Hash.  Eu posso fazer isso.  Porque strings
+        Talvez o *Aspecto Confuso No. 3* seja simples.  Estou usando aquelas chaves na string. 
+        Estou a tratando como se ela fosse um Array ou Hash.  Eu posso fazer isso.  Porque strings
         têm um método @[]@.
 
 
@@ -282,7 +282,7 @@
         strive to perfect animals."
 
 
-        He mumbled and nodded.  "You can't be (poth-in-oin) part of (in) such things."
+        Ele resmungou e balançou a cabeça.  "Você não pode ser (poth-in-oin) parte (in) em coisas assim."
 
 
         "Você acha que nós falharemos?"
