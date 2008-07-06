@@ -1,7 +1,7 @@
     - A Continuação da História do Instrutor de Órgão da Minha Filha: >
 
         Eu sei que você pode estar surpreso em saber que eu tenho uma filha.  Você pensa que meu estilo
-        de escrita indica uma mente imatura ou infantil.  Bem, por favor relaxe.  Eu não tenho uma filha.
+        de escrever indica uma mente imatura ou infantil.  Bem, por favor relaxe.  Eu não tenho uma filha.
         Mas isso não me impede de pensar no treinamento musical dela.
 
 
@@ -80,12 +80,12 @@
 
 
         E eu disse, "Paij-ree, você está no livro.  E as estórias do seu planeta."  Eu falo com ele como
-        se ele fosse o E.T.  Eu não sei porquê. Como o que disse em seguida, "E daí talvez algum dia
+        se ele fosse o E.T.  Eu não sei porquê. Como o que eu disse em seguida: "E daí talvez algum dia
         você possa ir pra casa pro seu pai e pra sua mãe!"
 
 
         Ele replicou, "(pon-shoo) (pon-shoo) (em-pithy-dah)."  Que é o jeito dele de expressar em voz alta
-        seu silêncio e medo.
+        seu silêncio e receio.
 
 
         Ele queria ver o que eu havia escrito, então eu mostrei a ele este pequeno método que escrevi pra você.
@@ -103,7 +103,7 @@
 
 
         "Viu o que isto faz, Paij-ree?  Qualquer Smotchkkiss velho pode usar este método
-        pra remover todas as o take all the incoherent babblings out of your speaking," I said.
+        pra remover toda essa poluição incoerente das suas falas," eu disse.
 
 
         E eu alimentei o método com algo que ele havia dito mais cedo.
@@ -133,15 +133,15 @@
 
 
         No método @limpar_murmurios_de@, estou basicamente procurando por abre parênteses.  Quando eu
-        encontrou um, eu procuro um fecha parênteses na sequencia.  Uma vez que tenha encontrado ambos, eu troco
+        encontro um, eu procuro um fecha parênteses na sequência.  Uma vez que tenha encontrado ambos, eu troco
         eles e seu conteúdo por uma string vazia.  O loop @while@ continua até que todos os parênteses se acabem.
         Os murmúrios são removidos e o método termina.
 
 
         "Agora olhando este método," eu disse.  "Eu vejo que há alguns aspectos confusos 
         e outras coisas que eu poderia ter feito melhor."  Por favor não me olhe estranho por seu professor 
-        ter escrito este código.  Eu acho certo the mostrar algumas técnicas sloppy techniques 
-        pra te ajudar  to help you work through them with me.  Então vamos.
+        ter escrito este código.  Eu acho certo lhe mostrar algumas técnicas desleixadas 
+        pra te ajudar a trabalha-las comigo.  Vamos lá.
 
 
         Okay, *Aspecto confuso No. 1*: Este método limpa uma string.  Mas e se nós acidentalmente
@@ -251,9 +251,9 @@
         da string antes de modificá-la?
 
 
-        Sim, absolutamente, ele deveria!  *É falta de educação modificar strings daquele jeito.*  Nós usamos @gsub@ e
-        @gsub!@ no capítulo passado.  Você se lembra qual destes dois métodos é um *método destrutivo*,
-        que modifica strings diretamente?
+        Sim, absolutamente, ele deveria!  *É falta de educação modificar strings daquele jeito.*  
+        Nós usamos @gsub@ e @gsub!@ no capítulo passado.  Você se lembra qual destes dois métodos 
+        é um *método destrutivo*, que modifica strings diretamente?
 
 
         Ou nós chamamos este método de @limpar_murmurios_de!@ (cortesia a todos os colegas bacanas

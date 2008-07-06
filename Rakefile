@@ -1,6 +1,6 @@
-LANGUAGES=   FileList['lang-*'].map do |file| 
-    file.gsub(/lang-(\w+)/,'\1')
-  end
+LANGUAGES = FileList['lang-*'].map do |file| 
+  file.gsub(/lang-(\w+)/,'\1')
+end
 
 desc "List all known localizations"
 task :localizations do
@@ -49,19 +49,19 @@ task :info do
 end
 
 def generate_for( language , path)
-    target = File.join( path, language )
-    puts "About to generate for #{language} in #{target}"
-    sh "ruby scripts/poignant.rb #{target} #{language}"
+  target = File.join( path, language )
+  puts "About to generate for #{language} in #{target}"
+  sh "ruby scripts/poignant.rb #{target} #{language}"
 end
 
 desc "Combina os trechos do poignant em um único arquivo"
 task :merge_pt do
-  File.open('lang-pt/poignant.yml', 'w') do |output|
+  File.open('lang-pt/poignant.yml', "w") do |output|
     files = Dir["lang-pt/*.yml"]
     files -= %w[lang-pt/localization.yml lang-pt/poignant.yml]
     files.sort!
     files.each do |ind|
-      output.write File.read(ind)
+      output.write(File.read(ind))
     end
   end
 end
