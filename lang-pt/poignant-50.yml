@@ -7,8 +7,8 @@
         E agora, as histórias das Loterias Paij-ree.
 
 
-        Em Endertromb, o pai do organista inventou a loteria.  A idéia surgiu quando ele estava rezando
-        para o Escavador Dosh.
+        Em Endertromb, o pai do organista inventou a loteria.  A idéia surgiu quando ele estava
+        rezando para o Escavador Dosh.
 
 
         Escavador Dosh é uma espécie de Deus para eles.  Mas dez vezes mais
@@ -20,9 +20,8 @@
         É mais ou menos complicado, porque o Escavador Dosh mata totalmente as pessoas.  Mas
         eu convido você a fazer o que ele diz, ele não é tão mal.  Talvez eu fale sobre isso
         mais tarde.  É um tal de fala sobre dor, porque isso é tão assustador e ainda um dos
-        meus amigos realmente acredita em tudo isso.  Eu consigo um tipo de
-        estrangulador -- não que eu esteja precisando, mais
-        I get kind of choked up -- not like I'm crying, more like I'm choking.
+        meus amigos realmente acredita em tudo isso.  Eu fico meio que chocado -- não que eu
+        esteja chorando, estou apenas surpreso.
 
 
         De qualquer forma, enquanto rezava, três números vieram para o pai do Paij-ree.
@@ -288,9 +287,8 @@
         diretamente para a definição de @objeto@._
 
 
-        A 
-        The budding organ instructor also threw in a tricky syntax worth examining.
-        In the ninth line, a winner has been found.
+        O instrutor do setor de desenvolvimento também lançou um truque na sintaxe digno
+        de ser examinado.
 
 
         <pre>
@@ -299,7 +297,7 @@
         </pre>
 
 
-        The @||=@ syntax is a shortcut.
+        A sintaxe @||=@ é um atalho.
 
 
         <pre>
@@ -307,38 +305,44 @@
         </pre>
 
 
-        The *double pipe* is an *or* logic.  Set @winners[buyer]@ equal to @winners[buyer]@ or,
-        if @winners[buyer]@ is nil, set it to @[]@.  This shortcut is a little strange, but if you
-        can really plant it in your head, it's a nice timesaver.  You're just making sure a variable
-        is set before using it.
+        O *pipe duplo* é um *ou* lógico.  Coloque @vendendores[comprador]@ igual a
+        @vencedores[comprador]@ ou, se @vencedores[comprador]@ é nulo, ajuste-o para @[]@.  Este
+        atalho é um pouco estranho,  mas se você puder abrir sua mente, ele é um bom método para
+        economizar tempo.  Você está se certificando que uma variável está inicializada antes de
+        usá-la.
 
 
         <pre>
          irb> SorteioLoteria.jogo.each do |vencedor, bilhetes|
-         irb>   puts vencedor + "won on " + bilhetes.length + " ticket(s)!"
-         irb>   tickets.each do |ticket, score|
-         irb>     puts "\t" + ticket.picks.join( ', ' ) + ": " + score
+         irb>   puts vencedor + " ganhou com " + bilhetes.length + " bilhete(s)!"
+         irb>   bilhetes.each do |bilhete, pontuacao|
+         irb>     puts "\t" + bilhete.numeros_escolhidos.join( ', ' ) + ": " + pontuacao
          irb>   end
          irb> end
 
-         Gram-yol won on 2 ticket(s)!
+         Gram-yol ganhou com 2 bilhetes(s)!
              25, 14, 33: 1
              12, 11, 29: 1
-         Tarker-azain won on 1 ticket(s)!
+         Tarker-azain ganhou com 2 bilhetes(s)!
              13, 15, 29: 2
-         Bramlor-exxon won on 1 ticket(s)!
+         Bramlor-exxon ganhou com 2 bilhetes(s)!
              2, 6, 14: 1
         </pre>
 
 
-        But these salad days were not to continue for Paij-ree and his father.  His father often
-        neglected to launder his uniform and contracted a moss disease on his shoulders.  The disease
-        gradually stole his equilibrium and his sense of direction.
+        Mas estes dias de inocência não continuaram para Paij-ree e seu pai.  Seu pai, muitas vezes,
+        se negava em lavar seu uniforme e acabou contraíndo uma doença de mofo nos seus ombros.  A
+        doença afetou gadualmente seu equilíbrio e seu senso de direção.
+
+
+        Seu pai ainda tentou futilmente manter os negócios funcionando.  Ele rodou a cidade, algumas
+        vezes andando, de forma deplorável, passo-a-passo sobre os paralelepípedos, muitas vezes
+        tateando as paredes, contando os tijolos para o salão dos matemáticos e estação dos cocheiros.
 
 
         His father still futilely attempted to keep the business running.  He spiraled through the
         city, sometimes tumbling leg-over-leg down the cobbled stone, most often slowly feeling the walls,
-        counting bricks to the math parlours and coachmen stations, where he would thrust tickets
+        counting bricks to the math parlours and coachmen stations, <****> where he would thrust tickets
         at the bystanders, who hounded him and slapped him away with long, wet beets.  Later, Paij-ree
         would find him in a corner, his blood running into the city drains alongside the juices of the
         dark, splattered beets, which juice weaseled its way up into his veins and stung and clotted
@@ -354,8 +358,8 @@
 
         <pre>
          irb> bilhete = BilheteLoteria.new
-         irb> bilhete.picks = 3
-         NoMethodError: undefined method `picks=' for #<LotteryTicket:0xb7d49110>
+         irb> bilhete.numeros_escolhidos = 3
+         NoMethodError: undefined method `numeros_escolhidos=' for #<BilheteLoteria:0xb7d49110>
         </pre>
 
 
@@ -365,8 +369,8 @@
 
 
         <pre>
-         class LotteryTicket
-           attr_accessor :picks, :purchased
+         class BilheteLoteria
+           attr_accessor :numeros_escolhidos, :data_compra
          end
         </pre>
 
@@ -375,11 +379,11 @@
 
 
         <pre>
-         class LotteryTicket
-           def picks;           @picks;            end
-           def picks=(var);     @picks = var;      end
-           def purchased;       @purchased;        end
-           def purchased=(var); @purchased = var;  end
+         class BilheteLoteria
+           def numeros_escolhidos;       @numeros_escolhidos;       end
+           def numeros_escolhidos=(var); @numeros_escolhidos = var; end
+           def data_compra;              @data_compra;              end
+           def data_compra=(var);        @data_compra = var;        end
          end
         </pre>
 
@@ -394,13 +398,14 @@
 
         <pre>
          class SkatingContest
-           def the_winner; @the_winner; end
-           def the_winner=( name )
-             unless name.respond_to? :to_str
-               raise ArgumentError, "The winner's name must be a String,
-                 not a math problem or a list of names or any of that business."
+           def o_vencedor; @o_vencedor; end
+           def o_vencedor=( nome )
+             unless nome.respond_to? :to_str
+               raise ArgumentError, "O nome do vencedor deve ser uma String,
+                 não um prooblema matemático ou uma lista de nomes ou qualquer ou
+                 coisa parecida."
              end
-             @the_winner = name
+             @o_vencedor = nome
            end
          end
         </pre>
