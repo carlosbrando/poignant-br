@@ -1,147 +1,147 @@
-    - Them What Live the Dream: >
+﻿    - Eles Que Viveram o Sonho: >
 
-        While The Originals' craft had long disappeared, Dr. Cham frantically worked away at the
-        computer built into the control panel up in the observation deck.  Hannah had disappeared
-        into the floor (or perhaps those little sparks along the ground were still wisps of her
-        paranormal presence!) and the goat amicably watched Dr. Cham hack out a Ruby module.
+        Apesar da arte dos Originais ter desaparecido há muito, Dr. Cham  trabalhou freneticamente no
+        computador acoplado ao painel de controle sobre o deck de observação.  Hannah havia desaparecido
+        dentro do chão (ou talvez aquelas pequenas faíscas ao longo do caminho eram ainda rastros de sua
+        presença paranormal!) e a cabra amigavelmente assistiu Dr. Cham hackear um módulo Ruby.
 
 
         <pre>
          require 'endertromb'
-         module WishScanner
-           def scan_for_a_wish
-             wish = self.read.detect do |thought|
-               thought.index( 'wish: ' ) == 0
+         module EscanerPedidos
+           def escanear_por_um_pedido
+             desejo = self.read.detect do |pensamento|
+               pensamento.index( 'pedido: ' ) == 0
              end
-             wish.gsub( 'wish: ', '' )
+             desejo.gsub( 'pedido: ', '' )
            end
          end
         </pre>
 
 
-        "What's your plan?" asked the goat.  "It seems like I could have solved this problem in
-        like three lines."
+        "Qual seu plano?" perguntou a cabra.  "Parece que eu poderia resolver este problema em
+        umas três linhas."
 
 
-        "This @Module@ is the new @WishScanner@ technology," he said.  "The scanner only picks up
-        a wish if it starts with the word @wish@ and a colon and a space.  That way the planet doesn't
-        fill up with every less-than-ten-letter word that appears in people's heads."
+        "Este @Módulo@ é a nova tecnologia de @EscanerPedidos@," disse ele.  "O êscaner só pega
+        um desejo se ele começa com a palavra @pedido@, um dois pontos e um espaço. Deste modo o planeta não
+        será preenchido com cada palavra com menos-de-dez-letras que aparecem na cabeça das pessoas."
 
 
-        "Why don't you just use a class?" asked the goat.
+        "`Por que você simplesmente não usa uma classe?" indagou a cabra.
 
 
-        "Because a @Module@ is simpler than a class.  It's basically just a storage facility
-        for methods.  It keeps a group of methods together.  You can't create new objects
-        from a method."
+        "Porque um @Módulo@ é mais simples que uma classe.  É apenas um aparato de armazenamento
+        para métodos.  Ele mantém um grupo de módulos juntos.  Você não pode criar novos objetos
+        a partir de um método."
 
 
-        "But aren't you going to want a @WishScanner@ object, so you can actually use
-        it?" said the goat, appalled.
+        "Mas você não vai querer um objeto @EscanerPedidos@, para que você possa realmente
+        usá-lo?" disse a cabra, chocada.
 
 
-        "I'm going to mix it into the @MindReader@," said Dr. Cham.  And he did.
+        "Eu vou mesclá-lo com o @LeitorMentes@," disse Dr. Cham.  E assim o fez.
 
 
         <pre>
-         require 'mindreader'
-         class MindReader
-           include MindScanner
+         require 'leitormentes'
+         class LeitorMentes
+           include EscanerPedidos
          end
         </pre>
 
 
-        "Now, the @MindScanner@ module is mixed in to the @MindReader@," said Dr. Cham.
-        "I can call the @scan_for_a_wish@ method on any @MindReader@ object."
+        "Agora, o módulo @EscanerPedidos@ está mesclado ao @LeitorMentes@," disse Dr. Cham.
+        "Posso chamar o método @escanear_por_um_pedido@ em qualquer objeto @LeitorMentes@."
 
 
-        "So, it's a mixin," said the goat.  "The @MindScanner@ mixin."
+        "Então, é um mixin," disse a cabra.  "O mixin @LeitorMentes@."
 
 
-        "Yes, any module which is introduced into a class with @include@ is a mixin to that
-        class.  If you go back and look at the @scan_for_a_wish@ method, you'll see that it
-        calls a @self.read@ method.  I just have to make sure that whatever class I'm mixing
-        @MindScanner@ into has a @read@ method.  Otherwise, an error will be thrown."
+        "Sim, qualquer módulo que é incluso numa classe com um @include@ é um mixin para esta
+        classe.  Se você voltar e olhar para o método @escanear_por_um_pedido@, verá que ele
+        chama um método @self.read@.  Eu apenas tenho que ter certeza de que, qualquer que seja a classe com que estou mesclando
+        o @LeitorMentes@, ela tenha um método @read@.  Caso contrário, ocorrerá um erro."
 
 
-        "That seems really wierd that the mixin requires certain methods that it doesn't already have.
-        It seems like it should work by itself."
+        "Isto parece bastante estranho, o fato do mixin precisar de certos métodos que ele já não tem.
+        Parece que ele deveria funcionar por ele mesmo."
 
 
-        Dr. Cham looked up from the keyboard at the goat.  "Well, it's sort of like your video collection.
-        None of your video cassettes work unless they are put in a machine that uses video cassettes.
-        The depend on each other.  A mixin has some basic requirements, but once a class meets those
-        requirements, you can add all this extra functionality in."
+        Dr. Cham moveu seus olhos do teclado para a cabra.  "Bem, é como sua coleção de vídeos.
+        Nenhuma das suas fitas de vídeo funciona ao menos que você as ponha numa máquina que use fitas de vídeo.
+        Eles dependem um do outro. Um mixin tem alguns requisitos básicos, mas uma vez que uma classe atinje
+        estes requisitos, você pode adicionar toda esta funcionalidade extra a ela."
 
 
-        "Hey, that's cool," said the goat.
+        "Hey, isso é legal," disse a cabra.
 
 
-        "You read the book thirty times and you didn't pick that up?" asked Dr. Cham.
+        "Você leu o livro trinta vezes e não pegou isso?" perguntou Dr. Cham.
 
 
-        "You're a much better teacher in person," said the goat.  "I really didn't think I was going
-        to like you very much."
+        "Você é bem melhor professor pessoalmente," disse a cabra.  "Eu não pensei que fosse gostar
+        tanto assim de você."
 
 
-        "I completely understand," said the Doctor.  "This is much more real than the cartoons
-        make it seem."
+        "Eu compreendo completamente," disse o Doutor.  "Isto é muito mais real do que as tirinhas
+        fazem sê-lo."
 
 
         <pre>
-         require 'wishmaker'
-         reader = MindReader.new
-         wisher = WishMaker.new
+         require 'fazedorpedidos'
+         leitor = LeitorMentes.new
+         pedidor = FazedorPedidos.new
          loop do
-           wish = reader.scan_for_a_wish
-           if wish
-             wisher.grant( wish )
+           pedido = leitor.escanear_por_um_pedido
+           if pedido
+             pedidor.realize( pedido)
            end
          end
         </pre>
 
 
 
-        Irb sat and looped on the screen.  It'll do that until you hit Control-C.  But Dr. Cham let it
-        churn away.  Looping endlessly, scanning the mind waves for a proper wish.
+        Irb sentou e rodou o laço na tela.  Ele fará isso até que você pressione Control-C.  Mas Dr. Cham o deixou
+        rodando.  Rodando o laço indefinidamente, escaneando as ondas mentais por um pedido adequado.
 
 
-        And Dr. Cham readied his wish.  At first, he thought immediately of a @stallion@.  To ride bareback
-        over the vales of Sedna.  But he pulled the thought back, his wish hadn't been formed properly.
-        A stallion was useless in pursuing The Originals, so he closed his eyes again, bit his lip
-        and he thought to himself: @wish: whale@.
+        E Dr. Cham terminou seu pedido.  No começo, ele pensou imediatamente em um @garanhão@.  Para cavalgar em pêlo
+        sobre os vales de Sedna.  Mas ele recuou com o pensamento, seu pedido não havia sido formado corretamente.
+        Um garanhão era inútil para perseguir Os Originais, então ele fechou seus olhos novamente, mordeu seu lábio
+        e pensou com si mesmo: @pedido: baleia@.
 
 
-        h3. Last Whale to Peoplemud
+        h3. Última Baleia para Pessoasenlameadas
 
 
-        The blocky, sullen whale appeared down at the castle entrance, where Hannah was
-        bashing on a rosebud with her hand.  She whacked at it with a fist, but it only stayed
-        perfect and pleasant and crisp against the solid blue sky of Endertromb.
+        A atarracada e mal-humorada baleia apareceu na entrada do castelo, onde Hannah estava
+        chacoalhando um botão de rosas com sua mão.  Ela golpeou  a Baleia com a mão, mas esta apenas permaneceu
+        perfeita, comfortável e firme contra o céu sólido e azul de Endertromb.
 
 
-        "I'm bored," she said to the whale.  *BOHR-BOHR-OHRRRRRR.*
+        "Estou entediada," disse ela a baleia.  *BOHR-BOHR-OHRRRRRR.*
 
 
-        "Ok," said the whale, deep and soft.  As the word slid along his massive tongue, its
-        edges chipped off and the word slid out polished and worn in a bubble by his mouth's
-        corner.
+        "Ok," disse a baleia, profundamente e suavemente.  Enquanto a palavra deslizava junto de sua pesada língua, suas
+        bordas dividiam-se e a palavra saia polida e vestida numa bolha pelo 
+        canto de sua boca.
 
 
-        "I always have to die," said the young ghost.  "People always kill me."
+        "Eu sempre tenho que morrer," disse a jovem fantasma.  "As pessoas sempre me matam."
 
 
-        The whale fluttered his short fins, which hung at useless distance from the ground.
-        So, he pushed himself toward her with his tail.  Scooting over patches of grass.
+        A baleia sacudiu suas curtas nadadeiras, que se encontravam a uma distância inútil do solo.
+        Então, ela se moveu com esforço em direção a menina com sua cauda.  Lançando-se sobre os pedaços de grama.
 
 
-        "People kill, so who do they kill?" said the girl.  "Me.  They kill me every time."
+        "As pessoas matam, então, quem elas matam?" disse a menina.  "Eu.  Elas me matam todas as vezes."
 
 
-        The whale made it to within three meters of the girl, where he towered like a
-        great war monument that represents enough dead soldiers to actually steal a lumbering step
-        towards you.  And now, the whale rested his tail and, exhausted by the climb thus far,
-        let his eyelids fall shut and became a gently puffing clay mountain, his shadow
-        rich and doubled-up all around the hardly visible Hannah.
+        A baleia conseguiu chegar a três metros da garota onde se erguia como um
+        grande monumento de guerra que representava um número suficiente de soldados mortos a ponto de trazer um ruídoso passo
+        até você.  E agora a baleia descansava sua cauda e, exausta pela escalada até então,
+        deixou suas pálpebras se cerrarem tornando-se uma levemente inchada montanha de barro. Sua farta sombra
+        dobrou-se em volta da quase imperceptível Hannah.
 
 
