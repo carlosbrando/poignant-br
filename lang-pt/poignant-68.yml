@@ -1,5 +1,5 @@
     - >
-        Metaprogramação é a escrita de código que escreve código. Mas não como M. C. Escher rascunharia. *O programa não fica
+        Metaprogramação é a _escrita de código que escreve código_. Mas não como M. C. Escher rascunharia. *O programa não fica
         voltando e se escrevendo e nem o programa fica pulando de seu monitor e arrancando o teclado de suas mãos.*  Não, é bem
         menor que isso.
 
@@ -10,10 +10,10 @@
         van vai ficar brilhante depois.
 
 
-        Agora, vamos dizer que alguém coloque *aquela pequena pílula laranja* debaixo da torneira. Não na língua, _debaixo da torneira_. E isso aciona uma catalisação diferente,
+        Agora, vamos dizer que _alguém_ coloque *aquela pequena pílula laranja* debaixo da torneira. Não na língua, _debaixo da torneira_. E isso aciona uma catalisação diferente,
         que cria um grupo de sêxtuplas esponjas choramingantes, *com cordão umbilical e tudo mais.*  Ainda assim muito 
         prático para se limpar a van.  Mas um grupo totalmente diferente de camurça. E, um dia, esses seis irão fazer
-        o papai chorar quando eles tocarem em um concerto de violino.
+        o papai chorar quando tocarem em um concerto de violino.
 
 
         Metaprogramação é um conjunto de código dentro de um formato de pílula, que uma pequena gota de água pode acionar para se expandir.
@@ -39,7 +39,7 @@
     
 
         Agora, olhe para cima. Preste atenção. A classe @Criatura@ contém o código de metaprogramação. Você pode escreve código
-        de metaprogramação que pode ser usado em qualquer lugar, ao longo de todo Ruby, em @Criatura@ ou @Dragao@, em @String@
+        de metaprogramação que pode ser usado em _qualquer lugar_, ao longo de todo Ruby, em @Criatura@ ou @Dragao@, em @String@
         ou em @Object@, qualquer lugar.  O nosso exemplo aqui, uma vez que esta é a forma mais comum de meta-código, foca em 
         metaprogramação dentro de classes apenas.
 
