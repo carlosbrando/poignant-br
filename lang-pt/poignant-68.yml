@@ -1,88 +1,89 @@
     - >
-        Metaprogramming is _writing code which writes code_.  But not as M.C. Escher would sketch it.  *The program isn't reaching
-        back around and overwriting itself, nor is the program jumping onto your screen and wrenching the keyboard from your
-        hands.*  No, it's much smaller than that.
+        Metaprogramação é a _escrita de código que escreve código_. Mas não como M. C. Escher rascunharia. *O programa não fica
+        voltando e se escrevendo e nem o programa fica pulando de seu monitor e arrancando o teclado de suas mãos.*  Não, é bem
+        menor que isso.
 
 
-        Let's say it's more like *a little orange pill* you won at the circus.  When you suck on it, the coating wears away and
-        behind your teeth hatches a massive, floppy sponge brontosaurus.  He slides down your tongue and leaps free, frollicking 
-        over the pastures, yelping, "Papa!"  And from then on, whenever he freaks out and attacks a van, well, that van is _sparkling
-        clean_ afterwards.
+        Vamos dizer que é parecido *com uma pílula laranja* que você ganhou no circo. Quando você chupa ela e o sabor vai embora,
+        atrás do seu dente esconde um grande, esponjoso brontossauro.  Ele escorrega por sua língua e pula livremente, brincando 
+        sobre as pastagem e gritando: "Papai!" E a partir desse momento, sempre que ele enlouquecer vai atacar uma van, bem, essa
+        van vai ficar brilhante depois.
 
 
-        Now, let's say _someone else_ puts *their little orange pill* under the faucet.  Not on their tongue, _under the faucet_.  And this triggers a different catalysm, which
-        births a set of wailing sponge sextuplets.  *Umbilical cords and everything.*  Still very handy for cleaning the van.
-        But an altogether different kind of chamois.  And, one day, these eight will stir Papa to tears when they perform the
-        violin concerto of their lives.
+        Agora, vamos dizer que _alguém_ coloque *aquela pequena pílula laranja* debaixo da torneira. Não na língua, _debaixo da torneira_. E isso aciona uma catalisação diferente,
+        que cria um grupo de sêxtuplas esponjas choramingantes, *com cordão umbilical e tudo mais.*  Ainda assim muito 
+        prático para se limpar a van.  Mas um grupo totalmente diferente de camurça. E, um dia, esses seis irão fazer
+        o papai chorar quando tocarem em um concerto de violino.
 
 
-        Metaprogramming is packing code into pill-form, such that a slender drop of water could trigger it to expand.
-        More importantly, you can control the pill's reaction, so that a brontosaurus is produced, scaly and lumbering.
-        Or septulets, *CERTAINLY*.  Or seamstresses.  Or cat brains.  Or dragons.
+        Metaprogramação é um conjunto de código dentro de um formato de pílula, que uma pequena gota de água pode acionar para se expandir.
+        Mais importante, você pode controlar a reação da pílula, de uma forma que o brontossauro pode ser criado magro e desajeitado.
+        Ou sêxtuplos, *CERTAMENTE*, ou costureira, ou cérebros de gato, ou dragões.
+    
+
+        <pre>
+         class Dragao < Criatura
+           vida 1340    # escamas duras
+           forca 451    # veias ressaltadas
+           carisma 1020 # sorridente
+           arma 939     # cospe fogo
+         end
+        </pre>
+    
+
+        Isso ainda não é metaprogramação. Apenas a pílula. O _produto_ da metaprogramação. Estamos fazendo uma pausa, olhando
+        para a besta antes de descer abaixo o seu tecido muscular com um bisturi e um microscópio.
+
+
+        O @Dragao@ é uma classe.  Você já viu muitas vezes. O @Dragao@ é descendente da classe @Criatura@.
+    
+
+        Agora, olhe para cima. Preste atenção. A classe @Criatura@ contém o código de metaprogramação. Você pode escreve código
+        de metaprogramação que pode ser usado em _qualquer lugar_, ao longo de todo Ruby, em @Criatura@ ou @Dragao@, em @String@
+        ou em @Object@, qualquer lugar.  O nosso exemplo aqui, uma vez que esta é a forma mais comum de meta-código, foca em 
+        metaprogramação dentro de classes apenas.
+
+
+        Cada uma das características de @Dragao@ são apenas *métodos de classe*. Você também poderia escrever assim:
 
 
         <pre>
-         class Dragon < Creature
-           life 1340     # tough scales
-           strength 451  # bristling veins
-           charisma 1020 # toothy smile
-           weapon 939    # fire breath
+         class Dragao < Criatura
+           vida( 1340 )    # escamas duras
+           forca( 451 )    # veias ressaltadas
+           carisma( 1020 ) # sorridente
+           arma( 939 )     # cospe fogo
          end
         </pre>
 
 
-        This is not metaprogramming yet.  Only the pill.  The _product_ of metaprogramming.  We are pausing, looking at
-        the beast itself before descending beneath its flesh with a scalpel and microscope.
+        Removendo os parênteses remove-se a confusão, então vamos deixar sem.  Apenas use parênteses quando
+        você está usando muitos métodos juntos e você quer ser bem claro.
 
 
-        The @Dragon@ is a class.  You've seen that many times now.  The @Dragon@ is a descendant of the @Creature@ class.
+        h3. Código da Criatura
 
 
-        Now, eyes up.  Look at me.  The @Creature@ class contains the metaprogramming code.  You can write metaprogramming
-        code which can be used _everywhere_, throughout Ruby, in @Creature@ or @Dragon@, in @String@ or in @Object@, anywhere.
-        Our example here, since this is the most common form of meta-code, focuses on metaprogramming inside your own
-        classes only.
-
-
-        Each of the @Dragon@'s traits are simply *class methods*.  You could also write this as:
-
+        Agora, com um corte lateral em todo o diafragma, nos mostraremos as entranhas da classe @Criatura@.
+        *Salve esse código em um arquivo chamado @dwemthy.rb@.*
+    
 
         <pre>
-         class Dragon < Creature
-           life( 1340 )     # tough scales
-           strength( 451 )  # bristling veins
-           charisma( 1020 ) # toothy smile
-           weapon( 939 )    # fire breath
-         end
-        </pre>
+         # As vísceras da força vital do Labirinto de Dwemthy
+         class Criatura
 
-
-        Removing the parens removes clutter, so let's leave them out.  Only use parens when you are using
-        several methods together and you want to be very clear.
-
-
-        h3. Creature Code
-
-
-        Now, with a lateral slice across the diaphragm, we expose the innards of @Creature@.  *Save this
-        code into a file called @dwemthy.rb@.*
-
-
-        <pre>
-         # The guts of life force within Dwemthy's Array
-         class Creature
-
-           # Get a metaclass for this class
+           # Obtém uma metaclasse para esta classe
            def self.metaclass; class << self; self; end; end
 
-           # Advanced metaprogramming code for nice, clean traits
+           # Avançado código de metaprogramação para boas 
+           # e claras características
            def self.traits( *arr )
              return @traits if arr.empty?
 
-             # 1. Set up accessors for each variable
+             # 1. Define acessores para cada variável
              attr_accessor *arr
 
-             # 2. Add a new class method to for each trait.
+             # 2. Adiciona um novo método para cada característica.
              arr.each do |a|
                metaclass.instance_eval do
                  define_method( a ) do |val|
@@ -92,8 +93,8 @@
                end
              end
 
-             # 3. For each monster, the `initialize' method
-             #    should use the default number for each trait.
+             # 3. Para cada monstro o método 'initialize'
+             #    deve usar um número padrão para cada característica.
              class_eval do
                define_method( :initialize ) do
                  self.class.traits.each do |k,v|
@@ -104,19 +105,18 @@
 
            end
 
-           # Creature attributes are read-only
-           traits :life, :strength, :charisma, :weapon
+           # Os atributos da Criatura são somente leitura
+           traits :vida, :forca, :carisma, :arma
          end
         </pre>
 
 
-        Focus on the closing lines of code, specifically the line where the @traits@ are
-        being set up.  All of the code before that line sets up the @traits@ class
-        method.  This bears resemblance to the basic lottery tickets from the chapter previous.
-        
+        Preste atenção no fechamento das linhas do código, especialmente na linha onde @traits@
+        está sendo definido. Todo o código antes dessa linha determina o método @traits@.  Isto
+        é semelhante ao básico do bilhete de loteria do capitulo anterior.
 
         <pre>
-         class LotteryTicket
-           attr_reader :picks, :purchased
+         class BilheteLoteria
+           attr_reader :numeros_escolhidos, :data_compra
          end
         </pre>
