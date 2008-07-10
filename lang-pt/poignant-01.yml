@@ -1,36 +1,36 @@
---- !whytheluckystiff.net,2003/^book
+﻿--- !whytheluckystiff.net,2003/^book
 title: why's (poignant) guide to ruby
 author: why the lucky stiff
 
 terms: >
-  bq(#terms). The text of this book and the encompassing web matter are released under the wholy sympathetic 
-  "Attribution-ShareAlike":http://creativecommons.org/licenses/by-sa/2.5/
-  license, part of the brilliant family of licenses produced
-  by the "Creative Commons":http://creativecommons.org/.
+  bq(#terms). O texto deste livro  e o material web incluso são disponibilizados sob a completamente simpática
+  "Atribuição-Compartilhamento pela mesma Licença (Attribution-ShareAlike)":http://creativecommons.org/licenses/by-sa/2.5/
+  licença, parte da brilhante família de licenças produzidas
+  pelo "Creative Commons":http://creativecommons.org.br/.
 
 
 deed: |
-  Attribution-ShareAlike 2.5
+  Atribuição-Compartilhamento pela mesma Licença 2.5 (Attribution-ShareAlike 2.5)
 
-  You are free:
+  Você está livre para:
 
-      * to copy, distribute, display, and perform the work
-      * to make derivative works
-      * to make commercial use of the work
+      * copiar, distribuir, reproduzir e apresentar a obra
+      * criar obras derivadas
+      * fazer uso comercial desta obra
 
-  Under the following conditions:
+  Sob as seguintes condições:
       
-  *Attribution*. You must give the original author credit.
+  *Atribuição*. Você deve dar crédito ao autor original.
       
-  *Share Alike*. If you alter, transform, or build upon this work, you may distribute the 
-  resulting work only under a license identical to this one.
+  *Compartilhamento Pela mesma Licença*. Se você modificar, transformar, ou construir baseado nesta obra, você deve somente distribuir
+  distribuir a obra resultante sob uma licença idêntica a esta.
 
-      * For any reuse or distribution, you must make clear to others the license terms of this work.
-      * Any of these conditions can be waived if you get permission from the author.
+      * Para qualquer reuso ou distribuição, você deve deixar claro aos outros sob os termos de licença desta obra.
+      * Qualquer destas condições pode ser evitada caso você tenha permissão do autor.
 
-  Your fair use and other rights are in no way affected by the above.
+  Seu uso honesto e outros direitos não são em nenhum caso afetados pelo acima dito.
 
-  This is a human-readable summary of the Legal Code (the full license).
+  Este é um sumário do Código Legal (a licença completa) legível para humanos.
 
 image: !^img 2006.cover.jpg
 teaser:
