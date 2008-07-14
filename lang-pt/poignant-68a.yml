@@ -1,76 +1,76 @@
 
 
-        Both @traits@ and @attr_reader@ are simply class methods.  When @attr_reader@ is used in the @LotteryTicket@,
-        metaprogramming kicks in behind the scenes and starts blowing up balloons, creating
-        *reader* methods for the instance variables @@picks@ and @@purchased@ above.
+        Tanto @caracteristicas@ como @attr_reader@ são apenas métodos de classe. Quando @attr_reader@ é usado em @BilheteLoteria@,
+        a metaprogramação inicia por trás dos bastidores e começa a estourar balões, criando
+        métodos *leitores* para as variáveis de instância @@numeros_escolhidos@ e @@data_compra@ acima.
 
 
-        The code for the @traits@ method is the metaprogramming I've been alluding to.
-        Comments in the code reveal the three stages the method goes through when adding
-        traits.
+        O código para o método @caracteristicas@ é a metaprogmação que eu tenho feito referência.
+        Comentários no código revelam os três estágios que o método passa quando adiciona
+        as características.
 
 
-        # The *list of traits is passed on to @attr_accessor@*, which builds *reader* and
-        *writer* code for instance variables.  One for each trait.
+        # A *lista de características é passada para @attr_acessor@*, que constrói código
+        *leitor* e *escritor* para as variáveis de instância. Um para cada característica.
 
-        # *Class methods are added* for each trait.  (A @life@ class method is added for a @:life@
-        trait.)  These class methods are used
-        in the class definition just like you would use @traits@ or @attr_accessor@.  This way, you can specify
-        the trait, along with the points given for a trait to a certain creature.
+        # *Métodos de classe são adicionados* para cada característica. (O método @vida@ é adicionado
+        para a característica @:vida@). 
+        Esses métodos de classe são usados na definição da classe assim como você usaria @caracteristicas@ ou 
+        @attr_acessor. Dessa maneira, você pode especificar a característica, de acordo com os 
+        pontos dados de uma característica para uma determinada criatura.
 
-        # *Add an initialize method* which sets up a new monster properly,
-        grabbing the right points and _POWER UP! POWER UP!_ the monster is
-        alive!
-
-
-        The beauty of these three steps is that you've taught Ruby how to code
-        monsters for you.  So when Ruby gets to the @traits@:
+        # *Adicione um método de inicialização* que cria um novo monstro 
+        corretamente, com os pontos certos e _GANHANDO FORÇA! GANHANDO FORÇA!_ o monstro está vivo!
 
 
-        <pre>
-         class Creature
-           traits :life, :strength, :charisma, :weapon
+        A beleza desses três passos é que você ensinou ao Ruby como criar monstros
+        para você. Então quando o Ruby obtém as @características@:
+
+
+        <pre>	
+         class Criatura
+           caracteristicas :vida, :forca, :carisma, :arma
          end
         </pre>
+        
 
-
-        Ruby fills in the code behind the scenes and transplants a spiny green
-        heart and jumpstarts the body with a pullcord.
-        Ruby will use the metaprogramming from the @Creature@ class and build
-        out all the various methods, expanding the @traits@ list like this:
+        O Ruby preenche com o código dos bastidores e transplanta um pulsante
+        coração verde e da ignição no corpo dando corda.
+        O Ruby vai usar a metaprogramação da classe @Criatura@ e irá construir
+        todos os variados métodos, expandindo @caracteristicas@ em uma lista como essa:
 
 
         <pre>
-         class Creature
-         
-           # 1. set up reader and writer methods
-           attr_accessor :life, :strength, :charisma, :weapon
+         class Criatura
 
-           # 2. add new class methods to use in creature
-           def self.life( val )
-             @traits ||= {}
-             @traits['life'] = val
+           # 1. define métodos leitores e escritores
+           attr_accessor :vida, :forca, :carisma, :arma
+
+           # 2. adiciona novos métodos de classe para usar na criatura
+           def self.vida( val )
+             @caracteristicas ||= {}
+             @caracteristicas['vida'] = val
            end
 
-           def self.strength( val )
-             @traits ||= {}
-             @traits['strength'] = val
+           def self.forca( val )
+             @caracteristicas ||= {}
+             @caracteristicas['forca'] = val
            end
 
-           def self.charisma( val )
-             @traits ||= {}
-             @traits['charisma'] = val
+           def self.carisma( val )
+             @caracteristicas ||= {}
+             @caracteristicas['carisma'] = val
            end
 
-           def self.weapon( val )
-             @traits ||= {}
-             @traits['weapon'] = val
+           def self.arma( val )
+             @caracteristicas ||= {}
+             @caracteristicas['arma'] = val
            end
 
-           # 3. initialize sets the default points for
-           #    each trait
+           # 3. estabelece pontos padrões para
+           #    cada característica
            def initialize
-             self.class.traits.each do |k,v|
+             self.class.caracteristicas.each do |k,v|
                instance_variable_set("@#{k}", v)
              end
            end
@@ -79,53 +79,53 @@
         </pre>
 
 
-        Now, Ruby will gladly accept this
-        six-line @Dragon@ code, short enough to look nice when printed on playing
-        cards:
+        Agora, o Ruby vai aceitar gradativamente
+        essas seis linhas de código da classe @Dragon@, curto o bastante para
+        aparecer legal em cartas de jogos:
 
 
         <pre>
-         class Dragon < Creature
-           life 1340     # tough scales
-           strength 451  # bristling veins
-           charisma 1020 # toothy smile
-           weapon 939    # fire breath
+         class Dragao < Criatura
+           vida 1340    # escamas duras
+           forca 451    # veias ressaltadas
+           carisma 1020 # sorridente
+           arma 939     # cospe fogo
          end
         </pre>
 
 
-        h3. Eval, the Littlest Metaprogrammer
+        h3. Eval, o menor metaprogramador
 
 
-        While the metaprogramming code above is just plain Ruby, it can be difficult to follow still.
-        I totally understand if you've come to this point and your eyes are spinning in their sockets
-        and your knees have locked up.  The trickiest parts of the above are the lines which call
-        the methods @instance_eval@ and @class_eval@.  Just rub some tiger balm on your joints while
-        I talk about @eval@.
+        Embora o código de metaprogramação acima seja simplesmente Ruby, ainda assim pode ser difícil de seguir.
+        Eu compreendo totalmente, caso você tenha chegado a esse ponto e seus olhos estejam girando
+        em suas cavidades e seus joelhos emperrados. A parte mais complicada de tudo isso acima são
+        as linhas que chamam os métodos @instance_eval@ e @class_eval@. Passe pomada nas suas juntas
+        enquanto eu falo sobre @eval@.
 
 
-        We've been talking about *metaprogramming*.  Writing code which writes code.  The @eval@
-        method hangs out in this alley.
-        The vagrant @eval@ takes code you have stored up in a string and it executes that code.
+        Viemos falando sobre *metaprogramação*. Escrevendo código que escreve códigos. O método
+        @eval@ reside neste beco.
+        O vagabundo @eval@ pega o código que você havia guardado em uma string e executa o código.
 
 
         <pre>
-         drgn = Dragon.new
-         # is identical to...
-         drgn = eval( "Dragon.new" )
-         # or, alternatively...
-         eval( "drgn = Dragon.new" )
+         drgn = Dragao.new
+         # é identifo a...
+         drgn = eval( "Dragao.new" )
+         # ou alternativamente...
+         eval( "drgn = Dragao.new" )
         </pre>
 
 
-        Here, let's write a program which has a hole in it.  Instead of writing a program
-        which creates a new @Dragon@, let's leave a hole where the @Dragon@ would be.
+        Aqui, vamos escrever um programa que tem um buraco. Ao invés de escrever um programa
+        que cria um novo @Dragao@, vamos deixar um buraco onde seria o @Dragao@.
 
 
         <pre>
-         print "What monster class have you come to battle? "
-         monster_class = gets
-         eval( "monster = " + monster_class + ".new" )
-         p monster
+         print "Que classe de monstro você veio combater? "
+         classe_monstro = gets
+         eval( "monstro = " + classe_monstro + ".new" )
+         p monstro
         </pre>
 
