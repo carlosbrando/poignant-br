@@ -20,12 +20,11 @@
         pontos dados de uma característica para uma determinada criatura.
 
         # *Adicione um método de inicialização* que cria um novo monstro 
-        corretamente, com os pontos certos e _ENERGIA COMPLETA! ENERGIA 
-        COMPLETA!_ o monstro está vivo!
+        corretamente, com os pontos certos e _GANHANDO FORÇA! GANHANDO FORÇA!_ o monstro está vivo!
 
 
         A beleza desses três passos é que você ensinou ao Ruby como criar monstros
-        para você. Então quando o Ruby obtém as @caracteristicas@:
+        para você. Então quando o Ruby obtém as @características@:
 
 
         <pre>	
