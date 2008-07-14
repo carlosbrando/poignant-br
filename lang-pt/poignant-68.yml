@@ -18,7 +18,7 @@
 
         Metaprogramação é um conjunto de código dentro de um formato de pílula, que uma pequena gota de água pode acionar para se expandir.
         Mais importante, você pode controlar a reação da pílula, de uma forma que o brontossauro pode ser criado magro e desajeitado.
-        Ou sêxtuplos, *CERTAMENTE*, ou costureira, ou cérebros de gato, ou dragões.
+        Ou sêxtuplos, *CERTAMENTE*, ou costureiras, ou cérebros de gato, ou dragões.
     
 
         <pre>
@@ -77,8 +77,8 @@
 
            # Avançado código de metaprogramação para boas 
            # e claras características
-           def self.traits( *arr )
-             return @traits if arr.empty?
+           def self.caracteristicas( *arr )
+             return @caracteristicas if arr.empty?
 
              # 1. Define acessores para cada variável
              attr_accessor *arr
@@ -87,8 +87,8 @@
              arr.each do |a|
                metaclass.instance_eval do
                  define_method( a ) do |val|
-                   @traits ||= {}
-                   @traits[a] = val
+                   @caracteristicas ||= {}
+                   @caracteristicas[a] = val
                  end
                end
              end
@@ -97,7 +97,7 @@
              #    deve usar um número padrão para cada característica.
              class_eval do
                define_method( :initialize ) do
-                 self.class.traits.each do |k,v|
+                 self.class.caracteristicas.each do |k,v|
                    instance_variable_set("@#{k}", v)
                  end
                end
@@ -106,13 +106,13 @@
            end
 
            # Os atributos da Criatura são somente leitura
-           traits :vida, :forca, :carisma, :arma
+           caracteristicas :vida, :forca, :carisma, :arma
          end
         </pre>
 
 
-        Preste atenção no fechamento das linhas do código, especialmente na linha onde @traits@
-        está sendo definido. Todo o código antes dessa linha determina o método @traits@.  Isto
+        Preste atenção no fechamento das linhas do código, especialmente na linha onde @caracteristicas@
+        está sendo definido. Todo o código antes dessa linha determina o método @caracteristicas@.  Isto
         é semelhante ao básico do bilhete de loteria do capitulo anterior.
 
         <pre>
