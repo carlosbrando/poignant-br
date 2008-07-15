@@ -27,7 +27,7 @@
         para você. Então quando o Ruby obtém as @características@:
 
 
-        <pre>	
+        <pre>
          class Criatura
            caracteristicas :vida, :forca, :carisma, :arma
          end
