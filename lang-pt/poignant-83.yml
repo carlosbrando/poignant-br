@@ -3,12 +3,12 @@
 
         Se você visitou qualquer site oferecendo download do Ruby, você provavelmente viu um número
         de diferentes versões do Ruby disponíveis. Obviamente, quanto maior o número da versão, mais
-	      recente a versão do Ruby. Mas isto não é exatamente verdade. Números de versões possuem significado
-	      na Rubylândia e eu gostaria que você fizesse uma escolha educada.
+        recente a versão do Ruby. Mas isto não é exatamente verdade. Números de versões possuem significado
+        na Rubylândia e eu gostaria que você fizesse uma escolha educada.
 
 
         *1.8.6* é a última versão *estável* do Ruby. Versões estáveis oferecem as últimas características
-	      que foram amplamente testadas e são recomendadas para o uso geral. Quando novas versões estáveis 
+        que foram amplamente testadas e são recomendadas para o uso geral. Quando novas versões estáveis 
         saírem, você seguramente poderá atualizar para estas novas versões.
 
 
