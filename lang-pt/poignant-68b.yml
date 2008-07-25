@@ -1,174 +1,174 @@
-        The program asks for a monster.  If you type in @Dragon@, then the @monster_class@ variable
-        will contain the string @"Dragon"@.  Inside the @eval@, a few strings get added together
-        to make the string @"monster = Dragon.new"@.  And when the @eval@ executes this string,
-        the @monster@ variable contains a @Dragon@ object.  Ready for battle.
+        O programa pede por um monstro. Se você digitar @Dragao@, então a variável da @classe_monstro@
+        irá conter a string @"Dragao"@.  Dentro do @eval@ algumas strings serão adicionadas juntas 
+        para formar a string @"monstro = Dragao.new"@.  E quando o @eval@ executa essa string, a 
+        variável @monstro@ contém um objeto @Dragao@. Pronto pra batalha.
 
 
-        This is great!  Now we can leave it up to the player to pick a monster!  Of course,
-        we're trusting the player to supply a real monster class.  If they type in @BotanicalWitch@
-        and there is no @BotanicalWitch@ class, they'll get an exception tossed in their face.
+        Isso é maravilhoso! Agora podemos deixar que o jogador escolha um monstro! Claro, estamos
+        confiando no jogador para que ele forneça uma classe real de monstro. Se eles digitarem
+        @BruxaBotanica@ e não existe a classe @BruxaBotanica@, eles terão uma exceção jogada na sua cara.
 
 
-        So, in short, @eval@ lets you make up code as you go.  Which can be useful and which can
-        be dangerous as well.
+        Então, em resumo, o @eval@ permite que você crie um código a medida que prossegue. O que 
+        pode ser útil e pode ser perigoso ao mesmo tempo.
 
 
-        The @instance_eval@ and @class_eval@ method used in the metaprogramming for the @Creature@
-        class are slightly different from the normal @eval@.  These two special methods run code just like
-        @eval@ does, but they duck into classes and objects and run the code there.
+        Os métodos @instance_eval@ e @class_eval usado na metaprogramação para a classe @Criatura@
+        são levemente diferente do normal @eval@.  Esses dois métodos especiais passam o código assim
+        como o @eval@ faz, mas eles mergulham em classes e objetos e passam o código lá.
 
 
         <pre>
-         # The instance_eval method runs code as if it were run inside an
-         # object's instance method.
-         irb> drgn = Dragon.new
+         # O método instance_eval executa o código como se ele fosse executado dentro
+         # do objeto do método de instância.
+         irb> drgn = Dragao.new
          irb> drgn.instance_eval do
-         irb>   @name = "Tobias"
+         irb>   @nome = "Tobias"
          irb> end
 
-         irb> drgn.instance_variable_get( "@name" )
+         irb> drgn.instance_variable_get( "@nome" )
            => "Tobias"
 
-         # The class_eval method runs code is if inside a class definition.
-         irb> Dragon.class_eval do
-         irb>   def name; @name; end
+         # O método class_eval executa o código se estiver dentro da definição de classe.
+         irb> Dragao.class_eval do
+         irb>   def nome; @nome; end
          irb> end
 
-         irb> drgn.name
+         irb> drgn.nome
            => "Tobias"
         </pre>
 
 
-        As you can see above, the @instance_eval@ and @class_eval@ methods also can take a code block
-        instead of a string.  Which is just how things are done in Dwemthy's Array.
+        Como você pode ver acima, os métodos @instance_eval@ e @class_eval@ também podem pegar um bloco
+        de código ao invés de uma string. O que é exatamente como as coisas foram feitas no Labirinto de Dwemthy.
 
 
-        h3. Enough Belittling Instruction and Sly Juxtaposition -- Where Is Dwemthy's Array??
+        h3. Bastante instrução depreciante e Ardilosa Justaposição -- Onde está o Labirinto de Dwemthy??
 
 
-        Tread carefully -- here is *the other half of DWEMTHY'S ARRAY!!*
-        *Add these lines to @dwemthy.rb@.*
+        Vá com cuidado -- aqui está *a outra metade do LABIRINTO DE DWEMTHY!!*
+        *Adicione essas linhas a @dwemthy.rb@.*
 
 
         <pre>
-         class Creature
+         class Criatura
 
-           # This method applies a hit taken during a fight.
-           def hit( damage )
-             p_up = rand( charisma )
-             if p_up % 9 == 7
-               @life += p_up / 4
-               puts "[#{ self.class } magick powers up #{ p_up }!]"
+           # Este método aplica um golpe recebido durante uma luta.
+           def golpear( dano )
+             aumento_poder = rand( carisma )
+             if aumento_poder % 9 == 7
+               @vida += aumento_poder / 4
+               puts "[Aumento de poderes mágicos de #{ self.class } #{ aumento_poder }!]"
              end 
-             @life -= damage
-             puts "[#{ self.class } has died.]" if @life <= 0
+             @vida -= dano
+             puts "[#{ self.class } está morto.]" if @vida <= 0
            end
 
-           # This method takes one turn in a fight.
-           def fight( enemy, weapon )
-             if life <= 0
-               puts "[#{ self.class } is too dead to fight!]"
+           # Este método obtém uma rodada em uma luta.
+           def lutar( inimigo, arma )
+             if vida <= 0
+               puts "[#{ self.class } está muito morto para lutar!]"
                return
              end
 
-             # Attack the opponent
-             your_hit = rand( strength + weapon )
-             puts "[You hit with #{ your_hit } points of damage!]"
-             enemy.hit( your_hit )
+             # Ataca o opononte
+             seu_golpe = rand( forca + arma )
+             puts "[Você golpeia com #{ seu_golpe } pontos de dano!]"
+             inimigo.golpear( seu_golpe )
 
-             # Retaliation
-             p enemy
-             if enemy.life > 0
-               enemy_hit = rand( enemy.strength + enemy.weapon )
-               puts "[Your enemy hit with #{ enemy_hit } points of damage!]"
-               self.hit( enemy_hit )
+             # Retaliação
+             p inimigo
+             if inimigo.vida > 0
+               inimigo_golpe = rand( inimigo.forca + inimigo.arma )
+               puts "[Seu inimigo golpeia com #{ inimigo_golpe } pontos de dano!]"
+               self.golpear( inimigo_golpe )
              end
            end
 
          end
 
-         class DwemthysArray < Array
+         class LabirintoDwemthy < Array
            alias _inspect inspect
            def inspect; "#<#{ self.class }#{ _inspect }>"; end
            def method_missing( meth, *args )
-             answer = first.send( meth, *args )
-             if first.life <= 0
+             resposta = first.send( meth, *args )
+             if first.vida <= 0
                shift
                if empty?
-                 puts "[Whoa.  You decimated Dwemthy's Array!]"
+                 puts "[Uauu.  Você dizimou o Labirinto de Dwemthy!]"
                else
-                 puts "[Get ready. #{ first.class } has emerged.]"
+                 puts "[Prepare-se. #{ first.class } surgiu.]"
                end
              end
-             answer || 0
+             resposta || 0
            end
          end
         </pre>
 
 
-        This code adds two methods to @Creature@.  The @hit@ method which reacts to a hit from another
-        @Creature@.  And the @fight@ method which lets you place your own blows against that @Creature@.
+        Esse código adiciona dois métodos a @Criatura@. O método @golpear@  que reage ao golpe de outra 
+        @Criatura@. E o método @lutar@ que permite que você coloque os seus próprios golpes contra aquela @Criatura@.
 
 
-        When your @Creature@ takes a hit, a bit of defense kicks in and your @charisma@ value is used to generate a power-up.  Don't
-        ask me to explain the secrets behind this phenomenon.  A random number is picked, some simple math
-        is done, and, if you're lucky, you get a couple life points.  @@life += p_up / 4@.
+        Quando a sua @Criatura@ leva um golpe, um pouco da defesa contribui e o seu valor @carisma@ é usado para gerar um aumento de
+        poder.  Não me peça para explicar os segredos por trás deste fenômeno. Um número aleatório é escolhido, uma matemática
+        simples é feita e se você tiver sorte, você consegue alguns pontos vitais.  @@vida += aumento_poder / 4@.
 
 
-        Then, the enemy's blow is landed.  @@life -= damage@.  That's how the @Creature#hit@ method works.
+        Então o golpe do inimigo está dado. @@vida -= dano@.  É assim que o método da @Criatura#golpear@ trabalha.
 
 
-        The @fight@ method checks to see if your @Creature@ is alive.  Next, a random
-        hit is placed on your opponent.  If your opponent lives through the hit, it gets
-        a chance to strike back.  Those are the workings of the @Creature#fight@ method.
+        O método @lutar@ checa se a sua @Criatura@ está viva. Em seguida, um golpe aleatório
+        é dado no seu oponente. Se o seu oponente sobreviver a este golpe, ele ganha uma 
+        chance de atacar de volta. Estas são as atividades do método @Criatura#lutar@.
 
 
-        I'll explain @DwemthysArray@ in a second.  I really will.  I'm having fun doing it.
-        Let's stick with hitting and fighting for now.
+        Irei explicar o @LabirintoDwemthy@ em um segundo. Realmente explicarei. Estou me divertindo fazendo isso. 
+        Por hora, vamos nos concentrar em golpear e lutar.
 
 
-        h3. Introducing: You.
+        h3. Apresentando: Você.
 
 
-        You may certainly tinker with derivations on this rabbit.  But official
-        Dwemthy Paradigms explicitly denote the code -- and the altogether character -- inscribed
-        below.  *Save this as @rabbit.rb@.*
+        Você talvez tenha trabalhado com derivações neste coelho. Mas o oficial 
+        Paradigma de Dwemthy explicitamente denota o código -– e os caracteres todos juntos -– 
+        inscritos abaixo. *Salve isto como @rabbit.rb@.*
 
 
         <pre>
-         class Rabbit < Creature
-           traits :bombs
+         class Coelho < Criatura
+           caracteristicas :bombas
 
-           life 10
-           strength 2
-           charisma 44
-           weapon 4
-           bombs 3
+           vida 10
+           forca 2
+           carisma 44
+           arma 4
+           bombas 3
 
-           # little boomerang
-           def ^( enemy )
-             fight( enemy, 13 )
+           # bumeranguinho
+           def ^( inimigo )
+             lutar( inimigo, 13 )
            end
-           # the hero's sword is unlimited!!
-           def /( enemy )
-             fight( enemy, rand( 4 + ( ( enemy.life % 10 ) ** 2 ) ) )
+           # a espada do herói é ilimitada!!
+           def /( inimigo )
+             lutar( inimigo, rand( 4 + ( ( inimigo.vida % 10 ) ** 2 ) ) )
            end
-           # lettuce will build your strength and extra ruffage
-           # will fly in the face of your opponent!!
-           def %( enemy )
-             lettuce = rand( charisma )
-             puts "[Healthy lettuce gives you #{ lettuce } life points!!]"
-             @life += lettuce
-             fight( enemy, 0 )
+           # alface irá formar a sua força e extras substâncias indigestas
+           # voarão na cara de seu oponente!!
+           def %( inimigo )
+             alface = rand( carisma )
+             puts "[Saudável alface lhe dá #{ alface } pontos de vida!!]"
+             @vida += alface
+             lutar( inimigo, 0 )
            end
-           # bombs, but you only have three!!
-           def *( enemy )
-             if @bombs.zero?
-               puts "[UHN!! You're out of bombs!!]"
+           # bombas, mas você possui somente três!!
+           def *( inimigo )
+             if @bombas.zero?
+               puts "[HUMM!! Você está sem bombas!!]"
                return
              end
-             @bombs -= 1
-             fight( enemy, 86 )
+             @bombas -= 1
+             lutar( inimigo, 86 )
            end
          end
         </pre>
