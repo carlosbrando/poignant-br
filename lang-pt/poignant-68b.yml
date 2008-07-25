@@ -73,7 +73,7 @@
 
              # Ataca o opononte
              seu_golpe = rand( forca + arma )
-             puts "[Seu golpe com #{ seu_golpe } pontos de dano!]"
+             puts "[Você golpeia com #{ seu_golpe } pontos de dano!]"
              inimigo.golpear( seu_golpe )
 
              # Retaliação
