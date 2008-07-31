@@ -214,7 +214,14 @@ if __FILE__ == $0
 
     File.makedirs( File.join( site_path, "i" ) )
     File.copy( "#{ scripts }/layout/guide.css", "#{ site_path }/guide.css" )
-    Dir["#{ scripts }/images/*"].each do |copy_file|
+    
+    # Try to find the localized images. If it doesn't, use the default "images" directory
+    images_dir = "#{ scripts }/images_#{ locale }"
+    unless File.exists? images_dir
+      images_dir = "#{ scripts }/images"
+    end
+      
+    Dir["#{ images_dir }/*"].each do |copy_file|
         next if File.directory? copy_file
         File.copy( copy_file, File.join( site_path, "i", File.basename( copy_file ) ) )
     end
