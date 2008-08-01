@@ -1,7 +1,7 @@
     - Eles Que Viveram o Sonho: >
 
         Apesar da arte dos Originais ter desaparecido há muito, Dr. Cham  trabalhou freneticamente no
-        computador acoplado ao painel de controle sobre o deck de observação.  Hannah havia desaparecido
+        computador acoplado ao painel de controle sobre o convés de observação.  Hannah havia desaparecido
         dentro do chão (ou talvez aquelas pequenas faíscas ao longo do caminho eram ainda rastros de sua
         presença paranormal!) e a cabra amigavelmente assistiu Dr. Cham hackear um módulo Ruby.
 
@@ -40,28 +40,28 @@
         usá-lo?" disse a cabra, chocada.
 
 
-        "Eu vou mesclá-lo com o @LeitorMentes@," disse Dr. Cham.  E assim o fez.
+        "Eu vou mesclá-lo com o @LeitorMental@," disse Dr. Cham.  E assim o fez.
 
 
         <pre>
-         require 'leitormentes'
-         class LeitorMentes
+         require 'leitormental'
+         class LeitorMental
            include EscanerPedidos
          end
         </pre>
 
 
-        "Agora, o módulo @EscanerPedidos@ está mesclado ao @LeitorMentes@," disse Dr. Cham.
-        "Posso chamar o método @escanear_por_um_pedido@ em qualquer objeto @LeitorMentes@."
+        "Agora, o módulo @EscanerPedidos@ está mesclado ao @LeitorMental@," disse Dr. Cham.
+        "Posso chamar o método @escanear_por_um_pedido@ em qualquer objeto @LeitorMental@."
 
 
-        "Então, é um mixin," disse a cabra.  "O mixin @LeitorMentes@."
+        "Então, é um mixin," disse a cabra.  "O mixin @LeitorMental@."
 
 
         "Sim, qualquer módulo que é incluso numa classe com um @include@ é um mixin para esta
         classe.  Se você voltar e olhar para o método @escanear_por_um_pedido@, verá que ele
         chama um método @self.read@.  Eu apenas tenho que ter certeza de que, qualquer que seja a classe com que estou mesclando
-        o @LeitorMentes@, ela tenha um método @read@.  Caso contrário, ocorrerá um erro."
+        o @LeitorMental@, ela tenha um método @read@.  Caso contrário, ocorrerá um erro."
 
 
         "Isto parece bastante estranho, o fato do mixin precisar de certos métodos que ele já não tem.
@@ -90,12 +90,12 @@
 
         <pre>
          require 'fazedorpedidos'
-         leitor = LeitorMentes.new
+         leitor = LeitorMental.new
          pedidor = FazedorPedidos.new
          loop do
            pedido = leitor.escanear_por_um_pedido
            if pedido
-             pedidor.realize( pedido)
+             pedidor.realize(pedido)
            end
          end
         </pre>
@@ -112,20 +112,19 @@
         e pensou com si mesmo: @pedido: baleia@.
 
 
-        h3. Última Baleia para Pessoasenlameadas
+        h3. Última Baleia para Peoplemud
 
 
-        A atarracada e mal-humorada baleia apareceu na entrada do castelo, onde Hannah estava
-        chacoalhando um botão de rosas com sua mão.  Ela golpeou  a Baleia com a mão, mas esta apenas permaneceu
-        perfeita, comfortável e firme contra o céu sólido e azul de Endertromb.
+        A atarracada e mal humorada baleia apareceu na entrada do castelo, onde Hannah estava
+        chacoalhando um botão de rosas com sua mão.  Ela golpeou  a Baleia com a mão, mas esta apenas 
+        permaneceu perfeita, confortável e firme contra o céu sólido e azul de Endertromb.
 
 
         "Estou entediada," disse ela a baleia.  *BOHR-BOHR-OHRRRRRR.*
 
 
-        "Ok," disse a baleia, profundamente e suavemente.  Enquanto a palavra deslizava junto de sua pesada língua, suas
-        bordas dividiam-se e a palavra saia polida e vestida numa bolha pelo 
-        canto de sua boca.
+        "Ok," disse a baleia, profundamente e suavemente.  Enquanto a palavra deslizava junto de sua pesada 
+        língua, suas bordas dividiam-se e a palavra saia polida e vestida numa bolha pelo canto de sua boca.
 
 
         "Eu sempre tenho que morrer," disse a jovem fantasma.  "As pessoas sempre me matam."
@@ -139,8 +138,8 @@
 
 
         A baleia conseguiu chegar a três metros da garota onde se erguia como um
-        grande monumento de guerra que representava um número suficiente de soldados mortos a ponto de trazer um ruídoso passo
-        até você. E agora a baleia descansava sua cauda e, exausta pela escalada até então,
+        grande monumento de guerra que representava um número suficiente de soldados mortos a ponto de trazer um 
+        ruídoso passo até você. E agora a baleia descansava sua cauda e, exausta pela escalada até então,
         deixou suas pálpebras se cerrarem tornando-se uma levemente inchada montanha de barro. Sua farta sombra
         dobrou-se em volta da quase imperceptível Hannah.
 
