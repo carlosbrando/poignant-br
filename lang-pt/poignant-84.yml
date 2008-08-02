@@ -29,6 +29,8 @@
       * No *Debian*, use @apt-get install ruby@.
 
       * No *Gentoo*, @emerge ruby@.
+      
+      * No *Archlinux*, @pacman -S ruby@
 
       * Outras plataformas *Linux* e *UNIX*, até mesmo no *OS X* (se as disk images não funcionarem para você): 
       Faça o download do "último código fonte":http://www.ruby-lang.org/pt/downloads/.  
@@ -51,7 +53,7 @@
 
 
       <pre class="text">
-       ruby 1.8.7 (2008-06-20 patchlevel 22) [i386-mswin32]
+       ruby 1.8.7 (2008-06-09 patchlevel 17) [i686-linux]     
       </pre>
 
 

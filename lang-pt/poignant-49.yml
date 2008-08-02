@@ -46,7 +46,7 @@
         aquilo era humilhante.
 
 
-        Blasted crying shame.  Things could have worked out.
+        Porca miséria.  As coisas podiam ter dado certo.
 
 
         h3. O Nascimento de um Objeto
@@ -155,14 +155,14 @@
         Que imprime, "Nós temos quartos de 3 camas, 4 camas, 6 camas disponíveis."
 
 
-        Dr. Cham estava procurando por um banheiro, but archival video tape was everywhere.
+        Dr. Cham estava procurando por um banheiro, mas só tinham videotapes pra todo lado.
         Ele acabou encontrando um lugar, que poderia ser um banheiro.  Tinha um vaso de metal.
         Mas mais importante, era escuro e escondido.
         
 
-        Enquanto s in there, let me add that enquanto Os Originais slaughtered The Invaders
-        to prove their rights as First Creatures, o Objeto Ruby Object não disputou nada.
-        Ele é rei absoluto Objeto o Primeiro.
+        Enquanto ele está lá, deixe-me dizer que enquanto Os Originais massacraram Os Invasores
+        para provar seus diretois como Criaturas de Primeiro Escalão, o Objeto Ruby Object não 
+        disputou nada. Ele é rei absoluto, Objeto o Primeiro.
 
 
         Observe.
@@ -181,10 +181,10 @@
 
 
         Até @Classe@ é um @Objeto@!  Veja, mesmo as classes sendo linguagem de definição para objetos,
-        nós ainda pode mos chamar métodos de classe nelas e tratá-los como objetos ocasionalmente.  It may seem
-        like a dizzying circle, but it s truly a very strict parentage.  E garante que quando você
-        altera o @Object@, você altera *tudo no Ruby*.  Which is impossibly scary and all-powerful
-        and cataclysmic and awesome!  *Ruby não te restringe, minha irmã, meu irmão!* 
+        nós ainda podemos chamar métodos de classe nelas e tratá-los como objetos ocasionalmente.  
+        Pode parecer um círculo confuso, but it s truly a very strict parentage.  E garante que quando você
+        altera o @Object@, você altera *tudo no Ruby*.  O que é impossivelmente assustador e todo-poderoso
+        e cataclísmico e incrível!  *Ruby não te restringe, minha irmã, meu irmão!* 
 
 
         Entre @Class@ e @Object@, você vê @Module@?  Se @Object@ é o rei, o pai de todas
@@ -217,7 +217,7 @@
            class CriancaGordaDeCera; end
 
            # Um Método está se escondendo lá atrás no armário banana, Deus sabe porquê.
-           def timida_garota_com_cara_de_raposa; {'please' => 'eu quero uma bolota de carvalho por favor'}; end
+           def timida_garota_com_cara_de_raposa; {'favor' => 'eu quero uma bolota de carvalho por favor'}; end
 
          end
         </pre>

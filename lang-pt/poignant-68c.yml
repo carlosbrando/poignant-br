@@ -1,7 +1,7 @@
-        You have four weapons.  The boomerang.  The hero's sword.  The lettuce.  And the bombs.
+        Você tem quarto armas.  O bumerangue.  A espada do herói.  A alface.  E as bombas.
 
 
-        To start off, open up @irb@ and load the libraries we've created above.
+        Para fazer acontecer, abra o @irb@ e carregue as bibliotecas que criamos acima.
 
 
         <pre>
@@ -10,65 +10,65 @@
         </pre>
 
          
-        Now, unroll yourself.
+        Agora, mostre-se.
 
 
         <pre>
-         irb> r = Rabbit.new
-         irb> r.life
+         irb> c = Coelho.new
+         irb> c.vida
            => 10
-         irb> r.strength
+         irb> c.forca
            => 2
         </pre>
 
 
-        Good, good.
+        Bom, bom.
 
 
-        h3. Rabbit Fights ScubaArgentine!
+        h3. O Coelho luta com a ScubaArgentina!
 
 
-        You cannot just go rushing into Dwemthy's Array, unseatbelted and merely
-        perfumed!!  You must advance deliberately through the demonic cotillion.  Or south,
-        through the thickets and labyrinth of coal.
+        Você não pode ir apressadamente para o Labirinto de Dwemthy, sem cinto de
+        segurança e simplesmente perfumado!!  Você deve avançar deliberadamente para o 
+        demoníaco cotilhão.  Ou ao sul, pelos bosques e pelo labirinto de carvão.
 
 
-        For now, let's lurk covertly through the milky residue alongside the aqueducts.  And 
-        sneak up on the @ScubaArgentine@.
+        Neste momento, vamos nos esconder dissimuladamente pelo resíduo leitoso ao lado dos 
+        aquedutos e seguir o @ScubaArgentina@.
 
 
         <pre>
-         class ScubaArgentine < Creature
-           life 46
-           strength 35
-           charisma 91
-           weapon 2
+         class ScubaArgentina < Criatura
+           vida 46
+           forca 35
+           carisma 91
+           arma 2
          end
         </pre>
 
 
-        To get the fight started, make sure you've created one of you and one of the
-        @ScubaArgentine@.
-
+        Para começar a luta, certifique-se de que criou um de você e um do
+        @ScubaArgentina@.
+        
 
         <pre>
-         irb> r = Rabbit.new
-         irb> s = ScubaArgentine.new
+         irb> c = Coelho.new
+         irb> s = ScubaArgentina.new
         </pre>
 
 
-        Now use the little boomerang!
+        Agora use o bumeranguinho!
 
 
         <pre>
-         irb> r ^ s
-         [You hit with 2 points of damage!]
-         #<ScubaArgentine:0x808c864 @charisma=91, @strength=35, @life=44, @weapon=2>
-         [Your enemy hit with 28 points of damage!]
-         [Rabbit has died.]
+         irb> c ^ s
+         [Você golpeia com 2 pontos de dano!]
+         #<ScubaArgentina:0x808c864 @carisma=91, @forca=35, @vida=44, @arma=2>
+         [Seu inimigo golpeia com 28 pontos de dano!]
+         [O Coelho morreu.]
         </pre>
 
 
-        For crying out loud!!  Our sample rabbit died!!
+        Para chorar alto!!  Nossa amostra de coelho morreu!!
 
 

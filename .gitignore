@@ -2,3 +2,4 @@
 /poignant-site
 .DS_Store
 thumbs.db
+pt/**/*
