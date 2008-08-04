@@ -1,51 +1,51 @@
-    - O Roubo do Capitão da Loteria: >
+    - O Roubo do Capitão Loteria: >
 
 
-        !>i/my.daughters.organ-3.gif(A tubulação e as misturas das loterias.)!
+        !>i/my.daughters.organ-3.gif(Os tubos e misturas das loterias.)!
 
 
-        E agora, as histórias de Paij-ree sobre as Loterias.
+        E agora, as histórias das Loterias Paij-ree.
 
 
-        Em Endertromb, o pai do organista inventou a loteria.  A idéia veio enquanto ele estava
+        Em Endertromb, o pai do organista inventou a loteria.  A idéia surgiu quando ele estava
         rezando para o Escavador Dosh.
 
 
         Escavador Dosh é uma espécie de Deus para eles.  Mas dez vezes mais
-        assustador.  Este cara cavou um túnel infinitamente profundo através do planeta
-        e saiu morto. Mas ele não está realmente morto.  Ele na verdade está apenas _um segundo_
-        atrás deles. E ele come tempo.
+        assustador.  Esse cara cava um túnel infinitamente profundo através do planeta
+        e sai morto.  Mas ele não está realmente morto.  Ele está realmente _um segundo_
+        atrás deles.  E ele come tempo.
 
 
-        É meio complicado, porque Escavador Dosh mata gente.  Mas
-        acho que se você faz o que ele diz, não é tão ruim.  Talvez falarei sobre isso
-        depois.  É tão difícil falar sobre, pois é tão assustador e ainda assim um de
-        meus amigos realmente acredita na coisa toda.  Isso me engasga -- não como se eu
-        estivesse chorando, mas como se eu estivesse engasgado.
+        É mais ou menos complicado, porque o Escavador Dosh mata totalmente as pessoas.  Mas
+        eu convido você a fazer o que ele diz, ele não é tão mal.  Talvez eu fale sobre isso
+        mais tarde.  É um tal de fala sobre dor, porque isso é tão assustador e ainda um dos
+        meus amigos realmente acredita em tudo isso.  Eu fico meio que chocado -- não que eu
+        esteja chorando, estou apenas surpreso.
 
 
-        De qualquer jeito, uma vez enquanto rezava, três números vieram ao pai de Paij-ree.
+        De qualquer forma, enquanto rezava, três números vieram para o pai do Paij-ree.
 
 
-        Ele então perguntou à sua mente, "O que são esses números?"
+        Ele então se perguntou. "O que são esses números?"
 
 
-        E sua mente mostrou um pequeno vídeo clipe dele vendendo todos os tipos de números.  E,
+        E sua mente passou um pequeno vídeo clip dele vendendo todos os tipos de números.  E,
         por anos e anos, viajando e vendendo números.
 
 
-        E ele perguntou a seu cérebro, "Pessoas vão comprar números?"
+        E ele perguntou ao seu cérebro, "Pessoas comprarão números?"
 
 
-        E seu cérebro disse, "Se eles comprarem os três números certos, dê-lhes um prêmio."
+        E seu cérebro disse, "Se eles comprarem os três números corretos, dê a eles um prêmio."
 
 
-        Foi quando ele se imaginou lançando de um salto com ski e fazendo chover prêmios sobre as pessoas
-        Não havia dúvida: ele seria um ícone.
+        Pelo que ele mesmo imaginava um salto alto com um ski e jogando neve nas pessoas
+        presentes.  Não questione: ele seria um ícone.
 
 
-        Então ele foi e fez como seu cérebro disse, e vendeu números.  A loteria simples do pai
-        consistia em três números únicos, escolhidos de um conjunto de 25 números.
+        Então ele foi e fez o que seu cérebro disse e vendeu números. O pai da loteria
+        simples consistia em três únicos números, retirados de um conjunto de 25 números.
 
 
         <pre>
@@ -59,9 +59,9 @@
              if numeros_escolhidos.length != 3
                raise ArgumentError, "três números devem ser escolhidos"
              elsif numeros_escolhidos.uniq.length != 3
-               raise ArgumentError, "os três números escolhidos devem ser distintos"
+               raise ArgumentError, "os três escolhidos devem ser diferentes"
              elsif numeros_escolhidos.detect { |p| not INTERVALO_NUMERICO === p }
-               raise ArgumentError, "os três números escolhidos devem estar entre 1 e 25."
+               raise ArgumentError, "os três escolhidos devem ser números entre 1 e 25."
              end
              @numeros_escolhidos = numeros_escolhidos
              @data_compra = Time.now
@@ -238,7 +238,7 @@
 
         Com o tempo você perceberá o quão brilhante Paij-ree é (ou era). Seu pai o
         encarregou de conduzir a loteria por ele, e a demanda por bilhetes só crescia,
-        a medida que o dia passava.  Você consegue imaginar o jovem Paij-ree - em seu
+        à medida que o dia passava.  Você consegue imaginar o jovem Paij-ree - em seu
         terno pomposo - brincando com eláticos de dinheiro com seus dedos jovens, em
         meio à reunião da empresa na qual propôs a última parte do sistema?  Com certeza,
         quando se levantou, seu pai falou tudo para ele, mas ele se apoiou ligou o
@@ -276,7 +276,7 @@
         Ele era apenas uma criança e crianças são duras como uma parede de tijolos.
 
 
-        O operador @<<@ permite a você alterar a definição de um objeto.
+        O operador @<<@ permite à você alterar a definição de um objeto.
         Paij-ree simplesmente havia usado a classe @SorteioLoteria@, e o método
         dele, @jogo@, seria um método de instância normal.  Mas, uma vez que usou o
         operador @<<@, o método @jogo@ será adicionado diretamente à classe,
@@ -331,25 +331,24 @@
 
 
         Mas estes dias de inocência não continuaram para Paij-ree e seu pai.  Seu pai, muitas vezes,
-        se negava em lavar seu uniforme e acabou contraindo uma doença de mofo nos seus ombros.  A
+        se negava em lavar seu uniforme e acabou contraíndo uma doença de mofo nos seus ombros.  A
         doença afetou gadualmente seu equilíbrio e seu senso de direção.
 
 
-        Seu pai ainda tentou futilmente manter os negócios funcionando.  Ele rodou a cidade, algumas
+        Seu pai ainda tentou futilmente manter os negócios funcionando. Ele rodou a cidade, algumas
         vezes andando, de forma deplorável, passo-a-passo sobre os paralelepípedos, muitas vezes
         tateando as paredes, contando os tijolos para o salão dos matemáticos e a estação dos cocheiros,
-        onde ele empurraria bilhetes para os transeuntes, que o perseguiam o esbofetavam
-        com longas betterabas molhadas.  Mais tarde, Paij-ree o encontraria num canto, seu sangue correndo
-        nos esgotos da cidade junto aos caldos da escuridão, beterrabas respingantes, cujo caldo entrara
-        abusadamente em suas veias e doeu e coagulou e se incandesceu violentamente como um denso exército
-        de luzes de freio superando postos de pedágio.
+        onde ele teria "empurrado" bilhetes de loteria aos transeuntes, que o cercaram e o esbofetearam 
+        com grandes beterrabas molhadas. Mais tarde, Paij-ree iria encontrá-lo em uma esquina, seu sangue
+        escorrendo nos esgotos da cidade lado a lado aos líquidos da escuridão, beterrabas iconificadas,
+        cujo suco preencheu o caminho até suas veias e coagulou firmemente como um congestionamento de um
+        exército de "brake lights" lutando por um lugar nos pedágios.
 
-        h3. Uma Palavra sobre Accessors (_Acessores_) (Por que Eu Amo Você e Espero Pelo Seu Sucesso e
-        Meu Cabelo está no Fim Por Causa Disso e Sonhos Realmente se Tornam Realidade)
+
+        h3. Uma Palavra Sobre Accessors (Porque Eu Te Amo e Eu Espero Para Seu Sucesso e Meus Cabelos Estão Raleando Com Isto e Que Os Sonhos Se Tornem Realidade)
         
 
-        Anteriormente, Eu mencionei que @attr_reader@ adiciona métodos *reader*(_leitores_), mas não métodos *writer*
-        (_escritores_).
+        Anteriormente, eu havia mencionado que @attr_reader@ adiciona um método *reader*, mas não um método *writer*.
 
 
         <pre>
@@ -359,10 +358,7 @@
         </pre>
 
 
-        O que está correto neste caso, visto que o pai de Paij-ree não queria que nenhum número
-        fosso modificado após a compra do bilhete.  Se estivessemos interessados em ter
-        variáveis de instância que tivessem *ambos leitores e escritores*, nós usaríamos
-        @attr_accessor@.
+        Que está correto neste caso, desde que o pai do Paij-ree não queria que os números fossem alterados depois que o bilhete fosse vendido. Se estivéssemos interessados em ter variáveis de instâncias que teriam ambos os métodos *reader e writer*, deveríamos usar @attr_accessor@.
 
 
         <pre>
@@ -372,7 +368,7 @@
         </pre>
 
 
-        Que faz exatemente o mesmo que esse código mais longo:
+        Que faz exatamente o mesmo que este código comprido:
 
 
         <pre>
@@ -385,11 +381,9 @@
         </pre>
 
 
-        Gatos me mordam! Olhem para estes métodos escritores por um momento.  Eles são os métodos nomeados
-        @numeros_escolhidos=@ e @data_compra=@. Estes métodos *interceptam a atribuição externa* para variáveis
-        de instância.  Geralmente você apenas deixará @attr_reader@ ou @attr_accessor@ (ou talvez até mesmo 
-        @attr_writer@) fazer o trabalho para você. Em outras circusntâncias, pode querer colocar você mesmo vigiar a portaria,
-        checando as variáveis detalhadamente.
+        Santos gatos! Olhe para estes métodos writer por um momento. Ele são chamados métodos @picks=@ e @purchased=@. Estes métodos *interceptam inicializações externas* a variáveis de instância.
+        Constantemente você irá deixar @attr_reader@ ou @attr_accessor@ (ou mesmo talvez @attr_writer@) fazer o trabalho por você.
+        Outras vezes, você mesmo irá querer tomar conta da portaria, checando as variáveis mais detalhadamente.
 
 
         <pre>
@@ -407,8 +401,5 @@
         </pre>
 
 
-        Na maioria das vezes você não usára isso.  Porém, a medida que caminharmos pelas lições, descobrirá
-        que Ruby tem muitas escotilhas de saída e várias vielas em que você pode enfiar-se e codificar de outras maneiras.
-        Estou também lhe preparando para a metaprogramação que, caso você possa farejar este dragão, está
-        ameaçadoramente próxima.
+        Muitas vezes você não vai querer usar isto. Mas, assim que formos caminhando através das lições, você irá perceber que Ruby possui muitas escotilhas e vielas nas quais você pode se esguiar e codificar de outras maneiras. Também estou te preparando para metaprogramação, que, se você puder cheirar este dragão,  está nefastamente próximo.
 
