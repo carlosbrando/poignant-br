@@ -335,25 +335,20 @@
         doença afetou gadualmente seu equilíbrio e seu senso de direção.
 
 
-        Seu pai ainda tentou futilmente manter os negócios funcionando.  Ele rodou a cidade, algumas
+        Seu pai ainda tentou futilmente manter os negócios funcionando. Ele rodou a cidade, algumas
         vezes andando, de forma deplorável, passo-a-passo sobre os paralelepípedos, muitas vezes
-        tateando as paredes, contando os tijolos para o salão dos matemáticos e estação dos cocheiros.
+        tateando as paredes, contando os tijolos para o salão dos matemáticos e a estação dos cocheiros,
+        onde ele teria "empurrado" bilhetes de loteria aos transeuntes, que o cercaram e o esbofetearam 
+        com grandes beterrabas molhadas. Mais tarde, Paij-ree iria encontrá-lo em uma esquina, seu sangue
+        escorrendo nos esgotos da cidade lado a lado aos líquidos da escuridão, beterrabas iconificadas,
+        cujo suco preencheu o caminho até suas veias e coagulou firmemente como um congestionamento de um
+        exército de "brake lights" lutando por um lugar nos pedágios.
 
 
-        His father still futilely attempted to keep the business running.  He spiraled through the
-        city, sometimes tumbling leg-over-leg down the cobbled stone, most often slowly feeling the walls,
-        counting bricks to the math parlours and coachmen stations, <****> where he would thrust tickets
-        at the bystanders, who hounded him and slapped him away with long, wet beets.  Later, Paij-ree
-        would find him in a corner, his blood running into the city drains alongside the juices of the
-        dark, splattered beets, which juice weaseled its way up into his veins and stung and clotted
-        and glowed fiercely like a congested army of brake lights fighting their way through toll bridges.
-
-
-        h3. A Word About Accessors (Because I Love You and I Hope For Your Success and My Hair is On End
-        About This and Dreams Really Do Come True)
+        h3. Uma Palavra Sobre Accessors (Porque Eu Te Amo e Eu Espero Para Seu Sucesso e Meus Cabelos Estão Raleando Com Isto e Que Os Sonhos Se Tornem Realidade)
         
 
-        Earlier, I mentioned that @attr_reader@ adds *reader* methods, but not *writer* methods.
+        Anteriormente, eu havia mencionado que @attr_reader@ adiciona um método *reader*, mas não um método *writer*.
 
 
         <pre>
@@ -363,9 +358,7 @@
         </pre>
 
 
-        Which is okay in this case, since Paij-ree's father didn't want the numbers to be
-        changed after the ticket was bought.  If we were interested in having instance
-        variables which had *both readers and writers*, we would use @attr_accessor@.
+        Que está correto neste caso, desde que o pai do Paij-ree não queria que os números fossem alterados depois que o bilhete fosse vendido. Se estivéssemos interessados em ter variáveis de instâncias que teriam ambos os métodos *reader e writer*, deveríamos usar @attr_accessor@.
 
 
         <pre>
@@ -375,7 +368,7 @@
         </pre>
 
 
-        Which is exactly the same as this lengthier code:
+        Que faz exatamente o mesmo que este código comprido:
 
 
         <pre>
@@ -388,12 +381,9 @@
         </pre>
 
 
-        Holy cats!  Look at those writer methods for a moment.  They are the methods named
-        @picks=@ and @purchased=@.  These methods *intercept outside assignment* to instance variables.
-        Usually you will just let @attr_reader@ or @attr_accessor@ (or even perhaps @attr_writer@)
-        do the work for you.
-        Other times you may want to put a guard at the door yourself, checking variables in closer
-        detail.
+        Santos gatos! Olhe para estes métodos writer por um momento. Ele são chamados métodos @picks=@ e @purchased=@. Estes métodos *interceptam inicializações externas* a variáveis de instância.
+        Constantemente você irá deixar @attr_reader@ ou @attr_accessor@ (ou mesmo talvez @attr_writer@) fazer o trabalho por você.
+        Outras vezes, você mesmo irá querer tomar conta da portaria, checando as variáveis mais detalhadamente.
 
 
         <pre>
@@ -411,7 +401,5 @@
         </pre>
 
 
-        Most of the time you won't use this.  But, as we move along through your lessons, you'll find that
-        Ruby has lots of escape hatches and alley ways you can sneak into and hack code into.  I'm also
-        preparing you for metaprogramming, which, if you can smell that dragon, is ominously near.
+        Muitas vezes você não vai querer usar isto. Mas, assim que formos caminhando através das lições, você irá perceber que Ruby possui muitas escotilhas e vielas nas quais você pode se esguiar e codificar de outras maneiras. Também estou te preparando para metaprogramação, que, se você puder cheirar este dragão,  está nefastamente próximo.
 

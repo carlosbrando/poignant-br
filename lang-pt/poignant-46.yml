@@ -59,7 +59,7 @@
 
 
         <pre>
-         graveto = "Aqui está uma ( curva."
+         graveto = "Aqui está um ( graveto entortado."
          limpar_murmurios_de( graveto )
         </pre>
 
