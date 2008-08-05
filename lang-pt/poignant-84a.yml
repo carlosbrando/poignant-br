@@ -17,7 +17,7 @@
       <pre>
        irb(main):001:0> campainha = :apertada
        => :apertada
-       irb(main):002:0> pistola_de_gelo =
+       irb(main):002:0> arma_de_gelo =
        irb(main):003:0*   if campainha == :apertada
        irb(main):004:1>     :ligar
        irb(main):005:1>   else
