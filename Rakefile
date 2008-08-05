@@ -65,3 +65,9 @@ task :merge_pt do
     end
   end
 end
+
+desc "Task for cruise Control"
+task :cruise do
+  CruiseControl::invoke_rake_task 'merge_pt'
+  CruiseControl::invoke_rake_task 'pt'
+end
