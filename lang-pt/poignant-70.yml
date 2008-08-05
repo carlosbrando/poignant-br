@@ -70,7 +70,7 @@
 
 
         Por favor, lembre-se, esses operadores são apenas métodos.  Mas, uma vez que esses operadores 
-        _não são palavras legíveis, fica difícil dizer o que eles fazem.  Use o @ri@, muitas vezes você
+        _não são palavras legíveis_, fica difícil dizer o que eles fazem.  Use o @ri@, muitas vezes você
         verá que os operadores são idênticos a outros métodos legíveis.  Você pode optar por utilizar o
         operador ou o método, o que for mais claro para você.
 
@@ -89,7 +89,7 @@
         Esta é forma que a espada do coelho divide.
 
 
-        h3. A Dura Realidade de Dwemthy's Array TE AGUARDA PARA LHE ESMAGAR !!
+        h3. A Dura Realidade do Labirinto de Dwemthy TE AGUARDA PARA LHE ESMAGAR !!
 
 
         Depois que você terminou de brincar de afogar o último cara com o tubo de oxigênio dele, é hora
@@ -138,8 +138,8 @@
 
          class Dragao < Criatura
            vida 1340     # escamas duras
-           forca 451  # veias ressaltadas
-           carisma 1020 # sorridente
-           arma 939    # cospe fogo
+           forca 451     # veias ressaltadas
+           carisma 1020  # sorridente
+           arma 939      # cospe fogo
          end
         </pre>

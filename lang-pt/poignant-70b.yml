@@ -43,7 +43,7 @@
         código digitado e o executa.  A reposta de @eval@ é então inspecionada.
 
 
-        Agora, como você está combatendo monstros no @irb@, Dwemthy's Array será inspecionado e 
+        Agora, como você está combatendo monstros no @irb@, o Labirinto de Dwemthy será inspecionado e 
         respondido com os monstros que você deixou de lutar.
 
 
@@ -95,7 +95,7 @@
         
 
         Sim, @method_missing@ é como uma secretária eletrônica, que intercepta a chamada de
-        seu método.  Em Dwemthy's Array nos usamos um desvio, então quando você ataca o Array, ele passa
+        seu método.  No Labirinto de Dwemthy nos usamos um desvio, então quando você ataca o Array, ele passa
         o ataque diretamente para o primeiro monstro no Array.
 
 

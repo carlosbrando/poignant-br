@@ -6,7 +6,7 @@
 
         | @\w@ | casa caracteres de palavra (letras, números e o underscore) | também pode ser escrita como  @[A-Za-z0-9_]@ |
 
-        | @\s@ | casa espaços em branco (espaços, tabs, retorno de carro, pula linha) | a.k.a. @[ \t\r\n]@ |
+        | @\s@ | casa espaços em branco (espaços, tabs, retorno de carro, pula linha) | a.k.a. @[\t\r\n]@ |
 
         | @\D@ | casa tudo _menos_ dígitos | um conjunto negado @[^\d]@ |
         

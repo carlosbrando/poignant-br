@@ -3,7 +3,7 @@
         "Quem é Lester?" falou a Raposa Pequena.
 
 
-        "Lester é meu taxista!  Ele está estacionado na entrad do Labirinto de Dwemthy!!"  O Coelho ricocheteou enlouquecidamente como 
+        "Lester é meu taxista!  Ele está estacionado na entrada do Labirinto de Dwemthy!!"  O Coelho ricocheteou enlouquecidamente como 
         um screensaver em um Super-Computador.  _"Pergunte ao Dwemthy!!"_
 
 
@@ -69,128 +69,98 @@
 
 
         "CLARO QUE SIM!!" e o coelho ficou tão excitado que Sticky Whip saiu pelo seus olhos. (Mais sobre Sticky Whip posteriormente em uma
-        sidebar. Não deixem me esquecer. Veja também: _The Purist's Compendium to Novelty Retinal Cremes, por Jory Patrick Sobgoblin, disponível
+        sidebar. Não me deixem esquecer. Veja também: _The Purist's Compendium to Novelty Retinal Cremes, por Jory Patrick Sobgoblin, disponível
         onde quer que vendam presilhas de animais.)
 
 
         "Ok, você me ganhou. Quero ouvir toda a história," disse a Raposa Pequena.
-        "Por favor, fale a vontade sobre o 'chaminé'. Ah, e Dwemthy. Quem é ele? What makes him tick?  Then maybe, if I'm still around after
-        that, you can tell me about what makes rabbits tick, and maybe you can hold our hands through this whole missing truck ordeal.
-        I need consolation more than anything else.  I could probably use religion right now.  I could use your personal bravery and
-        this sense of accomplishment you exude.  Do you smoke a pipe?  Could be a handy tool to coax along the pontification we
-        must engage in."
+        "Por favor, fale a vontade sobre o 'chaminé'. Ah, e Dwemthy. Quem é ele? Quais são suas motivações?  Então talvez, se eu ainda estiver por perto depois disso, você poderá me dizer sobre o que faz os coelhos se motivarem, e talvez você possa segurar nossas mãos através deste calvário.
+        Eu preciso de consolo mais do que ninguém.  Provavelmente eu poderia user religião agora. Eu poderia usar sua bravura e este sentimento de realização que você exala. Você fuma cachimbo? Poderia ser uma ferramenta proveitosa para trazermos nesta pontificação em que estamos metidos."
 
 
-        And the rabbit began expounding upon Dwemthy and the legend of Dwemthy and the ways of Dwemthy.
-        As with most stories of Dwemthy, the rabbit's tales were mostly embellishments.
-        Smotchkkiss, there are delicacies which I alone must address.
+        E o coelho começou a divagar sobre Dwemthy e a lenda do Dwemthy e as formas de Dwemthy.
+        Tal como a maioria das estórias de Dwemthy, o relato do coelho era particularmente ornamentado.
+        Smotchkkiss, existem delícias que somente eu devo abordar.
 
 
-        Please, never ask who Dwemthy is. Obviously he is a mastermind and would never disclose his location or true identity. He has sired dynasties. He has set living ogres aflame. Horses everywhere smell him at all times. Most of all, he knows carnal pleasures. And to think that this...
+        Por favor, nunca pergunte quem é Dwemthy. Obviamente ele é um gênio e nunca revelaria sua localização ou verdadeira identidade. Ele tem dinastias. Ele deu vidas a ogros. Em toda a parte, em todo o tempo, cavalos sentem seu cheiro. Acima de tudo, ele conhece prazeres carnais. E pensar que este...
 
 
-        This is his Array.
+        Este é o Array dele.
 
 
-        h3. Dwemthy's Array
+        h3. O Array de Dwemthy
 
 
-        !i/dwemthy-asweome.gif(Dwemthy's Array has charmed and tormented the village folk for centuries.)!
+        !i/dwemthy-asweome.gif(O Array de Dwemthy tem encantado e tormentado a vila folk por séculos.)!
 
 
-        You stand at the entrance of Dwemthy's Array.  You are a rabbit who is about to die.
-        And deep at the end of the Array:
+        Você está na entrada do Array do Dwemthy. Você é um coelho que está prestes a morrer.
+        E mergulha fundo no Array:
 
 
         <pre>
-         class Dragon < Creature
-           life 1340     # tough scales
-           strength 451  # bristling veins
-           charisma 1020 # toothy smile
-           weapon 939    # fire breath
+         class Dragao < Criatura
+           vida 1340     # escamas duras
+           forca 451     # veias rígidas
+           carisma 1020  # sorriso escancarado
+           arma 939      # bafo de fogo
          end
         </pre>
 
 
-        A scalding _SEETHING LAVA_ infiltrates the *cacauphonous ENGORGED MINESHAFTS* deep within the ageless canopy of the _DWEMTHY FOREST_... chalky and nocturnal screams from *the belly of the RAVENOUS WILD STORKUPINE*... who eats *wet goslings* _RIGHT AFTER_ they've had a few graham crackers and a midday nap... amidst starved hippos _TECHNICALLY ORPHANED_ but truthfully sheltered by umbrellas owned jointly by car dealership conglomerates... beneath _uncapped vials_ of mildly pulpy *BLUE ELIXIR*... _which shall remain... heretofore... *UNDISTURBED... DWEMTHY!!!*_
+        Uma escaldante _LAVA BORBULHANTE_ infiltrou a *cacofônica MINA* adentrando as antigas copas da _FLORESTA DWEMTHY_... calcáreos e noturnos gritos da *barriga SELVAGEM E VORAZ STORKUPINE*... que come *gansos molhados* _LOGO DEPOIS_ ele que teve alguns graham crackers e um cochilo ao meio dia... entre hipopótamos famintos _TECNICAMENTE ÓRFÃOS_ mas veridicamente abrigados sobre sombrinhas de revendas de carros... abaixo _ampolas destampadas_ de mínimas polpas *ELIXIR AZUL*... _que devem permanecer... doravante... *QUIETO... DWEMTHY!!!*_
 
 
-        !i/wixl.dwemthy-2.gif(Luck and mother nature.)!
+        !i/wixl.dwemthy-2.gif(Sorte e a mãe natureza.)!
 
 
-        _If you don't understand Dwemthy's Array, it is Dwemthy's fault. He designed the game to complicate our lives and were it simpler, it would not be the awe-inspiring quest we've come to cherish in our arms this very hour._
+        _Se você não entendeu o Array do Dwemthy, a culpa é dele. Ele projetou o jogo para complicar nossas vidas e seria mais simples, não fosse a inspiradora jornada que temos que prezar em nossos braços precisamente agora._
 
 
-        Dwemthy's Array has a winding history of great depth.  It is not enough to simply say, "Dwemthy's
-        Array," over and over and expect to build credentials from that act alone.  Come with me, I can take you back
-        a couple years, back to the sixties where it all started with metaprogramming and the dolphins.
+        O Array de Dwemthy tem uma história sinuosa e de gande impacto. Não basta simplesmente dizer "Array de Dwemthy" mais e mais e esperar ter subsídios apenas a partir deste ato. Venha comigo, posso te levar de volta a alguns anos atrás, de volta ao anos sessenta onde tudo começou com metaprogramação e golfinhos.
 
 
-        You might be inclined to think that *metaprogramming* is another hacker word and was first overheard in private
-        phone calls between fax machines.  Honest to God, I am here to tell you that it is stranger than that.
-        Metaprogramming began with _taking drugs in the company of dolphins_.
+        Você pode estar inclinado a pensar que *metaprogramação* é mais uma palavra hacker e que inicialmente foi utilizada incessantemente em ligações privadas entre máquinas de fax. Juro por Deus, estou aqui para lhe dizer que isso é mais estranho que possa parecer. Metaprogramação começa com _usando drogas na companhia de golfinhos_.
 
 
-        In the sixties, a prolific scientist named John C. Lilly began experimenting with his own senses,
-        to uncover the workings of his body.  I can relate to this.  I do this frequently when I am standing
-        in the middle of a road holding a pie or when I am hiding inside a cathedral.  I pause to examine
-        my self.  This has proven to be nigh impossible.  I have filled three ruled pages with algebraic
-        notation, none of which has explained anything.  The pie, incidentally, has been very easy to express
-        mathematically.
+        Nos anos sessenta, um prolífico cientista chamado John C. Lilly começou a fazer experiências com seus próprios sentidos para descobrir o funcionamento de seu corpo.  Eu posso atestar isto.  Faço frequentemente quando estou de pé, no meio de uma estrada, segurando uma torta ou quando estou me escondendo dentro de uma catedral.  Faço uma pausa para me examinar.  Isto provou que é quase impossível.  Tenho preenchido três páginas de caderno com notações algébricas, nenhuma delas conseguiu explicar nada.  A torta, aliás, foi muito de fácil de expressá-la matematicamente.
 
 
-        But the scientist Lilly went about his experiments otherwise.  He ingested LSD in the company of dolphins.
-        Often in a dark, woeful isolation tank full of warm salt water.  Pretty bleak.  But it was science!  (Lest you think him
-        criminal: until 1966, LSD was supplied by Sandoz Laboratories to any interested scientists, free of charge.)
+        Mas o cientista Lilly passou por cima de suas experiências.  Ele tomou LSD na companhia de golfinhos.
+        Muitas vezes em um lamentável tanque de isolamento, escuro, cheio de água salgada quente. Muito sombrio.  Mas isto era ciência!  (Antes de você achá-lo um criminoso: até 1966, LSD era fornecido pelos laboratórios Sandoz a qualquer cientista interessado, sem encargos.)
 
 
-        *Drugs, dolphins and deprivation.*  Which led to Lilly's foray into things meta.  He wrote books on
-        mental programming, comparing humans and computers.  You may choose to ingest any substance you want during
-        this next quote -- most likely you're reaching for the grain of salt -- but I assure you that there's
-        no Grateful Dead show on the lawn and no ravers in the basement.
+        *Drogas, golfinhos e privação.*  O que levou Lilly a fazer uma incursão em coisas meta.  Ele escreveu livros sobre programação mental, comparando seres humanos e computadores.  Você pode escolher ingerir qualquer substância que queira durante esta próxima citação -- é muito provavél que você pegará um grão de sal -- mas eu te asseguro que não haverá um show do Grateful Dead num gramado e nenhum 'raver' no porão.
 
 
-        bq. When one learns to learn, one is making models, using symbols, analogizing, making metaphors, in short, inventing and using language, mathematics, art, politics, business, etc. At the critical brain (cortex) size, languages and its consequences appear. To avoid the necessity of repeating learning to learn, symbols, metaphors, models each time, I symbolize the underlying idea in these operations as metaprogramming.
+        bq. Quando alguém aprende a aprender, este alguém está fazendo modelos, usando símbolos, fazendo analogias, metáforas, em resumo, inventando e usando linguagem, matemática, arte, política, negócio, etc. No lado crítico do cérebro (cortex), estão as linguagens e suas consequências. Para evitar a necessidade da repetição de aprender para aprender símbolos, metáforas, modelos, eu simbolizo a idéia subjacente nestas operações como metaprogramação.
 
 
         bq(attrib). John C. Lilly, _Programming and Metaprogramming in the Human Biocomputer_, New York, 1972.
 
 
-        We learn.  But first we learn to learn.  We setup programming in our mind which is the pathway to further
-        programming.  (Lilly is largely talking about programming the brain and the nervous system, which he
-        collectively called the _biocomputer_.)
+        Nós aprendemos.  Mas primeiro aprendemos a aprender.  Montamos programação na nossa mente que é o atalho para mais programação.  (Lilly é um grande palestrante sobre programação cerebral e do sistema nervoso, o que ele coletivamente chama de _biocomputador_.)
 
 
-        Lilly's metaprogramming was more about feeding yourself imagery, reinventing yourself, all that.
-        This sort of thinking links directly to folks out there who dabble in shamanism, wave their hands over tarot cards and
-        wake up early for karate class.  I guess you could say metaprogramming is New Age, but it's all settled down
-        recently into a sleeping bag with plain old nerdiness.  (If you got here from a Google search for "C++ Metaprogramming",
-        stick around, but I only ask that you _burn_ those neural pathways that originally invoked the search.  Many thanks.)
+        A metaprogramação de Lilly era mais sobre dar asas ao seu imaginário, reinventando você mesmo.
+        Este tipo de pensamento	nos remete diretamente a pessoas que se interessam por Xamanismo, colocam suas mãos sobre cartas de tarot e que levantam cedo para aulas de karate.  Eu acho que você pode dizer que Metaprogramação é uma coisa New Age, mas tudo isso foi enfiado recentemente em um saco de dormir juntamente com a "nerdice" antiquada.  (Se você chegou até aqui a partir de uma procura no Google por "Metaprogramação em C++", fique à vontade, a única coisa que eu te peço é que você _queime_ aqueles atalhos neuronais que originaram a procura.  Muito obrigado.)
 
 
-        Meta itself is spoken of no differently in your author's present day.
+        A própria Meta, não é falada de maneira diferente, hoje em dia, por seu autor.
 
 
-        bq. All sensuous response to reality is an interpretation of
-        it.  Beetles and monkeys clearly interpret their world, and act on the basis of what they see.
-        Our physical senses are themselves organs of interpretation.  What distinguishes us from our fellow
-        animals is that we are able in turn to interpret these interpretations.  In that sense, all human
-        language is meta-language.  It is a second-order reflection on the 'language' of our bodies --
-        of our sensory apparatus.
+        bq. Toda resposta sensitiva à realidade é uma interpretação dela própria.  Besouros e macacos claramente interpretam seu mundo, e agem baseados no que veêm.
+        Nossos sentidos físicos são, eles mesmos, órgãos de interpretação.  O que nos distingue de nossos companheiros animais é que somos capazes de interpretar estas interpretações.  Neste sentido, toda linguagem humana é uma meta-linguagem.  É uma reflexão de segunda ordem sobre a 'linguagem' de nossos corpos --
+        sobre nosso aparato sensorial.
          
 
         bq(attrib). Terry Eagleton, _After Theory_, London, 2003, ch. 3.
 
 
-        To that end, you could say programming itself is a meta-language.  _All code_ speaks the language of action,
-        of a plan which hasn't been played yet, but shortly will.  Stage directions for the players inside your
-        machine.  I've waxed sentimental on this before.
+        Para todo efeito, você pode dizer que programação, por si só, é uma meta-linguagem.  _Todo código_ fala a linguagem da ação, de um plano que ainda não foi colocado em prática, mas que brevemente irá.  Instruções para o jogadores dentro da sua máquina.  Eu tenho um sentimento lacrado sobre este assunto.
 
 
-        But now we're advancing our study, venturing into metaprogramming, but don't sweat it, *it's still just the
-        Ruby you've seen already*, which is why Dwemthy feels no qualms thrusting it at you right away.  Soon enough it will be
-        as easy to spot as addition or subtraction.  At first it may seem intensely bright, like you've stumbled across your
-        first firefly, which has flown up in your face.  Then, it becomes just _a little bobbing light_ which makes living
-        in Ohio so much nicer.
+        Mas agora estamos avançando nossos estudos, nos aventurando em metaprogramação, mas não fique ancioso, *é apenas o Ruby que você ja viu*, é a razão pela qual Dwemthy não hesitou em mostrá-lo imediatamente a você.  Em pouco tempo será tão fácil como perceber uma adição ou subtração.  À primeira vista isto pode parecer brilhante, como se você tivesse encontrado seu primeiro vagalume, que de repente apareceu voando na sua frente.  Então, isto se torna apenas _uma pequenina luz cintilante_ que torna viver em Ohio muito mais legal.
 
 
