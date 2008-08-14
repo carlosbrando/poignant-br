@@ -23,48 +23,48 @@ class Localization
 end
 
 # Redefines to accomodate tests
-class RedCloth
-    SYNTAX_CONVERT = Syntax::Convertors::HTML.for_syntax "ruby"
-    
-    # Intercept some Kernel calls for the cause of testing.
-    def loop
-        yield
-    end
-
-    # Conversion to HTML
-    alias _to_html to_html
-    def to_html
-        @vars = {}
-        txt = self.dup
-        txt.gsub!( %r{<(setup|stdout)>(.+?)</\1>}m ) do |var|
-                ( @vars[$1] ||= [] ) << $2
-                "## @#$1[#{@vars[$1].length-1}]"
-            end
-        txt.gsub!( %r{<pre>(.+?)</pre>}m ) do
-                "<pre>" + test_example( $1.strip ) + "</pre>"
-            end
-        txt._to_html.
-            gsub( %r{<pre>(.+?)</pre>}m ) do
-                "<div class='example'><pre><code> #{test_example $1.strip}</code></pre></div>"
-            end.
-            gsub( %r{<pre([^>]+)>\n*(.+?)</pre>}m ) do
-                "<div class='example'><pre#{$1}>#{$2}</pre></div>"
-            end.
-            gsub( %r{<code>([^%].*?)</code>}m ) do
-                SYNTAX_CONVERT.convert( $1.gsub( '&gt;', '>' ).gsub( '&lt;', '<' ).gsub( '&#38;', '&' ) ).
-                    gsub( %r{^<pre>}, '<code>' ).gsub( %r{</pre>$}, '</code>' )
-            end
-    end
-    def test_example( x )
-        # begin
-        #     eval( x.gsub( /^## @(\w+)\[(\d+)\]/ ) { @vars[$1][$2.to_i] } )
-        # rescue Exception => e
-        #     puts "*** Example failed ***", x, "--- Exception ---", e
-        #     exit
-        # end
-        x.gsub( /^\s*## @(\w+)\[(\d+)\]/, '' )
-    end
-end
+#class RedCloth
+#    SYNTAX_CONVERT = Syntax::Convertors::HTML.for_syntax "ruby"
+#    
+#    # Intercept some Kernel calls for the cause of testing.
+#    def loop
+#        yield
+#    end
+#
+#    # Conversion to HTML
+#    alias _to_html to_html
+#    def to_html
+#        @vars = {}
+#        txt = self.dup
+#        txt.gsub!( %r{<(setup|stdout)>(.+?)</\1>}m ) do |var|
+#                ( @vars[$1] ||= [] ) << $2
+#                "## @#$1[#{@vars[$1].length-1}]"
+#            end
+#        txt.gsub!( %r{<pre>(.+?)</pre>}m ) do
+#                "<pre>" + test_example( $1.strip ) + "</pre>"
+#            end
+#        txt._to_html.
+#            gsub( %r{<pre>(.+?)</pre>}m ) do
+#                "<div class='example'><pre><code> #{test_example $1.strip}</code></pre></div>"
+#            end.
+#            gsub( %r{<pre([^>]+)>\n*(.+?)</pre>}m ) do
+#                "<div class='example'><pre#{$1}>#{$2}</pre></div>"
+#            end.
+#            gsub( %r{<code>([^%].*?)</code>}m ) do
+#                SYNTAX_CONVERT.convert( $1.gsub( '&gt;', '>' ).gsub( '&lt;', '<' ).gsub( '&#38;', '&' ) ).
+#                    gsub( %r{^<pre>}, '<code>' ).gsub( %r{</pre>$}, '</code>' )
+#            end
+#    end
+#    def test_example( x )
+#        # begin
+#        #     eval( x.gsub( /^## @(\w+)\[(\d+)\]/ ) { @vars[$1][$2.to_i] } )
+#        # rescue Exception => e
+#        #     puts "*** Example failed ***", x, "--- Exception ---", e
+#        #     exit
+#        # end
+#        x.gsub( /^\s*## @(\w+)\[(\d+)\]/, '' )
+#    end
+#end
 
 module WhyTheLuckyStiff
 
