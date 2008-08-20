@@ -5,7 +5,7 @@
 
       * Se você está usando *Microsoft Windows*, comece fazendo o download do "Ruby Installer for
       Windows":http://rubyforge.org/frs/?group_id=167.  Executando este "one-click" instalador irá
-      instalar Ruby para você, bem como instalar um pacote de softwares uteis, como um pequeno editor de texto e algumas
+      instalar Ruby para você, bem como instalar um pacote de softwares úteis, como um pequeno editor de texto e algumas
       bibliotecas adicionais.
 
       * Se você está em um Apple *Mac OS X*, então Ruby poderá já estar instalado. As Versões 10.2 e
@@ -13,7 +13,7 @@
       deste livro funcionem para você.  Faça o download da versão *stable* "disk image":http://homepage.mac.com/discord/Ruby/.
       Você vai precisar do OS X 10.3 (Panther) e do XCode Tools para utilizar está imagem.
 
-      * No *FreeBSD*, Ruby está disponivel no sistema ports.  De fato, se você usa a essencial ferramenta
+      * No *FreeBSD*, Ruby está disponivel no sistema ports.  De fato, se você usa a ferramenta essencial 
       @portupgrade@, então Ruby já está instalado.  Akinori Musha, um dos desenvolvedores talentosos
       do núcleo do Ruby, escreveu o portupgrade, o que significa que você pode utilizar o seu conhecimento em Ruby 
       para hackear o seu @pkgtools.conf@ imediatamente.
