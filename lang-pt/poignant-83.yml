@@ -17,25 +17,25 @@
         dar uma espiada no futuro do Ruby com o risco de encontrar alguns erros.
 
 
-        Agora, você poderá notar que o número da versao inclui três números individuais,
-        que são: *a maior versão*, *a menor versão*, e *a pequenina versão*.  A 
+        Agora, você poderá notar que o número da versão inclui três números individuais,
+        que são: *a versão maior*, *a versão menor*, e *a versão pequenina*.  A 
         versão maior conta cada regravação completa do Ruby.  A versão menor é modificada baseada
         em mudanças de varredura para o Ruby.  A versão pequenina é incrementada a cada poucos meses como mudanças
         menores e correções de erros são inseridas.
 
 
-        Todas as edições do Ruby até então tem a maior versão do 1.  Quando vier Ruby2, você
-        verá esta edição de primeiro nível.
+        Todas as edições do Ruby até então tem a versão maior igual a 1.  Quando vier Ruby2, você
+        verá esta versão aumentar em um.
 
 
-        A menor versão indica se uma versão é estável ou não.  *Se a menor versão
-        é um número par, então aquela versão do Ruby é estável.   Se é impar, então aquele Ruby
+        A versão menor indica se uma versão é estável ou não.  *Se a versão menor
+        é um número par, então aquela versão do Ruby é estável.   Se é ímpar, então aquele Ruby
         é uma versão de desenvolvimento.*  Depois de quase um ano, quando a versão de desenvolvimento está pronta
-        para o mundo, ambos os números são incrementados e a pequenina versão é retornada a zero.
+        para o mundo, ambos os números são incrementados e a versão pequenina volta a ser zero.
 
 
-        Oh, e se eu pudesse um gostinho de quão suave o Ruby se move!  Eu não posso contar
-        com que frequencia uma ideia fresca surge na lista de email do Ruby-Core, onde os Imperadores do
-        Ruby conversam, e *aquela mesma idéia* é trabalhada no Ruby dentro de poucos dias.  Esta é
+        Oh, e se eu pudesse dar a você um gostinho do quão suave o Ruby se move!  Eu não posso contar
+        com que frequência uma idéia fresca surge na lista de e-mail do Ruby-Core, onde os Imperadores do
+        Ruby conversam, e *aquela mesma idéia* é trabalhada no Ruby em poucos dias.  Esta é
         uma máquina adorável eu digo.
 
