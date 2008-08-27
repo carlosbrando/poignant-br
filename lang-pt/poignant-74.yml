@@ -1,109 +1,104 @@
     - >
-        "So what?  You don't think animals with tentacles can drive?"
+        "E então? Você não acha que animais com tentáculos podem dirigir?"
 
-
-        "Well, not only is he going to flub up the steering wheel but he has all these
-        legs all over the foot pedals.  This is not smart.  Let's get another bus.  Come on."
+        "Bem, não é só ele que vai se dar mal ao volante, mas ele tem todas essas
+        pernas em cima dos pedais. Isso não é inteligente. Vamos pegar outro ônibus. Vamos lá."        
         
-        
-        "You know, he's probably been driving like that all day.  Is he really going to
-        start crashing at this point in his career?"
-        
+        "Você sabe, ele está provavelmente sendo conduzido como todos os dias. Será que ele vai realmente
+        começar bater nesta fase da carreira dele?"        
 
-        "Buses do crash," said Fox Small.  "Some do.  This smells crashworthy."
+        "Os ônibus batem", disse a Raposa Pequena.  "Alguns fazem.  Isto é uma suspeita de grande resistência".
 
 
-        "Sheer doo-doo!"  And Fox Tall yelled to the driver, "Hey, cabby, how long
-        have you been driving this bus for?"
+        "Desvia bobo!" e a Raposa Alta gritou para o motorista, "Ei, taxista, há quanto tempo
+        estás dirigindo este ônibus?"
 
+        O motorista do ônibus olhou misteriosamente por baixo da aba do seu boné e começou a virar em direção a eles, mas os seus
+        tentáculos ficaram presos à roda. Ele jogou para longe rapidamente a sua perna da frente e, na sua falta
+        soltou, ele virou-se para a roda e concentrou as suas energias na ordenha de suas glândulas para algumas
+        astutas secreções. Bolhas de muco gotejaram.
 
-        The bus driver peered over darkly under his cap and started to turn toward them, but his
-        tentacles were stuck to the wheel.  He jerked swiftly at his forelegs and, failing their
-        release, he turned to the wheel and focused his energies on milking his glands for some
-        slicker secretions.  Bubbles of mucus oozed.
-
-
-        "Let's get outta here," said Fox Tall and the two ran off into the street, slamming right
-        into the cat Blix.
-
-
-        "Alright, well, the bus is full," said Blix.  "I don't know why the driver stopped if he knew the
-        bus was crammed with hoppers."
-
-
-        "We're thinking he was about to crash into us," said Fox Tall, "and he opened the
-        door to make it look like a planned route stop."
-
-
-        "Keep in mind, Blix, we hadn't really discussed that possibility out loud, so I haven't had a chance
-        to formally agree," said Fox Small.  "Nevertheless, it sounds rational to me."
-
-
-        "I'm thinking all the buses are going to be full like this."  Blix bit his lip,
-        thinking and flicking his eyes about.  "Let's just--"  He pointed down the circuitry
-        of apartment buildings that wound to the south.  "But maybe--"  He looked up and surveyed the stars,
-        scratching his head and counting the constellations with very small poking motions
-        from the tip of his finger.
-
-
-        "Are you getting our bearings from the stars and planets?" asked Fox Small.
-
-
-        Blix didn't speak, he ducked off to the north through a poorly laid avenue
-        back behind the paint store.
-        But before we follow them down that service road, Smotchkkiss, I have one more
-        frog for you, perched on a long lilypad that stretches out to hold anything at all.
-
-
+        "Vamos ficar fora daqui", disse a Raposa Alta e os dois correram para fora da rua, batendo direto
+        no gato Blix.
+ 
+ 
+        "Está bem, assim, o ônibus está cheio," disse Blix. "Eu não sei por que o motorista parou se ele sabia que o
+        ônibus estava cheio com gafanhotos."
+ 
+ 
+        "Nós estamos pensando que ele estava prestes a bater contra nós," disse a Raposa Alta, "e ele abriu a
+        porta para fazer aparecer como uma parada de uma rota planejada."
+ 
+ 
+        "Tenha em mente, Blix, nós não tínhamos realmente discutido essa possibilidade em voz alta, então eu não tive uma chance
+        para formalmente concordar," disse a Raposa Pequena. "No entanto, isto parece racional para mim."
+ 
+ 
+        "Eu estou pensando que todos os ônibus vão estar cheio como este." Blix mordeu seu lábio,
+        pensando e deu um tapa sobre seus olhos. "Vamos apenas--" Ele apontou abaixo o circuito
+        de construções de apartamento que mudariam para o sul. "Mas talvez--" Ele olhou para cima e avaliou as estrelas,
+        coçando a cabeça e contando as constelações com pequenos toques de emoções
+        a partir da ponta de seu dedo.
+ 
+ 
+        "Você está recebendo o nosso comportamento a partir das estrelas e planetas?" perguntou a Raposa Pequena.
+ 
+   
+        Blix não falava, ele abaixou a cabeça para o norte através de uma avenida uma avenida mal colocada
+        voltar atrás da loja de tinta.
+        Mas antes que nós os sigamos em baixo nessa estrada de serviço, Smotchkkiss, Eu tenho mais um
+        sapo para você, empoleirados sobre uma longa vitória régia que esticadas para fora para prender alguma coisa em tudo.
+ 
+ 
         <pre>
-         irb> cat = "Blix"
-         irb> puts "Does #{ cat } see what's up?  Is #{ cat } aware??"
-           => "Does Blix see what's up?  Is Blix aware??"
+         irb> gato = "Blix"
+         irb> puts "O #{ gato } vê o que esta rolando? Está o #{ gato } prevenido??"
+           => "O Blix vê o que esta rolando? Está o Blix prevenido??"
         </pre>
-
-
-        The little frogs from earlier (@%s@ or @%d@) were only placeholders for
-        single strings.  Saving places in the string.
-
-
-        The lilypads above start with a flower bud, the *octothorpe*.  You've also
-        seen it as a pound sign on telephones.  After the flower bud, two leaves
-        form the edges of the lilypad.  The leaves are *curly braces*, also seen many
-        times before as the _crab pincers_ for a code block.
-
-
-        bq. An empty lilypad @"#{}"@ becomes an empty string @""@.
-
-
-        When the lilypad is found in a *double-quoted* string, Ruby runs any code found in between
-        the two leaves of the lilypad.  The lilypad is lifted out and the result of the code is placed there in
-        the string.  This lilypad swap is called _string interpolation_.
-
-
+ 
+ 
+        Os pequenos sapos desde de mais cedo (@%s@ ou @%d@) eram apenas para incógnitas para
+        strings únicas. Salvando lugares na string.
+ 
+ 
+        As vitórias régias começam com um broto de uma flor, a (*cerquilha*.) Você também
+        é visto como um sinal da libra em telefones. Depois os brotos das flores, duas folhas
+        formam as bordas da vitória régia. As folhas são *atadas e enroladas*, também visto muitas
+        vezes antes que o (_caranguejo pinça_) para um bloco de código.
+ 
+ 
+        bq. Uma vitória régia vazia @"#{}"@ se torna uma string vazia @""@.
+ 
+ 
+        Quando a vitória régia é encontrado numa com string em *aspas duplas*, Ruby executa algum código encontrado entre
+        as duas folhas da vitória régia. A vitória régia levantou-se e o resultado do código é colocado numa
+        string. Esta troca da vitória régia é chamada de _interpolação de string_.
+ 
+ 
         <pre>
-         irb> fellows = ['Blix', 'Fox Tall', 'Fox Small']
-         irb> puts "Let us follow #{ fellows.join ' and ' } on their journey."
-           => "Let us follow Blix and Fox Tall and Fox Small on their journey."
+         irb> companheiros = ['Blix', 'Raposa Alta', 'Raposa Pequena']
+         irb> puts "Deixe-nos seguir #{ companheiros.join ' e ' } em sua viajem."
+           => "Deixe-nos seguir Blix e Raposa Alta e Raposa Pequena em sua viajem."
         </pre>
-
-
-        The lilypad is very durable and can hold any kind of code inside.  Above
-        we are using @Array#join@, but you can do anything you like inside.  Call
-        object methods, conditional @if@ or @case@ statements, even define classes.
-
-
+ 
+ 
+        A vitória régia é muito durável e pode conter qualquer tipo de código em seu interior. Acima
+        nós estamos usando @Array#join@, mas você pode fazer qualquer coisa no interior que você queira. Chamar
+        métodos de objeto, condicional de declarações @if@ ou @case@, até mesmo definir classes.
+ 
+ 
         <pre>
-         irb> blix_went = :north
-         irb> puts "Blix didn't speak, he ducked off to the #{ blix_went } through #{
-                     if blix_went == :north
-                       'a poorly laid avenue behind the paint store'
-                     elsif blix_went == :south
-                       'the circuitry of apartment buildings'
+         irb> blix_foi = :norte
+         irb> puts "Blix não falou, ele abaixou a cabeça para o #{ blix_foi } através #{
+                     if blix_foi == :norte
+                       'de uma avenida mal colocada atrás da loja de tinta'
+                     elsif blix_foi == :sul
+                       'o circuito de construções de apartamento'
                      else
-                       '... well, who knows where he went.'
-                     end }.  But before we follow them..."
-         => "Blix didn't speak, he ducked off to the north through a poorly laid avenue
-             behind the paint store.  But before we follow them..."
+                       '... Bem, quem sabe onde ele foi.'
+                     end }. Mas antes que nós os seguimos..."
+         => "Blix não falou, ele abaixou a cabeça para o norte através de uma avenida mal colocada
+             atrás da loja de tinta. Mas antes que nós os seguimos..."
         </pre>
 
 
