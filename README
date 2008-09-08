@@ -1,4 +1,3 @@
-
                  [[ Why's (Poignant) Guide to Ruby ]]
                     http://poignantguide.net/ruby/
 
@@ -28,6 +27,7 @@ If you have RubyGems, both can be installed with:
 
   gem install redcloth
   gem install rake
+  gem install syntax
 
 To build the HTML version of this book:
 
