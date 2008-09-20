@@ -40,13 +40,13 @@
         Stick around and you'll see a crab with _his own jet pack_.  That's a new 2004 model jetcrab.
 
 
-        But now, the whole operation is up and running.  And the cleanliness of the place is astonishing.
+        Mas agora, toda a operação está a todo vapor.  E a limpeza do lugar é impressionante.
         All the equipment is so shiny.  Everything is in chrome.  Oh, and all the staff have concealed
         weapons.  They're trained to kill anyone who enters unannounced.  Or, if they run out of bullets,
         they're trained to pistol whip anyone who enters unannounced.
 
 
-        Elfo, me faça um macacoestrela.
+        Elfo, me faça uma macacoestrela.
 
 
         !i/the.elf-5a.jpg(Primeiro, a estrela é capturada.)!
@@ -59,7 +59,7 @@
         
         
         Variável @tubo@.  Método @pegue_uma_estrela@.  Muitos Rubistas gostam de pensar em métodos como mensagem.
-        A quem vier antes do método é dada a mensagem.  O código acima diz ao @tubo@ que
+        A quem vier antes do método é dada a mensagem.  O código acima diz ao @tubo@:
         @pegue_uma_estrela@.
 
 
@@ -67,19 +67,19 @@
         na primeira metade começam a _agir_ na segunda metade.
 
 
-        # Defining things.
+        # Definindo coisas.
 
-        # Putting those things into action.
+        # Colocando essas coisas em ação.
 
 
         Então e se o código de pegar estrelas funcionar?  Pra onde a estrela vai?
 
 
-        bq. @estrela_presa = pipe.pegue_uma_estrela@
+        bq. @estrela_presa = tubo.pegue_uma_estrela@
 
 
         Veja, você que deve coletar a miserável, estrelinha.  Se você nao o fizer, ela vai simplesmente desaparecer.
-        Toa vez que você usa um método, você recebe algo de volta.  Você pode ignorá-lo ou usá-lo.
+        Toda vez que você usa um método, você recebe algo de volta.  Você pode ignorá-lo ou usá-lo.
 
 
         _Se você conseguir aprender a usar as respostas que os métodos de dão, então você irá *dominar*._
@@ -94,7 +94,7 @@
         bq. @macacoestrela = ratchet.attach( macaco_preso, estrela_presa )@
 
 
-        The @ratchet@ gets an @attach@ message.  What needs to be attached?  The _method arguments_: the
+        The @ratchet@ gets an @attach@ message.  O que precisa ser anexado?  The _method arguments_: the
         @macaco_preso@ e a @estrela_presa@.  É nos dada de volta um @macacoestrela@, which we have
         decided to hang on to.
 
