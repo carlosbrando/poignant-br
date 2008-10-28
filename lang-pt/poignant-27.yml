@@ -3,17 +3,17 @@
         Você pensará que é tudo positivamente desumano, doentio, pirado, yada yada.
 
 
-        h3.  Agora Você irá Escutar a Declaração Perfeita do Animal Porque Isto É Um Livro
+        h3.  Agora Você irá Escutar a Declaração da Animal Perfeito Porque Isto É Um Livro
         E Nós Temos Tempo e Nenhuma Pressa, Certo?
 
 
-        Há muito tempo atrás, muito, muito antes das lanchas motorizadas eu possuia um prêmio 
-        de corrida de uma égua que levou um tropeção na pista.  Ela capotou 10 vezes e
+        Há muito tempo atrás, muito, muito antes das lanchas motorizadas eu possuia uma égua de corrida 
+        premiada que levou um tropeção na pista.  Ela capotou dez vezes e
         bateu num cara que carregava um vidro cheio de maionese.  Nós tinhamos sangue e maionese
         para tudo quanto é lado da pista.  Desnecessário dizer, ela era um disastre.
 
 
-        O veterinário deu uma olhada nela e jurou que ela nunca voltaria a andar. Tinha perdido
+        O veterinário deu uma olhada e jurou que ela nunca voltaria a andar. Tinha perdido
         as pernas e o veterinário não permitiria que uma égua sem pernas ficasse apenas sentada por aí.
         Nós precisamos abatê-la.  Ele jurou por sua vida e por sua carreira nisto, insistindo que nos
         dividissemos em duas linhas paralelas.  As pessoas que não podiam refutar as afirmações do médico 
@@ -21,31 +21,30 @@
         O Elfo, seu animal de estimação de presunto e eu éramos os únicos nesta segunda linha.
 
 
-
         Então enquanto os outros empilhavam troféus e guirlandas de flores em volta da égua, 
         apostando em uma carinho despedidade antes que a bala viesse e a levasse para casa, o Elfo 
         e eu freneticamente vasculhamos a Intenet por respostas.  Nós lidamos com isso com nossas próprias 
         mãos, cauterizando as feridas em sua perna com camãroes de água doce vivos.  
-        E funcionou bem!  Nós tinhamos uma égua de novo.  OU pelo menos: um corpo de água com um abdominal
-        de crustáceos congelante.  
+        E funcionou bem!  Nós tinhamos uma égua de novo.  Ou pelo menos: um corpo de égua com um abdominal
+        de crustáceos congelantes.  
 
 
         Ela correu pra todo lado depois disso e viveu por anos em cavernas úmidas no subsolo.
 
 
-        Animal Perfeito é agora o futuro do melhoramento de animais.  Eles criam novos aniamis e 
+        A Animal Perfeito é agora o futuro do melhoramento de animais.  Eles criam novos animais e 
         salvam animais velhos por partes.  É claro, levou um longo tempo para isso.
-        Quando a Anima Perfeito começou, você via um urso crescido adentrar a Animal Perfeito e 
+        Quando a Animal Perfeito começou, você via um urso crescido adentrar a Animal Perfeito e 
         via um urso crescido de óculos de sol sair.  Completamente cafona.
 
 
-        Fique por aí e você verá um caranguejo com _sua própria mochila foguete_  Esse é um novo modelo caraguejet 2004.
+        Fique por aí e você verá um caranguejo com _sua própria mochila foguete_  Esse é um novo modelo caranguejet 2004.
 
 
         Mas agora, a operação está a todo vapor.  E a limpeza do lugar é impressionante.
-        All the equipment is so shiny.  Everything is in chrome.  Oh, and all the staff have concealed
-        weapons.  They're trained to kill anyone who enters unannounced.  Or, if they run out of bullets,
-        they're trained to pistol whip anyone who enters unannounced.
+        Todo o equipamento é tão brilhoso. Tudo é cromado.  Ah, e toda a equipe tem armas escondidas.  
+        Eles são treinados para matar qualquer um que entre sem ser anunciado.  Ou, se eles ficarem sem balas,
+        eles são treinados para acertar com as armas qualquer um que entre sem ser anunciado.
 
 
         Elfo, me faça uma macacoestrela.
@@ -60,7 +59,7 @@
         bq. @tubo.pegue_uma_estrela@
         
         
-        Variável @tubo@.  Método @pegue_uma_estrela@.  Muitos Rubistas gostam de pensar em métodos como mensagem.
+        Variável @tubo@.  Método @pegue_uma_estrela@.  Muitos Rubistas gostam de pensar em métodos como mensagens.
         A quem vier antes do método é dada a mensagem.  O código acima diz ao @tubo@:
         @pegue_uma_estrela@.
 
@@ -80,39 +79,39 @@
         bq. @estrela_presa = tubo.pegue_uma_estrela@
 
 
-        Veja, você que deve coletar a miserável, estrelinha.  Se você nao o fizer, ela vai simplesmente desaparecer.
+        Veja, você que deve coletar a coitada da estrelinha.  Se não o fizer, ela vai simplesmente desaparecer.
         Toda vez que você usa um método, você recebe algo de volta.  Você pode ignorá-lo ou usá-lo.
 
 
-        _Se você conseguir aprender a usar as respostas que os métodos de dão, então você irá *dominar*._
+        _Se você conseguir aprender a usar as respostas que os métodos lhe dão, então você irá *dominar*._
 
 
-        !i/the.elf-5b.jpg(Star is ratcheted to the monkey's face.)!
+        !i/the.elf-5b.jpg(A estrela é ajustada na cara do macaco.)!
 
 
         Rapidamente então.
 
 
-        bq. @macacoestrela = ratchet.attach( macaco_preso, estrela_presa )@
+        bq. @macacoestrela = ajuste.conecta( macaco_preso, estrela_presa )@
 
 
-        The @ratchet@ gets an @attach@ message.  O que precisa ser anexado?  The _method arguments_: the
-        @macaco_preso@ e a @estrela_presa@.  É nos dada de volta um @macacoestrela@, which we have
-        decided to hang on to.
+        O @ajuste@ recebe uma mensagem @conecta@.  O que precisa ser conectado?  Os _argumentos do método_: o
+        @macaco_preso@ e a @estrela_presa@.  Nós recebemos de volta um @macacoestrela@, em que decidimos nos pendurar.
 
 
-        !i/the.elf-5c.gif(Frog on the hand.)!
+        !i/the.elf-5c.gif(Sapo na mão.)!
 
 
-        This is turning out to be such a short, little proggie that I'm just going to put it
-        all together as one statement.
+        Este tem se mostrado um programinha tão curto e pequeno que eu vou apenas colocá-lo todo
+        em uma única declaração.
 
 
-        bq. @starmonkey = ratchet.attach( captive_monkey, pipe.pegue_uma_estrela ) + deco_hand_frog@
+        bq. @macacoestrela = ajuste.conecta( macaco_preso, tubo.pegue_uma_estrela ) + sapo_de_mao_decorativo@
 
 
-        See how @pipe.pegue_uma_estrela@ is right in the arguments for the method?  The caught 
-        star will get passed right to the ratchet.  No need to find a place to put it.  Just
-        let it go.
+        Veja como o @tubo.pegue_uma_estrela@ está nos argumentos do método?  A estrela pega 
+        será passada diretamente ao ajuste.  Não é necessário encontrar um lugar para colocá-la.  
+        Apenas deixe-a ir.
+
 
 
