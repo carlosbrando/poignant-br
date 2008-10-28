@@ -152,14 +152,14 @@
 
 
         Constantes são palavras como variáveis, mas constantes são *maiúsculas*.  Se variáveis são os
-        substativos do Ruby, então pense nas constantes como substantivos próprios.
+        substantivos do Ruby, então pense nas constantes como substantivos próprios.
 
 
         bq. @Time@, @Array@ or @Bunny_Lake_Desapareceu@ são exemplos.
 
 
         Em inglês, substantivos próprios têm a primeira letra maiúscula.  O Edifício Empire State.  Você não pode simplesmente
-        mudar o Edíficio Empire State.  Você não pode simplesmente decidir que o Edifício Empire State Building é outra coisa.
+        mudar o Edíficio Empire State.  Você não pode simplesmente decidir que o Edifício Empire State é outra coisa.
         Substantivos próprios são assim.  Eles se referem a algo muito específico e que usualmente não
         muda com o tempo.
 
@@ -173,7 +173,7 @@
         Se tentarmos mudar a constante, Ruby vai reclamar com a gente.  Coisas assim desagradam ele.
 
 
-        !i/the.foxes-4d.png(Come on, chunky bacon.)!
+        !i/the.foxes-4d.png(Vamos lá, bacon pedaçudo.)!
 
 
 
@@ -188,7 +188,7 @@
         bq. @porta_da_frente.abra@
 
 
-        Acima, *abra* é o método.  Nesta ação, o verbo. Em alguns casos, você vai ver ações ligadas juntas.
+        Acima, *abra* é o método.  Nesta ação, o verbo. Em alguns casos, você verá ações ligadas juntas.
 
 
         bq. @porta_da_frente.abra.feche@
@@ -200,7 +200,7 @@
         bq. @porta_da_frente.esta_aberta?@
 
 
-        Acima temos uma ação também.  Estamos instruído o computador a testar a porta para ver se está aberta.
+        Acima temos uma ação também.  Estamos instruindo o computador a testar a porta para ver se está aberta.
         O método poderia se chamar @Porta.teste_para_ver_se_esta_aberta@, mas o nome @esta_aberta?@ é sucinto e 
         também correto.  Exclamações e interrogações podem ser usadas em nomes de métodos.
 
@@ -208,7 +208,7 @@
         h3. Argumentos de Método
 
 
-        Um método talvez precise de mais informação pra realizar sua ação.  Se quisermos que o computador
+        Um método talvez precise de mais informação para realizar sua ação.  Se quisermos que o computador
         pinte a porta, devemos prover uma cor também.
 
 
@@ -219,12 +219,12 @@
         bq. @porta_da_frente.pintar( 3, :vermelho )@
 
 
-        O código acima pinta a porta da frente com 3 demãos de vermelho.
+        O código acima pinta a porta da frente com três demãos de vermelho.
 
 
-        Pense nisso como um tubo inteiror que o método arrumou, conténdo suas instruções extras.
+        Pense nisso como um tubo interno que o método carrega, contendo suas instruções extras.
         Os parênteses formam as redondas e molhadas paredes do tubo.  As vírgulas são os pés de cada argumento,
-        saindo pra fora da beirada.  O último argumento tem o pé preso embaixo então eles não mostram.
+        saindo pra fora da beirada.  O último argumento tem o pé preso embaixo então eles não aparecem.
 
 
         Como um barco de bóias, métodos com argumentos podem ser ligados.
@@ -233,12 +233,12 @@
         bq. @porta_da_frente.pintar( 3, :vermelho ).secar( 30 ).fechar()@
 
 
-        O código acima pinta a porta da frente com 3 demãos de vermelho, seca por 30 minutos, e fecha a porta.  Mesmo que
+        O código acima pinta a porta da frente com três demãos de vermelho, seca por trinta minutos e fecha a porta.  Mesmo que
         o último método não tenha argumentos, você pode colocar parênteses se quiser.  Um cano vazio não tem
-        muito uso, então os parênteses são geralmente deixados pra lá.
+        muito uso, então os parênteses são geralmente deixados de lado.
 
 
-        Alguns métodos (como @print@) são métodos do kernel.  Estes métodos são usados por todo Ruby.  Já que elese
+        Alguns métodos (como @print@) são métodos do kernel.  Estes métodos são usados por todo Ruby.  Já que eles
         são tão comuns, você não usa o ponto.
 
 
@@ -249,18 +249,18 @@
 
 
         Assim como os métodos descritos acima (também chamdos métodos _ de instância_), métodos de classe
-        são geralmente ligados depois de variáveis e constantes.  Invés de ponto, usa-se *dois pontos duplo.*
+        são geralmente ligados depois de variáveis e constantes.  Ao invés de ponto, usa-se *dois pontos duplo.*
 
 
         bq. @Porta::new( :carvalho )@
 
 
         Como foi visto acima, o método de classe @new@ é mais usado para se criar coisas.  No exemplo cima, estamos pedindo
-        ao Ruby para fazer uma porta de carvalho nova pra gente.  Claro, o Ruby não tem conhecimento de como fazer uma
-        porta--assim como um a pilha de madeira, madeireiros, e aquelas longas, wiggily, two-man saws.
+        ao Ruby para fazer uma porta de carvalho nova para nós.  Claro, o Ruby não tem conhecimento de como fazer uma
+        porta--assim como uma pilha de madeira, madeireiros, e aquelas longas, nervosas, serras acionadas por dois homens.
 
 
-        !i/the.foxes-4e.png(Plenty of chunky bacon to go around.)!
+        !i/the.foxes-4e.png(Muito bacon pedaçudo para dar um rolê.)!
 
 
 
@@ -276,7 +276,7 @@
         A maioria das váriaveis são temporárias por natureza.  Algumas partes do seu programa são como casas.
         Você entra e elas tem suas próprias variáveis.  Em um casa, voce pode der um @pai@ que representa
         Archie, um caixeiro-viajante colecionador de esqueletos.  Em outra casa, @pai@ pode representar
-        Peter, um domador de leões com grande apreço por flanela.  Cada casa tem um sentido próprio pra @pai@.
+        Peter, um domador de leões com grande apreço por flanela.  Cada casa tem um sentido próprio para @pai@.
 
 
         Com variáveis globais, você garante que a variável será a mesma em cada casinha.
@@ -305,7 +305,7 @@
         em Ruby.
 
 
-        Pense na *arroba (at)* signficando *atributo*.
+        Pense no símbolo *arroba (at)* como significando *atributo*.
         
 
 
@@ -315,7 +315,7 @@
         Variáveis que começam com *duas arrobas* são variáveis de classe.
 
 
-        bq. @@@x@, @@@y@, e @@@vou_pegar_seus_bacons_pedacudos_e_ensinar_uma_licao_pra_voces_dois@ são exemplos.
+        bq. @@@x@, @@@y@, e @@@vou_pegar_seus_bacons_pedacudos_e_ensinar_uma_licao_a_voces_dois@ são exemplos.
 
 
         Variáveis de classe são usadas, também, para se definir atributos.  Mas ao invés de definir um atributo
@@ -324,12 +324,12 @@
         estipulam atributoes pra tudo que for @Porta@.
 
 
-        Pense no prefixo das *duas arrobas* significando *atribua a todos*.  Adicionalmente, você pode pensar em uma
-        manada de *AT-ATs* de _Star Wars_, que são comandados pelo Ruby.  Você muda uma variável de classe
+        Pense no prefixo da *dupla arroba* significando *atribua a todos*.  Adicionalmente, você pode pensar em um
+        esquadrão de *AT-ATs* do _Guerra nas Estrelas_, que são comandados pelo Ruby.  Você muda uma variável de classe
         e não apenas uma muda, todas elas mudam.
 
 
-        !i/the.foxes-4f.png(Woohoo! Chunky bacon accomplished!)!
+        !i/the.foxes-4f.png(Woohoo! Bacon pedaçudo cumprido!)!
 
 
 
@@ -339,7 +339,7 @@
         Qualquer código cercado por *colchetes* é um bloco.
 
 
-        bq. @2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei de novo!" }@ is an example.
+        bq. @2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei de novo!" }@ é um exemplo.
 
 
         Com blocos, você pode agrupar pedaços de instruções juntas, assim elas pode ser passadas
@@ -349,10 +349,10 @@
         foi prensado em uma só unidade.
 
 
-        É como uma daquelas caixas da Hello Kitty que eles vendem no shopping
+        É como uma daquelas caixinhas da Hello Kitty que eles vendem no shopping
         que vêm lotadas de pequenos lápis e papel microscópico, espremidos numa bolsa
-        transparente e brilhante que pode ser escondida na palma da mão para operações clandestinas
-        estacionárias.  Exceto que, blocos não ofuscam sua visão.
+        transparente e brilhante que pode ser escondida na palma da mão para operações secretas.  
+        Exceto que, blocos não ofuscam sua visão.
 
 
         As chaves pode ser substituídas pelas palavras *do* e *end*, o que é bacana se seu bloco for
@@ -377,10 +377,10 @@
         e separadas por *vírgulas*.
 
 
-        bq. @|en||x|@, @|x,y|@, e @|cima, baixo, todo_lado|@ são exemplo.
+        bq. @|en||x|@, @|x,y|@, e @|cima, baixo, todo_lado|@ são exemplos.
 
 
-        Argumentos de bloco são usando no início do bloco.
+        Argumentos de bloco são usados no início do bloco.
 
 
         bq. @{ |x,y| x + y }@
@@ -398,18 +398,18 @@
         Variáveis são passadas por essa calha (ou túnel) pra dentro do bloco.
 
 
-        !i/the.foxes-4g.png(And then, the dismal truth.)!
+        !i/the.foxes-4g.png(E então, a verdade deplorável.)!
 
 
 
-        h3. Ranges (Períodos)
+        h3. Ranges (Intervalos)
 
 
-        Range são dois valores cercados por *parênteses* e separados por *uma elípse* (na forma de
+        Um range é formado por dois valores cercados por *parênteses* e separados por *reticências* (na forma de
         dois ou três pontos).
 
 
-        bq. @(1..3)@ é um range, representando os números de 1 até 3.
+        bq. @(1..3)@ é um range, representando os números de um até três.
 
 
         bq. @('a'..'z')@ é um range, representando o alfabeto em minúsculas.
@@ -425,7 +425,7 @@
         excluído.
 
 
-        bq. @(0...5)@ representa os números de 0 até 4.
+        bq. @(0...5)@ representa os números de zero até quatro.
 
 
         Quando você vê o terceiro ponto, imagine abrir o acordeão um pouco menos.  O necessário para uma nota
@@ -459,7 +459,7 @@
 
 
 
-        h3. Hashes (Bolo, Mistura)
+        h3. Hashes (Bolos, Misturas)
 
 
         Um hash é um dicionário cercado por *colchetes*.  Dicionários servem para encontrar definições
@@ -476,7 +476,7 @@
 
 
         Imagine que nosso dicionário tem um definição em cada página.  As vírgulas representam
-        os cantos de cada página, que nós viramos pra ver a próxima definição.  E em cada página:
+        os cantos de cada página, que nós viramos para ver a próxima definição.  E em cada página:
         uma palavra seguida por uma seta apontando a definição.
 
 
@@ -498,7 +498,7 @@
         Diferentemente dos arrays, os itens na hash não são mantidos em ordem específica.
 
 
-        !i/the.foxes-5.png(The foxes think silence will kill the comic.)!
+        !i/the.foxes-5.png(Os raposos pensam que o silêncio matará a tirinha.)!
 
 
 
@@ -517,7 +517,7 @@
 
         Imagine se você tivesse uma palavrinha com alfinetes de cada lado e você
         a segurasse por cima de um livro. Você passa a palavra pelo livro e quando ela chega
-        chega perto de uma palavra que coincida, ela começa a piscar.  Você espeta a expressão regular no livro,
+        perto de uma palavra que coincida, ela começa a piscar.  Você espeta a expressão regular no livro,
         bem em cima da palavra que bate e ela brilha com as letras da palavra encontrada.
 
 
@@ -531,7 +531,7 @@
         h3. Operadores
 
 
-        Você vai usar a seguinte lista de operadores pra matemática ou pra comparar coisas no Ruby.
+        Você usará a seguinte lista de operadores pra matemática ou para comparar coisas no Ruby.
         Analise a lista, reconheça alguns.  Você conhece, adição @+@ e subtração @-@
         e por aí vai.
 
@@ -544,7 +544,7 @@
         </pre>
 
 
-        h3. Keywords (Palavras-Chave, Palavras-Reservadas)
+        h3. Keywords (Palavras-chave, Palavras-reservadas)
 
 
         O Ruby tem um número de palavra embutidas, imbuídas em significado.  Estas palavras não podem
@@ -567,11 +567,11 @@
         de (comovente) código.
 
 
-        E recomendo que você dê mais um olhadela pelas partes da conversa.  Dê uma olhada ampla
+        E recomendo que você dê mais um olhadela pelas partes da conversa.  Dê uma ampla olhada 
         nelas.  Eu estarei testando seu metal na próxima seção.
 
 
-        !i/the.foxes-6.png(Out in the pickup truck.)!
+        !i/the.foxes-6.png(Saindo para a picape.)!
 
 
 #        h3. You and Your Dictionary 
