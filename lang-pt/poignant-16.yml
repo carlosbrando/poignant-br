@@ -1,4 +1,4 @@
-    - Linguagem e E QUERO DIZER Linguagem: >
+    - Linguagem e EU QUERO DIZER Linguagem: >
         !i/the.foxes-3.png(Nossos amigos, aqueles dois raposos indefesos, finalmente deram conta
         da gravidade da situação em que se encontram.)!
 
@@ -29,9 +29,7 @@
         assim: _Cinco vezes imprima "Odelay!"._
 
 
-        Que é exatamente o que este pequeno programa Ruby faz.  O "espanhol mutante" do
-        Beck:http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation irá imprimir
-        cinco vezes na tela do computador.
+        Que é exatamente o que este pequeno programa Ruby faz.  A exclamação "espanhol mutante":http://www.whiskeyclone.net/ghost/L/lordonlyknows.html do Beck será impressa cinco vezes na tela do computador.
 
 
         *Leia o trecho a seguir em voz alta.*
@@ -41,7 +39,7 @@
        
        
         Aqui estamos fazendo um teste básico de realidade.  Nosso programa vai *exit (sair)* (o programa vai terminar) *unless (a menos que)* 
-        a palavra *restaurante* contenha (ou *inclua*) a palavra *aura*.  Novamente, em Português: _Saia a nao ser que a palavra
+        a palavra *restaurante* contenha (ou *inclua*) a palavra *aura*.  Novamente, em Português: _Saia a não ser que a palavra
         restaurante inclua a palavra aura._
 
 
@@ -69,8 +67,8 @@
         o que os pontos e chaves significam.  Vou discutir as várias _partes da conversa_ em seguida.
 
 
-        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Ela não são English
-        sentences.  Elas são pequenas coleções de palavras e pontuação  which encompass a single thought.  Estas
+        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Elas não são exatamente sentenças 
+        em inglês.  Elas são pequenas coleções de palavras e pontuação que envolvem o mesmo pensamento.  Estas
         sentenças podem formar livros.  Elas podem formar páginas.  Elas podem formar romances inteiros, quando combinadas.
         Romances que modem ser lidos por humanos, mas também por computadores.
 
