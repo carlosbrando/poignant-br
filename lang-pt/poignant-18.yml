@@ -16,11 +16,11 @@
         h3. Variáveis
 
 
-        Qualquer palavra simples, em minúsculas, é uma variável no ruby.  Variáveis podem  ser compostas por
+        Qualquer palavra simples, em minúsculas, é uma variável no Ruby.  Variáveis podem  ser compostas por
         letras, dígitos e travessões.
 
 
-        bq. @x@, @y@, @banana2@ ou @telefone_pruma_codorna@ são exemplos.
+        bq. @x@, @y@, @banana2@ or @telefone_pruma_codorna@ são exemplos.
 
 
         Variáveis são como apelidos.  Lembra quando todo mundo te chamava de Pete Fedido?
@@ -133,15 +133,15 @@
         dígitos e travessões.  Mas elas *começam com dois pontos*.
 
 
-        bq. @:a@, @:b@, ou @:ponce_de_leon@ are examples.
+        bq. @:a@, @:b@, ou @:ponce_de_leon@ são exemplos.
 
 
         Símbolos são strings leves.  Geralmente, símbolos são usados em situações em que você precisa de uma string
         mas não vai imprimí-la na tela.
 
 
-        Você pode dizer que um símbolo é pouco mais digerível pro computador.  É como um anti-ácido.  Os dois pontos
-        indicam as bolhas saindo com estômago do computador enquanto ele digere o símbolo.  Ah.  Doce, doce alívio.
+        Você pode dizer que um símbolo é pouco mais digerível para o computador.  É como um anti-ácido.  Os dois pontos
+        indicam as bolhas saindo do estômago do  seu computador enquanto ele digere o símbolo.  Ah.  Doce, doce alívio.
 
 
         !i/the.foxes-4c.png(Bacon Pedaçudo!!)!
