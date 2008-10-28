@@ -2,8 +2,8 @@
 
         Assim como a faixa branca nas costas do gambá e a branca e enrolada grinalda da noiva, várias partes
         da conversa têm sinalizações visuais para te ajudar a identificá-las.  Pontuação, maiúsculas e minúsculas,
-        irão ajudar seu cérebro ver pedaços de código e os reconhecê-los intensamente.
-        Sua mente vai gritar frequentemente _Hey, Eu conheço aquele cara!_  Você vai também poder
+        irão ajudar seu cérebro ver pedaços de código e reconhecê-los intensamente.
+        Sua mente vai gritar frequentemente _Hey, Eu conheço aquele cara!_  Você também poderá
         contar vantagem em conversas com outros Rubistas.
 
 
@@ -16,7 +16,7 @@
         h3. Variáveis
 
 
-        Qualquer palavra simples, em minúsculas, é uma variável no ruby.  Variáveis podem consistir de
+        Qualquer palavra simples, em minúsculas, é uma variável no ruby.  Variáveis podem  ser compostas por
         letras, dígitos e travessões.
 
 
@@ -30,26 +30,26 @@
 
         Com variáveis, você dá um apelido a algo que você use frequentemente.  Por exemplo, vamos dizer
         que você tem um orfanato.  É um orfanato maléfico.  E quando o Papai Warbucks vem comprar 
-        mais crianças, nós insistimos que ele nos pague *cento e vinte um reais e oito centavos* pelo urso
-        teddy da criança, o qual ela ficou apegada nos momentos sombrios que passou vivendo neste pesadelo de
+        mais crianças, nós insistimos que ele nos pague *cento e vinte um reais e oito centavos* pelo ursinho
+        de pelúcia da criança, o qual ela ficou apegada nos momentos sombrios que passou vivendo neste pesadelo de
         custódia.
 
 
-        bq. @taxa_de_urso_teddy = 121.08@
+        bq. @taxa_de_urso_de_pelucia = 121.08@
 
 
         Mais tarde, quando você pegar ele no caixa (uma registradora turbinada que roda
         Ruby!), você vai precisar juntar as somas em um *total*.
 
 
-        bq. @total = taxa_de_orfao + taxa_de_urso_teddy + gorjeta@
+        bq. @total = taxa_de_orfao + taxa_de_urso_de_pelucia + gorjeta@
 
 
-        Estes apelidos pra variáveis vêm a calhar.  E no submundo sedento das vendas infantis, qualquer ajuda
+        Estes apelidos para variáveis vêm a calhar.  E no submundo sedento das vendas infantis, qualquer ajuda
         é bem-vinda, tenho certeza.
 
 
-        !i/the.foxes-4a.png(They mock my examples.)!
+        !i/the.foxes-4a.png(Eles zombam dos meus exemplos.)!
  
 
 
@@ -105,7 +105,7 @@
         </pre>
 
 
-        Então, assim como nós guardamos um número na variável *taxa_de_urso_teddy,* agora nós estamos guardando
+        Então, assim como nós guardamos um número na variável *taxa_de_urso_de_pelucia,* agora nós estamos guardando
         uma coleção de caracteres (uma string) na variável *frase_da_avril*.  O repórter envia esta frase
         para impressão, que por acaso usa  Ruby para operar as impressoras.
 
@@ -122,7 +122,7 @@
         </pre>
 
 
-        !i/the.foxes-4b.png(They desire to be in my examples.)!
+        !i/the.foxes-4b.png(Eles desejam estar nos meus exemplos.)!
 
 
 
