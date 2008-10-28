@@ -1,4 +1,4 @@
-    - Linguagem e E QUERO DIZER Linguagem: >
+    - Linguagem e EU QUERO DIZER Linguagem: >
         !i/the.foxes-3.png(Nossos amigos, aqueles dois raposos indefesos, finalmente deram conta
         da gravidade da situação em que se encontram.)!
 
@@ -69,8 +69,8 @@
         o que os pontos e chaves significam.  Vou discutir as várias _partes da conversa_ em seguida.
 
 
-        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Elas não são exatamente
-        sentenças em inglês.  Elas são pequenas coleções de palavras e pontuação  que abrangem um único pensamento.  Estas
+        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Elas não são exatamente sentenças 
+        em inglês.  Elas são pequenas coleções de palavras e pontuação que envolvem o mesmo pensamento.  Estas
         sentenças podem formar livros.  Elas podem formar páginas.  Elas podem formar romances inteiros, quando combinadas.
         Romances que podem ser lidos por humanos, mas também por computadores.
 
