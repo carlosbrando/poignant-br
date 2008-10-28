@@ -51,9 +51,11 @@
         *Leia o trecho a seguir em voz alta.*
 
 
-        bq. @['torrada', 'queijo', 'vinho'].each { |comida| print comida.capitalize  }@
-       
-      
+        <pre>
+          ['torrada', 'queijo', 'vinho'].each { |comida| print comida.capitalize  }
+        </pre>
+
+
         Enquanto este pedaço de código é menos legível e parecido com uma frase que o anterior, eu ainda assim
         o encorajo a ler em voz alta.  Enquanto o Ruby algumas vezes soa como Português noutras soa como Português Curto.
         Totalmente traduzido pra Português, você poderia ler desta maneira: _Com as palavras 'torrada', 'queijo',
