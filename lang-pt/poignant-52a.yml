@@ -28,7 +28,7 @@
              contador
            end
 
-           # Construtor para criar um BilheteDeLoteriaAnimal aleatoreamente
+           # Construtor para criar um BilheteDeLoteriaAnimal aleatoriamente
            def self.novo_aleatorio
              new( NOTAS[ rand( NOTAS.length ) ], NOTAS[ rand( NOTAS.length ) ],
                   NOTAS[ rand( NOTAS.length ) ] )
