@@ -3,7 +3,7 @@ require 'ftools'
 require 'yaml'
 require 'rubygems'
 require 'redcloth'
-#require 'syntax/convertors/html'
+require 'syntax/convertors/html'
 
 class Localization
     attr_accessor :locale, :version, :next_page, :previous_page, :encoding,
