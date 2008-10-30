@@ -5,13 +5,13 @@
 
 
         O Ruby estava atualizado. O que mais ele podia fazer? Escanear @constantes@ e @class_variables@ era
-        inútil.  A única razão de ter funcionado com a classe @Elevador@ era porque alguém tinha deixado o @irb@
+        inÃºtil.  A Ãºnica razÃ£o de ter funcionado com a classe @Elevador@ era porque alguÃ©m tinha deixado o @irb@
         rodando com suas classes ainda carregadas.
 
 
-        Ele tinha acabado de carregar este @irb@ e nenhuma classe especial estava disponível. Ele tinha que
-        encontrar algumas classes. Ele começou carregando o arquivo @`rbconfig`@ para ter uma idéia de quais
-        eram as configurações do Ruby.
+        Ele tinha acabado de carregar este @irb@ e nenhuma classe especial estava disponÃ­vel. Ele tinha que
+        encontrar algumas classes. Ele comeÃ§ou carregando o arquivo @`rbconfig`@ para ter uma idÃ©ia de quais
+        eram as configuraÃ§Ãµes do Ruby.
 
 
         <pre>
@@ -22,17 +22,17 @@
         </pre>
 
 
-        Lá havia muita informação para se analisar. A constante @Config::CONFIG@ é um Hash que
-        contém cada configuração do ambiente usada para ajustar o Ruby.  Você pode encontrar o nome
-        do sistema operacional em @Config::CONFIG['host_os']@.  O diretório onde as bibliotecas
-        principais do Ruby são armazenadas pode ser encontrado em @Config::CONFIG['rubylibdir']@.
+        LÃ¡ havia muita informaÃ§Ã£o para se analisar. A constante @Config::CONFIG@ Ã© um Hash que
+        contÃ©m cada configuraÃ§Ã£o do ambiente usada para ajustar o Ruby.  VocÃª pode encontrar o nome
+        do sistema operacional em @Config::CONFIG['host_os']@.  O diretÃ³rio onde as bibliotecas
+        principais do Ruby sÃ£o armazenadas pode ser encontrado em @Config::CONFIG['rubylibdir']@.
         Os programas Ruby podem armazenar arquivos auxiliares em @Config::CONFIG['datadir']@.
-        
+
 
         De qualquer maneira, O que Dr. Cham realmente precisava era uma lista de todas as bibliotecas
-        que não eram bibliotecas principais do Ruby.  Bibliotecas que foram instaladas pelos Originais
-        ou quem quer que tenha manejado este console.  Ele checou algumas variáveis globais por esta
-        informação.
+        que nÃ£o eram bibliotecas principais do Ruby.  Bibliotecas que foram instaladas pelos Originais
+        ou quem quer que tenha manejado este console.  Ele checou algumas variÃ¡veis globais por esta
+        informaÃ§Ã£o.
 
 
         <pre>
@@ -45,14 +45,14 @@
         </pre>
 
 
-        Aha, ótimo. Dr. Cham coçou sua barba e olhou para sua sessão o @irb@. A variável global @$"@
-        contém um Array de cada biblioteca que foi carregada com @require@.  A maioria destas bibliotecas
+        Aha, Ã³timo. Dr. Cham coÃ§ou sua barba e olhou para sua sessÃ£o o @irb@. A variÃ¡vel global @$"@
+        contÃ©m um Array de cada biblioteca que foi carregada com @require@.  A maioria destas bibliotecas
         foram carregadas pelo @irb@.  Embora ele havia carregado @'rbconfig.rb'@ a pouco.
 
 
-        A variável global @$:@, que pode também ser acessada como @LOAD_PATH@, contém uma lista com
-        todos os diretórios em que Ruby irá checar quando você tentar carregar um arquivo com @require@.
-        Quando Dr. Cham rodou @require 'rbconfig'@, Ruby verificou nesta ordem cada um dos diretórios.
+        A variÃ¡vel global @$:@, que pode tambÃ©m ser acessada como @LOAD_PATH@, contÃ©m uma lista com
+        todos os diretÃ³rios em que Ruby irÃ¡ checar quando vocÃª tentar carregar um arquivo com @require@.
+        Quando Dr. Cham rodou @require 'rbconfig'@, Ruby verificou nesta ordem cada um dos diretÃ³rios.
 
 
         <pre>
@@ -65,31 +65,31 @@
         </pre>
 
 
-        O segundo caminho era onde o Ruby acabaria por encontrar o arquivo rbconfig.rb.  Dr. Cham supôs
-        que os primeiros cinco caminhos eram *caminhos absolutos*.  Estes eram caminhos para diretórios
+        O segundo caminho era onde o Ruby acabaria por encontrar o arquivo rbconfig.rb.  Dr. Cham supÃ´s
+        que os primeiros cinco caminhos eram *caminhos absolutos*.  Estes eram caminhos para diretÃ³rios
         num disco chamado @compartimento@.  Caminhos absolutos podem variar em seu sistema.  No Windows,
-        caminhos absolutos começam com a letra do disco.  No Linux, caminhos absolutos começam com uma barra.
+        caminhos absolutos comeÃ§am com a letra do disco.  No Linux, caminhos absolutos comeÃ§am com uma barra.
 
 
-        O diretório @"."@ indicava um *caminho absoluto*;  O ponto solitário representa o diretório de
-        trabalho atual.  O diretório onde Dr. Cham inicialixou o @irb@.  Então, depois de Ruby ter
-        procurado em todos locais padrão, ele checou o diretório atual.
+        O diretÃ³rio @"."@ indicava um *caminho absoluto*;  O ponto solitÃ¡rio representa o diretÃ³rio de
+        trabalho atual.  O diretÃ³rio onde Dr. Cham inicialixou o @irb@.  EntÃ£o, depois de Ruby ter
+        procurado em todos locais padrÃ£o, ele checou o diretÃ³rio atual.
 
 
-        
-        A cabra deu uma espiada com sua cabeça ao redor de Dr. Cham e asistia todas estas instruções
-        exalarem, a medida que ele lambia seus lábios para manter suas salivações longe dos monitores
-        e dos brilhosos botões. Ele havia soltado alguns regozijos (nas linhas de: _Não, isso não_
-        ou _Sim, sim, isso mesmo_ ou _Ok, bem, você escolhe_), mas agora ele estava completamente
-        envolto, recomendando código, "Tente @require 'setup'@ ou, não, tente @3 * 5@. Tenha
-        certeza que a matemática básica funciona."
+
+        A cabra deu uma espiada com sua cabeÃ§a ao redor de Dr. Cham e asistia todas estas instruÃ§Ãµes
+        exalarem, a medida que ele lambia seus lÃ¡bios para manter suas salivaÃ§Ãµes longe dos monitores
+        e dos brilhosos botÃµes. Ele havia soltado alguns regozijos (nas linhas de: _NÃ£o, isso nÃ£o_
+        ou _Sim, sim, isso mesmo_ ou _Ok, bem, vocÃª escolhe_), mas agora ele estava completamente
+        envolto, recomendando cÃ³digo, "Tente @require 'setup'@ ou, nÃ£o, tente @3 * 5@. Tenha
+        certeza que a matemÃ¡tica bÃ¡sica funciona."
 
 
-        "Claro que a matemática funciona," disse Dr. Cham.  "Deixe comigo, eu preciso encontrar algumas
-        classes úteis."
+        "Claro que a matemÃ¡tica funciona," disse Dr. Cham.  "Deixe comigo, eu preciso encontrar algumas
+        classes Ãºteis."
 
 
-        "É im simples teste de sanidade," disse a cabra. "Apenas tente. Faça @3 * 5@ e veja
+        "Ã‰ im simples teste de sanidade," disse a cabra. "Apenas tente. FaÃ§a @3 * 5@ e veja
         o que aparece."
 
 
@@ -103,9 +103,9 @@
 
 
         "Ok, muito bom! Estamos dentro!" a cabra chacoalhou alegremente sua cara peluda.
-        
 
-        Dr. Cham deu um tapinha na cabeça, "Ótimo.  Agora podemos continuar."
+
+        Dr. Cham deu um tapinha na cabeÃ§a, "Ã“timo.  Agora podemos continuar."
 
 
         <pre>
@@ -116,23 +116,23 @@
         </pre>
 
 
-        Dr. Cham tinha usado @chdir@ para mudar o diretório atual de trabalho para o primeiro
-        caminho listado no @LOAD_PATH@.  Este primeiro caminho em @site_ruby@ é um lugar comum
+        Dr. Cham tinha usado @chdir@ para mudar o diretÃ³rio atual de trabalho para o primeiro
+        caminho listado no @LOAD_PATH@.  Este primeiro caminho em @site_ruby@ Ã© um lugar comum
         para armazernar classes personalizadas.
 
 
-        Aqui estavam as três classes lendárias que o instrutor de órgão da minha filha havia anotado
-        para mim anteriormente neste capítulo.  E, Dr. Cham, tendo lido o dito capítulo, reconheceu
-        estas três peças do sistema imediatamente.
+        Aqui estavam as trÃªs classes lendÃ¡rias que o instrutor de Ã³rgÃ£o da minha filha havia anotado
+        para mim anteriormente neste capÃ­tulo.  E, Dr. Cham, tendo lido o dito capÃ­tulo, reconheceu
+        estas trÃªs peÃ§as do sistema imediatamente.
 
 
-        A classe @Endertromb@. qie continha os mistérios dos poderes deste planeta.  A classe @LeitorMental@
-        que, escaneando as mentes de seus habitantes, lia o conteúdo de cada mente. E, finalmente, a classe
-        crucial @FazedorPedidos@ que permitia a realização de desejos de dez letras, caso o desejo alguma
-        vez encontrasse um caminho para o núcleo de Endertromb.
+        A classe @Endertromb@. qie continha os mistÃ©rios dos poderes deste planeta.  A classe @LeitorMental@
+        que, escaneando as mentes de seus habitantes, lia o conteÃºdo de cada mente. E, finalmente, a classe
+        crucial @FazedorPedidos@ que permitia a realizaÃ§Ã£o de desejos de dez letras, caso o desejo alguma
+        vez encontrasse um caminho para o nÃºcleo de Endertromb.
 
 
-        "O que você acha de @4 * 56 + 9@?" perguntou a cabra.  "Não sabemos se isso pode fazer expressões 
+        "O que vocÃª acha de @4 * 56 + 9@?" perguntou a cabra.  "NÃ£o sabemos se isso pode fazer expressÃµes 
         compostas."
 
 

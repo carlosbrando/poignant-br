@@ -1,16 +1,16 @@
-    - Linguagem e E QUERO DIZER Linguagem: >
+    - Linguagem e EU QUERO DIZER Linguagem: >
         !i/the.foxes-3.png(Nossos amigos, aqueles dois raposos indefesos, finalmente deram conta
         da gravidade da situação em que se encontram.)!
 
 
         Minha consciência não me deixa chamar o Ruby de uma linguagem de _computador._  Isso implica que
         a linguagem funciona primariamente em termos de computador.  Que a linguagem é criada para acomodar
-        o computador, única e exclusivamente.  E portanto, nós, os programadores, somos estrangeiros, buscando cidadania n the
+        o computador, única e exclusivamente.  E portanto, nós, os programadores, somos estrangeiros, buscando cidadania
         no país dos computadores.  É a linguagem do computador e nós somos os tradutores para o mundo.
 
 
         Mas como você a chamaria quando seu cérebro começa a pensar nessa linguagem?  Quando você
-        começa a usar as próprias palavras e coloquismos da linguagem para se expressar.  Diga, o computador não
+        começa a usar as próprias palavras e coloquialismos da linguagem para se expressar.  Diga, o computador não
         consegue fazer aquilo.  Como pode então ser a linguagem do computador?  Ela é nossa, nós a falamos nativamete!
 
 
@@ -29,8 +29,8 @@
         assim: _Cinco vezes imprima "Odelay!"._
 
 
-        Que é exatamente o que este pequeno programa Ruby faz.  O "espanhol mutante" do
-        Beck:http://www.whiskeyclone.net/ghost/L/lordonlyknows.html exclamation irá imprimir
+        Que é exatamente o que este pequeno programa Ruby faz.  A exclamação em "espanhol mutante" do
+        Beck:http://www.whiskeyclone.net/ghost/L/lordonlyknows.html  será impressa
         cinco vezes na tela do computador.
 
 
@@ -41,37 +41,39 @@
        
        
         Aqui estamos fazendo um teste básico de realidade.  Nosso programa vai *exit (sair)* (o programa vai terminar) *unless (a menos que)* 
-        a palavra *restaurante* contenha (ou *inclua*) a palavra *aura*.  Novamente, em Português: _Saia a nao ser que a palavra
+        a palavra *restaurante* contenha (ou *inclua*) a palavra *aura*.  Novamente, em Português: _Saia a não ser que a palavra
         restaurante inclua a palavra aura._
 
 
         Já viu alguma linguagem de programação usar a pontuação tão eficientemente?  Ruby usa a pontuação,
-        como exclamações e interrogações, pra melhorar a legibilidade do código.  Nós estamos fazendo uma pergunta
+        como exclamações e interrogações, para melhorar a legibilidade do código.  Nós estamos fazendo uma pergunta
         no código acima, então por quê não deixar isso aparente?
 
 
         *Leia o trecho a seguir em voz alta.*
 
 
-        bq. @['torrada', 'queijo', 'vinho'].each { |comida| print comida.capitalize  }@
-       
-      
+        <pre>
+          ['torrada', 'queijo', 'vinho'].each { |comida| print comida.capitalize  }
+        </pre>
+
+
         Enquanto este pedaço de código é menos legível e parecido com uma frase que o anterior, eu ainda assim
         o encorajo a ler em voz alta.  Enquanto o Ruby algumas vezes soa como Português noutras soa como Português Curto.
-        Totalmente traduzido pra Português, você poderia ler desta maneira: _Com as palavras 'torrada', 'queijo',
+        Totalmente traduzido para Português, você poderia ler desta maneira: _Com as palavras 'torrada', 'queijo',
         e 'vinho': pegue cada comida e a imprima com a primeira letra maiúscula._
         
 
-        O computador então responde de forma cortêz: @Torrada@, @Queijo@ e @Vinho@.
+        O computador então responde de forma cortês: @Torrada@, @Queijo@ e @Vinho@.
 
 
         Neste ponto, você deve estar se perguntando como essas palavras realmente funcionam juntas.  O Smotchkkiss está imaginando
         o que os pontos e chaves significam.  Vou discutir as várias _partes da conversa_ em seguida.
 
 
-        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Ela não são English
-        sentences.  Elas são pequenas coleções de palavras e pontuação  which encompass a single thought.  Estas
+        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Elas não são exatamente sentenças 
+        em inglês.  Elas são pequenas coleções de palavras e pontuação que envolvem o mesmo pensamento.  Estas
         sentenças podem formar livros.  Elas podem formar páginas.  Elas podem formar romances inteiros, quando combinadas.
-        Romances que modem ser lidos por humanos, mas também por computadores.
+        Romances que podem ser lidos por humanos, mas também por computadores.
 
 

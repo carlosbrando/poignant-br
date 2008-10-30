@@ -1,14 +1,14 @@
         <pre>
-         class AnimalLottoTicket
+         class BilheteLoteriaAnimal
 
-           # A list of valid notes.
+           # Uma lista de notas válidas.
            NOTAS = [:Ab, :A, :Bb, :B, :C, :Db, :D, :Eb, :E, :F, :Gb, :G]
 
-           # Stores the three picked notes and a purchase date.
+           # Armazenas as três notas escolhidas e as datas de compra.
            attr_reader :escolhidas, :comprado
 
-           # Creates a new ticket from three chosen notes.  The three notes
-           # must be unique notes.
+           # Cria um novo bilhete a partir das três notas.  As três notas
+           # devem ser únicas.
            def initialize( nota1, nota2, nota3 )
              if [nota1, nota2, nota3].uniq!
                raise ArgumentError, "as três escolhidas devem ser diferentes entre si"
@@ -19,17 +19,17 @@
              @comprado = Time.now
            end
 
-           # Score this ticket against the final draw.
-           def score( final )
-             count = 0
-             final.escolhidas.each do |note|
-               count +=1 if escolhidas.include? note
+           # Faz a contagem do resultado (escore) do bilhete contra o resultado do sorteio.
+           def escore( final )
+             contador = 0
+             final.escolhidas.each do |nota|
+               contador +=1 if escolhidas.include? nota
              end
-             count
+             contador
            end
 
-           # Constructor to create a random AnimalLottoTicket
-           def self.new_random
+           # Construtor para criar um BilheteLoteriaAnimal aleatoriamente
+           def self.novo_aleatorio
              new( NOTAS[ rand( NOTAS.length ) ], NOTAS[ rand( NOTAS.length ) ],
                   NOTAS[ rand( NOTAS.length ) ] )
            rescue ArgumentError
@@ -40,77 +40,80 @@
         </pre>
 
 
-        No need for the animal's tickets to behave drastically different from the traditional
-        tickets.  The @AnimalLottoTicket@ class is internally different, but exposes the same
-        methods seen in the original @LotteryTicket@ class.
+        Não há necessidade de os bilhetes para animais se compartarem drasticamente diferente
+        dos bilhetes tradicionais.  A classe @BilheteDLoteriaAnimal@ é internamente diferente,
+        mas expõe os mesmos métodos vistos na classe @BilheteLoteria@.
         The @score@ method is even identical to the @score@ method from the old @LotteryTicket@
         class.
 
 
-        Instead of using a class variable to store the musical note list, they're stored in
-        a constant called @AnimalLottoTicket::NOTAS@.  Variables change and the note list
-        shouldn't change.  Constants are designed to stay the same.  You can still change the
-        constant, but you'll have to be tricky or Ruby will speak up.
+        Ao invés de usar uma variável de classe para armazenar a lista de nostas musicais,
+        elas são armazenadas numa constante chamada @BilheteLoteriaAnimal::NOTAS@.  Variáveis
+        mudam e a lista de notas não deveria.  Constantes foram projetadas para se manterem.  Mesmo
+        assim você pode alterar a constante, mas terá que trapacear ou o Ruby irá chiar.
 
 
         <pre>
-         irb> AnimalLottoTicket::NOTAS = [:TOOT, :TWEET, :BLAT]
+         irb> BilheteLoteriaAnimal::NOTAS = [:ASSOBIO, :GORJEIO, :BALIDO]
          (irb):3: warning: already initialized constant NOTAS
-           => [:TOOT, :TWEET, :BLAT]
+           => [:ASSOBIO, :GORJEIO, :BALIDO]
         </pre>
 
 
-        The gull came back with the grazledon, his name was Merphy, he was thrilled to play chance,
-        he puffed his face dreamily, whistled five and six notes
-        in series, they all held his collar, pulled him close to the calculator and let him breathe
-        three notes, then they choked the bedosh outta him until his ticket was printed and 
-        everything was nicely catalogued inside @@@tickets['merphy']@.  Thankyou, see ya at the draw!
+        A gaivota voltou com a papa-capim, o nome dela era Merphy, ela estava empolgada em tentar a 
+        a sorte, ela inflou seu rosto sonhador, assobiou cinco ou seis notas em série, todas elas
+        seguraram seu colar, puxaram-na para perto da calculadora e a deixaram respirar três notas,
+        então eles estranguram o último ar até que seu bilhete estivesse impresso e tudo estava 
+        catalogado certinho dentro de @@@bilhetes['merphy']@.  Obrigado, vejo você no sorteio!
 
 
-        So, the fever of the lottery became an epidemic among the simple minds of the animals.  
-        Paij-ree saved his costs, used the same @LotteryDraw@ class he'd used in the corporate environment of
-        the lottery from his childhood.  And soon enough, the animals were making their own
-        music and their own maps and films.
+        Então a febre da loteria tornou-se uma epidemia entre as simples mentes dos animais.  
+        Paij-ree poupou algum custo, usou a mesma classe @SorteioLoteria@ que ele usaria no 
+        ambiente comum da loteria de sua infância.  E logo os animais estavam
+        fazendo sua própria música, seus próprios mapas e filmes.
 
 
-        "What about The Originals?" I asked Paij-ree.  "They must have hated your animals!"
+        "E Os Originais?" Perguntei a Paij-ree.  "Eles devem ter odiado seus animais!"
 
 
-        But he winced sourly and pinched his forehead.  "I am an Original.  You as well.
-        Do we (ae-o) hate any of them?"
+        Ele porém recuou com mau humor e franziu sua testa.  "Eu sou um Original.  Assim como você.
+        Nós odiamos (ae-o) algum deles?"
 
 
-        Not too long after the lottery ended, Paij-ree felt the crater gull _Eb-F-F-A_
-        lighting upon his shoulder, which whistled an urgent and sad _C-Eb-D C-A-Eb_.
-        These desparate notes sent an organ roll of chills straight through Paij-ree.  Had the
-        King God of Potted Soil, Our Beloved Topiary, *the Mossiah Quos*, Literal Father of
-        That Man Who Would Be My Daughter's Organ Instructor -- had he truly come to his end?
-        How could this be?  Could the great arbors no longer nourish him and guide the moist crosswinds
-        to him?  Or did his own spindly lichen hedge up his way and grow against his breathing?
+        Não muito tempo após o  termindo da loteria, Paij-ree sentiu a gaivota da cratera _Eb-F-F-A_
+        descendo em seu ombro, ela então assobiou um urgente e triste 
+        _C-Eb-D-C-A-Eb (Dó-Mi Bemol-Ré-Lá-Mi Bemol)_.
+        Estas notas desesperadas enviaram uma onda de calafrios através do corpo de Paij-ree.
+        Tinha o Deus Rei de Bêbado Solo. Nosso Amado Topiario, o *Musgossias Quos*, Pai Literal
+        Daquele Homem Quem Era O Instrutor de Órgão da Minha Filha -- tinha ele realmente chegado ao
+        seu fim? Como isto poderia acontecer? Poderiam as grandes árvores não mais nutri-lo e guiar
+        os ventos úmidos em sua direção? Ou seu próprio esguio liquen cobriram seu caminho e cresceram
+        obstruindo sua respiração?
 
 
-        _You never mind_, went the tune of the gull.  _He has detoriated and weakened and fallen in the
-        lit door of your home cottage.  His tendrils needing and crying for the day to not end.
-        For the sun to stay fixed and wide and attentive._
+        _ Você não liga_ dizia a canção da gaivota. _Ele deteriorou-se e enfraqueceu e caiu na porta
+        iluminada de seu casebre.  Seus rebentos torcendo e chorando para que o dia não acabasse.
+        Para que o sol permanecesse fixo e longe e atencioso._
 
 
-        Plor-ian, the house attendant, kept the pitchers coming and Quos stayed well watered
-        until Paij-ree arrived to survey the decaying buds of soft plant and the emerging face of
-        his father, the lottery captain.  His skin deeply pocked like an overly embroidered pillow.
-        Great shoots springing from his sleeves now curled back with lurching thirst.
+        Plor-ian, o criado da casa, deixou que os jarros viessem e Quos manteve-se bem hidratado até
+        que Paij-ree chegou para avaliar os caídos botões de plantas macias e o emergente rosto de 
+        seu pai, o capitão da loteria.  Sua pele profundamente marcada como um travesseiro cheio de
+        bordados; Grandes galhos saltavam-lhe dos braços agora retraídos com grande sede.
 
 
-        Paij-ree combed back the longer stems around his father's eyes and those coming from the
-        corners of his mouth.  While I'd like to tell you that Paij-ree's tears rolled down
-        his sleeves and into the pours of his father, rejuvenating and restoring the grassy gentleman:
-        I cannot say this.
+        Paij-ree penteou as longas raízes que rodeavam os olhos de seu pai e aquelas que vinham
+        do canto de sua boca.  Enquanto eu gostaria de lhe dizer que as lágrimas de Paij-ree rolavam
+        até os braços e poros de seu pai, rejuvenescendo e recuperando o gramado cavalheiro:
+        Não posso dizer isto.
 
 
-        Rather, Paij-ree's tears rolled down his sleeves and into the creaking clapboard floor,
-        nourishing the vile weeds, energizing the dark plant matter, which literally lept through
-        the floor at night and strangled Our Quos.  Yank, pull, crack.  And that was his skull.
+        Na verdade, as lágrimas de Paij-ree rolavam até seus braços e caiam no chão de tábuas rangentes,
+        alimentando as  desprezíveis ervas daninhas, energizando a matéria negra das plantas, que
+        literalmente saltavam através do chão à noite e sufocavam Nosso Quos.  Puxão, rasgo, crack.
+        E este era seu esqueleto.
 
 
-        So Paij-ree could never be called Wert-ree or Wert-plo after that.
+        Depois disso Paij-ree nunca mais poderia ser chamado de Wert-ree  ou Wer-plo.
 
 
