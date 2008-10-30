@@ -8,7 +8,7 @@ open_the_book: Abrir o livro
 written_by: |
         Este livro foi carinhosamente escrito e ilustrado por
         "why the lucky stiff":http://whytheluckystiff.net/.
-header_title:  why's (poignant) guide to ruby 
+header_title:  o guia (comovente) de ruby do why
 sidebar: sidebar!
 contents: Conteúdo
 expansion_pak: Pacote de Expansão

@@ -1,6 +1,6 @@
     - Se Eu Estivesse Procurando Por um Veículo: >
 
-        !i/wixl-7.gif(Sitting for a moment.)!
+        !i/wixl-7.gif(Sentado por um momento.)!
 
         Eu gosto de ver estes dois em estado selvagem.  Eles ficam entendiados pra caramba aqui no estúdio.
         Começaram fazendo slogans estranhos e coisas assim.  Eles tinham frases que insistiam em repetir, formando fixações.
@@ -20,8 +20,8 @@
 
         <pre>
          require 'open-uri'
-         open( "http://preeventualist.org/lost" ) do |lost|
-           puts lost.read
+         open( "http://preeventualist.org/lost" ) do |perdido|
+           puts perdido.read
          end
         </pre>
 
