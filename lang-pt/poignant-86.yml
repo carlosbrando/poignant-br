@@ -3,11 +3,11 @@
 
 
       Uma característica do Irb raramente mencionada é a vantagem do recurso de auto-completar com a tecla TAB.
-      Este tópico é um pouco de tabu no momento, uma vez que trabalhar com ele no Windows é um tanto horroroso.
+      Este tópico tem um pouco de tabu no momento, uma vez que trabalhar com ele no Windows é um tanto horroroso.
       (Não, não tenha medo. Agora, mais do que nunca, olhe à sua direita.)
 
       Se você estiver no Linux ou no FreeBSD, o recurso de auto-completar com a tecla TAB deverá funcionar imediatamente.
-      E se estiver usando OS X, você deverá ter certeza que está atualizado para última versão 1.8 e quando executar o Irb, use:
+      E se estiver usando OS X, você deverá ter certeza que está atualizado para a última versão 1.8 e quando executar o Irb, use:
 
       <pre class="text">
        irb --readline -r irb/completion
@@ -54,7 +54,7 @@
       e use o tempo todo.
 
 
-      !i/tigers.vest-3.gif(Except the robot flew away and the ice gun went on and on...)!
+      !i/tigers.vest-3.gif(Todos fugiram com exceção da robô e a arma de gelo continuou e continuou...)!
 
 
       Ok, uma última coisa então vou parar de incomodar com toda esta ótima tecnologia.
@@ -65,8 +65,7 @@
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
 
 
-      h3={color: #300}. (Ruby's Own 411 or 555-1212 or _Yes, Operator, Get Belgrade on the Line_ -- I'll 
-      Venha cá -- Apenas batendo na tecla "jogo da velha" até alguém atender...
+      h3={color: #300}. (O próprio 102 do Ruby ou 555-1212 ou _Sim, Operadora, Coloque Belgrado na Linha_ -- Eu Estarei Bem Aqui -- Apenas Batendo na Tecla do "Jogo da Velha" Até  Que Alguém Atenda...
 
 
       E o Ri atende. "Aqui é o Ri. Classe e dois pontos, por favor"
@@ -80,7 +79,7 @@
       </pre>
 
 
-      Sem demora, corrija no seu display (tão rápido que até o gato sentado na
+      Sem demora, corrija na sua tela (tão rápido que até o gato sentado na
       quina estica o pescoço, boceja e alcança a sua caneca real _A coisa mais
       barulhenta desde Michael Dorn_):
 
@@ -112,20 +111,20 @@
       explicações-apropriadas!_
 
 
-      Para ter uma explicação de qualquer classe, junto com diretório completo para
-      todos seus metodos, todos com uma voz suave que serve para acalmar qualquer um de
+      Para ter uma explicação de qualquer classe em inglês, junto com diretório completo para
+      todos seus métodos, todos com uma voz suave que serve para acalmar qualquer um de
       vocês cosmonautas em pânico aí lutando contra a atração de um raio trator de tolerância zero,
-      apenas use na shell: @ri Class@.
+      apenas use no console: @ri Class@.
 
 
-      Mas para ajudar nos metodos da classe, você tira da manga: @ri Class::method@.
+      Mas para ajudar nos meétodos da classe, você tira da manga: @ri Class::method@.
 
 
-      Apesar de metodos de instância usarem o jogo da velha ao invés do ponto. (Uma vez que ponto pode significar class *ou*
+      Apesar de métodos de instância usarem o jogo da velha ao invés do ponto. (Uma vez que ponto pode significar class *ou*
       métodos de instância.) Digo: @ri Class#method@.
 
 
-      A completa distribuição das classe, uma lista completa desde o mais alto topo até o centro da Terra,
+      A completa distribuição das classse, uma lista completa desde o mais alto topo até o centro da Terra,
       pode ser alcançado com @ri -c@.
 
 
@@ -138,14 +137,14 @@
       h3. Dentro do Painel de controle do Ri
 
 
-      Atrá do Ri cantam um coro de vozes humanas, primeiramente Dave Thomas, um autor de _Programming
+      Atrá do Ri canta um coro de vozes humanas, primeiramente Dave Thomas, um autor de _Programming
       Ruby_, e absolutamente o pai adotivo americano do Ruby. Muitos destes discursos elaborado
-      do Ri são diretamente das referencias de _Programming Ruby_.  Não esqueça de 
+      do Ri são diretamente das referências de _Programming Ruby_.  Não esqueça de 
       agradecer ao Dave periodicamente.
 
 
       O Ri extrai seu exuberante conjunto de informações do mesmo código que o Ruby é construído. Em cada um dos
-      arquivos de código contidos no armário de arquivo da chefia Ruby, comentários detalhados
+      arquivos de código contidos no armário de arquivos da chefia Ruby, comentários detalhados
       descrevem tudo claramente.
 
 
@@ -186,10 +185,10 @@
 
 
       Você também pode usar alguns caracteres especiais para aumentar sua descrição. Por
-      exemplo, se você indentar um parágrafo e usar um asterisco @*@ ou um hífen @-@      
+      exemplo, se você identar um parágrafo e usar um asterisco @*@ ou um hífen @-@      
       pouco antes das letras da primeira frase, o parágrafo será reconhecido como um
       ítem de lista. Então, se a sua descrição precisa ser convertida para HTML, você
-      verá o ítem de lista aparecer como uma lista de HTML desordenada.
+      verá o ítem de lista aparecer como uma lista de HTML não-ordenada.
 
 
       <pre>
@@ -202,10 +201,10 @@
       </pre>
 
 
-      Outra regras semelhantes: Listas que começam com digitos seguidos de períodos,
-      são reconhecidas como listas numéricas. Palavras enfatizadas são cercadas por traço baixo(underscore),
-      palavras em negrito por asteriscos, palavras em código por sinais de soma. Exemplos são simples blocos
-      de texto indentados por alguns espaços. Todas estas regras juntas são chamadas RDoc.
+      Outra regras semelhantes: Listas que começam com digitos seguidos de períodos
+      são reconhecidas como listas numéricas. Palavras enfatizadas são cercadas por travessão (underscore),
+      palavras em negrito por asteriscos, palavras em código por sinais de adição. Exemplos são simples blocos
+      de texto identados por alguns espaços. Todas estas regras juntas são chamadas RDoc.
 
 
       Aqui está um pedaço do RDoc do método @initialize@ em um dos meus projetos
@@ -230,14 +229,14 @@
       </pre>
 
 
-      Para a série completa de regras RDoc veja a seção *Markup* do
+      Para a série completa de regras RDoc veja a seção *Markup (Marcação)* do
       "README":http://rdoc.sourceforge.net/doc/files/README.html.
 
 
       h3. Impulsionando seu próprio Ri
 
 
-      O Ri porém não lê automáticamente seus arquivos para você. Você tem que guiá-lo,
+      O Ri porém não lê automaticamente seus arquivos para você. Você tem que guiá-lo,
       mostrar o caminho. Mude para o diretório do código que você gostaria de examinar. Então,
       use a ferramenta RDoc para executar.
 
@@ -259,24 +258,24 @@
       </pre>
 
 
-      O diretório @~/cvs/seu-código@ deverá agora também ter um diretório @doc@
+      O diretório @~/cvs/seu-código@ deverá agora também possuir um diretório @doc@
       recente contendo documentação HTML para todas as suas classes. Veja @index.html@
       para as notícias agradáveis.
 
 
-      Pois então. Está tudo em suas mãos agora. Bem vindo ao Ruby.      
+      Pois então. Está tudo em suas mãos agora. Bem vindo ao Ruby. 
 
 
-      !i/tigers.vest-4.gif(The tiger finds a new home and learns to eventually move on.)!
+      !i/tigers.vest-4.gif(O Tigre Encontra Uma Nova Casa e Eventualmente Aprende a Seguir Em Frente.)!
 
 
 #
-#       Assim como o sol se pões e eu tenho que chamá-lo Paij-plo, Eu checo o tempo.
+#       Assim como o sol se põe e eu tenho que chamá-lo Paij-plo, Eu checo o tempo.
 #
 #
 #        bq. @puts Time.now@
 #
-#        which prints: @Sun Sep 12 18:34:50 EDT 2004@
+#        Que imprime: @Sun Sep 12 18:34:50 EDT 2004@
 #
 #
 #        Paij-plo se debruça no meu ombro, "E então está (re-eep) devorado."
