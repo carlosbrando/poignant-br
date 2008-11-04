@@ -1,19 +1,19 @@
-    - If I Haven't Treated You Like a Child Enough Already: >
+    - Se Eu Já Não Tivesse Lhe Tratado Suficientemente Como Uma Criança: >
 
-        Estou orgulhoso de você.   Anyone will tell you how much I brag about you.  How I go on and on about
-        this great anonymous person out there who scrolls and reads and scrolls and reads.  "These
-        kids," I tell them.  "Man, these kids got heart.  I never..."  And I can't even finish a sentence
-        because I'm absolutely blubbering.
-        
+        Estou orgulhoso de você.   Qualquer um irá lhe contar o tanto que me orgulho de você.  Como eu
+        continuo e continou a falar sobre essa ótima pessoa anônima aí fora  que rola e lê e rola e lê.
+        "Estas crianças," Eu lhes conto. "Cara, estas crianças tem coração.  Eu nunca..." E eu mal consigo
+        terminar uma frase porque estou absolutamente mergulhado em lágrimas.
+
 
         E meu coração irradia um vermelho intenso sob minha pele translúcida e eles tiveram que me administrar
-        10cc de Javascript para me fazer voltar.  (Eu respondo bem a toxinas no sangue.)  Man, that stuff will 
-        kick the peaches right out your gills!
+        10 mililitros de Javascript para me fazer voltar.  (Eu respondo bem a toxinas no sangue.)  Cara, essa coisa
+        vai chutar os pêssegos direto para fora de suas guelras.
 
 
-        So, yes.  Você tá indo bem.  Mas agora eu devo começar a ser um be a brutal schoolmaster.
-        I need to start seeing good marks from you.  Até agora, você não fez nada mais do que olhar pra cima
-        e pra baixo.  Okay, claro, você fez excepcionais leituras em voz alta mais cedo.  Agora nós precisamos
+        Bem, sim.  Você está indo bem.  Mas agora eu devo começar a ser um bruto professor secundário.
+        Preciso começar a ver boas notas suas.  Até agora, você não fez nada mais do que olhar para cima
+        e para baixo.  Ok, claro, você fez excepcionais leituras em voz alta anteriormente.  Agora nós precisamos
         de habilidade de compreensão aqui, Smotchkkiss.
 
 
@@ -23,24 +23,24 @@
         bq. @5.times { print "Odelay!" }@
 
 
-        You might want to even cover this paragraph up while you read, because your eyes might want
-        to sneak to the answer.  Nós tempos um _número_ @5@, seguido por um _método_ @.times@.  Depois, a primeira
+        Você pode querer até mesmo cobrir este parágrafo em quanto lê, porque seus olhos podem esquivar-se para
+        olhar a resposta.  Nós temos um _número_ @5@, seguido por um _método_ @.times@.  Depois, a primeira
         garra de caranguejo de um _bloco_.  O _método_ do kernel @print@ não tem ponto e é seguido por uma _string_
         @"Odelay!"@.  A garra de canguejo final fecha nosso _bloco_.
 
 
-        *Say aloud each of the parts of speech used below.*
+        *Diga em voz alta cada parte do discurso usada abaixo.*
 
 
         bq. @exit unless "restaurante".include? "aura"@
 
 
-        Assim como o método @print@, @exit@ é um _método_ do Kernel.  Se você prestou atenção na grande lista de 
+        Assim como o método @print@, @exit@ é um _método_ do kernel.  Se você prestou atenção na grande lista de 
         palavras reservadas, você saberá que @unless@ é uma dessas _palavras reservadas_.  A _string_ @"restaurante"@
-         is clung to  by the _method_ @include?@.  E finalmente, a string @"aura"@.
+         está unida ao _método_ @include?@.  E no final, a string @"aura"@.
 
 
-        *Say aloud each of the parts of speech used below.*
+        *Diga em voz alta cada parte do discurso usada abaixo.*
 
 
         bq. @['torrada', 'queijo', 'vinho'].@
@@ -48,17 +48,17 @@
         @each { |alimento| print( alimento.capitalize ) }@
 
 
-        Esta centopéia partakes of finer delicacies.  Um _array_ inicia o exemplo.  No array, três
+        Esta centopéia partilha agradáveis delicadezas.  Um _array_ inicia o exemplo.  No array, três
         _strings_ @'torrada'@, @'queijo'@, e @'vinho'@.  Todo o array é seguido por um _método_ @each@.  
 
 
-        Dentro de um _bloco_, o _argumento do bloco_ @alimento@, descendo seu toboágua dentro do bloco.
-        O _método_ @capitalize@ então passa pra maíuscula a primeira letra do argumento do bloco, a qual 
-        éas become _variable_ @food@.  This capitalized _string_ is passed to kernel _method_ @print@.
+        Dentro de um _bloco_, o _argumento do bloco_ @alimento@, descendo seu tobo-água dentro do bloco.
+        O _método_ @capitalize@ então passa para maíuscula a primeira letra do argumento do bloco, a qual 
+        se tornou a _variável_ @alimento@.  Esta _string_ em maiúsculo é passada ao _método_ do kernel @print@.
 
 
-        Olhe os exemplos mais uma vez.  Tenha certeza de que você reconhece todas as partes do discurso usadas.
-        Elas são bem distintas, não?  Respire profundamente, press firmly on your temples.  Now, let's
-        dissect a cow's eye worth of code.
+        Olhe para os exemplos mais uma vez.  Tenha certeza de que você reconhece todas as partes do discurso usadas.
+        Elas são bem distintas, não?  Respire profundamente, aperte firmemente suas têmporas. Pronto, agora vamos
+        dissecar código tão valioso quanto um olho de vaca.
 
-        
+
