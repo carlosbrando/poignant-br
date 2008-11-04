@@ -1,3 +1,4 @@
+<<<<<<< HEAD:lang-pt/poignant-20.yml
     - Se Eu Já Não Tivesse Lhe Tratado Suficientemente Como Uma Criança: >
 
         Estou orgulhoso de você.   Qualquer um irá lhe contar o tanto que me orgulho de você.  Como eu
@@ -7,8 +8,8 @@
 
 
         E meu coração irradia um vermelho intenso sob minha pele translúcida e eles tiveram que me administrar
-        10 mililitros de Javascript para me fazer voltar.  (Eu respondo bem a toxinas no sangue.)  Cara, essa coisa
-        vai chutar os pêssegos direto para fora de suas guelras.
+        10 mililitros de Javascript para me fazer voltar.  (Eu respondo bem a toxinas no sangue.)  Cara, esse negócio
+        vai chutar para longe das suas guelras!
 
 
         Bem, sim.  Você está indo bem.  Mas agora eu devo começar a ser um bruto professor secundário.
@@ -23,7 +24,7 @@
         bq. @5.times { print "Odelay!" }@
 
 
-        Você pode querer até mesmo cobrir este parágrafo em quanto lê, porque seus olhos podem esquivar-se para
+        Você pode querer até mesmo cobrir este parágrafo enquanto lê, porque seus olhos podem esquivar-se para
         olhar a resposta.  Nós temos um _número_ @5@, seguido por um _método_ @.times@.  Depois, a primeira
         garra de caranguejo de um _bloco_.  O _método_ do kernel @print@ não tem ponto e é seguido por uma _string_
         @"Odelay!"@.  A garra de canguejo final fecha nosso _bloco_.
@@ -48,17 +49,18 @@
         @each { |alimento| print( alimento.capitalize ) }@
 
 
-        Esta centopéia partilha agradáveis delicadezas.  Um _array_ inicia o exemplo.  No array, três
+        Esta centopéia partilha finas iguarias.  Um _array_ inicia o exemplo.  No array, três
         _strings_ @'torrada'@, @'queijo'@, e @'vinho'@.  Todo o array é seguido por um _método_ @each@.  
 
 
         Dentro de um _bloco_, o _argumento do bloco_ @alimento@, descendo seu tobo-água dentro do bloco.
-        O _método_ @capitalize@ então passa para maíuscula a primeira letra do argumento do bloco, a qual 
-        se tornou a _variável_ @alimento@.  Esta _string_ em maiúsculo é passada ao _método_ do kernel @print@.
+        O _método_ @capitalize@ então passa pra maíuscula a primeira letra do argumento do bloco, a qual 
+        inicia a _variavel_ @alimento@.  Esta _string_ com a inicial em maiúscula é passada para o _método_ @print@ do kernel.
 
 
         Olhe para os exemplos mais uma vez.  Tenha certeza de que você reconhece todas as partes do discurso usadas.
         Elas são bem distintas, não?  Respire profundamente, aperte firmemente suas têmporas. Pronto, agora vamos
         dissecar código tão valioso quanto um olho de vaca.
+
 
 
