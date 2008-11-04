@@ -1,15 +1,20 @@
-    - Se eu não tivesse te tratado como criança o suficiente: >
-    
-        Estou orgulhoso de você.   Ninguém vai te dizer o quanto eu elogio você. Como eu continuo e continuo a respeito dessa grande pessoa anônima por aí, quem rola e lê e lê e rola.  "Essas crianças," Eu digo a eles.  "Cara, essas crianças tem coração.  Eu nunca..."  E eu não posso terminar essa frase porque eu estou absolutamente me acabando em lágrimas.
-        
+<<<<<<< HEAD:lang-pt/poignant-20.yml
+    - Se Eu Já Não Tivesse Lhe Tratado Suficientemente Como Uma Criança: >
+
+        Estou orgulhoso de você.   Qualquer um irá lhe contar o tanto que me orgulho de você.  Como eu
+        continuo e continou a falar sobre essa ótima pessoa anônima aí fora  que rola e lê e rola e lê.
+        "Estas crianças," Eu lhes conto. "Cara, estas crianças tem coração.  Eu nunca..." E eu mal consigo
+        terminar uma frase porque estou absolutamente mergulhado em lágrimas.
+
 
         E meu coração irradia um vermelho intenso sob minha pele translúcida e eles tiveram que me administrar
-        10cc de Javascript para me fazer voltar.  (Eu respondo bem a toxinas no sangue.)  Cara, esse negócio vai chutar para longe as suas guelras!
+        10 mililitros de Javascript para me fazer voltar.  (Eu respondo bem a toxinas no sangue.)  Cara, esse negócio
+        vai chutar para longe das suas guelras!
 
 
-        Então, sim.  Você está indo bem.  Mas agora eu devo começar a ser um brutal diretor de escola.
-        Eu preciso começar a ver boas coisas de você.  Até agora, você não fez nada mais do que olhar pra cima
-        e pra baixo.  Ok, claro, você fez excepcionais leituras em voz alta mais cedo.  Agora nós precisamos
+        Bem, sim.  Você está indo bem.  Mas agora eu devo começar a ser um bruto professor secundário.
+        Preciso começar a ver boas notas suas.  Até agora, você não fez nada mais do que olhar para cima
+        e para baixo.  Ok, claro, você fez excepcionais leituras em voz alta anteriormente.  Agora nós precisamos
         de habilidade de compreensão aqui, Smotchkkiss.
 
 
@@ -19,7 +24,8 @@
         bq. @5.times { print "Odelay!" }@
 
 
-        Você pode querer mesmo copiar este parágrafo acima enquanto você lê, porque os seus olhos podem querer se desviar para a resposta.  Nós tempos um _número_ @5@, seguido por um _método_ @.times@.  Depois, a primeira
+        Você pode querer até mesmo cobrir este parágrafo enquanto lê, porque seus olhos podem esquivar-se para
+        olhar a resposta.  Nós temos um _número_ @5@, seguido por um _método_ @.times@.  Depois, a primeira
         garra de caranguejo de um _bloco_.  O _método_ do kernel @print@ não tem ponto e é seguido por uma _string_
         @"Odelay!"@.  A garra de canguejo final fecha nosso _bloco_.
 
@@ -30,9 +36,9 @@
         bq. @exit unless "restaurante".include? "aura"@
 
 
-        Assim como o método @print@, @exit@ é um _método_ do Kernel.  Se você prestou atenção na grande lista de 
+        Assim como o método @print@, @exit@ é um _método_ do kernel.  Se você prestou atenção na grande lista de 
         palavras reservadas, você saberá que @unless@ é uma dessas _palavras reservadas_.  A _string_ @"restaurante"@
-         está presa pelo _método_ @include?@.  E finalmente, a string @"aura"@.
+         está unida ao _método_ @include?@.  E no final, a string @"aura"@.
 
 
         *Diga em voz alta cada parte do discurso usada abaixo.*
@@ -47,12 +53,14 @@
         _strings_ @'torrada'@, @'queijo'@, e @'vinho'@.  Todo o array é seguido por um _método_ @each@.  
 
 
-        Dentro de um _bloco_, o _argumento do bloco_ @alimento@, descendo seu toboágua dentro do bloco.
+        Dentro de um _bloco_, o _argumento do bloco_ @alimento@, descendo seu tobo-água dentro do bloco.
         O _método_ @capitalize@ então passa pra maíuscula a primeira letra do argumento do bloco, a qual 
         inicia a _variavel_ @alimento@.  Esta _string_ com a inicial em maiúscula é passada para o _método_ @print@ do kernel.
 
 
-        Olhe os exemplos mais uma vez.  Tenha certeza de que você reconhece todas as partes do discurso usadas.
-        Elas são bem distintas, não?  Respire profundamente, pressione com força no seu peito.  Agora, vamos dissecar um merecido código de olho de vaca.
+        Olhe para os exemplos mais uma vez.  Tenha certeza de que você reconhece todas as partes do discurso usadas.
+        Elas são bem distintas, não?  Respire profundamente, aperte firmemente suas têmporas. Pronto, agora vamos
+        dissecar código tão valioso quanto um olho de vaca.
 
-        
+
+
