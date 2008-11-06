@@ -1,17 +1,17 @@
-    - Chaining Delusions Together: >
+    - Encadeando Desilusões: >
 
-        !i/the.elf-6.jpg(55,000 starmonkeys and one spirited Olympic hopeful.)!
-
-
-        You finish reading the above comic and retire to your daybed for reflection. It's one of
-        those canopy affairs which is always logjammed with pillows.  You sit atop the pile,
-        gazing out upon the world.  You see the tall smokestacks belching wide spools of fume and
-        haze.  The tangled concourses of freeways smattered with swift, shimmering traffic is but
-        a gently pulsing eye muscle from your vantage point.
+        !i/the.elf-6.jpg(55.000 macacoestrelas e um espirituoso esperança de medalha Olímpica.)!
 
 
-        It is all so fantastic.  How the colors of the horizon spread across the landscape as a great
-        mix of butter and grease with a tablespoon of vanilla extract.
+        VocẼ termina de ler a tirinha acima e se retira para seu sofá-cama para reflexão. É um
+        daqueles assuntos encobertos que são sempre obstruído por travesseiros.  Você se senta
+        sobre a pilha, observando o mundo lá do alto. Você vê as altás chaminés expelindo largos
+        cilindros de fumaça e névoa.  Nas complicadas junções das auto-estradas, um tráfico ligeiro,
+        cintilante é nada senão um músculo ocular pulsando do seu ponto de vista superior.
+
+
+        É tudo tão fantástico.  Como as cores do horizonte se espalham através da paisagem como uma
+        grande mistura de manteiga e gordura com uma colher de sopa de extrato de baunilha.
 
 
         Yet, for all of the beauty which beckons for your attention, the images of the Elf and 
@@ -66,8 +66,7 @@
         window and watch for FBI.  I'm going to start this script.
 
  
-        h3. The Flipping Script
-
+        h3. O Script Invertedor
 
         <pre>
          print "Type and be diabolical: "
@@ -75,7 +74,7 @@
         </pre>
 
 
-        Let this script be your confidante.  It will ask for evil plans and turn their letters backwards.
+        Deixe este script ser seu confidente.  It will ask for evil plans and turn their letters backwards.
         The @gets@ method is *built into Ruby*.  It's a *kernel method* like @print@.  This method @gets@
         will pause Ruby to let you type.  When you hit _Enter_, @gets@ will then stop paying attention
         to your keyboard punchings and answer back to Ruby with a string that contains everything you typed.
