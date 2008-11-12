@@ -1,8 +1,8 @@
     - >
-        "All that writing on the cloud is deer talk?" said Fox Small.
+        "Todos esses escritos nos nuvens são conversa de viados?" disse Raposinho.
 
 
-        "Help!  _Where are you guys?_"  The taller fox ducked through a stormy tirade comprised of
+        "Ajudem-me!  _Onde vocês estão, caras?_"  The taller fox ducked through a stormy tirade comprised of
         thick, billowing smoke and sharp wisps.  He whirled in every direction, "Somebody yell if you're
         there!"
         
@@ -17,7 +17,7 @@
         their nostrils.  I once heard of a guy who *rode* a stag's love poem."
 
 
-        "No way," said Fox Small.
+        "Sem chance," falou Raposinho.
 
 
         "Sim," disse Blix.  "Aquele cara era eu."  Blix reached over his shoulder and latched onto
@@ -59,12 +59,12 @@
 
         <pre>
          loop do
-           print "Enter your password: "
-           password = gets
-           if password.match( /^\w{8,15}$/ )
+           print "Entre com sua senha: "
+           senha = gets
+           if senha.match( /^\w{8,15}$/ )
              break
            else
-             puts "** Bad password! Must be 8 to 15 characters!"
+             puts "** Senha inadequada! Deve ter emtre 8 e 15 caracteres!"
            end
          end
         </pre>
