@@ -45,7 +45,7 @@
       </pre>
 
       _* (Novamente, os comandos acima são para instalar Ruby a partir do código fonte.  Você pode precisar usar
-      @su@ ou @sudo@ para dar permissão para poder rodar o @make install@.)
+      @su@ ou @sudo@ para dar permissão para rodar o @make install@.)
 
 
       Para testar se o Ruby está instalado, abra um terminal e execute: @ruby -v@.  Se o Ruby estiver instalado

@@ -2,59 +2,65 @@
         "Todos esses escritos nos nuvens são conversa de cervos?" disse Raposinho.
 
 
-        "Ajudem-me!  _Onde vocês estão, caras?_"  The taller fox ducked through a stormy tirade comprised of
-        thick, billowing smoke and sharp wisps.  He whirled in every direction, "Somebody yell if you're
-        there!"
-        
-        
-        He searched for a fissure in the dense matter, combing forward with his hands.  The verbose, angry
-        clouds responded by prodding him ahead, forcing him into tight corners in their brief pause
-        between sentences.  He landed in a sinkhole and kept his head down as the cascades of smoke
-        surged forward.
+        "Ajudem-me!  _Onde vocês estão, caras?_"  Raposão abaixou-se através de uma tempestuosa
+        arenga formada por uma densa ondulada fumaça e moitas afiadas.  Ele girou em todas direções,
+        "Alguém grite se estiver aí!"
 
 
-        "Yeah, deer can read this stuff," said Blix.  "They just face their target and shoot it out of
-        their nostrils.  I once heard of a guy who *rode* a stag's love poem."
+        Ele procurou por uma fenda na densa matéria, penteando para frente com suas mãos. As eloquentes,
+        furiosas nuvens responderam-no espetando-o para adiante, forçando-o para cantos apertados em
+        suas breves pausas entre as frases. Ele ficou num sumidouro e manteve sua cabeça baixa a medida
+        que as cascatas de fumaça agitavam-se adiante.
+
+
+        "Sim, os cervos podem ler estas coisas," afirmou Blix.  "Eles apenas encaram seus alvos e atiram-nas
+        de suas narinas.  Escutei uma vez sobre um cara que tinha *cavalgado* em um poema de amor cervídeo."
 
 
         "Sem chance," falou Raposinho.
 
 
-        "Sim," disse Blix.  "Aquele cara era eu."  Blix reached over his shoulder and latched onto
+        "Sim," disse Blix.  "E este cara era eu."  Blix alcançou seu ombro e juntou-se a uma espiral
+        de fumaça que girava acima de sua cabeça.  "Você apenas tem que saber quais nuvens são fracotes
+        e quais são pomposas". Blix deixou a nuvem puxá-lo e quando a nuvem voou para cima, Blix perdeu
+        seua apoio e manteve seus pés movendo vagarosamente ao longo do chão.  "Vê, está aqui é uma das boas,
+        longa como um cabo de vassoura.  Um cara descobriu uma uma vez que tinha a forma _exatamente_ igual
+        a de um carro: pára-brisa, airbags laterais para o motorista, direção hidráulica. "
+        Blix reached over his shoulder and latched onto
         a spiral column of smoke that was twisting just above his head.  "You just have to know
         which clouds are wimpy and which clouds are grandiloquent."  Blix let the cloud pull him along
         and when the cloud banked upwards, Blix loosed his grip and kept his feet moving slowly
         along the ground.  "See, here's a good one, long like a broom handle.  A guy found one once
         and it was shaped _exactly_ like a car: windshield, driver's side airbag, power steering.
-        Uncanny!"
+        Excepcional!"
 
 
-        "_And that guy was--_"
+        "_E este cara era--_"
 
 
-        *"It was!"*  And Blix climbed up atop the long icy cloud, with its dangling glyphs, and stood proudly,
-        floating high above the small fox's pointy shadow.
+        *"Ele era!"*  E Blix escalou sobre a longa nuvem gelada, com seus hieróglifos pendurados,
+        e manteve-se em pé orgulhosamente, flutuando bem acima da pontuda sombra do raposo.
 
 
-        "Oh, I could do that," said Fox Small.  "Tall and I go jetskiing all the time.  _I've stood
-        up on my jetski._  It's just like that."
+        "Ah, eu poderia fazer isso" disse Raposinho.  "Eu e Raposão andamos de jetski o tempo todo.
+        _Eu fico em pé no meu jetski._ É igualzinho a isso."
 
 
-        Fox Tall dashed through a descending puff, shattering its sentence, which letters
-        came unglued and littered the ground with scrambled words, but he had only succeeded in
-        reaching the depressive portions of the deer correspondence, which manifested itself
-        as a dank and opaque mist.
+        Raposão lançou-se sobre uma fumaça descendente, chacoalhando sua frase, cuja letras se
+        descolaram e se espalharam pelo chão com palavras embaralhadas, mas ele tinha apenas
+        sucedido em alcançar as partes depressivas das correspondências dos cervos, que se
+        manifestavam como uma úmida e opaca névoa 
 
 
-        Meanwhile, his smaller counterpart grabbed a narrow train of smoke that passed under his
-        arm.  He was airborned and yelled, *"Tallyho!"*  But he held too tightly and the cloud
-        evaporated under his arm and sent him back down with a short hop.
+        Enquanto isso, sua contraparte pequena agarrou um estreito trem de fumaça que passava sob
+        seu braço.  Ele foi aerotransportado e gritou, *Tallyho!*  Mas ele se segurou muito firmemente
+        e a nuvem evaporou sob seu braço e o enviou de volta ao chão com um pequeno salto 
 
 
-        Since you're just beginning your use of Ruby, you may not fully grasp regular expressions
-        (or _regexps_) at first.  You may even find yourself clipping out regexps from the "Regular
-        Expression Library":http://regexlib.com/DisplayPatterns.aspx and pasting them into your
-        code without having the foggiest idea why the expression works.  Or _if_ it works!
+        Dado que você está apenas começando seu uso de Ruby, você pode não ter entendido completamente
+        as expressões regulares (ou _regexps_) de início.  Você pode até mesmo se encontrar recortando
+        as regexps da "Biblioteca de Expressões Regulares":http://regexlib.com/DisplayPatterns.aspx e
+        colando-as no seu código sem ter a mínima idéia de porque a expressão funciona. Ou _se_ ela funciona!
 
 
         <pre>
@@ -64,94 +70,96 @@
            if senha.match( /^\w{8,15}$/ )
              break
            else
-             puts "** Senha inadequada! Deve ter emtre 8 e 15 caracteres!"
+             puts "** Senha inadequada! Deve ter entre 8 e 15 caracteres!"
            end
          end
         </pre>
          
 
-        Do you see the unreadable deer language in the example code?  The @/^\w{8,15)$/@ is a regular
-        expression.  If I may translate, the regexp is saying, _Please only allow letters, numbers or
-        underscores.  No less than eight and no more than fifteen._
+        Você vê a ilegível linguagem de cervo no código de exemplo? O @/^\w{8,15)$/@ é uma expressão
+        regular.  Se posso traduzí-la, a regexp está dizendo,_Por favor, permita somente letras, números
+        ou travessões. Não menos que oito e não mais que quinze._
 
 
-        Expressões Regulares são uma mini-linguagem built into Ruby and many other programming languages.
-        I really shouldn't say _mini_, though, since regexps can be twisted and complicated and much more
-        difficult than any Ruby program.
+        Expressões Regulares são uma mini-linguagem construída dentro do Ruby e muitas outras linguagens de programação.
+        Eu, na verdade não deveria dizer _mini_, já que regexps podem ser complicadas e tortuosas e muit mais difíceis
+        que qualquer programa Ruby.
 
 
-        Using regular expressions is extremely simple.  It is like the Deer: making the smoke is an
-        arduous process.  But hooking your elbow around the smoke and driving it to the Weinerschnitzel
-        to get mustard pretzel dogs is easy.
+        Usar expressões regulares é extremamente simples. É como o Cervo: fazer fumaça é um processo árduo.
+        Mas forças seus ombros sobre a fumaça e direcionar-se para o Weinerschnitzel para pegar um pretzel de 
+        cachoro quente e mostarda é fácil.
 
 
         <pre>
-         irb> "good_password".match( /^\w{8,15}$/ )
+         irb> "senha_adequada".match( /^\w{8,15}$/ )
            => #<MatchData:0xb7d54218>
-         irb> "this_bad_password_too_long".match( /^\w{8,15}$/ )
+         irb> "esta_senha_inadequada_muito_longa".match( /^\w{8,15}$/ )
            => nil
         </pre>
 
 
-        The @String#match@ method is the _simplest practical use_ of regexps.  The @match@ method
-        checks to see if the string meets the rules inside the regexp.  A regexp is only useful with
-        strings, to test strings for a series of conditions.  If the conditions are met, a @MatchData@
-        object is returned.  If not, you get @nil@.
+        O método @String#match@ é o _uso prático mais simples_ das regexps.  O método @match@
+        cheaca para ver se a string se adequa as regras dentro da regexp.  Uma regexp só é útil
+        com strings, para testar strings por uma série de condições. Se as condições são atendidas,
+        um objeto @MatchData@ é retornado.  Caso contrário, você terá @nil@.
 
 
-        The most basic regular expressions are for *performing searches* inside strings.  Let's say
-        you've got a big file and you want to search it for a word or phrase.  Since a bit of time
-        has passed, let's search the Preeventualist's Losing and Finding Registry again.
+        As expressões regulares mais básicas são para *realizar buscas* dentro de strings. Digamos
+        que você tem um grande arquivo e quer procurar nele por uma palavra ou frase.  Já que um
+        tempinho se passou, vamos procurar dentro dos registros de Achados e Perdidos 
+        dos Pré-eventualistas novamente.
 
 
         <pre>
          require 'preeventualist'
-         PreEventualist.searchfound( 'truck' ) do |page|
-           page.each_line do |line|
-             puts line if line.match( /truck/ )
+         PreEventualist.achadoperdido( 'caminhao' ) do |page|
+           page.each_line do |linha|
+             puts linha if linha.match( /caminhao/ )
            end
          end
         </pre>
 
 
-        This isn't too different from the code we used earlier to search for lines with the word "truck".  Earlier
-        we used @puts line if line['truck']@, which is actually a simpler way of searching a string, if you're
-        just looking for a simple word.  The regexp @/truck/@ is identical.  Find the word "truck".  Anywhere in the string.
+        Isto não é muito diferente do código que usamos anteriormente para linhas com a palavra "caminhão". Anteriormente
+        usamos @puts linha if linha['caminhao']@, o que é na verdade um jeito mais simples de se procurar numa string, se
+        você está procurando apenas por uma simples palavra.  A regexp @/caminhao/@ é idêntica.  Encontre a palavra "caminhao".
+        Em qualquer lugar da string.
 
 
-        Uhm, what if truck is capitalized.  *Truck.*  What then?
-
-
-        <pre>
-         puts line if line.match( /[Tt][Rr][Uu][Cc][Kk]/i )
-        </pre>
-
-
-        The *character classes* are the sections surrounded by *square brackets*.  Each character class gives
-        a list of characters which are valid matches for that spot.  (The first spot matches either an uppercase @T@
-        or a lowercase @t@.  The second spot matches an @R@ or an @r@.  And so on.)
-
-
-        But a simpler way to write it is like this:
+        Hmn, mas e se caminhão for maiúscula. *Caminhão.* E então?
 
 
         <pre>
-         puts line if line.match( /truck/i )
+         puts linha if linha.match( /[Cc][Aa][Mm][Ii][Nh][Aa][Oo]/i )
         </pre>
 
 
-        The letter @i@ modifier at the end of the regexp indicates that the search is *not case-sensitive*.  It
-        will match Truck.  And TRUCK.  And TrUcK.  And other ups and downs.
+        As *classes dos caracteres* são as seções cercadas por *colchetes*.  Cada caracteres de classes dá uma lista
+        de caracteres que são compatíveis para este lugar.  (O primeiro lugar é compatível tanto um @C@ maiúsculo
+        quanto um @c@ minúsculo.  O segundo lugar é compatíveil com um @A@ ou um @a@. E assim por diante.)
+        
 
-
-        Oh, and maybe you're truck is a certain model number.  A T-1000.  Or a T-2000.  You can't remember.  It's
-        a T _something_ thousand.
+        Mas um jeito mais simples de escrever isso é assim:
 
 
         <pre>
-         puts line if line.match( /T-\d000/ )
+         puts line if line.match( /caminhao/i )
         </pre>
 
 
-        See, deer language.  The @\d@ represents a *digit*.  It's a place holder in the regexp for any type of
-        number.  The regexp will now match T-1000, T-2000, all the way up to T-9000.
+        A letra @i@ no final da regexp é um modificador que indica que a busca não é *sensível a caixa*. Ela casará
+        com Caminhão. E CAMINHÂO. E CaMiNhÂo. E outras combinações de maiúsculas e minúsculas.
+
+
+        Ah, e talvez seu caminhão tenha um certo número de modelo.  Um T-1000.  Ou um T-2000.  Você pode se lembrar.
+        É algum T _alguma coisa_ mil.
+
+
+        <pre>
+         puts linha if linha.match( /T-\d000/ )
+        </pre>
+
+
+        Vê, linguagem de cervo.  O @\d@ representa um *digito*.  É uma incógnita na regexp para qualquer tipo
+        de número.  A  regexp irá agora casar com T-1000, T-2000, e tudo em diante até T-9000.

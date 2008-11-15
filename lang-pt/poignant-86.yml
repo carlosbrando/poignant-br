@@ -58,8 +58,8 @@
 
 
       Ok, uma última coisa então vou parar de incomodar com toda esta ótima tecnologia.
-      Mas eu vou ter que falar isto alto, então tapem os ouvidos! Estou do outro lado do mundo, galera, mas o
-      volume vem do céu -- a bold, red crescendo of --
+      Mas terei que falar isto alto, então tapem os ouvidos! Estou do outro lado do mundo, galera, mas o
+      volume vem do céu -- um negrito, vermelho e crescente --
 
 
       h1={font-size:84pt; color:#FDD; line-height: 120%}. ((%{color:#A53}ri%))
@@ -71,7 +71,7 @@
       E o Ri atende. "Aqui é o Ri. Classe e dois pontos, por favor"
 
 
-      Você entra correndo, "Isto é a instância de um metodo, Operador. Enumerável#zip."
+      Você entra correndo, "Isto é a instância de um método, Operador. Enumerável#zip."
 
   
       <pre class="text">
@@ -106,7 +106,7 @@
       </pre>
 
 
-      Isto é um dicinário íntegro de Ruby -- O poder de apenas perguntar está na ponta
+      Isto é um dicinário íntegro de Ruby em inglês -- O poder de apenas perguntar está na ponta
       de seus dedos -- não diga que nunca ouviu sobre este nenhum-dinheiro-supre-uma-vida-inteira-de
       explicações-apropriadas!_
 
@@ -117,15 +117,15 @@
       apenas use no console: @ri Class@.
 
 
-      Mas para ajudar nos meétodos da classe, você tira da manga: @ri Class::method@.
+      Mas para ajudar nos métodos da classe, você tira da manga: @ri Class::method@.
 
 
-      Apesar de métodos de instância usarem o jogo da velha ao invés do ponto. (Uma vez que ponto pode significar class *ou*
+      Apesar de métodos de instância usarem o cerquilha (jogo-da-velha) ao invés do ponto. (Uma vez que ponto pode significar classe *ou*
       métodos de instância.) Digo: @ri Class#method@.
 
 
-      A completa distribuição das classse, uma lista completa desde o mais alto topo até o centro da Terra,
-      pode ser alcançado com @ri -c@.
+      A completa distribuição das classes, uma lista completa desde o mais alto topo até o centro da Terra,
+      pode ser alcançada com @ri -c@.
 
 
       e além do texto, você pode fazer HTML: @ri -Tf html String#gsub > gsub.html@.
@@ -137,9 +137,9 @@
       h3. Dentro do Painel de controle do Ri
 
 
-      Atrá do Ri canta um coro de vozes humanas, primeiramente Dave Thomas, um autor de _Programming
-      Ruby_, e absolutamente o pai adotivo americano do Ruby. Muitos destes discursos elaborado
-      do Ri são diretamente das referências de _Programming Ruby_.  Não esqueça de 
+      Atrás do Ri canta um coro de vozes humanas, primeiramente Dave Thomas, um dos autores de _Programming
+      Ruby_, e absolutamente o pai adotivo americano do Ruby. Muitos destes discursos elaborados
+      do Ri são diretamente das referências de _Programming Ruby_.  Não se esqueça de 
       agradecer ao Dave periodicamente.
 
 

@@ -1,5 +1,4 @@
 
-
       h3. Lendo o Console (Terminal)
 
 
@@ -35,7 +34,7 @@
 
 
       Você não tem que gostar da aparência do console, entretanto.  Não estou forçando você a fazer nada e,
-      se você quer hackeá-lo, estou do seu lado.
+      se você quer hackeá-lo, estou ao seu lado.
 
 
       O Irb tem mais alguns consoles que podem agradar seus sentidos.  Tente @irb --prompt simple@.
