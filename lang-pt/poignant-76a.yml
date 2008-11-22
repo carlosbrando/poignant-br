@@ -18,12 +18,12 @@
 
 
         Construir uma expressão regular envolve encadear esses receptáculos para expressar sua busca. Se estiver procurando
-        por um número seguido de espaço em branco: @/\d\s/@.  Se estiver procurando por três números em sequência: @/\d\d\d/@.  *As barras
-        que abrem e fecham marcam o início e o fim da expressão regular.*
+        por um número seguido de espaço em branco: @/\d\s/@.  Se estiver procurando por três números em sequência: @/\d\d\d/@.  
+        *As barras que abrem e fecham marcam o início e o fim da expressão regular.*
 
 
-        Uma busca por três números em sequência também pode ser escrita como: @/\d{3}/@.  Imediatamente após uma classe de caractere
-        como @\d@, você pode usar um símbolo de quantidade para dizer quantas vezes você quer que aquela classe de caractere seja repetida.
+        Uma busca por três números em sequência também pode ser escrita como: @/\d{3}/@.  Imediatamente após uma classe de caracteres
+        como @\d@, você pode usar um símbolo de quantidade para dizer quantas vezes quer que aquela classe de caracteres seja repetida.
 
 
         |\3. *Quantificadores* |
@@ -54,7 +54,7 @@
         </pre>
 
 
-        Desta vez, em vez de usar @match@ para procurar pela expressão, o operador @=~@ foi usado.  Este operador é o
+        Desta vez, em vez de usar @match@ para procurar pela expressão, usou-se o operador @=~@.  Este operador é o
         *operador de casamento*, um sinal de igual seguido de *um til*.  O til é como uma fumacinha saindo da ponta de uma
         chaminé.  Lembre-se dos cervos, a fumaça que eles soltam, uma linguagem críptica assim como as expressões regulares.  O
         til fumacento aponta para a expressão regular.
@@ -65,7 +65,7 @@
 
 
         Se você precisa casar a string inteira, você pode usar a variável global especial @$&@ se você está usando o 
-        operador de casamento.  Ou, se você estiver usando o método @match@, você pode conseguir a string inteira convertendo
+        operador de casamento.  Ou, se estiver usando o método @match@, você pode conseguir a string inteira convertendo
         o objeto @MatchData@ em uma string.
 
 
@@ -108,7 +108,7 @@
         primeiras letras de "malabarista."  Strings também têm um método simples @sub@ que vai substituir apenas uma vez.
 
 
-        E assim este capítulo acaba, com Blix e os Raposos voando no sólido rosa  expelido por um cervo muito reservado em algum lugar
+        E assim este capítulo acaba, com Blix e os Raposos voando no sólido rosa expelido por um cervo muito reservado em algum lugar
         naquelas pastagens.
 
 
