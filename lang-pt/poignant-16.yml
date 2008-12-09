@@ -11,7 +11,7 @@
 
         Mas como você a chamaria quando seu cérebro começa a pensar nessa linguagem?  Quando você
         começa a usar as próprias palavras e coloquialismos da linguagem para se expressar.  Diga, o computador não
-        consegue fazer aquilo.  Como pode então ser a linguagem do computador?  Ela é nossa, nós a falamos nativamete!
+        consegue fazer aquilo.  Como pode então ser a linguagem do computador?  Ela é nossa, nós a falamos nativamente!
 
 
         Nós não podemos mais verdadeiramente chamá-la de linguagem de _computador_.  
@@ -29,8 +29,8 @@
         assim: _Cinco vezes imprima "Odelay!"._
 
 
-        Que é exatamente o que este pequeno programa Ruby faz.  A exclamação em "espanhol mutante" do
-        Beck:http://www.whiskeyclone.net/ghost/L/lordonlyknows.html  será impressa
+        Que é exatamente o que este pequeno programa Ruby faz.  A exclamação em "espanhol mutante":http://www.whiskeyclone.net/ghost/L/lordonlyknows.html do
+        Beck será impressa
         cinco vezes na tela do computador.
 
 

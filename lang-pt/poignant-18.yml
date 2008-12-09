@@ -3,7 +3,7 @@
         Assim como a faixa branca nas costas do gambá e a branca e enrolada grinalda da noiva, várias partes
         da conversa têm sinalizações visuais para te ajudar a identificá-las.  Pontuação, maiúsculas e minúsculas,
         irão ajudar seu cérebro ver pedaços de código e reconhecê-los intensamente.
-        Sua mente vai gritar frequentemente _Hey, Eu conheço aquele cara!_  Você também poderá
+        Sua mente vai gritar freqüentemente _Hey, Eu conheço aquele cara!_  Você também poderá
         contar vantagem em conversas com outros Rubistas.
 
 
@@ -20,15 +20,15 @@
         letras, dígitos e travessões.
 
 
-        bq. @x@, @y@, @banana2@ or @telefone_pruma_codorna@ são exemplos.
+        bq. @x@, @y@, @banana2@ ou @telefone_pruma_codorna@ são exemplos.
 
 
         Variáveis são como apelidos.  Lembra quando todo mundo te chamava de Pete Fedido?
-        As pessoas diziam, "Vem aqui, Pete Fedido!"  E todo mundo milagrosamente sabia que 
+        As pessoas diziam: "Vem aqui, Pete Fedido!"  E todo mundo milagrosamente sabia que 
         você era o Pete Fedido.
 
 
-        Com variáveis, você dá um apelido a algo que você use frequentemente.  Por exemplo, vamos dizer
+        Com variáveis, você dá um apelido a algo que você use freqüentemente.  Por exemplo, vamos dizer
         que você tem um orfanato.  É um orfanato maléfico.  E quando o Papai Warbucks vem comprar 
         mais crianças, nós insistimos que ele nos pague *cento e vinte um reais e oito centavos* pelo ursinho
         de pelúcia da criança, o qual ela ficou apegada nos momentos sombrios que passou vivendo neste pesadelo de
@@ -60,7 +60,7 @@
         com um *sinal de menos ou de mais*.
 
 
-        bq. @1@, @23@, e @-10000@ são exemplos.
+        bq. @1@, @23@ e @-10000@ são exemplos.
 
 
         Vírgulas não são permitidas em números, mas travessões sim.  Então se você acha melhor
@@ -83,10 +83,10 @@
 
 
         Strings são quaisquer tipos de caracteres (letras, dígitos, pontuação) cercados por aspas.  
-        *Aspas* simples ou duplas, são usadas para se criar strings.
+        *Aspas*, simples ou duplas, são usadas para se criar strings.
 
 
-        bq. @"laboratoriodomar"@, @'2021'@, or @"Estes quadrinhos são hilários!"@
+        bq. @"laboratoriodomar"@, @'2021'@ ou @"Estes quadrinhos são hilários!"@
         são exemplos.
 
 
@@ -155,7 +155,7 @@
         substantivos do Ruby, então pense nas constantes como substantivos próprios.
 
 
-        bq. @Time@, @Array@ or @Bunny_Lake_Desapareceu@ são exemplos.
+        bq. @Time@, @Array@ ou @Bunny_Lake_Desapareceu@ são exemplos.
 
 
         Em inglês, substantivos próprios têm a primeira letra maiúscula.  O Edifício Empire State.  Você não pode simplesmente
@@ -248,7 +248,7 @@
         h3. Métodos de Classe
 
 
-        Assim como os métodos descritos acima (também chamdos métodos _ de instância_), métodos de classe
+        Assim como os métodos descritos acima (também chamados métodos _de instância_), métodos de classe
         são geralmente ligados depois de variáveis e constantes.  Ao invés de ponto, usa-se *dois pontos duplo.*
 
 
@@ -270,11 +270,11 @@
         Variáveis que começam com um *cifrão* são globais.
 
 
-        bq. @$x@, @$1@, @$pedacudo@ and @$BAcOn_PeDAcUDo@ são exemplos.
+        bq. @$x@, @$1@, @$pedacudo@ e @$BAcOn_PeDAcUDo@ são exemplos.
 
 
         A maioria das váriaveis são temporárias por natureza.  Algumas partes do seu programa são como casas.
-        Você entra e elas tem suas próprias variáveis.  Em um casa, voce pode der um @pai@ que representa
+        Você entra e elas têm suas próprias variáveis.  Em um casa, você pode ter um @pai@ que representa
         Archie, um caixeiro-viajante colecionador de esqueletos.  Em outra casa, @pai@ pode representar
         Peter, um domador de leões com grande apreço por flanela.  Cada casa tem um sentido próprio para @pai@.
 
@@ -321,7 +321,7 @@
         Variáveis de classe são usadas, também, para se definir atributos.  Mas ao invés de definir um atributo
         a apenas um objeto no Ruby, variáveis de classe dão um atributo a vários objetos relacionados no Ruby.
         Se as variáveis de instância estipulam atributos para só uma @porta_da_frente@, então variáveis de classe 
-        estipulam atributoes pra tudo que for @Porta@.
+        estipulam atributos pra tudo que for @Porta@.
 
 
         Pense no prefixo da *dupla arroba* significando *atribua a todos*.  Adicionalmente, você pode pensar em um
@@ -345,7 +345,7 @@
         Com blocos, você pode agrupar pedaços de instruções juntas, assim elas pode ser passadas
         pelo seu programa.  
         Os colchetes dão a aparência de garras de caranguejo que pegaram o código e o estão
-        segurando.  Quando você ver estas duas garras, lembre-se que o código dentro
+        segurando.  Quando você vir essas duas garras, lembre-se de que o código dentro
         foi prensado em uma só unidade.
 
 
@@ -416,7 +416,7 @@
 
 
         Pense neles como um acordeão que fora fechado para se carregar.  (Você pode construir muito amor próprio 
-        levando consigo um acordeão aberto... mas, as vezes uma pessoa tem q mergulhar em dúvidas e esconder 
+        levando consigo um acordeão aberto... mas, às vezes uma pessoa tem que mergulhar em dúvidas e esconder 
         cuidadosamente a sanfona)  Os parênteses são os lados deste pequeno acordeão de mão.  
         Os pontos são a fole, mantendo as partes bem unidas.
 
@@ -445,7 +445,7 @@
 
 
         Pense nele como uma centopéia que foi grampeada no nosso código.  As duas chaves
-        são grampos que não deixam a centopéira se movimentar, então você consegue distinguir onde é cabeça e
+        são grampos que não deixam a centopéia se movimentar, então você consegue distinguir onde é cabeça e
         onde é a cauda.  As vírgulas são as pernas da centopéia, balançando entre cada seção do seu corpo.
 
 
@@ -547,9 +547,9 @@
         h3. Keywords (Palavras-chave, Palavras-reservadas)
 
 
-        O Ruby tem um número de palavra embutidas, imbuídas em significado.  Estas palavras não podem
+        O Ruby tem um número de palavras embutidas, imbuídas em significado.  Estas palavras não podem
         ser usadas como variáveis ou modificadas às suas necessidades.  Algumas delas nós já
-        discutimos.  Elas estão na caixa forte, meu amigo.  É só relar nelas and você terá 
+        discutimos.  Elas estão na caixa forte, meu amigo.  É só relar nelas e você terá 
         um erro oficial de sintaxe.
 
 
@@ -563,7 +563,7 @@
 
 
         Muito bom.  Estes são os ilustres membros da linguagem Ruby.  Teremos um belo
-        banquete nós proximos três capítulos, grudando estas partes em manhosos pedaços
+        banquete nos próximos três capítulos, grudando essas partes em manhosos pedaços
         de (comovente) código.
 
 

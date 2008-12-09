@@ -43,18 +43,16 @@
         *Diga em voz alta cada parte do discurso usada abaixo.*
 
 
-        bq. @['torrada', 'queijo', 'vinho'].@
-
-        @each { |alimento| print( alimento.capitalize ) }@
+        <pre>['torrada', 'queijo', 'vinho'].each { |alimento| print( alimento.capitalize ) }</pre>
 
 
         Esta centopéia partilha finas iguarias.  Um _array_ inicia o exemplo.  No array, três
-        _strings_ @'torrada'@, @'queijo'@, e @'vinho'@.  Todo o array é seguido por um _método_ @each@.  
+        _strings_ @'torrada'@, @'queijo'@ e @'vinho'@.  Todo o array é seguido por um _método_ @each@.  
 
 
         Dentro de um _bloco_, o _argumento do bloco_ @alimento@, descendo seu tobo-água dentro do bloco.
         O _método_ @capitalize@ então passa pra maíuscula a primeira letra do argumento do bloco, a qual 
-        inicia a _variavel_ @alimento@.  Esta _string_ com a inicial em maiúscula é passada para o _método_ @print@ do kernel.
+        inicia a _variável_ @alimento@.  Esta _string_ com a inicial em maiúscula é passada para o _método_ @print@ do kernel.
 
 
         Olhe para os exemplos mais uma vez.  Tenha certeza de que você reconhece todas as partes do discurso usadas.
