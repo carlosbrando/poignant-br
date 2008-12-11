@@ -5,7 +5,7 @@
         só estão disponíveis para certos tipos de valores*.
 
 
-        Eu não acho que o @reverse@ dará muito certo.  As autoridades só precisam por um espelho na frente
+        Eu não acho que o @reverse@ dará muito certo.  As autoridades só precisam pôr um espelho na frente
         de "airégiN ad elortnoc o emoT."  Prenderão a gente quando os macacoestrelas começarem a pousar em Lagos.
 
 
@@ -21,13 +21,13 @@
         h3. Sua Repetitividade Compensa
 
 
-        Você me entrega um bloco de notas, cheio de garranchos ilegíveis.  Analisando ele, começo a notar
+        Você me entrega um bloco de notas, cheio de garranchos ilegíveis.  Analisando, começo a notar
         padrões.  Notar que você parece usar as mesmas palavras repetidamente em suas reflexões.  
         Palavras como _macacoestrela_, _Nigéria_, _bomba_.  Algumas frases até.  _Ponha um fim nisso._
         Que são ditas toda hora.
 
 
-        Vamos disfarçar estes termos bobos, meu irmão.  Vamos ofuscá-los de olhos ardentes que
+        Vamos disfarçar esses termos bobos, meu irmão.  Vamos ofuscá-los de olhos ardentes que
         choram para saber nossos delicados planos e para nos demover de termos grande prazer e muitos karts.
         Vamos trocá-los pela mais inocente linguagem.  Novas palavras com significado secreto.
 
@@ -63,7 +63,7 @@
         bq. @palavras_codigo['catapulta']@ irá responder com a string @'chucky go-go'@.
         
 
-        Olhe os colchetes como se elas fossem paletas de madeira nas quais as palavras estão em cima.
+        Olhe os colchetes como se fossem paletas de madeira nas quais as palavras estão em cima.
         Uma empilhadeira poderia usar suas pás em cada lado da palete e a trazer da prateleira
         de volta ao depósito.  A palavra na palete é chamada de _indexador_.
         Estamos pedido para a empilhadeira achar o indexador pra gente e nos trazer de volta
@@ -76,7 +76,7 @@
         trinta segundos para achar uma e usar antes que eu estoure meus miolos.
 
 
-        Assim como os vários operadores que você viu recentemente, os colchetes indexadoras são
+        Assim como os vários operadores que você viu recentemente, os colchetes indexadores são
         simplesmente um atalho para um método.
 
 
@@ -100,7 +100,7 @@
          end
 
          # Salva o papo-furado num novo arquivo
-         print "Arquivo codificado.  Favor entrar com um nome para esta idéia: "
+         print "Arquivo codificado.  Favor entrar com um nome para essa idéia: "
          nome_ideia = gets.strip
          File::open( "ideia-" + nome_ideia + ".txt", "w" ) do |f|
            f << ideia
@@ -143,8 +143,8 @@
 
 
         No Ruby, @gsub@ é abreviação de _global substitution_ (substituição global).  O método é usado para procurar
-        e substituir.  Aqui, queremos achar todas as ocôrrencias de palavras perigosas e substituí-las com a segura
-        palavra código.  Com @gsub@, você provê a *palavra a ser achada como primeiro argunmento*, depois a *palavra
+        e substituir.  Aqui, queremos achar todas as ocorrências de palavras perigosas e substituí-las com a segura
+        palavra código.  Com @gsub@, você provê a *palavra a ser achada como primeiro argumento*, depois a *palavra
         que tomará o lugar como segundo argumento*.
 
 
@@ -177,7 +177,7 @@
 
         <pre>
          # Salva as palavras sem sentido em um novo arquivo
-         print "Arquivo codificado.  Favor entrar com um nome para esta idéia: "
+         print "Arquivo codificado.  Favor entrar com um nome para essa idéia: "
          nome_ideia = gets.strip
          File::open( 'ideia-' + nome_ideia + '.txt', 'w' ) do |f|
            f << ideia
@@ -189,13 +189,13 @@
         para se fazer o nome do arquivo quando salvarmos a idéia.
 
 
-        O método @strip@ serve pra todas strings.  Este método *corta espaços e linhas vazias* do *começo
-        e fim* de uma string.  Isto removerá o _Enter_ no fim da string que você digitou.
+        O método @strip@ serve pra todas as strings.  Este método *corta espaços e linhas vazias* do *começo
+        e do fim* de uma string.  Isso removerá o _Enter_ no fim da string que você digitou.
         E também removerá espaços caso você tenha acidentalmente deixado algum.
 
 
         Depois que temos o nome da idéia, vamos abrir um novo arquivo de texto em branco.  O nome do arquivo é
-        contruído adicionando-se strings.  Se você digitou @'mostarda-mais-codeine'@, nossa matemática será: @'ideia-' +
+        construído adicionando-se strings.  Se você digitou @'mostarda-mais-codeine'@, nossa matemática será: @'ideia-' +
         'mostarda-mais-codeine' + '.txt'@.  O Ruby pressiona isso em uma única string.
         @'ideia-mostarda-mais-codeine.txt'@ é o arquivo.
 
@@ -206,10 +206,10 @@
         *métodos de classe*.
 
 
-        bq. @Kernel::print( "55,000 Macacosestrela o Saúdam!" )@
+        bq. @Kernel::print( "55.000 Macacosestrelas o Saúdam!" )@
 
 
-        O que isto significa?  Por que isto importa?  Isto significa que o @Kernel@ é o centro do universo Ruby.
+        O que isso significa?  Por que isso importa?  Significa que o @Kernel@ é o centro do universo Ruby.
         Sempre que você está no seu código, o @Kernel@ estará do seu lado.  Você nem precisa dizer
         @Kernel@ pro Ruby.  O Ruby sabe checar o @Kernel@.
 
@@ -223,13 +223,13 @@
         contendo todo o texto do seu arquivo de idéias. (Read significa ler.)
 
 
-        bq. @File::rename( "aquivd_antigo.txt", "aquivo_novo.txt" )@ renomeará o @aquivo_antigo.txt@.
+        bq. @File::rename( "arquivo_antigo.txt", "arquivo_novo.txt" )@ renomeará o @arquivo_antigo.txt@.
 
 
-        bq. @File::delete( "aquivo_novo.txt" )@ explodirá o novo arquivo.
+        bq. @File::delete( "arquivo_novo.txt" )@ explodirá o novo arquivo.
 
 
-        Estes métodos File estão todos *dentro do Ruby*.  Estão apenas armazenados num
+        Esses métodos File estão todos *dentro do Ruby*.  Estão apenas armazenados num
         contêiner chamado Classe @File@.  Então, enquanto você pode seguramente chamar os métodos do kernel
         sem precisar digitar @Kernel@, o Ruby não checa automaticamente a classe @File@.
         Você precisa dizer o nome do método completo.
@@ -286,13 +286,13 @@
         podem ser métodos de Classe.  (Começando a ver a brilhante, glinting gorgeousness of Ruby?)
 
 
-        Então nós estamos usando a empilhadeira para pegar os arquivos no diretório que coincidem @'ideia-*.txt'@.  The
-        @Dir::[]@ irá usar o asterisco como um coringa.  Estamos basicamente dizendo, "Encontre tudo que
+        Então nós estamos usando a empilhadeira para pegar os arquivos no diretório que coincidem @'ideia-*.txt'@.
+        O @Dir::[]@ irá usar o asterisco como um coringa.  Estamos basicamente dizendo, "Encontre tudo que
         comece com _ideia-_ e termine com _.txt_."  A empilhadeira vai para o diretório e volta
         com uma lista de arquivos encontrados.
 
 
-        Esta *lista de arquivos* vem na forma de @Array@ a Centopéia, com uma @String@ para cada 
+        Esta *lista de arquivos* vem na forma de @Array@, a Centopéia, com uma @String@ para cada 
         arquivo.  Se você está curioso e quer brincar com @Dir::[]@, tente isto:
 
 
