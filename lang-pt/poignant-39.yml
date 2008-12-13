@@ -3,16 +3,16 @@
         !i/elderly-1.gif(Algumas pessoas ainda não conseguem acreditar no que fizemos.)!
 
 
-        Se você me der um número, seja ele um período da vida do Dr. Cham, lhe darei uma sinopse daquele
-        período.  E eu farei isso com um método Ruby, isso será uma peça independente, um pedaço de código
-        isolado que pode ser ligado à voz de um vulcão robótico, quando essas coisas forem o ápice
-        das vozes talentosas não autoritárias.
+        Se você me der um número, seja ele qualquer ano da vida do Dr. Cham, darei-lhe uma sinopse do
+        período.  E farei isso com um método Ruby. Portanto será uma peça independente, um pedaço de código
+        isolado que pode ser ligado à voz de um vulcão robótico, quando este tipo de coisa for o ápice
+        das vozes competentes e talentosas.
 
 
-        Ok, eu preciso que você preste atenção nos comandos @def@ , @case@ e @when@.  Você já viu Ranges (Períodos), os
-        acordiões fechados @1895..1913@, no capítulo 3.  Eles contém as pontas e todos os números entre.  E as barras
-        no fim de cada linha simplesmente ignoram o _Enter_, assegurando ao Ruby que _há mais linhas por vir_.
-        
+        Ok, preciso que você preste atenção nos comandos @def@ , @case@ e @when@ (quando).  Você já viu Ranges (Períodos), 
+        os acordiões fechados @1895..1913@, no capítulo 3.  Eles contêm as pontas e todos os números entre.  
+        E as barras no final de cada linha simplesmente ignoram o _Enter_, assegurando ao Ruby que _há mais linhas 
+        por vir_.
 
 
         Então, por favor: @def@, @case@ e @when@.
@@ -26,7 +26,7 @@
            when 1895..1913
              "Infância em Lousville, Winston Co., Mississippi."
            when 1914..1919
-             "Trabalhou numa enfermaria de Pecãs; socou um protestante."
+             "Trabalhou em uma creche de nozes-pecãs; socou um quacre de uma seita protestante."
            when 1920..1928
              "Navegou na companhia do Rio Wisdomming, que se juntou \
               ao Rio Mississippi e se engajou em reflexão e auto-aprimoramento, \
@@ -34,15 +34,15 @@
            when 1929
              "Voltou à Louisville para escrever um romance sobre camponeses caçadores que viajam no tempo."
            when 1930..1933
-             "Ergueu uma respeitável carreira medicando pecãs.  Financeiramente estável, ele \
-              passou algum tempo no Brasil e Novo México, comprando raras árvores de pecã de casca fina.  Assim \
+             "Ergueu uma respeitável carreira garantindo as creches das nozes-pecãs.  Financeiramente estável, ele \
+              passou algum tempo no Brasil e Novo México, comprando raras árvores de noz-pecã de casca fina.  Assim \
               que sua notoriedade chegou a um alto patamar: caramba, ele tentou se enterrar vivo."
            when 1934
-             "Voltou a escrever seu romance.  Mudou de caçadores para funcionários de seguradora e \
+             "Voltou a escrever seu romance.  Mudou de caçadores para magnatas de seguradoras e \
               de camponeses para protestantes."
            when 1935..1940
              "Recebeu Arthur Cone, o chefe da Irmandade do Rio Wisdomming, em sua residência \
-              como convidado. Juntos por cinco anos, planejaram e inventaram."
+              como hóspede. Juntos por cinco anos, planejaram e inventaram."
            when 1941
              "Aqui as coisas começam a ficar interessantes."
            end
@@ -62,14 +62,13 @@
         Que por sua vez responde "Aqui as coisas começam a ficar interessantes."  É sempre a mesma história:
         _use suas respostas._  Eu fiz as coisas ali de tal modo que o @case@ sempre responderá com uma String.
         E já que o case é o último (e único) comando no método, então o método
-        responderá aquela String.  Trickling water spilling down from ledge to ledge.
+        responderá aquela String.  Gotejando água que é derramada de uma saliência para outra.
 
-
-        Deixe me ser mais claro sobre a condição @case@.  Na verdade, eu deveria chamá-la de @case..when@,
-        já que elas não pode ser usadas separadamente.  O comando @case@ é serguido de um valor, que é comparado contra
+        Permita-me ser mais claro sobre a condição @case@.  Na verdade, eu deveria chamá-la de @case..when@,
+        já que elas não podem ser usadas separadamente.  O comando @case@ é seguido de um valor, que é comparado contra
         cada valor que segue o comando @when@.  O primeiro valor a coincidir é usado pelo @case@,
         o resto é ignorado.  Você pode fazer a mesma coisa com um monte de @if..elsif@,
-        mas isso é muito palavreado.
+        mas isso é muito verborrágico.
        
 
         <pre>
@@ -98,8 +97,9 @@
         </pre>
 
 
-        Os *três iguais (===)* são o comprimento da corda de veludo, checando valores como assim como dois iguais (==).  
-        Resumindo: os três iguais são uma corda maior e ela folga um pouco no meio.  Não é tão tensionada, é um pouco mais
+        Os *três iguais (===)* são o comprimento da corda de veludo, checando valores de forma similar aos dois iguais 
+        (==).  
+        Resumindo: os três iguais são uma corda maior e ela desce um pouco no meio.  Não é tão tensionada, é um pouco mais
         maleável.
 
 
@@ -110,8 +110,8 @@
         eu fiz anteriormente.
 
 
-        A qual realmente se parece com uma biografia, não?  Quero dizer, claro, o método @biografia_do_dr_cham@ é código, mas
-        ele se parece com uma biografia, limpa e afável.
+        A qual realmente se parece com uma biografia, não?  Quero dizer, claro, o método @biografia_do_dr_cham@ é código, 
+        mas ele se parece com uma biografia, clará e afável.
 
 
         !i/elderly-2.gif(O que a pesquisa revelou.)!
