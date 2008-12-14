@@ -25,7 +25,7 @@ You will also need Rake. <http://rake.rubyforge.org>
 
 If you have RubyGems, both can be installed with:
 
-  gem install redcloth
+  gem install RedCloth
   gem install rake
   gem install syntax
 

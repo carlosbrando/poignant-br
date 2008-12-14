@@ -56,7 +56,7 @@
         estão estampadas as letras HTTP.
 
 
-        A variável @http@ é aquele motorista.  O -método_ é uma mensagem para o motorista.  Vá @get (pegar)@
+        A variável @http@ é aquele motorista.  O _método_ é uma mensagem para o motorista.  Vá @get (pegar)@
         a página da web chamada @/en/LICENSE.txt@.
 
 
@@ -84,7 +84,7 @@
         em cadeia.  No próximo capítulo vamos explorar todos estes tipos de padrões no Ruby.  Vai ser boa diversão.
 
 
-        Então, o que este código faz?  Ele imprime o HTML dá página web do Ruby na tela.  Usando 
+        Então, o que este código faz?  Ele imprime o HTML da página web do Ruby na tela.  Usando 
         um motorista de ônibus habilitado pra web.
 
 

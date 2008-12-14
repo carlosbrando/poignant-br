@@ -87,14 +87,14 @@
         <pre>
          require 'open-uri'
  
-         # Abrindo um arquivo em um folder do seu computador.
-         open( "folder/ideia-sobre-esconder-alface-nas-cadeiras-da-igreja.txt" ) do |idea|
-           puts idea.read
+         # Abrindo um arquivo em um diretório do seu computador.
+         open( "diretorio/ideia-sobre-esconder-alface-nas-cadeiras-da-igreja.txt" ) do |ideia|
+           puts ideia.read
          end
         </pre>
 
 
-        Files (arquivos) são *input-output objects*. Você pode ler e escrever num arquivo. Em Ruby,
+        Files (arquivos) são *objetos de entrada-e-saída*. Você pode ler e escrever em um arquivo. Em Ruby,
         todo objeto IO (input-output) tem os métodos @read@ e @write@. O método @open@ passa
         um objeto IO para num bloco para você usar. IO é a sua passagem para o mundo exterior. É como
         os raios do sol passando através das barras da prisão. (Entretanto, você não pode escrever (@write@)
@@ -103,7 +103,7 @@
 
 
         Se alguém quiser ler sua idéia diabólica de esconder alface nas cadeiras da igreja, presumindo
-        que você tenha colocado isso numa web page:
+        que você tenha colocado isso numa página web:
 
 
         <pre>
@@ -130,9 +130,9 @@
 
         <pre>
          require 'open-uri'
-         open( "http://preeventualist.org/lost/searchfound?q=caminhao" ) do |truck|
-           truck.each_line do |line|
-             puts line if line['pickup']
+         open( "http://preeventualist.org/lost/searchfound?q=caminhao" ) do |caminhao|
+           caminhao.each_line do |linha|
+             puts linha if linha['picape']
            end
          end
         </pre>

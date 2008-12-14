@@ -1,15 +1,15 @@
     - >
         O método @reverse@ é então usado na String que o @gets@ está devolvendo.  O método @reverse@ 
         é parte da classe @String@.  O que significa que *tudo que for uma string tem o método @reverse@
-        disponível*.  Mais sobre classes no próximo capítulo, por enquanto só saiba que *alguns métodos
+        disponível*.  Mais sobre classes no próximo capítulo, por enquanto saiba apenas que *alguns métodos
         só estão disponíveis para certos tipos de valores*.
 
 
-        Eu não acho que o @reverse@ vai dar muito certo.  As autoridades só precisam por um espelho na frente
-        de "airégiN ad elortnoc o emoT."  Prenderão a gente quando as starmonkeys começarem a pousar em Lagos.
+        Eu não acho que o @reverse@ dará muito certo.  As autoridades só precisam por um espelho na frente
+        de "airégiN ad elortnoc o emoT."  Prenderão a gente quando os macacoestrelas começarem a pousar em Lagos.
 
 
-        As letras maiúsculas estão entregando o ouro.  Talvez se nós passássemos todas as letras na string
+        As letras maiúsculas estão nos entregando.  Talvez se passássemos todas as letras na string
         para maiúsculas antes de inverter.
 
     
@@ -21,49 +21,49 @@
         h3. Sua Repetitividade Compensa
 
 
-        Você me entrega um bloco de notas, cheio de garranchos ilegíveis.  Analisando ele, eu começo a notar
-        padrões.  Notar que você parece usar as mesmas palavras repetidamente in your musings.  
-        Palavras como _macacoestrela_, _Nigéria_, _bomba_.  Algumas frases até.  _Put the kabosh on._
+        Você me entrega um bloco de notas, cheio de garranchos ilegíveis.  Analisando ele, começo a notar
+        padrões.  Notar que você parece usar as mesmas palavras repetidamente em suas reflexões.  
+        Palavras como _macacoestrela_, _Nigéria_, _bomba_.  Algumas frases até.  _Ponha um fim nisso._
         Que são ditas toda hora.
 
 
-        Vamos disfarçar estes termos bobos, meu irmão.  Vamos ofuscá-los de olhos comichantes que
-        choram para saber nossos delicados planos e para nos impedir de ter grande prazer e muitos karts.
-        Vamos trocá-los por linguagem inocente.  Novas palavras com significado secreto.
+        Vamos disfarçar estes termos bobos, meu irmão.  Vamos ofuscá-los de olhos ardentes que
+        choram para saber nossos delicados planos e para nos demover de termos grande prazer e muitos karts.
+        Vamos trocá-los pela mais inocente linguagem.  Novas palavras com significado secreto.
 
 
-        Eu comecei uma lista de palavras, uma @Hash@ do Ruby, que contém estas suas palavras tão freqüentes e perigosas.
-        Na Hash, cada palavra perigosa é comparada contra uma palavra código (ou frase).  A palavra código então
-        será trocada pela palavra real.
+        Eu comecei uma lista de palavras, um @Hash@ do Ruby, que contém estas suas palavras tão freqüentes e perigosas.
+        No Hash, cada palavra perigosa é comparada contra uma palavra código (ou frase).  A palavra código
+        será então trocada pela palavra real.
 
 
         <pre>
          palavras_codigo = {
-           'macacosestrela' => 'Phil e Pete, those prickly chancellors of the New Reich', 
-           'catapulta' => 'chucky go-go', 'bomba' => 'Heat-Assisted Living', 
+           'macacosestrela' => 'Phil e Pete, aqueles chanceleres de pavio curto do Novo Reich', 
+           'catapulta' => 'chucky go-go', 'bomba' => 'Vida Assistida por Calor', 
            'Nigeria' => "Ny e Jerry's Lavagem a Seco (com Donuts)",
-           'Put the kabosh on' => 'Put the cable box on'
+           'Ponha um fim nisso' => 'Ponha um fio nisso'
          }
         </pre>
 
 
         As palavras que são colocadas antes da seta são chamadas *chaves*.  As palavras depois
-        das setas, as definições, geralmente são chamadas de *valores* simplesmente.
+        das setas, as definições, geralmente são simplesmente chamadas de *valores*.
 
 
         Note as aspas duplas em volta de @Ny e Jerry's Lavagem a Seco (com Donuts)@.  Já que nas
-        aspas está sendo usado um apóstrofo, nós não podemos usar aspas simples em torno
-        da string.  (Todavia, você pode usar aspas simples se você colocar uma barra invertida antes
+        aspas está sendo usado um apóstrofo (aspas simples), nós não podemos usar aspas simples em torno
+        da string.  (Todavia, você pode usar aspas simples se colocar uma barra invertida antes
         do apóstrofo como em: @'Ny e Jerry\'s Lavagem a Seco (com Donuts)'@.)
 
 
-        Se você precisar procurar por uma palavra em específico, você pode usar o método das *chaves*.
+        Se você precisar procurar por uma palavra em específico, pode usar o método dos *colchetes*.
 
 
         bq. @palavras_codigo['catapulta']@ irá responder com a string @'chucky go-go'@.
         
 
-        Olhe as chaves como se elas fossem paletes de madeira nas quais as palavras estão em cima.
+        Olhe os colchetes como se elas fossem paletas de madeira nas quais as palavras estão em cima.
         Uma empilhadeira poderia usar suas pás em cada lado da palete e a trazer da prateleira
         de volta ao depósito.  A palavra na palete é chamada de _indexador_.
         Estamos pedido para a empilhadeira achar o indexador pra gente e nos trazer de volta
@@ -72,21 +72,21 @@
 
         Se você nunca esteve num depósito, você pode ver as chaves como alças.
         Imagine um trabalhador industrial colocando suas luvas e levando o index de volta à
-        sua custódia.  Se você nunca usou uma alça, ou te dar cerca de
-        trinta segundo pra achar uma e usar antes que eu fique nervoso.
+        sua custódia.  Se você nunca usou uma alça, vou lhe dar cerca de
+        trinta segundos para achar uma e usar antes que eu estoure meus miolos.
 
 
-        Assim como os vários operadores que você viu recentemente, as chaves indexadoras são
+        Assim como os vários operadores que você viu recentemente, os colchetes indexadoras são
         simplesmente um atalho para um método.
 
 
-        bq. @palavras_codigo.[]( 'catapulta' )@ irá responder com a string @'chucky go-go'@.
+        bq. @palavras_codigo.[]( 'catapulta' )@ responderá com a string @'chucky go-go'@.
 
 
         h3. Fazendo a Troca
 
         
-        Eu me adiantei e salvei a Hash de código em um arquivo chamado *listadepalavras.rb*.
+        Eu me adiantei e salvei o Hash de código em um arquivo chamado *listadepalavras.rb*.
 
 
         <pre>
@@ -114,8 +114,8 @@
 
 
         Depois disso, há duas seções.  Estou marcando estas seções com comentários, as linhas que começam
-        com o símbolo *cerquilha #*.  Comentários são  *notas úteis* que acompanham seu código.  Colegas que
-        vierem ver seu código vão apreciar tal ajuda.  Você mesmo, quando vier no seu código novamente
+        com o símbolo *cerquilha (jogo-da-velha) #*.  Comentários são  *notas úteis* que acompanham seu código.  Colegas que
+        vierem ver seu código vão apreciar tal ajuda.  Você mesmo, quando olhar para seu código novamente
         depois de algum tempo, comentários vão te ajudar a retomar o fio da meada.  E ainda existe
         softwares por aí que pegam seus comentários e fazem documentação à partir deles.  (RDoc e Ri --
         veja o Pacote de Expansão #1!)
@@ -124,7 +124,7 @@
         Eu gosto de comentários porque posso passar os olhos por uma grande pilha de código e identificar pontos importantes.
 
 
-        Como os comentários nos dizem, a primeira seção de pergunta uma idéia maléfica e a troca por uma
+        Como os comentários nos dizem, a primeira seção pergunta por uma idéia maléfica e a troca por uma
         palavra código.  A segunda seção salva a idéia codificada num novo arquivo de texto.
 
 
@@ -148,8 +148,8 @@
         que tomará o lugar como segundo argumento*.
 
 
-        Por que nós não estamos  we hanging on to the answer from @gsub@?  Doesn't @gsub@ give us an answer back that
-        we should keep?  You'd think the line would read:
+        Por que nós não estamos aguardando a resposta do @gsub@?  O @gsub@ não nos dá um resposta que devemos guardar?
+        Você acha que a linha deveria ser assim:
 
 
         <pre>
@@ -158,7 +158,7 @@
 
 
         Sim, com @gsub@ nós temos que ficar com a resposta.  Estamos usando uma variação do @gsub@ que é
-        totalmente hyper.  Notou a *exclamação* no @gsub!@ usada dentro de cada bloco @each@?  A
+        totalmente hiper.  Notou a *exclamação* no @gsub!@ usada dentro de cada bloco @each@?  A
         exclamação é um sinal de que @gsub!@ é meio radical.  Veja, @gsub!@ vai mais longe e
         *troca as palavras em @ideia@ diretamente*.  Quando ele termina @ideia@ vai conter a nova string
         alterada e você não vai mais achar a string velha.
@@ -166,10 +166,10 @@
 
         Pode chamar @gsub!@ de *método destrutivo*.  Ele faz suas modificações no valor diretamente. Enquanto @gsub@
         deixa o valor intacto, apenas respondendo com uma nova string que contém as alterações.
-        (Why must @gsub!@ scream when he descends upon his prey?  Merciless assailant!)
+        (Por que o @gsub!@ tem que gritar quando ataca sua presa?  Assaltante cruel!)
 
 
-        h3.  Arquivo de Texto de um Homem Louco
+        h3.  Arquivos de Texto de um Louco
 
 
         Vamos salvar a idéia codificada em um arquivo.
@@ -190,8 +190,8 @@
 
 
         O método @strip@ serve pra todas strings.  Este método *corta espaços e linhas vazias* do *começo
-        e fim* de uma string.  Isto irá remover o _Enter_ no fim da string que você digitou.
-        E também irá remover espaços caso você tenha acidentalmente deixado algum.
+        e fim* de uma string.  Isto removerá o _Enter_ no fim da string que você digitou.
+        E também removerá espaços caso você tenha acidentalmente deixado algum.
 
 
         Depois que temos o nome da idéia, vamos abrir um novo arquivo de texto em branco.  O nome do arquivo é
@@ -201,8 +201,8 @@
 
 
         Estamos usando o método de classe @File::open@ para criar um novo arquivo.  Até agora, nós usamos
-        vários métodos do kernel para fazer nosso serviço.  Nós damos uma string pro método @print@ e ele a
-        imprime na nossa tela.  Um segredo sobre método do kernel como @print@: eles são na verdade 
+        vários métodos do kernel para fazer nosso serviço.  Nós damos uma string para o método @print@ e ele a
+        imprime na nossa tela.  Um segredo sobre métodos do kernel como o @print@: eles são na verdade 
         *métodos de classe*.
 
 
@@ -219,14 +219,14 @@
         renomeiam, ou deletam arquivos.  Eles estão todos organizados dentro da classe @File@.
 
 
-        bq. @File::read( "ideia-mostarda-mais-codeine.txt" )@ vai responder uma com uma string
+        bq. @File::read( "ideia-mostarda-mais-codeina.txt" )@ responderá com uma string
         contendo todo o texto do seu arquivo de idéias. (Read significa ler.)
 
 
-        bq. @File::rename( "aquivd_antigo.txt", "aquivo_novo.txt" )@ irá renomear o @aquivo_antigo.txt@.
+        bq. @File::rename( "aquivd_antigo.txt", "aquivo_novo.txt" )@ renomeará o @aquivo_antigo.txt@.
 
 
-        bq. @File::delete( "aquivo_novo.txt" )@ irá explodir o novo arquivo.
+        bq. @File::delete( "aquivo_novo.txt" )@ explodirá o novo arquivo.
 
 
         Estes métodos File estão todos *dentro do Ruby*.  Estão apenas armazenados num
@@ -247,8 +247,8 @@
         arquivo.  (Outras opções são: @'r'@ para ler o arquivo ou @'a'@ para adicionar no fim do arquivo.)
 
 
-        O arquivo está aberto para escrita e nos é dado na forma de variável @f@, que pode ser vista
-        *descendo a calha pra dentro do nosso block*.  Dentro do bloco, nós escrevemos no arquivo.  Quando
+        O arquivo está aberto para escrita e nos é dado na forma da variável @f@, que pode ser vista
+        *descendo a calha para dentro do nosso bloco*.  Dentro do bloco, nós escrevemos no arquivo.  Quando
         o bloco se fecha com @end@, nosso arquivo é fechado também.
 
 
@@ -277,13 +277,13 @@
         </pre>
 
 
-        Nessa altura, você já deve estar sabendo o que este exemplo faz.  Não vou te incomodar com
+        A esta altura, você já deve estar sabendo o que este exemplo faz.  Não vou te incomodar com
         detalhes mundanos.  Veja se você consegue entender sozinho como isso funciona.
 
 
         Contudo, temos um método de classe interessante aqui.  O método @Dir::[]@ procura num diretório (alguns
-        de vocês podem chamá-los de "pastas").  Assim como você viu com as Hashes, os colchetes indexadores
-        pode ser métodos de Classe.  (Começando a ver a brilhante, glinting gorgeousness of Ruby?)
+        de vocês podem chamá-los de "pastas").  Assim como você viu com os Hashes, os colchetes indexadores
+        podem ser métodos de Classe.  (Começando a ver a brilhante, glinting gorgeousness of Ruby?)
 
 
         Então nós estamos usando a empilhadeira para pegar os arquivos no diretório que coincidem @'ideia-*.txt'@.  The
@@ -293,13 +293,13 @@
 
 
         Esta *lista de arquivos* vem na forma de @Array@ a Centopéia, com uma @String@ para cada 
-        arquivo.  Se você está curioso e que brincar com @Dir::[]@, tente isso:
+        arquivo.  Se você está curioso e quer brincar com @Dir::[]@, tente isto:
 
 
         bq. @p Dir['ideia-*.txt']@ irá imprimir:
 
 
-        bq. @['ideia-mostarda-mais-codeine.txt']@ (_um Array de nomes de arquivos!_)
+        bq. @['ideia-mostarda-mais-codeina.txt']@ (_um Array de nomes de arquivos!_)
 
 
         Sim, o método @p@ funciona igual @print@.  Mas @print@ é para se imprimir strings,
@@ -312,14 +312,14 @@
         bq. @["send", "display", "name", "exist?", "split",@ ... _a lista completa dos nomes dos métodos!_ @]@ 
 
 
-#        h3. Extra Credit: PStore
+#        h3. Creditó Extra: PStore
 #
 #        
 #        <pre>
 #         require 'pstore'
-#         journal = PStore.new( 'journal.p' )
-#         journal.transaction do
-#           journal.
+#         jornal = PStore.new( 'jornal.p' )
+#         jornal.transaction do
+#           jornal.
 #         end
 #        </pre>
 

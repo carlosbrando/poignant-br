@@ -1,24 +1,24 @@
     - >
-        h3. Mas Ele Era Doente??
+        h3. Mas Estava Ele Doente??
 
 
-        Você sabe, ele não dava muita sorte.  Era um desastre como novelista, mas suas empreitadas na alquimia
+        Você sabe, o momento dele era tão ruim.  Era um desastre como romancista, mas suas empreitadas na alquimia
         eram muito promissoras.  Ele tinha um elixir de leite de cabra e sal marinho que melhorava dores nas pernas.
-        Um cara até regenerou um pedaço do dedo que havia perdido.  Ele tinha um fumo medicinal orgânico que cheirava
-        chulé mas te dava visão noturna.  Ele estava trabalhando em algo chamado Escada Líquida, mas nunca vi
-        ou li nada a respeito.  Não pode ser pra subir.  Quem sabe.
+        Um cara até regenerou um pedaço do dedo que havia perdido.  Tinha um fumo medicinal orgânico que cheirava
+        chulé mas lhe dava visão noturna.  Ele trabalhava em algo chamado Escada Líquida, mas nunca vi
+        ou li nada a respeito.  Não pode ser para subir.  Quem sabe.
 
 
-        Um jornal local uma vez visitou o Dr. Cham.  A crítica literária deles deu a ele quatro estrelas.
-        Sério.  Ela fez um artigo sobre ele.  Ela deu uma nota.
+        Um jornal local uma vez visitou o Dr. Cham.  A crítica literária deles lhe deu quatro estrelas.
+        Sério.  Ela fez um artigo sobre ele.  Deu-lhe uma avaliação.
 
 
-        Mas saiba que o Dr. N. Harold Cham se sentia muito mal com relação à sua sobrinha.  Ele acreditou que o tratamento
+        Mas saiba que o Dr. N. Harold Cham se sentia muito mal em relação à sua sobrinha.  Ele acreditou que o tratamento
         de choque funcionaria.  A pólio a teria matado de qualquer jeito, mas ele tentou.
 
 
-        Em 9 de Setembro de 1941, depois de sedá-la como uma dose de phenacetin na sua sala de operações, ele colocou
-        os clips condutores no nariz, língua, dedos e ombros de Hannah.  Com a ajuda de seu aprendiz, um estudante
+        Em 9 de Setembro de 1941, depois de sedá-la como uma dose de fenacetina na sua sala de operações, ele colocou
+        os clipes condutores no nariz, língua, dedos e ombros de Hannah.  Com a ajuda de seu aprendiz, um estudante
         perspicaz chamado Marvin Holyoake, eles polvilharam a garota com flocos de uma substância que o doutor
         chamou de _opus magnum_. Um pó de ouro branco que levaria a corrente e evidentemente energizaria a menina,
         forçando seu sangue a aflorar e lutar e vencer.
@@ -50,8 +50,8 @@
         Se rodarmos o método @salve_hannah@, o Ruby vai gritar com a gente, alegando que não sabe de @opus_magnum@ nenhuma.
 
 
-        Eu tô falando de *foco, escopo*.  Microscópios restringem e magnificam sua visão.  Telescópios extendem
-        seu campo de visão.  No Ruby, *escopo* referecia o campo de visão dentro de métodos e blocos.
+        Estou falando de *foco, escopo*.  Microscópios restringem e magnificam sua visão.  Telescópios extendem
+        seu campo de visão.  No Ruby, *escopo* referencia o campo de visão dentro de métodos e blocos.
 
 
         A declaração @def@ do método abre sua visão.  Nomes de variáveis introduzidos ali serão vistos
@@ -84,7 +84,7 @@
         E aí, eletrocutando.
 
 
-        Então, a questão é: após o término do bloco, terá ele resgatado a Hannah?
+        Então, a questão é: após o término do bloco, terá ele resgatado Hannah?
 
 
         <pre class="result">

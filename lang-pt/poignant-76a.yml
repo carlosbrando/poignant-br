@@ -4,7 +4,7 @@
 
         | @\d@ | casa dígitos | também pode ser escrita como @[0-9]@ |
 
-        | @\w@ | casa caracteres de palavra (letras, números e o underscore) | também pode ser escrita como  @[A-Za-z0-9_]@ |
+        | @\w@ | casa caracteres de palavra (letras, números e o travessão) | também pode ser escrita como  @[A-Za-z0-9_]@ |
 
         | @\s@ | casa espaços em branco (espaços, tabs, retorno de carro, pula linha) | a.k.a. @[\t\r\n]@ |
 
@@ -18,12 +18,12 @@
 
 
         Construir uma expressão regular envolve encadear esses receptáculos para expressar sua busca. Se estiver procurando
-        por um número, seguido de espaço em branco: @/\d\s/@.  Se estiver procurando por três números em sequência: @/\d\d\d/@.  *As barras
-        que abrem e fecham marcam o início e o fim da expressão regular.*
+        por um número seguido de espaço em branco: @/\d\s/@.  Se estiver procurando por três números em sequência: @/\d\d\d/@.  
+        *As barras que abrem e fecham marcam o início e o fim da expressão regular.*
 
 
-        Uma busca por três números em sequência também pode ser escrita como: @/\d{3}/@.  Imediatamente após uma classe de caracter
-        como @\d@, você pode usar um símbolo de quantidade para dizer quantas vezes você quer que aquela classe de caracter seja repetida.
+        Uma busca por três números em sequência também pode ser escrita como: @/\d{3}/@.  Imediatamente após uma classe de caracteres
+        como @\d@, você pode usar um símbolo de quantidade para dizer quantas vezes quer que aquela classe de caracteres seja repetida.
 
 
         |\3. *Quantificadores* |
@@ -43,7 +43,7 @@
 
 
         Uma expressão regular bem comum é uma que case números de telefone.  Números de telefone norte-americanos (incluindo
-        código de área) podem ser casados usando a classe de caracter de dígito e os quantificadores precisos.
+        código de área) podem ser casados usando a classe de caractere de dígito e os quantificadores precisos.
 
 
         <pre>
@@ -54,7 +54,7 @@
         </pre>
 
 
-        Desta vez, em vez de usar @match@ para procurar pela expressão, o operador @=~@ foi usado.  Este operador é o
+        Desta vez, em vez de usar @match@ para procurar pela expressão, usou-se o operador @=~@.  Este operador é o
         *operador de casamento*, um sinal de igual seguido de *um til*.  O til é como uma fumacinha saindo da ponta de uma
         chaminé.  Lembre-se dos cervos, a fumaça que eles soltam, uma linguagem críptica assim como as expressões regulares.  O
         til fumacento aponta para a expressão regular.
@@ -65,8 +65,8 @@
 
 
         Se você precisa casar a string inteira, você pode usar a variável global especial @$&@ se você está usando o 
-        operador de casamento.  Ou, se você estiver usando o método @match@, você pode conseguir a string inteira convertendo
-         o objeto @MatchData@ em uma string.
+        operador de casamento.  Ou, se estiver usando o método @match@, você pode conseguir a string inteira convertendo
+        o objeto @MatchData@ em uma string.
 
 
         <pre>
@@ -86,7 +86,7 @@
 
         A maioria dos Rubistas prefere a segunda alternativa, uma vez que usa um objeto dentro de uma _variável local_ em vez de uma _variável global_.
         Variáveis globais são meio questionáveis, uma vez que podem ser facilmente sobrescritas.  Se você rodar duas expressões regulares na
-        sequência, a variável global vai ser sobrescrita na segunda vez.  Mas com variáveis locais você pode manter as duas ocorrências
+        sequência, a variável global será sobrescrita na segunda vez.  Mas com variáveis locais você pode manter as duas ocorrências
         desde que as variáveis tenham nomes diferentes.
 
 
@@ -108,40 +108,40 @@
         primeiras letras de "malabarista."  Strings também têm um método simples @sub@ que vai substituir apenas uma vez.
 
 
-        E assim este capítulo acaba, com Blix e as Raposas voando no rosa sólido expelido de um cervo muito reservado em algum lugar
+        E assim este capítulo acaba, com Blix e os Raposos voando no sólido rosa expelido por um cervo muito reservado em algum lugar
         naquelas pastagens.
 
 
-#        Using regular expressions for substitution is incredibly sly.  
+#        Usar expressões regulares para substituição é incrivelmente astuto
 #
 #
-#        |\3. *Positional Marks* |
+#        |\3. *Marcas de Posicionamento* |
 #
-#        | @^@ | matches the beginning of a line | Test a string for a starting pound sign: @/^#/@ |
+#        | @^@ | casa o início de uma linha | Testa uma string começada por um jogo-da-velha: @/^#/@ |
 #
-#        | @$@ | matches the end of a line | Look for empty lines: @/^\s*$/@ |
+#        | @$@ | casa o fim de uma linha | Procura por linhas vazias: @/^\s*$/@ |
 #
-#        | @\b@ | matches the edge of a word, beginning or end | Find words which start with a vowel: @/\b[aeiou]/@ |
+#        | @\b@ | casa as bordas de uma palavra, início ou término | Encontra palavras que comecem com uma vogal: @/\b[aeiou]/@ |
 #
-#        | @\A@ | matches the beginning of the string | Check if a string opens with a greeting: @/AHello/@ |
+#        | @\A@ | casa com o início de uma string | Checa para ver se a string começa com uma saudação: @/AOla/@ |
 #
-#        | @\z@ | matches the end of the string | Ensure a string contains only word characters: @/\A\w\z/@ |
+#        | @\z@ | casa com o final de uma string | Garante que uma string tem apenas caracteres de uma palavra: @/\A\w\z/@ |
 #
 #
-#        h3. Scanning for Matches
+#        h3. Rastreando por compatibilidades
 #
 #
 #        <pre>
-#         def load_dictionary( filename )
+#         def carrega_dicionario( nomedoarquivo )
 #           hsh = {}
-#           File.read( filename ).scan( /(.+): (.+)/ ) do |k, v|
+#           File.read( nomedoarquivo ).scan( /(.+): (.+)/ ) do |k, v|
 #             hsh[k] = v
 #           end
 #         end
 #        </pre>
 #
 #
-#        If I can offer one piece of advice with regard to regular expressions, it's this: be yourself.  Don't get so
-#        wrapped up in regular expressions that you forget who you are.
+#        Se posso lhe oferecer um pequeno conselho em relação a expressões regulares, é este: seja você mesmo.  Não fique
+#        muito preso a expressões regulares que fizeram vocês esquecer quem é.
 #
 #

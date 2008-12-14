@@ -1,16 +1,15 @@
 
+      h3. Lendo o Console (Terminal)
 
-      h3. Lendo o prompt
 
-
-      Eu sei que o prompt com certeza parece desconcertante.  Bem, vamos logo dissecá-lo.  É muito simples.
-      O prompt tem três partes, cada uma separada por *dois pontos*.
+      Eu sei que o console (também conhecido como terminal ou prompt) com certeza parece desconcertante.  Bem, vamos logo dissecá-lo.  É muito simples.
+      O console tem três partes, cada uma separada por *dois pontos*.
 
 
       A primeira seção, onde está escrito @irb(main)@, mostra *o nome do programa* que estamos rodando.  A segunda
       seção mostra o número da linha, *um contador de quantas linhas de Ruby nós digitamos*.  A terceira seção é *um
       nível de profundidade*.  Toda vez que você abrir uma expressão que precisa ser fechada, o nível de profundidade 
-      vai aumentar uma unidade. E toda vez que o Irb detectar que seu código não está terminado, *o fim do prompt
+      vai aumentar uma unidade. E toda vez que o Irb detectar que seu código não está terminado, *o fim do console
       vai virar um asterisco.*  
 
 
@@ -31,14 +30,14 @@
       continuação da linha.
 
 
-      h3. Ajustando o Prompt
+      h3. Ajustando o Console
 
 
-      Você não tem que gostar da aparência do prompt, entretanto.  Não estou forçando você a fazer nada e,
-      se você quer hackeá-lo, estou do seu lado.
+      Você não tem que gostar da aparência do console, entretanto.  Não estou forçando você a fazer nada e,
+      se você quer hackeá-lo, estou ao seu lado.
 
 
-      O Irb tem mais alguns prompts que podem agradar seus sentidos.  Tente @irb --prompt simple@.
+      O Irb tem mais alguns consoles que podem agradar seus sentidos.  Tente @irb --prompt simple@.
       Desta vez o Irb vai lhe proporcionar um conjunto bem básico de setas, permitindo a você digitar seu
       código sem todo o relatório de status.
 

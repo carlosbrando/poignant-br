@@ -23,7 +23,7 @@
        sudo make install
       </pre>
 
-      * No *RedHat* ou *Mandrake* Linux, voce pode encontrar as "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby.
+      * No *RedHat* ou *Mandrake* Linux, você pode encontrar as "Ruby RPMs":http://rpmfind.net/linux/rpm2html/search.php?query=Ruby.
       Eu acredito que o Ruby também está disponível  através do Ximian Red Carpet.
 
       * No *Debian*, use @apt-get install ruby@.
@@ -45,7 +45,7 @@
       </pre>
 
       _* (Novamente, os comandos acima são para instalar Ruby a partir do código fonte.  Você pode precisar usar
-      @su@ ou @sudo@ para dar permissão para poder rodar o @make install@.)
+      @su@ ou @sudo@ para dar permissão para rodar o @make install@.)
 
 
       Para testar se o Ruby está instalado, abra um terminal e execute: @ruby -v@.  Se o Ruby estiver instalado
@@ -63,7 +63,7 @@
       * Para abrir um terminal no *Mac OS X*, vá para *Aplicações > Utilidades*.  Execute o programa *Terminal*.
 
  
-      OK, mantenha o prompt de comando aberto caso nós precisarmos salvar a Terra de uma colisão
+      OK, mantenha o terminal aberto caso nós precisarmos salvar a Terra de uma colisão
       com o Sol.
 
 
@@ -79,11 +79,11 @@
       </pre>
 
 
-      Você deve ver o prompt acima.  Essa linha de comando Irb permitirá que você entre com código Ruby e,
+      Você deve ver o console acima.  Essa linha de comando Irb permitirá que você entre com código Ruby e,
       pressionando _Enter_, o código irá executar.
 
 
-      Então, no prompt Irb, faça um: @3000 + 500@.
+      Então, no console Irb, faça um: @3000 + 500@.
 
 
       <pre>
@@ -94,7 +94,7 @@
       
 
       Esse exemplo @3000 + 500@ é código legítimo.  Nós apenas não estamos atribuindo a resposta a uma váriavel.
-      O que está correto no Irb, por que o Irb devolveu a resposta do código que você executou.
+      O que está correto no Irb, porque o Irb devolveu a resposta do código que você executou.
 
 
       O Irb é uma ótima calculadora.
