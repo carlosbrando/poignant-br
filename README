@@ -64,7 +64,6 @@ To build the HTML version of this book:
 === Para a versão em Português ===
 
   Antes de executar o "rake pt", conforme explicado acima, primeiro rode este comando:
-  Teste Christian
 
   rake merge_pt
 
