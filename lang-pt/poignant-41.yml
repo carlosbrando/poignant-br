@@ -42,12 +42,12 @@
         </pre>
 
 
-        Um método na sua ilha.  E o que vai dentro não é afetado por simples váriaveis externas.
+        Um método em sua própria ilha.  E o que vai dentro não é afetado por simples váriaveis externas.
         O Dr. Cham não podia penetrar na doença da sua sobrinha assim como uma variável @opus_magnum@
-        não pode penetrar o fechado método.
+        não pode penetrar no exterior de aço do método.
 
 
-        Se rodarmos o método @salve_hannah@, o Ruby vai gritar com a gente, alegando que não sabe de @opus_magnum@ nenhuma.
+        Se rodarmos o método @salve_hannah@, o Ruby vai chiar conosco, alegando que não sabe de @opus_magnum@ nenhuma.
 
 
         Estou falando de *foco, escopo*.  Microscópios restringem e magnificam sua visão.  Telescópios extendem
@@ -56,7 +56,7 @@
 
         A declaração @def@ do método abre sua visão.  Nomes de variáveis introduzidos ali serão vistos
         pelo método e continuarão valendo até que o @end@ feche seus olhos.  Você pode passar dados para um
-        método usando argumentos e dados podem ser resgatados de método, mas os nomes usados dentro
+        método usando argumentos e dados podem ser resgatados do método, mas os nomes usados dentro
         do método só valem no escopo dele.
 
 
@@ -66,11 +66,11 @@
         Variáveis de classe e de instância serão exploradas em breve.
 
 
-        Blocos têm escopo, mas um escopo mais difuso.  Mais flexível.
+        Blocos têm escopo, mas ele é um pouco difuso.  Mais flexível.
 
 
         <pre>
-         verbo = 'resgatou'
+         verbo = 'salvou'
          ['sedou', 'polvilhou', 'eletrocutou'].
          each do |verbo|
            puts "O Dr. Cham " + verbo + " sua sobrinha Hannah."
@@ -79,12 +79,12 @@
         </pre>
 
 
-        O bloco _iterage_ (circunda, revolve) pelas ações do Doutor.  A variável @verbo@
-        muda a cada passagem.  Em uma passagem, ele a está sedando.  Na próxima, ele a está queimando.  
-        E aí, eletrocutando.
+        O bloco _iterage_ (circunda, revolve) por cada uma das ações do Doutor.  A variável @verbo@
+        muda a cada passo.  Em um passo, ele a está sedando.  No próximo, ele a está polvihando.  
+        E então, eletrocutando.
 
 
-        Então, a questão é: após o término do bloco, terá ele resgatado Hannah?
+        Então, a questão é: após o término do bloco, terá ele salvado Hannah?
 
 
         <pre class="result">
@@ -106,7 +106,7 @@
 
 
         <pre>
-         ['sedou', 'queimou', 'eletrocutou'].
+         ['sedou', 'polvilhou', 'eletrocutou'].
          each do |verbo|
            puts "O Dr. Cham " + verbo + " sua sobrinha Hannah."
          end
@@ -119,49 +119,49 @@
 
 
         Deve ser difícil, mesmo para um grande cientista, sumir com o corpo de uma garotinha
-        cujo vestido ainda está passado e bordado, mas cuja boca está roxa nos cantos.  
-        No jornal do Dr. Cham, ele relata que fora atormentado pelo fantasma dela, que reluzia ouro and scorched
-        lace.  Suas desilusões aumentaram e ele fugiu de cães do inferno e massivas, vingativas mãos angelicais.
+        cujo vestido ainda está passado e bordado, mas cuja boca está roxa nas extremidades.  
+        No jornal do Dr. Cham, ele relata que fora atormentado pelo fantasma dela, que reluzia ouro e cuja renda
+        flamejava.  Suas desilusões aumentaram e ele fugiu do Cérberus e de massivas, vingativas mãos angelicais.
+
+ 
+        Somente semanas mais tarde, ele foi embora, impulsionado por esses arrependimentos, sumindo na 
+        explosão que o levaria para fora do planeta.
 
 
-        Somente semanas mais tarde, ele foi embora, impulsionado desses arrependimentos, sumindo na 
-        explosão que o levaria pra fora do planeta.
-
-
-        Até que enquanto você lê isso agora, em algum momento, a jarra em formato de sino do nosso
+        Ainda enquanto você lê isto aqui, em algum momento, a jarra em formato de sino do nosso
         solitário Dr. Cham pousou num distante planeta depois de viajar sessenta anos.  
         Assim que o novo mundo apareceu, assim que a curvatura do planeta se mostrou, 
         assim que a jarra em formato de sino varreu os céus tempestuosos, rasgando folhas de aurora e
-        vento solar, os olhos do Dr. Chams se abriram.
+        vento solar, os olhos do Dr. Cham se abriram chocados.
 
 
         !i/dr.cham-2.gif(Pouso seguro.  Espanto.)!
 
 
         O que você esta testemunhando é o pouso do Dr. Cham no planeta Endertromb.  Do que eu pude
-        perceber, ele pousou no meio de uma estação desolada, quando não tem muita coisa acontecendo
-        no planeta.  A maioria dos habitantes têm susas mentes presas a um zumbido desanimador
+        perceber, ele pousou no meio de uma estação desolada, época em que não tem muita coisa acontecendo
+        no planeta.  A maioria dos habitantes têm suas mentes presas a um zumbido desanimador
         que faz com que eles se desintegrem em fantasmas fúteis uma-parte-conhecimento e três-partes-vapor
         por um tempo.
 
 
         Meu modesto conhecimento sobre a história e clima de Endertromb foi adquirido convivendo
-        com o professor de piano da minha filha, que nasceu lá.
+        com o professor de piano da minha filha, quem cresceu no planeta.
 
 
-        !i/elderly-3.gif(Dead husbands could destroy the Doctor.)!
+        !i/elderly-3.gif(Maridos mortos poderia destruir o Doutor.)!
 
 
-        Eu frequentemente treino o professor de piano da minha filha para assegurar que ele mantenha
+        Eu freqüentemente treino o professor de piano da minha filha para assegurar que ele mantenha
         seus compromissos.  Que ele atenda chamadas em horas estranhas e responda chamadas de 
-        emergência prontamente. Quando ele finalmente me contou que era um alien cujo dia consistia em 
+        emergência prontamente. Quando ele finalmente me contou que era um alienígena cujo dia consistia em 
         quinhentas e quarenta horas acordado, eu estava incrivelmente favorável a um relacionamento
         contratual com ele que durará até 2060.
 
         
         Por três dias (de acordo com seu relógio de bolso), o Dr. Cham viajou nas escuras passagens de ar,
-        respirando o vento empoeirado daquele planeta inóspito.
-        Mas no terceiro dia, a Estação Desolada acabara e ele acordou para uma vista magnífica, 
-        decorada com recém-floridas árvores de maçã e dewy castle tiers.
+        respirando o vento empoeirado daquele planeta árido.
+        Mas no terceiro dia, ele encontrou o término da Estação Desolada e acordou para uma vista magnífica, 
+        decorada com recém-floridas árvores de maçã e fileiras de frescos castelos.
 
 
