@@ -202,7 +202,7 @@
 
         Acima temos uma ação também.  Estamos instruindo o computador a testar a porta para ver se está aberta.
         O método poderia se chamar @Porta.teste_para_ver_se_esta_aberta@, mas o nome @esta_aberta?@ é sucinto e 
-        também correto.  Exclamações e interrogações podem ser usadas em nomes de métodos.
+        também correto.  Exclamações e interrogações podem ser usados em nomes de métodos.
 
 
         h3. Argumentos de Método
