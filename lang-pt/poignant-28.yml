@@ -20,7 +20,7 @@
         elas estavam secas e limpas.
 
 
-        Foi um incrível experiência de vazio total.  Foi como @nil@.
+        Foi uma incrível experiência de vazio total.  Foi como @nil@.
 
 
         h3. Nil (Nada)
@@ -83,13 +83,13 @@
         </pre>
 
 
-        Se @copo_plastico@ conter @nil@ ou @false@, você não vai ver nada impresso
+        Se @copo_plastico@ contiver @nil@ ou @false@, você não vai ver nada impresso
         na tela.  Eles não estão na lista de convidados do @if@.  Então o @if@ não vai rodar
         nada do código que ele está protegendo.
 
 
         Mas @nil@ e @false@ não precisam ir embora constrangidos.  O caráter deles pode ser meio
-        questionável, mas o @unless@ (ao menos) gerencia uma estabelecimento que preza ser fuleiro.
+        questionável, mas o @unless@ (ao menos) gerencia um estabelecimento que preza ser fuleiro.
         A palavra chave @unless@ tem por regra *só deixar aqueles com carga negativa entrar*.
         Aqueles são: @nil@ e @false@.
         

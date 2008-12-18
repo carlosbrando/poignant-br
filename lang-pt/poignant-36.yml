@@ -55,9 +55,9 @@
         e assistia.  Você desistia.  Ele não estava naquele episódio.  
 
 
-        Ainda assim, você nao desistia, você ia quadro por quadro com o jog do controle, analisando cada cena.
+        Ainda assim, você não desistia, você ia quadro por quadro com o jog do controle, analisando cada cena.
         E lá estava ele.  No alto atrás do holofote que foi acionado com muita força.  O que deixou
-        o Doidão com danos permanentes nos olhos.  Por quê?  Por quê queimar as retinas do seu companheiro,
+        o Doidão com danos permanentes nos olhos.  Por quê?  Por que queimar as retinas do seu companheiro,
         Terry?
 
 
@@ -110,7 +110,7 @@
 
 
         "Peço desculpas se a sua lista de brinquedos parece um pouco complicada," eu disse. Assim como você, ele já
-        havia aprendido sobre Array, a centopéia caida no código, colchetes de cada lado
+        havia aprendido sobre Array, a centopéia caída no código, colchetes de cada lado
         e cada item separado por vírgulas.  (Ah, aqui está uma: @['meia', 'rato', 'bolinho-primavera']@.) 
         Ele também sabia sobre a Hash, que é como um dicionário, com chaves de cada lado
         que parecem livrinhos abertos.  Vírgulas na Hash entre cada par.  Cada palavra
@@ -122,9 +122,9 @@
         Você vai ter que explicar isso."
 
 
-        "Subversivo ele, não?"  Eu disse, cutucando ele com uma colher.  "Eu fiz sua lista de brinquedos
+        "Subversivo ele, não?"  Eu disse, cutucando-o com uma colher.  "Eu fiz sua lista de brinquedos
         misturando os dois.  Estou usando um atalho.  Que é: *Se você usar a seta (=>) dentro de um Array, 
-        você terá uma Hash invés de um Array.*"
+        você terá uma Hash ao invés de um Array.*"
 
 
         "Ah, entendi," ele disse.  "Você cruzou eles.  Que bacana!"
@@ -151,7 +151,7 @@
         h3. Ordenando e Iterando Para Salvar Vidas
 
 
-        "Vamos ordenar seus brinquedos por forma agora," Eu disse.  "E depois, imprimi-los nesta ordem."
+        "Vamos ordenar seus brinquedos por forma agora," Eu disse.  "E depois, imprimí-los nesta ordem."
 
 
         <pre>
@@ -229,7 +229,7 @@
 
 
         "Quanto ao seu @sort_by@, ele *começa no topo* da lista e vai *descendo até o ultimo item*, um de cada vez.
-        Então @brinquedo@ é um destes itens.  Em cada item, o @sort_by@ para e *joga aquele item pela calha*,
+        Então @brinquedo@ é um destes itens.  Em cada item, o @sort_by@ pára e *joga aquele item pela calha*,
         sob o nome de @brinquedo@, e deixa você decidir o que fazer com ele."
  
 
