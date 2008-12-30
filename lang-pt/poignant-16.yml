@@ -29,9 +29,7 @@
         assim: _Cinco vezes imprima "Odelay!"._
 
 
-        Que é exatamente o que este pequeno programa Ruby faz.  A exclamação em "espanhol mutante":http://www.whiskeyclone.net/ghost/L/lordonlyknows.html do
-        Beck será impressa
-        cinco vezes na tela do computador.
+        Que é exatamente o que este pequeno programa Ruby faz.  A exclamação "espanhol mutante":http://www.whiskeyclone.net/ghost/L/lordonlyknows.html do Beck será impressa cinco vezes na tela do computador.
 
 
         *Leia o trecho a seguir em voz alta.*
@@ -40,8 +38,8 @@
         bq. @exit unless "restaurante".include? "aura"@
        
        
-        Aqui estamos fazendo um teste básico de realidade.  Nosso programa vai *exit (sair)* (o programa vai terminar) *unless (a menos que)* 
-        a palavra *restaurante* contenha (ou *inclua*) a palavra *aura*.  Novamente, em Português: _Saia a não ser que a palavra
+        Aqui estamos realmente fazendo um teste básico.  Nosso programa vai *exit (sair)* (o programa vai terminar) *unless (a menos que)* 
+        a palavra *restaurante* contenha (ou *inclua*) a palavra *aura*.  Novamente, em Português: _Saia a nao ser que a palavra
         restaurante inclua a palavra aura._
 
 
@@ -59,7 +57,7 @@
 
 
         Enquanto este pedaço de código é menos legível e parecido com uma frase que o anterior, eu ainda assim
-        o encorajo a ler em voz alta.  Enquanto o Ruby algumas vezes soa como Português noutras soa como Português Curto.
+        o encorajo a ler em voz alta.  Enquanto o Ruby algumas vezes soa como Português noutras soa como um breve Português.
         Totalmente traduzido para Português, você poderia ler desta maneira: _Com as palavras 'torrada', 'queijo',
         e 'vinho': pegue cada comida e a imprima com a primeira letra maiúscula._
         
@@ -67,12 +65,12 @@
         O computador então responde de forma cortês: @Torrada@, @Queijo@ e @Vinho@.
 
 
-        Neste ponto, você deve estar se perguntando como essas palavras realmente funcionam juntas.  O Smotchkkiss está imaginando
+        Neste ponto, você deve estar se perguntando como essas palavras realmente funcionam juntas.  O cara palida deve estar imaginando
         o que os pontos e chaves significam.  Vou discutir as várias _partes da conversa_ em seguida.
 
 
-        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Elas não são exatamente sentenças 
-        em inglês.  Elas são pequenas coleções de palavras e pontuação que envolvem o mesmo pensamento.  Estas
+        Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Elas não são exatamente sentenção em inglês.
+        Elas são pequenas coleções de palavras e pontuação que expressão um simples pensamento.  Estas
         sentenças podem formar livros.  Elas podem formar páginas.  Elas podem formar romances inteiros, quando combinadas.
         Romances que podem ser lidos por humanos, mas também por computadores.
 

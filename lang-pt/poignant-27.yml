@@ -22,9 +22,9 @@
 
 
         Então enquanto os outros empilhavam troféus e guirlandas de flores em volta da égua, 
-        apostando em uma carinho despedidade antes que a bala viesse e a levasse para casa, o Gnomo 
+        despedindo-se com carinho antes que a bala viesse e a levasse para casa, o Gnomo 
         e eu freneticamente vasculhamos a Intenet por respostas.  Nós lidamos com isso com nossas próprias 
-        mãos, cauterizando as feridas em sua perna com camãroes de água doce vivos.  
+        mãos, cauterizando as feridas em sua perna com camarões de água doce vivos.  
         E funcionou bem!  Nós tinhamos uma égua de novo.  Ou pelo menos: um corpo de égua com um abdominal
         de crustáceos congelantes.  
 
@@ -34,7 +34,7 @@
 
         A Animal Perfeito é agora o futuro do melhoramento de animais.  Eles criam novos animais e 
         salvam animais velhos por partes.  É claro, levou um longo tempo para isso.
-        Quando a Animal Perfeito começou, você via um urso crescido adentrar a Animal Perfeito e 
+        Quando o Animal Perfeito começou, você via um urso crescido adentrar o Animal Perfeito e 
         via um urso crescido de óculos de sol sair.  Completamente cafona.
 
 
@@ -96,7 +96,7 @@
 
 
         O @ajuste@ recebe uma mensagem @conecta@.  O que precisa ser conectado?  Os _argumentos do método_: o
-        @macaco_preso@ e a @estrela_presa@.  Nós recebemos de volta um @macacoestrela@, em que decidimos nos pendurar.
+        @macaco_preso@ e a @estrela_presa@.  Nós recebemos de volta um @macacoestrela@, em quem decidimos nos pendurar.
 
 
         !i/the.elf-5c.gif(Sapo na mão.)!
@@ -109,7 +109,7 @@
         bq. @macacoestrela = ajuste.conecta( macaco_preso, tubo.pegue_uma_estrela ) + sapo_de_mao_decorativo@
 
 
-        Veja como o @tubo.pegue_uma_estrela@ está nos argumentos do método?  A estrela pega 
+        Vê como o @tubo.pegue_uma_estrela@ está nos argumentos do método?  A estrela pega 
         será passada diretamente ao ajuste.  Não é necessário encontrar um lugar para colocá-la.  
         Apenas deixe-a ir.
 
