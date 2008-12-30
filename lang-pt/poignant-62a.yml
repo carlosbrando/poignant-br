@@ -21,7 +21,7 @@
         h3. Yielding é como blocos de montar 
 
 
-        Ruby freqüentemente usa iterators dessa forma. Sim, iterators são usados para percorrer cada um
+        Ruby frequentemente usa iterators dessa forma. Sim, iterators são usados para percorrer cada um
         dos itens de uma collection, como um Array ou um Hash. Então, olhe para uma fonte de IO como uma
         coleção de linhas. O iterator pode percorrer essa coleção de linhas.
 
