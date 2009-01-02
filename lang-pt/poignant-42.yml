@@ -3,8 +3,8 @@
         !i/dr.cham-3.jpg(Os vales panorâmicos de Sedna em Endertromb.)!
 
 
-        Nosso intrépido Doutor partiu para o castelo alienígena, lançando-se sobre as flores.  The ground belted
-        past his heels.  The castle inched up the horizon.  Ele gostaria de um cavalo, mas nenhum cavalo
+        Nosso intrépido Doutor partiu para o castelo alienígena, lançando-se sobre as flores.
+        O chão passou por seus calcanhares.  O castelo aparecia gradativamente no horizonte.  Ele desejave ter um cavalo garanhão, mas nenhum cavalo
         apareceu.  E foi assim que ele descobriu que o planeta não leria sua mente e não responderia seus
         pedidos.
 
@@ -14,7 +14,7 @@
 
 
         Um dia questionando o maestro de órgão, ele rascunhou o seguinte código Ruby numa folha
-        de papel cor-de-queijo.  (E cheiros estranhos de queijo estão vindo de algum lugar,
+        de papel cor-de-queijo.  (E cheiros estranhos de queijo estavam vindo de algum lugar,
         eu não posso dizer onde.)
 
 
@@ -45,7 +45,7 @@
         O código descreve como um certo *objeto* vai funcionar.
 
 
-        Cada manhã, o fazedor de pedidos arts out with up to five wishes available for granting.
+        Toda manhã, o fazedor de pedidos  inicia com até cinco pedidos disponíveis para serem concedidos.
         Um novo @FazedorPedidos@ é criado quando o sol levanta.
 
 
@@ -54,18 +54,18 @@
         </pre>
 
 
-        O método @new@ é um método de classe que um novo, objeto em branco.  Ele também o chama o método
-        @initialize@ do objeto automaticamente.  Na definição do @FazedorPedidos,@ você vai ver o método
+        O método @new@ é um método de classe que cria um novo, objeto em branco.  Ele também chama o método
+        @initialize@ (inicializar) do objeto automaticamente.  Na definição do @FazedorPedidos@ , você vai ver o método
         @initialize@, que contém uma única linha de código: @@energia = rand( 6 )@.
 
 
         O @rand( 6 )@ sorteia um número entre 0 e 5.  Este número vai representar quantos pedidos
-        ainda restam no dia.  Então, occasionalmente não haverão pedidos disponíveis do fazedor de
+        ainda restam no dia.  Então, ocasionalmente não haverá pedidos disponíveis do fazedor de
         pedidos.
 
 
         O número aleatório é dado à uma *variável de instância* de nome @@energia@.
-        Esta variável instância vai estar disponível a qualquer por entre a classe.  A variável
+        Esta variável de instância estará disponível a qualquer momento por toda a classe.  A variável
         não pode ser usada fora do *escopo* da classe.
 
 
@@ -77,21 +77,21 @@
 
         No caso acima, cada fazendor de pedidos para o dia tem seu próprio nível de energia.  Se o fazendor de pedidos
         fosse uma máquina, você talvez veria um medidor nele que marca a energia restante.
-        A variável de instância @@energia@ age como esse medidor.
+        A variável de instância @@energia@ agirá como esse medidor.
 
 
         <pre>
          pedidos_do_dia = FazedorPedidos.new
-         pedidos_do_dia.realize( "galhada" )
+         pedidos_do_dia.realize( "chifres" )
         </pre>
 
 
-        Okay, volte um pouco e tenha certeza de entender o exemplo aqui.  A classe @FazedorPedidos@ é a planta
-        que elaboramos para como toda a mágica dos pedidos funciona.  Não é o _realmente_ o gênio na lâmpada,
+        Ok, dê um passo atrás e tenha certeza de entender este exemplo aqui.  A classe @FazedorPedidos@ é a base
+        que elaboramos de como toda a mágica dos pedidos funciona.  Não é o _realmente_ o gênio na lâmpada,
         é a papelada por trás das cenas.  São as regras e obrigações em que o gênio vive.
 
 
-        O @pedidos_do_dia@ é o gênio da lâmpada.  E aqui estamos dando um pedido pra a ser realizado.
+        É o @pedidos_do_dia@ que é o gênio da lâmpada.  E aqui estamos dando um pedido a ser realizado.
         Nos dê uma galhada, gênio.  (Se você realmente arranjar uma galhada neste exemplo, eu nem quero saber.
         Vá saltitar em campinas verdes com seus amigos.)
 
@@ -115,55 +115,55 @@
          numero = 5
          print numero.next                 # imprime '6'
 
-         frase = 'desejando uma galhada'
+         frase = 'desejando por chifres'
          print frase.length                # imprime '19'
 
          pedidos_do_dia = FazedorPedidos.new
-         pedidos_do_dia.grant( "galhada" )
+         pedidos_do_dia.grant( "chifres" )
         </pre>
 
 
-        E, consequentemente, cada objeto tem uma classe atrás da cortina.
+        E, consequentemente, cada objeto tem uma classe nos bastidores.
 
 
         <pre>
          print 5.class                         # imprime 'Integer'
-         print 'desejando uma galhada'.class   # imprime 'String'
+         print 'desejando por chifres'.class   # imprime 'String'
          print FazedorPedidos.new.class        # imprime 'FazedorPedidos'
         </pre>
 
 
         Dr. Cham nunca viu o fazedor de pedidos enquanto desbravava a paisagem.
         Ele ficava bem além das terras dele, no vale de Sedna.  Penhascos cheios de
-        camadas de moitas, onde você pode jogar seus pedidos (escritos
-        num pequena nota 1" x 6"), down into the gaping void.  Com sorte ele vai pousar
-        nas costas de um lagarto, espetar naqueles chifrinhos pontiagudos dele.
+        porções de bosques, onde você podia jogar seus pedidos (escritos
+        num tirinha 1" x 6"), dentro do sumidouro.  Com sorte ele pousará
+        nas costas de um lagarto, espetando em seu chifrinho pontiagudo dele.
 
 
         E digamos que seu pedido chegue lá.  Bem, então, _descendo pela floresta contorcida_ vai a magra
-        salamandra, scurrying through the decaying churches which had been
-        *pushed* over that steep canyon ledge once and for all.  And the expired priest inside, _who
-        weathered the fall_ as well, will kill the little amphibian -- estrangula-lo até
-        a morte com uma corrente abençoada de ouro -- e guardar para as comemorações do _Conhecendo Seu_
-        Café-da-manhã.  Ele irá pisar no seu pequeno e precioso pedido e, quando os 
+        salamandra, correndo através das igrejas descendentes que foram *empurradas*
+        para a íngreme base do desfiladeiro de uma vez por todas.  E o desfalecido padre dentro, _que
+        também resitiu a queda_, matará o pequeno anfíbio -- estrangulando-o até
+        a morte com uma corrente abençoada de ouro -- e guardá-lo para as comemorações do _Conhecendo Seu_
+        café da manhã.  Ele pisará no seu pequeno e precioso pedido e, quando os 
         *ladrões vierem*, aquele papel ainda estará lá, preso na sola do sapato dele.  Claro,
-        o *meio preferido de tortura* dos ladrões é cortar um padre em fnas deli-shaved slices _from
-        top to bottom_.  Who can cull evidence from that?  And when they chop that last thin
-        slice of shoe sole, they'll have that *rubber scalp* in hand for _good luck_ and _good times_.
-        But they *canoe* much too hard, these thieves.  They slap their paddles swiftly in the current
-        to get that great _outboard motor mist_ going.  But the shoe sole is _on a weak chain_, tied
-        to one man s belt.  And a *hairy old carp* _leaps, latches_ on to that minute fraction of
-        footwear.  And the thieves _can try_, but they don't see _underwater_.  If they could, they d
-        see that *mighty cable*, packed with millions of _needly_ fiber optics.  Indeed, *that fish is
-        a peripheral plugged* right into the _core workings_ of the planet Endertromb.  *All it takes
-        is one swallow* from that fish *and your wish is home free!*
+        o *meio preferido de tortura* dos ladrões é cortar um padre em finíssimas fatias _da cabeça
+        aos pés_.  Quem pode catar evidências disto?  E quando eles fatiam a última fatia da sola do
+        sapato, eles terão aquele *escalpo de borracha* nas mãos para _boa sorte_ e _bons tempos_.
+        Mas eles *canoam* com muita força, estes ladrões.  Eles batem seus remos rapidamente na corrente
+        para manter o grande _vapor do motor externo_ .  Mas a sola de sapato _está em uma cadeia fraca_, presa
+        ao cinto de um dos homens.  E uma *velha carpa cabeluda* _salta, agarra_ esta fração de minuto
+        de calçado.  E os ladrões  _podem tentar_, mas eles não veem _embaido d'água_.  Se eles pudessem, eles veriam
+        aquele *cabo poderoso*, empacotado com milhões de _necessariamente_ fibras ópticas.  , *esse peixe é
+        um periférico conectado* direto ao _núcleo de trabalho_ do planeta Endertromb.  *Tudo que ele pega é
+        um gole* daquele peixe *e seu desejo está liberto!*
 
 
         E é assim que os pedidos das crianças se realizam neste lugar.
 
 
-        Depois que o instrutor de órgão da minha filha ter desenhado a classe para o fazendor de pedidos, 
-        ele continuou com uma classe para o leito de mentes do planeta.
+        Uma vez que o instrutor de órgão da minha filha tenha desenhado a classe para o fazendor de pedidos, 
+        ele continuou com uma classe para o leitor de mentes do planeta.
 
 
         <pre>
