@@ -182,78 +182,77 @@
 
 
         Como você já viu antes, o @initalize@ acontece quando um novo (new) objeto @LeitorMental@ é criado.
-        Este @initialize@ gathers scans the planet for mindshare.  Parece que as mentes
+        Este @initialize@ rastreia o planeta em busca das mentes.  Parece que as mentes
         estão guardadas em um array, já que há uma iteração nelas no final usando o método @collect.@
 
 
-        Ambos o fazedor de pedidos e o leitor mental referem-se a uma classe chamada @Endertromb@.  Esta classe está
+        Tanto o fazedor de pedidos e quanto o leitor mental referem-se a uma classe chamada @Endertromb@.  Esta classe está
         guardada em um arquivo @endertromb.rb@, que é carregado com o código: @require 'endertromb'@.
-        Você vai, muitas vezes, usar outras classes para realizar parte da sua tarefa.  Most of the latter half of this
-        book will explore the a grande variedade de classes úteis que podem ser carregadas no Ruby.
+        Você vai, muitas vezes, usar outras classes para realizar parte da sua tarefa.  Boa parte da metade restante
+        deste livro explorará a grande variedade de classes úteis que podem ser carregadas no Ruby.
 
 
         h3. Dr. Cham Arrisca Entrar
 
 
-        Mas assim que o Dr. Cham se aproximou do castelo, mesmo o planeta sabendo seus pensamentos, 
-        sentindo susensing hi
-        wonderment and anticipation, all Dr. Cham felt was deadness.  He tromped up the steps of its
-        open gate and through the entrance of the most beautiful architecture and was almost certain it
-        was deserted.
+        Mas assim que o Dr. Cham se aproximou do castelo, mesmo o planeta sabendo de seus pensamentos, 
+        sentindo sua supresa e antecipação, tudo que Dr. Cham sentiu era a morte. Ele subiu os degraus de seu portão
+        frontal, passou  através da da entrada de mais bela arquitetura e estava quase certo de que ele estava deserto.
 
 
-        For a while he knocked.  Which paid off.
+        Por um tempo ele bateu na porta.  O que foi recompensante.
 
 
-        !i/castle-1.jpg(Blocky whale greeting.)!
+        !i/castle-1.jpg(Baleia parruda saudando.)!
 
 
-        He watched the baby whale rise like a determined balloon.  He marvelled at his first alien introduction
-        and felt some concern that it had passed so quickly.  Well, he would wait inside.
+        Ele assistiu ao bebê baleia subir como um balão determinado.  Ele se maravilhou com sua primeira introdução alien
+        e sentiu alguma preocupação de que ela tenha passado  tão rapidamente. Bem, ele iria esperar lá dentro.
 
 
-        Assim que ele entrou pela porta do castelo, se sentiu com sorte pela porta não ter sido atendida por 
-        uma águia gigante com garras afiadas, ávida pra brincar.  Ou um cabeça de rato gigante.  Ou até mesmo um
-        furacão Or even a man-sized hurricane.  Somente uma pequena baleia rechonchuda choo-choo.
+        Assim que ele entrou pela porta do castelo, sentiu-se com sorte pela porta não ter sido atendida por 
+        uma águia gigante com garras afiadas, ávida por brincar.  Ou uma cabeça de rato gigante.  Ou até mesmo um
+        furacão ou mesmo um furacão do tamanho de um homem.  Somente uma pequena baleia choo-choo rechonchuda.
 
 
-        "Not a place to sit down in this castle," he said.
+        "Nenhum lugar para se sentar neste castelo," disse ele.
 
 
         À primeira vista, ele pensou ter entrado em um saguão escuro, mas assim que seus olhos se ajustaram, ele viu
-        que a entrada se extendia em um túnel.  A porta do castelo seu abriu bem em uma passagem feita de pedaços 
-        longos, e planos de rocha.  Algumas partes eram congruentes e lembravam um corredor.  Outras partes 
-        eram estreitas, e até se inclinadas, o fim sumia de vista.
+        que a entrada se extendia em um túnel.  A porta do castelo se abriu em uma passagem feita de pedaços 
+        longos e planos de rocha.  Algumas partes eram harmônicas e lembravam um corredor.  Outras partes 
+        eram estreitas e até inclinadas, o fim sumia de vista.
 
 
-        A passagem era iluminada por pequenas geladeiras sem portas, big enough to hold an armful of cabbage, 
-        down by his feet.  He peered inside one, which was hollow, illuminated along all sides, and
-        turning out ice shards methodically.
+        A passagem era iluminada por pequenas geladeiras sem portas, grandes o suficiente para guardar uma braçada de repolho, 
+        até os seus pés.  Ele olhou para dentro de um deles, que estava oco, iluminando por todos os lados, e
+        criando cacos de gelo metodicamente.
 
 
-        He pawed the ice chips, which clung dryly to his fingertips, and he scrubbed his hands in the
-        ice.  Which left some muddy streaks on his hands, mas satisfez um pouco sua saudade de um banho.
+        Ele tocou nos pedaços de gelo, que grudaram secamente em seus dedos. E ele então esfregou suas mãos no gelo.
+        O que deixou algumas linhas enlameadas em suas mãos, mas satisfez um pouco sua saudade por um banho.
         Quanto tempo já fazia?  Dez anos?  Trinta?
 
 
-        Pela passagem, longos tubos de tecido lotavam algumas seções.  Mais tarde, matéria brilhante feita de pixels em
-        vertedouros de porcelana e baldes.
+        Pela passagem, longos tubos de tecido lotavam algumas seções.  Mais tarde, matéria de pontos brilhantes em
+        conchas de porcelana e baldes.
 
 
         Ele caiu em uma sala que havia sido escavada ao lado do túnel e nela haviam alguns cascos de tartaruga vazios
-        no chão e uma grande parede iluminada.  He examinou a sala, perplexo.  O que seria isso?
-        Por um instante, ele pensou em sentar em um casco.  Isto poderia ser a entrada finalmente, algum
-        tipo de receiving room.  Por outro lado, aranhas poderiam sair dos buracos dos cascos quando ele sentasse.
+        no chão e uma grande parede iluminada.  Ele examinou a sala, perplexo.  O que seria isso?
+        Por um instante, pensou em sentar em um casco.  Isto poderia ser a entrada finalmente, algum
+        tipo de sala de recepção.  Por outro lado, aranhas poderiam sair dos buracos dos cascos quando ele sentasse.
         Ele seguiu viagem.
 
         
-        h3. Refeição no Bolso do Castelo
+        h3. Refeição no Bolso de um Castelo
 
 
-        As he journeyed along the passageways (for the central tunnel forked and joined larger, vacuous caverns), he picked up
-        themes in some locations.  Groups of rooms infested with pumping machinery.  Cloth and vats of glue
-        dominated another area.  He followed voices down a plush, pillowed cavity, which led him to a
-        dead end: a curved wall with a small room carved at eye-level.
+        A medida que continuava sua jornada por entre as passagens (pelo túnel central ramificavam e se juntavam grandes vazias cavernas),
+        ele escolheu temas em algumas localizações. Grupos de salas infestadas com maquinaria de bombeamento. Tecidos e barris de cola
+        dominavam outra área. Ele seguiu vozes que vinham de uma cavidade veludosa e macia como travesseiro, o que o levou para um lugar
+        sem saída: uma parede curvada com uma pequena sala entalhada no nível dos olhos.
+
 
 
         Ele se aproximou da parede e, dentro do buraco quadrado, estavam dois porcos-da-terra comendendo à mesa.
@@ -264,15 +263,15 @@
 
 
         "Olá, bonequinhos," ele disse, e eles terminaram suas mordidas e ficaram olhando com seus garfos
-        held aloof.
+        segurados à distância.
 
 
-        "Eu queria que minha sobrinha Hannah estive aqui para conhecê-los," disse ele aos atenciosos 
+        "Eu queria que minha sobrinha Hannah estivesse aqui para conhecê-los," disse ele aos atenciosos 
         porcos-da-terra. "Ela pensaria que vocês são um intricado show de ventriloquismo."  
-        He peered in at the dining area, shelves with sets of plates, hand towels.  
-        Half of a tiny rabbit was jutting out from the top a machine, creamy red noodles were spilling
-        out underneath it.  A door at the back of the room hung ajar.  Dr. Cham could
-        see a flickering room with chairs and whirring motors through the door.
+        Ele olhou para a área da refeição, empilhada como conjuntos de pratos, toalhas de mão.  
+        Metade de um pequeno coelhou sobresaia do topo da máquina, grãos vermelho cremosos estavam caindo
+        para baixo dele.  Uma porta no fundo da sala estava entreaberta.  Dr. Cham podia ver uma sala
+        cintilante com cadeiras e motores zunindo através da porta.
 
 
         "Toda criança gostaria desta casa de bonecas," ele disse.  "Hannah, minha sobrinha,
@@ -285,9 +284,9 @@
         sentou e olhou o Dr. Cham.
        
 
-        "But Hannah still reaches down into the dollhouse and collects all the imaginary yarn into a
-        bundle.  Which she takes to her mother, my sister, who is very good at humoring Hannah.
-        Ela costura um vestido no tamanho da boneca, o qual Hannah leva até a boneca.
+        "Mas Hanna ainda alcança lá no fundo da casa de boneca e pega todos os fios imaginários formando um maço.
+        Que ela leva para sua mãe, minha irmã, que é muito boa em deixar Hannah de bom humor.
+        Ela costura um vestido no tamanho da boneca, o qual Hannah leva até a boneca."
 
 
         "E ela diz à boneca,
@@ -302,16 +301,16 @@
         parede.  O atencioso porco-da-terra encarou o Dr. Cham parado.
 
 
-        "Seus filmes são coloridos," disse o Dr. Cham.  "What a lovely, little life."
+        "Seus filmes são coloridos," disse o Dr. Cham.  "Que vida pequena e amável."
 
 
         O filme exibido foi: um quadrado azul.  Aí, um círculo vermelho.  Aí, um quadrado laranja.  Os atenciosos
         porcos-da-terra se viraram, assistiram a tela virar um triângulo rosa, e ambos porcos-da-terra voltaram a comer.
 
 
-        Uma estrela roxa.  Um quadrado vermelho.  With quietness settling, Dr. Cham could hear notes droning
-        from the projector.  Like a slow, plodding music box trying to roll its gears along the train
-        tracks.
+        Uma estrela roxa.  Um quadrado vermelho.  Com o assentamento do silêncio, Dr. Cham podia escutar
+        notas zumbindo do projetor. Como uma lenta, lerda caixa de som tentando girar suas engrenagens ao longo
+        da linha de trem.
 
 
         "Sim, aproveitem o jantar," disse o Dr. Cham e educadamente se virou, marchando
@@ -333,10 +332,10 @@
 
         Mesmo sem ter absolutamente nenhuma maneira de saber onde ele estava, ele tinha certeza de ter saído
         dos limites do castelo.  Esta profundidade, este tanto de caminhada.  Já fazia uma hora desde que ele
-        adentrara a porta.  E, as the tunnel wound back up, he was sure that he would
-        emerge into a new dwelling, perhaps even a manhole which he could peek out from and see
-        the castle.  Talvez ele não devesse ter ido tão longe nessa rota.  Ele espera que nada esteja
-        hibernando aqui emabaixo.
+        adentrara a porta.  E, a medida que voltava no túnel, ele tinha certeza que emergeria em um
+        uma nova habitação, talvez até mesmo um buraco em que ele pudesse espiar para fora
+        e ver o castelo. Talvez ele não devesse ter ido tão longe nessa rota.  Ele espera que nada esteja
+        hibernando aqui embaixo.
 
 
         O túnel chegou ao fim.   Um escuro, fim sem saída.
@@ -345,23 +344,23 @@
         !i/dr.cham-4.gif(No fim dos túneis: um computador e um livro.)!
 
 
-        Ele tinha tempo.  Então ele leu o livro.  Ele leu sobre os raposos e sua perseguição ao porco-espinho que roubou
-        a caminhonete deles.  Ele leu sobre o elfo e o presunto.  Ele He saw the pictographs of himself and found he
-        could really relate to his own struggles.  Ele até aprendeu Ruby.  Ele viu como isso tudo termina.
+        Ele tinha tempo.  Então leu o livro.  Ele leu sobre os raposos e sua perseguição ao porco-espinho que roubou
+        a caminhonete deles.  Ele leu sobre o elfo e o presunto.  Ele viu os pictográfos dele mesmo e descobriu
+        que ele poderia realmente se relacionar com seu próprio esforço. Ele até mesmo aprendeu Ruby.  Ele viu como isso tudo termina.
 
 
-        Eu não teria estômago pra isso, no lugar dele.  Mas ele teve.  And he pledged in his bosom to see
-        things out just as they happened.
+        Eu não teria estômago pra isso, no lugar dele.  Mas ele teve.  E jurou em seu âmago que veria as coisas apenas
+        do jeito que elas aconteciam.
 
 
         No monitor do computador, o Dr. Cham viu o prompt do @irb@ piscando.  Assim como o Dr. Cham, você deve
-        reconhecer o prompt do @irb@ prompt do "O Colete Do Tigre":expansion-pak-1.html
+        reconhecer o prompt do @irb@ do "O Colete Do Tigre":expansion-pak-1.html
         (o primeiro pacote de expansão deste livro, que inclui uma introdução básica ao IRB - Interactive Ruby.)
 
 
         Assim como ele acabou de explorar os túneis a pé, agora ele explora as configurações da máquina com
-        a prompt.  Ele colocou o livro onde o encontrou.  Ele não precisava mais dele.  This was
-        all going to happen whether he used it or not.
+        o prompt.  Ele colocou o livro onde o encontrou.  Ele não precisava mais dele.  Isto tudo iria acontecer
+        mesmo se ele o usasse ou não.
 
 
         Ele começou com:
@@ -374,7 +373,7 @@
 
 
         Este comando lista as constantes de nível mais alto.  Classes são listadas como constantes também, 
-        então esta lista é ótima pra ver o que está carregado no ruby a qualquer momento.
+        então esta lista é ótima pra ver o que está carregado no Ruby a qualquer momento.
 
 
         Ele examinou a lista procurando algo não familiar.  Qualquer classe que não vem com o Ruby.
@@ -389,7 +388,7 @@
         </pre>
         
 
-        _Elevador?_  Exatamente o tipo de classe a se bisbilhotar.  Ele tinha onde irra.
+        _Elevador?_  Exatamente o tipo de classe a se bisbilhotar.  Ele tinha onde ir.
 
 
         <pre>
@@ -402,14 +401,14 @@
         </pre>
 
 
-        Parece que a classe @Elevator@ tem um monte de métodos.  A maioria deles parece
-        ser os mesmo métodos que todo objeto tem no Ruby.  Por exemplo,
+        Parece que a classe @Elevator@ tem um monte de métodos.  A maioria deles parecem
+        ser os mesmos métodos que todo objeto tem no Ruby.  Por exemplo,
         @method@, @freeze@ e @allocate@ vêm com toda classe no Ruby.  (@Elevador::freeze@
         não deixaria que a classe @Elevator@ seja alterada.  @Elevador::allocate@ criaria
         um novo objeto @Elevator@ sem chamar o método @initialize.@)
 
 
-        As @class_variables@ foram interessantes pro Dr. Cham.  Este elevador parece genuíno.
+        As @class_variables@ foram interessantes para Dr. Cham.  Este elevador parece genuíno.
         Mas sem @constantes@ disponíveis.  Isso nos diz que não há classes aninhadas dentro
         da classe @Elevator.@
 
@@ -431,7 +430,7 @@
 
  
         <pre>
-         irb> e = Elevador::new( "pra cima" )
+         irb> e = Elevador::new( "para cima" )
          AccessDeniedError: bad password
          irb> e = Elevador::new( "subindo" )
          AccessDeniedError: bad password
@@ -442,7 +441,7 @@
         </pre>
 
 
-        Aqui foi inútil.  _Oh, espere!_  A senha de manutenção.  Listada nas @class_variables@.
+        Isso foi inútil.  _Oh, espere!_  A senha de manutenção.  Listada nas @class_variables@.
 
 
         <pre>
@@ -453,7 +452,7 @@
         </pre>
 
 
-        Hmm.  Variáveis de intância só estão disponíveis dentro de um objeto.  E variáveis de classe só estão
+        Hmm.  Variáveis de instância só estão disponíveis dentro de um objeto.  E variáveis de classe só estão
         disponíveis dentro de uma classe.  Como conseguir aquela senha?
 
 
@@ -478,15 +477,15 @@
 
         Métodos de classe são geralmente chamadaos com os *dois pontos duplos*.  Mas, um ponto também serve.
         Já que @Elevador@ é uma classe por si só, Ruby vai entender que se você chama @Elevador.senha_manutencao@,
-        você está chamando um método de classe.  Os dois pontos duplo simplesmente ajudam a tornar métodos de classe óbvios
+        você está chamando um método de classe.  Os dois pontos duplos simplesmente ajudam a tornar métodos de classe óbvios
         para o leitor.
 
 
-        And justly so.  Métodos de classe são um pouco comuns.  Normalmente você não quer guardar informação
+        E justamente.  Métodos de classe são um pouco incomuns.  Normalmente você não quer guardar informação
         diretamente dentro de uma classe.  Contudo, se você tem um pedaço de informação que você precisa
-        compartilhar com todos os objetos de uma classe, ento você tem um bom motivo pra usar a classe como armazenamento.
-        É compreensível que a @@@senha_manutencao@ tenha sido armazenada na classe, invés de
-        cada objeto separado.  Deste modo, O objeto pode simplismente alcançar a classe e ver a senha
+        compartilhar com todos os objetos de uma classe, então você tem um bom motivo pra usar a classe como armazenamento.
+        É compreensível que a @@@senha_manutencao@ tenha sido armazenada na classe,  ao invés de em
+        cada objeto separado.  Deste modo, o objeto pode simplesmente alcançar a classe e ver a senha
         compartilhada.
 
 
@@ -515,7 +514,6 @@
 
 
         Dr. Cham estava parado lá quando as portas do elevador, atrás do terminal do computador,
-        se abriram pra ele.  With an exasperated sense of accomplishment and a good deal of excitement
-        surrounding all of the events that lie ahead, ele entrou no elevador e apertou o 4.
-
+        abriram-se para ele.  Com um exasperado senso de realização e uma grande quantidade
+        de entusiasmo por todos os eventos que se passaram, ele entrou no elevador e apertou o 4.
 
