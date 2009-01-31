@@ -5,8 +5,8 @@
         Mas isso não me impede de pensar no treinamento musical dela.
 
 
-        Enquanto essas histórias do planeta Endertromb eram relatadas a mim, eu me vi vagando
-        por corredores, passando as pontas dos meus dedos por sofás fortemente abotoados
+        Enquanto essas histórias do planeta Endertromb me eram relatadas, eu me vi vagando
+        por corredores, passando as pontas dos meus dedos por sofás fortemente atados
         e me envolvendo nos gritos saturados dos tubos, enquanto o instrutor de órgão da minha filha
         tocava.  Suas notas ressoavam tão ocas e profundas nas paredes de sua mansão
         que eu comecei a confundí-las com um silêncio nefasto, e achava ainda mais fácil
@@ -30,22 +30,22 @@
 
         Eu tinha me sentado ao órgão, ouvindo as histórias sobre sua colônia, enquanto ele acentuava suas
         sinfonias e as histórias desapareciam por um tempo, até que a melodia terminasse.
-        Ele falava sobre ele e seus irmãos sendo abraçados pela cauda de sua mãe e arrancando
+        Ele falava sobre si e seus irmãos sendo abraçados pela cauda de sua mãe e rasgando
         o tecido macio da parede interna.  Um sabão suculento, esponjoso e melado que limpou
-        suas bocas e esôfagos enquanto descia.  Eles mastigaram fortemente aquilo e espuma se formava.
+        suas bocas e esôfagos enquanto descia.  Eles mastigaram e roeram fortemente aquilo e espuma se formava.
         Depois de comer, eles sopraram bolhas uns sobre os outros, cada bolha cheia de uma espuma densa,
         sobre a qual eles dormiram.  E de manhã bem cedo, quando a mãe os soltava do abraço, ela observava
-        serenamente enquanto seus bebês dormiam em um ensopado de bolas de carne escuras e um molho doce e grudento.
+        serenamente enquanto seus bebês dormiam em um ensopado de almôndegas escuras e um molho doce e grudento.
 
         
         Ele soletrou todos os gostos de Endertromb.  Dos seus órgãos cor de salmão engomados, que se tornavam
         uma pasta quando cozidos, e seus olhos que derretiam e viravam um rico creme.  Das suas manteigocias com tentáculos.
         E ele estava apenas começando a apreciar essas delícias, ainda criança, para ser elevado de um
-        jardim de infância por um par de elefantes pigmeus que desçeram um enorme guindaste dos céus, e o ergueram
+        jardim de infância por um par de elefantes pigmeus que desceram um enorme guindaste dos céus, e o ergueram
         pela gola.
 
 
-        Eles o transplantaram para a Terra, o guiaram em seu ofício, tompeteando suas trombas alto para a cidade de
+        Eles o transplantaram para a Terra, o guiaram em seu ofício, trombeteando suas trombas alto para a cidade de
         Grand Rapids ouvir, então se foram, chorando e abraçando uns aos outros.
 
 
@@ -66,10 +66,10 @@
         Já que estou escrevendo de dia, o chamarei de Paij-ree aqui.
 
 
-        h3. Protetores de Ouvido Múrmurio-Free
+        h3. Protetores Auriculares Livres de Múrmurio
 
 
-        !>i/my.daughters.organ-1.gif(Alien at the keys.)!
+        !>i/my.daughters.organ-1.gif(Alien nas teclas.)!
 
 
         Então eu disse a Paij-ree, "Paij-ree, eu estou escrevendo um livro.  Para ensinar ao mundo Ruby."
@@ -80,15 +80,15 @@
 
 
         E eu disse, "Paij-ree, você está no livro.  E as estórias do seu planeta."  Eu falo com ele como
-        se ele fosse o E.T.  Eu não sei porquê. Como o que eu disse em seguida: "E daí talvez algum dia
-        você possa ir pra casa pro seu pai e pra sua mãe!"
+        se ele fosse o E.T.  Eu não sei por quê. Como o que eu disse em seguida: "E daí talvez algum dia
+        você possa ir para casa pro seu pai e pra sua mãe!"
 
 
         Ele replicou, "(pon-shoo) (pon-shoo) (em-pithy-dah)."  Que é o jeito dele de expressar em voz alta
         seu silêncio e receio.
 
 
-        Ele queria ver o que eu havia escrito, então eu mostrei a ele este pequeno método que escrevi pra você.
+        Ele queria ver o que eu havia escrito, então eu mostrei a ele este pequeno método que escrevi para você.
     
 
         <pre>
@@ -122,7 +122,7 @@
 
 
         <pre>
-        Mas, estranhamente , 
+        Mas, estranhamente, 
         Eu aprendi, toquei em órgãos no meu planeta
         natal.
         </pre>
@@ -133,15 +133,15 @@
 
 
         No método @limpar_murmurios_de@, estou basicamente procurando por abre parênteses.  Quando eu
-        encontro um, eu procuro um fecha parênteses na sequência.  Uma vez que tenha encontrado ambos, eu troco
-        eles e seu conteúdo por uma string vazia.  O loop @while@ continua até que todos os parênteses se acabem.
+        encontro um, eu procuro um fecha parênteses na sequência.  Uma vez que tenha encontrado ambos, eu os troco
+        e seu conteúdo por uma string vazia.  O loop @while@ continua até que todos os parênteses se acabem.
         Os murmúrios são removidos e o método termina.
 
 
         "Agora olhando este método," eu disse.  "Eu vejo que há alguns aspectos confusos 
         e outras coisas que eu poderia ter feito melhor."  Por favor não me olhe estranho por seu professor 
         ter escrito este código.  Eu acho certo lhe mostrar algumas técnicas desleixadas 
-        pra te ajudar a trabalha-las comigo.  Vamos lá.
+        para lhe ajudar a trabalhá-las comigo.  Vamos lá.
 
 
         Okay, *Aspecto confuso No. 1*: Este método limpa uma string.  Mas e se nós acidentalmente
@@ -158,36 +158,36 @@
         </pre>
 
 
-        O que você vê aqui ere is a rather twisted and verbose (mas noutras vezes muito útil) amiguinho
-        chamado de o *depurador*.  He's a wound-up policeman who, ao menor sinal de problema,
+        O que você vê aqui é um amiguinho especialmente tortuoso e verboso (mas às vezes muito útil) 
+        chamado *depurador*.  Ele é um policial nervoso, ao menor sinal de problema,
         imediatamente apreende todo e qualquer suspeito, os põe contra a parede e lê os direitos deles
         tão rapidamente que ninguém consegue ouvir tudo.  Mas está claro que há um problema.
         E, é claro, tudo não passou de um mal entendido, certo?
 
 
-        Quando o Ruby ler pra você esses direitos de Miranda, preste atenção no começo.  A primeira linha
-        é quase sempre tudo que você precisa.  Nessa primeira linha está contido a mensagem essencial.  E ali
+        Quando o Ruby ler para você esses direitos de Miranda, preste atenção no começo.  A primeira linha
+        é quase sempre tudo que você precisa.  Nessa primeira linha está contida a mensagem essencial.  E ali
         em cima, a primeira linha está nos dizendo que não há método @include?@ para o número 1.
         Lembra, quando estávamos conversando sobre o método @reverse@ no capítulo anterior?  Naquela hora, eu disse,
         "*vários métodos só estão disponíveis com certos tipos de valores*."  Ambos @reverse@ e
-        @include?@ são métodos que funcionam com strings mas são sem sentido e indisponíveis para números.
+        @include?@ são métodos que funcionam com strings mas não têm sentido e são indisponíveis para números.
 
 
-        Pra deixar claro: o método tenta usar o número.  O método vai iniciar com @frase@ valendo 1.
+        Sendo mais claro: o método tenta usar o número.  O método vai iniciar com @frase@ valendo 1.
         Então, ele chega na segunda linha: @while frase.include? '('@.  Números não têm método @include?@.
         Maravilha, o depurador nos mostrou onde o problema está.  Eu não esperava que alguém fosse passar
         um número, então estou usando métodos que não funcionam com números.
 
 
-        *Viu, é só isso.*  Nosso método é seu próprio bolso de ferramentas, certo?  Ele age como seu próprio
-        widget independente de todo o resto.  Pra todos por aí usando o método @limpar_murmurios_de@,
-        se eles passarem um número, será atirado pra eles esta mensagem de pânico que não faz
-        sentido pra eles.  Eles serão convidados a bisbilhotar o método, o que realmente não é
+        *Viu, é só isso.*  Nosso método é sua própria ferramenta de bolso , certo?  Ele age como seu próprio
+        widget independente de todo o resto.  Para todos por aí usando o método @limpar_murmurios_de@,
+        caso a eles seja passado um número, será atirado para eles esta mensagem de pânico que não lhes faz
+        sentido.  Eles serão convidados a bisbilhotar dentro do método, o que realmente não é o
         trabalho deles.  Eles não sabem como se virar lá dentro.
 
 
-        Felizmente, nós podemos inserir nossos próprios erros, nossas próprias *exceções*, o que pode fazer mais
-        sentido a algum desavisado que dê um objeto errado pra ser limpo.
+        Felizmente, nós podemos acionar nossos próprios erros, nossas próprias *exceções*, o que pode fazer mais
+        sentido a algum desavisado que dê um objeto errado para ser limpo.
 
 
         <pre>
@@ -216,9 +216,9 @@
 
 
         O método @respond_to?@ é realmente bacana e eu imploro que você nunca se esqueça dele.
-        O @respond_to?@ checa qualquer objeto para garantir que nele contém um determinado método.  Ele então retorna
+        O @respond_to?@ checa qualquer objeto para garantir que ele contém um determinado método.  Ele então retorna
         com @true@ o @false@.  No caso acima, é checado se o objeto @frase@ recebido contém algum método
-        @include?@.  Se nenhum método @include?@ for encontrado, então causamos o erro.
+        @include?@.  Se nenhum método @include?@ for encontrado, então disparamos o erro.
 
 
         Você deve estar pensando por que eu usei um símbolo com o @respond_to?@.  Eu usei um símbolo @:include?@
@@ -226,8 +226,8 @@
 
 
         Geralmente símbolos são usados quando você está passando o nome de um método ou qualquer outro construtor.
-        É mais eficiente, chama mais atenção.  O @respond_to?@ pergunta ao Ruby to look inside itself
-        and see if a method is available.  Estamos conversando com o Ruby, então o símbolo helps denote that.
+        É mais eficiente, chama mais atenção.  O @respond_to?@ pergunta ao Ruby para olhar a si mesmo e ver
+        se um método está disponível.  Estamos conversando com o Ruby, então o símbolo ajuda a denotar isto.
         Não é grande coisa, Ruby só reconhece símbolos mais rapidamente que strings.
 
 
@@ -235,13 +235,13 @@
 
 
         <pre>
-         algo_dito = "Uma (gith) espaçonave."
+         algo_dito = "Uma espaçonave (gith)."
          limpar_murmurios_de( algo_dito )
          print algo_dito
         </pre>
 
 
-        Você notou isso?  Na primeira linha do código acima, a variável @algo_dito@
+        Você percebeu isso?  Na primeira linha do código acima, a variável @algo_dito@
         contém a string @"Uma espaçonave (gith)."@.  Mas, depois de invocar o método, na terceira
         linha, nós imprimimos a variável @algo_dito@ e nesse momemento ela contém a string limpa
         string @"Uma  espaçonave."@.
@@ -256,9 +256,9 @@
         é um *método destrutivo*, que modifica strings diretamente?
 
 
-        Ou nós chamamos este método de @limpar_murmurios_de!@ (cortesia a todos os colegas bacanas
+        Ou nós chamamos este método de @limpar_murmurios_de!@ (como cortesia a todos os colegas bacanas
         por aí que podem vir a usar este método) ou modificar o método para trabalhar em uma cópia
-        da string invés da coisa real.  O que é uma modificação muito fácil!  Nós só precisamos dar
+        da string ao invés da coisa real.  O que é uma modificação muito fácil!  Nós só precisamos dar
         um @dup@ na string.
 
 
@@ -287,21 +287,21 @@
         </pre>
 
 
-        Que linha de código peculiar.  Como que @frase@ vira uma cópia de @frase@?
+        Que linha de código peculiar.  Como @frase@ vira uma cópia de @frase@?
         Ela se apaga?  O que acontece com a @frase@ original?  Ela desaparece?
 
 
-        Lembre que variáveis são como apelidos.  Quando você vê @frase = "Uma (gith) espaçonave."@,
-        você o Ruby criando uma string e então dando um apelido a essa string.
+        Lembre que variáveis são como apelidos.  Quando você vê @frase = "Uma espaçonave (gith)."@,
+        você vê o Ruby criando uma string e então dando um apelido a essa string.
 
 
         Do mesmo modo, quando você vê @frase = frase.dup@, você ve o Ruby criando uma nova string e então
-        dando um apelido a essa string.  Iso é útil dentro do seu método porque agora @frase@ é
-        um pelido para uma nova cópia da string que você pode usar seguramente *sem modificar a string
-        que foi passada pro método*.
+        dando um apelido a essa string.  Isso é útil dentro do seu método porque agora @frase@ é
+        um apelido para uma nova cópia da string que você pode usar seguramente *sem modificar a string
+        que foi passada ao método*.
 
 
-        Você vai ver muitos exemplos de nomes de variáveis seudo reusados.
+        Você verá muitos exemplos de nomes de variáveis sendo reusados.
 
 
         <pre>
@@ -319,9 +319,9 @@
         </pre>
 
 
-        E, sim, algumas vezes objetos desaparecem.  *Se você não consege pegar um objeto por uma váriavel, então
+        E, sim, algumas vezes objetos desaparecem.  *Se você não consegue chegar em um objeto por uma váriavel, então
         o Ruby vai entender que você já terminou com ele e vai se livrar dele.*  Periodicamente, o Ruby envia seu 
-        *garbage collector (coletor de lixo)* pra libertar estes objetos.  Todo objeto é mantido na memória do 
+        *coletor de lixo (garbage collector)* para libertar estes objetos.  Todo objeto é mantido na memória do 
         seu computador até que o coletor de lixo se livre dele.
 
 
