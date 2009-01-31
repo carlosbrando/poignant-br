@@ -13,7 +13,7 @@
         têm um método @[]@.
 
 
-        Quando usadas numa string, as chaves vão extrair parte daquela string.  Mais uma vez,
+        Quando usadas em uma string, as chaves vão extrair parte daquela string.  Mais uma vez,
         espaço para as pás da empilhadeira. A string é como uma longa prateleira e a empilhadeira
         tira os pedaços da string.
 
@@ -29,7 +29,7 @@
          puts str[0..-1]   # imprime 'Uma string é uma longa prateleira de letras e espaços.'
          puts str[1..-2]   # imprime 'ma string é uma longa prateleira de letras e espaços'
          puts str[1, 3]    # imprime 'ma '
-         puts str['prateleira'] # imrpime 'shelf'
+         puts str['prateleira'] # imprime 'shelf'
         </pre>
 
 
@@ -65,7 +65,7 @@
 
 
         Por que o método trava?  Bem, o loop @while@ espera até que todos os parênteses abertos se 
-        acabem antes de parar de looping.  E ele só modifica um parêntese aberto que tenha um par parêntese fechado.
+        acabem antes de parar de rodar.  E ele só modifica um parêntese aberto que tenha um par parênteses fechado.
         Então, se nenhum parêntese fechado é encontrado, o parêntese aberto não será modificado
         e o @while@ nunca ficará satisfeito.
 
@@ -85,24 +85,24 @@
         </pre>
 
 
-        Dê o seu melhor quando pensar nos seus loops.  É muito fácil especialmente pros loops @while@ e @until@
+        Dê o melhor de si quando pensar nos seus loops.  É muito fácil, especialmente para os loops @while@ e @until@
         saírem do controle.  Melhor usar um iterador.  E nós chegaremos em expressões regulares na hora certa.
 
 
         Resumidamente, aqui está o que aprendemos sobre escrever métodos:
 
 
-        # Não se surpreenda se as pessoas passarem objetos inesperados pros seus métodos.
-        Se você não pode maneira algum usar o que te deram, @raise (cause)@ um erro.
+        # Não se surpreenda se as pessoas passarem objetos inesperados aos seus métodos.
+        Se você não pode usar de jeito nenhum o que lhe deram, @raise (cause)@ um erro.
 
         # É falta de educação mudar objetos que são dados aos seus métodos.  Use @dup@ para
         fazer uma cópia.  Ou encontre um método como @gsub@ que automaticamente faz a cópia
         enquanto faz o seu serviço.
 
         # As chaves podem ser usadas para procurar partes dentro de qualquer objeto @Array@, @Hash@ ou @String@,
-        já que estes objetos provém um método @[]@.  E também, já que este objetos provém um método @[]=@,
-        as chaves podem ser usadas pra assignment (do lado esquerdo do sinal de igual) to
-        change the parts of those objects.
+        já que estes objetos provêm um método @[]@.  E também, já que estes objetos provêm um método @[]=@,
+        as chaves podem ser usadas para atribuição (do lado esquerdo do sinal de igual) para
+        mudar partes destes objetos.
 
         # Cuidado com loops fujões.  Evite @while@ e @until@ se você puder.
  
@@ -117,7 +117,7 @@
         o homem que caíra do céu.  Seu nome era Doug e ele vendia gatos.
 
 
-        Então, assim que deu pra vê-lo, quando sua sombra (e as sombras dos gatos amarrados aos seus
+        Então, assim que ele aparecer, quando sua sombra (e as sombras dos gatos amarrados aos seus
         pés) entrou na frente do passáro no gramado que nós estávamos tentando acertar com uma raquete, 
         enquanto ele retirava o hélio do grande balão, nós gritamos, "Olá, Doug!"
 
@@ -125,9 +125,9 @@
         E ele diz, "Olá, Gonk-ree!  Olá, Why!"
 
 
-        Paij-ree checa os bolsos pra ter certeza que ele tem o real-e-vinte-sete que vai precisar pra comprar
-        comprar os três gatos que ele necessita pra manter a fornalha abastecida e a parabólica virando. Estes
-        gatos geram montes de eletricidade estática quando Paij-ree os joga no gerador, onde eles esetarão em
+        Paij-ree checa os bolsos para ter certeza que tem o real-e-vinte-sete que vai precisar para
+        comprar os três gatos que precisa para manter a fornalha abastecida e a parabólica virando. Estes
+        gatos geram montes de eletricidade estática quando Paij-ree os joga no gerador, onde eles estarão em
         inferioridade numérica a gigantes bastões de vidro, que os acariciam continuamente-- Mas, espere!  
         Você reparou como o corretor de gatos chamou ele de Gonk-ree?
 
@@ -155,8 +155,8 @@
                'plo'  => 'PM' }
            ]
 
-           # Um método pra determinar o que
-           # signfica certos nomes dele.
+           # Um método para determinar o 
+           # signficado de certos nomes dele.
            def significado_do_nome
              partes = self.split( '-' )
              silabas = @@silabas.dup
@@ -170,7 +170,7 @@
         </pre>
 
 
-        Agora eu fui bem mais além do que te mostrar apenas código banal.  Houve aqui uma grave libertinagem 
+        Agora eu fui bem mais além do que lhe mostrar apenas código banal.  Houve aqui uma grave libertinagem 
         e um crime contra a natureza.  Um crime que a maioria das linguagens não permitiriam que você cometesse.  
         Nós estamos mudando a @String@, *uma das classes do núcleo do Ruby*!
 
@@ -179,8 +179,8 @@
         "Eu espero que ninguém se machuque."
 
 
-        "Todo cara palida deve experimentar o que esse (kep-yo-iko) perigo faz," ele disse.  "Dogs and logs
-        and swampy bogs (kul-ip), all must be tasted."  E ele deu uma golada no seu drink de pântano Beagle Berry.
+        "Todo cara pálida deve experimentar o que esse (kep-yo-iko) perigo faz," ele disse.  "Cachorros e lenhas
+        e areia movediça (kul-ip), todos devem ser experimentados."  E ele deu uma gole no seu drink de pântano Beagle Berry.
 
 
         Então o que é que eu estou adicionando à classe @String?@  Duas coisas: uma variável de classe e
@@ -273,13 +273,13 @@
 
         Costumo dizer que a propriedade do Paij-ree é um charmoso pedaço de floresta quando não está chovendo gatos e Doug.
         Por vários dias, Paij-ree e eu acampamos em tendas perto do rio atrás da casa dele, subsistindo de
-        fumaça de turdus e retalhando indiozinhos adormecidos ao por do sol.  Em uma ocasião ele perdeu no
+        fumaça de turdus e retalhando indiozinhos adormecidos ao pôr do sol.  Em uma ocasião ele perdeu no
         carteado e eu sabia que sua mente estava distraída, pensando em Endertromb.  Tudo isso deve estar
         remoendo nele por algum tempo já.  Eu fui o primeiro confidente que ele tivera.
 
 
-        "Acabei de vir de Ambrose," Eu disse.  "Sort of my own underground home, a place where elves
-        strive to perfect animals."
+        "Acabei de vir de Ambrose," Eu disse.  "É tipo minha segunda casa adotiva, um lugar onde elfos
+        aspiram a ser animais perfeitos."
 
 
         Ele resmungou e balançou a cabeça.  "Você não pode ser (poth-in-oin) parte (in) em coisas assim."
