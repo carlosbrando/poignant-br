@@ -33,8 +33,8 @@
         </pre>
 
 
-        Tudo bem, o último *Aspecto Confuso No. 4*: este método pode ser enviado a um loop sem fim.
-        Você pode dar uma string para este método que vai fazer com que ele trave e nunca mais volte.
+        Tudo bem, o último *Aspecto Confuso No. 4*: este método pode ser enviado a um loop interminável.
+        Você pode dar uma string para este método, o que fará com que ele trave e nunca mais volte.
         Dê uma olhada no método.  Você consegue jogar um graveto que trave o loop?
 
 
@@ -65,7 +65,7 @@
 
 
         Por que o método trava?  Bem, o loop @while@ espera até que todos os parênteses abertos se 
-        acabem antes de parar de rodar.  E ele só modifica um parêntese aberto que tenha um par parênteses fechado.
+        acabem antes de parar de rodar.  E ele só modifica um parêntese aberto que tenha um par parêntese fechado.
         Então, se nenhum parêntese fechado é encontrado, o parêntese aberto não será modificado
         e o @while@ nunca ficará satisfeito.
 
@@ -113,7 +113,7 @@
         !>i/my.daughters.organ-2.gif(Vendedor de gatos do espaço.)!
 
 
-        Imediatamente ouve-se um sussuro nas árvores atrás da casa do Paij-ree e acabou que era
+        Imediatamente ouve-se um sussurro nas árvores atrás da casa do Paij-ree e acabou que era
         o homem que caíra do céu.  Seu nome era Doug e ele vendia gatos.
 
 
@@ -135,7 +135,7 @@
         E ele o chama de Gonk-ree de dia e Gonk-plo de noite.
 
 
-        Então o sufixo é definitivamente relacionado à luz do sol.  Até onde eu sei, o prefixo indica
+        Então o sufixo é definitivamente relacionado à luz do sol.  Até onde sei, o prefixo indica
         a relação de quem chama o Paij-ree.
 
         
@@ -230,7 +230,7 @@
 
 
         Ruby é uma linguagem de definição imbatível.  Uma discussão suculenta e de rachar a cuca estará no seu caminho
-        mais fundo no livro.
+        nas profundezas deste livro.
 
 
         Na maioria das vezes você não precisa usar @self@ explícitamente, já que você pode chamar métodos
@@ -256,9 +256,9 @@
 
 
         O Array @partes@ contém o nome separado.  @['Paij', 'plo']@, por exemplo.  Estamos iterando por
-        cada item naquele Array com @collect@.  Mas @collect@ vai uma passo a frente ao que o @each@ faz.  Assim
-        como @each@, collect joga cada item pela calha como uma variável de bloco.  E aí, ao término do 
-        block, @collect@ *mantém a resposta que o block dá e a adiciona em um novo Array*.  O método 
+        cada item naquele Array com @collect@.  Mas @collect@ vai um passo a frente em relação ao que o @each@ faz.  
+        Assim como @each@, @collect@ joga cada item pela calha como uma variável de bloco.  E aí, ao término do 
+        bloco, @collect@ *mantém a resposta que o bloco dá e a adiciona em um novo Array*.  O método 
         @collect@ é o jeito perfeito de se fazer um novo Array que é baseado em itens de um Array existente.
 
 
