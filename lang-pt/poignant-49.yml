@@ -15,34 +15,34 @@
         "Que tal assistirmos um filme e você pode comer mantegocias com tentáculos?" disse a cabra.
 
 
-        Então, rumaram de volta ao projetor da cabra.  Back by the freezer locker,
-        they sat on a giant rug and broke off the appendages of frozen buttermelons.  A casca
-        era dura, mas depois de quebrada, rico creme de frutas em abundância.  Doce ao paladar e
-        de um aroma muito agradável.
+        Então, rumaram de volta ao projetor da cabra.  De volta para ao compartimento do congelador,
+        eles se sentaram em um tapete gigante e quebraram alguns apêndias de mantegocias congeladas.
+        A casca era dura, mas depois de quebrada, havia um rico creme de frutas em abundância.
+        Doce ao paladar e de um aroma muito agradável.
 
 
         "Primeiro filme, que você tem que ver," disse a cabra.  "Filmado e produzido localmente.  Eu
-        sou íntimo da moça que dirigiu o elenco.  Saí com ela por um tempo.  Sabia de todo
-        que acontecia quem ia protagonizar diferentes papéis muito antes que fosse anunciado."
+        sou íntimo da moça que dirigiu o elenco.  Saí com ela por um tempo.  Sabia de todos
+        que iriam protagonizar diferentes papéis muito antes que fosse anunciado."
 
 
         A cabra ajeitou o projetor perto do Dr. Cham.  "A música tá em surround sound.
-        Você pode operar o botão."
+        Você pode ajustar no botão."
 
 
-        !i/filmstrip-1.gif(The Originals and their lonesome planet.)!
+        !i/filmstrip-1.gif(Os Originais e Seu Planeta Deprimente.)!
 
 
-        A mente do Dr. Cham vagou nesse ponto da apresentação, just as the land war
-        mounted between the two throngs of animal settlers.  The details of their wars
-        and campaigns continued to consume the spool of transparent film that Dr. Cham
-        was feeding through the projector.  
+        A mente do Dr. Cham vagou nesse ponto da apresentação, bem a medida que a guerra
+        aumentava entre as duas multidões de animais colonizadores. Os detalhes de suas
+        guerras e campanhas continuavam a consumir o carretel de filme transparente que
+        Dr. Cham alimentava através do projetor.
 
 
         Guerra após guerra após guerra.  O Cerco do Elmer Lake.  A Última Estada de Newton P. Giraffe
-        e Filhos.  A Invasão Canil da Pequena Núvem Abandonada.  Nenhum animal morreu nessas guerras. 
-        Gerlamente um ataque consistia em ost often an attack consisted of bopping another
-        animal on the head.  And they philipped each other s noses.  Mas, acredite em mim,
+        e Filhos.  A Invasão Canil da Pequena Nuvem Abandonada.  Nenhum animal morreu nessas guerras. 
+        Geralamente um ataque consistia em dar um tapinha na cabeça de outro animal.
+        E eles davam petelecos nos narizes uns dos outros.  Mas, acredite em mim,
         aquilo era humilhante.
 
 
@@ -52,7 +52,7 @@
         h3. O Nascimento de um Objeto
 
 
-        "Não se preocupe," disse a cabra, ansiosa pra dissuadir a atenção do Dr. Chams 
+        "Não se aflija," disse a cabra, ansiosa para dissuadir a atenção do Dr. Cham 
         de volta ao filme.  "As coisas _dão_ certo."
 
 
@@ -65,12 +65,12 @@
 
 
         O menor que indica *herança*.  Isto significa que a nova classe @UrsoTostado@
-        é um nova classe baseada na classe @Objeto@.  Todo método que @Objeto@ tem vai estar
-        disponível na @UrsoTostado@.  Constantes disponíveis em @Objeto@ vão estar disponíveis em
+        é um nova classe baseada na classe @Objeto@.  Todo método que o @Objeto@ tem estará
+        disponível na @UrsoTostado@.  Constantes disponíveis em @Objeto@ estarão disponíveis em
         @UrsoTostado@.
 
 
-        Mas todo objeto é herdeiro de @Object@.  O código...
+        Mas todo objeto herda de @Object@.  O código...
 
 
         <pre>
@@ -87,20 +87,20 @@
 
 
         Herança é útil.  Você pode criar espécies de objetos que se relacionam entre si.
-        Quase sempre, quando você está dissecando um problema, você vai se deparar com vários objetos que
+        Quase sempre, quando está dissecando um problema, você se deparará com vários objetos que
         compartilham atributos.  Você pode ter menos trabalho herdando de classes que já solucionam
         parte desse problema.
 
 
         Você pode ter uma classe @BrasilEndereco@ que guarda o endereço, cidade, estado,
-        e cep de alguém que more no Brasil.  Quando você começar a guardar endereços
+        e CEP de alguém que more no Brasil.  Quando você começar a guardar endereços
         da Inglaterra, você pode adicionar uma classe @ReinoUnidoEnderecos@.  Se você então
-        garantir que os dois endereços herdem de uma classe mãe @Endereco@, você pode
+        garantir que os dois endereços herdam de uma classe mãe @Endereco@, você pode
         planejar seu software de correspondência de modo que aceite todo tipo de endereço.
 
 
         <pre>
-         def envie_a_eles_um_kit( endereco )
+         def envia_lhes_um_kit( endereco )
            unless endereco.is_a? Endereco
              raise ArgumentError, "Objeto Endereco não encontrado."
            end
@@ -109,10 +109,10 @@
         </pre>
  
 
-        Além disso, herança é ótimo se você quer sobreescrever certos comportamentos numa classe.
+        Além disso, herança é ótimo se você quer sobrescrever certos comportamentos numa classe.
         Por exemplo, talvez você queira fazer a sua própria variação da classe @Array@.
-        Você quer melhorar o método @join@.  Mas se você mudar @Array#join@ diretamente, você
-        vai afetar outras classes no Ruby que usam Arrays.
+        Você quer melhorar o método @join@.  Mas se você mudar @Array#join@ diretamente,
+        afetará outras classes no Ruby que usam Arrays.
 
 
         Então você começa sua própria classe chamada @MeuArray@, que é baseada na classe @Array@ original.
@@ -132,7 +132,7 @@
 
 
         @MeuArray@ é agora uma classe @Array@ customizada com o seu próprio método @join@.  @Array@ é
-        a *superclass (classe-superior, classe-mãe)* do @MeuArray@.  Cada objeto tem um método @superclass@ 
+        a *superclasse (classe-superior, classe-mãe)* do @MeuArray@.  Cada objeto tem um método @superclass@ 
         onde você pode verificar esta relação.
 
 
@@ -142,8 +142,8 @@
         </pre>
 
 
-        Perfeito.  Nós administramos um hotel e nós temos uma @Array@ dos tamanhos dos nossos quarots: @[3, 4, 6]@.
-        Vamos imprimir isso de um jeito bacana pra encadenarmos.
+        Perfeito.  Nós administramos um hotel e nós temos uma @Array@ dos tamanhos dos nossos quartos: @[3, 4, 6]@.
+        Vamos imprimir isso de um jeito bacana para encadernarmos.
 
 
         <pre>
