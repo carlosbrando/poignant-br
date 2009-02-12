@@ -10,10 +10,10 @@
         'pickup' é pesquisada na string @line@.
 
 
-        !i/wixl-13.gif(On being funny.)!
+        !i/wixl-13.gif(Sobre ser legal.)!
 
 
-        Quando uma web page é carregada com @read@, toda a página é carregada na memória. Normalmente
+        Quando uma página web é carregada com @read@, toda a página é carregada na memória. Normalmente
         isso ocupa somente alguns kbytes. Mas se a página é grande (vários megabytes), é melhor usar
         @each_line@, que carrega uma linha de cada vez, evitando ocupar toda memória.
 
@@ -21,7 +21,7 @@
         h3. Yielding é como blocos de montar 
 
 
-        Ruby frequentemente usa iterators dessa forma. Sim, iterators são usados para percorrer cada um
+        Ruby frequentemente usa iteradores dessa forma. Sim, iteradores são usados para percorrer cada um
         dos itens de uma collection, como um Array ou um Hash. Então, olhe para uma fonte de IO como uma
         coleção de linhas. O iterator pode percorrer essa coleção de linhas.
 

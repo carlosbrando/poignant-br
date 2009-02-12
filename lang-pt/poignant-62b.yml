@@ -4,10 +4,10 @@
 
 
         Você já aprendeu o bastante sobre @OpenURI@ e @yield@ para escrever os seus próprios
-        iterators. Você já sabe como usar o serviço de achados e perdidos. Na verdade, você já
+        iteradores. Você já sabe como usar o serviço de achados e perdidos. Na verdade, você já
         pode começar a se aventurar nos achados e perdidos de Wixl sem mim.
 
-        Vamos _encapsular_ elegantemente todo o serviço numa única classe.
+        Vamos _encapsular_ elegantemente todo o serviço em uma única classe.
 
         
         <pre>

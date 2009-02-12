@@ -3,10 +3,10 @@
         a esta altura do campeonato."
 
 
-        "Bem, Warren Beatty é maravilhoso.  Sua personagem é basicamente socialmente aleijada.  Ele
+        "Bem, Warren Beatty é maravilhoso.  Seu personagem é basicamente socialmente aleijado.  Ele
         até tenta se matar, mas Dustin Hoffman senta no peitoril da janela e começa a chorar
-        e cantar uma música totalmente hilária, é de partir o coração.  Eu tenho ele aqui,
-        você devia assistí-lo."
+        e cantar uma música totalmente hilária. É de partir o coração.  Eu tenho ele aqui,
+        você deveria assistí-lo."
 
 
         "Posso pegar algo para comer?" perguntou o Doutor.  E ainda se sentia sujo.
@@ -21,7 +21,7 @@
         Doce ao paladar e de um aroma muito agradável.
 
 
-        "Primeiro filme, que você tem que ver," disse a cabra.  "Filmado e produzido localmente.  Eu
+        "Primeiro filme, você tem que ver," disse a cabra.  "Filmado e produzido localmente.  Eu
         sou íntimo da moça que dirigiu o elenco.  Saí com ela por um tempo.  Sabia de todos
         que iriam protagonizar diferentes papéis muito antes que fosse anunciado."
 
@@ -65,7 +65,7 @@
 
 
         O menor que indica *herança*.  Isto significa que a nova classe @UrsoTostado@
-        é um nova classe baseada na classe @Objeto@.  Todo método que o @Objeto@ tem estará
+        é baseada na classe @Objeto@.  Todo método que @Objeto@ tem estará
         disponível na @UrsoTostado@.  Constantes disponíveis em @Objeto@ estarão disponíveis em
         @UrsoTostado@.
 
@@ -86,8 +86,8 @@
         </pre>
 
 
-        Herança é útil.  Você pode criar espécies de objetos que se relacionam entre si.
-        Quase sempre, quando está dissecando um problema, você se deparará com vários objetos que
+        Herança é uma comodida.  Você pode criar espécies de objetos que se relacionam entre si.
+        Frequentemente, quando está dissecando um problema, você se deparará com vários objetos que
         compartilham atributos.  Você pode ter menos trabalho herdando de classes que já solucionam
         parte desse problema.
 
@@ -155,14 +155,14 @@
         Que imprime, "Nós temos quartos de 3 camas, 4 camas, 6 camas disponíveis."
 
 
-        Dr. Cham estava procurando por um banheiro, mas só tinham videotapes pra todo lado.
-        Ele acabou encontrando um lugar, que poderia ser um banheiro.  Tinha um vaso de metal.
-        Mas mais importante, era escuro e escondido.
+        Dr. Cham estava procurando por um banheiro, mas só tinham videotapes arquivados para todo lado.
+        Ele acabou encontrando um lugar, que poderia ser um banheiro.  Tinha um recipiente metálico.
+        Mais importante que isso, era escuro e escondido.
         
 
-        Enquanto ele está lá, deixe-me dizer que enquanto Os Originais massacraram Os Invasores
-        para provar seus diretois como Criaturas de Primeiro Escalão, o Objeto Ruby Object não 
-        disputou nada. Ele é rei absoluto, Objeto o Primeiro.
+        Enquanto ele está lá, deixe-me acrescentar que enquanto Os Originais massacraram Os Invasores
+        para provar seus diretois como Criaturas de Primeiro Escalão, com o Objeto Ruby, não existe
+        tal disputa. Ele é o rei Objeto absoluto, o Primeiro.
 
 
         Observe.
@@ -181,19 +181,20 @@
 
 
         Até @Classe@ é um @Objeto@!  Veja, mesmo as classes sendo linguagem de definição para objetos,
-        nós ainda podemos chamar métodos de classe nelas e tratá-los como objetos ocasionalmente.  
-        Pode parecer um círculo confuso, but it s truly a very strict parentage.  E garante que quando você
+        nós ainda podemos chamar métodos de classe nelas e tratá-las como objetos ocasionalmente.  
+        Pode parecer um círculo estonteante, mas é verdadeiramente uma descendência bastante clara.  
+        E garante que quando você
         altera o @Object@, você altera *tudo no Ruby*.  O que é impossivelmente assustador e todo-poderoso
-        e cataclísmico e incrível!  *Ruby não te restringe, minha irmã, meu irmão!* 
+        e cataclísmico e incrível!  *Ruby não lhe restringe, minha irmã, meu irmão!* 
 
 
         Entre @Class@ e @Object@, você vê @Module@?  Se @Object@ é o rei, o pai de todas
-        as outras partes do Ruby, então @Module@ é uma pobre e raquítica freira, abrigando
-        e protengendo todos as suas pequeninas crianças camponesas.  (Pra completar a analogia:
+        as outras partes do Ruby, então @Module@ é uma pobre e frágil freira, abrigando
+        e protegendo todos as suas criancinhas Ruby da cidade.  (Para completar a analogia:
         @Class@ é a professora da escola da vila e @Kernel@ é o auto-proclamado importante coronel.)
 
 
-        O motivo da existência do @Module@ é dar comida e abrigo a código.  Métodos
+        O motivo da existência do @Module@ é dar comida e abrigo ao código.  Métodos
         podem ficar abrigados embaixo da manta do @Module@.  @Module@ pode conter classes, 
         constantes e variáveis de qualquer tipo.
 
@@ -202,8 +203,8 @@
 
 
         "Isso é tudo que ele faz!!" Eu replico, mostrando as palmas da mão na maior expressão
-        de futilidade conhecida pelo homem.  "Agora me escute -- pois não me repetirei -- essa 
-        Mãe Módulo Superior deu a estes pobres objetos um lugar pra morar!!"
+        de futilidade conhecida pelo homem.  "Agora me escute -- pois nunca mais repetirei isso -- essa 
+        Mãe Módulo Superior deu a estes pobres objetos um lugar para morar!!"
 
 
         <pre>
@@ -211,13 +212,13 @@
          module AtenciosaSantaInes
 
            # Uma CONSTANTE repousa perto da porta.  Ótimo.
-           HOMEM_DESDENTADO_COM_GARFO = ['homem', 'garfo', 'exposed gums']
+           HOMEM_DESDENTADO_COM_GARFO = ['homem', 'garfo', 'chicletes expostos']
 
            # Uma Class está comendo, vivendo bem na cozinha.
            class CriancaGordaDeCera; end
 
-           # Um Método está se escondendo lá atrás no armário banana, Deus sabe porquê.
-           def timida_garota_com_cara_de_raposa; {'favor' => 'eu quero uma bolota de carvalho por favor'}; end
+           # Um Método está se escondendo lá atrás no armário banana, Deus sabe por quê.
+           def timida_garota_com_cara_de_raposa; {'por favor' => 'eu quero uma noz de carvalho por favor'}; end
 
          end
         </pre>
@@ -228,16 +229,16 @@
 
         <pre>
          >> AtenciosaSantaInes::HOMEM_DESDENTADO_COM_GARFO
-         => ["homem", "garfo", "exposed gums"]
+         => ["homem", "garfo", "chicletes expostos"]
          >> AtenciosaSantaInes::CriancaGordaDeCera.new
-         => #<AtenciosaSantaInes::FatWaxyChild:0xb7d2ad78>
+         => #<AtenciosaSantaInes::CriancaGordaDeCera:0xb7d2ad78>
          >> AtenciosaSantaInes::instance_methods
          => ["timida_garota_com_cara_de_raposa"]
         </pre>
 
 
-        Lembre-se sempre que um @Module@ é somente um hotel.  Um teto sob as cabeças deles.  Ele não é uma
-        auto-consciente @Classe@ e,  portanto, não pode ser trazida à vida com @new@.
+        Lembre-se sempre que um @Module@ é somente um hotel.  Um teto sobre suas cabeças.  Ele não é uma
+        auto-consciente @Classe@ e,  portanto, não pode ser trazido à vida com @new@.
 
 
         <pre>
@@ -247,16 +248,16 @@
         </pre>
 
 
-        Santa Inês deu a própria vida pra cuidar desses pedaços de código desesperados.
+        Santa Inês deu a própria vida para cuidar desses pedaços de código desesperados.
         Por favor.  Não tire isso dela.
 
 
-        Se, todavia, você quer roubar da Santa Inês, eu posso te ajudar.
-        Você pode arrumar um grande mosteiro pra engrupir o ministério da @AtenciosaSantaInes@ e daí
-        o quê sobrará pra ela?
+        Se, todavia, você quer roubar da Santa Inês, eu posso lhe ajudar.
+        Você pode arrumar um grande mosteiro para confinar o ministério da @AtenciosaSantaInes@ e então
+        o quê sobrará para ela?
 
 
-        Para isso você pode usar @extend@, que vai puxar todos os métodos do módulo pra dentro de uma classe ou um objeto.
+        Para isso você pode usar @extend@, que puxará todos os métodos do módulo para dentro de uma classe ou um objeto.
 
 
         <pre>
@@ -272,15 +273,15 @@
 
 
         Você deve admitir.  O velho mosteiro pode ser comprado um zilhão de vezes e a pequena garota-com-cara-de-raposa
-        _ainda_ estará nos fundos no armário banana esperando uma bolota de carvalho!  Que pena que não podemos alimentá-la.
+        _ainda_ estará nos fundos no armário banana esperando uma noz de carvalho!  Que pena que não podemos alimentá-la.
         Ela é um método sem argumentos.
 
 
-        When Dr. Cham came out refreshed, the filmstrip was a bit behind.  Mas a cabra não notou,
+        Quando Dr. Cham retornou renovado, a tira de filme estava um pouco atrasada.  Mas a cabra não notou,
         então o Doutor avançou alguns quadros até fazer algum sentido.
 
 
-        !i/filmstrip-2.gif(The goats that told a planet it was ugly.)!
+        !i/filmstrip-2.gif(A cabra que disse ao planeta que ele era feio.)!
 
 
         Então os invasores deixaram o planeta.
@@ -300,124 +301,125 @@
         "Eu acho."
 
 
-        !i/filmstrip-3.gif(The spool ends.)!
+        !i/filmstrip-3.gif(O cilindro termina.)!
 
 
-        "Tá tudo errado!" disse a cabra.  "Não é assim que o filme termina!
+        "Está tudo errado!" disse a cabra.  "Não é assim que o filme termina!
         Não teve sangue!  O que aconteceu?  O que aconteceu?  Você apertou o botão errado, idiota?"
 
 
-        "Bem, eu não sei," disse o Dr. Cham.  Ele girou o botão pra frente e pra trás.
-        Tapped the lens.
+        "Bem, eu não sei," disse o Dr. Cham.  Ele girou o botão para frente e para trás.
+        Deu um tap na lente.
 
 
-        "Cheque a fita!  Cheque a fita!"
+        "Cheque o filme!  Cheque o filme!"
 
 
         Dr. Cham tirou um pedaço do filme do alimentador do projetor, derretido e pingando
-        nas pontas.
+        nas extremidades.
 
 
         "Maldição!  Estes projetores são de qualidade!  Nunca vi isso acontecer.  Não pode ser."
 
 
-        h3. Caçando Por uma Voz
+        h3. Caçando Uma Voz
 
 
-        "Eu não acho que tenha sido o projetor," disse o Dr. Cham.  "Alguma coisa vôou pela tela
-        e proferiu and uttered a blistering moan."
+        "Eu não acho que tenha sido o projetor," disse o Dr. Cham.  "Alguma coisa voou pela tela
+        e proferiu um gemido furioso."
 
 
-        "Eu não tenho nenhuma cópia deste filme," disse melancólicamente a cabra.  "E aquela garota.  A diretora
+        "Eu não tenho nenhuma cópia deste filme," disse melancolicamente a cabra.  "E aquela garota.  A diretora
         de elenco.  Eu nunca mais a verei novamente."
 
 
-        Dr. Cham stood up and looked over the dumpy aisles of magnetic carnage, searching.
+        Dr. Cham levantou-se e olhou para os largos corredores de carníficina magnética, procurando.
 
 
         "Oh, ei, você deveria chamar aquela garota," a cabra continuou. "Você poderia conversar com ela, chegar
         a um consenso.  Diga a ela sobre mim.  Não aja como se fosse meu amigo, só, você sabe, 'Oh, aquele cara?
-        Eh, que bobalhão.'"
+        Eh, mas que bobalhão.'"
 
 
         Dr. Cham mirou a porta e saiu.
 
 
-        Os corredores eram todo um outro mundo bagunçado.  Nos arquivos da cabra, as prateleiras estavam 
-        reviradas. No corredor, tudo fora do lugar.  Pias caíam pelo teto.  
+        Os corredores eram todos um outro mundo de bagunça.  Nos arquivos da cabra, as estantes estavam 
+        desarrumadas. No corredor, as estantes estavam completamente tortas.  Pias caíam pelo teto.  
         O Doutor se aventurou por baixo dos escombros, chutando compensados de madeira quando necessário.
 
 
         "Você não deveria estar aqui fora," disse a cabra.  "Você está na propriedade de outra pessoa aqui.
         Um casal de elefantes pigmeus são donos disso tudo.  Eles são sujeitos maus.  Vão te dar uma surra
-        com seus corpanzis.  They ball it up and just whack ya."
+        com suas trombas.  Elas as enrolam e simplesmente dão porrada."
 
 
-        Dr. Cham tirou um arquivo do seu caminho, que vazou a fina parede, e então o chão
+        Dr. Cham tirou um arquivo do seu caminho, que caiu por uma frágil parede, e então pelo chão
         do cômodo ao lado.  E eles o ouviram caindo por vários andares depois.
 
 
-        "Eu estou tentando lembrar como isso acontece no livro," disse o Dr. Cham, enquando andava ligeiramente
-        pelo hall.  "Aquela neblina leitosa que se arrastava pela projeção. Nós encontramos aquela coisa."
-        Ele tentou uma maçaneta, ela se quebrou. orged pela porta e desapareceu lá dentro.
+        "Eu estou tentando lembrar como isso acontece no livro," disse o Dr. Cham, enquanto andava ligeiramente
+        pelo hall.  "Aquela neblina leitosa que varreu a projeção. Nós encontramos aquela coisa."
+        Ele sacudiu uma maçaneta, quebrou-a. Vagorosamente, passou pela porta e lá desapareceu.
 
 
         "Você tem o dom de destruir as coisas com um chute, não tem?" disse a cabra.  "Paredes, portas."
-        A cabra chifrou a parede The goat headbutted a wall.  The wall shuddered and then laid still.
+        A cabra chifrou a parede ao estilo Zidane.  A parede estremeceu e então permaneceu em silêncio.
 
 
-        Então, tudo ficou calado.  E escuro.
+        Então, tudo ficou calado.  E sombrio.
 
 
-        A cabra ficou firme no sombrio corredor, esperando Dr. Cham revirar algumas mesas e emergir,
+        A cabra ficou firme no gélido corredor, esperando Dr. Cham revirar algumas mesas e emergir,
         pronto pra continuar a partir do cômodo que ele estava.  Mas o Dr. Cham não voltou, e a cabra optou
-        por compartilhar um momento com os destroços negligenciados pelo seus vizinhos.  Not that he could see at all.
-        He could only hear the occassional rustling of the piles of invoices and carbon copy masters and
-        manila envelopes when he shifted his legs.
+        por compartilhar um momento com os destroços negligenciados deixados por seus vizinhos.  Não que ela
+        pudesse velos de verdade. Ela podia apenas escutar os susurros ocasionais das pilhas de faturas, cópias
+        mestre de papel carbono e envelopes manilha quando deslocava suas pernas.
 
 
-        The ground seemed to buckling right under the goat, as if the heaps of kipple around him were
-        beginning to slide toward his weight.  He would be at the center of this whirlpool of elephant
-        documentation.  Would he die of papercuts first?  Or would he suffocate under the solid burial
-        by office supplies?
+        O chão parecia entortar-se bem perto da cabra, como se as pilhas de tralhas ao seu redor estivessem
+        começando a deslizar em direção a seu peso.  Ele estaria no centro deste redemoinho de documentação
+        elefantística. Morreria ele primeiro pelos cortes causados pelo papel? Ou ele ficaria sufocado sob
+        o sólido funeral de suprimentos de escritório?
+        
 
-
-        Um luz suave, no entenado, pairou sobre ele.  Um luz prateada, flutuante.  Não, era uma -- eram tesouras?
-        As tesouras crescerams grew into a shimmering cluster of intellegent bread, each slice choking on glitter.
-        But, no, it was hands.  E um chápeu de Páscoa.
+        Uma luz suave, no entanto, pairou sobre ele.  Uma luz prateada, flutuante.  Não, era uma -- eram tesouras?
+        As tesouras cresceram em um cintilante agrupamento de pão inteligente, cada fatia sufocada de glitter.
+        Mas, não, eram mãos.  E um chápeu de Páscoa.
 
 
         !i/hannah-1.gif(A cabra sozinha no corredor, conhece uma aparição.)!
 
 
-        Em outro cômodo, Dr. Cham parou silenciosamente sobre o limpo vidro.  O teto abruptamente ficou
-        transparente, then starlight washed over his pants and jacket.  He walked further to
-        the room's center in muted colors, lit as softly as an ancient manuscript in its own box at
-        the museum.  More stars, more cotton clusters of fire, unveiled as he came across the floor.
-        And it peeked into view soon enough, he expected it to be larger, but it wasn't.
+        Em outro cômodo, Dr. Cham parou silenciosamente sobre o vidro claro.  O teto abruptamente ficou
+        transparente, então a luz das estrelas cobriu suas calças e jaqueta. Ele andou adiante até
+        o centro do cômodo em cores escuras, iluminado tão suavemente quanto um manuscrito antigo em
+        sua própria caixa em um museu. Mais estrelas, mais grupos de algodão em chamas, apareciam a 
+        medida que ele vinha pelo chão. E ele apareceu na visão logo em seguida, ele esperava que fosse
+        maior, mas não era.
 
 
         Terra.  Como um ovo colorido, ainda fresco.  Ele sentiu longas cordas de violoncelo cantando
-        como que na sua espinha.  How could that be called Peoplemud?  Here was a vibrant and grassy
-        lightbulb.  The one big ball that had something going for it.
+        como que na sua espinha.  Como podiam chamá-la de Pessoasenlameadas? Aqui estava uma lâmpada
+        vibrante e gramada. Aquela grande bola em que tinha algo acontecendo para ele.
 
 
         Ele pensou nas Chacretes.  Realmente, ele sentia saudade das Chacretes.  Que boas dançarinas
-        elas eram.  Ele chegou a gritar algo pras Chacretes quando as viu.  Algo muito observador
-        e lisonjeiro.
+        elas eram.  Ele chegou a gritar algo para as Chacretes quando as viu.  Algo muito submisso
+        e bajulador.
 
 
-        Oh, sim, enquanto As Chacretes giravam, braço com braço, ele gritara, "Círculos Concêntricos!"
+        Oh, sim, enquanto As Chacretes giravam, braço com braço, ele gritara, "Círculos concêntricos!"
         Ninguém prestou atenção. 
         
 
-        E esse pensamento foi o bastante pra alimentar o complexo de superioridade do Dr. Cham.  Ele fez um sorriso
-        de pateta e deu alguns passos pra trás.  Ele sentiu verdadeiramente a sua genialidade na tal frase.
-        To realize the simplicity of a circle was his.  Ele refletiu sobre isso
+        E esse pensamento foi o bastante para alimentar o complexo de superioridade do Dr. Cham.  Ele fez um sorriso
+        de pateta e deu alguns passos para trás.  Ele sentiu verdadeiramente a sua genialidade em tal frase.
+        Ela estava no fato dele perceber a simplicidade de um círculo.  Ele refletiu sobre isso
         por todo o caminho de volta ao corredor.
 
 
-        O que eu acho ótimo.  Adore-se quando você tiver algum tempo.
+        O que eu acho ótimo.  Adore-se quando você tiver um segundo.
 
  
         !i/hannah-2.gif(O Doutor conehce esse fantasma.)!
@@ -427,23 +429,22 @@
 
 
         Por alguns momentos, eles ficaram se entreolhando.  Tempo bastante
-        pra que ambos o Dr. Cham e a cabra pensassem: _Oh, sim.  Hannah
-        nos causa muitos aborrecimentos.  Ela já está falando sobre donuts de bordo._
+        para que ambos o Dr. Cham e a cabra pensassem: _Oh, sim.  Hannah
+        nos causa muitos aborrecimentos.  Ela já está falando sobre rosquinhas de bordo._
 
 
-        "Ela sempre começa falando sobre donuts de bordo assim na lata?" perguntou a cabra.
+        "Ela sempre começa falando sobre rosquinhas de bordo assim na lata?" perguntou a cabra.
 
 
-        "Sim, ela faz isso," disse o Doutor.  "She brings it up to you, then
-        she brings it up to me.  Ela vê um donut de bordo em algum lugar -- Eu não me
-        lembro muito bem onde."
+        "Sim, ela faz isso," disse o Doutor.  "Ela traz isso para você, depois ela traz para mim.
+        Ela vê uma rosquinha de bordo em algum lugar -- Eu não me lembro muito bem onde."
 
 
-        "Eu to vendo um donut de bordo de verdade?" Hannah disse.  "Eu preciso de um de verdade."
+        "Eu estou vendo uma rosquinha de bordo de verdade?" Hannah disse.  "Eu preciso de uma de verdade."
 
 
         "Okay, okay," disse a cabra.  "Sim, eu lembro: agora é a parte que ela diz
-        que se ela conseguir um donut de bordo de verdade, ela será uma pessoa real novamente.
+        que se ela conseguir uma rosquinha de bordo de verdade, ela será uma pessoa real novamente.
         Porque o real destino dela era ter uma padaria e você arruinou isso
         e agora ela está condenada a ser um fantasma."
 
@@ -452,10 +453,10 @@
 
 
         "É terrível que tenhamos que fazer essa cena inteira denovo," disse
-        o Doutor.  "Os donuts não são materiais.  Eles devem ser todos deixados de fora."
+        o Doutor.  "As rosquinhas não são materiais.  Elas devem ser todas deixadas de fora."
 
 
-        "Cara, eu to tendo _problemas_ pra lembrar tudo desse capítulo," disse a cabra.
+        "Cara, estou tendo _problemas_ para lembrar tudo desse capítulo," disse a cabra.
         "Eu nem me lembro como sair desse corredor.  Eu devo ter lido
         aquele livro tipo trinta vezes.  Nós entramos destruindo uma parede?   Nós
         gritamos até que alguém nos ache?"
@@ -475,10 +476,10 @@
 
 
         "Oh, com certeza. O porco-espinho é definitivamente quem eu quero conhecer," disse a
-        cabra.  "Eu me pergunto o quê ele vai fazer com todo aquele dinheiro depois que o livro terminar."
+        cabra.  "Eu me pergunto o quê ele fará com todo aquele dinheiro depois que o livro terminar."
 
 
-        Dr. Cham acenou respeitosamente.  "Estou doido pra ver ele de chinelos."
+        Dr. Cham acenou respeitosamente.  "Estou doido para ver ele de chinelos."
 
 
         "Aqueles chinelos infernais!" disse a cabra e gaguejou grosseiramente, um banho
@@ -487,9 +488,9 @@
 
         A mente de Hannah estava chacoalhando, perturbada, esperando que essas tolices cesassem
         por um momento.  Ela inclinou sua cabeça de lado e o chocalho deslizou junto da curva de
-        seu crânio.  O barulhinho sumiu, embora, a medida que a parte de trás de sua cabeça desaparecia
-        (_vazava_ é como ela chamava isso) e então a sua cabeças
-        estava novamente com seu pequeno chocalho e ela se encontrou fazendo
+        seu crânio.  De qualquer modo, o barulhinho sumiu, a medida que a parte de trás de sua 
+        cabeça desaparecia (_vazava_ é como ela chamava isso). Então a sua cabeça
+        estava novamente com seu pequenino chocalho e ela se encontrou fazendo
         mais uma vez aquele indiscreto gemido.  *HRRRRRR-RRR-OH-RRRR-RRRR.*
 
 

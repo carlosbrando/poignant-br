@@ -7,14 +7,16 @@
         na Rubylândia e eu gostaria que você fizesse uma escolha educada.
 
 
-        *1.8.6* é a última versão *estável* do Ruby. Versões estáveis oferecem as últimas características
+        *1.8.7* é a última versão *estável* do Ruby. Versões estáveis oferecem as últimas características
         que foram amplamente testadas e são recomendadas para o uso geral. Quando novas versões estáveis 
         saírem, você seguramente poderá atualizar para estas novas versões.
 
 
-        *1.9.1* é a última liberação de *desenvolvimento* do Ruby.  A liberação de desenvolvimento inclui
+        *1.9.1* é o última lançamento de *desenvolvimento* do Ruby.  A liberação de desenvolvimento inclui
         mudanças experimentais para o Ruby e problemas não corrigidos.  Esta liberação é para qualquer pessoa que quiser
-        dar uma espiada no futuro do Ruby com o risco de encontrar alguns erros.
+        dar uma espiada no futuro do Ruby com o risco de encontrar alguns erros. A versão 1.9.1 (Release Candidate 1)
+        é a primeira versão de produção do Ruby 1.9.
+   
 
 
         Agora, você poderá notar que o número da versão inclui três números individuais,

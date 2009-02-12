@@ -1,15 +1,15 @@
     - >
-        "Todos esses escritos nos nuvens são conversa de cervos?" disse Raposinho.
+        "Todos esses escritos nas nuvens são conversa de cervos?" disse Raposinho.
 
 
         "Ajudem-me!  _Onde vocês estão, caras?_"  Raposão abaixou-se através de uma tempestuosa
-        arenga formada por uma densa ondulada fumaça e moitas afiadas.  Ele girou em todas direções,
+        lengalenga formada por uma densa ondulada fumaça e moitas afiadas.  Ele girou em todas direções,
         "Alguém grite se estiver aí!"
 
 
-        Ele procurou por uma fenda na densa matéria, penteando para frente com suas mãos. As eloquentes,
+        Procurou por uma fenda na densa matéria, penteando para frente com suas mãos. As eloquentes,
         furiosas nuvens responderam-no espetando-o para adiante, forçando-o para cantos apertados em
-        suas breves pausas entre as frases. Ele ficou num sumidouro e manteve sua cabeça baixa a medida
+        suas breves pausas entre as frases. Ele ficou em um sumidouro e manteve sua cabeça baixa a medida
         que as cascatas de fumaça agitavam-se adiante.
 
 
@@ -23,15 +23,9 @@
         "Sim," disse Blix.  "E este cara era eu."  Blix alcançou seu ombro e juntou-se a uma espiral
         de fumaça que girava acima de sua cabeça.  "Você apenas tem que saber quais nuvens são fracotes
         e quais são pomposas". Blix deixou a nuvem puxá-lo e quando a nuvem voou para cima, Blix perdeu
-        seua apoio e manteve seus pés movendo vagarosamente ao longo do chão.  "Vê, está aqui é uma das boas,
+        seu apoio e manteve seus pés movendo vagarosamente ao longo do chão.  "Vê, está aqui é uma das boas,
         longa como um cabo de vassoura.  Um cara descobriu uma uma vez que tinha a forma _exatamente_ igual
         a de um carro: pára-brisa, airbags laterais para o motorista, direção hidráulica. "
-        Blix reached over his shoulder and latched onto
-        a spiral column of smoke that was twisting just above his head.  "You just have to know
-        which clouds are wimpy and which clouds are grandiloquent."  Blix let the cloud pull him along
-        and when the cloud banked upwards, Blix loosed his grip and kept his feet moving slowly
-        along the ground.  "See, here's a good one, long like a broom handle.  A guy found one once
-        and it was shaped _exactly_ like a car: windshield, driver's side airbag, power steering.
         Excepcional!"
 
 
@@ -46,18 +40,18 @@
         _Eu fico em pé no meu jetski._ É igualzinho a isso."
 
 
-        Raposão lançou-se sobre uma fumaça descendente, chacoalhando sua frase, cuja letras se
+        Raposão lançou-se sobre uma fumaça descendente, chacoalhando sua frase, cujas letras se
         descolaram e se espalharam pelo chão com palavras embaralhadas, mas ele tinha apenas
         sucedido em alcançar as partes depressivas das correspondências dos cervos, que se
-        manifestavam como uma úmida e opaca névoa 
+        manifestavam como uma úmida e opaca névoa.
 
 
         Enquanto isso, sua contraparte pequena agarrou um estreito trem de fumaça que passava sob
-        seu braço.  Ele foi aerotransportado e gritou, *Tallyho!*  Mas ele se segurou muito firmemente
-        e a nuvem evaporou sob seu braço e o enviou de volta ao chão com um pequeno salto 
+        seu braço.  Ele foi aerotransportado e gritou, *Tallyho!*  Mas se segurou muito firmemente
+        e a nuvem evaporou sob seu braço e o enviou de volta ao chão com um pequeno salto.
 
 
-        Dado que você está apenas começando seu uso de Ruby, você pode não ter entendido completamente
+        Dado que está apenas começando seu uso de Ruby, você pode não ter entendido completamente
         as expressões regulares (ou _regexps_) de início.  Você pode até mesmo se encontrar recortando
         as regexps da "Biblioteca de Expressões Regulares":http://regexlib.com/DisplayPatterns.aspx e
         colando-as no seu código sem ter a mínima idéia de porque a expressão funciona. Ou _se_ ela funciona!
@@ -82,12 +76,12 @@
 
 
         Expressões Regulares são uma mini-linguagem construída dentro do Ruby e muitas outras linguagens de programação.
-        Eu, na verdade não deveria dizer _mini_, já que regexps podem ser complicadas e tortuosas e muit mais difíceis
+        Eu, na verdade não deveria dizer _mini_, já que regexps podem ser complicadas e tortuosas e muito mais difíceis
         que qualquer programa Ruby.
 
 
         Usar expressões regulares é extremamente simples. É como o Cervo: fazer fumaça é um processo árduo.
-        Mas forças seus ombros sobre a fumaça e direcionar-se para o Weinerschnitzel para pegar um pretzel de 
+        Mas forçar seus ombros sobre a fumaça e direcionar-se para o Weinerschnitzel para pegar um pretzel de 
         cachoro quente e mostarda é fácil.
 
 
@@ -100,7 +94,7 @@
 
 
         O método @String#match@ é o _uso prático mais simples_ das regexps.  O método @match@
-        cheaca para ver se a string se adequa as regras dentro da regexp.  Uma regexp só é útil
+        checa para ver se a string se adequa as regras dentro da regexp.  Uma regexp só é útil
         com strings, para testar strings por uma série de condições. Se as condições são atendidas,
         um objeto @MatchData@ é retornado.  Caso contrário, você terá @nil@.
 
@@ -122,7 +116,7 @@
 
 
         Isto não é muito diferente do código que usamos anteriormente para linhas com a palavra "caminhão". Anteriormente
-        usamos @puts linha if linha['caminhao']@, o que é na verdade um jeito mais simples de se procurar numa string, se
+        usamos @puts linha if linha['caminhao']@, o que é na verdade um jeito mais simples de se procurar dentro de uma string, se
         você está procurando apenas por uma simples palavra.  A regexp @/caminhao/@ é idêntica.  Encontre a palavra "caminhao".
         Em qualquer lugar da string.
 
@@ -135,9 +129,9 @@
         </pre>
 
 
-        As *classes dos caracteres* são as seções cercadas por *colchetes*.  Cada caracteres de classes dá uma lista
+        As *classes dos caracteres* são as seções cercadas por *colchetes*.  Cada classe de caractere dá uma lista
         de caracteres que são compatíveis para este lugar.  (O primeiro lugar é compatível tanto um @C@ maiúsculo
-        quanto um @c@ minúsculo.  O segundo lugar é compatíveil com um @A@ ou um @a@. E assim por diante.)
+        quanto um @c@ minúsculo.  O segundo lugar é compatível com um @A@ ou um @a@. E assim por diante.)
         
 
         Mas um jeito mais simples de escrever isso é assim:
