@@ -12,16 +12,16 @@
 
 
         Escavador Dosh é uma espécie de Deus para eles.  Mas dez vezes mais
-        assustador.  Esse cara cava um túnel infinitamente profundo através do planeta
-        e sai morto.  Mas ele não está realmente morto.  Ele está realmente _um segundo_
+        assustador.  Esse cara cavou um túnel infinitamente profundo através do planeta
+        e saiu morto.  Mas ele não está realmente morto.  Ele está realmente _um segundo_
         atrás deles.  E ele come tempo.
 
 
-        É mais ou menos complicado, porque o Escavador Dosh mata totalmente as pessoas.  Mas
-        eu convido você a fazer o que ele diz, ele não é tão mal.  Talvez eu fale sobre isso
-        mais tarde.  É um tal de fala sobre dor, porque isso é tão assustador e ainda um dos
-        meus amigos realmente acredita em tudo isso.  Eu fico meio que chocado -- não que eu
-        esteja chorando, estou apenas surpreso.
+        É meio complicado, porque o Escavador Dosh mata totalmente as pessoas.  Mas
+        acho que se você faz o que ele diz, não é tão ruim.  Talvez eu fale sobre isso
+        mais tarde.  É tão doloroso falar sobre isso por ser algo tão assustador. Além disso, um dos
+        meus amigos realmente acredita em toda a coisa.  Eu fico meio que chocado -- não como se
+        estivesse chorando, mais como se estivesse engasgado.
 
 
         De qualquer forma, enquanto rezava, três números vieram para o pai do Paij-ree.
@@ -30,22 +30,22 @@
         Ele então se perguntou. "O que são esses números?"
 
 
-        E sua mente passou um pequeno vídeo clip dele vendendo todos os tipos de números.  E,
+        E sua mente passou um pequeno vídeo clipe dele vendendo todos os tipos de números.  E,
         por anos e anos, viajando e vendendo números.
 
 
-        E ele perguntou ao seu cérebro, "Pessoas comprarão números?"
+        E indagou ao seu cérebro, "Pessoas comprarão números?"
 
 
-        E seu cérebro disse, "Se eles comprarem os três números corretos, dê a eles um prêmio."
+        E seu cérebro disse, "Se comprarem os três números corretos, dê a eles um prêmio."
 
 
-        Pelo que ele mesmo imaginava um salto alto com um ski e jogando neve nas pessoas
-        presentes.  Não questione: ele seria um ícone.
+        Foi quando ele se imaginou saltando de uma rampa de ski e jogando presentes para as pessoas.
+        Sem dúvidas: ele seria um ícone.
 
 
-        Então ele foi e fez o que seu cérebro disse e vendeu números. O pai da loteria
-        simples consistia em três únicos números, retirados de um conjunto de 25 números.
+        Então ele foi e fez o que seu cérebro disse e vendeu números. A simples loteria do pai
+        consistia em três únicos números, retirados de um conjunto de 25 números.
 
 
         <pre>
@@ -98,7 +98,7 @@
         </pre>
 
 
-        Atributos são métodos empacotados para variáveis de instância (assim como
+        Atributos são métodos empacotadores (wrappers) para variáveis de instância (assim como
         @@numeros_escolhidos@) que podem ser usados *fora da própria classe*.  O pai do
         Paij-ree queria codificar uma máquina que pudesse ler números e a data da
         compra do bilhete.  Para fazer isso, estas variáveis de instância devem ser expostas.
@@ -129,8 +129,8 @@
 
         Eu receberei um erro: @undefined method `numeros_escolhidos=`@
         Isto porque @attr_reader@ somente adiciona um método de *leitura*, não um método
-        de escrita.  Embora isso seja bom.  Nós não queremos mudanças nos números ou na
-        data.
+        de escrita.  Entretanto, isso é bom.  Nós não queremos que os números ou a
+        data mudem.
 
 
         Então, os bilhetes são _objetos_.  Instâncias da classe @BilheteLoteria@.  Faça
@@ -173,18 +173,18 @@
         </pre>
 
 
-        Melhor.  Pode demorar duas vezes mais para os números cairem juntos
-        corretamente, mas cairão.  O tempo de espera fará o suspense, não?
+        Melhor.  Pode demorar algumas vezes para que os números caiam juntos
+        corretamente, mas cairão.  A espera fará o suspense, não?
 
 
-        O capitão loteria mantém um registro de todos que compraram bilhetes,
-        junto com os números sorteados.
+        O capitão loteria mantinha um registro de todos que compraram bilhetes,
+        junto com os números de loteria deles.
 
 
         <pre>
          class SorteioLoteria
            @@bilhetes = {}
-           def SorteioLoteria.comprado_por( cliente, *bilhetes )
+           def SorteioLoteria.compra( cliente, *bilhetes )
              unless @@bilhetes.has_key?( cliente )
                @@bilhetes[cliente] = []
              end
@@ -198,14 +198,14 @@
 
 
         <pre>
-         SorteioLoteria.comprado_por 'Yal-dal-rip-sip',
+         SorteioLoteria.compra 'Yal-dal-rip-sip',
              BilheteLoteria.new( 12, 6, 19 ),
              BilheteLoteria.new( 5, 1, 3 ),
              BilheteLoteria.new( 24, 6, 8 )
         </pre>
 
 
-        Quando chega a hora de sortear a loteria, o pai do Paij-ree (o capitão loteria)
+        Quando chega a hora do sorteio da loteria, o pai do Paij-ree (o capitão loteria)
         adiciona um bit de código para selecionar aleatoriamente os números.
 
 
@@ -236,13 +236,13 @@
         </pre>
 
 
-        Com o tempo você perceberá o quão brilhante Paij-ree é (ou era). Seu pai o
-        encarregou de conduzir a loteria por ele, e a demanda por bilhetes só crescia,
-        à medida que o dia passava.  Você consegue imaginar o jovem Paij-ree - em seu
-        terno pomposo - brincando com eláticos de dinheiro com seus dedos jovens, em
-        meio à reunião da empresa na qual propôs a última parte do sistema?  Com certeza,
-        quando se levantou, seu pai falou tudo para ele, mas ele se apoiou ligou o
-        projetor e explicou tudo apontando com as mãos.
+        Com o tempo você verá o quão brilhante é Paij-ree. Seu pai o
+        encarregou de conduzir a loteria por ele, à medida que a demanda por bilhetes consumia
+        todas as horas do dia do capitão da loteria.  Você consegue imaginar o jovem Paij-ree - em seu
+        terno pomposo - brincando com elásticos  com seus dedos jovens, em
+        meio à reunião da empresa na qual propôs a peça final do sistema?  Com certeza,
+        quando se levantou, seu pai falou tudo para ele, mas foi ele quem ligou o
+        projetor e fez todos os gestos com as mãos.
 
  
         <pre>
@@ -272,23 +272,23 @@
         concatenador, mas o que estaria ele fazendo em meio à definição da classe?
         
 
-        Crianças, pensava Paij-ree, embora levantasse a auto-estima dos sócios.
+        Bebês, pensava Paij-ree, embora mantessse bem alta a auto-estima de cada um destes homens.
         Ele era apenas uma criança e crianças são duras como uma parede de tijolos.
 
 
-        O operador @<<@ permite à você alterar a definição de um objeto.
+        O operador @<<@ permite a você alterar a definição de um objeto.
         Paij-ree simplesmente havia usado a classe @SorteioLoteria@, e o método
         dele, @jogo@, seria um método de instância normal.  Mas, uma vez que usou o
         operador @<<@, o método @jogo@ será adicionado diretamente à classe,
         como um método de classe.
 
 
-        Quando você viu @class << objeto@, acredite em seu coração, _eu estou adicionando
-        diretamente para a definição de @objeto@._
+        Quando você viu @class << obj@, acredite em seu coração, _eu estou adicionando
+        diretamente para a definição de @obj@._
 
 
-        O instrutor do setor de desenvolvimento também lançou um truque na sintaxe digno
-        de ser examinado.
+        O embrião do instrutor de órgão também lançou um truque na sintaxe digno
+        de ser examinado. Na nona linha, um vencedor foi encontrado.
 
 
         <pre>
@@ -305,8 +305,8 @@
         </pre>
 
 
-        O *pipe duplo* é um *ou* lógico.  Coloque @vendendores[comprador]@ igual a
-        @vencedores[comprador]@ ou, se @vencedores[comprador]@ é nulo, ajuste-o para @[]@.  Este
+        O *pipe duplo* é um *ou* lógico.  Faça @vendendores[comprador]@ igual a
+        @vencedores[comprador]@ ou, se @vencedores[comprador]@ é nulo, faça-o igual a @[]@.  Este
         atalho é um pouco estranho,  mas se você puder abrir sua mente, ele é um bom método para
         economizar tempo.  Você está se certificando que uma variável está inicializada antes de
         usá-la.
@@ -323,32 +323,32 @@
          Gram-yol ganhou com 2 bilhetes(s)!
              25, 14, 33: 1
              12, 11, 29: 1
-         Tarker-azain ganhou com 2 bilhetes(s)!
+         Tarker-azain ganhou com 1 bilhetes(s)!
              13, 15, 29: 2
-         Bramlor-exxon ganhou com 2 bilhetes(s)!
+         Bramlor-exxon ganhou com 1 bilhetes(s)!
              2, 6, 14: 1
         </pre>
 
 
-        Mas estes dias de inocência não continuaram para Paij-ree e seu pai.  Seu pai, muitas vezes,
-        se negava em lavar seu uniforme e acabou contraíndo uma doença de mofo nos seus ombros.  A
-        doença afetou gadualmente seu equilíbrio e seu senso de direção.
+        Mas estes dias de inocência não continuaram para Paij-ree e seu pai.  Seu pai, frequentemente,
+        se esquecia de lavar seu uniforme e acabou contraindo uma micose em seus ombros.  A
+        doença afetou gradualmente seu equilíbrio e seu senso de direção.
 
 
         Seu pai ainda tentou futilmente manter os negócios funcionando. Ele rodou a cidade, algumas
         vezes andando, de forma deplorável, passo-a-passo sobre os paralelepípedos, muitas vezes
-        tateando as paredes, contando os tijolos para o salão dos matemáticos e a estação dos cocheiros,
-        onde ele teria "empurrado" bilhetes de loteria aos transeuntes, que o cercaram e o esbofetearam 
+        tateando as paredes, contando os tijolos até o salão dos matemáticos e a estação dos cocheiros,
+        onde ele teria empurrado bilhetes de loteria aos transeuntes, que o cercaram e o esbofetearam 
         com grandes beterrabas molhadas. Mais tarde, Paij-ree iria encontrá-lo em uma esquina, seu sangue
-        escorrendo nos esgotos da cidade lado a lado aos líquidos da escuridão, beterrabas iconificadas,
-        cujo suco preencheu o caminho até suas veias e coagulou firmemente como um congestionamento de um
-        exército de "brake lights" lutando por um lugar nos pedágios.
+        escorrendo nos esgotos da cidade junto aos sucos das escuras, respingantes beterrabas,
+        cujo suco preencheu o caminho até suas veias e coagulou firmemente como um amontoado
+        exército de brake lights lutando por um lugar nos pedágios.
 
 
-        h3. Uma Palavra Sobre Accessors (Porque Eu Te Amo e Eu Espero Para Seu Sucesso e Meus Cabelos Estão Raleando Com Isto e Que Os Sonhos Se Tornem Realidade)
+        h3. Uma Palavra Sobre Accessors (Porque Eu Te Amo e Espero Por Seu Sucesso e Meus Cabelos Estão Raleando Com Isto e Os Sonhos Realmente Se Tornem Realidade)
         
 
-        Anteriormente, eu havia mencionado que @attr_reader@ adiciona um método *reader*, mas não um método *writer*.
+        Anteriormente, eu mencionei que @attr_reader@ adiciona um método *reader*, mas não um método *writer*.
 
 
         <pre>
@@ -358,7 +358,9 @@
         </pre>
 
 
-        Que está correto neste caso, desde que o pai do Paij-ree não queria que os números fossem alterados depois que o bilhete fosse vendido. Se estivéssemos interessados em ter variáveis de instâncias que teriam ambos os métodos *reader e writer*, deveríamos usar @attr_accessor@.
+        Que está correto neste caso, visto que o pai do Paij-ree não queria que os números fossem alterados depois que o bilhete fosse
+        vendido. Se estivéssemos interessados em ter variáveis de instâncias que teriam ambos os métodos *reader e writer*, deveríamos
+        usar @attr_accessor@.
 
 
         <pre>
@@ -381,18 +383,19 @@
         </pre>
 
 
-        Santos gatos! Olhe para estes métodos writer por um momento. Ele são chamados métodos @picks=@ e @purchased=@. Estes métodos *interceptam inicializações externas* a variáveis de instância.
+        Santos gatos! Olhe para estes métodos escritores por um momento. Ele são chamados métodos @picks=@ e @purchased=@. Estes
+        métodos *interceptam atribuições externas* a variáveis de instância.
         Constantemente você irá deixar @attr_reader@ ou @attr_accessor@ (ou mesmo talvez @attr_writer@) fazer o trabalho por você.
         Outras vezes, você mesmo irá querer tomar conta da portaria, checando as variáveis mais detalhadamente.
 
 
         <pre>
-         class SkatingContest
+         class CompeticaoSkate
            def o_vencedor; @o_vencedor; end
            def o_vencedor=( nome )
              unless nome.respond_to? :to_str
                raise ArgumentError, "O nome do vencedor deve ser uma String,
-                 não um prooblema matemático ou uma lista de nomes ou qualquer ou
+                 não um problema matemático ou uma lista de nomes ou qualquer outra
                  coisa parecida."
              end
              @o_vencedor = nome
@@ -401,5 +404,7 @@
         </pre>
 
 
-        Muitas vezes você não vai querer usar isto. Mas, assim que formos caminhando através das lições, você irá perceber que Ruby possui muitas escotilhas e vielas nas quais você pode se esguiar e codificar de outras maneiras. Também estou te preparando para metaprogramação, que, se você puder cheirar este dragão,  está nefastamente próximo.
+        Na maior parte das vezes você não vai querer usar isto. Mas, assim que formos caminhando através das lições, você irá perceber
+        que Ruby possui muitas escotilhas e vielas nas quais você pode se enfiar e hackear código. 
+        Também estou lhe preparando para metaprogramação, que, se puder farejar o dragão,  está ameaçadoramente próxima.
 
