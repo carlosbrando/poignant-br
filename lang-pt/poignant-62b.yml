@@ -47,7 +47,7 @@
         módulo acima em um arquivo chamado @preeventualista.rb@.
 
 
-        Esse módulo é uma biblioteca muito simple para usar o serviço dos Pre-eventualistas. É exatamente
+        Esse módulo é uma biblioteca muito simples para usar o serviço dos Pré-eventualistas. É exatamente
         assim que bibliotecas são escritas. Você constrói um módulo ou uma classe, grava em um arquivo, e,
         se ficou feliz com o resultado, disponibiliza na web para o resto do mundo poder utilizar.
 

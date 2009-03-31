@@ -1,6 +1,6 @@
 
 
-        O código acima recupera a lista de caminhões achados por pre-eventualistas e exibe
+        O código acima recupera a lista de caminhões achados por pré-eventualistas e exibe
         somente as linhas que contenham a palavra 'pickup'.
         Dessa maneira podemos limitar as descrições e procurar somente as linhas pertinentes.
 

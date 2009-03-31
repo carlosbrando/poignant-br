@@ -7,12 +7,12 @@
         demarcar território, então eu tiro meu chapéu.
 
 
-        Mesmo assim, um grupo de jovens preeventualistas? Como é que pode? Você tem que ter pelo menos
-        _flertado com cinismo de verdade_ antes de poder se tornar um preeventualista. E definitivamente,
+        Mesmo assim, um grupo de jovens pré-eventualistas? Como é que pode? Você tem que ter pelo menos
+        _flertado com cinismo de verdade_ antes de poder se tornar um pré-eventualista. E definitivamente,
         não pode ir ao colégio. Portanto, eu não sei.
 
 
-        Voltando à lista de instruções do Registro de Achados e Perdidos Preenventualista.
+        Voltando à lista de instruções do Registro de Achados e Perdidos Pré-enventualista.
 
 
         <pre class="text">
@@ -20,7 +20,7 @@
          =====================
 
          O A&P é um serviço gratuito. Os atos de perder e achar são qualidades essenciais para
-         a construção de um estilo de vida preeventualista. Esperamos atender a sua crença.
+         a construção de um estilo de vida pré-eventualista. Esperamos atender a sua crença.
 
 
          Não usamos HTML, para simplificar as coisa por aqui. Nosso pessoal já trabalha quinze
@@ -64,7 +64,7 @@
         <pre>
          require 'open-uri'
          
-         # Pesquisar todos os itens achados contendo a palavra 'caminhão'.
+         # Pesquisar todos os itens achados contendo a palavra 'caminhao'.
          open( "http://preeventualist.org/lost/searchfound?q=caminhao" ) do |truck|
            puts truck.read
          end

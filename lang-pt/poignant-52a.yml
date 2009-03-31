@@ -40,14 +40,13 @@
         </pre>
 
 
-        Não há necessidade de os bilhetes para animais se compartarem drasticamente diferente
-        dos bilhetes tradicionais.  A classe @BilheteDLoteriaAnimal@ é internamente diferente,
+        Não há necessidade de os bilhetes para animais se comportarem drasticamente diferente
+        dos bilhetes tradicionais.  A classe @BilheteDeLoteriaAnimal@ é internamente diferente,
         mas expõe os mesmos métodos vistos na classe @BilheteLoteria@.
-        The @score@ method is even identical to the @score@ method from the old @LotteryTicket@
-        class.
+        O método @escore é até mesmo idêntico ao método @score@ da antiga classe @BilheteDeLoteria@.
 
 
-        Ao invés de usar uma variável de classe para armazenar a lista de nostas musicais,
+        Ao invés de usar uma variável de classe para armazenar a lista de notas musicais,
         elas são armazenadas numa constante chamada @BilheteLoteriaAnimal::NOTAS@.  Variáveis
         mudam e a lista de notas não deveria.  Constantes foram projetadas para se manterem.  Mesmo
         assim você pode alterar a constante, mas terá que trapacear ou o Ruby irá chiar.
@@ -63,7 +62,7 @@
         A gaivota voltou com a papa-capim, o nome dela era Merphy, ela estava empolgada em tentar a 
         a sorte, ela inflou seu rosto sonhador, assobiou cinco ou seis notas em série, todas elas
         seguraram seu colar, puxaram-na para perto da calculadora e a deixaram respirar três notas,
-        então eles estranguram o último ar até que seu bilhete estivesse impresso e tudo estava 
+        então eles estrangularam o último ar até que seu bilhete estivesse impresso e tudo estava 
         catalogado certinho dentro de @@@bilhetes['merphy']@.  Obrigado, vejo você no sorteio!
 
 
@@ -80,14 +79,14 @@
         Nós odiamos (ae-o) algum deles?"
 
 
-        Não muito tempo após o  termindo da loteria, Paij-ree sentiu a gaivota da cratera _Eb-F-F-A_
+        Não muito tempo após o término da loteria, Paij-ree sentiu a gaivota da cratera _Eb-F-F-A_
         descendo em seu ombro, ela então assobiou um urgente e triste 
         _C-Eb-D-C-A-Eb (Dó-Mi Bemol-Ré-Lá-Mi Bemol)_.
         Estas notas desesperadas enviaram uma onda de calafrios através do corpo de Paij-ree.
         Tinha o Deus Rei de Bêbado Solo. Nosso Amado Topiario, o *Musgossias Quos*, Pai Literal
         Daquele Homem Quem Era O Instrutor de Órgão da Minha Filha -- tinha ele realmente chegado ao
         seu fim? Como isto poderia acontecer? Poderiam as grandes árvores não mais nutri-lo e guiar
-        os ventos úmidos em sua direção? Ou seu próprio esguio liquen cobriram seu caminho e cresceram
+        os ventos úmidos em sua direção? Ou seu próprio esguio líquen cobriram seu caminho e cresceram
         obstruindo sua respiração?
 
 
