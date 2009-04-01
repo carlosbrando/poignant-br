@@ -58,7 +58,7 @@
 
 
         Removendo os parênteses remove-se a confusão, então vamos deixar sem.  Apenas use parênteses quando
-        você está usando muitos métodos juntos e você quer ser bem claro.
+        estiver usando muitos métodos juntos e você quer ser bem claro.
 
 
         h3. Código da Criatura
@@ -80,7 +80,7 @@
            def self.caracteristicas( *arr )
              return @caracteristicas if arr.empty?
 
-             # 1. Define acessores para cada variável
+             # 1. Define 'accessors' para cada variável
              attr_accessor *arr
 
              # 2. Adiciona um novo método para cada característica.

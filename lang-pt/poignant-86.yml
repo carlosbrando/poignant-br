@@ -16,14 +16,14 @@
 
       Basicamente, quando você teclar _TAB_, o Irb tentará adivinhar o que você está tentando digitar.
       Tente digitar: @[].col@ e tecle _TAB_. o Irb finalizará isto. @[].collect@ e isto levará
-      seu cursor até o final então você pode adicionar mais conteúdo.      
+      seu cursor até o final então você pode adicionar mais conteúdo.
 
 
       Se existem várias combinações, apenas teclar _TAB_ não adiantará. Mas pressione duas vezes
       e o Ruby lhe dará uma lista completa de possíveis combinações.
 
 
-      Isto é ótimo se você quer apenas ver todos os metodos para um certo objeto. Digite em qualquer
+      Isto é ótimo se você quer apenas ver todos os métodos para um certo objeto. Digite em qualquer
       número, um ponto, e use _TAB_.
 
 
@@ -71,7 +71,7 @@
       E o Ri atende. "Aqui é o Ri. Classe e dois pontos, por favor"
 
 
-      Você entra correndo, "Isto é a instância de um método, Operador. Enumerável#zip."
+      Você entra correndo, "Isto é a instância de um método, Operador. Enumerable#zip."
 
   
       <pre class="text">
@@ -89,12 +89,12 @@
             enum.zip(arg, ...)                   => array
             enum.zip(arg, ...) {|arr| block }    => nil
        ------------------------------------------------------------------------
-            Converte qualquer argumento em array, então une elementos de _enum_
-            com elementos correpondentes de cada argumento. Isto gera uma
-            sequência de +enum#size+ _n_-element arrays, onde _n_ é um a mais
-            que a conta de argumentos. Se o tamanho de algum argumento é menos
-            que +enum#size+, valores de +nil+ são providênciados. Se é dado um
-            bloco, este é convocado para cada saída do array, caso contrário um
+            Converte qualquer argumento para arrays, então une elementos de _enum_
+            com elementos correspondentes de cada argumento. Isto gera uma
+            seqüência de +enum#size+ _n_-element arrays, onde _n_ é um a mais
+            que a conta de argumentos. Se o tamanho de algum argumento é menor
+            que +enum#size+, valores de +nil+ são providos. Se é dado um
+            bloco, este é chamado para cada saída do array, caso contrário um
             array de arrays é retornado.
 
                a = [ 4, 5, 6 ]
@@ -106,7 +106,7 @@
       </pre>
 
 
-      Isto é um dicinário íntegro de Ruby em inglês -- O poder de apenas perguntar está na ponta
+      Isto é um dicionário íntegro de Ruby em inglês (aqui aparece traduzido apenas como exemplo) -- O poder de apenas perguntar está na ponta
       de seus dedos -- não diga que nunca ouviu sobre este nenhum-dinheiro-supre-uma-vida-inteira-de
       explicações-apropriadas!_
 
@@ -177,7 +177,7 @@
       </pre>
 
 
-      O Ri advinha muito de como um método funciona, embora espera que os codificadores
+      O Ri advinha muito de como um método funciona, embora espera-se que os codificadores
       escrevam uma breve descrição nos comentários, pouco antes da definição de um método ou classe.
       Eu sugeriria que sempre que for escrever um método, adicione uma breve descrição
       nos comentários antes daquele método. Em tempo, você pode gerar uma
@@ -187,8 +187,8 @@
       Você também pode usar alguns caracteres especiais para aumentar sua descrição. Por
       exemplo, se você identar um parágrafo e usar um asterisco @*@ ou um hífen @-@      
       pouco antes das letras da primeira frase, o parágrafo será reconhecido como um
-      ítem de lista. Então, se a sua descrição precisa ser convertida para HTML, você
-      verá o ítem de lista aparecer como uma lista de HTML não-ordenada.
+      item de lista. Então, se a sua descrição precisa ser convertida para HTML, você
+      verá o item de lista aparecer como uma lista de HTML não-ordenada.
 
 
       <pre>
@@ -201,7 +201,7 @@
       </pre>
 
 
-      Outra regras semelhantes: Listas que começam com digitos seguidos de períodos
+      Outra regras semelhantes: Listas que começam com dígitos seguidos de períodos
       são reconhecidas como listas numéricas. Palavras enfatizadas são cercadas por travessão (underscore),
       palavras em negrito por asteriscos, palavras em código por sinais de adição. Exemplos são simples blocos
       de texto identados por alguns espaços. Todas estas regras juntas são chamadas RDoc.
@@ -242,7 +242,7 @@
 
 
       <pre class="text">
-       cd ~/cvs/your-code
+       cd ~/cvs/seu-codigo
        rdoc --ri-site
       </pre>
 
@@ -253,12 +253,12 @@
 
 
       <pre class="text">
-       cd ~/cvs/your-code
+       cd ~/cvs/seu-codigo
        rdoc
       </pre>
 
 
-      O diretório @~/cvs/seu-código@ deverá agora também possuir um diretório @doc@
+      O diretório @~/cvs/seu-codigo@ deverá agora também possuir um diretório @doc@
       recente contendo documentação HTML para todas as suas classes. Veja @index.html@
       para as notícias agradáveis.
 
@@ -283,11 +283,11 @@
 #
 #        Quando ele diz isto, minha espinha escapa das minhas costas. É uma religião
 #        inteira (aterrorizado) e ela surge neste coloquialismo barato. Quando Paij-plo
-#        começa sua solente _é hora de comer_ ou seu _ele está bem atrás de nós_ falatório.
+#        começa sua solene _é hora de comer_ ou seu _ele está bem atrás de nós_ falatório.
 #
 #
 #      Eu acho que havia um tempo em Endertromb quando todos viviam sem a morte.  Paij-plo
-#      diz um "homem pantera" caíu em um enorme abismo, um túnel profundo ao redor do  
+#      diz um "homem pantera" caiu em um enorme abismo, um túnel profundo ao redor do  
 #      planeta. Seu corpo foi encontrado do outro lado do planeta. Mas ele não tinha ferimentos, seu
 #      corpo estava quente. Ele estava morto por apenas um segundo.
 #
@@ -297,7 +297,7 @@
 #      Eb-F-F-A.  Então, Bb-D-D-F.
 
 
-#        Dr. Cham virou-se para a cabra. "Você sabe trabalhar com estes controles, né? Eu preciso
+#        Dr. Cham virou-se para a cabra. "Você sabe trabalhar com estes controles, não é? Eu preciso
 #        arquivar um programa."
 #
 #

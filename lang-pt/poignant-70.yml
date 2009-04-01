@@ -46,7 +46,7 @@
 
 
         Quando faz sentido, você pode optar por utilizar operadores matemáticos em algumas de suas classes.  Ruby 
-        usa esses operadores matemáticos em muitas de suas próprias classes.  Arrays, por exemplo, tem uma porção 
+        usa esses operadores matemáticos em muitas de suas próprias classes.  Arrays, por exemplo, têm uma porção 
         de operadores matemáticos que você poder ver na lista de instância dos métodos quando você digita: @ri Array@.
 
 
@@ -93,7 +93,7 @@
 
 
         Depois que você terminou de brincar de afogar o último cara com o tubo de oxigênio dele, é hora
-        de entrar No Array.  Eu dúvido que você possa fazer isso.  Você deixou sua machadinha em casa.
+        de entrar No Array.  Eu duvido que você possa fazer isso.  Você deixou sua machadinha em casa.
         Eu espero que você não tenha usado todas as suas bombas com o cara fácil.
 
 
@@ -139,7 +139,7 @@
          class Dragao < Criatura
            vida 1340     # escamas duras
            forca 451     # veias ressaltadas
-           carisma 1020  # sorridente
+           carisma 1020  # sorriso dentado
            arma 939      # cospe fogo
          end
         </pre>

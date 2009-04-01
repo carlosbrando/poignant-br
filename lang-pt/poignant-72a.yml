@@ -6,7 +6,7 @@
 
 
         Se você consegue reunir um pouco de imaginação, pode ver um *sinal de percentagem* como um rosto inclinado de um sapo.
-        Visualisou a figura em sua cabeça? Agora deixe-me mostrar os sapos que acampam em strings.
+        Visualizou a figura em sua cabeça? Agora deixe-me mostrar os sapos que acampam em strings.
 
 
         <pre>
@@ -14,14 +14,14 @@
          irb> "Assentos são ocupados por %s e %s." % ['um sapo', 'um sapo com dentes']
            => "Assentos são ocupados por um sapo e um sapo com dentes."
 
-         # O %d formato serve para colocar numeros, enquanto o formato %f serve para
+         # O %d formato serve para colocar números, enquanto o formato %f serve para
          # floats (números decimais).
          irb> sapos = [44, 162.30]
          irb> imediatamente = "Os sapos preencheram %d assentos e pagaram %f cristais azuis."
          irb> imediatamente % sapos
            => "Os sapos preencheram 44 assentos e pagaram 162.30 cristais azuis."
 
-         # A formatação é flexivel com tipos, você pode transmitir em strings
+         # A formatação é flexível com tipos, você pode transmitir em strings
          # e formatá-los como números.
          irb> sapos = ['44', '162.30']
          irb> imediatamente % sapos
@@ -81,7 +81,7 @@
         </pre>
 
 
-        A segunda dica que tenho para você é que pode destinar um certo numero de caracteres
+        A segunda dica que tenho para você é que pode destinar um certo número de caracteres
         para cada item, uma largura. E se um item é menor que a largura, espaços extras
         serão usados antes do item.  Para preenchê-lo.
         Se a largura é um número negativo, o item será forçado para esquerda e o
@@ -89,7 +89,7 @@
 
 
         <pre>
-         # Dê a um item 30 caracters de largura
+         # Dê a um item 30 caracteres de largura
          irb> "Na traseira do ônibus: %30s." % ['sapos']
            => "Na traseira do ônibus:                          sapos."
 
@@ -99,13 +99,13 @@
         </pre>
 
 
-        Raposa Pequena continuou olhando para o motorista do ônibus.  Lembre-se, ele não entraria no ônibus!
+        Raposinho continuou olhando para o motorista do ônibus.  Lembre-se, ele não entraria no ônibus!
 
 
         "Qual o problema?" disse Raposão.  "Você não pode entrar e ficamos no corredor?"
 
 
-        "Você realmente quer entrar neste ônibus?  Aquele motorista não tem mãos," disse Raposa Pequena, falando perto
+        "Você realmente quer entrar neste ônibus?  Aquele motorista não tem mãos," disse Raposinho, falando perto
         de maneira a aquietar Raposão, "e tudo o que ele tem, ao invés de mãos, são copos com canudos."
 
 

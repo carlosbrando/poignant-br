@@ -5,12 +5,12 @@
         métodos *leitores* para as variáveis de instância @@numeros_escolhidos@ e @@data_compra@ acima.
 
 
-        O código para o método @caracteristicas@ é a metaprogmação que eu tenho feito referência.
+        O código para o método @caracteristicas@ é a metaprogramação que eu tenho feito referência.
         Comentários no código revelam os três estágios que o método passa quando adiciona
         as características.
 
 
-        # A *lista de características é passada para @attr_acessor@*, que constrói código
+        # A *lista de características é passada para @attr_accessor@*, que constrói código
         *leitor* e *escritor* para as variáveis de instância. Um para cada característica.
 
         # *Métodos de classe são adicionados* para cada característica. (O método @vida@ é adicionado
@@ -80,7 +80,7 @@
 
 
         Agora, o Ruby vai aceitar gradativamente
-        essas seis linhas de código da classe @Dragon@, curto o bastante para
+        essas seis linhas de código da classe @Dragao@, curto o bastante para
         aparecer legal em cartas de jogos:
 
 

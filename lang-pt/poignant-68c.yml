@@ -6,7 +6,7 @@
 
         <pre>
          irb> require 'dwemthy'
-         irb> require 'rabbit'
+         irb> require 'coelho'
         </pre>
 
          

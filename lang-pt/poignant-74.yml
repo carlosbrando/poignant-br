@@ -15,7 +15,7 @@
 
         O motorista do ônibus olhou misteriosamente por baixo da aba do seu boné e começou a virar-se em direção a eles, mas os seus
         tentáculos ficaram presos à roda. Ele rapidamente sacudiu suas pernas da frente e, falhando em
-        soltá-las, virou-se para a direção e concentrou as suas energias em ordenhaar de suas glândulas um pouco de
+        soltá-las, virou-se para a direção e concentrou as suas energias em ordenhar de suas glândulas um pouco de
         ótimas secreções. Bolhas de muco gotejaram.
 
         "Vamos cair fora daqui", disse Raposão e os dois correram para fora da rua, batendo direto
@@ -46,7 +46,7 @@
    
         Blix não falava, ele abaixou a cabeça para o norte através de uma avenida uma avenida mal colocada
         voltar atrás da loja de tinta.
-        Mas antes que nós os sigamos em baixo nessa estrada de serviço, cara palida, Eu tenho mais um
+        Mas antes que nós os sigamos em baixo nessa estrada de serviço, cara pálida, Eu tenho mais um
         sapo para você, empoleirados sobre uma longa vitória régia que esticadas para fora para prender alguma coisa em tudo.
  
  
@@ -76,9 +76,9 @@
  
  
         <pre>
-         irb> companheiros = ['Blix', 'Raposao', 'Raposinho]
+         irb> companheiros = ['Blix', 'Raposão', 'Raposinho']
          irb> puts "Deixe-nos seguir #{ companheiros.join ' e ' } em sua viagem."
-           => "Deixe-nos seguir Blix e Raposao e Raposinha em sua viagem."
+           => "Deixe-nos seguir Blix e Raposão e Raposinho em sua viagem."
         </pre>
  
  

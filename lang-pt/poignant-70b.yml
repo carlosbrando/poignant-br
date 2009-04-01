@@ -1,5 +1,5 @@
         Você percebeu?  Sempre que criamos um objeto no @irb@, essa chamativa palavra @#<Object>@ 
-        é apresentado!  Isto é um pequeno nome identificador para o objeto.  O método @inspect@ cria
+        é apresentada!  Isto é um pequeno nome identificador para o objeto.  O método @inspect@ cria
         este identificador, que é apenas uma string.
 
 
@@ -72,7 +72,7 @@
            def deirdre( *args )
              puts "Deirdre está bem aqui e diz:"
              args.each { |diz| puts "  " + diz }
-             puts "E ela ama cada segundo disto."
+             puts "E ela ama cada segundo disso."
              puts "(Eu acho que ela pensa que você é poético.)"
          end
         </pre>
@@ -101,7 +101,7 @@
 
         <pre>
          def method_missing( meth, *args )
-           answer = first.send( meth, *args )
+           resposta = first.send( meth, *args )
            # ... código recortado aqui ...
          end
         </pre>

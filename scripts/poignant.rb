@@ -1,5 +1,5 @@
 require 'erb'
-#require 'ftools'
+require 'ftools'
 require 'yaml'
 require 'rubygems'
 require 'redcloth'

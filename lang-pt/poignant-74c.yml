@@ -95,7 +95,7 @@
         !i/wixl-10.gif!
 
 
-        Abaixo das pistas que eles viajaram, os dois raposos distraídos no seu rumo, mas tendo um bom tempo
+        Abaixo das pistas que eles viajaram, as duas raposas distraídas no seu rumo, mas tendo um bom tempo
         agora que tiveram Blix conduzindo o caminho com tanta urgência.  Eles passaram o tempo desatentamente perambularam a direita 
         atrás de Blix e perdendo sua tarde importunando a maioria dos pedestres.
 
@@ -111,7 +111,7 @@
 
 
         <pre>
-         irb> bats = %w{Os Transportadores Alados de Pegaminho}
+         irb> bats = %w{Os Transportadores Alados de Pergaminho}
            => ['Os', 'Transportadores', 'Alados', 'de', 'Pergaminho']
         </pre>
 

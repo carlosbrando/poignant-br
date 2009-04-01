@@ -2,10 +2,10 @@
 
         Estes são os exemplos vivos da monstruosidade do Labirinto de Dwemthy.  Eu não sei como eles
         chegaram lá.  Ninguém sabe.  Na verdade, eu acho que o @ IntrepidoCiclistaDecomposto@
-        pedalou ate aqui a toda velocidade.  Mas os outros: NINGUÉM sabe.
+        pedalou até aqui a toda velocidade.  Mas os outros: NINGUÉM sabe.
 
 
-        Se isto é realmente importante você saber, vamos apenas dizer que os outros nasceram lá.
+        Se isso é realmente importante para você, vamos apenas dizer que os outros nasceram lá.
         Podemos seguir em frente??
 
 
@@ -22,8 +22,8 @@
         </pre>
 
 
-        Combata o Labirinto e os monstros aparecerão ao passo que você continua.  Boa viagem,
-        talvez você volte com histórias horríveis e nenhuma garra de anjo cravada através
+        Combata o Labirinto e os monstros aparecerão ao passo que você continua.  Boa sorte,
+        e que você retorne com histórias horríveis e nenhuma garra de anjo cravada através
         de seus ombros.
 
 
@@ -43,15 +43,15 @@
         !i/wixl.dwemthy-3.gif(O coelho nos modificou.)!
 
 
-        h3. Por Tráz do Labirinto de Dwemthy
+        h3. Por Trás do Labirinto de Dwemthy
 
 
-        Avance para o tempo onde os ventos ja tenham se acalmado. 
+        Avance para o tempo onde os ventos já tenham se acalmado. 
         O Dragão foi derrotado.  Os impuros se curvarão.  Nós amamos você.
         Nós somos leais a você.
 
 
-        Mas o que esta centopéia está mordiscando seu timpano?  Você enfia o dedo para tirá-lo, mas não
+        Mas o que esta centopéia está mordiscando seu tímpano?  Você enfia o dedo para tirá-lo, mas não
         consegue!  Maldito!  É aquele infernal Labirinto de Dwemthy novamente.  *Se explique Dwemthy!*
 
 
@@ -91,7 +91,8 @@
 
         O método @inspect@ não é realmente uma parte necessária do Labirinto de Dwemthy.  É algo adicionado
         a Dwemthy como uma cortesia para seus visitantes.  (Muito o chamam de pervertido, muitos o chamam
-        de austero, mas todos nós somos ignorantes para ir sem admirar o trabalho que ele despendeu por nós.)        
+        de austero, mas todos nós somos ignorantes para ir sem admirar o trabalho que ele despendeu por nós.)
+
 
         Cada objeto em Ruby possui um método @inspect@.  Isto está definido na classe @Object@,
         então ele adiciona através da genealogia para cada pequenino objeto que nasce.

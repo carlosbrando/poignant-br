@@ -71,7 +71,7 @@
                return
              end
 
-             # Ataca o opononte
+             # Ataca o oponente
              seu_golpe = rand( forca + arma )
              puts "[Você golpeia com #{ seu_golpe } pontos de dano!]"
              inimigo.golpear( seu_golpe )
@@ -130,9 +130,9 @@
         h3. Apresentando: Você.
 
 
-        Você talvez tenha trabalhado com derivações neste coelho. Mas o oficial 
-        Paradigma de Dwemthy explicitamente denota o código -– e os caracteres todos juntos -– 
-        inscritos abaixo. *Salve isto como @rabbit.rb@.*
+        Você pode certamente experimentar derivações deste coelho. Mas o oficial 
+        Paradigma de Dwemthy explicitamente denota o código -– e o personagem em geral -– 
+        escrito abaixo. *Salve isto como @coelho.rb@.*
 
 
         <pre>
@@ -153,11 +153,11 @@
            def /( inimigo )
              lutar( inimigo, rand( 4 + ( ( inimigo.vida % 10 ) ** 2 ) ) )
            end
-           # alface irá formar a sua força e extras substâncias indigestas
-           # voarão na cara de seu oponente!!
+           # alface irá formar a sua força e fibra alimentar extra
+           # voará na cara de seu oponente!!
            def %( inimigo )
              alface = rand( carisma )
-             puts "[Saudável alface lhe dá #{ alface } pontos de vida!!]"
+             puts "[Alface saudável lhe dá #{ alface } pontos de vida!!]"
              @vida += alface
              lutar( inimigo, 0 )
            end
