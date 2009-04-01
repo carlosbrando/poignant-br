@@ -20,7 +20,7 @@
         letras, dígitos e travessões.
 
 
-        bq. @x@, @y@, @banana2@ ou @telefone_pruma_codorna@ são exemplos.
+        bq. @x@, @y@, @banana2@ ou @telefone_para_codorna@ são exemplos.
 
 
         Variáveis são como apelidos.  Lembra quando todo mundo te chamava de Pete Fedido?
@@ -137,7 +137,7 @@
 
 
         Símbolos são strings leves.  Geralmente, símbolos são usados em situações em que você precisa de uma string
-        mas não vai imprimí-la na tela.
+        mas não vai imprimi-la na tela.
 
 
         Você pode dizer que um símbolo é pouco mais digerível para o computador.  É como um anti-ácido.  Os dois pontos
@@ -159,7 +159,7 @@
 
 
         Em inglês, substantivos próprios têm a primeira letra maiúscula.  O Edifício Empire State.  Você não pode simplesmente
-        mudar o Edíficio Empire State.  Você não pode simplesmente decidir que o Edifício Empire State é outra coisa.
+        mudar o Edifício Empire State.  Você não pode simplesmente decidir que o Edifício Empire State é outra coisa.
         Substantivos próprios são assim.  Eles se referem a algo muito específico e que usualmente não
         muda com o tempo.
 
@@ -177,7 +177,7 @@
 
 
 
-        h3. Metódos
+        h3. Métodos
 
 
         Se variáveis e constantes são substantivos, então métodos são verbos.
@@ -273,7 +273,7 @@
         bq. @$x@, @$1@, @$pedacudo@ e @$BAcOn_PeDAcUDo@ são exemplos.
 
 
-        A maioria das váriaveis são temporárias por natureza.  Algumas partes do seu programa são como casas.
+        A maioria das variáveis são temporárias por natureza.  Algumas partes do seu programa são como casas.
         Você entra e elas têm suas próprias variáveis.  Em um casa, você pode ter um @pai@ que representa
         Archie, um caixeiro-viajante colecionador de esqueletos.  Em outra casa, @pai@ pode representar
         Peter, um domador de leões com grande apreço por flanela.  Cada casa tem um sentido próprio para @pai@.
@@ -391,7 +391,7 @@
 
 
         Eu gosto de pensar nos símbolos tal que representando um túnel.  Ele dão a aparência de uma
-        calha na qual as váriaveis estão descendo.  (O @x@ desce com as pernas abertas, enquanto o @y@
+        calha na qual as variáveis estão descendo.  (O @x@ desce com as pernas abertas, enquanto o @y@
         harmoniosamente cruza as pernas.)  Essa calha age como uma passagem entre os blocos e o mundo lá fora.  
 
 
@@ -471,7 +471,7 @@
 
 
         Desta vez, os colchetes representam livrinhos.  Veja como eles se parecem com
-        pequenos, livros abertos com dobras no meio?  Eles represntam abrir e fechar
+        pequenos, livros abertos com dobras no meio?  Eles representam abrir e fechar
         nosso dicionário. 
 
 
@@ -489,7 +489,7 @@
         </pre>
 
 
-        Não estou compararando hashes a dicionários por que você pode guardar só definições
+        Não estou comparando hashes a dicionários por que você pode guardar só definições
         na hash.  No exemplo acima, eu guardei informação pessoal de Peter, o domador
         de leões com grande apreço por flanela.  Hashes são como dicionários porque elas são
         muito fáceis de se procurar algo.
@@ -584,7 +584,7 @@
 #
 #        Agora, eis a questão.  Como você irá responder esta questão com seu dicionário?  Por onde
 #        você irá começar?  Você vai passando página por página, procurando pela definição de "um moleque de rua vestido miseravelmente,"?
-#        Ou você irá usar as guias do dicionário e pular diretamente para a seção M, reduzindo o número de páginas em direção à palavra "Mendigo", a plavra em sí?
+#        Ou você irá usar as guias do dicionário e pular diretamente para a seção M, reduzindo o número de páginas em direção à palavra "Mendigo", a palavra em si?
 #
 
 

@@ -1,6 +1,6 @@
     - Um Exemplo Para Te Ajudar a Crescer: >
 
-        !i/the.foxes-7.png(Gettin' cabin fever.)!
+        !i/the.foxes-7.png(Pegando febre de cabine.)!
 
 
         *Diga em voz alta cada uma das partes da conversa usadas abaixo.*
@@ -24,16 +24,16 @@
         @'www.ruby-lang.org'@ e o _número_ @80@.
 
 
-        A palvra @do@ abre um _block_.  O block tem _uma váriavel de bloco_ @http@.  Dentro do block, o _método_
-        @print@ é chamado.  O que está sendo imprimido?
+        A palavra @do@ abre um _block (bloco)_.  O bloco tem _uma variável de bloco_ @http@.  Dentro do bloco, o _método_
+        @print@ é chamado.  O que está sendo impresso?
 
 
         A partir da _variável_ @http@, o _método_ @get@ é chamado.  Dentro do @get@, nós passamos uma _string_ contendo
-        o caminho @'/en/LICENSE.txt'@.  Agora, repare que outro método está ligado no @get@.  O _método_
+        o caminho @'/en/LICENSE.txt'@.  Agora, repare que outro método está ligado ao @get@.  O _método_
         @body (corpo)@.  Então, o bloco se fecha com @end@.
 
 
-        Tá indo bem?  Só por curiosidade, você consegue advinhar o que este exemplo faz?  Espero eu, que você já esteja 
+        Está indo bem?  Só por curiosidade, você consegue adivinhar o que este exemplo faz?  Espero eu, que você já esteja 
         vendo alguns padrões no Ruby.  Se não, balance sua cabeça vigorosamente enquanto você põe estes exemplos
         na sua mente.  O código deve se quebrar em pedaços gerenciáveis.
 
@@ -85,6 +85,6 @@
 
 
         Então, o que este código faz?  Ele imprime o HTML da página web do Ruby na tela.  Usando 
-        um motorista de ônibus habilitado pra web.
+        um motorista de ônibus habilitado para web.
 
 

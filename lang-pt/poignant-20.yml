@@ -1,7 +1,7 @@
     - Se Eu Já Não Tivesse Lhe Tratado Suficientemente Como Uma Criança: >
 
         Estou orgulhoso de você.   Qualquer um irá lhe contar o tanto que me orgulho de você.  Como eu
-        continuo e continou a falar sobre essa ótima pessoa anônima aí fora  que rola e lê e rola e lê.
+        continuo e continuou a falar sobre essa ótima pessoa anônima aí fora  que rola e lê e rola e lê.
         "Estas crianças," Eu lhes conto. "Cara, estas crianças tem coração.  Eu nunca..." E eu mal consigo
         terminar uma frase porque estou absolutamente mergulhado em lágrimas.
 
@@ -26,7 +26,7 @@
         Você pode querer até mesmo cobrir este parágrafo enquanto lê, porque seus olhos podem esquivar-se para
         olhar a resposta.  Nós temos um _número_ @5@, seguido por um _método_ @.times@.  Depois, a primeira
         garra de caranguejo de um _bloco_.  O _método_ do kernel @print@ não tem ponto e é seguido por uma _string_
-        @"Odelay!"@.  A garra de canguejo final fecha nosso _bloco_.
+        @"Odelay!"@.  A garra de caranguejo final fecha nosso _bloco_.
 
 
         *Diga em voz alta cada parte do discurso usada abaixo.*
@@ -51,7 +51,7 @@
 
 
         Dentro de um _bloco_, o _argumento do bloco_ @alimento@, descendo seu tobo-água dentro do bloco.
-        O _método_ @capitalize@ então passa pra maíuscula a primeira letra do argumento do bloco, a qual 
+        O _método_ @capitalize@ então passa pra maiúscula a primeira letra do argumento do bloco, a qual 
         inicia a _variável_ @alimento@.  Esta _string_ com a inicial em maiúscula é passada para o _método_ @print@ do kernel.
 
 

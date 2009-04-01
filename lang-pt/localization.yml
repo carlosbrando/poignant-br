@@ -1,7 +1,7 @@
 locale:        pt-br
 version:       '0.6'
-next_page:     próxima
-previous_page: anterior
+next_page:     próxima página
+previous_page: página anterior
 encoding:      utf-8
 turn_page:     Virar a página
 open_the_book: Abrir o livro

@@ -5,7 +5,7 @@
 
         O hotel aqui em Ambrose não é nem um pouco bom.  As camas são todas tortas.
         O elevador é minúsculo.  Um cara pôs toda sua bagagem no elevador e não sobrou
-        mais lugar pra ele.  Ele apertou o botão e as perseguiu pelas escadas.
+        mais lugar para ele.  Ele apertou o botão e as perseguiu pelas escadas.
         Mas as escadas eram muito estreitas e ele ficou entalado tentando subir.  
 
 
@@ -58,7 +58,7 @@
         !<i/blix-neg.gif(Forma de um gato.)!
 
 
-        _O gato Blix Negociador.  Congelado é vazio.  Rígido e refinado bigode.  Serenos
+        _O gato Blix Negociador.  Congelado no vazio.  Rígido e refinado bigode.  Serenos
         olhos de lago.  Rabo de morno sincelo.  Patrocinado por um Botão de Pausa Bastante Poderoso._
 
 
@@ -69,7 +69,7 @@
 
         Generalizando, *tudo no Ruby tem uma carga positiva*.  Esta fagulha
         corre por strings, números, regexps (expressões regulares), todos eles.  Somente duas palavras reservadas vestem uma
-        capa sombria: @nil@ e @false@ nos trazendo pra baixo.
+        capa sombria: @nil@ e @false@ nos trazendo para baixo.
 
 
         Você pode *testar essa carga* com a palavra chave @if@ (se).  Ela se parece muito com o
@@ -78,7 +78,7 @@
 
         <pre>
          if copo_plastico
-           print "O copo de plástico está tranbordando!"
+           print "O copo de plástico está transbordando!"
          end
         </pre>
 
