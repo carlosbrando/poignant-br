@@ -54,11 +54,11 @@ def generate_for( language , path)
   sh "ruby scripts/poignant.rb #{target} #{language}"
 end
 
-desc "Combina os trechos do poignant em um único arquivo"
+desc "Combina os trechos do poignant em um unico arquivo"
 task :merge_pt do
   File.open('lang-pt/poignant.yml', "w") do |output|
     files = Dir["lang-pt/*.yml"]
-    files -= %w[lang-pt/localization.yml lang-pt/poignant.yml]
+    files -= %w[lang-pt/localization.yml lang-pt/poignant.yml lang-pt/poignant_merged.yml lang-pt/poignant_final.yml]
     files.sort!
     files.each do |ind|
       output.write(File.read(ind))
