@@ -6330,7 +6330,7 @@ chapters:
           cabeças no lugar, eu preciso da ajuda de todos. esses comediantes não têm nada. eu falo sério.
           hoje eu dei um adesivo roxo para um cara (é só uma coisa que eu gosto de fazer como gesto
           de solidariedade) e ele praticamente dormiu nele e nele cultivou os ingredientes para molho de pizza.
-          eles estão no fundo do poço. então dôem por favor. eu sei que não temos paypal nem nada.
+          eles estão no fundo do poço. então doem por favor. eu sei que não temos paypal nem nada.
           se você quiser doar, divulgue que você encontrou alguma coisa (uma bicicleta de criança, uma
           compra do mês) e que isso tenha o nome do pessoal do circo escrito nele ou algo do gênero.
 
@@ -6356,7 +6356,7 @@ chapters:
         não pode ir ao colégio. Portanto, eu não sei.
 
 
-        Voltando à lista de instruções do Registro de Achados e Perdidos Pré-enventualista.
+        Voltando à lista de instruções do Registro de Achados e Perdidos Pré-eventualista.
 
 
         <pre class="text">
@@ -6421,7 +6421,7 @@ chapters:
 
 
         Você aprendeu uma técnica simples para recuperar uma página da Internet. O código usa
-        a biblioteca  @OpenURI@, que foi escrita por um dos meus rubistas preferidos, Akira Tanaka.
+        a biblioteca  @OpenURI@, que foi escrita por um dos meus Rubistas preferidos, Akira Tanaka.
         Ele simplificou a leitura de arquivos Internet, tornado-a igual leitura de arquivos do seu
         computador.
 
@@ -6456,8 +6456,8 @@ chapters:
          require 'open-uri'
  
          # Abrindo um arquivo disponível num Web Site.
-         open( "http://sua.com/ideia-sobre-esconder-alface-nas-cadeiras-da-igreja.txt" ) do |idea|
-           puts idea.read
+         open( "http://sua.com/ideia-sobre-esconder-alface-nas-cadeiras-da-igreja.txt" ) do |ideia|
+           puts ideia.read
          end
         </pre>
 
@@ -6485,13 +6485,13 @@ chapters:
 
 
         O código acima recupera a lista de caminhões achados por pré-eventualistas e exibe
-        somente as linhas que contenham a palavra 'pickup'.
+        somente as linhas que contenham a palavra 'picape'.
         Dessa maneira podemos limitar as descrições e procurar somente as linhas pertinentes.
 
 
         Acima, os *colchetes*  são usados em uma string, de forma que seja pesquisado nessa string o que
-        quer que esteja dentro dos colchetes. Como a string @'pickup'@ está dentro dos colchetes, a palavra
-        'pickup' é pesquisada na string @line@.
+        quer que esteja dentro dos colchetes. Como a string @'picape'@ está dentro dos colchetes, a palavra
+        'picape' é pesquisada na string @line@.
 
 
         !i/wixl-13.gif(Sobre ser legal.)!
@@ -6506,8 +6506,8 @@ chapters:
 
 
         Ruby frequentemente usa iteradores dessa forma. Sim, iteradores são usados para percorrer cada um
-        dos itens de uma collection, como um Array ou um Hash. Então, olhe para uma fonte de IO como uma
-        coleção de linhas. O iterator pode percorrer essa coleção de linhas.
+        dos itens de uma collection (coleção), como um Array ou um Hash. Então, olhe para uma fonte de IO como uma
+        coleção de linhas. O iterator (iterador) pode percorrer essa coleção de linhas.
 
 
         <pre>
@@ -6523,7 +6523,7 @@ chapters:
         </pre>
 
 
-        A palavra-chave @yield@ é a maneira mais fácil de se usar um bloco. Uma palavra. Da mesma forma
+        A palavra-chave @yield@ (produzir) é a maneira mais fácil de se usar um bloco. Uma palavra. Da mesma forma
         que uma cortina tem um puxador ou como uma maleta tem uma alça. Dentro de um método, você
         pode apertar o botão piscante @yield@ e ele irá rodar o bloco anexado a esse método. Ele ficará
         brilhando em vermelho até que o bloco seja executado. Então voltará a piscar de novo e você poderá
