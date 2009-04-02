@@ -5550,7 +5550,7 @@ chapters:
 
         Sim, bicos de pato de verdade. (_Eb-F-F-A_ estava esôfagizando seus grasnos. mantendo-se calmo,
         sugando as gotas de suor de volta para sua testa -- patos não eram da _mesma pena que ele_,
-        mas mesmo assim da mesma famíla.) Paij-ree aplaudiu com alegria, absolutamente, ele pretendia
+        mas mesmo assim da mesma família.) Paij-ree aplaudiu com alegria, absolutamente, ele pretendia
         cobrir sua casa com estes bicos, eles poderiam ter contido um pouco da torrente.
         Provavelmente não muita coisa, nenhum motivo para reclamações.
 
@@ -5647,9 +5647,9 @@ chapters:
 
 
         Não há necessidade de os bilhetes para animais se comportarem drasticamente diferente
-        dos bilhetes tradicionais.  A classe @BilheteDeLoteriaAnimal@ é internamente diferente,
+        dos bilhetes tradicionais.  A classe @BilheteLoteriaAnimal@ é internamente diferente,
         mas expõe os mesmos métodos vistos na classe @BilheteLoteria@.
-        O método @escore é até mesmo idêntico ao método @score@ da antiga classe @BilheteDeLoteria@.
+        O método @escore é até mesmo idêntico ao método @score@ da antiga classe @BilheteLoteria@.
 
 
         Ao invés de usar uma variável de classe para armazenar a lista de notas musicais,
@@ -5689,7 +5689,7 @@ chapters:
         descendo em seu ombro, ela então assobiou um urgente e triste 
         _C-Eb-D-C-A-Eb (Dó-Mi Bemol-Ré-Lá-Mi Bemol)_.
         Estas notas desesperadas enviaram uma onda de calafrios através do corpo de Paij-ree.
-        Tinha o Deus Rei de Bêbado Solo. Nosso Amado Topiario, o *Musgossias Quos*, Pai Literal
+        Tinha o Deus Rei de Bêbado Solo. Nosso Amado Topiário, o *Musgossias Quos*, Pai Literal
         Daquele Homem Quem Era O Instrutor de Órgão da Minha Filha -- tinha ele realmente chegado ao
         seu fim? Como isto poderia acontecer? Poderiam as grandes árvores não mais nutri-lo e guiar
         os ventos úmidos em sua direção? Ou seu próprio esguio líquen cobriram seu caminho e cresceram
@@ -5936,12 +5936,12 @@ chapters:
 
 
         O diretório @"."@ indicava um *caminho absoluto*;  O ponto solitário representa o diretório de
-        trabalho atual.  O diretório onde Dr. Cham inicialixou o @irb@.  Então, depois de Ruby ter
+        trabalho atual.  O diretório onde Dr. Cham inicializou o @irb@.  Então, depois de Ruby ter
         procurado em todos locais padrão, ele checou o diretório atual.
 
 
 
-        A cabra deu uma espiada com sua cabeça ao redor de Dr. Cham e asistia todas estas instruções
+        A cabra deu uma espiada com sua cabeça ao redor de Dr. Cham e assistia todas estas instruções
         exalarem, a medida que ele lambia seus lábios para manter suas salivações longe dos monitores
         e dos brilhosos botões. Ele havia soltado alguns regozijos (nas linhas de: _Não, isso não_
         ou _Sim, sim, isso mesmo_ ou _Ok, bem, você escolhe_), mas agora ele estava completamente
@@ -5953,7 +5953,7 @@ chapters:
         classes úteis."
 
 
-        "É im simples teste de sanidade," disse a cabra. "Apenas tente. Faça @3 * 5@ e veja
+        "É um simples teste de sanidade," disse a cabra. "Apenas tente. Faça @3 * 5@ e veja
         o que aparece."
 
 
@@ -5982,7 +5982,7 @@ chapters:
 
         Dr. Cham tinha usado @chdir@ para mudar o diretório atual de trabalho para o primeiro
         caminho listado no @LOAD_PATH@.  Este primeiro caminho em @site_ruby@ é um lugar comum
-        para armazernar classes personalizadas.
+        para armazenar classes personalizadas.
 
 
         Aqui estavam as três classes lendárias que o instrutor de órgão da minha filha havia anotado
@@ -5990,7 +5990,7 @@ chapters:
         estas três peças do sistema imediatamente.
 
 
-        A classe @Endertromb@. qie continha os mistérios dos poderes deste planeta.  A classe @LeitorMental@
+        A classe @Endertromb@. que continha os mistérios dos poderes deste planeta.  A classe @LeitorMental@
         que, escaneando as mentes de seus habitantes, lia o conteúdo de cada mente. E, finalmente, a classe
         crucial @FazedorPedidos@ que permitia a realização de desejos de dez letras, caso o desejo alguma
         vez encontrasse um caminho para o núcleo de Endertromb.
