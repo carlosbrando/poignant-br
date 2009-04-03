@@ -306,7 +306,7 @@ chapters:
         iria imaginar uma linguagem vinda do Japão?</p> <p>E ainda assim, aqui temos Ruby.  Contra todas as adversidades,
         Yukihiro Matsumoto criou Ruby em 24 de Fevereiro de 1993.  Pelos últimos dez anos, ele tem obstinadamente
         trazido Ruby para uma audiência global.  É triunfante, nobre e tudo mais.  Apóie a diversidade.
-        Nos ajude a dobrar a Terra, só um pouquinho.</p>
+        Ajude-nos a dobrar a Terra, só um pouquinho.</p>
 
         # *Grátis.* <p>Usar Ruby não custa nada.  O código do próprio Ruby está aberto para todo o mundo
         inspirar/expirar.  Até esse livro é de graça.  É tudo parte de uma enorme doação que deveria
@@ -475,7 +475,7 @@ chapters:
         Eu não quero uma carreira de escritor.  Dinheiro não vai me inspirar.  Não faz sentido.
 
 
-        Então, se dinheiro não significa nada ao cara sortudo (lhe luck stiff), para que me enganar quando você pode optar por
+        Então, se dinheiro não significa nada ao cara sortudo (lhe lucky stiff), para que me enganar quando você pode optar por
         práticas comerciais exclusas para literalmente esmagar minha psique e me deixar chorando com meu pulmão negro?
         Oh, e a ironia de usar meu trabalho contra mim!  Morra, garoto comovido!
 
@@ -1050,7 +1050,7 @@ chapters:
 
 
 
-        h3. Hashes (Bolos, Misturas)
+        h3. Hashes
 
 
         Um hash é um dicionário cercado por *colchetes*.  Dicionários servem para encontrar definições
@@ -1058,7 +1058,7 @@ chapters:
         maior que.
 
 
-        bq. @{'a' => 'aardvark', 'b' => 'texugo'}@ são um exemplo.
+        bq. @{'a' => 'porco-da-terra', 'b' => 'texugo'}@ é um exemplo.
 
 
         Desta vez, os colchetes representam livrinhos.  Veja como eles se parecem com
@@ -1471,7 +1471,7 @@ chapters:
         Realmente, não é o caminho que eu me lembro.  Esse Gnomo estava me bipando constantemente.  Quando me
         recusei a chamá-lo de volta, ele deixou uma mensagem no meu pager.  Significado: ele bipou duas vezes e
         então exibiu uma pequena mensagem.  A mensagem disse alguma coisa sobre, "Desça aqui, rápido!" e também,
-        "Nós temos que livrar a terra destas pestes de lagartas empreendedoras, estes insetos insanos vikings
+        "Nós temos que livrar a terra destas pestes de lagartas empreendedoras, estes insetos insanos Vikings
         estão sufocando meus cristais azuis!"
         
 
@@ -1823,7 +1823,7 @@ chapters:
         bq. @sujeito_aproximando = true@
 
 
-        Eu vi o @true@ no buffet do hotel hoje.  Eu não suporto aquele cara.
+        Eu vi o @true@ no Buffet do hotel hoje.  Eu não suporto aquele cara.
         Ele aparece demais.  E você nunca encontrou alguém que plantou os pés
         com tanta força no solo.  Ele usa esse colar brega feito de
         conchas.  Sua face exibe uma confiança insolente.  (Você pode dizer
