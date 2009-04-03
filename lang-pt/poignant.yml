@@ -2002,7 +2002,7 @@ chapters:
 
         Mesmo com toda a beleza que lhe chama a atenção, as imagens do Gnomo e sua Esperança Olímpica
         retornam.  E especialmente, aquele pedido por 55.000 macacoestrelas.  
-        _55.000 macacoestrelas_, pensa você  _Cinquenta-e-cinco Mil_.
+        _55.000 macacoestrelas_, pensa você  _Cinqüenta-e-cinco Mil_.
 
 
         Você pensa somente no próprio número.  _55.000_  Ele está descendo uma rua.  Ele pode estar numa floresta, 
@@ -2218,11 +2218,11 @@ chapters:
         Está disponível para Arrays, Hashes, até Strings.  
         Aqui, nosso dicionário @palavras_chave@ é mantido numa Hash.  Este método @each@ corre entre
         *todos os pares da Hash*, cada palavra perigosa é comparada com sua palavra código, mandando cada par para 
-        o méotodo @gsub!@ para a troca atual.
+        o método @gsub!@ para a troca atual.
 
 
         No Ruby, @gsub@ é abreviação de _global substitution_ (substituição global).  O método é usado para procurar
-        e substituir.  Aqui, queremos achar todas as ocorrências de palavras perigosas e substituí-las com a segura
+        e substituir.  Aqui, queremos achar todas as ocorrências de palavras perigosas e substitui-las com a segura
         palavra código.  Com @gsub@, você provê a *palavra a ser achada como primeiro argumento*, depois a *palavra
         que tomará o lugar como segundo argumento*.
 
@@ -2274,9 +2274,9 @@ chapters:
 
 
         Depois que temos o nome da idéia, vamos abrir um novo arquivo de texto em branco.  O nome do arquivo é
-        construído adicionando-se strings.  Se você digitou @'mostarda-mais-codeine'@, nossa matemática será: @'ideia-' +
-        'mostarda-mais-codeine' + '.txt'@.  O Ruby pressiona isso em uma única string.
-        @'ideia-mostarda-mais-codeine.txt'@ é o arquivo.
+        construído adicionando-se strings.  Se você digitou @'mostarda-mais-codeina'@, nossa matemática será: @'ideia-' +
+        'mostarda-mais-codeina' + '.txt'@.  O Ruby pressiona isso em uma única string.
+        @'ideia-mostarda-mais-codeina.txt'@ é o arquivo.
 
 
         Estamos usando o método de classe @File::open@ para criar um novo arquivo.  Até agora, nós usamos
@@ -2585,7 +2585,7 @@ chapters:
         'why' => 'humano'}@.)
         
 
-        "Sim, pertubante," ele disse.  "Isso tem colchetes como se fosse Array, mas com as setas é uma Hash.
+        "Sim, perturbante," ele disse.  "Isso tem colchetes como se fosse Array, mas com as setas é uma Hash.
         Você vai ter que explicar isso."
 
 
