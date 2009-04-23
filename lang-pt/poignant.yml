@@ -945,7 +945,7 @@ chapters:
         Exceto que, blocos não ofuscam sua visão.
 
 
-        As chaves pode ser substituídas pelas palavras *do* e *end*, o que é bacana se seu bloco for
+        As chaves podem ser substituídas pelas palavras *do* e *end*, o que é bacana se seu bloco for
         maior que uma linha.
 
 
@@ -2145,7 +2145,7 @@ chapters:
         Olhe os colchetes como se fossem paletas de madeira nas quais as palavras estão em cima.
         Uma empilhadeira poderia usar suas pás em cada lado da palete e a trazer da prateleira
         de volta ao depósito.  A palavra na palete é chamada de _indexador_.
-        Estamos pedido para a empilhadeira achar o indexador para gente e nos trazer de volta
+        Estamos pedindo para a empilhadeira achar o indexador para a gente e nos trazer de volta
         o valor correspondente.
 
 
@@ -3275,7 +3275,7 @@ chapters:
          print frase.length                # imprime '19'
 
          pedidos_do_dia = FazedorPedidos.new
-         pedidos_do_dia.grant( "chifres" )
+         pedidos_do_dia.realize( "chifres" )
         </pre>
 
 
@@ -3353,7 +3353,7 @@ chapters:
 
         Mas assim que o Dr. Cham se aproximou do castelo, mesmo o planeta sabendo de seus pensamentos, 
         sentindo sua surpresa e antecipação, tudo que Dr. Cham sentiu era a morte. Ele subiu os degraus de seu portão
-        frontal, passou  através da da entrada de mais bela arquitetura e estava quase certo de que ele estava deserto.
+        frontal, passou  através da entrada de mais bela arquitetura e estava quase certo de que ele estava deserto.
 
 
         Por um tempo ele bateu na porta.  O que foi recompensante.
@@ -4367,7 +4367,7 @@ chapters:
         !i/the.goat-1.gif(Blinky, winky, uma cabra... desperta...)!
 
 
-        O elevador se abriu em uma sala verde tomada por de estantes e arquivos. 
+        O elevador se abriu em uma sala verde tomada por estantes e arquivos. 
         Rolos de filme e latas de filme e fitas de vídeo por toda parte.  O Dr. Cham não
         fazia idéia do que eram a maioria destas coisas.  Tudo que ele viu foi uma grande, 
         bagunça futurística.
@@ -4511,7 +4511,7 @@ chapters:
         de volta ao filme.  "As coisas _dão_ certo."
 
 
-        No Ruby, o Objeto é o centro exato das todas as coisas.  Ele é O Original.
+        No Ruby, o Objeto é o centro exato de todas as coisas.  Ele é O Original.
 
 
         <pre>
@@ -5359,7 +5359,7 @@ chapters:
 
 
         Santos gatos! Olhe para estes métodos escritores por um momento. Ele são chamados métodos @picks=@ e @purchased=@. Estes
-        métodos *interceptam atribuições externas* a variáveis de instância.
+        métodos *interceptam atribuições externas* à variáveis de instância.
         Constantemente você irá deixar @attr_reader@ ou @attr_accessor@ (ou mesmo talvez @attr_writer@) fazer o trabalho por você.
         Outras vezes, você mesmo irá querer tomar conta da portaria, checando as variáveis mais detalhadamente.
 
@@ -5563,7 +5563,7 @@ chapters:
         Toffletown.
 
 
-        No interior, eles vendia.  Era sempre uma longa caminhada até a próxima plantação,
+        No interior, eles vendiam.  Era sempre uma longa caminhada até a próxima plantação,
         mas existiam alguns poucos compradores na mansão ("Bem-vindo a Mansão Erguida com Besouros",
         diziam eles ou, "A Mansão Erguida com Substitutos do Celofane -- você não sabe quão
         perigoso pode ser o celofane verdadeiro?")  E uma das famílias embrulhavam sobras
@@ -5572,14 +5572,14 @@ chapters:
         
 
         Então, quando veio o calor e, como a primeira loteria do interior era à noite,
-        um fazendeiro chamou por eles do seu terreno, enquanto ele estava próxima de 
+        um fazendeiro chamou por eles do seu terreno, enquanto ele estava próximo de 
         uma vaca sua que pastava.
         Paij-ree e _Eb-F-F-A_ foram até ele, murmurando um ao outro se deveriam
         oferecê-lo o Bilhete Especial Gasto pelo Vento ou se ele preferiria optar
         em ganhar o Arriscado Medalhão Original Caseiro Interiorano do Roco.
 
 
-        Mas o fazendeiro lhes acenou a medida que se aproximavam, "Não, deixem suas calculadores
+        Mas o fazendeiro lhes acenou a medida que se aproximavam, "Não, deixem suas calculadoras
         e rodas de probabilidades. É para a minha papa-capim."  Ele quis dizer sua vaca. A versão
         de Emdertromb: o dobro de carne, duas vezes mais carnuda, não produz leite, produz chapas
         de papel. Ainda assim, ela pasta.
@@ -5666,7 +5666,7 @@ chapters:
 
 
         A gaivota voltou com a papa-capim, o nome dela era Merphy, ela estava empolgada em tentar a 
-        a sorte, ela inflou seu rosto sonhador, assobiou cinco ou seis notas em série, todas elas
+        sorte, ela inflou seu rosto sonhador, assobiou cinco ou seis notas em série, todas elas
         seguraram seu colar, puxaram-na para perto da calculadora e a deixaram respirar três notas,
         então eles estrangularam o último ar até que seu bilhete estivesse impresso e tudo estava 
         catalogado certinho dentro de @@@bilhetes['merphy']@.  Obrigado, vejo você no sorteio!
@@ -5696,7 +5696,7 @@ chapters:
         obstruindo sua respiração?
 
 
-        _ Você não liga_ dizia a canção da gaivota. _Ele deteriorou-se e enfraqueceu e caiu na porta
+        _Você não liga_ dizia a canção da gaivota. _Ele deteriorou-se e enfraqueceu e caiu na porta
         iluminada de seu casebre.  Seus rebentos torcendo e chorando para que o dia não acabasse.
         Para que o sol permanecesse fixo e longe e atencioso._
 
@@ -5787,7 +5787,7 @@ chapters:
 
 
         "Eu vi um outro convés como este lá embaixo onde encontramos Hannah," disse Dr. Cham.
-        "Lá em baixo, perto da sua área de moradia. Você deveria gastar algum tempo para procurá-lo.
+        "Lá embaixo, perto da sua área de moradia. Você deveria gastar algum tempo para procurá-lo.
         Lá é bastante pacífico. Você pode ver a Terra e os sete mares."
 
 
@@ -5914,7 +5914,7 @@ chapters:
         foram carregadas pelo @irb@.  Embora ele havia carregado @'rbconfig.rb'@ a pouco.
 
 
-        A variável global @$:@, que pode também ser acessada como @LOAD_PATH@, contém uma lista com
+        A variável global @$:@, que pode também ser acessada como @$LOAD_PATH@, contém uma lista com
         todos os diretórios em que Ruby irá checar quando você tentar carregar um arquivo com @require@.
         Quando Dr. Cham rodou @require 'rbconfig'@, Ruby verificou nesta ordem cada um dos diretórios.
 
