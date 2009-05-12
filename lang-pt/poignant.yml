@@ -451,7 +451,7 @@ chapters:
 
 
         Tudo que você precisa saber até agora é que o Ruby é basicamente construído de sentenças.  Elas não são exatamente sentenças em inglês.
-        Elas são pequenas coleções de palavras e pontuação que expressão um simples pensamento.  Estas
+        Elas são pequenas coleções de palavras e pontuação que expressam um simples pensamento.  Estas
         sentenças podem formar livros.  Elas podem formar páginas.  Elas podem formar romances inteiros, quando combinadas.
         Romances que podem ser lidos por humanos, mas também por computadores.
 
@@ -1035,7 +1035,7 @@ chapters:
         bq. @['casaco', 'luvas', 'snowboard']@ é um array de strings.
 
 
-        Pense nele como uma centopéia que foi grampeada no nosso código.  As duas chaves
+        Pense nele como uma centopéia que foi grampeada no nosso código.  Os dois colchetes
         são grampos que não deixam a centopéia se movimentar, então você consegue distinguir onde é cabeça e
         onde é a cauda.  As vírgulas são as pernas da centopéia, balançando entre cada seção do seu corpo.
 
@@ -1053,7 +1053,7 @@ chapters:
         h3. Hashes
 
 
-        Um hash é um dicionário cercado por *colchetes*.  Dicionários servem para encontrar definições
+        Um hash é um dicionário cercado por *chaves*.  Dicionários servem para encontrar definições
         das palavras.  O Ruby faz isso com *setas* feitas de sinais de igual, seguida por um sinal de
         maior que.
 
@@ -1061,8 +1061,8 @@ chapters:
         bq. @{'a' => 'porco-da-terra', 'b' => 'texugo'}@ é um exemplo.
 
 
-        Desta vez, os colchetes representam livrinhos.  Veja como eles se parecem com
-        pequenos, livros abertos com dobras no meio?  Eles representam abrir e fechar
+        Desta vez, as chaves representam livrinhos.  Veja como eles se parecem com
+        pequenos livros abertos com dobras no meio.  Eles representam abrir e fechar
         nosso dicionário. 
 
 
