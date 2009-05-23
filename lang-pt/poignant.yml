@@ -926,7 +926,7 @@ chapters:
         h3. Blocos
 
 
-        Qualquer código cercado por *colchetes* é um bloco.
+        Qualquer código cercado por *chaves* é um bloco.
 
 
         bq. @2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei de novo!" }@ é um exemplo.
@@ -934,7 +934,7 @@ chapters:
 
         Com blocos, você pode agrupar pedaços de instruções juntas, assim elas pode ser passadas
         pelo seu programa.  
-        Os colchetes dão a aparência de garras de caranguejo que pegaram o código e o estão
+        As chaves dão a aparência de garras de caranguejo que pegaram o código e o estão
         segurando.  Quando você vir essas duas garras, lembre-se de que o código dentro
         foi prensado em uma só unidade.
 
@@ -1026,7 +1026,7 @@ chapters:
         h3. Arrays (Conjuntos, Vetores)
 
 
-        Um array é uma lista cercada por *chaves* e separada por *vírgulas*.
+        Um array é uma lista cercada por *colchetes* e separada por *vírgulas*.
 
 
         bq. @[1, 2, 3]@ é um array de números.
@@ -1218,7 +1218,7 @@ chapters:
     - Se Eu Já Não Tivesse Lhe Tratado Suficientemente Como Uma Criança: >
 
         Estou orgulhoso de você.   Qualquer um irá lhe contar o tanto que me orgulho de você.  Como eu
-        continuo e continuou a falar sobre essa ótima pessoa anônima aí fora  que rola e lê e rola e lê.
+        continuo e continuo a falar sobre essa ótima pessoa anônima aí fora  que rola e lê e rola e lê.
         "Estas crianças," Eu lhes conto. "Cara, estas crianças tem coração.  Eu nunca..." E eu mal consigo
         terminar uma frase porque estou absolutamente mergulhado em lágrimas.
 
